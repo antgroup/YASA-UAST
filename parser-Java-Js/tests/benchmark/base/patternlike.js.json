@@ -1,0 +1,3720 @@
+{
+  "type": "CompileUnit",
+  "body": [
+    {
+      "type": "Sequence",
+      "expressions": [
+        {
+          "type": "VariableDeclaration",
+          "id": {
+            "type": "Identifier",
+            "name": "__tmp0__",
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 7
+              },
+              "end": {
+                "line": 1,
+                "column": 81
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          "init": {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "ObjectProperty",
+                "key": {
+                  "type": "Identifier",
+                  "name": "a",
+                  "_meta": {
+                    "_extra": {
+                      "start": 41,
+                      "end": 42
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 42
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 43
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": 3,
+                  "literalType": "number",
+                  "_meta": {
+                    "_extra": {
+                      "start": 44,
+                      "end": 45
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 45
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 46
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "_meta": {
+                  "_extra": {
+                    "start": 41,
+                    "end": 45
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 1,
+                    "column": 42
+                  },
+                  "end": {
+                    "line": 1,
+                    "column": 46
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "key": {
+                  "type": "Identifier",
+                  "name": "b",
+                  "_meta": {
+                    "_extra": {
+                      "start": 47,
+                      "end": 48
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 48
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 49
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "value": {
+                  "type": "ObjectExpression",
+                  "properties": [
+                    {
+                      "type": "ObjectProperty",
+                      "key": {
+                        "type": "Identifier",
+                        "name": "b1",
+                        "_meta": {
+                          "_extra": {
+                            "start": 52,
+                            "end": 54
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 1,
+                            "column": 53
+                          },
+                          "end": {
+                            "line": 1,
+                            "column": 55
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                        }
+                      },
+                      "value": {
+                        "type": "Literal",
+                        "value": 3,
+                        "literalType": "number",
+                        "_meta": {
+                          "_extra": {
+                            "start": 56,
+                            "end": 57
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 1,
+                            "column": 57
+                          },
+                          "end": {
+                            "line": 1,
+                            "column": 58
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                        }
+                      },
+                      "_meta": {
+                        "_extra": {
+                          "start": 52,
+                          "end": 57
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 1,
+                          "column": 53
+                        },
+                        "end": {
+                          "line": 1,
+                          "column": 58
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                      }
+                    },
+                    {
+                      "type": "ObjectProperty",
+                      "key": {
+                        "type": "Identifier",
+                        "name": "b2",
+                        "_meta": {
+                          "_extra": {
+                            "start": 59,
+                            "end": 61
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 1,
+                            "column": 60
+                          },
+                          "end": {
+                            "line": 1,
+                            "column": 62
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                        }
+                      },
+                      "value": {
+                        "type": "Literal",
+                        "value": 4,
+                        "literalType": "number",
+                        "_meta": {
+                          "_extra": {
+                            "start": 63,
+                            "end": 64
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 1,
+                            "column": 64
+                          },
+                          "end": {
+                            "line": 1,
+                            "column": 65
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                        }
+                      },
+                      "_meta": {
+                        "_extra": {
+                          "start": 59,
+                          "end": 64
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 1,
+                          "column": 60
+                        },
+                        "end": {
+                          "line": 1,
+                          "column": 65
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                      }
+                    }
+                  ],
+                  "id": null,
+                  "_meta": {
+                    "_extra": {
+                      "start": 50,
+                      "end": 66
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 51
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 67
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "_meta": {
+                  "_extra": {
+                    "start": 47,
+                    "end": 66
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 1,
+                    "column": 48
+                  },
+                  "end": {
+                    "line": 1,
+                    "column": 67
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "key": {
+                  "type": "Identifier",
+                  "name": "c",
+                  "_meta": {
+                    "_extra": {
+                      "start": 68,
+                      "end": 69
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 69
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 70
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": 5,
+                  "literalType": "number",
+                  "_meta": {
+                    "_extra": {
+                      "start": 71,
+                      "end": 72
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 72
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 73
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "_meta": {
+                  "_extra": {
+                    "start": 68,
+                    "end": 72
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 1,
+                    "column": 69
+                  },
+                  "end": {
+                    "line": 1,
+                    "column": 73
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "key": {
+                  "type": "Identifier",
+                  "name": "d",
+                  "_meta": {
+                    "_extra": {
+                      "start": 74,
+                      "end": 75
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 75
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 76
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": 6,
+                  "literalType": "number",
+                  "_meta": {
+                    "_extra": {
+                      "start": 77,
+                      "end": 78
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 78
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 79
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "_meta": {
+                  "_extra": {
+                    "start": 74,
+                    "end": 78
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 1,
+                    "column": 75
+                  },
+                  "end": {
+                    "line": 1,
+                    "column": 79
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                }
+              }
+            ],
+            "id": null,
+            "_meta": {
+              "_extra": {
+                "start": 39,
+                "end": 80
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 40
+              },
+              "end": {
+                "line": 1,
+                "column": 81
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          "cloned": false,
+          "varType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {}
+          },
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 7
+            },
+            "end": {
+              "line": 1,
+              "column": 81
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+          }
+        },
+        {
+          "type": "VariableDeclaration",
+          "id": {
+            "type": "Identifier",
+            "name": "a1",
+            "_meta": {
+              "_extra": {
+                "start": 11,
+                "end": 13
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 12
+              },
+              "end": {
+                "line": 1,
+                "column": 14
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          "init": {
+            "type": "MemberAccess",
+            "object": {
+              "type": "Identifier",
+              "name": "__tmp0__",
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 7
+                },
+                "end": {
+                  "line": 1,
+                  "column": 81
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+              }
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "a",
+              "_meta": {
+                "_extra": {
+                  "start": 8,
+                  "end": 9
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 9
+                },
+                "end": {
+                  "line": 1,
+                  "column": 10
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+              }
+            },
+            "computed": false,
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 7
+              },
+              "end": {
+                "line": 1,
+                "column": 81
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          "cloned": false,
+          "varType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {}
+          },
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 7
+            },
+            "end": {
+              "line": 1,
+              "column": 81
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+          }
+        },
+        {
+          "type": "VariableDeclaration",
+          "id": {
+            "type": "Identifier",
+            "name": "b1",
+            "_meta": {
+              "_extra": {
+                "start": 20,
+                "end": 22
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 21
+              },
+              "end": {
+                "line": 1,
+                "column": 23
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          "init": {
+            "type": "MemberAccess",
+            "object": {
+              "type": "MemberAccess",
+              "object": {
+                "type": "Identifier",
+                "name": "__tmp0__",
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 1,
+                    "column": 7
+                  },
+                  "end": {
+                    "line": 1,
+                    "column": 81
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                }
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "b",
+                "_meta": {
+                  "_extra": {
+                    "start": 15,
+                    "end": 16
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 1,
+                    "column": 16
+                  },
+                  "end": {
+                    "line": 1,
+                    "column": 17
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                }
+              },
+              "computed": false,
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 7
+                },
+                "end": {
+                  "line": 1,
+                  "column": 81
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+              }
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "b1",
+              "_meta": {
+                "_extra": {
+                  "start": 20,
+                  "end": 22
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 21
+                },
+                "end": {
+                  "line": 1,
+                  "column": 23
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+              }
+            },
+            "computed": false,
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 7
+              },
+              "end": {
+                "line": 1,
+                "column": 81
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          "cloned": false,
+          "varType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {}
+          },
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 7
+            },
+            "end": {
+              "line": 1,
+              "column": 81
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+          }
+        },
+        {
+          "type": "VariableDeclaration",
+          "id": {
+            "type": "Identifier",
+            "name": "b2",
+            "_meta": {
+              "_extra": {
+                "start": 24,
+                "end": 26
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 25
+              },
+              "end": {
+                "line": 1,
+                "column": 27
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          "init": {
+            "type": "MemberAccess",
+            "object": {
+              "type": "MemberAccess",
+              "object": {
+                "type": "Identifier",
+                "name": "__tmp0__",
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 1,
+                    "column": 7
+                  },
+                  "end": {
+                    "line": 1,
+                    "column": 81
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                }
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "b",
+                "_meta": {
+                  "_extra": {
+                    "start": 15,
+                    "end": 16
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 1,
+                    "column": 16
+                  },
+                  "end": {
+                    "line": 1,
+                    "column": 17
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                }
+              },
+              "computed": false,
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 7
+                },
+                "end": {
+                  "line": 1,
+                  "column": 81
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+              }
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "b2",
+              "_meta": {
+                "_extra": {
+                  "start": 24,
+                  "end": 26
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 25
+                },
+                "end": {
+                  "line": 1,
+                  "column": 27
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+              }
+            },
+            "computed": false,
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 7
+              },
+              "end": {
+                "line": 1,
+                "column": 81
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          "cloned": false,
+          "varType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {}
+          },
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 7
+            },
+            "end": {
+              "line": 1,
+              "column": 81
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+          }
+        },
+        {
+          "type": "VariableDeclaration",
+          "id": {
+            "type": "Identifier",
+            "name": "c",
+            "_meta": {
+              "_extra": {
+                "start": 33,
+                "end": 34
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 34
+              },
+              "end": {
+                "line": 1,
+                "column": 35
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          "init": {
+            "type": "Identifier",
+            "name": "__tmp0__",
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 7
+              },
+              "end": {
+                "line": 1,
+                "column": 81
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          "cloned": true,
+          "varType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {}
+          },
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 7
+            },
+            "end": {
+              "line": 1,
+              "column": 81
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+          }
+        },
+        {
+          "type": "UnaryExpression",
+          "operator": "delete",
+          "argument": {
+            "type": "MemberAccess",
+            "object": {
+              "type": "Identifier",
+              "name": "c",
+              "_meta": {
+                "_extra": {
+                  "start": 33,
+                  "end": 34
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 34
+                },
+                "end": {
+                  "line": 1,
+                  "column": 35
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+              }
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "a",
+              "_meta": {
+                "_extra": {
+                  "start": 8,
+                  "end": 9
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 9
+                },
+                "end": {
+                  "line": 1,
+                  "column": 10
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+              }
+            },
+            "computed": false,
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 7
+              },
+              "end": {
+                "line": 1,
+                "column": 81
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          "isSuffix": true,
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 7
+            },
+            "end": {
+              "line": 1,
+              "column": 81
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+          }
+        },
+        {
+          "type": "UnaryExpression",
+          "operator": "delete",
+          "argument": {
+            "type": "MemberAccess",
+            "object": {
+              "type": "Identifier",
+              "name": "c",
+              "_meta": {
+                "_extra": {
+                  "start": 33,
+                  "end": 34
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 34
+                },
+                "end": {
+                  "line": 1,
+                  "column": 35
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+              }
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "b",
+              "_meta": {
+                "_extra": {
+                  "start": 15,
+                  "end": 16
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 16
+                },
+                "end": {
+                  "line": 1,
+                  "column": 17
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+              }
+            },
+            "computed": false,
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 7
+              },
+              "end": {
+                "line": 1,
+                "column": 81
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          "isSuffix": true,
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 7
+            },
+            "end": {
+              "line": 1,
+              "column": 81
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+          }
+        },
+        {
+          "type": "AssignmentExpression",
+          "left": {
+            "type": "Identifier",
+            "name": "c",
+            "_meta": {
+              "_extra": {
+                "start": 33,
+                "end": 34
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 34
+              },
+              "end": {
+                "line": 1,
+                "column": 35
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          "right": {
+            "type": "Identifier",
+            "name": "c",
+            "_meta": {
+              "_extra": {
+                "start": 33,
+                "end": 34
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 34
+              },
+              "end": {
+                "line": 1,
+                "column": 35
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          "operator": "=",
+          "cloned": null,
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 7
+            },
+            "end": {
+              "line": 1,
+              "column": 81
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+          }
+        }
+      ],
+      "_meta": {
+        "_extra": {
+          "end": 81
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 1
+        },
+        "end": {
+          "line": 1,
+          "column": 82
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+      }
+    },
+    {
+      "type": "Sequence",
+      "expressions": [
+        {
+          "type": "VariableDeclaration",
+          "id": {
+            "type": "Identifier",
+            "name": "__tmp1__",
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 7
+              },
+              "end": {
+                "line": 3,
+                "column": 46
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          "init": {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "ObjectProperty",
+                "key": {
+                  "type": "Literal",
+                  "value": 0,
+                  "literalType": "number",
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 29
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 46
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": 1,
+                  "literalType": "number",
+                  "_meta": {
+                    "_extra": {
+                      "start": 113,
+                      "end": 114
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 31
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 32
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 3,
+                    "column": 29
+                  },
+                  "end": {
+                    "line": 3,
+                    "column": 46
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "key": {
+                  "type": "Literal",
+                  "value": 1,
+                  "literalType": "number",
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 29
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 46
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": 2,
+                  "literalType": "number",
+                  "_meta": {
+                    "_extra": {
+                      "start": 116,
+                      "end": 117
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 34
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 35
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 3,
+                    "column": 29
+                  },
+                  "end": {
+                    "line": 3,
+                    "column": 46
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "key": {
+                  "type": "Literal",
+                  "value": 2,
+                  "literalType": "number",
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 29
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 46
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": 3,
+                  "literalType": "number",
+                  "_meta": {
+                    "_extra": {
+                      "start": 119,
+                      "end": 120
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 37
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 38
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 3,
+                    "column": 29
+                  },
+                  "end": {
+                    "line": 3,
+                    "column": 46
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "key": {
+                  "type": "Literal",
+                  "value": 3,
+                  "literalType": "number",
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 29
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 46
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": 4,
+                  "literalType": "number",
+                  "_meta": {
+                    "_extra": {
+                      "start": 122,
+                      "end": 123
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 40
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 41
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 3,
+                    "column": 29
+                  },
+                  "end": {
+                    "line": 3,
+                    "column": 46
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                }
+              },
+              {
+                "type": "ObjectProperty",
+                "key": {
+                  "type": "Literal",
+                  "value": 4,
+                  "literalType": "number",
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 29
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 46
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": 5,
+                  "literalType": "number",
+                  "_meta": {
+                    "_extra": {
+                      "start": 125,
+                      "end": 126
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 43
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 44
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 3,
+                    "column": 29
+                  },
+                  "end": {
+                    "line": 3,
+                    "column": 46
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                }
+              }
+            ],
+            "id": null,
+            "_meta": {
+              "isArray": true,
+              "_extra": {
+                "start": 111,
+                "end": 128
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 29
+              },
+              "end": {
+                "line": 3,
+                "column": 46
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          "cloned": false,
+          "varType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {}
+          },
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 7
+            },
+            "end": {
+              "line": 3,
+              "column": 46
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+          }
+        },
+        {
+          "type": "VariableDeclaration",
+          "id": {
+            "type": "Identifier",
+            "name": "r1",
+            "_meta": {
+              "_extra": {
+                "start": 91,
+                "end": 93
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 9
+              },
+              "end": {
+                "line": 3,
+                "column": 11
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          "init": {
+            "type": "MemberAccess",
+            "object": {
+              "type": "Identifier",
+              "name": "__tmp1__",
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 7
+                },
+                "end": {
+                  "line": 3,
+                  "column": 46
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+              }
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "0",
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 7
+                },
+                "end": {
+                  "line": 3,
+                  "column": 46
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+              }
+            },
+            "computed": false,
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 7
+              },
+              "end": {
+                "line": 3,
+                "column": 46
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          "cloned": false,
+          "varType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {}
+          },
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 7
+            },
+            "end": {
+              "line": 3,
+              "column": 46
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+          }
+        },
+        {
+          "type": "VariableDeclaration",
+          "id": {
+            "type": "Identifier",
+            "name": "r2",
+            "_meta": {
+              "_extra": {
+                "start": 95,
+                "end": 97
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 13
+              },
+              "end": {
+                "line": 3,
+                "column": 15
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          "init": {
+            "type": "MemberAccess",
+            "object": {
+              "type": "Identifier",
+              "name": "__tmp1__",
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 7
+                },
+                "end": {
+                  "line": 3,
+                  "column": 46
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+              }
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "1",
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 7
+                },
+                "end": {
+                  "line": 3,
+                  "column": 46
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+              }
+            },
+            "computed": false,
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 7
+              },
+              "end": {
+                "line": 3,
+                "column": 46
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          "cloned": false,
+          "varType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {}
+          },
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 7
+            },
+            "end": {
+              "line": 3,
+              "column": 46
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+          }
+        },
+        {
+          "type": "VariableDeclaration",
+          "id": {
+            "type": "Identifier",
+            "name": "__tmp2__",
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 7
+              },
+              "end": {
+                "line": 3,
+                "column": 46
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          "init": {
+            "type": "Identifier",
+            "name": "__tmp1__",
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 7
+              },
+              "end": {
+                "line": 3,
+                "column": 46
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          "cloned": true,
+          "varType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {}
+          },
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 7
+            },
+            "end": {
+              "line": 3,
+              "column": 46
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+          }
+        },
+        {
+          "type": "UnaryExpression",
+          "operator": "delete",
+          "argument": {
+            "type": "MemberAccess",
+            "object": {
+              "type": "Identifier",
+              "name": "__tmp2__",
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 7
+                },
+                "end": {
+                  "line": 3,
+                  "column": 46
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+              }
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "0",
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 7
+                },
+                "end": {
+                  "line": 3,
+                  "column": 46
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+              }
+            },
+            "computed": false,
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 7
+              },
+              "end": {
+                "line": 3,
+                "column": 46
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          "isSuffix": true,
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 7
+            },
+            "end": {
+              "line": 3,
+              "column": 46
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+          }
+        },
+        {
+          "type": "UnaryExpression",
+          "operator": "delete",
+          "argument": {
+            "type": "MemberAccess",
+            "object": {
+              "type": "Identifier",
+              "name": "__tmp2__",
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 7
+                },
+                "end": {
+                  "line": 3,
+                  "column": 46
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+              }
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "1",
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 7
+                },
+                "end": {
+                  "line": 3,
+                  "column": 46
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+              }
+            },
+            "computed": false,
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 7
+              },
+              "end": {
+                "line": 3,
+                "column": 46
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          "isSuffix": true,
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 7
+            },
+            "end": {
+              "line": 3,
+              "column": 46
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+          }
+        },
+        {
+          "type": "AssignmentExpression",
+          "left": {
+            "type": "Identifier",
+            "name": "rest",
+            "_meta": {
+              "_extra": {
+                "start": 102,
+                "end": 106
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 20
+              },
+              "end": {
+                "line": 3,
+                "column": 24
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          "right": {
+            "type": "Identifier",
+            "name": "__tmp2__",
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 7
+              },
+              "end": {
+                "line": 3,
+                "column": 46
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          "operator": "=",
+          "cloned": null,
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 7
+            },
+            "end": {
+              "line": 3,
+              "column": 46
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+          }
+        }
+      ],
+      "_meta": {
+        "_extra": {
+          "start": 83,
+          "end": 129
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 1
+        },
+        "end": {
+          "line": 3,
+          "column": 47
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+      }
+    },
+    {
+      "type": "FunctionDefinition",
+      "id": {
+        "type": "Identifier",
+        "name": "foo",
+        "_meta": {
+          "_extra": {
+            "start": 140,
+            "end": 143
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 10
+          },
+          "end": {
+            "line": 5,
+            "column": 13
+          }
+        }
+      },
+      "parameters": [
+        {
+          "type": "VariableDeclaration",
+          "id": {
+            "type": "Identifier",
+            "name": "__tmp3__",
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 14
+              },
+              "end": {
+                "line": 5,
+                "column": 26
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          "init": null,
+          "cloned": false,
+          "varType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {}
+          },
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 14
+            },
+            "end": {
+              "line": 5,
+              "column": 26
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+          }
+        },
+        {
+          "type": "VariableDeclaration",
+          "id": {
+            "type": "Identifier",
+            "name": "__tmp4__",
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 28
+              },
+              "end": {
+                "line": 5,
+                "column": 42
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          "init": null,
+          "cloned": false,
+          "varType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {}
+          },
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 28
+            },
+            "end": {
+              "line": 5,
+              "column": 42
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+          }
+        }
+      ],
+      "returnType": {
+        "type": "DynamicType",
+        "id": null,
+        "_meta": {},
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 1
+          },
+          "end": {
+            "line": 7,
+            "column": 2
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+        }
+      },
+      "body": {
+        "type": "ScopedStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "id": {
+              "type": "Identifier",
+              "name": "a1",
+              "_meta": {
+                "_extra": {
+                  "start": 149,
+                  "end": 151
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 19
+                },
+                "end": {
+                  "line": 5,
+                  "column": 21
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+              }
+            },
+            "init": {
+              "type": "MemberAccess",
+              "object": {
+                "type": "Identifier",
+                "name": "__tmp3__",
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 5,
+                    "column": 14
+                  },
+                  "end": {
+                    "line": 5,
+                    "column": 26
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                }
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "a",
+                "_meta": {
+                  "_extra": {
+                    "start": 146,
+                    "end": 147
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 5,
+                    "column": 16
+                  },
+                  "end": {
+                    "line": 5,
+                    "column": 17
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                }
+              },
+              "computed": false,
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 1
+                },
+                "end": {
+                  "line": 7,
+                  "column": 2
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+              }
+            },
+            "cloned": false,
+            "varType": {
+              "type": "DynamicType",
+              "id": null,
+              "_meta": {}
+            },
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 1
+              },
+              "end": {
+                "line": 7,
+                "column": 2
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          {
+            "type": "VariableDeclaration",
+            "id": {
+              "type": "Identifier",
+              "name": "b",
+              "_meta": {
+                "_extra": {
+                  "start": 153,
+                  "end": 154
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 23
+                },
+                "end": {
+                  "line": 5,
+                  "column": 24
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+              }
+            },
+            "init": {
+              "type": "MemberAccess",
+              "object": {
+                "type": "Identifier",
+                "name": "__tmp3__",
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 5,
+                    "column": 14
+                  },
+                  "end": {
+                    "line": 5,
+                    "column": 26
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                }
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "b",
+                "_meta": {
+                  "_extra": {
+                    "start": 153,
+                    "end": 154
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 5,
+                    "column": 23
+                  },
+                  "end": {
+                    "line": 5,
+                    "column": 24
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                }
+              },
+              "computed": false,
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 1
+                },
+                "end": {
+                  "line": 7,
+                  "column": 2
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+              }
+            },
+            "cloned": false,
+            "varType": {
+              "type": "DynamicType",
+              "id": null,
+              "_meta": {}
+            },
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 1
+              },
+              "end": {
+                "line": 7,
+                "column": 2
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          {
+            "type": "VariableDeclaration",
+            "id": {
+              "type": "Identifier",
+              "name": "force",
+              "_meta": {
+                "_extra": {
+                  "start": 160,
+                  "end": 165
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 30
+                },
+                "end": {
+                  "line": 5,
+                  "column": 35
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+              }
+            },
+            "init": {
+              "type": "MemberAccess",
+              "object": {
+                "type": "ConditionalExpression",
+                "test": {
+                  "type": "Identifier",
+                  "name": "__tmp4__",
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 5,
+                      "column": 28
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 42
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "consequent": {
+                  "type": "Identifier",
+                  "name": "__tmp4__",
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 5,
+                      "column": 28
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 42
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "alternative": {
+                  "type": "ObjectExpression",
+                  "properties": [],
+                  "id": null,
+                  "_meta": {
+                    "_extra": {
+                      "start": 170,
+                      "end": 172
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 5,
+                      "column": 40
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 42
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 5,
+                    "column": 1
+                  },
+                  "end": {
+                    "line": 7,
+                    "column": 2
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                }
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "force",
+                "_meta": {
+                  "_extra": {
+                    "start": 160,
+                    "end": 165
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 5,
+                    "column": 30
+                  },
+                  "end": {
+                    "line": 5,
+                    "column": 35
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                }
+              },
+              "computed": false,
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 1
+                },
+                "end": {
+                  "line": 7,
+                  "column": 2
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+              }
+            },
+            "cloned": false,
+            "varType": {
+              "type": "DynamicType",
+              "id": null,
+              "_meta": {}
+            },
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 1
+              },
+              "end": {
+                "line": 7,
+                "column": 2
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          {
+            "type": "ScopedStatement",
+            "body": [
+              {
+                "type": "ReturnStatement",
+                "argument": {
+                  "type": "ObjectExpression",
+                  "properties": [
+                    {
+                      "type": "ObjectProperty",
+                      "key": {
+                        "type": "Literal",
+                        "value": 0,
+                        "literalType": "number",
+                        "_meta": {},
+                        "loc": {
+                          "start": {
+                            "line": 6,
+                            "column": 10
+                          },
+                          "end": {
+                            "line": 6,
+                            "column": 19
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                        }
+                      },
+                      "value": {
+                        "type": "Identifier",
+                        "name": "a1",
+                        "_meta": {
+                          "_extra": {
+                            "start": 187,
+                            "end": 189
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 6,
+                            "column": 12
+                          },
+                          "end": {
+                            "line": 6,
+                            "column": 14
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                        }
+                      },
+                      "_meta": {},
+                      "loc": {
+                        "start": {
+                          "line": 6,
+                          "column": 10
+                        },
+                        "end": {
+                          "line": 6,
+                          "column": 19
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                      }
+                    },
+                    {
+                      "type": "ObjectProperty",
+                      "key": {
+                        "type": "Literal",
+                        "value": 1,
+                        "literalType": "number",
+                        "_meta": {},
+                        "loc": {
+                          "start": {
+                            "line": 6,
+                            "column": 10
+                          },
+                          "end": {
+                            "line": 6,
+                            "column": 19
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                        }
+                      },
+                      "value": {
+                        "type": "Identifier",
+                        "name": "b",
+                        "_meta": {
+                          "_extra": {
+                            "start": 191,
+                            "end": 192
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 6,
+                            "column": 16
+                          },
+                          "end": {
+                            "line": 6,
+                            "column": 17
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                        }
+                      },
+                      "_meta": {},
+                      "loc": {
+                        "start": {
+                          "line": 6,
+                          "column": 10
+                        },
+                        "end": {
+                          "line": 6,
+                          "column": 19
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                      }
+                    }
+                  ],
+                  "id": null,
+                  "_meta": {
+                    "isArray": true,
+                    "_extra": {
+                      "start": 185,
+                      "end": 194
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 6,
+                      "column": 10
+                    },
+                    "end": {
+                      "line": 6,
+                      "column": 19
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "isYield": false,
+                "_meta": {
+                  "_extra": {
+                    "start": 178,
+                    "end": 195
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 6,
+                    "column": 3
+                  },
+                  "end": {
+                    "line": 6,
+                    "column": 20
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                }
+              }
+            ],
+            "id": null,
+            "_meta": {
+              "_extra": {
+                "start": 174,
+                "end": 197,
+                "directives": []
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 44
+              },
+              "end": {
+                "line": 7,
+                "column": 2
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          }
+        ],
+        "id": null,
+        "_meta": {},
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 1
+          },
+          "end": {
+            "line": 7,
+            "column": 2
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+        }
+      },
+      "modifiers": [],
+      "_meta": {
+        "_extra": {
+          "start": 131,
+          "end": 197
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 1
+        },
+        "end": {
+          "line": 7,
+          "column": 2
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+      }
+    },
+    {
+      "type": "RangeStatement",
+      "key": null,
+      "value": {
+        "type": "VariableDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "__tmp5__",
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 9,
+              "column": 6
+            },
+            "end": {
+              "line": 9,
+              "column": 16
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+          }
+        },
+        "init": {
+          "type": "Identifier",
+          "name": "c",
+          "_meta": {
+            "_extra": {
+              "start": 218,
+              "end": 219
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 9,
+              "column": 20
+            },
+            "end": {
+              "line": 9,
+              "column": 21
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+          }
+        },
+        "cloned": false,
+        "varType": {
+          "type": "DynamicType",
+          "id": null,
+          "_meta": {}
+        },
+        "_meta": {},
+        "loc": {
+          "start": {
+            "line": 9,
+            "column": 6
+          },
+          "end": {
+            "line": 9,
+            "column": 16
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+        }
+      },
+      "right": {
+        "type": "Identifier",
+        "name": "c",
+        "_meta": {
+          "_extra": {
+            "start": 218,
+            "end": 219
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 9,
+            "column": 20
+          },
+          "end": {
+            "line": 9,
+            "column": 21
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+        }
+      },
+      "body": {
+        "type": "ScopedStatement",
+        "body": [
+          {
+            "type": "Sequence",
+            "expressions": [
+              {
+                "type": "VariableDeclaration",
+                "id": {
+                  "type": "Identifier",
+                  "name": "var1",
+                  "_meta": {
+                    "_extra": {
+                      "start": 210,
+                      "end": 214
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 9,
+                      "column": 12
+                    },
+                    "end": {
+                      "line": 9,
+                      "column": 16
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "init": {
+                  "type": "Identifier",
+                  "name": "__tmp5__",
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 9,
+                      "column": 6
+                    },
+                    "end": {
+                      "line": 9,
+                      "column": 16
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "cloned": false,
+                "varType": {
+                  "type": "DynamicType",
+                  "id": null,
+                  "_meta": {}
+                },
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 9,
+                    "column": 1
+                  },
+                  "end": {
+                    "line": 11,
+                    "column": 2
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                }
+              }
+            ],
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 9,
+                "column": 1
+              },
+              "end": {
+                "line": 11,
+                "column": 2
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          {
+            "type": "ScopedStatement",
+            "body": [],
+            "id": null,
+            "_meta": {
+              "_extra": {
+                "start": 221,
+                "end": 225,
+                "directives": []
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 9,
+                "column": 23
+              },
+              "end": {
+                "line": 11,
+                "column": 2
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          }
+        ],
+        "id": null,
+        "_meta": {},
+        "loc": {
+          "start": {
+            "line": 9,
+            "column": 1
+          },
+          "end": {
+            "line": 11,
+            "column": 2
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+        }
+      },
+      "_meta": {
+        "_extra": {
+          "start": 199,
+          "end": 225
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 1
+        },
+        "end": {
+          "line": 11,
+          "column": 2
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+      }
+    },
+    {
+      "type": "VariableDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "var1",
+        "_meta": {
+          "_extra": {
+            "start": 231,
+            "end": 235
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 13,
+            "column": 5
+          },
+          "end": {
+            "line": 13,
+            "column": 9
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+        }
+      },
+      "init": null,
+      "cloned": false,
+      "varType": {
+        "type": "DynamicType",
+        "id": null,
+        "_meta": {}
+      },
+      "_meta": {
+        "_extra": {
+          "start": 227,
+          "end": 235
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 5
+        },
+        "end": {
+          "line": 13,
+          "column": 9
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+      }
+    },
+    {
+      "type": "RangeStatement",
+      "key": null,
+      "value": {
+        "type": "VariableDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "__tmp6__",
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 14,
+              "column": 6
+            },
+            "end": {
+              "line": 14,
+              "column": 10
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+          }
+        },
+        "init": {
+          "type": "Identifier",
+          "name": "c",
+          "_meta": {
+            "_extra": {
+              "start": 249,
+              "end": 250
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 14,
+              "column": 14
+            },
+            "end": {
+              "line": 14,
+              "column": 15
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+          }
+        },
+        "cloned": false,
+        "varType": {
+          "type": "DynamicType",
+          "id": null,
+          "_meta": {}
+        },
+        "_meta": {},
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 6
+          },
+          "end": {
+            "line": 14,
+            "column": 10
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+        }
+      },
+      "right": {
+        "type": "Identifier",
+        "name": "c",
+        "_meta": {
+          "_extra": {
+            "start": 249,
+            "end": 250
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 14
+          },
+          "end": {
+            "line": 14,
+            "column": 15
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+        }
+      },
+      "body": {
+        "type": "ScopedStatement",
+        "body": [
+          {
+            "type": "Sequence",
+            "expressions": [
+              {
+                "type": "AssignmentExpression",
+                "left": {
+                  "type": "Identifier",
+                  "name": "var1",
+                  "_meta": {
+                    "_extra": {
+                      "start": 241,
+                      "end": 245
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 14,
+                      "column": 6
+                    },
+                    "end": {
+                      "line": 14,
+                      "column": 10
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "right": {
+                  "type": "Identifier",
+                  "name": "__tmp6__",
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 14,
+                      "column": 6
+                    },
+                    "end": {
+                      "line": 14,
+                      "column": 10
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "operator": "=",
+                "cloned": null,
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 14,
+                    "column": 1
+                  },
+                  "end": {
+                    "line": 16,
+                    "column": 2
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                }
+              }
+            ],
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 14,
+                "column": 1
+              },
+              "end": {
+                "line": 16,
+                "column": 2
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          {
+            "type": "ScopedStatement",
+            "body": [],
+            "id": null,
+            "_meta": {
+              "_extra": {
+                "start": 252,
+                "end": 256,
+                "directives": []
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 14,
+                "column": 17
+              },
+              "end": {
+                "line": 16,
+                "column": 2
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          }
+        ],
+        "id": null,
+        "_meta": {},
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 1
+          },
+          "end": {
+            "line": 16,
+            "column": 2
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+        }
+      },
+      "_meta": {
+        "_extra": {
+          "start": 236,
+          "end": 256
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 1
+        },
+        "end": {
+          "line": 16,
+          "column": 2
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+      }
+    },
+    {
+      "type": "RangeStatement",
+      "key": null,
+      "value": {
+        "type": "VariableDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "__tmp7__",
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 18,
+              "column": 6
+            },
+            "end": {
+              "line": 18,
+              "column": 14
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+          }
+        },
+        "init": {
+          "type": "Identifier",
+          "name": "c",
+          "_meta": {
+            "_extra": {
+              "start": 275,
+              "end": 276
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 18,
+              "column": 18
+            },
+            "end": {
+              "line": 18,
+              "column": 19
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+          }
+        },
+        "cloned": false,
+        "varType": {
+          "type": "DynamicType",
+          "id": null,
+          "_meta": {}
+        },
+        "_meta": {},
+        "loc": {
+          "start": {
+            "line": 18,
+            "column": 6
+          },
+          "end": {
+            "line": 18,
+            "column": 14
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+        }
+      },
+      "right": {
+        "type": "Identifier",
+        "name": "c",
+        "_meta": {
+          "_extra": {
+            "start": 275,
+            "end": 276
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 18,
+            "column": 18
+          },
+          "end": {
+            "line": 18,
+            "column": 19
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+        }
+      },
+      "body": {
+        "type": "ScopedStatement",
+        "body": [
+          {
+            "type": "Sequence",
+            "expressions": [
+              {
+                "type": "VariableDeclaration",
+                "id": {
+                  "type": "Identifier",
+                  "name": "a",
+                  "_meta": {
+                    "_extra": {
+                      "start": 265,
+                      "end": 266
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 18,
+                      "column": 8
+                    },
+                    "end": {
+                      "line": 18,
+                      "column": 9
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "init": {
+                  "type": "MemberAccess",
+                  "object": {
+                    "type": "Identifier",
+                    "name": "__tmp7__",
+                    "_meta": {},
+                    "loc": {
+                      "start": {
+                        "line": 18,
+                        "column": 6
+                      },
+                      "end": {
+                        "line": 18,
+                        "column": 14
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                    }
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "a",
+                    "_meta": {
+                      "_extra": {
+                        "start": 265,
+                        "end": 266
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 18,
+                        "column": 8
+                      },
+                      "end": {
+                        "line": 18,
+                        "column": 9
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                    }
+                  },
+                  "computed": false,
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 18,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 20,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "cloned": false,
+                "varType": {
+                  "type": "DynamicType",
+                  "id": null,
+                  "_meta": {}
+                },
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 18,
+                    "column": 1
+                  },
+                  "end": {
+                    "line": 20,
+                    "column": 2
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                }
+              },
+              {
+                "type": "VariableDeclaration",
+                "id": {
+                  "type": "Identifier",
+                  "name": "b",
+                  "_meta": {
+                    "_extra": {
+                      "start": 268,
+                      "end": 269
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 18,
+                      "column": 11
+                    },
+                    "end": {
+                      "line": 18,
+                      "column": 12
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "init": {
+                  "type": "MemberAccess",
+                  "object": {
+                    "type": "Identifier",
+                    "name": "__tmp7__",
+                    "_meta": {},
+                    "loc": {
+                      "start": {
+                        "line": 18,
+                        "column": 6
+                      },
+                      "end": {
+                        "line": 18,
+                        "column": 14
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                    }
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "b",
+                    "_meta": {
+                      "_extra": {
+                        "start": 268,
+                        "end": 269
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 18,
+                        "column": 11
+                      },
+                      "end": {
+                        "line": 18,
+                        "column": 12
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                    }
+                  },
+                  "computed": false,
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 18,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 20,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "cloned": false,
+                "varType": {
+                  "type": "DynamicType",
+                  "id": null,
+                  "_meta": {}
+                },
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 18,
+                    "column": 1
+                  },
+                  "end": {
+                    "line": 20,
+                    "column": 2
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                }
+              }
+            ],
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 18,
+                "column": 1
+              },
+              "end": {
+                "line": 20,
+                "column": 2
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          {
+            "type": "ScopedStatement",
+            "body": [],
+            "id": null,
+            "_meta": {
+              "_extra": {
+                "start": 278,
+                "end": 282,
+                "directives": []
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 18,
+                "column": 21
+              },
+              "end": {
+                "line": 20,
+                "column": 2
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          }
+        ],
+        "id": null,
+        "_meta": {},
+        "loc": {
+          "start": {
+            "line": 18,
+            "column": 1
+          },
+          "end": {
+            "line": 20,
+            "column": 2
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+        }
+      },
+      "_meta": {
+        "_extra": {
+          "start": 258,
+          "end": 282
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 1
+        },
+        "end": {
+          "line": 20,
+          "column": 2
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+      }
+    },
+    {
+      "type": "RangeStatement",
+      "key": null,
+      "value": {
+        "type": "VariableDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "__tmp8__",
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 22,
+              "column": 6
+            },
+            "end": {
+              "line": 22,
+              "column": 20
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+          }
+        },
+        "init": {
+          "type": "Identifier",
+          "name": "c",
+          "_meta": {
+            "_extra": {
+              "start": 307,
+              "end": 308
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 22,
+              "column": 24
+            },
+            "end": {
+              "line": 22,
+              "column": 25
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+          }
+        },
+        "cloned": false,
+        "varType": {
+          "type": "DynamicType",
+          "id": null,
+          "_meta": {}
+        },
+        "_meta": {},
+        "loc": {
+          "start": {
+            "line": 22,
+            "column": 6
+          },
+          "end": {
+            "line": 22,
+            "column": 20
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+        }
+      },
+      "right": {
+        "type": "Identifier",
+        "name": "c",
+        "_meta": {
+          "_extra": {
+            "start": 307,
+            "end": 308
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 22,
+            "column": 24
+          },
+          "end": {
+            "line": 22,
+            "column": 25
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+        }
+      },
+      "body": {
+        "type": "ScopedStatement",
+        "body": [
+          {
+            "type": "Sequence",
+            "expressions": [
+              {
+                "type": "VariableDeclaration",
+                "id": {
+                  "type": "Identifier",
+                  "name": "a",
+                  "_meta": {
+                    "_extra": {
+                      "start": 297,
+                      "end": 298
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 22,
+                      "column": 14
+                    },
+                    "end": {
+                      "line": 22,
+                      "column": 15
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "init": {
+                  "type": "MemberAccess",
+                  "object": {
+                    "type": "Identifier",
+                    "name": "__tmp8__",
+                    "_meta": {},
+                    "loc": {
+                      "start": {
+                        "line": 22,
+                        "column": 6
+                      },
+                      "end": {
+                        "line": 22,
+                        "column": 20
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                    }
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "a",
+                    "_meta": {
+                      "_extra": {
+                        "start": 297,
+                        "end": 298
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 22,
+                        "column": 14
+                      },
+                      "end": {
+                        "line": 22,
+                        "column": 15
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                    }
+                  },
+                  "computed": false,
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 22,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 24,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "cloned": false,
+                "varType": {
+                  "type": "DynamicType",
+                  "id": null,
+                  "_meta": {}
+                },
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 22,
+                    "column": 1
+                  },
+                  "end": {
+                    "line": 24,
+                    "column": 2
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                }
+              },
+              {
+                "type": "VariableDeclaration",
+                "id": {
+                  "type": "Identifier",
+                  "name": "b",
+                  "_meta": {
+                    "_extra": {
+                      "start": 300,
+                      "end": 301
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 22,
+                      "column": 17
+                    },
+                    "end": {
+                      "line": 22,
+                      "column": 18
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "init": {
+                  "type": "MemberAccess",
+                  "object": {
+                    "type": "Identifier",
+                    "name": "__tmp8__",
+                    "_meta": {},
+                    "loc": {
+                      "start": {
+                        "line": 22,
+                        "column": 6
+                      },
+                      "end": {
+                        "line": 22,
+                        "column": 20
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                    }
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "b",
+                    "_meta": {
+                      "_extra": {
+                        "start": 300,
+                        "end": 301
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 22,
+                        "column": 17
+                      },
+                      "end": {
+                        "line": 22,
+                        "column": 18
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                    }
+                  },
+                  "computed": false,
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 22,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 24,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                  }
+                },
+                "cloned": false,
+                "varType": {
+                  "type": "DynamicType",
+                  "id": null,
+                  "_meta": {}
+                },
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 22,
+                    "column": 1
+                  },
+                  "end": {
+                    "line": 24,
+                    "column": 2
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+                }
+              }
+            ],
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 22,
+                "column": 1
+              },
+              "end": {
+                "line": 24,
+                "column": 2
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          },
+          {
+            "type": "ScopedStatement",
+            "body": [],
+            "id": null,
+            "_meta": {
+              "_extra": {
+                "start": 310,
+                "end": 314,
+                "directives": []
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 22,
+                "column": 27
+              },
+              "end": {
+                "line": 24,
+                "column": 2
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+            }
+          }
+        ],
+        "id": null,
+        "_meta": {},
+        "loc": {
+          "start": {
+            "line": 22,
+            "column": 1
+          },
+          "end": {
+            "line": 24,
+            "column": 2
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+        }
+      },
+      "_meta": {
+        "_extra": {
+          "start": 284,
+          "end": 314
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 1
+        },
+        "end": {
+          "line": 24,
+          "column": 2
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+      }
+    }
+  ],
+  "language": "javascript",
+  "languageVersion": null,
+  "uri": "",
+  "version": "0.1.63",
+  "_meta": {
+    "_extra": {
+      "end": 315,
+      "directives": []
+    }
+  },
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 1
+    },
+    "end": {
+      "line": 25,
+      "column": 1
+    },
+    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/patternlike.js"
+  }
+}

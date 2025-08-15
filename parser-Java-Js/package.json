@@ -1,0 +1,73 @@
+{
+  "name": "@ant-yasa/uast-parser-java-js",
+  "version": "0.1.43",
+  "description": "for converting specific language to UAST",
+  "dependencies": {
+    "@babel/core": "^7.18.0",
+    "@babel/parser": "^7.18.0",
+    "@babel/plugin-proposal-class-properties": "7.18.6",
+    "@babel/plugin-proposal-decorators": "^7.14.5",
+    "@babel/plugin-proposal-optional-chaining": "^7.16.0",
+    "@babel/plugin-syntax-export-default-from": "^7.16.7",
+    "@babel/plugin-syntax-json-strings": "^7.8.3",
+    "@babel/plugin-syntax-jsx": "^7.16.7",
+    "@babel/plugin-transform-react-jsx": "^7.16.0",
+    "@babel/plugin-transform-typescript": "^7.16.8",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "@babel/types": "^7.20.0",
+    "antlr4": "4.9.2",
+    "antlr4ts": "^0.5.0-alpha.4",
+    "babel-plugin-inline-import": "^3.0.0",
+    "fs-extra": "^7.0.1",
+    "jsondiffpatch": "^0.4.1",
+    "lodash": "^4.17.21",
+    "node-fetch": "^2.6.1",
+    "semver": "^7.3.8",
+    "typescript": "^4.1.2"
+  },
+  "scripts": {
+    "antlr-java": "antlr4ts -visitor antlr/Java.g4 -o src/frontend/java",
+    "test": "mocha tests/index.ts",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@ant-yasa/uast-spec": "^0.1.15-beta",
+    "@types/babel__traverse": "^7.14.2",
+    "@types/chai": "^4.2.16",
+    "@types/expect": "^24.3.0",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^14.14.41",
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
+    "antlr4ts-cli": "^0.5.0-alpha.4",
+    "assert": "^2.0.0",
+    "chai": "^4.2.0",
+    "esbuild": "^0.11.13",
+    "esbuild-register": "^2.5.0",
+    "eslint": "^7.15.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "fast-glob": "^3.2.7",
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1",
+    "prettier": "^2.2.1",
+    "shx": "^0.3.3",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "^9.1.1",
+    "util": "^0.12.3",
+    "yarn": "^1.17.3"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "repository": "git@github.com:antgroup/YASA-UAST.git",
+  "tnpm": {
+    "mode": "npm"
+  }
+}

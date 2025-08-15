@@ -1,0 +1,383 @@
+{
+  "type": "CompileUnit",
+  "body": [
+    {
+      "type": "PackageDeclaration",
+      "name": {
+        "type": "MemberAccess",
+        "object": {
+          "type": "Identifier",
+          "name": "consecutive",
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 1
+            },
+            "end": {
+              "line": 3,
+              "column": 30
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ConsecutiveSemicolons.java"
+          }
+        },
+        "property": {
+          "type": "Identifier",
+          "name": "semicolon",
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 1
+            },
+            "end": {
+              "line": 3,
+              "column": 30
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ConsecutiveSemicolons.java"
+          }
+        },
+        "computed": false,
+        "_meta": {},
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 1
+          },
+          "end": {
+            "line": 3,
+            "column": 30
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ConsecutiveSemicolons.java"
+        }
+      },
+      "_meta": {},
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 1
+        },
+        "end": {
+          "line": 3,
+          "column": 30
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ConsecutiveSemicolons.java"
+      }
+    },
+    {
+      "type": "VariableDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Map",
+        "_meta": {},
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 1
+          },
+          "end": {
+            "line": 5,
+            "column": 21
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ConsecutiveSemicolons.java"
+        }
+      },
+      "init": {
+        "type": "ImportExpression",
+        "from": {
+          "type": "Literal",
+          "value": "java.util.Map",
+          "literalType": "string",
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 1
+            },
+            "end": {
+              "line": 5,
+              "column": 21
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ConsecutiveSemicolons.java"
+          }
+        },
+        "local": null,
+        "imported": null,
+        "_meta": {},
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 1
+          },
+          "end": {
+            "line": 5,
+            "column": 21
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ConsecutiveSemicolons.java"
+        }
+      },
+      "cloned": false,
+      "varType": {
+        "type": "ScopedType",
+        "id": {
+          "type": "Identifier",
+          "name": "java.util.Map",
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 1
+            },
+            "end": {
+              "line": 5,
+              "column": 21
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ConsecutiveSemicolons.java"
+          }
+        },
+        "scope": null,
+        "typeArguments": null,
+        "_meta": {},
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 1
+          },
+          "end": {
+            "line": 5,
+            "column": 21
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ConsecutiveSemicolons.java"
+        }
+      },
+      "_meta": {},
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 1
+        },
+        "end": {
+          "line": 5,
+          "column": 21
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ConsecutiveSemicolons.java"
+      }
+    },
+    {
+      "type": "Noop",
+      "_meta": {},
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 22
+        },
+        "end": {
+          "line": 5,
+          "column": 22
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ConsecutiveSemicolons.java"
+      }
+    },
+    {
+      "type": "VariableDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Collections",
+        "_meta": {},
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 1
+          },
+          "end": {
+            "line": 7,
+            "column": 29
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ConsecutiveSemicolons.java"
+        }
+      },
+      "init": {
+        "type": "ImportExpression",
+        "from": {
+          "type": "Literal",
+          "value": "java.util.Collections",
+          "literalType": "string",
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 1
+            },
+            "end": {
+              "line": 7,
+              "column": 29
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ConsecutiveSemicolons.java"
+          }
+        },
+        "local": null,
+        "imported": null,
+        "_meta": {},
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 1
+          },
+          "end": {
+            "line": 7,
+            "column": 29
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ConsecutiveSemicolons.java"
+        }
+      },
+      "cloned": false,
+      "varType": {
+        "type": "ScopedType",
+        "id": {
+          "type": "Identifier",
+          "name": "java.util.Collections",
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 1
+            },
+            "end": {
+              "line": 7,
+              "column": 29
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ConsecutiveSemicolons.java"
+          }
+        },
+        "scope": null,
+        "typeArguments": null,
+        "_meta": {},
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 1
+          },
+          "end": {
+            "line": 7,
+            "column": 29
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ConsecutiveSemicolons.java"
+        }
+      },
+      "_meta": {},
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 1
+        },
+        "end": {
+          "line": 7,
+          "column": 29
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ConsecutiveSemicolons.java"
+      }
+    },
+    {
+      "type": "Noop",
+      "_meta": {},
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 30
+        },
+        "end": {
+          "line": 7,
+          "column": 30
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ConsecutiveSemicolons.java"
+      }
+    },
+    {
+      "type": "ExportStatement",
+      "argument": {
+        "type": "ClassDefinition",
+        "id": {
+          "type": "Identifier",
+          "name": "ConsecutiveSemi",
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 10,
+              "column": 14
+            },
+            "end": {
+              "line": 10,
+              "column": 14
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ConsecutiveSemicolons.java"
+          }
+        },
+        "body": [],
+        "supers": [],
+        "_meta": {
+          "modifiers": [
+            "public"
+          ],
+          "isPublic": true
+        },
+        "loc": {
+          "start": {
+            "line": 10,
+            "column": 8
+          },
+          "end": {
+            "line": 11,
+            "column": 1
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ConsecutiveSemicolons.java"
+        }
+      },
+      "alias": {
+        "type": "Identifier",
+        "name": "ConsecutiveSemi",
+        "_meta": {},
+        "loc": {
+          "start": {
+            "line": 10,
+            "column": 14
+          },
+          "end": {
+            "line": 10,
+            "column": 14
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ConsecutiveSemicolons.java"
+        }
+      },
+      "_meta": {},
+      "loc": {
+        "start": {
+          "line": 10,
+          "column": 1
+        },
+        "end": {
+          "line": 11,
+          "column": 1
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ConsecutiveSemicolons.java"
+      }
+    }
+  ],
+  "language": "java",
+  "languageVersion": "17",
+  "uri": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ConsecutiveSemicolons.java",
+  "version": "0.1.63",
+  "_meta": {
+    "qualifiedName": "consecutive.semicolon"
+  },
+  "loc": {
+    "start": {
+      "line": 3,
+      "column": 1
+    },
+    "end": {
+      "line": 11,
+      "column": 1
+    },
+    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ConsecutiveSemicolons.java"
+  }
+}

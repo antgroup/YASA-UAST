@@ -1,0 +1,416 @@
+{
+  "type": "CompileUnit",
+  "body": [
+    {
+      "type": "Sequence",
+      "expressions": [
+        {
+          "type": "VariableDeclaration",
+          "id": {
+            "type": "Identifier",
+            "name": "__tmp0__",
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 1
+              },
+              "end": {
+                "line": 1,
+                "column": 30
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/import.js"
+            }
+          },
+          "init": {
+            "type": "ImportExpression",
+            "from": {
+              "type": "Literal",
+              "value": "./m1.mjs",
+              "literalType": "string",
+              "_meta": {
+                "_extra": {
+                  "start": 18,
+                  "end": 28
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 19
+                },
+                "end": {
+                  "line": 1,
+                  "column": 29
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/import.js"
+              }
+            },
+            "local": null,
+            "imported": null,
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 1
+              },
+              "end": {
+                "line": 1,
+                "column": 30
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/import.js"
+            }
+          },
+          "cloned": false,
+          "varType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {}
+          },
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 1
+            },
+            "end": {
+              "line": 1,
+              "column": 30
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/import.js"
+          }
+        },
+        {
+          "type": "VariableDeclaration",
+          "id": {
+            "type": "Identifier",
+            "name": "foo",
+            "_meta": {
+              "_extra": {
+                "start": 8,
+                "end": 11
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 9
+              },
+              "end": {
+                "line": 1,
+                "column": 12
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/import.js"
+            }
+          },
+          "init": {
+            "type": "MemberAccess",
+            "object": {
+              "type": "Identifier",
+              "name": "__tmp0__",
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 1
+                },
+                "end": {
+                  "line": 1,
+                  "column": 30
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/import.js"
+              }
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "foo",
+              "_meta": {
+                "_extra": {
+                  "start": 8,
+                  "end": 11
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 9
+                },
+                "end": {
+                  "line": 1,
+                  "column": 12
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/import.js"
+              }
+            },
+            "computed": false,
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 9
+              },
+              "end": {
+                "line": 1,
+                "column": 12
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/import.js"
+            }
+          },
+          "cloned": false,
+          "varType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {}
+          },
+          "_meta": {
+            "_extra": {
+              "start": 8,
+              "end": 11
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 9
+            },
+            "end": {
+              "line": 1,
+              "column": 12
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/import.js"
+          }
+        }
+      ],
+      "_meta": {
+        "_extra": {
+          "end": 29
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 1
+        },
+        "end": {
+          "line": 1,
+          "column": 30
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/import.js"
+      }
+    },
+    {
+      "type": "Sequence",
+      "expressions": [
+        {
+          "type": "VariableDeclaration",
+          "id": {
+            "type": "Identifier",
+            "name": "__tmp1__",
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 1
+              },
+              "end": {
+                "line": 3,
+                "column": 59
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/import.js"
+            }
+          },
+          "init": {
+            "type": "ImportExpression",
+            "from": {
+              "type": "Literal",
+              "value": "/alipayLogger_v1.1.1.js/alipayLogger",
+              "literalType": "string",
+              "_meta": {
+                "_extra": {
+                  "start": 51,
+                  "end": 89
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 21
+                },
+                "end": {
+                  "line": 3,
+                  "column": 59
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/import.js"
+              }
+            },
+            "local": null,
+            "imported": null,
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 1
+              },
+              "end": {
+                "line": 3,
+                "column": 59
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/import.js"
+            }
+          },
+          "cloned": false,
+          "varType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {}
+          },
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 1
+            },
+            "end": {
+              "line": 3,
+              "column": 59
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/import.js"
+          }
+        },
+        {
+          "type": "VariableDeclaration",
+          "id": {
+            "type": "Identifier",
+            "name": "monitor",
+            "_meta": {
+              "_extra": {
+                "start": 38,
+                "end": 45
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 8
+              },
+              "end": {
+                "line": 3,
+                "column": 15
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/import.js"
+            }
+          },
+          "init": {
+            "type": "MemberAccess",
+            "object": {
+              "type": "Identifier",
+              "name": "__tmp1__",
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 1
+                },
+                "end": {
+                  "line": 3,
+                  "column": 59
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/import.js"
+              }
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "default",
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 8
+                },
+                "end": {
+                  "line": 3,
+                  "column": 15
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/import.js"
+              }
+            },
+            "computed": false,
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 8
+              },
+              "end": {
+                "line": 3,
+                "column": 15
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/import.js"
+            }
+          },
+          "cloned": false,
+          "varType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {}
+          },
+          "_meta": {
+            "_extra": {
+              "start": 38,
+              "end": 45
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 8
+            },
+            "end": {
+              "line": 3,
+              "column": 15
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/import.js"
+          }
+        }
+      ],
+      "_meta": {
+        "_extra": {
+          "start": 31,
+          "end": 89
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 1
+        },
+        "end": {
+          "line": 3,
+          "column": 59
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/import.js"
+      }
+    }
+  ],
+  "language": "javascript",
+  "languageVersion": null,
+  "uri": "",
+  "version": "0.1.63",
+  "_meta": {
+    "_extra": {
+      "end": 90,
+      "directives": []
+    }
+  },
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 1
+    },
+    "end": {
+      "line": 4,
+      "column": 1
+    },
+    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/import.js"
+  }
+}

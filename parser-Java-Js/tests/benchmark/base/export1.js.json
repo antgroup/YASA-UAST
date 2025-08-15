@@ -1,0 +1,251 @@
+{
+  "type": "CompileUnit",
+  "body": [
+    {
+      "type": "Sequence",
+      "expressions": [
+        {
+          "type": "VariableDeclaration",
+          "id": {
+            "type": "Identifier",
+            "name": "foo",
+            "_meta": {
+              "_extra": {
+                "start": 11,
+                "end": 14
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 12
+              },
+              "end": {
+                "line": 1,
+                "column": 15
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export1.js"
+            }
+          },
+          "init": {
+            "type": "Identifier",
+            "name": "__taint_src",
+            "_meta": {
+              "_extra": {
+                "start": 17,
+                "end": 28
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 18
+              },
+              "end": {
+                "line": 1,
+                "column": 29
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export1.js"
+            }
+          },
+          "cloned": false,
+          "varType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {}
+          },
+          "_meta": {
+            "_extra": {
+              "start": 7,
+              "end": 29
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 12
+            },
+            "end": {
+              "line": 1,
+              "column": 29
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export1.js"
+          }
+        },
+        {
+          "type": "ExportStatement",
+          "argument": {
+            "type": "Identifier",
+            "name": "foo",
+            "_meta": {
+              "_extra": {
+                "start": 11,
+                "end": 14
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 12
+              },
+              "end": {
+                "line": 1,
+                "column": 15
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export1.js"
+            }
+          },
+          "alias": {
+            "type": "Identifier",
+            "name": "foo",
+            "_meta": {
+              "_extra": {
+                "start": 11,
+                "end": 14
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 12
+              },
+              "end": {
+                "line": 1,
+                "column": 15
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export1.js"
+            }
+          },
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 1
+            },
+            "end": {
+              "line": 1,
+              "column": 30
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export1.js"
+          }
+        }
+      ],
+      "_meta": {
+        "_extra": {
+          "end": 29
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 1
+        },
+        "end": {
+          "line": 1,
+          "column": 30
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export1.js"
+      }
+    },
+    {
+      "type": "Sequence",
+      "expressions": [
+        {
+          "type": "ExportStatement",
+          "argument": {
+            "type": "Identifier",
+            "name": "foo",
+            "_meta": {
+              "_extra": {
+                "start": 38,
+                "end": 41
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 9
+              },
+              "end": {
+                "line": 2,
+                "column": 12
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export1.js"
+            }
+          },
+          "alias": {
+            "type": "Identifier",
+            "name": "f",
+            "_meta": {
+              "_extra": {
+                "start": 45,
+                "end": 46
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 16
+              },
+              "end": {
+                "line": 2,
+                "column": 17
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export1.js"
+            }
+          },
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 1
+            },
+            "end": {
+              "line": 2,
+              "column": 18
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export1.js"
+          }
+        }
+      ],
+      "_meta": {
+        "_extra": {
+          "start": 30,
+          "end": 47
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 1
+        },
+        "end": {
+          "line": 2,
+          "column": 18
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export1.js"
+      }
+    }
+  ],
+  "language": "javascript",
+  "languageVersion": null,
+  "uri": "",
+  "version": "0.1.63",
+  "_meta": {
+    "_extra": {
+      "end": 48,
+      "directives": []
+    }
+  },
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 1
+    },
+    "end": {
+      "line": 3,
+      "column": 1
+    },
+    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export1.js"
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "type": "CompileUnit",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "obj",
+        "_meta": {
+          "_extra": {
+            "start": 6,
+            "end": 9
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 7
+          },
+          "end": {
+            "line": 1,
+            "column": 10
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/empty.js"
+        }
+      },
+      "init": {
+        "type": "Literal",
+        "value": 1,
+        "literalType": "number",
+        "_meta": {
+          "_extra": {
+            "start": 12,
+            "end": 13
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 13
+          },
+          "end": {
+            "line": 1,
+            "column": 14
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/empty.js"
+        }
+      },
+      "cloned": false,
+      "varType": {
+        "type": "DynamicType",
+        "id": null,
+        "_meta": {}
+      },
+      "_meta": {
+        "_extra": {
+          "end": 14
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 7
+        },
+        "end": {
+          "line": 1,
+          "column": 14
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/empty.js"
+      }
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "BinaryExpression",
+        "operator": "==",
+        "left": {
+          "type": "Identifier",
+          "name": "obj",
+          "_meta": {
+            "_extra": {
+              "start": 19,
+              "end": 22
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 5
+            },
+            "end": {
+              "line": 2,
+              "column": 8
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/empty.js"
+          }
+        },
+        "right": {
+          "type": "Literal",
+          "value": 1,
+          "literalType": "number",
+          "_meta": {
+            "_extra": {
+              "start": 26,
+              "end": 27
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 12
+            },
+            "end": {
+              "line": 2,
+              "column": 13
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/empty.js"
+          }
+        },
+        "_meta": {
+          "_extra": {
+            "start": 19,
+            "end": 27
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 5
+          },
+          "end": {
+            "line": 2,
+            "column": 13
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/empty.js"
+        }
+      },
+      "consequent": {
+        "type": "ScopedStatement",
+        "body": [],
+        "id": null,
+        "_meta": {
+          "_extra": {
+            "start": 29,
+            "end": 33,
+            "directives": []
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 15
+          },
+          "end": {
+            "line": 4,
+            "column": 2
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/empty.js"
+        }
+      },
+      "alternative": null,
+      "_meta": {
+        "_extra": {
+          "start": 15,
+          "end": 33
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 1
+        },
+        "end": {
+          "line": 4,
+          "column": 2
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/empty.js"
+      }
+    }
+  ],
+  "language": "javascript",
+  "languageVersion": null,
+  "uri": "",
+  "version": "0.1.63",
+  "_meta": {
+    "_extra": {
+      "end": 34,
+      "directives": []
+    }
+  },
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 1
+    },
+    "end": {
+      "line": 5,
+      "column": 1
+    },
+    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/empty.js"
+  }
+}

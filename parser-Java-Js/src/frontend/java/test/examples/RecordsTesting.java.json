@@ -1,0 +1,1466 @@
+{
+  "type": "CompileUnit",
+  "body": [
+    {
+      "type": "ExportStatement",
+      "argument": {
+        "type": "ClassDefinition",
+        "id": {
+          "type": "Identifier",
+          "name": "RecordsTesting",
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 14
+            },
+            "end": {
+              "line": 1,
+              "column": 14
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+          }
+        },
+        "body": [
+          {
+            "type": "ClassDefinition",
+            "id": {
+              "type": "Identifier",
+              "name": "BindingsSnapshot",
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 19
+                },
+                "end": {
+                  "line": 2,
+                  "column": 19
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+              }
+            },
+            "body": [
+              {
+                "type": "FunctionDefinition",
+                "id": {
+                  "type": "Identifier",
+                  "name": "__CTOR__",
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 5
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 45
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                  }
+                },
+                "parameters": [
+                  {
+                    "type": "VariableDeclaration",
+                    "id": {
+                      "type": "Identifier",
+                      "name": "a",
+                      "_meta": {},
+                      "loc": {
+                        "start": {
+                          "line": 2,
+                          "column": 40
+                        },
+                        "end": {
+                          "line": 2,
+                          "column": 40
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                      }
+                    },
+                    "init": null,
+                    "cloned": false,
+                    "varType": {
+                      "type": "PrimitiveType",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "int",
+                        "_meta": {},
+                        "loc": {
+                          "start": {
+                            "line": 2,
+                            "column": 36
+                          },
+                          "end": {
+                            "line": 2,
+                            "column": 36
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                        }
+                      },
+                      "typeArguments": null,
+                      "_meta": {},
+                      "loc": {
+                        "start": {
+                          "line": 2,
+                          "column": 36
+                        },
+                        "end": {
+                          "line": 2,
+                          "column": 36
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                      }
+                    },
+                    "_meta": {},
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 36
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 40
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                    }
+                  }
+                ],
+                "returnType": {
+                  "type": "PrimitiveType",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "void",
+                    "_meta": {},
+                    "loc": {
+                      "start": {
+                        "line": 2,
+                        "column": 5
+                      },
+                      "end": {
+                        "line": 2,
+                        "column": 45
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                    }
+                  },
+                  "typeArguments": null,
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 5
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 45
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                  }
+                },
+                "body": {
+                  "type": "ScopedStatement",
+                  "body": [
+                    {
+                      "type": "AssignmentExpression",
+                      "left": {
+                        "type": "MemberAccess",
+                        "object": {
+                          "type": "ThisExpression",
+                          "_meta": {},
+                          "loc": {
+                            "start": {
+                              "line": 2,
+                              "column": 5
+                            },
+                            "end": {
+                              "line": 2,
+                              "column": 45
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                          }
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "a",
+                          "_meta": {},
+                          "loc": {
+                            "start": {
+                              "line": 2,
+                              "column": 40
+                            },
+                            "end": {
+                              "line": 2,
+                              "column": 40
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                          }
+                        },
+                        "computed": false,
+                        "_meta": {},
+                        "loc": {
+                          "start": {
+                            "line": 2,
+                            "column": 5
+                          },
+                          "end": {
+                            "line": 2,
+                            "column": 45
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                        }
+                      },
+                      "right": {
+                        "type": "Identifier",
+                        "name": "a",
+                        "_meta": {},
+                        "loc": {
+                          "start": {
+                            "line": 2,
+                            "column": 40
+                          },
+                          "end": {
+                            "line": 2,
+                            "column": 40
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                        }
+                      },
+                      "operator": "=",
+                      "cloned": null,
+                      "_meta": {},
+                      "loc": {
+                        "start": {
+                          "line": 2,
+                          "column": 5
+                        },
+                        "end": {
+                          "line": 2,
+                          "column": 45
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                      }
+                    }
+                  ],
+                  "id": null,
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 5
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 45
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                  }
+                },
+                "modifiers": [],
+                "_meta": {
+                  "isConstructor": true
+                },
+                "loc": {
+                  "start": {
+                    "line": 2,
+                    "column": 5
+                  },
+                  "end": {
+                    "line": 2,
+                    "column": 45
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                }
+              }
+            ],
+            "supers": [],
+            "_meta": {
+              "modifiers": [
+                "public"
+              ],
+              "isPublic": true
+            },
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 5
+              },
+              "end": {
+                "line": 2,
+                "column": 45
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+            }
+          },
+          {
+            "type": "ClassDefinition",
+            "id": {
+              "type": "Identifier",
+              "name": "OtherRecord",
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 20
+                },
+                "end": {
+                  "line": 4,
+                  "column": 20
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+              }
+            },
+            "body": [
+              {
+                "type": "FunctionDefinition",
+                "id": {
+                  "type": "Identifier",
+                  "name": "__CTOR__",
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 5
+                    },
+                    "end": {
+                      "line": 8,
+                      "column": 5
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                  }
+                },
+                "parameters": [
+                  {
+                    "type": "VariableDeclaration",
+                    "id": {
+                      "type": "Identifier",
+                      "name": "b",
+                      "_meta": {},
+                      "loc": {
+                        "start": {
+                          "line": 4,
+                          "column": 36
+                        },
+                        "end": {
+                          "line": 4,
+                          "column": 36
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                      }
+                    },
+                    "init": null,
+                    "cloned": false,
+                    "varType": {
+                      "type": "PrimitiveType",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "int",
+                        "_meta": {},
+                        "loc": {
+                          "start": {
+                            "line": 4,
+                            "column": 32
+                          },
+                          "end": {
+                            "line": 4,
+                            "column": 32
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                        }
+                      },
+                      "typeArguments": null,
+                      "_meta": {},
+                      "loc": {
+                        "start": {
+                          "line": 4,
+                          "column": 32
+                        },
+                        "end": {
+                          "line": 4,
+                          "column": 32
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                      }
+                    },
+                    "_meta": {},
+                    "loc": {
+                      "start": {
+                        "line": 4,
+                        "column": 32
+                      },
+                      "end": {
+                        "line": 4,
+                        "column": 36
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                    }
+                  }
+                ],
+                "returnType": {
+                  "type": "PrimitiveType",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "void",
+                    "_meta": {},
+                    "loc": {
+                      "start": {
+                        "line": 4,
+                        "column": 5
+                      },
+                      "end": {
+                        "line": 8,
+                        "column": 5
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                    }
+                  },
+                  "typeArguments": null,
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 5
+                    },
+                    "end": {
+                      "line": 8,
+                      "column": 5
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                  }
+                },
+                "body": {
+                  "type": "ScopedStatement",
+                  "body": [
+                    {
+                      "type": "AssignmentExpression",
+                      "left": {
+                        "type": "MemberAccess",
+                        "object": {
+                          "type": "ThisExpression",
+                          "_meta": {},
+                          "loc": {
+                            "start": {
+                              "line": 4,
+                              "column": 5
+                            },
+                            "end": {
+                              "line": 8,
+                              "column": 5
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                          }
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "b",
+                          "_meta": {},
+                          "loc": {
+                            "start": {
+                              "line": 4,
+                              "column": 36
+                            },
+                            "end": {
+                              "line": 4,
+                              "column": 36
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                          }
+                        },
+                        "computed": false,
+                        "_meta": {},
+                        "loc": {
+                          "start": {
+                            "line": 4,
+                            "column": 5
+                          },
+                          "end": {
+                            "line": 8,
+                            "column": 36
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                        }
+                      },
+                      "right": {
+                        "type": "Identifier",
+                        "name": "b",
+                        "_meta": {},
+                        "loc": {
+                          "start": {
+                            "line": 4,
+                            "column": 36
+                          },
+                          "end": {
+                            "line": 4,
+                            "column": 36
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                        }
+                      },
+                      "operator": "=",
+                      "cloned": null,
+                      "_meta": {},
+                      "loc": {
+                        "start": {
+                          "line": 4,
+                          "column": 5
+                        },
+                        "end": {
+                          "line": 8,
+                          "column": 36
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                      }
+                    }
+                  ],
+                  "id": null,
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 5
+                    },
+                    "end": {
+                      "line": 8,
+                      "column": 36
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                  }
+                },
+                "modifiers": [],
+                "_meta": {
+                  "isConstructor": true
+                },
+                "loc": {
+                  "start": {
+                    "line": 4,
+                    "column": 5
+                  },
+                  "end": {
+                    "line": 8,
+                    "column": 36
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                }
+              }
+            ],
+            "supers": [],
+            "_meta": {
+              "modifiers": [
+                "private"
+              ],
+              "isPrivate": true
+            },
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 5
+              },
+              "end": {
+                "line": 8,
+                "column": 5
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+            }
+          },
+          {
+            "type": "ClassDefinition",
+            "id": {
+              "type": "Identifier",
+              "name": "NextRecord",
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 10,
+                  "column": 12
+                },
+                "end": {
+                  "line": 10,
+                  "column": 12
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+              }
+            },
+            "body": [
+              {
+                "type": "FunctionDefinition",
+                "id": {
+                  "type": "Identifier",
+                  "name": "_CTOR_",
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 11,
+                      "column": 9
+                    },
+                    "end": {
+                      "line": 13,
+                      "column": 9
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                  }
+                },
+                "parameters": [
+                  {
+                    "type": "VariableDeclaration",
+                    "id": {
+                      "type": "Identifier",
+                      "name": "c",
+                      "_meta": {},
+                      "loc": {
+                        "start": {
+                          "line": 11,
+                          "column": 31
+                        },
+                        "end": {
+                          "line": 11,
+                          "column": 31
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                      }
+                    },
+                    "init": null,
+                    "cloned": false,
+                    "varType": {
+                      "type": "PrimitiveType",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "int",
+                        "_meta": {},
+                        "loc": {
+                          "start": {
+                            "line": 11,
+                            "column": 27
+                          },
+                          "end": {
+                            "line": 11,
+                            "column": 27
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                        }
+                      },
+                      "typeArguments": null,
+                      "_meta": {},
+                      "loc": {
+                        "start": {
+                          "line": 11,
+                          "column": 27
+                        },
+                        "end": {
+                          "line": 11,
+                          "column": 27
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                      }
+                    },
+                    "_meta": {},
+                    "loc": {
+                      "start": {
+                        "line": 11,
+                        "column": 27
+                      },
+                      "end": {
+                        "line": 11,
+                        "column": 31
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                    }
+                  }
+                ],
+                "returnType": {
+                  "type": "ScopedType",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "RecordsTesting",
+                    "_meta": {},
+                    "loc": {
+                      "start": {
+                        "line": 11,
+                        "column": 9
+                      },
+                      "end": {
+                        "line": 13,
+                        "column": 9
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                    }
+                  },
+                  "scope": null,
+                  "typeArguments": null,
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 11,
+                      "column": 9
+                    },
+                    "end": {
+                      "line": 13,
+                      "column": 9
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                  }
+                },
+                "body": {
+                  "type": "ScopedStatement",
+                  "body": [
+                    {
+                      "type": "AssignmentExpression",
+                      "left": {
+                        "type": "MemberAccess",
+                        "object": {
+                          "type": "ThisExpression",
+                          "_meta": {},
+                          "loc": {
+                            "start": {
+                              "line": 12,
+                              "column": 13
+                            },
+                            "end": {
+                              "line": 12,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                          }
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "c",
+                          "_meta": {},
+                          "loc": {
+                            "start": {
+                              "line": 12,
+                              "column": 18
+                            },
+                            "end": {
+                              "line": 12,
+                              "column": 18
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                          }
+                        },
+                        "computed": false,
+                        "_meta": {},
+                        "loc": {
+                          "start": {
+                            "line": 12,
+                            "column": 13
+                          },
+                          "end": {
+                            "line": 12,
+                            "column": 18
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                        }
+                      },
+                      "right": {
+                        "type": "Identifier",
+                        "name": "c",
+                        "_meta": {},
+                        "loc": {
+                          "start": {
+                            "line": 12,
+                            "column": 22
+                          },
+                          "end": {
+                            "line": 12,
+                            "column": 22
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                        }
+                      },
+                      "operator": "=",
+                      "cloned": null,
+                      "_meta": {},
+                      "loc": {
+                        "start": {
+                          "line": 12,
+                          "column": 13
+                        },
+                        "end": {
+                          "line": 12,
+                          "column": 23
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                      }
+                    }
+                  ],
+                  "id": null,
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 11,
+                      "column": 68
+                    },
+                    "end": {
+                      "line": 13,
+                      "column": 9
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                  }
+                },
+                "modifiers": [],
+                "_meta": {
+                  "isConstructor": true,
+                  "modifiers": [
+                    "public"
+                  ],
+                  "isPublic": true
+                },
+                "loc": {
+                  "start": {
+                    "line": 11,
+                    "column": 9
+                  },
+                  "end": {
+                    "line": 13,
+                    "column": 9
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                }
+              },
+              {
+                "type": "FunctionDefinition",
+                "id": {
+                  "type": "Identifier",
+                  "name": "__CTOR__",
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 10,
+                      "column": 5
+                    },
+                    "end": {
+                      "line": 14,
+                      "column": 5
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                  }
+                },
+                "parameters": [
+                  {
+                    "type": "VariableDeclaration",
+                    "id": {
+                      "type": "Identifier",
+                      "name": "c",
+                      "_meta": {},
+                      "loc": {
+                        "start": {
+                          "line": 10,
+                          "column": 27
+                        },
+                        "end": {
+                          "line": 10,
+                          "column": 27
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                      }
+                    },
+                    "init": null,
+                    "cloned": false,
+                    "varType": {
+                      "type": "PrimitiveType",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "int",
+                        "_meta": {},
+                        "loc": {
+                          "start": {
+                            "line": 10,
+                            "column": 23
+                          },
+                          "end": {
+                            "line": 10,
+                            "column": 23
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                        }
+                      },
+                      "typeArguments": null,
+                      "_meta": {},
+                      "loc": {
+                        "start": {
+                          "line": 10,
+                          "column": 23
+                        },
+                        "end": {
+                          "line": 10,
+                          "column": 23
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                      }
+                    },
+                    "_meta": {},
+                    "loc": {
+                      "start": {
+                        "line": 10,
+                        "column": 23
+                      },
+                      "end": {
+                        "line": 10,
+                        "column": 27
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                    }
+                  }
+                ],
+                "returnType": {
+                  "type": "PrimitiveType",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "void",
+                    "_meta": {},
+                    "loc": {
+                      "start": {
+                        "line": 10,
+                        "column": 5
+                      },
+                      "end": {
+                        "line": 14,
+                        "column": 5
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                    }
+                  },
+                  "typeArguments": null,
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 10,
+                      "column": 5
+                    },
+                    "end": {
+                      "line": 14,
+                      "column": 5
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                  }
+                },
+                "body": {
+                  "type": "ScopedStatement",
+                  "body": [
+                    {
+                      "type": "AssignmentExpression",
+                      "left": {
+                        "type": "MemberAccess",
+                        "object": {
+                          "type": "ThisExpression",
+                          "_meta": {},
+                          "loc": {
+                            "start": {
+                              "line": 10,
+                              "column": 5
+                            },
+                            "end": {
+                              "line": 14,
+                              "column": 5
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                          }
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "c",
+                          "_meta": {},
+                          "loc": {
+                            "start": {
+                              "line": 10,
+                              "column": 27
+                            },
+                            "end": {
+                              "line": 10,
+                              "column": 27
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                          }
+                        },
+                        "computed": false,
+                        "_meta": {},
+                        "loc": {
+                          "start": {
+                            "line": 10,
+                            "column": 5
+                          },
+                          "end": {
+                            "line": 14,
+                            "column": 27
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                        }
+                      },
+                      "right": {
+                        "type": "Identifier",
+                        "name": "c",
+                        "_meta": {},
+                        "loc": {
+                          "start": {
+                            "line": 10,
+                            "column": 27
+                          },
+                          "end": {
+                            "line": 10,
+                            "column": 27
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                        }
+                      },
+                      "operator": "=",
+                      "cloned": null,
+                      "_meta": {},
+                      "loc": {
+                        "start": {
+                          "line": 10,
+                          "column": 5
+                        },
+                        "end": {
+                          "line": 14,
+                          "column": 27
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                      }
+                    }
+                  ],
+                  "id": null,
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 10,
+                      "column": 5
+                    },
+                    "end": {
+                      "line": 14,
+                      "column": 27
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                  }
+                },
+                "modifiers": [],
+                "_meta": {
+                  "isConstructor": true
+                },
+                "loc": {
+                  "start": {
+                    "line": 10,
+                    "column": 5
+                  },
+                  "end": {
+                    "line": 14,
+                    "column": 27
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                }
+              }
+            ],
+            "supers": [],
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 10,
+                "column": 5
+              },
+              "end": {
+                "line": 14,
+                "column": 5
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+            }
+          },
+          {
+            "type": "ClassDefinition",
+            "id": {
+              "type": "Identifier",
+              "name": "InnerInterface",
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 15,
+                  "column": 15
+                },
+                "end": {
+                  "line": 15,
+                  "column": 15
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+              }
+            },
+            "body": [
+              {
+                "type": "ScopedStatement",
+                "body": [
+                  {
+                    "type": "FunctionDefinition",
+                    "id": {
+                      "type": "Identifier",
+                      "name": "PoolKey",
+                      "_meta": {},
+                      "loc": {
+                        "start": {
+                          "line": 16,
+                          "column": 16
+                        },
+                        "end": {
+                          "line": 16,
+                          "column": 16
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                      }
+                    },
+                    "parameters": [
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "name",
+                          "_meta": {},
+                          "loc": {
+                            "start": {
+                              "line": 16,
+                              "column": 29
+                            },
+                            "end": {
+                              "line": 16,
+                              "column": 29
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                          }
+                        },
+                        "init": null,
+                        "cloned": false,
+                        "varType": {
+                          "type": "ScopedType",
+                          "id": {
+                            "type": "Identifier",
+                            "name": "Name",
+                            "_meta": {},
+                            "loc": {
+                              "start": {
+                                "line": 16,
+                                "column": 24
+                              },
+                              "end": {
+                                "line": 16,
+                                "column": 24
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                            }
+                          },
+                          "scope": null,
+                          "typeArguments": null,
+                          "_meta": {},
+                          "loc": {
+                            "start": {
+                              "line": 16,
+                              "column": 24
+                            },
+                            "end": {
+                              "line": 16,
+                              "column": 24
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                          }
+                        },
+                        "_meta": {},
+                        "loc": {
+                          "start": {
+                            "line": 16,
+                            "column": 24
+                          },
+                          "end": {
+                            "line": 16,
+                            "column": 29
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                        }
+                      },
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "bsmKey",
+                          "_meta": {},
+                          "loc": {
+                            "start": {
+                              "line": 16,
+                              "column": 42
+                            },
+                            "end": {
+                              "line": 16,
+                              "column": 42
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                          }
+                        },
+                        "init": null,
+                        "cloned": false,
+                        "varType": {
+                          "type": "ScopedType",
+                          "id": {
+                            "type": "Identifier",
+                            "name": "BsmKey",
+                            "_meta": {},
+                            "loc": {
+                              "start": {
+                                "line": 16,
+                                "column": 35
+                              },
+                              "end": {
+                                "line": 16,
+                                "column": 35
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                            }
+                          },
+                          "scope": null,
+                          "typeArguments": null,
+                          "_meta": {},
+                          "loc": {
+                            "start": {
+                              "line": 16,
+                              "column": 35
+                            },
+                            "end": {
+                              "line": 16,
+                              "column": 35
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                          }
+                        },
+                        "_meta": {},
+                        "loc": {
+                          "start": {
+                            "line": 16,
+                            "column": 35
+                          },
+                          "end": {
+                            "line": 16,
+                            "column": 42
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                        }
+                      },
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "dynamicType",
+                          "_meta": {},
+                          "loc": {
+                            "start": {
+                              "line": 16,
+                              "column": 57
+                            },
+                            "end": {
+                              "line": 16,
+                              "column": 57
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                          }
+                        },
+                        "init": null,
+                        "cloned": false,
+                        "varType": {
+                          "type": "ScopedType",
+                          "id": {
+                            "type": "Identifier",
+                            "name": "Object",
+                            "_meta": {},
+                            "loc": {
+                              "start": {
+                                "line": 16,
+                                "column": 50
+                              },
+                              "end": {
+                                "line": 16,
+                                "column": 50
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                            }
+                          },
+                          "scope": null,
+                          "typeArguments": null,
+                          "_meta": {},
+                          "loc": {
+                            "start": {
+                              "line": 16,
+                              "column": 50
+                            },
+                            "end": {
+                              "line": 16,
+                              "column": 50
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                          }
+                        },
+                        "_meta": {},
+                        "loc": {
+                          "start": {
+                            "line": 16,
+                            "column": 50
+                          },
+                          "end": {
+                            "line": 16,
+                            "column": 57
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                        }
+                      }
+                    ],
+                    "returnType": {
+                      "type": "ScopedType",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "record",
+                        "_meta": {},
+                        "loc": {
+                          "start": {
+                            "line": 16,
+                            "column": 9
+                          },
+                          "end": {
+                            "line": 16,
+                            "column": 9
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                        }
+                      },
+                      "scope": null,
+                      "typeArguments": null,
+                      "_meta": {},
+                      "loc": {
+                        "start": {
+                          "line": 16,
+                          "column": 9
+                        },
+                        "end": {
+                          "line": 16,
+                          "column": 9
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                      }
+                    },
+                    "body": {
+                      "type": "ScopedStatement",
+                      "body": [],
+                      "id": null,
+                      "_meta": {},
+                      "loc": {
+                        "start": {
+                          "line": 16,
+                          "column": 70
+                        },
+                        "end": {
+                          "line": 16,
+                          "column": 71
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                      }
+                    },
+                    "modifiers": [],
+                    "_meta": {},
+                    "loc": {
+                      "start": {
+                        "line": 16,
+                        "column": 9
+                      },
+                      "end": {
+                        "line": 16,
+                        "column": 71
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                    }
+                  }
+                ],
+                "id": null,
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 16,
+                    "column": 9
+                  },
+                  "end": {
+                    "line": 16,
+                    "column": 71
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+                }
+              }
+            ],
+            "supers": [],
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 15,
+                "column": 5
+              },
+              "end": {
+                "line": 17,
+                "column": 5
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+            }
+          }
+        ],
+        "supers": [],
+        "_meta": {
+          "modifiers": [
+            "public"
+          ],
+          "isPublic": true
+        },
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 8
+          },
+          "end": {
+            "line": 18,
+            "column": 1
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+        }
+      },
+      "alias": {
+        "type": "Identifier",
+        "name": "RecordsTesting",
+        "_meta": {},
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 14
+          },
+          "end": {
+            "line": 1,
+            "column": 14
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+        }
+      },
+      "_meta": {},
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 1
+        },
+        "end": {
+          "line": 18,
+          "column": 1
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+      }
+    }
+  ],
+  "language": "java",
+  "languageVersion": "17",
+  "uri": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java",
+  "version": "0.1.63",
+  "_meta": {},
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 1
+    },
+    "end": {
+      "line": 18,
+      "column": 1
+    },
+    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/RecordsTesting.java"
+  }
+}

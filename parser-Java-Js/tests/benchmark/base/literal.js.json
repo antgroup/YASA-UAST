@@ -1,0 +1,1234 @@
+{
+  "type": "CompileUnit",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "Literal",
+        "value": 3,
+        "literalType": "number",
+        "_meta": {
+          "_extra": {
+            "end": 1
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 1
+          },
+          "end": {
+            "line": 1,
+            "column": 2
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+        }
+      },
+      "_meta": {
+        "_extra": {
+          "end": 2
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 1
+        },
+        "end": {
+          "line": 1,
+          "column": 3
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "Literal",
+        "value": "hello",
+        "literalType": "string",
+        "_meta": {
+          "_extra": {
+            "start": 4,
+            "end": 11
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 1
+          },
+          "end": {
+            "line": 3,
+            "column": 8
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+        }
+      },
+      "_meta": {
+        "_extra": {
+          "start": 4,
+          "end": 12
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 1
+        },
+        "end": {
+          "line": 3,
+          "column": 9
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "Literal",
+        "value": 1192227,
+        "literalType": "number",
+        "_meta": {
+          "_extra": {
+            "start": 14,
+            "end": 22
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 1
+          },
+          "end": {
+            "line": 5,
+            "column": 9
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+        }
+      },
+      "_meta": {
+        "_extra": {
+          "start": 14,
+          "end": 23
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 1
+        },
+        "end": {
+          "line": 5,
+          "column": 10
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "Literal",
+        "value": "ab+c",
+        "literalType": "string",
+        "_meta": {
+          "_extra": {
+            "start": 25,
+            "end": 31
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 1
+          },
+          "end": {
+            "line": 7,
+            "column": 7
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+        }
+      },
+      "_meta": {
+        "_extra": {
+          "start": 25,
+          "end": 32
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 1
+        },
+        "end": {
+          "line": 7,
+          "column": 8
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "Literal",
+        "value": "Roses are red,\nViolets are blue.\nSugar is sweet,\nand so is foo.",
+        "literalType": "string",
+        "_meta": {
+          "_extra": {
+            "start": 34,
+            "end": 99
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 9,
+            "column": 1
+          },
+          "end": {
+            "line": 12,
+            "column": 16
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+        }
+      },
+      "_meta": {
+        "_extra": {
+          "start": 34,
+          "end": 99
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 1
+        },
+        "end": {
+          "line": 12,
+          "column": 16
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "Literal",
+        "value": true,
+        "literalType": "boolean",
+        "_meta": {
+          "_extra": {
+            "start": 101,
+            "end": 105
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 1
+          },
+          "end": {
+            "line": 14,
+            "column": 5
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+        }
+      },
+      "_meta": {
+        "_extra": {
+          "start": 101,
+          "end": 106
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 1
+        },
+        "end": {
+          "line": 14,
+          "column": 6
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "Literal",
+        "value": false,
+        "literalType": "boolean",
+        "_meta": {
+          "_extra": {
+            "start": 106,
+            "end": 111
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 6
+          },
+          "end": {
+            "line": 14,
+            "column": 11
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+        }
+      },
+      "_meta": {
+        "_extra": {
+          "start": 106,
+          "end": 112
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 6
+        },
+        "end": {
+          "line": 14,
+          "column": 12
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "Literal",
+        "value": null,
+        "literalType": "null",
+        "_meta": {
+          "_extra": {
+            "start": 114,
+            "end": 118
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 16,
+            "column": 1
+          },
+          "end": {
+            "line": 16,
+            "column": 5
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+        }
+      },
+      "_meta": {
+        "_extra": {
+          "start": 114,
+          "end": 119
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 1
+        },
+        "end": {
+          "line": 16,
+          "column": 6
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "Identifier",
+        "name": "undefined",
+        "_meta": {
+          "_extra": {
+            "start": 121,
+            "end": 130
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 18,
+            "column": 1
+          },
+          "end": {
+            "line": 18,
+            "column": 10
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+        }
+      },
+      "_meta": {
+        "_extra": {
+          "start": 121,
+          "end": 131
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 1
+        },
+        "end": {
+          "line": 18,
+          "column": 11
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "BinaryExpression",
+        "operator": "+",
+        "left": {
+          "type": "Literal",
+          "value": "Fifteen is ",
+          "literalType": "string",
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 20,
+              "column": 2
+            },
+            "end": {
+              "line": 20,
+              "column": 13
+            }
+          }
+        },
+        "right": {
+          "type": "BinaryExpression",
+          "operator": "+",
+          "left": {
+            "type": "BinaryExpression",
+            "operator": "+",
+            "left": {
+              "type": "Literal",
+              "value": 1,
+              "literalType": "number",
+              "_meta": {
+                "_extra": {
+                  "start": 147,
+                  "end": 148
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 20,
+                  "column": 15
+                },
+                "end": {
+                  "line": 20,
+                  "column": 16
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+              }
+            },
+            "right": {
+              "type": "Literal",
+              "value": 1,
+              "literalType": "number",
+              "_meta": {
+                "_extra": {
+                  "start": 149,
+                  "end": 150
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 20,
+                  "column": 17
+                },
+                "end": {
+                  "line": 20,
+                  "column": 18
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+              }
+            },
+            "_meta": {
+              "_extra": {
+                "start": 147,
+                "end": 150
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 20,
+                "column": 15
+              },
+              "end": {
+                "line": 20,
+                "column": 18
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+            }
+          },
+          "right": {
+            "type": "BinaryExpression",
+            "operator": "+",
+            "left": {
+              "type": "Literal",
+              "value": " and\nnot ",
+              "literalType": "string",
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 20,
+                  "column": 19
+                },
+                "end": {
+                  "line": 21,
+                  "column": 5
+                }
+              }
+            },
+            "right": {
+              "type": "BinaryExpression",
+              "operator": "+",
+              "left": {
+                "type": "BinaryExpression",
+                "operator": "+",
+                "left": {
+                  "type": "BinaryExpression",
+                  "operator": "*",
+                  "left": {
+                    "type": "BinaryExpression",
+                    "operator": "*",
+                    "left": {
+                      "type": "BinaryExpression",
+                      "operator": "*",
+                      "left": {
+                        "type": "BinaryExpression",
+                        "operator": "*",
+                        "left": {
+                          "type": "BinaryExpression",
+                          "operator": "*",
+                          "left": {
+                            "type": "BinaryExpression",
+                            "operator": "*",
+                            "left": {
+                              "type": "BinaryExpression",
+                              "operator": "*",
+                              "left": {
+                                "type": "BinaryExpression",
+                                "operator": "*",
+                                "left": {
+                                  "type": "Literal",
+                                  "value": 2,
+                                  "literalType": "number",
+                                  "_meta": {
+                                    "_extra": {
+                                      "start": 162,
+                                      "end": 163
+                                    }
+                                  },
+                                  "loc": {
+                                    "start": {
+                                      "line": 21,
+                                      "column": 7
+                                    },
+                                    "end": {
+                                      "line": 21,
+                                      "column": 8
+                                    },
+                                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+                                  }
+                                },
+                                "right": {
+                                  "type": "Literal",
+                                  "value": 100,
+                                  "literalType": "number",
+                                  "_meta": {
+                                    "_extra": {
+                                      "start": 166,
+                                      "end": 169
+                                    }
+                                  },
+                                  "loc": {
+                                    "start": {
+                                      "line": 21,
+                                      "column": 11
+                                    },
+                                    "end": {
+                                      "line": 21,
+                                      "column": 14
+                                    },
+                                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+                                  }
+                                },
+                                "_meta": {
+                                  "_extra": {
+                                    "start": 162,
+                                    "end": 169
+                                  }
+                                },
+                                "loc": {
+                                  "start": {
+                                    "line": 21,
+                                    "column": 7
+                                  },
+                                  "end": {
+                                    "line": 21,
+                                    "column": 14
+                                  },
+                                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+                                }
+                              },
+                              "right": {
+                                "type": "Literal",
+                                "value": 100,
+                                "literalType": "number",
+                                "_meta": {
+                                  "_extra": {
+                                    "start": 172,
+                                    "end": 175
+                                  }
+                                },
+                                "loc": {
+                                  "start": {
+                                    "line": 21,
+                                    "column": 17
+                                  },
+                                  "end": {
+                                    "line": 21,
+                                    "column": 20
+                                  },
+                                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+                                }
+                              },
+                              "_meta": {
+                                "_extra": {
+                                  "start": 162,
+                                  "end": 175
+                                }
+                              },
+                              "loc": {
+                                "start": {
+                                  "line": 21,
+                                  "column": 7
+                                },
+                                "end": {
+                                  "line": 21,
+                                  "column": 20
+                                },
+                                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+                              }
+                            },
+                            "right": {
+                              "type": "Literal",
+                              "value": 100,
+                              "literalType": "number",
+                              "_meta": {
+                                "_extra": {
+                                  "start": 178,
+                                  "end": 181
+                                }
+                              },
+                              "loc": {
+                                "start": {
+                                  "line": 21,
+                                  "column": 23
+                                },
+                                "end": {
+                                  "line": 21,
+                                  "column": 26
+                                },
+                                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+                              }
+                            },
+                            "_meta": {
+                              "_extra": {
+                                "start": 162,
+                                "end": 181
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 21,
+                                "column": 7
+                              },
+                              "end": {
+                                "line": 21,
+                                "column": 26
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+                            }
+                          },
+                          "right": {
+                            "type": "Literal",
+                            "value": 100,
+                            "literalType": "number",
+                            "_meta": {
+                              "_extra": {
+                                "start": 184,
+                                "end": 187
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 21,
+                                "column": 29
+                              },
+                              "end": {
+                                "line": 21,
+                                "column": 32
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+                            }
+                          },
+                          "_meta": {
+                            "_extra": {
+                              "start": 162,
+                              "end": 187
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 21,
+                              "column": 7
+                            },
+                            "end": {
+                              "line": 21,
+                              "column": 32
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+                          }
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": 100,
+                          "literalType": "number",
+                          "_meta": {
+                            "_extra": {
+                              "start": 190,
+                              "end": 193
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 21,
+                              "column": 35
+                            },
+                            "end": {
+                              "line": 21,
+                              "column": 38
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+                          }
+                        },
+                        "_meta": {
+                          "_extra": {
+                            "start": 162,
+                            "end": 193
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 21,
+                            "column": 7
+                          },
+                          "end": {
+                            "line": 21,
+                            "column": 38
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+                        }
+                      },
+                      "right": {
+                        "type": "Literal",
+                        "value": 100,
+                        "literalType": "number",
+                        "_meta": {
+                          "_extra": {
+                            "start": 196,
+                            "end": 199
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 21,
+                            "column": 41
+                          },
+                          "end": {
+                            "line": 21,
+                            "column": 44
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+                        }
+                      },
+                      "_meta": {
+                        "_extra": {
+                          "start": 162,
+                          "end": 199
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 21,
+                          "column": 7
+                        },
+                        "end": {
+                          "line": 21,
+                          "column": 44
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+                      }
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": 100,
+                      "literalType": "number",
+                      "_meta": {
+                        "_extra": {
+                          "start": 202,
+                          "end": 205
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 21,
+                          "column": 47
+                        },
+                        "end": {
+                          "line": 21,
+                          "column": 50
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+                      }
+                    },
+                    "_meta": {
+                      "_extra": {
+                        "start": 162,
+                        "end": 205
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 21,
+                        "column": 7
+                      },
+                      "end": {
+                        "line": 21,
+                        "column": 50
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+                    }
+                  },
+                  "right": {
+                    "type": "Literal",
+                    "value": 100,
+                    "literalType": "number",
+                    "_meta": {
+                      "_extra": {
+                        "start": 208,
+                        "end": 211
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 21,
+                        "column": 53
+                      },
+                      "end": {
+                        "line": 21,
+                        "column": 56
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+                    }
+                  },
+                  "_meta": {
+                    "_extra": {
+                      "start": 162,
+                      "end": 211
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 21,
+                      "column": 7
+                    },
+                    "end": {
+                      "line": 21,
+                      "column": 56
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+                  }
+                },
+                "right": {
+                  "type": "Literal",
+                  "value": 1,
+                  "literalType": "number",
+                  "_meta": {
+                    "_extra": {
+                      "start": 214,
+                      "end": 215
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 21,
+                      "column": 59
+                    },
+                    "end": {
+                      "line": 21,
+                      "column": 60
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+                  }
+                },
+                "_meta": {
+                  "_extra": {
+                    "start": 162,
+                    "end": 215
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 21,
+                    "column": 7
+                  },
+                  "end": {
+                    "line": 21,
+                    "column": 60
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+                }
+              },
+              "right": {
+                "type": "Literal",
+                "value": ".",
+                "literalType": "string",
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 21,
+                    "column": 62
+                  },
+                  "end": {
+                    "line": 21,
+                    "column": 63
+                  }
+                }
+              },
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 20,
+                  "column": 1
+                },
+                "end": {
+                  "line": 21,
+                  "column": 64
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+              }
+            },
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 20,
+                "column": 1
+              },
+              "end": {
+                "line": 21,
+                "column": 64
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+            }
+          },
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 20,
+              "column": 1
+            },
+            "end": {
+              "line": 21,
+              "column": 64
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+          }
+        },
+        "_meta": {
+          "_extra": {
+            "start": 133,
+            "end": 219
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 20,
+            "column": 1
+          },
+          "end": {
+            "line": 21,
+            "column": 64
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+        }
+      },
+      "_meta": {
+        "_extra": {
+          "start": 133,
+          "end": 220
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 1
+        },
+        "end": {
+          "line": 21,
+          "column": 65
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "BinaryExpression",
+        "operator": "+",
+        "left": {
+          "type": "Literal",
+          "value": "",
+          "literalType": "string",
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 23,
+              "column": 2
+            },
+            "end": {
+              "line": 23,
+              "column": 2
+            }
+          }
+        },
+        "right": {
+          "type": "BinaryExpression",
+          "operator": "+",
+          "left": {
+            "type": "Literal",
+            "value": 1,
+            "literalType": "number",
+            "_meta": {
+              "_extra": {
+                "start": 225,
+                "end": 226
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 23,
+                "column": 4
+              },
+              "end": {
+                "line": 23,
+                "column": 5
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+            }
+          },
+          "right": {
+            "type": "Literal",
+            "value": ".",
+            "literalType": "string",
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 23,
+                "column": 6
+              },
+              "end": {
+                "line": 23,
+                "column": 7
+              }
+            }
+          },
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 23,
+              "column": 1
+            },
+            "end": {
+              "line": 23,
+              "column": 8
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+          }
+        },
+        "_meta": {
+          "_extra": {
+            "start": 222,
+            "end": 229
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 23,
+            "column": 1
+          },
+          "end": {
+            "line": 23,
+            "column": 8
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+        }
+      },
+      "_meta": {
+        "_extra": {
+          "start": 222,
+          "end": 230
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 1
+        },
+        "end": {
+          "line": 23,
+          "column": 9
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "BinaryExpression",
+        "operator": "+",
+        "left": {
+          "type": "Literal",
+          "value": "x",
+          "literalType": "string",
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 25,
+              "column": 2
+            },
+            "end": {
+              "line": 25,
+              "column": 3
+            }
+          }
+        },
+        "right": {
+          "type": "BinaryExpression",
+          "operator": "+",
+          "left": {
+            "type": "Literal",
+            "value": 1,
+            "literalType": "number",
+            "_meta": {
+              "_extra": {
+                "start": 236,
+                "end": 237
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 25,
+                "column": 5
+              },
+              "end": {
+                "line": 25,
+                "column": 6
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+            }
+          },
+          "right": {
+            "type": "Literal",
+            "value": "",
+            "literalType": "string",
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 25,
+                "column": 7
+              },
+              "end": {
+                "line": 25,
+                "column": 7
+              }
+            }
+          },
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 25,
+              "column": 1
+            },
+            "end": {
+              "line": 25,
+              "column": 8
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+          }
+        },
+        "_meta": {
+          "_extra": {
+            "start": 232,
+            "end": 239
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 25,
+            "column": 1
+          },
+          "end": {
+            "line": 25,
+            "column": 8
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+        }
+      },
+      "_meta": {
+        "_extra": {
+          "start": 232,
+          "end": 240
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 1
+        },
+        "end": {
+          "line": 25,
+          "column": 9
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+      }
+    }
+  ],
+  "language": "javascript",
+  "languageVersion": null,
+  "uri": "",
+  "version": "0.1.63",
+  "_meta": {
+    "_extra": {
+      "end": 243,
+      "directives": []
+    }
+  },
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 1
+    },
+    "end": {
+      "line": 28,
+      "column": 1
+    },
+    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/literal.js"
+  }
+}
