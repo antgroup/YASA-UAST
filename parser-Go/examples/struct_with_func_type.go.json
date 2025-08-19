@@ -1,0 +1,1459 @@
+{
+  "packageInfo": {
+    "PathName": "",
+    "files": {},
+    "subs": {
+      "/": {
+        "PathName": "",
+        "files": {
+          "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go": {
+            "node": {
+              "type": "CompileUnit",
+              "body": [
+                {
+                  "type": "PackageDeclaration",
+                  "name": {
+                    "type": "Identifier",
+                    "name": "examples",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 9
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 17
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                    },
+                    "_meta": {}
+                  },
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 9
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 17
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "fmt",
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "init": {
+                    "type": "ImportExpression",
+                    "from": {
+                      "type": "Literal",
+                      "value": "fmt",
+                      "literalType": "string",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 3,
+                          "column": 8
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 3,
+                          "column": 13
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                      },
+                      "_meta": {}
+                    },
+                    "local": null,
+                    "imported": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 3,
+                        "column": 8
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 3,
+                        "column": 13
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                    },
+                    "_meta": {}
+                  },
+                  "cloned": true,
+                  "varType": {
+                    "type": "DynamicType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "variableParam": false,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 3,
+                      "column": 8
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 3,
+                      "column": 13
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "ClassDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "Person1",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 5,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 5,
+                        "column": 13
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                    },
+                    "_meta": {}
+                  },
+                  "body": [
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "work",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 6,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 6,
+                            "column": 6
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                        },
+                        "_meta": {
+                          "type": {
+                            "type": "FuncType",
+                            "id": {
+                              "type": "Identifier",
+                              "name": "FuncType",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 6,
+                                  "column": 7
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 6,
+                                  "column": 13
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                              },
+                              "_meta": {}
+                            },
+                            "typeParams": null,
+                            "params": null,
+                            "results": null,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 6,
+                                "column": 7
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 6,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "init": null,
+                      "cloned": true,
+                      "varType": {
+                        "type": "FuncType",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "FuncType",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 6,
+                              "column": 7
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 6,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                          },
+                          "_meta": {}
+                        },
+                        "typeParams": null,
+                        "params": null,
+                        "results": null,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 6,
+                            "column": 7
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 6,
+                            "column": 13
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                        },
+                        "_meta": {}
+                      },
+                      "variableParam": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 6,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 6,
+                          "column": 13
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                      },
+                      "_meta": {}
+                    },
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "name",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 7,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 7,
+                            "column": 6
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                        },
+                        "_meta": {
+                          "type": {
+                            "type": "Identifier",
+                            "name": "string",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 7,
+                                "column": 7
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 7,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "init": null,
+                      "cloned": true,
+                      "varType": {
+                        "type": "Identifier",
+                        "name": "string",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 7,
+                            "column": 7
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 7,
+                            "column": 13
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                        },
+                        "_meta": {}
+                      },
+                      "variableParam": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 7,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 7,
+                          "column": 13
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                      },
+                      "_meta": {}
+                    },
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "age",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 8,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 8,
+                            "column": 5
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                        },
+                        "_meta": {
+                          "type": {
+                            "type": "Identifier",
+                            "name": "int32",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 8,
+                                "column": 7
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 8,
+                                "column": 12
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "init": null,
+                      "cloned": true,
+                      "varType": {
+                        "type": "Identifier",
+                        "name": "int32",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 8,
+                            "column": 7
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 8,
+                            "column": 12
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                        },
+                        "_meta": {}
+                      },
+                      "variableParam": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 8,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 8,
+                          "column": 12
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                      },
+                      "_meta": {}
+                    }
+                  ],
+                  "supers": [],
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 5,
+                      "column": 6
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 9,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "FunctionDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "testFunc",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 11,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 11,
+                        "column": 14
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                    },
+                    "_meta": {}
+                  },
+                  "parameters": [],
+                  "returnType": {
+                    "type": "VoidType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "body": {
+                    "type": "ScopedStatement",
+                    "body": [
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 12,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 12,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Println",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 12,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 12,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 12,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 12,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Literal",
+                            "value": "\"I am working!\"",
+                            "literalType": "STRING",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 12,
+                                "column": 14
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 12,
+                                "column": 29
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 12,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 12,
+                            "column": 30
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                        },
+                        "_meta": {}
+                      }
+                    ],
+                    "id": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 11,
+                        "column": 17
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 13,
+                        "column": 2
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                    },
+                    "_meta": {}
+                  },
+                  "modifiers": null,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 11,
+                      "column": 1
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 13,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "FunctionDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "main",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 15,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 15,
+                        "column": 10
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                    },
+                    "_meta": {}
+                  },
+                  "parameters": [],
+                  "returnType": {
+                    "type": "VoidType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "body": {
+                    "type": "ScopedStatement",
+                    "body": [
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "person",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 17,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 17,
+                              "column": 8
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                          },
+                          "_meta": {
+                            "type": {
+                              "type": "Identifier",
+                              "name": "Person1",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 17,
+                                  "column": 12
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 17,
+                                  "column": 19
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                              },
+                              "_meta": {}
+                            }
+                          }
+                        },
+                        "init": {
+                          "type": "Sequence",
+                          "expressions": [
+                            {
+                              "type": "VariableDeclaration",
+                              "id": {
+                                "type": "Identifier",
+                                "name": "tmp1",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 17,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 17,
+                                    "column": 61
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                                },
+                                "_meta": {
+                                  "type": {
+                                    "type": "Identifier",
+                                    "name": "Person1",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 17,
+                                        "column": 12
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 17,
+                                        "column": 19
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                                    },
+                                    "_meta": {}
+                                  }
+                                }
+                              },
+                              "init": {
+                                "type": "NewExpression",
+                                "callee": {
+                                  "type": "Identifier",
+                                  "name": "Person1",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 17,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 17,
+                                      "column": 19
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "arguments": [],
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              "cloned": false,
+                              "varType": {
+                                "type": "Identifier",
+                                "name": "Person1",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 17,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 17,
+                                    "column": 19
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                                },
+                                "_meta": {}
+                              },
+                              "variableParam": false,
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            {
+                              "type": "AssignmentExpression",
+                              "left": {
+                                "type": "MemberAccess",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "tmp1",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 17,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 17,
+                                      "column": 61
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                                  },
+                                  "_meta": {
+                                    "type": {
+                                      "type": "Identifier",
+                                      "name": "Person1",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 17,
+                                          "column": 12
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 17,
+                                          "column": 19
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                                      },
+                                      "_meta": {}
+                                    }
+                                  }
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "work",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 17,
+                                      "column": 20
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 17,
+                                      "column": 24
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "computed": false,
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              "right": {
+                                "type": "Identifier",
+                                "name": "testFunc",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 17,
+                                    "column": 26
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 17,
+                                    "column": 34
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                                },
+                                "_meta": {}
+                              },
+                              "operator": "=",
+                              "cloned": true,
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            {
+                              "type": "AssignmentExpression",
+                              "left": {
+                                "type": "MemberAccess",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "tmp1",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 17,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 17,
+                                      "column": 61
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                                  },
+                                  "_meta": {
+                                    "type": {
+                                      "type": "Identifier",
+                                      "name": "Person1",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 17,
+                                          "column": 12
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 17,
+                                          "column": 19
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                                      },
+                                      "_meta": {}
+                                    }
+                                  }
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "name",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 17,
+                                      "column": 36
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 17,
+                                      "column": 40
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "computed": false,
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              "right": {
+                                "type": "Literal",
+                                "value": "\"Michał\"",
+                                "literalType": "STRING",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 17,
+                                    "column": 42
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 17,
+                                    "column": 51
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                                },
+                                "_meta": {}
+                              },
+                              "operator": "=",
+                              "cloned": true,
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            {
+                              "type": "AssignmentExpression",
+                              "left": {
+                                "type": "MemberAccess",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "tmp1",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 17,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 17,
+                                      "column": 61
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                                  },
+                                  "_meta": {
+                                    "type": {
+                                      "type": "Identifier",
+                                      "name": "Person1",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 17,
+                                          "column": 12
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 17,
+                                          "column": 19
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                                      },
+                                      "_meta": {}
+                                    }
+                                  }
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "age",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 17,
+                                      "column": 53
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 17,
+                                      "column": 56
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "computed": false,
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              "right": {
+                                "type": "Literal",
+                                "value": "29",
+                                "literalType": "INT",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 17,
+                                    "column": 58
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 17,
+                                    "column": 60
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                                },
+                                "_meta": {}
+                              },
+                              "operator": "=",
+                              "cloned": true,
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            {
+                              "type": "Identifier",
+                              "name": "tmp1",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 17,
+                                  "column": 12
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 17,
+                                  "column": 61
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                              },
+                              "_meta": {
+                                "type": {
+                                  "type": "Identifier",
+                                  "name": "Person1",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 17,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 17,
+                                      "column": 19
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                                  },
+                                  "_meta": {}
+                                }
+                              }
+                            }
+                          ],
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 17,
+                              "column": 12
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 17,
+                              "column": 61
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": true,
+                        "varType": {
+                          "type": "Identifier",
+                          "name": "Person1",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 17,
+                              "column": 12
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 17,
+                              "column": 19
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                          },
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 17,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 17,
+                            "column": 61
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 20,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 20,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Printf",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 20,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 20,
+                                "column": 12
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 20,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 20,
+                              "column": 12
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Literal",
+                            "value": "\"%+v\\n\"",
+                            "literalType": "STRING",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 20,
+                                "column": 13
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 20,
+                                "column": 20
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                            },
+                            "_meta": {}
+                          },
+                          {
+                            "type": "Identifier",
+                            "name": "person",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 20,
+                                "column": 22
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 20,
+                                "column": 28
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 20,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 20,
+                            "column": 29
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "IfStatement",
+                        "test": {
+                          "type": "BinaryExpression",
+                          "operator": "!=",
+                          "left": {
+                            "type": "MemberAccess",
+                            "object": {
+                              "type": "Identifier",
+                              "name": "person",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 23,
+                                  "column": 5
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 23,
+                                  "column": 11
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                              },
+                              "_meta": {}
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "work",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 23,
+                                  "column": 12
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 23,
+                                  "column": 16
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                              },
+                              "_meta": {}
+                            },
+                            "computed": false,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 23,
+                                "column": 5
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 23,
+                                "column": 16
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                            },
+                            "_meta": {}
+                          },
+                          "right": {
+                            "type": "Identifier",
+                            "name": "nil",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 23,
+                                "column": 20
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 23,
+                                "column": 23
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                            },
+                            "_meta": {}
+                          },
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 23,
+                              "column": 5
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 23,
+                              "column": 23
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                          },
+                          "_meta": {}
+                        },
+                        "consequent": {
+                          "type": "ScopedStatement",
+                          "body": [
+                            {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "MemberAccess",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "person",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 24,
+                                      "column": 3
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 24,
+                                      "column": 9
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "work",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 24,
+                                      "column": 10
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 24,
+                                      "column": 14
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "computed": false,
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 24,
+                                    "column": 3
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 24,
+                                    "column": 14
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                                },
+                                "_meta": {}
+                              },
+                              "arguments": [],
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 24,
+                                  "column": 3
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 24,
+                                  "column": 16
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                              },
+                              "_meta": {}
+                            }
+                          ],
+                          "id": null,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 23,
+                              "column": 24
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 25,
+                              "column": 3
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                          },
+                          "_meta": {}
+                        },
+                        "alternative": {
+                          "type": "Noop",
+                          "loc": null,
+                          "_meta": {}
+                        },
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 23,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 25,
+                            "column": 3
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                        },
+                        "_meta": {}
+                      }
+                    ],
+                    "id": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 15,
+                        "column": 13
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 26,
+                        "column": 2
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                    },
+                    "_meta": {}
+                  },
+                  "modifiers": null,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 15,
+                      "column": 1
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 26,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+                  },
+                  "_meta": {}
+                }
+              ],
+              "language": "golang",
+              "languageVersion": "1.18",
+              "uri": "",
+              "version": "",
+              "loc": {
+                "start": {
+                  "Offset": 0,
+                  "line": 1,
+                  "column": 1
+                },
+                "end": {
+                  "Offset": 0,
+                  "line": 26,
+                  "column": 2
+                },
+                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_with_func_type.go"
+              },
+              "_meta": {}
+            },
+            "packageName": "__single__"
+          }
+        },
+        "subs": {}
+      }
+    }
+  },
+  "moduleName": "__single_module__"
+}

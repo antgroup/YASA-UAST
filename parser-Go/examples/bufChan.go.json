@@ -1,0 +1,2932 @@
+{
+  "packageInfo": {
+    "PathName": "",
+    "files": {},
+    "subs": {
+      "/": {
+        "PathName": "",
+        "files": {
+          "/Users/ariel/code/uast/uast4go/examples/bufChan.go": {
+            "node": {
+              "type": "CompileUnit",
+              "body": [
+                {
+                  "type": "PackageDeclaration",
+                  "name": {
+                    "type": "Identifier",
+                    "name": "examples",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 9
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 17
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                    },
+                    "_meta": {}
+                  },
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 9
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 17
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "fmt",
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "init": {
+                    "type": "ImportExpression",
+                    "from": {
+                      "type": "Literal",
+                      "value": "fmt",
+                      "literalType": "string",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 3,
+                          "column": 8
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 3,
+                          "column": 13
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                      },
+                      "_meta": {}
+                    },
+                    "local": null,
+                    "imported": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 3,
+                        "column": 8
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 3,
+                        "column": 13
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                    },
+                    "_meta": {}
+                  },
+                  "cloned": true,
+                  "varType": {
+                    "type": "DynamicType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "variableParam": false,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 3,
+                      "column": 8
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 3,
+                      "column": 13
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "FunctionDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "goRoutineA",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 5,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 5,
+                        "column": 16
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                    },
+                    "_meta": {}
+                  },
+                  "parameters": [
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "a",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 5,
+                            "column": 17
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 5,
+                            "column": 18
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                        },
+                        "_meta": {
+                          "type": {
+                            "type": "ChanType",
+                            "id": {
+                              "type": "Identifier",
+                              "name": "ChanType",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 5,
+                                  "column": 19
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 5,
+                                  "column": 29
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                              },
+                              "_meta": {}
+                            },
+                            "channelDirection": "receive",
+                            "valueType": {
+                              "type": "Identifier",
+                              "name": "int",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 5,
+                                  "column": 26
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 5,
+                                  "column": 29
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                              },
+                              "_meta": {}
+                            },
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 5,
+                                "column": 19
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 5,
+                                "column": 29
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "init": null,
+                      "cloned": true,
+                      "varType": {
+                        "type": "ChanType",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "ChanType",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 5,
+                              "column": 19
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 5,
+                              "column": 29
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {}
+                        },
+                        "channelDirection": "receive",
+                        "valueType": {
+                          "type": "Identifier",
+                          "name": "int",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 5,
+                              "column": 26
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 5,
+                              "column": 29
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {}
+                        },
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 5,
+                            "column": 19
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 5,
+                            "column": 29
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                        },
+                        "_meta": {}
+                      },
+                      "variableParam": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 5,
+                          "column": 17
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 5,
+                          "column": 29
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                      },
+                      "_meta": {}
+                    }
+                  ],
+                  "returnType": {
+                    "type": "VoidType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "body": {
+                    "type": "ScopedStatement",
+                    "body": [
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "val",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 6,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 6,
+                              "column": 5
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {
+                            "type": {
+                              "type": "DynamicType",
+                              "id": null,
+                              "typeArguments": null,
+                              "loc": null,
+                              "_meta": {}
+                            }
+                          }
+                        },
+                        "init": {
+                          "type": "UnaryExpression",
+                          "operator": "pop",
+                          "argument": {
+                            "type": "Identifier",
+                            "name": "a",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 6,
+                                "column": 11
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 6,
+                                "column": 12
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "isSuffix": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 6,
+                              "column": 9
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 6,
+                              "column": 12
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": true,
+                        "varType": {
+                          "type": "DynamicType",
+                          "id": null,
+                          "typeArguments": null,
+                          "loc": null,
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 6,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 6,
+                            "column": 12
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 7,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 7,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Println",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 7,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 7,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 7,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 7,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Literal",
+                            "value": "\"goRoutineA received the data\"",
+                            "literalType": "STRING",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 7,
+                                "column": 14
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 7,
+                                "column": 44
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          {
+                            "type": "Identifier",
+                            "name": "val",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 7,
+                                "column": 46
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 7,
+                                "column": 49
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 7,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 7,
+                            "column": 50
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                        },
+                        "_meta": {}
+                      }
+                    ],
+                    "id": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 5,
+                        "column": 31
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 8,
+                        "column": 2
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                    },
+                    "_meta": {}
+                  },
+                  "modifiers": null,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 5,
+                      "column": 1
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 8,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "FunctionDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "BufChan",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 10,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 10,
+                        "column": 13
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                    },
+                    "_meta": {}
+                  },
+                  "parameters": [],
+                  "returnType": {
+                    "type": "VoidType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "body": {
+                    "type": "ScopedStatement",
+                    "body": [
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "c",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 11,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 11,
+                              "column": 3
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {
+                            "type": {
+                              "type": "ChanType",
+                              "id": {
+                                "type": "Identifier",
+                                "name": "ChanType",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 11,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 11,
+                                    "column": 20
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                                },
+                                "_meta": {}
+                              },
+                              "channelDirection": "",
+                              "valueType": {
+                                "type": "Identifier",
+                                "name": "int",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 11,
+                                    "column": 17
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 11,
+                                    "column": 20
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                                },
+                                "_meta": {}
+                              },
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 11,
+                                  "column": 12
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 11,
+                                  "column": 20
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                              },
+                              "_meta": {}
+                            }
+                          }
+                        },
+                        "init": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "Identifier",
+                            "name": "make",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 11,
+                                "column": 7
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 11,
+                                "column": 11
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "arguments": [
+                            {
+                              "type": "ChanType",
+                              "id": {
+                                "type": "Identifier",
+                                "name": "ChanType",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 11,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 11,
+                                    "column": 20
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                                },
+                                "_meta": {}
+                              },
+                              "channelDirection": "",
+                              "valueType": {
+                                "type": "Identifier",
+                                "name": "int",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 11,
+                                    "column": 17
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 11,
+                                    "column": 20
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                                },
+                                "_meta": {}
+                              },
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 11,
+                                  "column": 12
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 11,
+                                  "column": 20
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                              },
+                              "_meta": {}
+                            },
+                            {
+                              "type": "Literal",
+                              "value": "2",
+                              "literalType": "INT",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 11,
+                                  "column": 22
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 11,
+                                  "column": 23
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                              },
+                              "_meta": {}
+                            }
+                          ],
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 11,
+                              "column": 7
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 11,
+                              "column": 24
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": true,
+                        "varType": {
+                          "type": "ChanType",
+                          "id": {
+                            "type": "Identifier",
+                            "name": "ChanType",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 11,
+                                "column": 12
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 11,
+                                "column": 20
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "channelDirection": "",
+                          "valueType": {
+                            "type": "Identifier",
+                            "name": "int",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 11,
+                                "column": 17
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 11,
+                                "column": 20
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 11,
+                              "column": 12
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 11,
+                              "column": 20
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 11,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 11,
+                            "column": 24
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "BinaryExpression",
+                        "operator": "push",
+                        "left": {
+                          "type": "Identifier",
+                          "name": "c",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 12,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 12,
+                              "column": 3
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {}
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": "3",
+                          "literalType": "INT",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 12,
+                              "column": 7
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 12,
+                              "column": 8
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {}
+                        },
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 12,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 12,
+                            "column": 8
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "BinaryExpression",
+                        "operator": "push",
+                        "left": {
+                          "type": "Identifier",
+                          "name": "c",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 13,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 13,
+                              "column": 3
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {}
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": "5",
+                          "literalType": "INT",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 13,
+                              "column": 7
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 13,
+                              "column": 8
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {}
+                        },
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 13,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 13,
+                            "column": 8
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "Identifier",
+                          "name": "close",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 14,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 14,
+                              "column": 7
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Identifier",
+                            "name": "c",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 14,
+                                "column": 8
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 14,
+                                "column": 9
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 14,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 14,
+                            "column": 10
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 15,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 15,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Println",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 15,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 15,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 15,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 15,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "Identifier",
+                              "name": "len",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 15,
+                                  "column": 14
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 15,
+                                  "column": 17
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                              },
+                              "_meta": {}
+                            },
+                            "arguments": [
+                              {
+                                "type": "Identifier",
+                                "name": "c",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 15,
+                                    "column": 18
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 15,
+                                    "column": 19
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                                },
+                                "_meta": {}
+                              }
+                            ],
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 15,
+                                "column": 14
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 15,
+                                "column": 20
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "Identifier",
+                              "name": "cap",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 15,
+                                  "column": 22
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 15,
+                                  "column": 25
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                              },
+                              "_meta": {}
+                            },
+                            "arguments": [
+                              {
+                                "type": "Identifier",
+                                "name": "c",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 15,
+                                    "column": 26
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 15,
+                                    "column": 27
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                                },
+                                "_meta": {}
+                              }
+                            ],
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 15,
+                                "column": 22
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 15,
+                                "column": 28
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 15,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 15,
+                            "column": 29
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "TupleExpression",
+                          "elements": [
+                            {
+                              "type": "Identifier",
+                              "name": "x",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 16,
+                                  "column": 2
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 16,
+                                  "column": 3
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                              },
+                              "_meta": {}
+                            },
+                            {
+                              "type": "Identifier",
+                              "name": "ok",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 16,
+                                  "column": 5
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 16,
+                                  "column": 7
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                              },
+                              "_meta": {}
+                            }
+                          ],
+                          "modifiable": false,
+                          "loc": null,
+                          "_meta": {}
+                        },
+                        "init": {
+                          "type": "UnaryExpression",
+                          "operator": "pop",
+                          "argument": {
+                            "type": "Identifier",
+                            "name": "c",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 16,
+                                "column": 13
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 16,
+                                "column": 14
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "isSuffix": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 16,
+                              "column": 11
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 16,
+                              "column": 14
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": true,
+                        "varType": {
+                          "type": "DynamicType",
+                          "id": null,
+                          "typeArguments": null,
+                          "loc": null,
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 16,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 16,
+                            "column": 14
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 17,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 17,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Println",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 17,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 17,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 17,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 17,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Identifier",
+                            "name": "x",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 17,
+                                "column": 14
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 17,
+                                "column": 15
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          {
+                            "type": "Identifier",
+                            "name": "ok",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 17,
+                                "column": 17
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 17,
+                                "column": 19
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 17,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 17,
+                            "column": 20
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 18,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 18,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Println",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 18,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 18,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 18,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 18,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "Identifier",
+                              "name": "len",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 18,
+                                  "column": 14
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 18,
+                                  "column": 17
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                              },
+                              "_meta": {}
+                            },
+                            "arguments": [
+                              {
+                                "type": "Identifier",
+                                "name": "c",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 18,
+                                    "column": 18
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 18,
+                                    "column": 19
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                                },
+                                "_meta": {}
+                              }
+                            ],
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 18,
+                                "column": 14
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 18,
+                                "column": 20
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "Identifier",
+                              "name": "cap",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 18,
+                                  "column": 22
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 18,
+                                  "column": 25
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                              },
+                              "_meta": {}
+                            },
+                            "arguments": [
+                              {
+                                "type": "Identifier",
+                                "name": "c",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 18,
+                                    "column": 26
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 18,
+                                    "column": 27
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                                },
+                                "_meta": {}
+                              }
+                            ],
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 18,
+                                "column": 22
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 18,
+                                "column": 28
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 18,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 18,
+                            "column": 29
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "TupleExpression",
+                          "elements": [
+                            {
+                              "type": "Identifier",
+                              "name": "x",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 19,
+                                  "column": 2
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 19,
+                                  "column": 3
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                              },
+                              "_meta": {}
+                            },
+                            {
+                              "type": "Identifier",
+                              "name": "ok",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 19,
+                                  "column": 5
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 19,
+                                  "column": 7
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                              },
+                              "_meta": {}
+                            }
+                          ],
+                          "modifiable": false,
+                          "loc": null,
+                          "_meta": {}
+                        },
+                        "init": {
+                          "type": "UnaryExpression",
+                          "operator": "pop",
+                          "argument": {
+                            "type": "Identifier",
+                            "name": "c",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 19,
+                                "column": 12
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 19,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "isSuffix": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 19,
+                              "column": 10
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 19,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": true,
+                        "varType": {
+                          "type": "DynamicType",
+                          "id": null,
+                          "typeArguments": null,
+                          "loc": null,
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 19,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 19,
+                            "column": 13
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 20,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 20,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Println",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 20,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 20,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 20,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 20,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Identifier",
+                            "name": "x",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 20,
+                                "column": 14
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 20,
+                                "column": 15
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          {
+                            "type": "Identifier",
+                            "name": "ok",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 20,
+                                "column": 17
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 20,
+                                "column": 19
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 20,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 20,
+                            "column": 20
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 21,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 21,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Println",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 21,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 21,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 21,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 21,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "Identifier",
+                              "name": "len",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 21,
+                                  "column": 14
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 21,
+                                  "column": 17
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                              },
+                              "_meta": {}
+                            },
+                            "arguments": [
+                              {
+                                "type": "Identifier",
+                                "name": "c",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 21,
+                                    "column": 18
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 21,
+                                    "column": 19
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                                },
+                                "_meta": {}
+                              }
+                            ],
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 21,
+                                "column": 14
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 21,
+                                "column": 20
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "Identifier",
+                              "name": "cap",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 21,
+                                  "column": 22
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 21,
+                                  "column": 25
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                              },
+                              "_meta": {}
+                            },
+                            "arguments": [
+                              {
+                                "type": "Identifier",
+                                "name": "c",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 21,
+                                    "column": 26
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 21,
+                                    "column": 27
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                                },
+                                "_meta": {}
+                              }
+                            ],
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 21,
+                                "column": 22
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 21,
+                                "column": 28
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 21,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 21,
+                            "column": 29
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "TupleExpression",
+                          "elements": [
+                            {
+                              "type": "Identifier",
+                              "name": "x",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 22,
+                                  "column": 2
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 22,
+                                  "column": 3
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                              },
+                              "_meta": {}
+                            },
+                            {
+                              "type": "Identifier",
+                              "name": "ok",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 22,
+                                  "column": 5
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 22,
+                                  "column": 7
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                              },
+                              "_meta": {}
+                            }
+                          ],
+                          "modifiable": false,
+                          "loc": null,
+                          "_meta": {}
+                        },
+                        "init": {
+                          "type": "UnaryExpression",
+                          "operator": "pop",
+                          "argument": {
+                            "type": "Identifier",
+                            "name": "c",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 22,
+                                "column": 12
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 22,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "isSuffix": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 22,
+                              "column": 10
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 22,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": true,
+                        "varType": {
+                          "type": "DynamicType",
+                          "id": null,
+                          "typeArguments": null,
+                          "loc": null,
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 22,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 22,
+                            "column": 13
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 23,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 23,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Println",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 23,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 23,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 23,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 23,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Identifier",
+                            "name": "x",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 23,
+                                "column": 14
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 23,
+                                "column": 15
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          {
+                            "type": "Identifier",
+                            "name": "ok",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 23,
+                                "column": 17
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 23,
+                                "column": 19
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 23,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 23,
+                            "column": 20
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "TupleExpression",
+                          "elements": [
+                            {
+                              "type": "Identifier",
+                              "name": "x",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 24,
+                                  "column": 2
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 24,
+                                  "column": 3
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                              },
+                              "_meta": {}
+                            },
+                            {
+                              "type": "Identifier",
+                              "name": "ok",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 24,
+                                  "column": 5
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 24,
+                                  "column": 7
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                              },
+                              "_meta": {}
+                            }
+                          ],
+                          "modifiable": false,
+                          "loc": null,
+                          "_meta": {}
+                        },
+                        "init": {
+                          "type": "UnaryExpression",
+                          "operator": "pop",
+                          "argument": {
+                            "type": "Identifier",
+                            "name": "c",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 24,
+                                "column": 12
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 24,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "isSuffix": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 24,
+                              "column": 10
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 24,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": true,
+                        "varType": {
+                          "type": "DynamicType",
+                          "id": null,
+                          "typeArguments": null,
+                          "loc": null,
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 24,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 24,
+                            "column": 13
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 25,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 25,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Println",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 25,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 25,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 25,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 25,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Identifier",
+                            "name": "x",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 25,
+                                "column": 14
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 25,
+                                "column": 15
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          {
+                            "type": "Identifier",
+                            "name": "ok",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 25,
+                                "column": 17
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 25,
+                                "column": 19
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 25,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 25,
+                            "column": 20
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 26,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 26,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Println",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 26,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 26,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 26,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 26,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "Identifier",
+                              "name": "len",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 26,
+                                  "column": 14
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 26,
+                                  "column": 17
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                              },
+                              "_meta": {}
+                            },
+                            "arguments": [
+                              {
+                                "type": "Identifier",
+                                "name": "c",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 26,
+                                    "column": 18
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 26,
+                                    "column": 19
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                                },
+                                "_meta": {}
+                              }
+                            ],
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 26,
+                                "column": 14
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 26,
+                                "column": 20
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "Identifier",
+                              "name": "cap",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 26,
+                                  "column": 22
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 26,
+                                  "column": 25
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                              },
+                              "_meta": {}
+                            },
+                            "arguments": [
+                              {
+                                "type": "Identifier",
+                                "name": "c",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 26,
+                                    "column": 26
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 26,
+                                    "column": 27
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                                },
+                                "_meta": {}
+                              }
+                            ],
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 26,
+                                "column": 22
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 26,
+                                "column": 28
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 26,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 26,
+                            "column": 29
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "ch",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 32,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 32,
+                              "column": 4
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {
+                            "type": {
+                              "type": "ChanType",
+                              "id": {
+                                "type": "Identifier",
+                                "name": "ChanType",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 32,
+                                    "column": 13
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 32,
+                                    "column": 21
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                                },
+                                "_meta": {}
+                              },
+                              "channelDirection": "",
+                              "valueType": {
+                                "type": "Identifier",
+                                "name": "int",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 32,
+                                    "column": 18
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 32,
+                                    "column": 21
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                                },
+                                "_meta": {}
+                              },
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 32,
+                                  "column": 13
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 32,
+                                  "column": 21
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                              },
+                              "_meta": {}
+                            }
+                          }
+                        },
+                        "init": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "Identifier",
+                            "name": "make",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 32,
+                                "column": 8
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 32,
+                                "column": 12
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "arguments": [
+                            {
+                              "type": "ChanType",
+                              "id": {
+                                "type": "Identifier",
+                                "name": "ChanType",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 32,
+                                    "column": 13
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 32,
+                                    "column": 21
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                                },
+                                "_meta": {}
+                              },
+                              "channelDirection": "",
+                              "valueType": {
+                                "type": "Identifier",
+                                "name": "int",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 32,
+                                    "column": 18
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 32,
+                                    "column": 21
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                                },
+                                "_meta": {}
+                              },
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 32,
+                                  "column": 13
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 32,
+                                  "column": 21
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                              },
+                              "_meta": {}
+                            }
+                          ],
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 32,
+                              "column": 8
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 32,
+                              "column": 22
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": true,
+                        "varType": {
+                          "type": "ChanType",
+                          "id": {
+                            "type": "Identifier",
+                            "name": "ChanType",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 32,
+                                "column": 13
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 32,
+                                "column": 21
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "channelDirection": "",
+                          "valueType": {
+                            "type": "Identifier",
+                            "name": "int",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 32,
+                                "column": 18
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 32,
+                                "column": 21
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          },
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 32,
+                              "column": 13
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 32,
+                              "column": 21
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 32,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 32,
+                            "column": 22
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "Identifier",
+                          "name": "goRoutineA",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 33,
+                              "column": 5
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 33,
+                              "column": 15
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Identifier",
+                            "name": "ch",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 33,
+                                "column": 16
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 33,
+                                "column": 18
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 33,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 33,
+                            "column": 19
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                        },
+                        "_meta": {
+                          "async": true
+                        }
+                      }
+                    ],
+                    "id": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 10,
+                        "column": 16
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 34,
+                        "column": 2
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                    },
+                    "_meta": {}
+                  },
+                  "modifiers": null,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 10,
+                      "column": 1
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 34,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+                  },
+                  "_meta": {}
+                }
+              ],
+              "language": "golang",
+              "languageVersion": "1.18",
+              "uri": "",
+              "version": "",
+              "loc": {
+                "start": {
+                  "Offset": 0,
+                  "line": 1,
+                  "column": 1
+                },
+                "end": {
+                  "Offset": 0,
+                  "line": 34,
+                  "column": 2
+                },
+                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/bufChan.go"
+              },
+              "_meta": {}
+            },
+            "packageName": "__single__"
+          }
+        },
+        "subs": {}
+      }
+    }
+  },
+  "moduleName": "__single_module__"
+}

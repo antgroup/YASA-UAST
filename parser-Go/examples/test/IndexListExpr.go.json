@@ -1,0 +1,2541 @@
+{
+  "packageInfo": {
+    "PathName": "",
+    "files": {},
+    "subs": {
+      "/": {
+        "PathName": "",
+        "files": {
+          "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go": {
+            "node": {
+              "type": "CompileUnit",
+              "body": [
+                {
+                  "type": "PackageDeclaration",
+                  "name": {
+                    "type": "Identifier",
+                    "name": "main",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 9
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 13
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                    },
+                    "_meta": {}
+                  },
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 9
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 13
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "fmt",
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "init": {
+                    "type": "ImportExpression",
+                    "from": {
+                      "type": "Literal",
+                      "value": "fmt",
+                      "literalType": "string",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 3,
+                          "column": 8
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 3,
+                          "column": 13
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                      },
+                      "_meta": {}
+                    },
+                    "local": null,
+                    "imported": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 3,
+                        "column": 8
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 3,
+                        "column": 13
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                    },
+                    "_meta": {}
+                  },
+                  "cloned": true,
+                  "varType": {
+                    "type": "DynamicType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "variableParam": false,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 3,
+                      "column": 8
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 3,
+                      "column": 13
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "ClassDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "Map",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 6,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 6,
+                        "column": 9
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                    },
+                    "_meta": {}
+                  },
+                  "body": [
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "data",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 7,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 7,
+                            "column": 6
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                        },
+                        "_meta": {
+                          "type": {
+                            "type": "MapType",
+                            "id": {
+                              "type": "Identifier",
+                              "name": "MapType",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 7,
+                                  "column": 7
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 7,
+                                  "column": 14
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                              },
+                              "_meta": {}
+                            },
+                            "keyType": {
+                              "type": "Identifier",
+                              "name": "K",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 7,
+                                  "column": 11
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 7,
+                                  "column": 12
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                              },
+                              "_meta": {}
+                            },
+                            "valueType": {
+                              "type": "Identifier",
+                              "name": "V",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 7,
+                                  "column": 13
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 7,
+                                  "column": 14
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                              },
+                              "_meta": {}
+                            },
+                            "typeArguments": null,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 7,
+                                "column": 7
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 7,
+                                "column": 14
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "init": null,
+                      "cloned": true,
+                      "varType": {
+                        "type": "MapType",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "MapType",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 7,
+                              "column": 7
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 7,
+                              "column": 14
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                          },
+                          "_meta": {}
+                        },
+                        "keyType": {
+                          "type": "Identifier",
+                          "name": "K",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 7,
+                              "column": 11
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 7,
+                              "column": 12
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                          },
+                          "_meta": {}
+                        },
+                        "valueType": {
+                          "type": "Identifier",
+                          "name": "V",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 7,
+                              "column": 13
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 7,
+                              "column": 14
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                          },
+                          "_meta": {}
+                        },
+                        "typeArguments": null,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 7,
+                            "column": 7
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 7,
+                            "column": 14
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                        },
+                        "_meta": {}
+                      },
+                      "variableParam": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 7,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 7,
+                          "column": 14
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                      },
+                      "_meta": {}
+                    }
+                  ],
+                  "supers": [],
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 6,
+                      "column": 6
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 8,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "FunctionDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "NewMap",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 11,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 11,
+                        "column": 12
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                    },
+                    "_meta": {}
+                  },
+                  "parameters": [],
+                  "returnType": {
+                    "type": "PointerType",
+                    "id": null,
+                    "element": {
+                      "type": "MemberAccess",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "Map",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 11,
+                            "column": 37
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 11,
+                            "column": 40
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                        },
+                        "_meta": {}
+                      },
+                      "property": {
+                        "type": "Sequence",
+                        "expressions": [
+                          {
+                            "type": "Identifier",
+                            "name": "K",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 11,
+                                "column": 41
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 11,
+                                "column": 42
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                            },
+                            "_meta": {}
+                          },
+                          {
+                            "type": "Identifier",
+                            "name": "V",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 11,
+                                "column": 44
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 11,
+                                "column": 45
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": null,
+                        "_meta": {}
+                      },
+                      "computed": true,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 11,
+                          "column": 37
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 11,
+                          "column": 46
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                      },
+                      "_meta": {}
+                    },
+                    "typeArguments": null,
+                    "kind": "pointer",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 11,
+                        "column": 36
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 11,
+                        "column": 46
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                    },
+                    "_meta": {}
+                  },
+                  "body": {
+                    "type": "ScopedStatement",
+                    "body": [
+                      {
+                        "type": "ReturnStatement",
+                        "argument": {
+                          "type": "ReferenceExpression",
+                          "argument": {
+                            "type": "Sequence",
+                            "expressions": [
+                              {
+                                "type": "VariableDeclaration",
+                                "id": {
+                                  "type": "Identifier",
+                                  "name": "tmp1",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 12,
+                                      "column": 10
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 12,
+                                      "column": 40
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                  },
+                                  "_meta": {
+                                    "type": {
+                                      "type": "MemberAccess",
+                                      "object": {
+                                        "type": "Identifier",
+                                        "name": "Map",
+                                        "loc": {
+                                          "start": {
+                                            "Offset": 0,
+                                            "line": 12,
+                                            "column": 10
+                                          },
+                                          "end": {
+                                            "Offset": 0,
+                                            "line": 12,
+                                            "column": 13
+                                          },
+                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                        },
+                                        "_meta": {}
+                                      },
+                                      "property": {
+                                        "type": "Sequence",
+                                        "expressions": [
+                                          {
+                                            "type": "Identifier",
+                                            "name": "K",
+                                            "loc": {
+                                              "start": {
+                                                "Offset": 0,
+                                                "line": 12,
+                                                "column": 14
+                                              },
+                                              "end": {
+                                                "Offset": 0,
+                                                "line": 12,
+                                                "column": 15
+                                              },
+                                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                            },
+                                            "_meta": {}
+                                          },
+                                          {
+                                            "type": "Identifier",
+                                            "name": "V",
+                                            "loc": {
+                                              "start": {
+                                                "Offset": 0,
+                                                "line": 12,
+                                                "column": 17
+                                              },
+                                              "end": {
+                                                "Offset": 0,
+                                                "line": 12,
+                                                "column": 18
+                                              },
+                                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                            },
+                                            "_meta": {}
+                                          }
+                                        ],
+                                        "loc": null,
+                                        "_meta": {}
+                                      },
+                                      "computed": true,
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 12,
+                                          "column": 10
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 12,
+                                          "column": 19
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                      },
+                                      "_meta": {}
+                                    }
+                                  }
+                                },
+                                "init": {
+                                  "type": "NewExpression",
+                                  "callee": {
+                                    "type": "MemberAccess",
+                                    "object": {
+                                      "type": "Identifier",
+                                      "name": "Map",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 12,
+                                          "column": 10
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 12,
+                                          "column": 13
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                      },
+                                      "_meta": {}
+                                    },
+                                    "property": {
+                                      "type": "Sequence",
+                                      "expressions": [
+                                        {
+                                          "type": "Identifier",
+                                          "name": "K",
+                                          "loc": {
+                                            "start": {
+                                              "Offset": 0,
+                                              "line": 12,
+                                              "column": 14
+                                            },
+                                            "end": {
+                                              "Offset": 0,
+                                              "line": 12,
+                                              "column": 15
+                                            },
+                                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                          },
+                                          "_meta": {}
+                                        },
+                                        {
+                                          "type": "Identifier",
+                                          "name": "V",
+                                          "loc": {
+                                            "start": {
+                                              "Offset": 0,
+                                              "line": 12,
+                                              "column": 17
+                                            },
+                                            "end": {
+                                              "Offset": 0,
+                                              "line": 12,
+                                              "column": 18
+                                            },
+                                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                          },
+                                          "_meta": {}
+                                        }
+                                      ],
+                                      "loc": null,
+                                      "_meta": {}
+                                    },
+                                    "computed": true,
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 12,
+                                        "column": 10
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 12,
+                                        "column": 19
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  "arguments": [],
+                                  "loc": null,
+                                  "_meta": {}
+                                },
+                                "cloned": false,
+                                "varType": {
+                                  "type": "MemberAccess",
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "Map",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 12,
+                                        "column": 10
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 12,
+                                        "column": 13
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  "property": {
+                                    "type": "Sequence",
+                                    "expressions": [
+                                      {
+                                        "type": "Identifier",
+                                        "name": "K",
+                                        "loc": {
+                                          "start": {
+                                            "Offset": 0,
+                                            "line": 12,
+                                            "column": 14
+                                          },
+                                          "end": {
+                                            "Offset": 0,
+                                            "line": 12,
+                                            "column": 15
+                                          },
+                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                        },
+                                        "_meta": {}
+                                      },
+                                      {
+                                        "type": "Identifier",
+                                        "name": "V",
+                                        "loc": {
+                                          "start": {
+                                            "Offset": 0,
+                                            "line": 12,
+                                            "column": 17
+                                          },
+                                          "end": {
+                                            "Offset": 0,
+                                            "line": 12,
+                                            "column": 18
+                                          },
+                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                        },
+                                        "_meta": {}
+                                      }
+                                    ],
+                                    "loc": null,
+                                    "_meta": {}
+                                  },
+                                  "computed": true,
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 12,
+                                      "column": 10
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 12,
+                                      "column": 19
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "variableParam": false,
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              {
+                                "type": "AssignmentExpression",
+                                "left": {
+                                  "type": "MemberAccess",
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "tmp1",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 12,
+                                        "column": 10
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 12,
+                                        "column": 40
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                    },
+                                    "_meta": {
+                                      "type": {
+                                        "type": "MemberAccess",
+                                        "object": {
+                                          "type": "Identifier",
+                                          "name": "Map",
+                                          "loc": {
+                                            "start": {
+                                              "Offset": 0,
+                                              "line": 12,
+                                              "column": 10
+                                            },
+                                            "end": {
+                                              "Offset": 0,
+                                              "line": 12,
+                                              "column": 13
+                                            },
+                                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                          },
+                                          "_meta": {}
+                                        },
+                                        "property": {
+                                          "type": "Sequence",
+                                          "expressions": [
+                                            {
+                                              "type": "Identifier",
+                                              "name": "K",
+                                              "loc": {
+                                                "start": {
+                                                  "Offset": 0,
+                                                  "line": 12,
+                                                  "column": 14
+                                                },
+                                                "end": {
+                                                  "Offset": 0,
+                                                  "line": 12,
+                                                  "column": 15
+                                                },
+                                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                              },
+                                              "_meta": {}
+                                            },
+                                            {
+                                              "type": "Identifier",
+                                              "name": "V",
+                                              "loc": {
+                                                "start": {
+                                                  "Offset": 0,
+                                                  "line": 12,
+                                                  "column": 17
+                                                },
+                                                "end": {
+                                                  "Offset": 0,
+                                                  "line": 12,
+                                                  "column": 18
+                                                },
+                                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                              },
+                                              "_meta": {}
+                                            }
+                                          ],
+                                          "loc": null,
+                                          "_meta": {}
+                                        },
+                                        "computed": true,
+                                        "loc": {
+                                          "start": {
+                                            "Offset": 0,
+                                            "line": 12,
+                                            "column": 10
+                                          },
+                                          "end": {
+                                            "Offset": 0,
+                                            "line": 12,
+                                            "column": 19
+                                          },
+                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                        },
+                                        "_meta": {}
+                                      }
+                                    }
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "data",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 12,
+                                        "column": 20
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 12,
+                                        "column": 24
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  "computed": false,
+                                  "loc": null,
+                                  "_meta": {}
+                                },
+                                "right": {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "Identifier",
+                                    "name": "make",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 12,
+                                        "column": 26
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 12,
+                                        "column": 30
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "MapType",
+                                      "id": {
+                                        "type": "Identifier",
+                                        "name": "MapType",
+                                        "loc": {
+                                          "start": {
+                                            "Offset": 0,
+                                            "line": 12,
+                                            "column": 31
+                                          },
+                                          "end": {
+                                            "Offset": 0,
+                                            "line": 12,
+                                            "column": 38
+                                          },
+                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                        },
+                                        "_meta": {}
+                                      },
+                                      "keyType": {
+                                        "type": "Identifier",
+                                        "name": "K",
+                                        "loc": {
+                                          "start": {
+                                            "Offset": 0,
+                                            "line": 12,
+                                            "column": 35
+                                          },
+                                          "end": {
+                                            "Offset": 0,
+                                            "line": 12,
+                                            "column": 36
+                                          },
+                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                        },
+                                        "_meta": {}
+                                      },
+                                      "valueType": {
+                                        "type": "Identifier",
+                                        "name": "V",
+                                        "loc": {
+                                          "start": {
+                                            "Offset": 0,
+                                            "line": 12,
+                                            "column": 37
+                                          },
+                                          "end": {
+                                            "Offset": 0,
+                                            "line": 12,
+                                            "column": 38
+                                          },
+                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                        },
+                                        "_meta": {}
+                                      },
+                                      "typeArguments": null,
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 12,
+                                          "column": 31
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 12,
+                                          "column": 38
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                      },
+                                      "_meta": {}
+                                    }
+                                  ],
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 12,
+                                      "column": 26
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 12,
+                                      "column": 39
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "operator": "=",
+                                "cloned": true,
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              {
+                                "type": "Identifier",
+                                "name": "tmp1",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 12,
+                                    "column": 10
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 12,
+                                    "column": 40
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                },
+                                "_meta": {
+                                  "type": {
+                                    "type": "MemberAccess",
+                                    "object": {
+                                      "type": "Identifier",
+                                      "name": "Map",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 12,
+                                          "column": 10
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 12,
+                                          "column": 13
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                      },
+                                      "_meta": {}
+                                    },
+                                    "property": {
+                                      "type": "Sequence",
+                                      "expressions": [
+                                        {
+                                          "type": "Identifier",
+                                          "name": "K",
+                                          "loc": {
+                                            "start": {
+                                              "Offset": 0,
+                                              "line": 12,
+                                              "column": 14
+                                            },
+                                            "end": {
+                                              "Offset": 0,
+                                              "line": 12,
+                                              "column": 15
+                                            },
+                                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                          },
+                                          "_meta": {}
+                                        },
+                                        {
+                                          "type": "Identifier",
+                                          "name": "V",
+                                          "loc": {
+                                            "start": {
+                                              "Offset": 0,
+                                              "line": 12,
+                                              "column": 17
+                                            },
+                                            "end": {
+                                              "Offset": 0,
+                                              "line": 12,
+                                              "column": 18
+                                            },
+                                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                          },
+                                          "_meta": {}
+                                        }
+                                      ],
+                                      "loc": null,
+                                      "_meta": {}
+                                    },
+                                    "computed": true,
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 12,
+                                        "column": 10
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 12,
+                                        "column": 19
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                    },
+                                    "_meta": {}
+                                  }
+                                }
+                              }
+                            ],
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 12,
+                                "column": 10
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 12,
+                                "column": 40
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                            },
+                            "_meta": {}
+                          },
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 12,
+                              "column": 9
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 12,
+                              "column": 40
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                          },
+                          "_meta": {}
+                        },
+                        "isYield": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 12,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 12,
+                            "column": 40
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                        },
+                        "_meta": {}
+                      }
+                    ],
+                    "id": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 11,
+                        "column": 47
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 13,
+                        "column": 2
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                    },
+                    "_meta": {}
+                  },
+                  "modifiers": null,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 11,
+                      "column": 1
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 13,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "FunctionDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "main",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 15,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 15,
+                        "column": 10
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                    },
+                    "_meta": {}
+                  },
+                  "parameters": [],
+                  "returnType": {
+                    "type": "VoidType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "body": {
+                    "type": "ScopedStatement",
+                    "body": [
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "s",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 22,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 22,
+                              "column": 3
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                          },
+                          "_meta": {
+                            "type": {
+                              "type": "ArrayType",
+                              "id": {
+                                "type": "Identifier",
+                                "name": "ArrayType",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 22,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 22,
+                                    "column": 20
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                },
+                                "_meta": {}
+                              },
+                              "element": {
+                                "type": "Identifier",
+                                "name": "string",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 22,
+                                    "column": 14
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 22,
+                                    "column": 20
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                },
+                                "_meta": {}
+                              },
+                              "typeArguments": null,
+                              "size": {
+                                "type": "Noop",
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 22,
+                                  "column": 12
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 22,
+                                  "column": 20
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                              },
+                              "_meta": {}
+                            }
+                          }
+                        },
+                        "init": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "Identifier",
+                            "name": "make",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 22,
+                                "column": 7
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 22,
+                                "column": 11
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                            },
+                            "_meta": {}
+                          },
+                          "arguments": [
+                            {
+                              "type": "ArrayType",
+                              "id": {
+                                "type": "Identifier",
+                                "name": "ArrayType",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 22,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 22,
+                                    "column": 20
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                },
+                                "_meta": {}
+                              },
+                              "element": {
+                                "type": "Identifier",
+                                "name": "string",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 22,
+                                    "column": 14
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 22,
+                                    "column": 20
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                },
+                                "_meta": {}
+                              },
+                              "typeArguments": null,
+                              "size": {
+                                "type": "Noop",
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 22,
+                                  "column": 12
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 22,
+                                  "column": 20
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                              },
+                              "_meta": {}
+                            },
+                            {
+                              "type": "Literal",
+                              "value": "3",
+                              "literalType": "INT",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 22,
+                                  "column": 22
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 22,
+                                  "column": 23
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                              },
+                              "_meta": {}
+                            }
+                          ],
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 22,
+                              "column": 7
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 22,
+                              "column": 24
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": true,
+                        "varType": {
+                          "type": "ArrayType",
+                          "id": {
+                            "type": "Identifier",
+                            "name": "ArrayType",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 22,
+                                "column": 12
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 22,
+                                "column": 20
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                            },
+                            "_meta": {}
+                          },
+                          "element": {
+                            "type": "Identifier",
+                            "name": "string",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 22,
+                                "column": 14
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 22,
+                                "column": 20
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                            },
+                            "_meta": {}
+                          },
+                          "typeArguments": null,
+                          "size": {
+                            "type": "Noop",
+                            "loc": null,
+                            "_meta": {}
+                          },
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 22,
+                              "column": 12
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 22,
+                              "column": 20
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                          },
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 22,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 22,
+                            "column": 24
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "AssignmentExpression",
+                        "left": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "s",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 24,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 24,
+                                "column": 3
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Literal",
+                            "value": "0",
+                            "literalType": "INT",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 24,
+                                "column": 4
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 24,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": true,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 24,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 24,
+                              "column": 6
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                          },
+                          "_meta": {}
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": "\"a\"",
+                          "literalType": "STRING",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 24,
+                              "column": 9
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 24,
+                              "column": 12
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                          },
+                          "_meta": {}
+                        },
+                        "operator": "=",
+                        "cloned": true,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 24,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 24,
+                            "column": 12
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "AssignmentExpression",
+                        "left": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "s",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 25,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 25,
+                                "column": 3
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Literal",
+                            "value": "1",
+                            "literalType": "INT",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 25,
+                                "column": 4
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 25,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": true,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 25,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 25,
+                              "column": 6
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                          },
+                          "_meta": {}
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": "\"b\"",
+                          "literalType": "STRING",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 25,
+                              "column": 9
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 25,
+                              "column": 12
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                          },
+                          "_meta": {}
+                        },
+                        "operator": "=",
+                        "cloned": true,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 25,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 25,
+                            "column": 12
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "AssignmentExpression",
+                        "left": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "s",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 26,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 26,
+                                "column": 3
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Literal",
+                            "value": "2",
+                            "literalType": "INT",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 26,
+                                "column": 4
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 26,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": true,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 26,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 26,
+                              "column": 6
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                          },
+                          "_meta": {}
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": "\"c\"",
+                          "literalType": "STRING",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 26,
+                              "column": 9
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 26,
+                              "column": 12
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                          },
+                          "_meta": {}
+                        },
+                        "operator": "=",
+                        "cloned": true,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 26,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 26,
+                            "column": 12
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "l2",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 28,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 28,
+                              "column": 4
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                          },
+                          "_meta": {
+                            "type": {
+                              "type": "DynamicType",
+                              "id": null,
+                              "typeArguments": null,
+                              "loc": null,
+                              "_meta": {}
+                            }
+                          }
+                        },
+                        "init": {
+                          "type": "SliceExpression",
+                          "element": {
+                            "type": "Identifier",
+                            "name": "s",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 28,
+                                "column": 8
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 28,
+                                "column": 9
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                            },
+                            "_meta": {}
+                          },
+                          "start": {
+                            "type": "Literal",
+                            "value": "1",
+                            "literalType": "INT",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 28,
+                                "column": 10
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 28,
+                                "column": 11
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                            },
+                            "_meta": {}
+                          },
+                          "end": {
+                            "type": "Noop",
+                            "loc": null,
+                            "_meta": {}
+                          },
+                          "step": null,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 28,
+                              "column": 8
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 28,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": true,
+                        "varType": {
+                          "type": "DynamicType",
+                          "id": null,
+                          "typeArguments": null,
+                          "loc": null,
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 28,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 28,
+                            "column": 13
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 29,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 29,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Println",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 29,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 29,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 29,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 29,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Identifier",
+                            "name": "l2",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 29,
+                                "column": 14
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 29,
+                                "column": 16
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 29,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 29,
+                            "column": 17
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                        },
+                        "_meta": {}
+                      }
+                    ],
+                    "id": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 15,
+                        "column": 13
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 30,
+                        "column": 2
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                    },
+                    "_meta": {}
+                  },
+                  "modifiers": null,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 15,
+                      "column": 1
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 30,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "FunctionDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "newMap2",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 32,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 32,
+                        "column": 13
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                    },
+                    "_meta": {}
+                  },
+                  "parameters": [],
+                  "returnType": {
+                    "type": "PointerType",
+                    "id": null,
+                    "element": {
+                      "type": "MapType",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "MapType",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 32,
+                            "column": 17
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 32,
+                            "column": 31
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                        },
+                        "_meta": {}
+                      },
+                      "keyType": {
+                        "type": "Identifier",
+                        "name": "int",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 32,
+                            "column": 21
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 32,
+                            "column": 24
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                        },
+                        "_meta": {}
+                      },
+                      "valueType": {
+                        "type": "Identifier",
+                        "name": "string",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 32,
+                            "column": 25
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 32,
+                            "column": 31
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                        },
+                        "_meta": {}
+                      },
+                      "typeArguments": null,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 32,
+                          "column": 17
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 32,
+                          "column": 31
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                      },
+                      "_meta": {}
+                    },
+                    "typeArguments": null,
+                    "kind": "pointer",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 32,
+                        "column": 16
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 32,
+                        "column": 31
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                    },
+                    "_meta": {}
+                  },
+                  "body": {
+                    "type": "ScopedStatement",
+                    "body": [
+                      {
+                        "type": "ReturnStatement",
+                        "argument": {
+                          "type": "ReferenceExpression",
+                          "argument": {
+                            "type": "Sequence",
+                            "expressions": [
+                              {
+                                "type": "VariableDeclaration",
+                                "id": {
+                                  "type": "Identifier",
+                                  "name": "tmp2",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 33,
+                                      "column": 10
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 33,
+                                      "column": 26
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                  },
+                                  "_meta": {
+                                    "type": {
+                                      "type": "MapType",
+                                      "id": {
+                                        "type": "Identifier",
+                                        "name": "MapType",
+                                        "loc": {
+                                          "start": {
+                                            "Offset": 0,
+                                            "line": 33,
+                                            "column": 10
+                                          },
+                                          "end": {
+                                            "Offset": 0,
+                                            "line": 33,
+                                            "column": 24
+                                          },
+                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                        },
+                                        "_meta": {}
+                                      },
+                                      "keyType": {
+                                        "type": "Identifier",
+                                        "name": "int",
+                                        "loc": {
+                                          "start": {
+                                            "Offset": 0,
+                                            "line": 33,
+                                            "column": 14
+                                          },
+                                          "end": {
+                                            "Offset": 0,
+                                            "line": 33,
+                                            "column": 17
+                                          },
+                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                        },
+                                        "_meta": {}
+                                      },
+                                      "valueType": {
+                                        "type": "Identifier",
+                                        "name": "string",
+                                        "loc": {
+                                          "start": {
+                                            "Offset": 0,
+                                            "line": 33,
+                                            "column": 18
+                                          },
+                                          "end": {
+                                            "Offset": 0,
+                                            "line": 33,
+                                            "column": 24
+                                          },
+                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                        },
+                                        "_meta": {}
+                                      },
+                                      "typeArguments": null,
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 33,
+                                          "column": 10
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 33,
+                                          "column": 24
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                      },
+                                      "_meta": {}
+                                    }
+                                  }
+                                },
+                                "init": {
+                                  "type": "NewExpression",
+                                  "callee": {
+                                    "type": "MapType",
+                                    "id": {
+                                      "type": "Identifier",
+                                      "name": "MapType",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 33,
+                                          "column": 10
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 33,
+                                          "column": 24
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                      },
+                                      "_meta": {}
+                                    },
+                                    "keyType": {
+                                      "type": "Identifier",
+                                      "name": "int",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 33,
+                                          "column": 14
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 33,
+                                          "column": 17
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                      },
+                                      "_meta": {}
+                                    },
+                                    "valueType": {
+                                      "type": "Identifier",
+                                      "name": "string",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 33,
+                                          "column": 18
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 33,
+                                          "column": 24
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                      },
+                                      "_meta": {}
+                                    },
+                                    "typeArguments": null,
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 33,
+                                        "column": 10
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 33,
+                                        "column": 24
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  "arguments": [],
+                                  "loc": null,
+                                  "_meta": {}
+                                },
+                                "cloned": false,
+                                "varType": {
+                                  "type": "MapType",
+                                  "id": {
+                                    "type": "Identifier",
+                                    "name": "MapType",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 33,
+                                        "column": 10
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 33,
+                                        "column": 24
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  "keyType": {
+                                    "type": "Identifier",
+                                    "name": "int",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 33,
+                                        "column": 14
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 33,
+                                        "column": 17
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  "valueType": {
+                                    "type": "Identifier",
+                                    "name": "string",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 33,
+                                        "column": 18
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 33,
+                                        "column": 24
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  "typeArguments": null,
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 33,
+                                      "column": 10
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 33,
+                                      "column": 24
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "variableParam": false,
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              {
+                                "type": "Identifier",
+                                "name": "tmp2",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 33,
+                                    "column": 10
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 33,
+                                    "column": 26
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                },
+                                "_meta": {
+                                  "type": {
+                                    "type": "MapType",
+                                    "id": {
+                                      "type": "Identifier",
+                                      "name": "MapType",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 33,
+                                          "column": 10
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 33,
+                                          "column": 24
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                      },
+                                      "_meta": {}
+                                    },
+                                    "keyType": {
+                                      "type": "Identifier",
+                                      "name": "int",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 33,
+                                          "column": 14
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 33,
+                                          "column": 17
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                      },
+                                      "_meta": {}
+                                    },
+                                    "valueType": {
+                                      "type": "Identifier",
+                                      "name": "string",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 33,
+                                          "column": 18
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 33,
+                                          "column": 24
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                      },
+                                      "_meta": {}
+                                    },
+                                    "typeArguments": null,
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 33,
+                                        "column": 10
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 33,
+                                        "column": 24
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                                    },
+                                    "_meta": {}
+                                  }
+                                }
+                              }
+                            ],
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 33,
+                                "column": 10
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 33,
+                                "column": 26
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                            },
+                            "_meta": {}
+                          },
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 33,
+                              "column": 9
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 33,
+                              "column": 26
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                          },
+                          "_meta": {}
+                        },
+                        "isYield": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 33,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 33,
+                            "column": 26
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                        },
+                        "_meta": {}
+                      }
+                    ],
+                    "id": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 32,
+                        "column": 32
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 34,
+                        "column": 2
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                    },
+                    "_meta": {}
+                  },
+                  "modifiers": null,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 32,
+                      "column": 1
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 34,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+                  },
+                  "_meta": {}
+                }
+              ],
+              "language": "golang",
+              "languageVersion": "1.18",
+              "uri": "",
+              "version": "",
+              "loc": {
+                "start": {
+                  "Offset": 0,
+                  "line": 1,
+                  "column": 1
+                },
+                "end": {
+                  "Offset": 0,
+                  "line": 34,
+                  "column": 2
+                },
+                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/test/IndexListExpr.go"
+              },
+              "_meta": {}
+            },
+            "packageName": "__single__"
+          }
+        },
+        "subs": {}
+      }
+    }
+  },
+  "moduleName": "__single_module__"
+}

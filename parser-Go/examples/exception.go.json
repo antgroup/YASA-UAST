@@ -1,0 +1,852 @@
+{
+  "packageInfo": {
+    "PathName": "",
+    "files": {},
+    "subs": {
+      "/": {
+        "PathName": "",
+        "files": {
+          "/Users/ariel/code/uast/uast4go/examples/exception.go": {
+            "node": {
+              "type": "CompileUnit",
+              "body": [
+                {
+                  "type": "PackageDeclaration",
+                  "name": {
+                    "type": "Identifier",
+                    "name": "examples",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 9
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 17
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                    },
+                    "_meta": {}
+                  },
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 9
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 17
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "FunctionDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "exception_throw_002_F",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 3,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 3,
+                        "column": 27
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                    },
+                    "_meta": {}
+                  },
+                  "parameters": [
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "__taint_src",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 3,
+                            "column": 28
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 3,
+                            "column": 39
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                        },
+                        "_meta": {
+                          "type": {
+                            "type": "Identifier",
+                            "name": "string",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 3,
+                                "column": 40
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 3,
+                                "column": 46
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "init": null,
+                      "cloned": true,
+                      "varType": {
+                        "type": "Identifier",
+                        "name": "string",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 3,
+                            "column": 40
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 3,
+                            "column": 46
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                        },
+                        "_meta": {}
+                      },
+                      "variableParam": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 3,
+                          "column": 28
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 3,
+                          "column": 46
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                      },
+                      "_meta": {}
+                    }
+                  ],
+                  "returnType": {
+                    "type": "VoidType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "body": {
+                    "type": "ScopedStatement",
+                    "body": [
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "FunctionDefinition",
+                          "id": {
+                            "type": "Identifier",
+                            "name": "",
+                            "loc": null,
+                            "_meta": {}
+                          },
+                          "parameters": [],
+                          "returnType": {
+                            "type": "VoidType",
+                            "id": null,
+                            "typeArguments": null,
+                            "loc": null,
+                            "_meta": {}
+                          },
+                          "body": {
+                            "type": "ScopedStatement",
+                            "body": [
+                              {
+                                "type": "ScopedStatement",
+                                "body": [
+                                  {
+                                    "type": "VariableDeclaration",
+                                    "id": {
+                                      "type": "Identifier",
+                                      "name": "r",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 5,
+                                          "column": 6
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 5,
+                                          "column": 7
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                                      },
+                                      "_meta": {
+                                        "type": {
+                                          "type": "DynamicType",
+                                          "id": null,
+                                          "typeArguments": null,
+                                          "loc": null,
+                                          "_meta": {}
+                                        }
+                                      }
+                                    },
+                                    "init": {
+                                      "type": "CallExpression",
+                                      "callee": {
+                                        "type": "Identifier",
+                                        "name": "recover",
+                                        "loc": {
+                                          "start": {
+                                            "Offset": 0,
+                                            "line": 5,
+                                            "column": 11
+                                          },
+                                          "end": {
+                                            "Offset": 0,
+                                            "line": 5,
+                                            "column": 18
+                                          },
+                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                                        },
+                                        "_meta": {}
+                                      },
+                                      "arguments": [],
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 5,
+                                          "column": 11
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 5,
+                                          "column": 20
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                                      },
+                                      "_meta": {}
+                                    },
+                                    "cloned": true,
+                                    "varType": {
+                                      "type": "DynamicType",
+                                      "id": null,
+                                      "typeArguments": null,
+                                      "loc": null,
+                                      "_meta": {}
+                                    },
+                                    "variableParam": false,
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 5,
+                                        "column": 6
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 5,
+                                        "column": 20
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  {
+                                    "type": "IfStatement",
+                                    "test": {
+                                      "type": "BinaryExpression",
+                                      "operator": "!=",
+                                      "left": {
+                                        "type": "Identifier",
+                                        "name": "r",
+                                        "loc": {
+                                          "start": {
+                                            "Offset": 0,
+                                            "line": 5,
+                                            "column": 22
+                                          },
+                                          "end": {
+                                            "Offset": 0,
+                                            "line": 5,
+                                            "column": 23
+                                          },
+                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                                        },
+                                        "_meta": {}
+                                      },
+                                      "right": {
+                                        "type": "Identifier",
+                                        "name": "nil",
+                                        "loc": {
+                                          "start": {
+                                            "Offset": 0,
+                                            "line": 5,
+                                            "column": 27
+                                          },
+                                          "end": {
+                                            "Offset": 0,
+                                            "line": 5,
+                                            "column": 30
+                                          },
+                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                                        },
+                                        "_meta": {}
+                                      },
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 5,
+                                          "column": 22
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 5,
+                                          "column": 30
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                                      },
+                                      "_meta": {}
+                                    },
+                                    "consequent": {
+                                      "type": "ScopedStatement",
+                                      "body": [
+                                        {
+                                          "type": "CallExpression",
+                                          "callee": {
+                                            "type": "Identifier",
+                                            "name": "__taint_sink",
+                                            "loc": {
+                                              "start": {
+                                                "Offset": 0,
+                                                "line": 6,
+                                                "column": 4
+                                              },
+                                              "end": {
+                                                "Offset": 0,
+                                                "line": 6,
+                                                "column": 16
+                                              },
+                                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                                            },
+                                            "_meta": {}
+                                          },
+                                          "arguments": [
+                                            {
+                                              "type": "Identifier",
+                                              "name": "r",
+                                              "loc": {
+                                                "start": {
+                                                  "Offset": 0,
+                                                  "line": 6,
+                                                  "column": 17
+                                                },
+                                                "end": {
+                                                  "Offset": 0,
+                                                  "line": 6,
+                                                  "column": 18
+                                                },
+                                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                                              },
+                                              "_meta": {}
+                                            }
+                                          ],
+                                          "loc": {
+                                            "start": {
+                                              "Offset": 0,
+                                              "line": 6,
+                                              "column": 4
+                                            },
+                                            "end": {
+                                              "Offset": 0,
+                                              "line": 6,
+                                              "column": 19
+                                            },
+                                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                                          },
+                                          "_meta": {}
+                                        }
+                                      ],
+                                      "id": null,
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 5,
+                                          "column": 31
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 7,
+                                          "column": 4
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                                      },
+                                      "_meta": {}
+                                    },
+                                    "alternative": {
+                                      "type": "Noop",
+                                      "loc": null,
+                                      "_meta": {}
+                                    },
+                                    "loc": null,
+                                    "_meta": {}
+                                  }
+                                ],
+                                "id": null,
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 5,
+                                    "column": 3
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 7,
+                                    "column": 4
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                                },
+                                "_meta": {}
+                              }
+                            ],
+                            "id": null,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 4,
+                                "column": 15
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 8,
+                                "column": 3
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                            },
+                            "_meta": {}
+                          },
+                          "modifiers": null,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 4,
+                              "column": 8
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 8,
+                              "column": 3
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 4,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 8,
+                            "column": 5
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                        },
+                        "_meta": {
+                          "defer": true
+                        }
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "Identifier",
+                          "name": "panic",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 10,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 10,
+                              "column": 7
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Literal",
+                            "value": "\"_\"",
+                            "literalType": "STRING",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 10,
+                                "column": 8
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 10,
+                                "column": 11
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 10,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 10,
+                            "column": 12
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                        },
+                        "_meta": {}
+                      }
+                    ],
+                    "id": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 3,
+                        "column": 48
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 12,
+                        "column": 2
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                    },
+                    "_meta": {}
+                  },
+                  "modifiers": null,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 3,
+                      "column": 1
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 12,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "FunctionDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "__taint_sink",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 14,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 14,
+                        "column": 18
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                    },
+                    "_meta": {}
+                  },
+                  "parameters": [
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "o",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 14,
+                            "column": 19
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 14,
+                            "column": 20
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                        },
+                        "_meta": {
+                          "type": {
+                            "type": "DynamicType",
+                            "id": null,
+                            "typeArguments": null,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 14,
+                                "column": 21
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 14,
+                                "column": 32
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "init": null,
+                      "cloned": true,
+                      "varType": {
+                        "type": "DynamicType",
+                        "id": null,
+                        "typeArguments": null,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 14,
+                            "column": 21
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 14,
+                            "column": 32
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                        },
+                        "_meta": {}
+                      },
+                      "variableParam": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 14,
+                          "column": 19
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 14,
+                          "column": 32
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                      },
+                      "_meta": {}
+                    }
+                  ],
+                  "returnType": {
+                    "type": "VoidType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "body": {
+                    "type": "ScopedStatement",
+                    "body": [],
+                    "id": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 14,
+                        "column": 34
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 14,
+                        "column": 36
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                    },
+                    "_meta": {}
+                  },
+                  "modifiers": null,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 14,
+                      "column": 1
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 14,
+                      "column": 36
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "FunctionDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "main",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 16,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 16,
+                        "column": 10
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                    },
+                    "_meta": {}
+                  },
+                  "parameters": [],
+                  "returnType": {
+                    "type": "VoidType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "body": {
+                    "type": "ScopedStatement",
+                    "body": [
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "Identifier",
+                          "name": "exception_throw_002_F",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 17,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 17,
+                              "column": 23
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Literal",
+                            "value": "\"__taint_src\"",
+                            "literalType": "STRING",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 17,
+                                "column": 24
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 17,
+                                "column": 37
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 17,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 17,
+                            "column": 38
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                        },
+                        "_meta": {}
+                      }
+                    ],
+                    "id": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 16,
+                        "column": 13
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 18,
+                        "column": 2
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                    },
+                    "_meta": {}
+                  },
+                  "modifiers": null,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 16,
+                      "column": 1
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 18,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+                  },
+                  "_meta": {}
+                }
+              ],
+              "language": "golang",
+              "languageVersion": "1.18",
+              "uri": "",
+              "version": "",
+              "loc": {
+                "start": {
+                  "Offset": 0,
+                  "line": 1,
+                  "column": 1
+                },
+                "end": {
+                  "Offset": 0,
+                  "line": 18,
+                  "column": 2
+                },
+                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/exception.go"
+              },
+              "_meta": {}
+            },
+            "packageName": "__single__"
+          }
+        },
+        "subs": {}
+      }
+    }
+  },
+  "moduleName": "__single_module__"
+}

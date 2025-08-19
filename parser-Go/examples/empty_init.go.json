@@ -1,0 +1,1036 @@
+{
+  "packageInfo": {
+    "PathName": "",
+    "files": {},
+    "subs": {
+      "/": {
+        "PathName": "",
+        "files": {
+          "/Users/ariel/code/uast/uast4go/examples/empty_init.go": {
+            "node": {
+              "type": "CompileUnit",
+              "body": [
+                {
+                  "type": "PackageDeclaration",
+                  "name": {
+                    "type": "Identifier",
+                    "name": "examples",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 9
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 17
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                    },
+                    "_meta": {}
+                  },
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 9
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 17
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "fmt",
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "init": {
+                    "type": "ImportExpression",
+                    "from": {
+                      "type": "Literal",
+                      "value": "fmt",
+                      "literalType": "string",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 4,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 4,
+                          "column": 7
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                      },
+                      "_meta": {}
+                    },
+                    "local": null,
+                    "imported": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 4,
+                        "column": 2
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 4,
+                        "column": 7
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                    },
+                    "_meta": {}
+                  },
+                  "cloned": true,
+                  "varType": {
+                    "type": "DynamicType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "variableParam": false,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 4,
+                      "column": 2
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 4,
+                      "column": 7
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "FunctionDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "main",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 7,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 7,
+                        "column": 10
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                    },
+                    "_meta": {}
+                  },
+                  "parameters": [],
+                  "returnType": {
+                    "type": "VoidType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "body": {
+                    "type": "ScopedStatement",
+                    "body": [
+                      {
+                        "type": "IfStatement",
+                        "test": {
+                          "type": "Identifier",
+                          "name": "true",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 8,
+                              "column": 8
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 8,
+                              "column": 12
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                          },
+                          "_meta": {}
+                        },
+                        "consequent": {
+                          "type": "ScopedStatement",
+                          "body": [
+                            {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "MemberAccess",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "fmt",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 9,
+                                      "column": 5
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 9,
+                                      "column": 8
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "Print",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 9,
+                                      "column": 9
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 9,
+                                      "column": 14
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "computed": false,
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 9,
+                                    "column": 5
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 9,
+                                    "column": 14
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                                },
+                                "_meta": {}
+                              },
+                              "arguments": [
+                                {
+                                  "type": "Literal",
+                                  "value": "\"Hello\"",
+                                  "literalType": "STRING",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 9,
+                                      "column": 15
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 9,
+                                      "column": 22
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                                  },
+                                  "_meta": {}
+                                }
+                              ],
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 9,
+                                  "column": 5
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 9,
+                                  "column": 23
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                              },
+                              "_meta": {}
+                            }
+                          ],
+                          "id": null,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 8,
+                              "column": 13
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 10,
+                              "column": 4
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                          },
+                          "_meta": {}
+                        },
+                        "alternative": {
+                          "type": "Noop",
+                          "loc": null,
+                          "_meta": {}
+                        },
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 8,
+                            "column": 3
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 10,
+                            "column": 4
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "x",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 12,
+                              "column": 3
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 12,
+                              "column": 4
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                          },
+                          "_meta": {
+                            "type": {
+                              "type": "Identifier",
+                              "name": "int",
+                              "loc": null,
+                              "_meta": {}
+                            }
+                          }
+                        },
+                        "init": {
+                          "type": "Literal",
+                          "value": "1",
+                          "literalType": "INT",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 12,
+                              "column": 8
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 12,
+                              "column": 9
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": true,
+                        "varType": {
+                          "type": "Identifier",
+                          "name": "int",
+                          "loc": null,
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 12,
+                            "column": 3
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 12,
+                            "column": 9
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "SwitchStatement",
+                        "discriminant": {
+                          "type": "Sequence",
+                          "expressions": [
+                            {
+                              "type": "Identifier",
+                              "name": "x",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 14,
+                                  "column": 12
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 14,
+                                  "column": 13
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                              },
+                              "_meta": {}
+                            }
+                          ],
+                          "loc": null,
+                          "_meta": {}
+                        },
+                        "cases": [
+                          {
+                            "type": "CaseClause",
+                            "test": null,
+                            "body": {
+                              "type": "ScopedStatement",
+                              "body": [
+                                {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "MemberAccess",
+                                    "object": {
+                                      "type": "Identifier",
+                                      "name": "fmt",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 15,
+                                          "column": 12
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 15,
+                                          "column": 15
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                                      },
+                                      "_meta": {}
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "Print",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 15,
+                                          "column": 16
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 15,
+                                          "column": 21
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                                      },
+                                      "_meta": {}
+                                    },
+                                    "computed": false,
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 15,
+                                        "column": 12
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 15,
+                                        "column": 21
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "Literal",
+                                      "value": "\" \"",
+                                      "literalType": "STRING",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 15,
+                                          "column": 22
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 15,
+                                          "column": 25
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                                      },
+                                      "_meta": {}
+                                    }
+                                  ],
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 15,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 15,
+                                      "column": 26
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                                  },
+                                  "_meta": {}
+                                }
+                              ],
+                              "id": null,
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 14,
+                                "column": 3
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 16,
+                                "column": 4
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 14,
+                            "column": 3
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 16,
+                            "column": 4
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "y",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 18,
+                              "column": 7
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 18,
+                              "column": 8
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                          },
+                          "_meta": {
+                            "type": {
+                              "type": "DynamicType",
+                              "id": null,
+                              "typeArguments": null,
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 18,
+                                  "column": 9
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 18,
+                                  "column": 20
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                              },
+                              "_meta": {}
+                            }
+                          }
+                        },
+                        "init": {
+                          "type": "Literal",
+                          "value": "1",
+                          "literalType": "INT",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 18,
+                              "column": 23
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 18,
+                              "column": 24
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": false,
+                        "varType": {
+                          "type": "DynamicType",
+                          "id": null,
+                          "typeArguments": null,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 18,
+                              "column": 9
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 18,
+                              "column": 20
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                          },
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 18,
+                            "column": 7
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 18,
+                            "column": 24
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "SwitchStatement",
+                        "discriminant": {
+                          "type": "Sequence",
+                          "expressions": [
+                            {
+                              "type": "BinaryExpression",
+                              "operator": "instanceof",
+                              "left": {
+                                "type": "Identifier",
+                                "name": "y",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 20,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 20,
+                                    "column": 13
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                                },
+                                "_meta": {}
+                              },
+                              "right": {
+                                "type": "Noop",
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 20,
+                                  "column": 12
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 20,
+                                  "column": 20
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                              },
+                              "_meta": {
+                                "type": {
+                                  "type": "",
+                                  "loc": null,
+                                  "_meta": {}
+                                }
+                              }
+                            }
+                          ],
+                          "loc": null,
+                          "_meta": {}
+                        },
+                        "cases": [
+                          {
+                            "type": "CaseClause",
+                            "test": null,
+                            "body": {
+                              "type": "ScopedStatement",
+                              "body": [
+                                {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "MemberAccess",
+                                    "object": {
+                                      "type": "Identifier",
+                                      "name": "fmt",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 21,
+                                          "column": 12
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 21,
+                                          "column": 15
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                                      },
+                                      "_meta": {}
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "Println",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 21,
+                                          "column": 16
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 21,
+                                          "column": 23
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                                      },
+                                      "_meta": {}
+                                    },
+                                    "computed": false,
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 21,
+                                        "column": 12
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 21,
+                                        "column": 23
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "Literal",
+                                      "value": "\"World\"",
+                                      "literalType": "STRING",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 21,
+                                          "column": 24
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 21,
+                                          "column": 31
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                                      },
+                                      "_meta": {}
+                                    }
+                                  ],
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 21,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 21,
+                                      "column": 32
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                                  },
+                                  "_meta": {}
+                                }
+                              ],
+                              "id": null,
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 20,
+                                "column": 3
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 22,
+                                "column": 4
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 20,
+                            "column": 3
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 22,
+                            "column": 4
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "ForStatement",
+                        "init": {
+                          "type": "Noop",
+                          "loc": null,
+                          "_meta": {}
+                        },
+                        "test": {
+                          "type": "Identifier",
+                          "name": "true",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 24,
+                              "column": 9
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 24,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                          },
+                          "_meta": {}
+                        },
+                        "update": {
+                          "type": "Noop",
+                          "loc": null,
+                          "_meta": {}
+                        },
+                        "body": {
+                          "type": "ScopedStatement",
+                          "body": [
+                            {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "MemberAccess",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "fmt",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 25,
+                                      "column": 5
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 25,
+                                      "column": 8
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "Println",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 25,
+                                      "column": 9
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 25,
+                                      "column": 16
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "computed": false,
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 25,
+                                    "column": 5
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 25,
+                                    "column": 16
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                                },
+                                "_meta": {}
+                              },
+                              "arguments": [
+                                {
+                                  "type": "Literal",
+                                  "value": "\"!\"",
+                                  "literalType": "STRING",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 25,
+                                      "column": 17
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 25,
+                                      "column": 20
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                                  },
+                                  "_meta": {}
+                                }
+                              ],
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 25,
+                                  "column": 5
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 25,
+                                  "column": 21
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                              },
+                              "_meta": {}
+                            }
+                          ],
+                          "id": null,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 24,
+                              "column": 16
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 26,
+                              "column": 4
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                          },
+                          "_meta": {}
+                        },
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 24,
+                            "column": 3
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 26,
+                            "column": 4
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                        },
+                        "_meta": {}
+                      }
+                    ],
+                    "id": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 7,
+                        "column": 13
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 28,
+                        "column": 2
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                    },
+                    "_meta": {}
+                  },
+                  "modifiers": null,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 7,
+                      "column": 1
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 28,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+                  },
+                  "_meta": {}
+                }
+              ],
+              "language": "golang",
+              "languageVersion": "1.18",
+              "uri": "",
+              "version": "",
+              "loc": {
+                "start": {
+                  "Offset": 0,
+                  "line": 1,
+                  "column": 1
+                },
+                "end": {
+                  "Offset": 0,
+                  "line": 28,
+                  "column": 2
+                },
+                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/empty_init.go"
+              },
+              "_meta": {}
+            },
+            "packageName": "__single__"
+          }
+        },
+        "subs": {}
+      }
+    }
+  },
+  "moduleName": "__single_module__"
+}

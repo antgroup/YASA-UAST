@@ -1,0 +1,2166 @@
+{
+  "packageInfo": {
+    "PathName": "",
+    "files": {},
+    "subs": {
+      "/": {
+        "PathName": "",
+        "files": {
+          "/Users/ariel/code/uast/uast4go/examples/interfaces.go": {
+            "node": {
+              "type": "CompileUnit",
+              "body": [
+                {
+                  "type": "PackageDeclaration",
+                  "name": {
+                    "type": "Identifier",
+                    "name": "examples",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 9
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 17
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                    },
+                    "_meta": {}
+                  },
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 9
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 17
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "fmt",
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "init": {
+                    "type": "ImportExpression",
+                    "from": {
+                      "type": "Literal",
+                      "value": "fmt",
+                      "literalType": "string",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 3,
+                          "column": 8
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 3,
+                          "column": 13
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                      },
+                      "_meta": {}
+                    },
+                    "local": null,
+                    "imported": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 3,
+                        "column": 8
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 3,
+                        "column": 13
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                    },
+                    "_meta": {}
+                  },
+                  "cloned": true,
+                  "varType": {
+                    "type": "DynamicType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "variableParam": false,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 3,
+                      "column": 8
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 3,
+                      "column": 13
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "ClassDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "Shape",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 5,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 5,
+                        "column": 11
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                    },
+                    "_meta": {}
+                  },
+                  "body": [],
+                  "supers": [],
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 5,
+                      "column": 6
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 7,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "ClassDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "Object",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 9,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 9,
+                        "column": 12
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                    },
+                    "_meta": {}
+                  },
+                  "body": [],
+                  "supers": [],
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 9,
+                      "column": 6
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 11,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "ClassDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "Material",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 13,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 13,
+                        "column": 14
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                    },
+                    "_meta": {}
+                  },
+                  "body": [],
+                  "supers": [],
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 13,
+                      "column": 6
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 16,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "ClassDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "Cube",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 18,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 18,
+                        "column": 10
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                    },
+                    "_meta": {}
+                  },
+                  "body": [
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "side",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 19,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 19,
+                            "column": 6
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                        },
+                        "_meta": {
+                          "type": {
+                            "type": "Identifier",
+                            "name": "float64",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 19,
+                                "column": 7
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 19,
+                                "column": 14
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "init": null,
+                      "cloned": true,
+                      "varType": {
+                        "type": "Identifier",
+                        "name": "float64",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 19,
+                            "column": 7
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 19,
+                            "column": 14
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                        },
+                        "_meta": {}
+                      },
+                      "variableParam": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 19,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 19,
+                          "column": 14
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                      },
+                      "_meta": {}
+                    },
+                    {
+                      "type": "FunctionDefinition",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "Area",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 22,
+                            "column": 15
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 22,
+                            "column": 19
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                        },
+                        "_meta": {}
+                      },
+                      "parameters": [
+                        {
+                          "type": "VariableDeclaration",
+                          "id": {
+                            "type": "Identifier",
+                            "name": "a",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 22,
+                                "column": 20
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 22,
+                                "column": 21
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                            },
+                            "_meta": {
+                              "type": {
+                                "type": "Identifier",
+                                "name": "float64",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 22,
+                                    "column": 22
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 22,
+                                    "column": 29
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                },
+                                "_meta": {}
+                              }
+                            }
+                          },
+                          "init": null,
+                          "cloned": true,
+                          "varType": {
+                            "type": "Identifier",
+                            "name": "float64",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 22,
+                                "column": 22
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 22,
+                                "column": 29
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                            },
+                            "_meta": {}
+                          },
+                          "variableParam": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 22,
+                              "column": 20
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 22,
+                              "column": 29
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                          },
+                          "_meta": {}
+                        }
+                      ],
+                      "returnType": {
+                        "type": "Identifier",
+                        "name": "float64",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 22,
+                            "column": 31
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 22,
+                            "column": 38
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                        },
+                        "_meta": {}
+                      },
+                      "body": {
+                        "type": "ScopedStatement",
+                        "body": [
+                          {
+                            "type": "VariableDeclaration",
+                            "id": {
+                              "type": "Identifier",
+                              "name": "c",
+                              "loc": null,
+                              "_meta": {
+                                "type": {
+                                  "type": "Identifier",
+                                  "name": "Cube",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 22,
+                                      "column": 9
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 22,
+                                      "column": 13
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                  },
+                                  "_meta": {}
+                                }
+                              }
+                            },
+                            "init": {
+                              "type": "ThisExpression",
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            "cloned": true,
+                            "varType": {
+                              "type": "Identifier",
+                              "name": "Cube",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 22,
+                                  "column": 9
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 22,
+                                  "column": 13
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                              },
+                              "_meta": {}
+                            },
+                            "variableParam": false,
+                            "loc": null,
+                            "_meta": {}
+                          },
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "BinaryExpression",
+                              "operator": "*",
+                              "left": {
+                                "type": "BinaryExpression",
+                                "operator": "*",
+                                "left": {
+                                  "type": "Literal",
+                                  "value": "6",
+                                  "literalType": "INT",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 23,
+                                      "column": 9
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 23,
+                                      "column": 10
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "right": {
+                                  "type": "BinaryExpression",
+                                  "operator": "*",
+                                  "left": {
+                                    "type": "MemberAccess",
+                                    "object": {
+                                      "type": "Identifier",
+                                      "name": "c",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 23,
+                                          "column": 14
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 23,
+                                          "column": 15
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                      },
+                                      "_meta": {}
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "side",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 23,
+                                          "column": 16
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 23,
+                                          "column": 20
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                      },
+                                      "_meta": {}
+                                    },
+                                    "computed": false,
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 23,
+                                        "column": 14
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 23,
+                                        "column": 20
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  "right": {
+                                    "type": "MemberAccess",
+                                    "object": {
+                                      "type": "Identifier",
+                                      "name": "c",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 23,
+                                          "column": 23
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 23,
+                                          "column": 24
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                      },
+                                      "_meta": {}
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "side",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 23,
+                                          "column": 25
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 23,
+                                          "column": 29
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                      },
+                                      "_meta": {}
+                                    },
+                                    "computed": false,
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 23,
+                                        "column": 23
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 23,
+                                        "column": 29
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 23,
+                                      "column": 13
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 23,
+                                      "column": 30
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 23,
+                                    "column": 9
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 23,
+                                    "column": 30
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                },
+                                "_meta": {}
+                              },
+                              "right": {
+                                "type": "Identifier",
+                                "name": "a",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 23,
+                                    "column": 33
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 23,
+                                    "column": 34
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                },
+                                "_meta": {}
+                              },
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 23,
+                                  "column": 9
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 23,
+                                  "column": 34
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                              },
+                              "_meta": {}
+                            },
+                            "isYield": false,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 23,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 23,
+                                "column": 34
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "id": null,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 22,
+                            "column": 39
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 24,
+                            "column": 2
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                        },
+                        "_meta": {}
+                      },
+                      "modifiers": null,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 22,
+                          "column": 1
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 24,
+                          "column": 2
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                      },
+                      "_meta": {}
+                    },
+                    {
+                      "type": "FunctionDefinition",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "Volume",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 26,
+                            "column": 15
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 26,
+                            "column": 21
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                        },
+                        "_meta": {}
+                      },
+                      "parameters": [],
+                      "returnType": {
+                        "type": "Identifier",
+                        "name": "float64",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 26,
+                            "column": 24
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 26,
+                            "column": 31
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                        },
+                        "_meta": {}
+                      },
+                      "body": {
+                        "type": "ScopedStatement",
+                        "body": [
+                          {
+                            "type": "VariableDeclaration",
+                            "id": {
+                              "type": "Identifier",
+                              "name": "c",
+                              "loc": null,
+                              "_meta": {
+                                "type": {
+                                  "type": "Identifier",
+                                  "name": "Cube",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 26,
+                                      "column": 9
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 26,
+                                      "column": 13
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                  },
+                                  "_meta": {}
+                                }
+                              }
+                            },
+                            "init": {
+                              "type": "ThisExpression",
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            "cloned": true,
+                            "varType": {
+                              "type": "Identifier",
+                              "name": "Cube",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 26,
+                                  "column": 9
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 26,
+                                  "column": 13
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                              },
+                              "_meta": {}
+                            },
+                            "variableParam": false,
+                            "loc": null,
+                            "_meta": {}
+                          },
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "BinaryExpression",
+                              "operator": "*",
+                              "left": {
+                                "type": "BinaryExpression",
+                                "operator": "*",
+                                "left": {
+                                  "type": "MemberAccess",
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "c",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 27,
+                                        "column": 9
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 27,
+                                        "column": 10
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "side",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 27,
+                                        "column": 11
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 27,
+                                        "column": 15
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  "computed": false,
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 27,
+                                      "column": 9
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 27,
+                                      "column": 15
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "right": {
+                                  "type": "MemberAccess",
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "c",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 27,
+                                        "column": 18
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 27,
+                                        "column": 19
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "side",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 27,
+                                        "column": 20
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 27,
+                                        "column": 24
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  "computed": false,
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 27,
+                                      "column": 18
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 27,
+                                      "column": 24
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 27,
+                                    "column": 9
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 27,
+                                    "column": 24
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                },
+                                "_meta": {}
+                              },
+                              "right": {
+                                "type": "MemberAccess",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "c",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 27,
+                                      "column": 27
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 27,
+                                      "column": 28
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "side",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 27,
+                                      "column": 29
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 27,
+                                      "column": 33
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "computed": false,
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 27,
+                                    "column": 27
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 27,
+                                    "column": 33
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                },
+                                "_meta": {}
+                              },
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 27,
+                                  "column": 9
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 27,
+                                  "column": 33
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                              },
+                              "_meta": {}
+                            },
+                            "isYield": false,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 27,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 27,
+                                "column": 33
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "id": null,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 26,
+                            "column": 32
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 28,
+                            "column": 2
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                        },
+                        "_meta": {}
+                      },
+                      "modifiers": null,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 26,
+                          "column": 1
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 28,
+                          "column": 2
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                      },
+                      "_meta": {}
+                    }
+                  ],
+                  "supers": [],
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 18,
+                      "column": 6
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 20,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "FunctionDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "Interfaces",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 30,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 30,
+                        "column": 16
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                    },
+                    "_meta": {}
+                  },
+                  "parameters": [],
+                  "returnType": {
+                    "type": "VoidType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "body": {
+                    "type": "ScopedStatement",
+                    "body": [
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "c",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 31,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 31,
+                              "column": 3
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                          },
+                          "_meta": {
+                            "type": {
+                              "type": "Identifier",
+                              "name": "Cube",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 31,
+                                  "column": 7
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 31,
+                                  "column": 11
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                              },
+                              "_meta": {}
+                            }
+                          }
+                        },
+                        "init": {
+                          "type": "Sequence",
+                          "expressions": [
+                            {
+                              "type": "VariableDeclaration",
+                              "id": {
+                                "type": "Identifier",
+                                "name": "tmp1",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 31,
+                                    "column": 7
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 31,
+                                    "column": 14
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                },
+                                "_meta": {
+                                  "type": {
+                                    "type": "Identifier",
+                                    "name": "Cube",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 31,
+                                        "column": 7
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 31,
+                                        "column": 11
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                    },
+                                    "_meta": {}
+                                  }
+                                }
+                              },
+                              "init": {
+                                "type": "NewExpression",
+                                "callee": {
+                                  "type": "Identifier",
+                                  "name": "Cube",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 31,
+                                      "column": 7
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 31,
+                                      "column": 11
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "arguments": [],
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              "cloned": false,
+                              "varType": {
+                                "type": "Identifier",
+                                "name": "Cube",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 31,
+                                    "column": 7
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 31,
+                                    "column": 11
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                },
+                                "_meta": {}
+                              },
+                              "variableParam": false,
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            {
+                              "type": "AssignmentExpression",
+                              "left": {
+                                "type": "MemberAccess",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "tmp1",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 31,
+                                      "column": 7
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 31,
+                                      "column": 14
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                  },
+                                  "_meta": {
+                                    "type": {
+                                      "type": "Identifier",
+                                      "name": "Cube",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 31,
+                                          "column": 7
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 31,
+                                          "column": 11
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                      },
+                                      "_meta": {}
+                                    }
+                                  }
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "side",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 19,
+                                      "column": 2
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 19,
+                                      "column": 6
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "computed": false,
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              "right": {
+                                "type": "Literal",
+                                "value": "3",
+                                "literalType": "INT",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 31,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 31,
+                                    "column": 13
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                },
+                                "_meta": {}
+                              },
+                              "operator": "=",
+                              "cloned": true,
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            {
+                              "type": "Identifier",
+                              "name": "tmp1",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 31,
+                                  "column": 7
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 31,
+                                  "column": 14
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                              },
+                              "_meta": {
+                                "type": {
+                                  "type": "Identifier",
+                                  "name": "Cube",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 31,
+                                      "column": 7
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 31,
+                                      "column": 11
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                  },
+                                  "_meta": {}
+                                }
+                              }
+                            }
+                          ],
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 31,
+                              "column": 7
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 31,
+                              "column": 14
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": true,
+                        "varType": {
+                          "type": "Identifier",
+                          "name": "Cube",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 31,
+                              "column": 7
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 31,
+                              "column": 11
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                          },
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 31,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 31,
+                            "column": 14
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "m",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 32,
+                              "column": 6
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 32,
+                              "column": 7
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                          },
+                          "_meta": {
+                            "type": {
+                              "type": "Identifier",
+                              "name": "Material",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 32,
+                                  "column": 8
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 32,
+                                  "column": 16
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                              },
+                              "_meta": {}
+                            }
+                          }
+                        },
+                        "init": {
+                          "type": "Identifier",
+                          "name": "c",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 32,
+                              "column": 19
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 32,
+                              "column": 20
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": false,
+                        "varType": {
+                          "type": "Identifier",
+                          "name": "Material",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 32,
+                              "column": 8
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 32,
+                              "column": 16
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                          },
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 32,
+                            "column": 6
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 32,
+                            "column": 20
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "s",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 33,
+                              "column": 6
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 33,
+                              "column": 7
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                          },
+                          "_meta": {
+                            "type": {
+                              "type": "Identifier",
+                              "name": "Shape",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 33,
+                                  "column": 8
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 33,
+                                  "column": 13
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                              },
+                              "_meta": {}
+                            }
+                          }
+                        },
+                        "init": {
+                          "type": "Identifier",
+                          "name": "c",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 33,
+                              "column": 16
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 33,
+                              "column": 17
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": false,
+                        "varType": {
+                          "type": "Identifier",
+                          "name": "Shape",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 33,
+                              "column": 8
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 33,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                          },
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 33,
+                            "column": 6
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 33,
+                            "column": 17
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "o",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 34,
+                              "column": 6
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 34,
+                              "column": 7
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                          },
+                          "_meta": {
+                            "type": {
+                              "type": "Identifier",
+                              "name": "Object",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 34,
+                                  "column": 8
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 34,
+                                  "column": 14
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                              },
+                              "_meta": {}
+                            }
+                          }
+                        },
+                        "init": {
+                          "type": "Identifier",
+                          "name": "c",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 34,
+                              "column": 17
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 34,
+                              "column": 18
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": false,
+                        "varType": {
+                          "type": "Identifier",
+                          "name": "Object",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 34,
+                              "column": 8
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 34,
+                              "column": 14
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                          },
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 34,
+                            "column": 6
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 34,
+                            "column": 18
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 35,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 35,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Printf",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 35,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 35,
+                                "column": 12
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 35,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 35,
+                              "column": 12
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Literal",
+                            "value": "\"dynamic type and value of interface m of static type Material is'%T' and '%v'\\n\"",
+                            "literalType": "STRING",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 35,
+                                "column": 13
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 35,
+                                "column": 94
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                            },
+                            "_meta": {}
+                          },
+                          {
+                            "type": "Identifier",
+                            "name": "m",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 35,
+                                "column": 96
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 35,
+                                "column": 97
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                            },
+                            "_meta": {}
+                          },
+                          {
+                            "type": "Identifier",
+                            "name": "m",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 35,
+                                "column": 99
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 35,
+                                "column": 100
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 35,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 35,
+                            "column": 101
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 36,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 36,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Printf",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 36,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 36,
+                                "column": 12
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 36,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 36,
+                              "column": 12
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Literal",
+                            "value": "\"dynamic type and value of interface s of static type Shape is'%T' and '%v'\\n\"",
+                            "literalType": "STRING",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 36,
+                                "column": 13
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 36,
+                                "column": 91
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                            },
+                            "_meta": {}
+                          },
+                          {
+                            "type": "Identifier",
+                            "name": "s",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 36,
+                                "column": 93
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 36,
+                                "column": 94
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                            },
+                            "_meta": {}
+                          },
+                          {
+                            "type": "Identifier",
+                            "name": "s",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 36,
+                                "column": 96
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 36,
+                                "column": 97
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 36,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 36,
+                            "column": 98
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 37,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 37,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Printf",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 37,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 37,
+                                "column": 12
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 37,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 37,
+                              "column": 12
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Literal",
+                            "value": "\"dynamic type and value of interface o of static type Object is'%T' and '%v'\\n\"",
+                            "literalType": "STRING",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 37,
+                                "column": 13
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 37,
+                                "column": 92
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                            },
+                            "_meta": {}
+                          },
+                          {
+                            "type": "Identifier",
+                            "name": "o",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 37,
+                                "column": 94
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 37,
+                                "column": 95
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                            },
+                            "_meta": {}
+                          },
+                          {
+                            "type": "Identifier",
+                            "name": "o",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 37,
+                                "column": 97
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 37,
+                                "column": 98
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 37,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 37,
+                            "column": 99
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                        },
+                        "_meta": {}
+                      }
+                    ],
+                    "id": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 30,
+                        "column": 19
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 38,
+                        "column": 2
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                    },
+                    "_meta": {}
+                  },
+                  "modifiers": null,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 30,
+                      "column": 1
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 38,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                  },
+                  "_meta": {}
+                }
+              ],
+              "language": "golang",
+              "languageVersion": "1.18",
+              "uri": "",
+              "version": "",
+              "loc": {
+                "start": {
+                  "Offset": 0,
+                  "line": 1,
+                  "column": 1
+                },
+                "end": {
+                  "Offset": 0,
+                  "line": 38,
+                  "column": 2
+                },
+                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+              },
+              "_meta": {}
+            },
+            "packageName": "__single__"
+          }
+        },
+        "subs": {}
+      }
+    }
+  },
+  "moduleName": "__single_module__"
+}

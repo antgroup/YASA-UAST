@@ -1,0 +1,809 @@
+{
+  "packageInfo": {
+    "PathName": "",
+    "files": {},
+    "subs": {
+      "/": {
+        "PathName": "",
+        "files": {
+          "/Users/ariel/code/uast/uast4go/examples/promoted.go": {
+            "node": {
+              "type": "CompileUnit",
+              "body": [
+                {
+                  "type": "PackageDeclaration",
+                  "name": {
+                    "type": "Identifier",
+                    "name": "examples",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 9
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 17
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                    },
+                    "_meta": {}
+                  },
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 9
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 17
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "fmt",
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "init": {
+                    "type": "ImportExpression",
+                    "from": {
+                      "type": "Literal",
+                      "value": "fmt",
+                      "literalType": "string",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 4,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 4,
+                          "column": 7
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                      },
+                      "_meta": {}
+                    },
+                    "local": null,
+                    "imported": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 4,
+                        "column": 2
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 4,
+                        "column": 7
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                    },
+                    "_meta": {}
+                  },
+                  "cloned": true,
+                  "varType": {
+                    "type": "DynamicType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "variableParam": false,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 4,
+                      "column": 2
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 4,
+                      "column": 7
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "http",
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "init": {
+                    "type": "ImportExpression",
+                    "from": {
+                      "type": "Literal",
+                      "value": "net/http",
+                      "literalType": "string",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 5,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 5,
+                          "column": 12
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                      },
+                      "_meta": {}
+                    },
+                    "local": null,
+                    "imported": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 5,
+                        "column": 2
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 5,
+                        "column": 12
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                    },
+                    "_meta": {}
+                  },
+                  "cloned": true,
+                  "varType": {
+                    "type": "DynamicType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "variableParam": false,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 5,
+                      "column": 2
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 5,
+                      "column": 12
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "ClassDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "Foo1",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 8,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 8,
+                        "column": 10
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                    },
+                    "_meta": {}
+                  },
+                  "body": [],
+                  "supers": [],
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 8,
+                      "column": 6
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 8,
+                      "column": 26
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "ClassDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "Foo2",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 10,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 10,
+                        "column": 10
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                    },
+                    "_meta": {}
+                  },
+                  "body": [],
+                  "supers": [],
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 10,
+                      "column": 6
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 10,
+                      "column": 26
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "ClassDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "Request",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 12,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 12,
+                        "column": 13
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                    },
+                    "_meta": {}
+                  },
+                  "body": [],
+                  "supers": [],
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 12,
+                      "column": 6
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 12,
+                      "column": 22
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "ClassDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "T2",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 15,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 15,
+                        "column": 8
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                    },
+                    "_meta": {}
+                  },
+                  "body": [
+                    {
+                      "type": "SpreadElement",
+                      "argument": {
+                        "type": "Identifier",
+                        "name": "Request",
+                        "loc": null,
+                        "_meta": {
+                          "type": {
+                            "type": "MemberAccess",
+                            "object": {
+                              "type": "Identifier",
+                              "name": "http",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 16,
+                                  "column": 2
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 16,
+                                  "column": 6
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                              },
+                              "_meta": {}
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "Request",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 16,
+                                  "column": 7
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 16,
+                                  "column": 14
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                              },
+                              "_meta": {}
+                            },
+                            "computed": false,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 16,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 16,
+                                "column": 14
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 16,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 16,
+                          "column": 14
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                      },
+                      "_meta": {}
+                    },
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "Request",
+                        "loc": null,
+                        "_meta": {
+                          "type": {
+                            "type": "MemberAccess",
+                            "object": {
+                              "type": "Identifier",
+                              "name": "http",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 16,
+                                  "column": 2
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 16,
+                                  "column": 6
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                              },
+                              "_meta": {}
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "Request",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 16,
+                                  "column": 7
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 16,
+                                  "column": 14
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                              },
+                              "_meta": {}
+                            },
+                            "computed": false,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 16,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 16,
+                                "column": 14
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "init": null,
+                      "cloned": true,
+                      "varType": {
+                        "type": "MemberAccess",
+                        "object": {
+                          "type": "Identifier",
+                          "name": "http",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 16,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 16,
+                              "column": 6
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                          },
+                          "_meta": {}
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "Request",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 16,
+                              "column": 7
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 16,
+                              "column": 14
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                          },
+                          "_meta": {}
+                        },
+                        "computed": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 16,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 16,
+                            "column": 14
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                        },
+                        "_meta": {}
+                      },
+                      "variableParam": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 16,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 16,
+                          "column": 14
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                      },
+                      "_meta": {}
+                    },
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "age",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 17,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 17,
+                            "column": 5
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                        },
+                        "_meta": {
+                          "type": {
+                            "type": "Identifier",
+                            "name": "int32",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 17,
+                                "column": 15
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 17,
+                                "column": 20
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "init": null,
+                      "cloned": true,
+                      "varType": {
+                        "type": "Identifier",
+                        "name": "int32",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 17,
+                            "column": 15
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 17,
+                            "column": 20
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                        },
+                        "_meta": {}
+                      },
+                      "variableParam": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 17,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 17,
+                          "column": 20
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                      },
+                      "_meta": {}
+                    }
+                  ],
+                  "supers": [],
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 15,
+                      "column": 6
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 18,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "FunctionDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "Types",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 20,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 20,
+                        "column": 11
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                    },
+                    "_meta": {}
+                  },
+                  "parameters": [],
+                  "returnType": {
+                    "type": "VoidType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "body": {
+                    "type": "ScopedStatement",
+                    "body": [
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 23,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 23,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Println",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 23,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 23,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 23,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 23,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Literal",
+                            "value": "\"123\"",
+                            "literalType": "STRING",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 23,
+                                "column": 14
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 23,
+                                "column": 19
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 23,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 23,
+                            "column": 20
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                        },
+                        "_meta": {}
+                      }
+                    ],
+                    "id": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 20,
+                        "column": 14
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 24,
+                        "column": 2
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                    },
+                    "_meta": {}
+                  },
+                  "modifiers": null,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 20,
+                      "column": 1
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 24,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+                  },
+                  "_meta": {}
+                }
+              ],
+              "language": "golang",
+              "languageVersion": "1.18",
+              "uri": "",
+              "version": "",
+              "loc": {
+                "start": {
+                  "Offset": 0,
+                  "line": 1,
+                  "column": 1
+                },
+                "end": {
+                  "Offset": 0,
+                  "line": 24,
+                  "column": 2
+                },
+                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/promoted.go"
+              },
+              "_meta": {}
+            },
+            "packageName": "__single__"
+          }
+        },
+        "subs": {}
+      }
+    }
+  },
+  "moduleName": "__single_module__"
+}

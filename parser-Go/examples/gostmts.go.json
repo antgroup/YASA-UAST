@@ -1,0 +1,800 @@
+{
+  "packageInfo": {
+    "PathName": "",
+    "files": {},
+    "subs": {
+      "/": {
+        "PathName": "",
+        "files": {
+          "/Users/ariel/code/uast/uast4go/examples/gostmts.go": {
+            "node": {
+              "type": "CompileUnit",
+              "body": [
+                {
+                  "type": "PackageDeclaration",
+                  "name": {
+                    "type": "Identifier",
+                    "name": "examples",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 9
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 17
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                    },
+                    "_meta": {}
+                  },
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 9
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 17
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "SpreadElement",
+                  "argument": {
+                    "type": "ImportExpression",
+                    "from": {
+                      "type": "Literal",
+                      "value": "time",
+                      "literalType": "string",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 5,
+                          "column": 4
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 5,
+                          "column": 10
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                      },
+                      "_meta": {}
+                    },
+                    "local": null,
+                    "imported": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 5,
+                      "column": 2
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 5,
+                      "column": 10
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "FunctionDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "Server",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 8,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 8,
+                        "column": 12
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                    },
+                    "_meta": {}
+                  },
+                  "parameters": [],
+                  "returnType": {
+                    "type": "VoidType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "body": {
+                    "type": "ScopedStatement",
+                    "body": [],
+                    "id": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 8,
+                        "column": 15
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 9,
+                        "column": 2
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                    },
+                    "_meta": {}
+                  },
+                  "modifiers": null,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 8,
+                      "column": 1
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 9,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "FunctionDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "GoStmts",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 11,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 11,
+                        "column": 13
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                    },
+                    "_meta": {}
+                  },
+                  "parameters": [],
+                  "returnType": {
+                    "type": "VoidType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "body": {
+                    "type": "ScopedStatement",
+                    "body": [
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "Identifier",
+                          "name": "Server",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 12,
+                              "column": 5
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 12,
+                              "column": 11
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 12,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 12,
+                            "column": 13
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                        },
+                        "_meta": {
+                          "async": true
+                        }
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "FunctionDefinition",
+                          "id": {
+                            "type": "Identifier",
+                            "name": "",
+                            "loc": null,
+                            "_meta": {}
+                          },
+                          "parameters": [],
+                          "returnType": {
+                            "type": "VoidType",
+                            "id": null,
+                            "typeArguments": null,
+                            "loc": null,
+                            "_meta": {}
+                          },
+                          "body": {
+                            "type": "ScopedStatement",
+                            "body": [
+                              {
+                                "type": "CallExpression",
+                                "callee": {
+                                  "type": "Identifier",
+                                  "name": "Sleep",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 13,
+                                      "column": 14
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 13,
+                                      "column": 19
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "arguments": [
+                                  {
+                                    "type": "Literal",
+                                    "value": "10",
+                                    "literalType": "INT",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 13,
+                                        "column": 20
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 13,
+                                        "column": 22
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                                    },
+                                    "_meta": {}
+                                  }
+                                ],
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 13,
+                                    "column": 14
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 13,
+                                    "column": 23
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                                },
+                                "_meta": {}
+                              }
+                            ],
+                            "id": null,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 13,
+                                "column": 12
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 13,
+                                "column": 25
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                            },
+                            "_meta": {}
+                          },
+                          "modifiers": null,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 13,
+                              "column": 5
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 13,
+                              "column": 25
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 13,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 13,
+                            "column": 27
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                        },
+                        "_meta": {
+                          "async": true
+                        }
+                      }
+                    ],
+                    "id": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 11,
+                        "column": 16
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 16,
+                        "column": 2
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                    },
+                    "_meta": {}
+                  },
+                  "modifiers": null,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 11,
+                      "column": 1
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 16,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "FunctionDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "processTaintedData",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 18,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 18,
+                        "column": 24
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                    },
+                    "_meta": {}
+                  },
+                  "parameters": [
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "data",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 18,
+                            "column": 25
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 18,
+                            "column": 29
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                        },
+                        "_meta": {
+                          "type": {
+                            "type": "DynamicType",
+                            "id": null,
+                            "typeArguments": null,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 18,
+                                "column": 30
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 18,
+                                "column": 41
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "init": null,
+                      "cloned": true,
+                      "varType": {
+                        "type": "DynamicType",
+                        "id": null,
+                        "typeArguments": null,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 18,
+                            "column": 30
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 18,
+                            "column": 41
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                        },
+                        "_meta": {}
+                      },
+                      "variableParam": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 18,
+                          "column": 25
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 18,
+                          "column": 41
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                      },
+                      "_meta": {}
+                    }
+                  ],
+                  "returnType": {
+                    "type": "VoidType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "body": {
+                    "type": "ScopedStatement",
+                    "body": [
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "Identifier",
+                          "name": "__taint_sink",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 19,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 19,
+                              "column": 14
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Identifier",
+                            "name": "data",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 19,
+                                "column": 15
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 19,
+                                "column": 19
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 19,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 19,
+                            "column": 20
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                        },
+                        "_meta": {}
+                      }
+                    ],
+                    "id": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 18,
+                        "column": 43
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 20,
+                        "column": 2
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                    },
+                    "_meta": {}
+                  },
+                  "modifiers": null,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 18,
+                      "column": 1
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 20,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "FunctionDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "main",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 22,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 22,
+                        "column": 10
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                    },
+                    "_meta": {}
+                  },
+                  "parameters": [],
+                  "returnType": {
+                    "type": "VoidType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "body": {
+                    "type": "ScopedStatement",
+                    "body": [
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "data",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 24,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 24,
+                              "column": 6
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                          },
+                          "_meta": {
+                            "type": {
+                              "type": "DynamicType",
+                              "id": null,
+                              "typeArguments": null,
+                              "loc": null,
+                              "_meta": {}
+                            }
+                          }
+                        },
+                        "init": {
+                          "type": "Identifier",
+                          "name": "__taint_src",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 24,
+                              "column": 10
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 24,
+                              "column": 21
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": true,
+                        "varType": {
+                          "type": "DynamicType",
+                          "id": null,
+                          "typeArguments": null,
+                          "loc": null,
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 24,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 24,
+                            "column": 21
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "Identifier",
+                          "name": "processTaintedData",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 26,
+                              "column": 5
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 26,
+                              "column": 23
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Identifier",
+                            "name": "data",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 26,
+                                "column": 24
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 26,
+                                "column": 28
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 26,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 26,
+                            "column": 29
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                        },
+                        "_meta": {
+                          "async": true
+                        }
+                      }
+                    ],
+                    "id": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 22,
+                        "column": 13
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 27,
+                        "column": 2
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                    },
+                    "_meta": {}
+                  },
+                  "modifiers": null,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 22,
+                      "column": 1
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 27,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+                  },
+                  "_meta": {}
+                }
+              ],
+              "language": "golang",
+              "languageVersion": "1.18",
+              "uri": "",
+              "version": "",
+              "loc": {
+                "start": {
+                  "Offset": 0,
+                  "line": 1,
+                  "column": 1
+                },
+                "end": {
+                  "Offset": 0,
+                  "line": 27,
+                  "column": 2
+                },
+                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/gostmts.go"
+              },
+              "_meta": {}
+            },
+            "packageName": "__single__"
+          }
+        },
+        "subs": {}
+      }
+    }
+  },
+  "moduleName": "__single_module__"
+}

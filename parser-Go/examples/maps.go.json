@@ -1,0 +1,1540 @@
+{
+  "packageInfo": {
+    "PathName": "",
+    "files": {},
+    "subs": {
+      "/": {
+        "PathName": "",
+        "files": {
+          "/Users/ariel/code/uast/uast4go/examples/maps.go": {
+            "node": {
+              "type": "CompileUnit",
+              "body": [
+                {
+                  "type": "PackageDeclaration",
+                  "name": {
+                    "type": "Identifier",
+                    "name": "examples",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 9
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 17
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                    },
+                    "_meta": {}
+                  },
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 9
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 17
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "fmt",
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "init": {
+                    "type": "ImportExpression",
+                    "from": {
+                      "type": "Literal",
+                      "value": "fmt",
+                      "literalType": "string",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 3,
+                          "column": 8
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 3,
+                          "column": 13
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                      },
+                      "_meta": {}
+                    },
+                    "local": null,
+                    "imported": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 3,
+                        "column": 8
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 3,
+                        "column": 13
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                    },
+                    "_meta": {}
+                  },
+                  "cloned": true,
+                  "varType": {
+                    "type": "DynamicType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "variableParam": false,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 3,
+                      "column": 8
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 3,
+                      "column": 13
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "ClassDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "Vertex2",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 5,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 5,
+                        "column": 13
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                    },
+                    "_meta": {}
+                  },
+                  "body": [
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "Lat",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 6,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 6,
+                            "column": 5
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                        },
+                        "_meta": {
+                          "type": {
+                            "type": "Identifier",
+                            "name": "float64",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 6,
+                                "column": 12
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 6,
+                                "column": 19
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "init": null,
+                      "cloned": true,
+                      "varType": {
+                        "type": "Identifier",
+                        "name": "float64",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 6,
+                            "column": 12
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 6,
+                            "column": 19
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                        },
+                        "_meta": {}
+                      },
+                      "variableParam": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 6,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 6,
+                          "column": 19
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                      },
+                      "_meta": {}
+                    },
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "Long",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 6,
+                            "column": 7
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 6,
+                            "column": 11
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                        },
+                        "_meta": {
+                          "type": {
+                            "type": "Identifier",
+                            "name": "float64",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 6,
+                                "column": 12
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 6,
+                                "column": 19
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "init": null,
+                      "cloned": true,
+                      "varType": {
+                        "type": "Identifier",
+                        "name": "float64",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 6,
+                            "column": 12
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 6,
+                            "column": 19
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                        },
+                        "_meta": {}
+                      },
+                      "variableParam": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 6,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 6,
+                          "column": 19
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                      },
+                      "_meta": {}
+                    }
+                  ],
+                  "supers": [],
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 5,
+                      "column": 6
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 7,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "s",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 9,
+                        "column": 5
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 9,
+                        "column": 6
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                    },
+                    "_meta": {
+                      "type": {
+                        "type": "MapType",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "MapType",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 9,
+                              "column": 7
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 9,
+                              "column": 21
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                          },
+                          "_meta": {}
+                        },
+                        "keyType": {
+                          "type": "Identifier",
+                          "name": "int",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 9,
+                              "column": 11
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 9,
+                              "column": 14
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                          },
+                          "_meta": {}
+                        },
+                        "valueType": {
+                          "type": "Identifier",
+                          "name": "string",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 9,
+                              "column": 15
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 9,
+                              "column": 21
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                          },
+                          "_meta": {}
+                        },
+                        "typeArguments": null,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 9,
+                            "column": 7
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 9,
+                            "column": 21
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                        },
+                        "_meta": {}
+                      }
+                    }
+                  },
+                  "init": null,
+                  "cloned": false,
+                  "varType": {
+                    "type": "MapType",
+                    "id": {
+                      "type": "Identifier",
+                      "name": "MapType",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 9,
+                          "column": 7
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 9,
+                          "column": 21
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                      },
+                      "_meta": {}
+                    },
+                    "keyType": {
+                      "type": "Identifier",
+                      "name": "int",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 9,
+                          "column": 11
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 9,
+                          "column": 14
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                      },
+                      "_meta": {}
+                    },
+                    "valueType": {
+                      "type": "Identifier",
+                      "name": "string",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 9,
+                          "column": 15
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 9,
+                          "column": 21
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                      },
+                      "_meta": {}
+                    },
+                    "typeArguments": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 9,
+                        "column": 7
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 9,
+                        "column": 21
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                    },
+                    "_meta": {}
+                  },
+                  "variableParam": false,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 9,
+                      "column": 5
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 9,
+                      "column": 21
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "m",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 10,
+                        "column": 5
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 10,
+                        "column": 6
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                    },
+                    "_meta": {
+                      "type": {
+                        "type": "MapType",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "MapType",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 10,
+                              "column": 7
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 10,
+                              "column": 25
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                          },
+                          "_meta": {}
+                        },
+                        "keyType": {
+                          "type": "Identifier",
+                          "name": "string",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 10,
+                              "column": 11
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 10,
+                              "column": 17
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                          },
+                          "_meta": {}
+                        },
+                        "valueType": {
+                          "type": "Identifier",
+                          "name": "Vertex2",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 10,
+                              "column": 18
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 10,
+                              "column": 25
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                          },
+                          "_meta": {}
+                        },
+                        "typeArguments": null,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 10,
+                            "column": 7
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 10,
+                            "column": 25
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                        },
+                        "_meta": {}
+                      }
+                    }
+                  },
+                  "init": null,
+                  "cloned": false,
+                  "varType": {
+                    "type": "MapType",
+                    "id": {
+                      "type": "Identifier",
+                      "name": "MapType",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 10,
+                          "column": 7
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 10,
+                          "column": 25
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                      },
+                      "_meta": {}
+                    },
+                    "keyType": {
+                      "type": "Identifier",
+                      "name": "string",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 10,
+                          "column": 11
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 10,
+                          "column": 17
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                      },
+                      "_meta": {}
+                    },
+                    "valueType": {
+                      "type": "Identifier",
+                      "name": "Vertex2",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 10,
+                          "column": 18
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 10,
+                          "column": 25
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                      },
+                      "_meta": {}
+                    },
+                    "typeArguments": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 10,
+                        "column": 7
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 10,
+                        "column": 25
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                    },
+                    "_meta": {}
+                  },
+                  "variableParam": false,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 10,
+                      "column": 5
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 10,
+                      "column": 25
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "FunctionDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "Maps",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 12,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 12,
+                        "column": 10
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                    },
+                    "_meta": {}
+                  },
+                  "parameters": [],
+                  "returnType": {
+                    "type": "VoidType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "body": {
+                    "type": "ScopedStatement",
+                    "body": [
+                      {
+                        "type": "AssignmentExpression",
+                        "left": {
+                          "type": "Identifier",
+                          "name": "m",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 13,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 13,
+                              "column": 3
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                          },
+                          "_meta": {}
+                        },
+                        "right": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "Identifier",
+                            "name": "make",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 13,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 13,
+                                "column": 10
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                            },
+                            "_meta": {}
+                          },
+                          "arguments": [
+                            {
+                              "type": "MapType",
+                              "id": {
+                                "type": "Identifier",
+                                "name": "MapType",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 13,
+                                    "column": 11
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 13,
+                                    "column": 29
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                                },
+                                "_meta": {}
+                              },
+                              "keyType": {
+                                "type": "Identifier",
+                                "name": "string",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 13,
+                                    "column": 15
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 13,
+                                    "column": 21
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                                },
+                                "_meta": {}
+                              },
+                              "valueType": {
+                                "type": "Identifier",
+                                "name": "Vertex2",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 13,
+                                    "column": 22
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 13,
+                                    "column": 29
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                                },
+                                "_meta": {}
+                              },
+                              "typeArguments": null,
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 13,
+                                  "column": 11
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 13,
+                                  "column": 29
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                              },
+                              "_meta": {}
+                            }
+                          ],
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 13,
+                              "column": 6
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 13,
+                              "column": 30
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                          },
+                          "_meta": {}
+                        },
+                        "operator": "=",
+                        "cloned": true,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 13,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 13,
+                            "column": 30
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "AssignmentExpression",
+                        "left": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "m",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 14,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 14,
+                                "column": 3
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Literal",
+                            "value": "\"Bell Labs\"",
+                            "literalType": "STRING",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 14,
+                                "column": 4
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 14,
+                                "column": 15
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": true,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 14,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 14,
+                              "column": 16
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                          },
+                          "_meta": {}
+                        },
+                        "right": {
+                          "type": "Sequence",
+                          "expressions": [
+                            {
+                              "type": "VariableDeclaration",
+                              "id": {
+                                "type": "Identifier",
+                                "name": "tmp1",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 14,
+                                    "column": 19
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 16,
+                                    "column": 3
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                                },
+                                "_meta": {
+                                  "type": {
+                                    "type": "Identifier",
+                                    "name": "Vertex2",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 14,
+                                        "column": 19
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 14,
+                                        "column": 26
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                                    },
+                                    "_meta": {}
+                                  }
+                                }
+                              },
+                              "init": {
+                                "type": "NewExpression",
+                                "callee": {
+                                  "type": "Identifier",
+                                  "name": "Vertex2",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 14,
+                                      "column": 19
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 14,
+                                      "column": 26
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "arguments": [],
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              "cloned": false,
+                              "varType": {
+                                "type": "Identifier",
+                                "name": "Vertex2",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 14,
+                                    "column": 19
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 14,
+                                    "column": 26
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                                },
+                                "_meta": {}
+                              },
+                              "variableParam": false,
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            {
+                              "type": "AssignmentExpression",
+                              "left": {
+                                "type": "MemberAccess",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "tmp1",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 14,
+                                      "column": 19
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 16,
+                                      "column": 3
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                                  },
+                                  "_meta": {
+                                    "type": {
+                                      "type": "Identifier",
+                                      "name": "Vertex2",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 14,
+                                          "column": 19
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 14,
+                                          "column": 26
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                                      },
+                                      "_meta": {}
+                                    }
+                                  }
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "Lat",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 6,
+                                      "column": 2
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 6,
+                                      "column": 5
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "computed": false,
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              "right": {
+                                "type": "Literal",
+                                "value": "40.68433",
+                                "literalType": "FLOAT",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 15,
+                                    "column": 3
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 15,
+                                    "column": 11
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                                },
+                                "_meta": {}
+                              },
+                              "operator": "=",
+                              "cloned": true,
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            {
+                              "type": "AssignmentExpression",
+                              "left": {
+                                "type": "MemberAccess",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "tmp1",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 14,
+                                      "column": 19
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 16,
+                                      "column": 3
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                                  },
+                                  "_meta": {
+                                    "type": {
+                                      "type": "Identifier",
+                                      "name": "Vertex2",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 14,
+                                          "column": 19
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 14,
+                                          "column": 26
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                                      },
+                                      "_meta": {}
+                                    }
+                                  }
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "Long",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 6,
+                                      "column": 7
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 6,
+                                      "column": 11
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "computed": false,
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              "right": {
+                                "type": "UnaryExpression",
+                                "operator": "-",
+                                "argument": {
+                                  "type": "Literal",
+                                  "value": "74.39967",
+                                  "literalType": "FLOAT",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 15,
+                                      "column": 14
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 15,
+                                      "column": 22
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "isSuffix": false,
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 15,
+                                    "column": 13
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 15,
+                                    "column": 22
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                                },
+                                "_meta": {}
+                              },
+                              "operator": "=",
+                              "cloned": true,
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            {
+                              "type": "Identifier",
+                              "name": "tmp1",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 14,
+                                  "column": 19
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 16,
+                                  "column": 3
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                              },
+                              "_meta": {
+                                "type": {
+                                  "type": "Identifier",
+                                  "name": "Vertex2",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 14,
+                                      "column": 19
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 14,
+                                      "column": 26
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                                  },
+                                  "_meta": {}
+                                }
+                              }
+                            }
+                          ],
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 14,
+                              "column": 19
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 16,
+                              "column": 3
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                          },
+                          "_meta": {}
+                        },
+                        "operator": "=",
+                        "cloned": true,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 14,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 16,
+                            "column": 3
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "AssignmentExpression",
+                        "left": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "s",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 17,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 17,
+                                "column": 3
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Literal",
+                            "value": "1",
+                            "literalType": "INT",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 17,
+                                "column": 4
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 17,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": true,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 17,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 17,
+                              "column": 6
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                          },
+                          "_meta": {}
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": "\"test\"",
+                          "literalType": "STRING",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 17,
+                              "column": 9
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 17,
+                              "column": 15
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                          },
+                          "_meta": {}
+                        },
+                        "operator": "=",
+                        "cloned": true,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 17,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 17,
+                            "column": 15
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 18,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 18,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Println",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 18,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 18,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 18,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 18,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "MemberAccess",
+                            "object": {
+                              "type": "Identifier",
+                              "name": "m",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 18,
+                                  "column": 14
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 18,
+                                  "column": 15
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                              },
+                              "_meta": {}
+                            },
+                            "property": {
+                              "type": "Literal",
+                              "value": "\"Bell Labs\"",
+                              "literalType": "STRING",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 18,
+                                  "column": 16
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 18,
+                                  "column": 27
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                              },
+                              "_meta": {}
+                            },
+                            "computed": true,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 18,
+                                "column": 14
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 18,
+                                "column": 28
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 18,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 18,
+                            "column": 29
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                        },
+                        "_meta": {}
+                      }
+                    ],
+                    "id": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 12,
+                        "column": 13
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 19,
+                        "column": 2
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                    },
+                    "_meta": {}
+                  },
+                  "modifiers": null,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 12,
+                      "column": 1
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 19,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+                  },
+                  "_meta": {}
+                }
+              ],
+              "language": "golang",
+              "languageVersion": "1.18",
+              "uri": "",
+              "version": "",
+              "loc": {
+                "start": {
+                  "Offset": 0,
+                  "line": 1,
+                  "column": 1
+                },
+                "end": {
+                  "Offset": 0,
+                  "line": 19,
+                  "column": 2
+                },
+                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/maps.go"
+              },
+              "_meta": {}
+            },
+            "packageName": "__single__"
+          }
+        },
+        "subs": {}
+      }
+    }
+  },
+  "moduleName": "__single_module__"
+}

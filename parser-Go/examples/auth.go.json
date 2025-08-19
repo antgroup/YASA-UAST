@@ -1,0 +1,625 @@
+{
+  "packageInfo": {
+    "PathName": "",
+    "files": {},
+    "subs": {
+      "/": {
+        "PathName": "",
+        "files": {
+          "/Users/ariel/code/uast/uast4go/examples/auth.go": {
+            "node": {
+              "type": "CompileUnit",
+              "body": [
+                {
+                  "type": "PackageDeclaration",
+                  "name": {
+                    "type": "Identifier",
+                    "name": "examples",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 9
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 17
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                    },
+                    "_meta": {}
+                  },
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 9
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 17
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "testPubKey",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 3,
+                        "column": 5
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 3,
+                        "column": 15
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                    },
+                    "_meta": {
+                      "type": {
+                        "type": "ArrayType",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "ArrayType",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 3,
+                              "column": 18
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 3,
+                              "column": 24
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                          },
+                          "_meta": {}
+                        },
+                        "element": {
+                          "type": "Identifier",
+                          "name": "byte",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 3,
+                              "column": 20
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 3,
+                              "column": 24
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                          },
+                          "_meta": {}
+                        },
+                        "typeArguments": null,
+                        "size": {
+                          "type": "Noop",
+                          "loc": null,
+                          "_meta": {}
+                        },
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 3,
+                            "column": 18
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 3,
+                            "column": 24
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                        },
+                        "_meta": {}
+                      }
+                    }
+                  },
+                  "init": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "ArrayType",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "ArrayType",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 3,
+                            "column": 18
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 3,
+                            "column": 24
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                        },
+                        "_meta": {}
+                      },
+                      "element": {
+                        "type": "Identifier",
+                        "name": "byte",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 3,
+                            "column": 20
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 3,
+                            "column": 24
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                        },
+                        "_meta": {}
+                      },
+                      "typeArguments": null,
+                      "size": {
+                        "type": "Noop",
+                        "loc": null,
+                        "_meta": {}
+                      },
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 3,
+                          "column": 18
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 3,
+                          "column": 24
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                      },
+                      "_meta": {}
+                    },
+                    "arguments": [
+                      {
+                        "type": "BinaryExpression",
+                        "operator": "+",
+                        "left": {
+                          "type": "BinaryExpression",
+                          "operator": "+",
+                          "left": {
+                            "type": "BinaryExpression",
+                            "operator": "+",
+                            "left": {
+                              "type": "BinaryExpression",
+                              "operator": "+",
+                              "left": {
+                                "type": "BinaryExpression",
+                                "operator": "+",
+                                "left": {
+                                  "type": "BinaryExpression",
+                                  "operator": "+",
+                                  "left": {
+                                    "type": "BinaryExpression",
+                                    "operator": "+",
+                                    "left": {
+                                      "type": "BinaryExpression",
+                                      "operator": "+",
+                                      "left": {
+                                        "type": "Literal",
+                                        "value": "\"-----BEGIN PUBLIC KEY-----\\n\"",
+                                        "literalType": "STRING",
+                                        "loc": {
+                                          "start": {
+                                            "Offset": 0,
+                                            "line": 3,
+                                            "column": 25
+                                          },
+                                          "end": {
+                                            "Offset": 0,
+                                            "line": 3,
+                                            "column": 55
+                                          },
+                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                                        },
+                                        "_meta": {}
+                                      },
+                                      "right": {
+                                        "type": "Literal",
+                                        "value": "\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAol0Z8G8U+25Btxk/g/fm\\n\"",
+                                        "literalType": "STRING",
+                                        "loc": {
+                                          "start": {
+                                            "Offset": 0,
+                                            "line": 4,
+                                            "column": 2
+                                          },
+                                          "end": {
+                                            "Offset": 0,
+                                            "line": 4,
+                                            "column": 70
+                                          },
+                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                                        },
+                                        "_meta": {}
+                                      },
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 3,
+                                          "column": 25
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 4,
+                                          "column": 70
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                                      },
+                                      "_meta": {}
+                                    },
+                                    "right": {
+                                      "type": "Literal",
+                                      "value": "\"UAW/wEKjQCTjkibDE4B+qkuWeiumg6miIRhtilU6m9BFmLQSy1ltYQuu4k17A4tQ\\n\"",
+                                      "literalType": "STRING",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 5,
+                                          "column": 2
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 5,
+                                          "column": 70
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                                      },
+                                      "_meta": {}
+                                    },
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 3,
+                                        "column": 25
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 5,
+                                        "column": 70
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  "right": {
+                                    "type": "Literal",
+                                    "value": "\"rIPpOQYZges/qsDFkZh3wyK5jL5WEFVdOasf6wsfszExnPmcZS4axxoYJfiuilrN\\n\"",
+                                    "literalType": "STRING",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 6,
+                                        "column": 2
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 6,
+                                        "column": 70
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 3,
+                                      "column": 25
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 6,
+                                      "column": 70
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "right": {
+                                  "type": "Literal",
+                                  "value": "\"hnwinBAqfi3S0sw5MpSI4Zl1AbOrHG4zDI62Gti2PKiMGyYDZTS9xPrBLbN95Kby\\n\"",
+                                  "literalType": "STRING",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 7,
+                                      "column": 2
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 7,
+                                      "column": 70
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 3,
+                                    "column": 25
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 7,
+                                    "column": 70
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                                },
+                                "_meta": {}
+                              },
+                              "right": {
+                                "type": "Literal",
+                                "value": "\"FFclQLEzA9RJcS1nHFsWtRgHjGPhhjCQxEm9NQ1nePFhCfBfApyfH1VM2VCOQum6\\n\"",
+                                "literalType": "STRING",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 8,
+                                    "column": 2
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 8,
+                                    "column": 70
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                                },
+                                "_meta": {}
+                              },
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 3,
+                                  "column": 25
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 8,
+                                  "column": 70
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                              },
+                              "_meta": {}
+                            },
+                            "right": {
+                              "type": "Literal",
+                              "value": "\"Ci9bMuHWjTjckC84mzF99kOxOWVU7mwS6gnJqBzpuz8t3zq8/iQ2y7QrmZV+jTJP\\n\"",
+                              "literalType": "STRING",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 9,
+                                  "column": 2
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 9,
+                                  "column": 70
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                              },
+                              "_meta": {}
+                            },
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 3,
+                                "column": 25
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 9,
+                                "column": 70
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                            },
+                            "_meta": {}
+                          },
+                          "right": {
+                            "type": "Literal",
+                            "value": "\"WQIDAQAB\\n\"",
+                            "literalType": "STRING",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 10,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 10,
+                                "column": 14
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                            },
+                            "_meta": {}
+                          },
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 3,
+                              "column": 25
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 10,
+                              "column": 14
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                          },
+                          "_meta": {}
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": "\"-----END PUBLIC KEY-----\\n\"",
+                          "literalType": "STRING",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 11,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 11,
+                              "column": 30
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                          },
+                          "_meta": {}
+                        },
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 3,
+                            "column": 25
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 11,
+                            "column": 30
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                        },
+                        "_meta": {}
+                      }
+                    ],
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 3,
+                        "column": 18
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 11,
+                        "column": 31
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                    },
+                    "_meta": {}
+                  },
+                  "cloned": false,
+                  "varType": {
+                    "type": "ArrayType",
+                    "id": {
+                      "type": "Identifier",
+                      "name": "ArrayType",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 3,
+                          "column": 18
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 3,
+                          "column": 24
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                      },
+                      "_meta": {}
+                    },
+                    "element": {
+                      "type": "Identifier",
+                      "name": "byte",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 3,
+                          "column": 20
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 3,
+                          "column": 24
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                      },
+                      "_meta": {}
+                    },
+                    "typeArguments": null,
+                    "size": {
+                      "type": "Noop",
+                      "loc": null,
+                      "_meta": {}
+                    },
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 3,
+                        "column": 18
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 3,
+                        "column": 24
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                    },
+                    "_meta": {}
+                  },
+                  "variableParam": false,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 3,
+                      "column": 5
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 11,
+                      "column": 31
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+                  },
+                  "_meta": {}
+                }
+              ],
+              "language": "golang",
+              "languageVersion": "1.18",
+              "uri": "",
+              "version": "",
+              "loc": {
+                "start": {
+                  "Offset": 0,
+                  "line": 1,
+                  "column": 1
+                },
+                "end": {
+                  "Offset": 0,
+                  "line": 11,
+                  "column": 31
+                },
+                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/auth.go"
+              },
+              "_meta": {}
+            },
+            "packageName": "__single__"
+          }
+        },
+        "subs": {}
+      }
+    }
+  },
+  "moduleName": "__single_module__"
+}
