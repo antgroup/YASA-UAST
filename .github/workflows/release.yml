@@ -16,11 +16,17 @@ jobs:
       - name: Extract version and tag
         id: extract
         run: |
+          echo "🔍 Raw GITHUB_REF: $GITHUB_REF"
           tag="${GITHUB_REF#refs/tags/v}"
+          echo "📦 Extracted version tag: $tag"
+          
           echo "version=$tag" >> $GITHUB_OUTPUT
+          
           if [[ "$tag" == *"-beta."* ]]; then
+            echo "🔖 Detected beta release, using npm tag: beta"
             echo "npm_tag=beta" >> $GITHUB_OUTPUT
           else
+            echo "🔖 Detected stable release, using npm tag: latest"
             echo "npm_tag=latest" >> $GITHUB_OUTPUT
           fi
 
@@ -42,10 +48,27 @@ jobs:
       - name: Publish specification
         working-directory: specification
         run: |
-          # 设置版本
-          npm version ${{ needs.get_version.outputs.version }} --no-git-tag-version
-          # 发布到 npm，并打标签
-          npm publish --tag ${{ needs.get_version.outputs.npm_tag }}
+          VERSION=${{ needs.get_version.outputs.version }}
+          NPM_TAG=${{ needs.get_version.outputs.npm_tag }}
+          
+          echo "🔍 Publishing @ant-yasa/uast-spec"
+          echo "📦 Version: $VERSION"
+          echo "🏷  NPM Tag: $NPM_TAG"
+          echo "🧾 package.json version before: $(cat package.json | grep version)"
+          
+          # 检查该版本是否已存在
+          if npm view @ant-yasa/uast-spec@$VERSION version > /dev/null 2>&1; then
+              echo "✅ Version $VERSION of @ant-yasa/uast-spec already published, skipping."
+              exit 0
+          fi
+          
+          echo "🔄 Setting version in package.json..."
+          npm version $VERSION --no-git-tag-version
+          
+          echo "🎯 Publishing to npm..."
+          npm publish --tag $NPM_TAG
+          
+          echo "✅ @ant-yasa/uast-spec@$VERSION published successfully!"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
@@ -67,12 +90,32 @@ jobs:
       - name: Install and Publish parser-Java-Js
         working-directory: parser-Java-Js
         run: |
-          # 更新依赖版本（可选：确保依赖最新的 beta 或 latest）
-          npm install @ant-yasa/uast-spec@${{ needs.get_version.outputs.npm_tag }}
-          # 设置版本
-          npm version ${{ needs.get_version.outputs.version }} --no-git-tag-version
-          # 发布
-          npm publish --tag ${{ needs.get_version.outputs.npm_tag }}
+          VERSION=${{ needs.get_version.outputs.version }}
+          NPM_TAG=${{ needs.get_version.outputs.npm_tag }}
+          
+          echo "🔍 Publishing @ant-yasa/uast-parser-java-js"
+          echo "📦 Version: $VERSION"
+          echo "🏷  NPM Tag: $NPM_TAG"
+          echo "🧾 package.json version before: $(cat package.json | grep version)"
+          echo "📦 Dependencies before install:"
+          cat package.json | grep "@ant-yasa/uast-spec"
+          
+          # 检查该版本是否已存在
+          if npm view @ant-yasa/uast-parser-java-js@$VERSION version > /dev/null 2>&1; then
+            echo "✅ Version $VERSION of @ant-yasa/uast-parser-java-js already published, skipping."
+            exit 0
+          fi
+          
+          echo "📥 Installing @ant-yasa/uast-spec@$NPM_TAG (with --no-save)..."
+          npm install @ant-yasa/uast-spec@$NPM_TAG --no-save
+          
+          echo "🔄 Setting version in package.json..."
+          npm version $VERSION --no-git-tag-version
+          
+          echo "🎯 Publishing to npm..."
+          npm publish --tag $NPM_TAG
+          
+          echo "✅ @ant-yasa/uast-parser-java-js@$VERSION published successfully!"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
@@ -103,9 +146,16 @@ jobs:
           export GOARCH=${{ matrix.goarch }}
           SUFFIX=""
           if [ "$GOOS" = "windows" ]; then SUFFIX=".exe"; fi
+          
+          echo "🏗️  Building Go binary for $GOOS/$GOARCH"
+          echo "Go version: $(go version)"
+          echo "GOOS=$GOOS, GOARCH=$GOARCH"
+          
           go build -o "uast4go-${GOOS}-${GOARCH}${SUFFIX}" .
           mkdir -p dist
           mv "uast4go-${GOOS}-${GOARCH}${SUFFIX}" dist/
+          
+          echo "✅ Built: uast4go-${GOOS}-${GOARCH}${SUFFIX}"
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
@@ -149,20 +199,30 @@ jobs:
       - name: Build Python executable
         working-directory: parser-Python
         run: |
+          echo "🏗️  Building Python executable for ${{ matrix.platform.goos }}-${{ matrix.platform.goarch }}"
+          echo "Python version: $(python --version)"
+          echo "Platform: $RUNNER_OS / $(uname -s)"
+          
           python -m venv .venv
           if [ "$RUNNER_OS" = "Windows" ]; then
             source .venv/Scripts/activate
           else
             source .venv/bin/activate
           fi
+          
           pip install -r requirements.txt
           pip install pyinstaller
+          
+          echo "📦 Running PyInstaller..."
           pyinstaller --onefile --paths .venv/lib/python3.13/site-packages ./uast/builder.py
+          
           mkdir -p dist
           if [ "$RUNNER_OS" = "Windows" ]; then
             mv dist/builder.exe "dist/uast4py-${{ matrix.platform.goos }}-${{ matrix.platform.goarch }}.exe"
+            echo "✅ Built: uast4py-${{ matrix.platform.goos }}-${{ matrix.platform.goarch }}.exe"
           else
             mv dist/builder "dist/uast4py-${{ matrix.platform.goos }}-${{ matrix.platform.goarch }}"
+            echo "✅ Built: uast4py-${{ matrix.platform.goos }}-${{ matrix.platform.goarch }}"
           fi
 
       - name: Upload artifact
@@ -183,6 +243,12 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           path: releases/
+        continue-on-error: true  # 防止某个 artifact 下载失败导致中断
+
+      - name: List downloaded files
+        run: |
+          echo "📂 Downloaded artifacts:"
+          find releases -type f
 
       - name: Create Release
         uses: ncipollo/release-action@v1
@@ -191,4 +257,3 @@ jobs:
           name: Release ${{ github.ref }}
           artifacts: "releases/**/*"
           token: ${{ secrets.GITHUB_TOKEN }}
-
