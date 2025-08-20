@@ -156,6 +156,7 @@ jobs:
           mv "uast4go-${GOOS}-${GOARCH}${SUFFIX}" dist/
           
           echo "✅ Built: uast4go-${GOOS}-${GOARCH}${SUFFIX}"
+        shell: bash  # 显式指定 bash（虽然 Ubuntu/macOS 默认就是，保持一致）
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
@@ -224,6 +225,7 @@ jobs:
             mv dist/builder "dist/uast4py-${{ matrix.platform.goos }}-${{ matrix.platform.goarch }}"
             echo "✅ Built: uast4py-${{ matrix.platform.goos }}-${{ matrix.platform.goarch }}"
           fi
+        shell: bash  # ✅ 关键修复：Windows 上使用 bash 而不是 PowerShell
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
