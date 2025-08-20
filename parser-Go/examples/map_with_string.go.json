@@ -1,0 +1,3524 @@
+{
+  "packageInfo": {
+    "PathName": "",
+    "files": {},
+    "subs": {
+      "/": {
+        "PathName": "",
+        "files": {
+          "/Users/ariel/code/uast/uast4go/examples/map_with_string.go": {
+            "node": {
+              "type": "CompileUnit",
+              "body": [
+                {
+                  "type": "PackageDeclaration",
+                  "name": {
+                    "type": "Identifier",
+                    "name": "examples",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 9
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 17
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                    },
+                    "_meta": {}
+                  },
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 9
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 17
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "assert",
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "init": {
+                    "type": "ImportExpression",
+                    "from": {
+                      "type": "Literal",
+                      "value": "aa.bb.com/facility/assert",
+                      "literalType": "string",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 4,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 4,
+                          "column": 29
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                      },
+                      "_meta": {}
+                    },
+                    "local": null,
+                    "imported": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 4,
+                        "column": 2
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 4,
+                        "column": 29
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                    },
+                    "_meta": {}
+                  },
+                  "cloned": true,
+                  "varType": {
+                    "type": "DynamicType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "variableParam": false,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 4,
+                      "column": 2
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 4,
+                      "column": 29
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "logs",
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "init": {
+                    "type": "ImportExpression",
+                    "from": {
+                      "type": "Literal",
+                      "value": "aa.bb.com/gopkg/logs",
+                      "literalType": "string",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 5,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 5,
+                          "column": 24
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                      },
+                      "_meta": {}
+                    },
+                    "local": null,
+                    "imported": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 5,
+                        "column": 2
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 5,
+                        "column": 24
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                    },
+                    "_meta": {}
+                  },
+                  "cloned": true,
+                  "varType": {
+                    "type": "DynamicType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "variableParam": false,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 5,
+                      "column": 2
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 5,
+                      "column": 24
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "controller",
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "init": {
+                    "type": "ImportExpression",
+                    "from": {
+                      "type": "Literal",
+                      "value": "aa.bb.com/xxx/post/internal/controller",
+                      "literalType": "string",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 6,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 6,
+                          "column": 42
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                      },
+                      "_meta": {}
+                    },
+                    "local": null,
+                    "imported": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 6,
+                        "column": 2
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 6,
+                        "column": 42
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                    },
+                    "_meta": {}
+                  },
+                  "cloned": true,
+                  "varType": {
+                    "type": "DynamicType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "variableParam": false,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 6,
+                      "column": 2
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 6,
+                      "column": 42
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "cerror",
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "init": {
+                    "type": "ImportExpression",
+                    "from": {
+                      "type": "Literal",
+                      "value": "aa.bb.com/xxx/post/pkg/cerror",
+                      "literalType": "string",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 7,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 7,
+                          "column": 33
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                      },
+                      "_meta": {}
+                    },
+                    "local": null,
+                    "imported": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 7,
+                        "column": 2
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 7,
+                        "column": 33
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                    },
+                    "_meta": {}
+                  },
+                  "cloned": true,
+                  "varType": {
+                    "type": "DynamicType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "variableParam": false,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 7,
+                      "column": 2
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 7,
+                      "column": 33
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "ctx2",
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "init": {
+                    "type": "ImportExpression",
+                    "from": {
+                      "type": "Literal",
+                      "value": "aa.bb.com/xxx/post/test/tools/ctx",
+                      "literalType": "string",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 8,
+                          "column": 7
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 8,
+                          "column": 42
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                      },
+                      "_meta": {}
+                    },
+                    "local": null,
+                    "imported": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 8,
+                        "column": 7
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 8,
+                        "column": 42
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                    },
+                    "_meta": {}
+                  },
+                  "cloned": true,
+                  "varType": {
+                    "type": "DynamicType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "variableParam": false,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 8,
+                      "column": 2
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 8,
+                      "column": 42
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "base",
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "init": {
+                    "type": "ImportExpression",
+                    "from": {
+                      "type": "Literal",
+                      "value": "aa.bb.com/xxx/post/thrift_gen/base",
+                      "literalType": "string",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 9,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 9,
+                          "column": 38
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                      },
+                      "_meta": {}
+                    },
+                    "local": null,
+                    "imported": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 9,
+                        "column": 2
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 9,
+                        "column": 38
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                    },
+                    "_meta": {}
+                  },
+                  "cloned": true,
+                  "varType": {
+                    "type": "DynamicType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "variableParam": false,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 9,
+                      "column": 2
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 9,
+                      "column": 38
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "post",
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "init": {
+                    "type": "ImportExpression",
+                    "from": {
+                      "type": "Literal",
+                      "value": "aa.bb.com/xxx/post/thrift_gen/something/xxx/post",
+                      "literalType": "string",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 10,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 10,
+                          "column": 52
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                      },
+                      "_meta": {}
+                    },
+                    "local": null,
+                    "imported": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 10,
+                        "column": 2
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 10,
+                        "column": 52
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                    },
+                    "_meta": {}
+                  },
+                  "cloned": true,
+                  "varType": {
+                    "type": "DynamicType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "variableParam": false,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 10,
+                      "column": 2
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 10,
+                      "column": 52
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "FunctionDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "newUpdateCommentRequest",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 13,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 13,
+                        "column": 29
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                    },
+                    "_meta": {}
+                  },
+                  "parameters": [],
+                  "returnType": {
+                    "type": "PointerType",
+                    "id": null,
+                    "element": {
+                      "type": "MemberAccess",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "post",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 13,
+                            "column": 33
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 13,
+                            "column": 37
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                        },
+                        "_meta": {}
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "UpdateCommentRequest",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 13,
+                            "column": 38
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 13,
+                            "column": 58
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                        },
+                        "_meta": {}
+                      },
+                      "computed": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 13,
+                          "column": 33
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 13,
+                          "column": 58
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                      },
+                      "_meta": {}
+                    },
+                    "typeArguments": null,
+                    "kind": "pointer",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 13,
+                        "column": 32
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 13,
+                        "column": 58
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                    },
+                    "_meta": {}
+                  },
+                  "body": {
+                    "type": "ScopedStatement",
+                    "body": [
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "req",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 14,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 14,
+                              "column": 5
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                          },
+                          "_meta": {
+                            "type": {
+                              "type": "MemberAccess",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "post",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 14,
+                                    "column": 9
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 14,
+                                    "column": 13
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                },
+                                "_meta": {}
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "NewUpdateCommentRequest",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 14,
+                                    "column": 14
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 14,
+                                    "column": 37
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                },
+                                "_meta": {}
+                              },
+                              "computed": false,
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 14,
+                                  "column": 9
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 14,
+                                  "column": 37
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                              },
+                              "_meta": {}
+                            }
+                          }
+                        },
+                        "init": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "MemberAccess",
+                            "object": {
+                              "type": "Identifier",
+                              "name": "post",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 14,
+                                  "column": 9
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 14,
+                                  "column": 13
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                              },
+                              "_meta": {}
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "NewUpdateCommentRequest",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 14,
+                                  "column": 14
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 14,
+                                  "column": 37
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                              },
+                              "_meta": {}
+                            },
+                            "computed": false,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 14,
+                                "column": 9
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 14,
+                                "column": 37
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          },
+                          "arguments": [],
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 14,
+                              "column": 9
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 14,
+                              "column": 39
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": true,
+                        "varType": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "post",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 14,
+                                "column": 9
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 14,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "NewUpdateCommentRequest",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 14,
+                                "column": 14
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 14,
+                                "column": 37
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 14,
+                              "column": 9
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 14,
+                              "column": 37
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                          },
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 14,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 14,
+                            "column": 39
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "AssignmentExpression",
+                        "left": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "req",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 15,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 15,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "CommentId",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 15,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 15,
+                                "column": 15
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 15,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 15,
+                              "column": 15
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                          },
+                          "_meta": {}
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": "18",
+                          "literalType": "INT",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 15,
+                              "column": 18
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 15,
+                              "column": 20
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                          },
+                          "_meta": {}
+                        },
+                        "operator": "=",
+                        "cloned": true,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 15,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 15,
+                            "column": 20
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "fields",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 16,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 16,
+                              "column": 8
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                          },
+                          "_meta": {
+                            "type": {
+                              "type": "MapType",
+                              "id": {
+                                "type": "Identifier",
+                                "name": "MapType",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 16,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 16,
+                                    "column": 34
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                },
+                                "_meta": {}
+                              },
+                              "keyType": {
+                                "type": "Identifier",
+                                "name": "string",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 16,
+                                    "column": 16
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 16,
+                                    "column": 22
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                },
+                                "_meta": {}
+                              },
+                              "valueType": {
+                                "type": "DynamicType",
+                                "id": null,
+                                "typeArguments": null,
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 16,
+                                    "column": 23
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 16,
+                                    "column": 34
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                },
+                                "_meta": {}
+                              },
+                              "typeArguments": null,
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 16,
+                                  "column": 12
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 16,
+                                  "column": 34
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                              },
+                              "_meta": {}
+                            }
+                          }
+                        },
+                        "init": {
+                          "type": "Sequence",
+                          "expressions": [
+                            {
+                              "type": "VariableDeclaration",
+                              "id": {
+                                "type": "Identifier",
+                                "name": "tmp1",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 16,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 18,
+                                    "column": 3
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                },
+                                "_meta": {
+                                  "type": {
+                                    "type": "MapType",
+                                    "id": {
+                                      "type": "Identifier",
+                                      "name": "MapType",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 16,
+                                          "column": 12
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 16,
+                                          "column": 34
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                      },
+                                      "_meta": {}
+                                    },
+                                    "keyType": {
+                                      "type": "Identifier",
+                                      "name": "string",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 16,
+                                          "column": 16
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 16,
+                                          "column": 22
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                      },
+                                      "_meta": {}
+                                    },
+                                    "valueType": {
+                                      "type": "DynamicType",
+                                      "id": null,
+                                      "typeArguments": null,
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 16,
+                                          "column": 23
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 16,
+                                          "column": 34
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                      },
+                                      "_meta": {}
+                                    },
+                                    "typeArguments": null,
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 16,
+                                        "column": 12
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 16,
+                                        "column": 34
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                    },
+                                    "_meta": {}
+                                  }
+                                }
+                              },
+                              "init": {
+                                "type": "NewExpression",
+                                "callee": {
+                                  "type": "MapType",
+                                  "id": {
+                                    "type": "Identifier",
+                                    "name": "MapType",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 16,
+                                        "column": 12
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 16,
+                                        "column": 34
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  "keyType": {
+                                    "type": "Identifier",
+                                    "name": "string",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 16,
+                                        "column": 16
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 16,
+                                        "column": 22
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  "valueType": {
+                                    "type": "DynamicType",
+                                    "id": null,
+                                    "typeArguments": null,
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 16,
+                                        "column": 23
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 16,
+                                        "column": 34
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  "typeArguments": null,
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 16,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 16,
+                                      "column": 34
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "arguments": [],
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              "cloned": false,
+                              "varType": {
+                                "type": "MapType",
+                                "id": {
+                                  "type": "Identifier",
+                                  "name": "MapType",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 16,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 16,
+                                      "column": 34
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "keyType": {
+                                  "type": "Identifier",
+                                  "name": "string",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 16,
+                                      "column": 16
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 16,
+                                      "column": 22
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "valueType": {
+                                  "type": "DynamicType",
+                                  "id": null,
+                                  "typeArguments": null,
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 16,
+                                      "column": 23
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 16,
+                                      "column": 34
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "typeArguments": null,
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 16,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 16,
+                                    "column": 34
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                },
+                                "_meta": {}
+                              },
+                              "variableParam": false,
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            {
+                              "type": "AssignmentExpression",
+                              "left": {
+                                "type": "MemberAccess",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "tmp1",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 16,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 18,
+                                      "column": 3
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                  },
+                                  "_meta": {
+                                    "type": {
+                                      "type": "MapType",
+                                      "id": {
+                                        "type": "Identifier",
+                                        "name": "MapType",
+                                        "loc": {
+                                          "start": {
+                                            "Offset": 0,
+                                            "line": 16,
+                                            "column": 12
+                                          },
+                                          "end": {
+                                            "Offset": 0,
+                                            "line": 16,
+                                            "column": 34
+                                          },
+                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                        },
+                                        "_meta": {}
+                                      },
+                                      "keyType": {
+                                        "type": "Identifier",
+                                        "name": "string",
+                                        "loc": {
+                                          "start": {
+                                            "Offset": 0,
+                                            "line": 16,
+                                            "column": 16
+                                          },
+                                          "end": {
+                                            "Offset": 0,
+                                            "line": 16,
+                                            "column": 22
+                                          },
+                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                        },
+                                        "_meta": {}
+                                      },
+                                      "valueType": {
+                                        "type": "DynamicType",
+                                        "id": null,
+                                        "typeArguments": null,
+                                        "loc": {
+                                          "start": {
+                                            "Offset": 0,
+                                            "line": 16,
+                                            "column": 23
+                                          },
+                                          "end": {
+                                            "Offset": 0,
+                                            "line": 16,
+                                            "column": 34
+                                          },
+                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                        },
+                                        "_meta": {}
+                                      },
+                                      "typeArguments": null,
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 16,
+                                          "column": 12
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 16,
+                                          "column": 34
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                      },
+                                      "_meta": {}
+                                    }
+                                  }
+                                },
+                                "property": {
+                                  "type": "Literal",
+                                  "value": "\"extra\"",
+                                  "literalType": "STRING",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 17,
+                                      "column": 3
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 17,
+                                      "column": 10
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "computed": false,
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              "right": {
+                                "type": "Literal",
+                                "value": "`{\"test_update_fields\":\"update_fields_by_test\"}`",
+                                "literalType": "STRING",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 17,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 17,
+                                    "column": 60
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                },
+                                "_meta": {}
+                              },
+                              "operator": "=",
+                              "cloned": true,
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            {
+                              "type": "Identifier",
+                              "name": "tmp1",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 16,
+                                  "column": 12
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 18,
+                                  "column": 3
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                              },
+                              "_meta": {
+                                "type": {
+                                  "type": "MapType",
+                                  "id": {
+                                    "type": "Identifier",
+                                    "name": "MapType",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 16,
+                                        "column": 12
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 16,
+                                        "column": 34
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  "keyType": {
+                                    "type": "Identifier",
+                                    "name": "string",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 16,
+                                        "column": 16
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 16,
+                                        "column": 22
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  "valueType": {
+                                    "type": "DynamicType",
+                                    "id": null,
+                                    "typeArguments": null,
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 16,
+                                        "column": 23
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 16,
+                                        "column": 34
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  "typeArguments": null,
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 16,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 16,
+                                      "column": 34
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                  },
+                                  "_meta": {}
+                                }
+                              }
+                            }
+                          ],
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 16,
+                              "column": 12
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 18,
+                              "column": 3
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": true,
+                        "varType": {
+                          "type": "MapType",
+                          "id": {
+                            "type": "Identifier",
+                            "name": "MapType",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 16,
+                                "column": 12
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 16,
+                                "column": 34
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          },
+                          "keyType": {
+                            "type": "Identifier",
+                            "name": "string",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 16,
+                                "column": 16
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 16,
+                                "column": 22
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          },
+                          "valueType": {
+                            "type": "DynamicType",
+                            "id": null,
+                            "typeArguments": null,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 16,
+                                "column": 23
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 16,
+                                "column": 34
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          },
+                          "typeArguments": null,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 16,
+                              "column": 12
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 16,
+                              "column": 34
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                          },
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 16,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 18,
+                            "column": 3
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "TupleExpression",
+                          "elements": [
+                            {
+                              "type": "MemberAccess",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "req",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 19,
+                                    "column": 2
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 19,
+                                    "column": 5
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                },
+                                "_meta": {}
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "UpdateFields",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 19,
+                                    "column": 6
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 19,
+                                    "column": 18
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                },
+                                "_meta": {}
+                              },
+                              "computed": false,
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 19,
+                                  "column": 2
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 19,
+                                  "column": 18
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                              },
+                              "_meta": {}
+                            },
+                            {
+                              "type": "Identifier",
+                              "name": "_",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 19,
+                                  "column": 20
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 19,
+                                  "column": 21
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                              },
+                              "_meta": {}
+                            }
+                          ],
+                          "modifiable": false,
+                          "loc": null,
+                          "_meta": {}
+                        },
+                        "init": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "MemberAccess",
+                            "object": {
+                              "type": "Identifier",
+                              "name": "json",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 19,
+                                  "column": 24
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 19,
+                                  "column": 28
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                              },
+                              "_meta": {}
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "MarshalToString",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 19,
+                                  "column": 29
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 19,
+                                  "column": 44
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                              },
+                              "_meta": {}
+                            },
+                            "computed": false,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 19,
+                                "column": 24
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 19,
+                                "column": 44
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          },
+                          "arguments": [
+                            {
+                              "type": "Identifier",
+                              "name": "fields",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 19,
+                                  "column": 45
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 19,
+                                  "column": 51
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                              },
+                              "_meta": {}
+                            }
+                          ],
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 19,
+                              "column": 24
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 19,
+                              "column": 52
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": true,
+                        "varType": {
+                          "type": "DynamicType",
+                          "id": null,
+                          "typeArguments": null,
+                          "loc": null,
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 19,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 19,
+                            "column": 52
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "AssignmentExpression",
+                        "left": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "req",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 20,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 20,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Base",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 20,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 20,
+                                "column": 10
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 20,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 20,
+                              "column": 10
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                          },
+                          "_meta": {}
+                        },
+                        "right": {
+                          "type": "ReferenceExpression",
+                          "argument": {
+                            "type": "Sequence",
+                            "expressions": [
+                              {
+                                "type": "VariableDeclaration",
+                                "id": {
+                                  "type": "Identifier",
+                                  "name": "tmp2",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 20,
+                                      "column": 14
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 22,
+                                      "column": 3
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                  },
+                                  "_meta": {
+                                    "type": {
+                                      "type": "MemberAccess",
+                                      "object": {
+                                        "type": "Identifier",
+                                        "name": "base",
+                                        "loc": {
+                                          "start": {
+                                            "Offset": 0,
+                                            "line": 20,
+                                            "column": 14
+                                          },
+                                          "end": {
+                                            "Offset": 0,
+                                            "line": 20,
+                                            "column": 18
+                                          },
+                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                        },
+                                        "_meta": {}
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "Base",
+                                        "loc": {
+                                          "start": {
+                                            "Offset": 0,
+                                            "line": 20,
+                                            "column": 19
+                                          },
+                                          "end": {
+                                            "Offset": 0,
+                                            "line": 20,
+                                            "column": 23
+                                          },
+                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                        },
+                                        "_meta": {}
+                                      },
+                                      "computed": false,
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 20,
+                                          "column": 14
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 20,
+                                          "column": 23
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                      },
+                                      "_meta": {}
+                                    }
+                                  }
+                                },
+                                "init": {
+                                  "type": "NewExpression",
+                                  "callee": {
+                                    "type": "MemberAccess",
+                                    "object": {
+                                      "type": "Identifier",
+                                      "name": "base",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 20,
+                                          "column": 14
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 20,
+                                          "column": 18
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                      },
+                                      "_meta": {}
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "Base",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 20,
+                                          "column": 19
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 20,
+                                          "column": 23
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                      },
+                                      "_meta": {}
+                                    },
+                                    "computed": false,
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 20,
+                                        "column": 14
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 20,
+                                        "column": 23
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  "arguments": [],
+                                  "loc": null,
+                                  "_meta": {}
+                                },
+                                "cloned": false,
+                                "varType": {
+                                  "type": "MemberAccess",
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "base",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 20,
+                                        "column": 14
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 20,
+                                        "column": 18
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "Base",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 20,
+                                        "column": 19
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 20,
+                                        "column": 23
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  "computed": false,
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 20,
+                                      "column": 14
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 20,
+                                      "column": 23
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "variableParam": false,
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              {
+                                "type": "AssignmentExpression",
+                                "left": {
+                                  "type": "MemberAccess",
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "tmp2",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 20,
+                                        "column": 14
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 22,
+                                        "column": 3
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                    },
+                                    "_meta": {
+                                      "type": {
+                                        "type": "MemberAccess",
+                                        "object": {
+                                          "type": "Identifier",
+                                          "name": "base",
+                                          "loc": {
+                                            "start": {
+                                              "Offset": 0,
+                                              "line": 20,
+                                              "column": 14
+                                            },
+                                            "end": {
+                                              "Offset": 0,
+                                              "line": 20,
+                                              "column": 18
+                                            },
+                                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                          },
+                                          "_meta": {}
+                                        },
+                                        "property": {
+                                          "type": "Identifier",
+                                          "name": "Base",
+                                          "loc": {
+                                            "start": {
+                                              "Offset": 0,
+                                              "line": 20,
+                                              "column": 19
+                                            },
+                                            "end": {
+                                              "Offset": 0,
+                                              "line": 20,
+                                              "column": 23
+                                            },
+                                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                          },
+                                          "_meta": {}
+                                        },
+                                        "computed": false,
+                                        "loc": {
+                                          "start": {
+                                            "Offset": 0,
+                                            "line": 20,
+                                            "column": 14
+                                          },
+                                          "end": {
+                                            "Offset": 0,
+                                            "line": 20,
+                                            "column": 23
+                                          },
+                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                        },
+                                        "_meta": {}
+                                      }
+                                    }
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "Caller",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 21,
+                                        "column": 3
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 21,
+                                        "column": 9
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                    },
+                                    "_meta": {}
+                                  },
+                                  "computed": false,
+                                  "loc": null,
+                                  "_meta": {}
+                                },
+                                "right": {
+                                  "type": "Literal",
+                                  "value": "\"some.interface.withip\"",
+                                  "literalType": "STRING",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 21,
+                                      "column": 11
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 21,
+                                      "column": 34
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "operator": "=",
+                                "cloned": true,
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              {
+                                "type": "Identifier",
+                                "name": "tmp2",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 20,
+                                    "column": 14
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 22,
+                                    "column": 3
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                },
+                                "_meta": {
+                                  "type": {
+                                    "type": "MemberAccess",
+                                    "object": {
+                                      "type": "Identifier",
+                                      "name": "base",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 20,
+                                          "column": 14
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 20,
+                                          "column": 18
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                      },
+                                      "_meta": {}
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "Base",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 20,
+                                          "column": 19
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 20,
+                                          "column": 23
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                      },
+                                      "_meta": {}
+                                    },
+                                    "computed": false,
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 20,
+                                        "column": 14
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 20,
+                                        "column": 23
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                    },
+                                    "_meta": {}
+                                  }
+                                }
+                              }
+                            ],
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 20,
+                                "column": 14
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 22,
+                                "column": 3
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          },
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 20,
+                              "column": 13
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 22,
+                              "column": 3
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                          },
+                          "_meta": {}
+                        },
+                        "operator": "=",
+                        "cloned": true,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 20,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 22,
+                            "column": 3
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "ReturnStatement",
+                        "argument": {
+                          "type": "Identifier",
+                          "name": "req",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 23,
+                              "column": 9
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 23,
+                              "column": 12
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                          },
+                          "_meta": {}
+                        },
+                        "isYield": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 23,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 23,
+                            "column": 12
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                        },
+                        "_meta": {}
+                      }
+                    ],
+                    "id": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 13,
+                        "column": 59
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 24,
+                        "column": 2
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                    },
+                    "_meta": {}
+                  },
+                  "modifiers": null,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 13,
+                      "column": 1
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 24,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "FunctionDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "TestUpdateComment",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 26,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 26,
+                        "column": 23
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                    },
+                    "_meta": {}
+                  },
+                  "parameters": [],
+                  "returnType": {
+                    "type": "VoidType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "body": {
+                    "type": "ScopedStatement",
+                    "body": [
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "ctx",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 27,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 27,
+                              "column": 5
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                          },
+                          "_meta": {
+                            "type": {
+                              "type": "MemberAccess",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "ctx2",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 27,
+                                    "column": 9
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 27,
+                                    "column": 13
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                },
+                                "_meta": {}
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "MockKiteContext",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 27,
+                                    "column": 14
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 27,
+                                    "column": 29
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                },
+                                "_meta": {}
+                              },
+                              "computed": false,
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 27,
+                                  "column": 9
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 27,
+                                  "column": 29
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                              },
+                              "_meta": {}
+                            }
+                          }
+                        },
+                        "init": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "MemberAccess",
+                            "object": {
+                              "type": "Identifier",
+                              "name": "ctx2",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 27,
+                                  "column": 9
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 27,
+                                  "column": 13
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                              },
+                              "_meta": {}
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "MockKiteContext",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 27,
+                                  "column": 14
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 27,
+                                  "column": 29
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                              },
+                              "_meta": {}
+                            },
+                            "computed": false,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 27,
+                                "column": 9
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 27,
+                                "column": 29
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          },
+                          "arguments": [
+                            {
+                              "type": "Literal",
+                              "value": "\"contextname\"",
+                              "literalType": "STRING",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 27,
+                                  "column": 30
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 27,
+                                  "column": 43
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                              },
+                              "_meta": {}
+                            },
+                            {
+                              "type": "Literal",
+                              "value": "\"\"",
+                              "literalType": "STRING",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 27,
+                                  "column": 45
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 27,
+                                  "column": 47
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                              },
+                              "_meta": {}
+                            }
+                          ],
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 27,
+                              "column": 9
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 27,
+                              "column": 48
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": true,
+                        "varType": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "ctx2",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 27,
+                                "column": 9
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 27,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "MockKiteContext",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 27,
+                                "column": 14
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 27,
+                                "column": 29
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 27,
+                              "column": 9
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 27,
+                              "column": 29
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                          },
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 27,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 27,
+                            "column": 48
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "req",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 28,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 28,
+                              "column": 5
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                          },
+                          "_meta": {
+                            "type": {
+                              "type": "DynamicType",
+                              "id": null,
+                              "typeArguments": null,
+                              "loc": null,
+                              "_meta": {}
+                            }
+                          }
+                        },
+                        "init": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "Identifier",
+                            "name": "newUpdateCommentRequest",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 28,
+                                "column": 9
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 28,
+                                "column": 32
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          },
+                          "arguments": [],
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 28,
+                              "column": 9
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 28,
+                              "column": 34
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": true,
+                        "varType": {
+                          "type": "DynamicType",
+                          "id": null,
+                          "typeArguments": null,
+                          "loc": null,
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 28,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 28,
+                            "column": 34
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "TupleExpression",
+                          "elements": [
+                            {
+                              "type": "Identifier",
+                              "name": "resp",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 29,
+                                  "column": 2
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 29,
+                                  "column": 6
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                              },
+                              "_meta": {}
+                            },
+                            {
+                              "type": "Identifier",
+                              "name": "err",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 29,
+                                  "column": 8
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 29,
+                                  "column": 11
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                              },
+                              "_meta": {}
+                            }
+                          ],
+                          "modifiable": false,
+                          "loc": null,
+                          "_meta": {}
+                        },
+                        "init": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "MemberAccess",
+                            "object": {
+                              "type": "Identifier",
+                              "name": "controller",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 29,
+                                  "column": 15
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 29,
+                                  "column": 25
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                              },
+                              "_meta": {}
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "UpdateComment",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 29,
+                                  "column": 26
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 29,
+                                  "column": 39
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                              },
+                              "_meta": {}
+                            },
+                            "computed": false,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 29,
+                                "column": 15
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 29,
+                                "column": 39
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          },
+                          "arguments": [
+                            {
+                              "type": "Identifier",
+                              "name": "ctx",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 29,
+                                  "column": 40
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 29,
+                                  "column": 43
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                              },
+                              "_meta": {}
+                            },
+                            {
+                              "type": "Identifier",
+                              "name": "req",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 29,
+                                  "column": 45
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 29,
+                                  "column": 48
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                              },
+                              "_meta": {}
+                            }
+                          ],
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 29,
+                              "column": 15
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 29,
+                              "column": 49
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": true,
+                        "varType": {
+                          "type": "DynamicType",
+                          "id": null,
+                          "typeArguments": null,
+                          "loc": null,
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 29,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 29,
+                            "column": 49
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "logs",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 30,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 30,
+                                "column": 6
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Info",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 30,
+                                "column": 7
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 30,
+                                "column": 11
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 30,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 30,
+                              "column": 11
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Literal",
+                            "value": "\"%+v %+v %+v\"",
+                            "literalType": "STRING",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 30,
+                                "column": 12
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 30,
+                                "column": 25
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          },
+                          {
+                            "type": "Identifier",
+                            "name": "req",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 30,
+                                "column": 27
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 30,
+                                "column": 30
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          },
+                          {
+                            "type": "Identifier",
+                            "name": "resp",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 30,
+                                "column": 32
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 30,
+                                "column": 36
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          },
+                          {
+                            "type": "Identifier",
+                            "name": "err",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 30,
+                                "column": 38
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 30,
+                                "column": 41
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 30,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 30,
+                            "column": 42
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "assert",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 31,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 31,
+                                "column": 8
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "IsNil",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 31,
+                                "column": 9
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 31,
+                                "column": 14
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 31,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 31,
+                              "column": 14
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Identifier",
+                            "name": "err",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 31,
+                                "column": 15
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 31,
+                                "column": 18
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 31,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 31,
+                            "column": 19
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "assert",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 32,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 32,
+                                "column": 8
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "EqualInt32",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 32,
+                                "column": 9
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 32,
+                                "column": 19
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 32,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 32,
+                              "column": 19
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "MemberAccess",
+                            "object": {
+                              "type": "MemberAccess",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "resp",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 32,
+                                    "column": 20
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 32,
+                                    "column": 24
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                },
+                                "_meta": {}
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "BaseResp",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 32,
+                                    "column": 25
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 32,
+                                    "column": 33
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                },
+                                "_meta": {}
+                              },
+                              "computed": false,
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 32,
+                                  "column": 20
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 32,
+                                  "column": 33
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                              },
+                              "_meta": {}
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "StatusCode",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 32,
+                                  "column": 34
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 32,
+                                  "column": 44
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                              },
+                              "_meta": {}
+                            },
+                            "computed": false,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 32,
+                                "column": 20
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 32,
+                                "column": 44
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          },
+                          {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "MemberAccess",
+                              "object": {
+                                "type": "MemberAccess",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "cerror",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 32,
+                                      "column": 46
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 32,
+                                      "column": 52
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "ErrNo_Success",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 32,
+                                      "column": 53
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 32,
+                                      "column": 66
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "computed": false,
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 32,
+                                    "column": 46
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 32,
+                                    "column": 66
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                },
+                                "_meta": {}
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "Int32",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 32,
+                                    "column": 67
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 32,
+                                    "column": 72
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                                },
+                                "_meta": {}
+                              },
+                              "computed": false,
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 32,
+                                  "column": 46
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 32,
+                                  "column": 72
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                              },
+                              "_meta": {}
+                            },
+                            "arguments": [],
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 32,
+                                "column": 46
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 32,
+                                "column": 74
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 32,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 32,
+                            "column": 75
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                        },
+                        "_meta": {}
+                      }
+                    ],
+                    "id": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 26,
+                        "column": 26
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 33,
+                        "column": 2
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                    },
+                    "_meta": {}
+                  },
+                  "modifiers": null,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 26,
+                      "column": 1
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 33,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+                  },
+                  "_meta": {}
+                }
+              ],
+              "language": "golang",
+              "languageVersion": "1.18",
+              "uri": "",
+              "version": "",
+              "loc": {
+                "start": {
+                  "Offset": 0,
+                  "line": 1,
+                  "column": 1
+                },
+                "end": {
+                  "Offset": 0,
+                  "line": 33,
+                  "column": 2
+                },
+                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/map_with_string.go"
+              },
+              "_meta": {}
+            },
+            "packageName": "__single__"
+          }
+        },
+        "subs": {}
+      }
+    }
+  },
+  "moduleName": "__single_module__"
+}

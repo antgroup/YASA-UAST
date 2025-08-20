@@ -1,0 +1,2972 @@
+{
+  "packageInfo": {
+    "PathName": "",
+    "files": {},
+    "subs": {
+      "/": {
+        "PathName": "",
+        "files": {
+          "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go": {
+            "node": {
+              "type": "CompileUnit",
+              "body": [
+                {
+                  "type": "PackageDeclaration",
+                  "name": {
+                    "type": "Identifier",
+                    "name": "examples",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 9
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 17
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                    },
+                    "_meta": {}
+                  },
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 9
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 17
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "fmt",
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "init": {
+                    "type": "ImportExpression",
+                    "from": {
+                      "type": "Literal",
+                      "value": "fmt",
+                      "literalType": "string",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 3,
+                          "column": 8
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 3,
+                          "column": 13
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                      },
+                      "_meta": {}
+                    },
+                    "local": null,
+                    "imported": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 3,
+                        "column": 8
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 3,
+                        "column": 13
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                    },
+                    "_meta": {}
+                  },
+                  "cloned": true,
+                  "varType": {
+                    "type": "DynamicType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "variableParam": false,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 3,
+                      "column": 8
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 3,
+                      "column": 13
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "ClassDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "Person",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 5,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 5,
+                        "column": 12
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                    },
+                    "_meta": {}
+                  },
+                  "body": [
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "name",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 6,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 6,
+                            "column": 6
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                        },
+                        "_meta": {
+                          "type": {
+                            "type": "Identifier",
+                            "name": "string",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 6,
+                                "column": 7
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 6,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "init": null,
+                      "cloned": true,
+                      "varType": {
+                        "type": "Identifier",
+                        "name": "string",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 6,
+                            "column": 7
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 6,
+                            "column": 13
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                        },
+                        "_meta": {}
+                      },
+                      "variableParam": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 6,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 6,
+                          "column": 13
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                      },
+                      "_meta": {}
+                    },
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "age",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 7,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 7,
+                            "column": 5
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                        },
+                        "_meta": {
+                          "type": {
+                            "type": "Identifier",
+                            "name": "int32",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 7,
+                                "column": 7
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 7,
+                                "column": 12
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "init": null,
+                      "cloned": true,
+                      "varType": {
+                        "type": "Identifier",
+                        "name": "int32",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 7,
+                            "column": 7
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 7,
+                            "column": 12
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                        },
+                        "_meta": {}
+                      },
+                      "variableParam": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 7,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 7,
+                          "column": 12
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                      },
+                      "_meta": {}
+                    },
+                    {
+                      "type": "FunctionDefinition",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "IsAdult",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 10,
+                            "column": 17
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 10,
+                            "column": 24
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                        },
+                        "_meta": {}
+                      },
+                      "parameters": [],
+                      "returnType": {
+                        "type": "Identifier",
+                        "name": "bool",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 10,
+                            "column": 27
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 10,
+                            "column": 31
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                        },
+                        "_meta": {}
+                      },
+                      "body": {
+                        "type": "ScopedStatement",
+                        "body": [
+                          {
+                            "type": "VariableDeclaration",
+                            "id": {
+                              "type": "Identifier",
+                              "name": "p",
+                              "loc": null,
+                              "_meta": {
+                                "type": {
+                                  "type": "Identifier",
+                                  "name": "Person",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 10,
+                                      "column": 9
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 10,
+                                      "column": 15
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                  },
+                                  "_meta": {}
+                                }
+                              }
+                            },
+                            "init": {
+                              "type": "ThisExpression",
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            "cloned": true,
+                            "varType": {
+                              "type": "Identifier",
+                              "name": "Person",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 10,
+                                  "column": 9
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 10,
+                                  "column": 15
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                              },
+                              "_meta": {}
+                            },
+                            "variableParam": false,
+                            "loc": null,
+                            "_meta": {}
+                          },
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "BinaryExpression",
+                              "operator": "\u003e=",
+                              "left": {
+                                "type": "MemberAccess",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "p",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 11,
+                                      "column": 9
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 11,
+                                      "column": 10
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "age",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 11,
+                                      "column": 11
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 11,
+                                      "column": 14
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "computed": false,
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 11,
+                                    "column": 9
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 11,
+                                    "column": 14
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                },
+                                "_meta": {}
+                              },
+                              "right": {
+                                "type": "Literal",
+                                "value": "18",
+                                "literalType": "INT",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 11,
+                                    "column": 18
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 11,
+                                    "column": 20
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                },
+                                "_meta": {}
+                              },
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 11,
+                                  "column": 9
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 11,
+                                  "column": 20
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                              },
+                              "_meta": {}
+                            },
+                            "isYield": false,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 11,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 11,
+                                "column": 20
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "id": null,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 10,
+                            "column": 32
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 12,
+                            "column": 2
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                        },
+                        "_meta": {}
+                      },
+                      "modifiers": null,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 10,
+                          "column": 1
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 12,
+                          "column": 2
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                      },
+                      "_meta": {}
+                    }
+                  ],
+                  "supers": [],
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 5,
+                      "column": 6
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 8,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "ClassDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "Employee",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 14,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 14,
+                        "column": 14
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                    },
+                    "_meta": {}
+                  },
+                  "body": [
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "position",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 15,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 15,
+                            "column": 10
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                        },
+                        "_meta": {
+                          "type": {
+                            "type": "Identifier",
+                            "name": "string",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 15,
+                                "column": 11
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 15,
+                                "column": 17
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "init": null,
+                      "cloned": true,
+                      "varType": {
+                        "type": "Identifier",
+                        "name": "string",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 15,
+                            "column": 11
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 15,
+                            "column": 17
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                        },
+                        "_meta": {}
+                      },
+                      "variableParam": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 15,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 15,
+                          "column": 17
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                      },
+                      "_meta": {}
+                    },
+                    {
+                      "type": "FunctionDefinition",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "IsManager",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 18,
+                            "column": 19
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 18,
+                            "column": 28
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                        },
+                        "_meta": {}
+                      },
+                      "parameters": [],
+                      "returnType": {
+                        "type": "Identifier",
+                        "name": "bool",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 18,
+                            "column": 31
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 18,
+                            "column": 35
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                        },
+                        "_meta": {}
+                      },
+                      "body": {
+                        "type": "ScopedStatement",
+                        "body": [
+                          {
+                            "type": "VariableDeclaration",
+                            "id": {
+                              "type": "Identifier",
+                              "name": "e",
+                              "loc": null,
+                              "_meta": {
+                                "type": {
+                                  "type": "Identifier",
+                                  "name": "Employee",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 18,
+                                      "column": 9
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 18,
+                                      "column": 17
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                  },
+                                  "_meta": {}
+                                }
+                              }
+                            },
+                            "init": {
+                              "type": "ThisExpression",
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            "cloned": true,
+                            "varType": {
+                              "type": "Identifier",
+                              "name": "Employee",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 18,
+                                  "column": 9
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 18,
+                                  "column": 17
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                              },
+                              "_meta": {}
+                            },
+                            "variableParam": false,
+                            "loc": null,
+                            "_meta": {}
+                          },
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "BinaryExpression",
+                              "operator": "==",
+                              "left": {
+                                "type": "MemberAccess",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "e",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 19,
+                                      "column": 9
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 19,
+                                      "column": 10
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "position",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 19,
+                                      "column": 11
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 19,
+                                      "column": 19
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "computed": false,
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 19,
+                                    "column": 9
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 19,
+                                    "column": 19
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                },
+                                "_meta": {}
+                              },
+                              "right": {
+                                "type": "Literal",
+                                "value": "\"manager\"",
+                                "literalType": "STRING",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 19,
+                                    "column": 23
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 19,
+                                    "column": 32
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                },
+                                "_meta": {}
+                              },
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 19,
+                                  "column": 9
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 19,
+                                  "column": 32
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                              },
+                              "_meta": {}
+                            },
+                            "isYield": false,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 19,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 19,
+                                "column": 32
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "id": null,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 18,
+                            "column": 36
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 20,
+                            "column": 2
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                        },
+                        "_meta": {}
+                      },
+                      "modifiers": null,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 18,
+                          "column": 1
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 20,
+                          "column": 2
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                      },
+                      "_meta": {}
+                    }
+                  ],
+                  "supers": [],
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 14,
+                      "column": 6
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 16,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "ClassDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "Record",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 24,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 24,
+                        "column": 12
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                    },
+                    "_meta": {}
+                  },
+                  "body": [
+                    {
+                      "type": "SpreadElement",
+                      "argument": {
+                        "type": "Identifier",
+                        "name": "Person",
+                        "loc": null,
+                        "_meta": {
+                          "type": {
+                            "type": "Identifier",
+                            "name": "Person",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 25,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 25,
+                                "column": 8
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 25,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 25,
+                          "column": 8
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                      },
+                      "_meta": {}
+                    },
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "Person",
+                        "loc": null,
+                        "_meta": {
+                          "type": {
+                            "type": "Identifier",
+                            "name": "Person",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 25,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 25,
+                                "column": 8
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "init": null,
+                      "cloned": true,
+                      "varType": {
+                        "type": "Identifier",
+                        "name": "Person",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 25,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 25,
+                            "column": 8
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                        },
+                        "_meta": {}
+                      },
+                      "variableParam": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 25,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 25,
+                          "column": 8
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                      },
+                      "_meta": {}
+                    },
+                    {
+                      "type": "SpreadElement",
+                      "argument": {
+                        "type": "Identifier",
+                        "name": "Employee",
+                        "loc": null,
+                        "_meta": {
+                          "type": {
+                            "type": "Identifier",
+                            "name": "Employee",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 26,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 26,
+                                "column": 10
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 26,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 26,
+                          "column": 10
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                      },
+                      "_meta": {}
+                    },
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "Employee",
+                        "loc": null,
+                        "_meta": {
+                          "type": {
+                            "type": "Identifier",
+                            "name": "Employee",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 26,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 26,
+                                "column": 10
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "init": null,
+                      "cloned": true,
+                      "varType": {
+                        "type": "Identifier",
+                        "name": "Employee",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 26,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 26,
+                            "column": 10
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                        },
+                        "_meta": {}
+                      },
+                      "variableParam": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 26,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 26,
+                          "column": 10
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                      },
+                      "_meta": {}
+                    }
+                  ],
+                  "supers": [],
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 24,
+                      "column": 6
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 27,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "FunctionDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "main",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 29,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 29,
+                        "column": 10
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                    },
+                    "_meta": {}
+                  },
+                  "parameters": [],
+                  "returnType": {
+                    "type": "VoidType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "body": {
+                    "type": "ScopedStatement",
+                    "body": [
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "person",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 30,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 30,
+                              "column": 8
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                          },
+                          "_meta": {
+                            "type": {
+                              "type": "Identifier",
+                              "name": "Person",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 30,
+                                  "column": 12
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 30,
+                                  "column": 18
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                              },
+                              "_meta": {}
+                            }
+                          }
+                        },
+                        "init": {
+                          "type": "Sequence",
+                          "expressions": [
+                            {
+                              "type": "VariableDeclaration",
+                              "id": {
+                                "type": "Identifier",
+                                "name": "tmp1",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 30,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 30,
+                                    "column": 43
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                },
+                                "_meta": {
+                                  "type": {
+                                    "type": "Identifier",
+                                    "name": "Person",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 30,
+                                        "column": 12
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 30,
+                                        "column": 18
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                    },
+                                    "_meta": {}
+                                  }
+                                }
+                              },
+                              "init": {
+                                "type": "NewExpression",
+                                "callee": {
+                                  "type": "Identifier",
+                                  "name": "Person",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 30,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 30,
+                                      "column": 18
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "arguments": [],
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              "cloned": false,
+                              "varType": {
+                                "type": "Identifier",
+                                "name": "Person",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 30,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 30,
+                                    "column": 18
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                },
+                                "_meta": {}
+                              },
+                              "variableParam": false,
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            {
+                              "type": "AssignmentExpression",
+                              "left": {
+                                "type": "MemberAccess",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "tmp1",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 30,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 30,
+                                      "column": 43
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                  },
+                                  "_meta": {
+                                    "type": {
+                                      "type": "Identifier",
+                                      "name": "Person",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 30,
+                                          "column": 12
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 30,
+                                          "column": 18
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                      },
+                                      "_meta": {}
+                                    }
+                                  }
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "name",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 30,
+                                      "column": 19
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 30,
+                                      "column": 23
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "computed": false,
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              "right": {
+                                "type": "Literal",
+                                "value": "\"Michal\"",
+                                "literalType": "STRING",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 30,
+                                    "column": 25
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 30,
+                                    "column": 33
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                },
+                                "_meta": {}
+                              },
+                              "operator": "=",
+                              "cloned": true,
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            {
+                              "type": "AssignmentExpression",
+                              "left": {
+                                "type": "MemberAccess",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "tmp1",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 30,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 30,
+                                      "column": 43
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                  },
+                                  "_meta": {
+                                    "type": {
+                                      "type": "Identifier",
+                                      "name": "Person",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 30,
+                                          "column": 12
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 30,
+                                          "column": 18
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                      },
+                                      "_meta": {}
+                                    }
+                                  }
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "age",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 30,
+                                      "column": 35
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 30,
+                                      "column": 38
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "computed": false,
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              "right": {
+                                "type": "Literal",
+                                "value": "29",
+                                "literalType": "INT",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 30,
+                                    "column": 40
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 30,
+                                    "column": 42
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                },
+                                "_meta": {}
+                              },
+                              "operator": "=",
+                              "cloned": true,
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            {
+                              "type": "Identifier",
+                              "name": "tmp1",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 30,
+                                  "column": 12
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 30,
+                                  "column": 43
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                              },
+                              "_meta": {
+                                "type": {
+                                  "type": "Identifier",
+                                  "name": "Person",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 30,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 30,
+                                      "column": 18
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                  },
+                                  "_meta": {}
+                                }
+                              }
+                            }
+                          ],
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 30,
+                              "column": 12
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 30,
+                              "column": 43
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": true,
+                        "varType": {
+                          "type": "Identifier",
+                          "name": "Person",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 30,
+                              "column": 12
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 30,
+                              "column": 18
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                          },
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 30,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 30,
+                            "column": 43
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 31,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 31,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Println",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 31,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 31,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 31,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 31,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Identifier",
+                            "name": "person",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 31,
+                                "column": 14
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 31,
+                                "column": 20
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 31,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 31,
+                            "column": 21
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "record",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 32,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 32,
+                              "column": 8
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                          },
+                          "_meta": {
+                            "type": {
+                              "type": "Identifier",
+                              "name": "Record",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 32,
+                                  "column": 12
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 32,
+                                  "column": 18
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                              },
+                              "_meta": {}
+                            }
+                          }
+                        },
+                        "init": {
+                          "type": "Sequence",
+                          "expressions": [
+                            {
+                              "type": "VariableDeclaration",
+                              "id": {
+                                "type": "Identifier",
+                                "name": "tmp2",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 32,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 32,
+                                    "column": 20
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                },
+                                "_meta": {
+                                  "type": {
+                                    "type": "Identifier",
+                                    "name": "Record",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 32,
+                                        "column": 12
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 32,
+                                        "column": 18
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                    },
+                                    "_meta": {}
+                                  }
+                                }
+                              },
+                              "init": {
+                                "type": "NewExpression",
+                                "callee": {
+                                  "type": "Identifier",
+                                  "name": "Record",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 32,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 32,
+                                      "column": 18
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "arguments": [],
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              "cloned": false,
+                              "varType": {
+                                "type": "Identifier",
+                                "name": "Record",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 32,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 32,
+                                    "column": 18
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                },
+                                "_meta": {}
+                              },
+                              "variableParam": false,
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            {
+                              "type": "Identifier",
+                              "name": "tmp2",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 32,
+                                  "column": 12
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 32,
+                                  "column": 20
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                              },
+                              "_meta": {
+                                "type": {
+                                  "type": "Identifier",
+                                  "name": "Record",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 32,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 32,
+                                      "column": 18
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                  },
+                                  "_meta": {}
+                                }
+                              }
+                            }
+                          ],
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 32,
+                              "column": 12
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 32,
+                              "column": 20
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": true,
+                        "varType": {
+                          "type": "Identifier",
+                          "name": "Record",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 32,
+                              "column": 12
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 32,
+                              "column": 18
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                          },
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 32,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 32,
+                            "column": 20
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "AssignmentExpression",
+                        "left": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "record",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 33,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 33,
+                                "column": 8
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "name",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 33,
+                                "column": 9
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 33,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 33,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 33,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                          },
+                          "_meta": {}
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": "\"Michal\"",
+                          "literalType": "STRING",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 33,
+                              "column": 16
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 33,
+                              "column": 24
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                          },
+                          "_meta": {}
+                        },
+                        "operator": "=",
+                        "cloned": true,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 33,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 33,
+                            "column": 24
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "AssignmentExpression",
+                        "left": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "record",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 34,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 34,
+                                "column": 8
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "age",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 34,
+                                "column": 9
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 34,
+                                "column": 12
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 34,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 34,
+                              "column": 12
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                          },
+                          "_meta": {}
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": "29",
+                          "literalType": "INT",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 34,
+                              "column": 15
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 34,
+                              "column": 17
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                          },
+                          "_meta": {}
+                        },
+                        "operator": "=",
+                        "cloned": true,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 34,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 34,
+                            "column": 17
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "AssignmentExpression",
+                        "left": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "record",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 35,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 35,
+                                "column": 8
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "position",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 35,
+                                "column": 9
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 35,
+                                "column": 17
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 35,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 35,
+                              "column": 17
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                          },
+                          "_meta": {}
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": "\"software engineer\"",
+                          "literalType": "STRING",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 35,
+                              "column": 20
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 35,
+                              "column": 39
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                          },
+                          "_meta": {}
+                        },
+                        "operator": "=",
+                        "cloned": true,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 35,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 35,
+                            "column": 39
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 37,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 37,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Println",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 37,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 37,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 37,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 37,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Identifier",
+                            "name": "record",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 37,
+                                "column": 14
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 37,
+                                "column": 20
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 37,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 37,
+                            "column": 21
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 38,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 38,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Println",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 38,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 38,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 38,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 38,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "MemberAccess",
+                            "object": {
+                              "type": "Identifier",
+                              "name": "record",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 38,
+                                  "column": 14
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 38,
+                                  "column": 20
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                              },
+                              "_meta": {}
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "name",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 38,
+                                  "column": 21
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 38,
+                                  "column": 25
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                              },
+                              "_meta": {}
+                            },
+                            "computed": false,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 38,
+                                "column": 14
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 38,
+                                "column": 25
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 38,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 38,
+                            "column": 26
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 39,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 39,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Println",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 39,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 39,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 39,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 39,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "MemberAccess",
+                            "object": {
+                              "type": "Identifier",
+                              "name": "record",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 39,
+                                  "column": 14
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 39,
+                                  "column": 20
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                              },
+                              "_meta": {}
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "age",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 39,
+                                  "column": 21
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 39,
+                                  "column": 24
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                              },
+                              "_meta": {}
+                            },
+                            "computed": false,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 39,
+                                "column": 14
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 39,
+                                "column": 24
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 39,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 39,
+                            "column": 25
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 40,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 40,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Println",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 40,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 40,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 40,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 40,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "MemberAccess",
+                            "object": {
+                              "type": "Identifier",
+                              "name": "record",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 40,
+                                  "column": 14
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 40,
+                                  "column": 20
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                              },
+                              "_meta": {}
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "position",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 40,
+                                  "column": 21
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 40,
+                                  "column": 29
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                              },
+                              "_meta": {}
+                            },
+                            "computed": false,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 40,
+                                "column": 14
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 40,
+                                "column": 29
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 40,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 40,
+                            "column": 30
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 41,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 41,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Println",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 41,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 41,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 41,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 41,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "MemberAccess",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "record",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 41,
+                                    "column": 14
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 41,
+                                    "column": 20
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                },
+                                "_meta": {}
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "IsAdult",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 41,
+                                    "column": 21
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 41,
+                                    "column": 28
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                },
+                                "_meta": {}
+                              },
+                              "computed": false,
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 41,
+                                  "column": 14
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 41,
+                                  "column": 28
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                              },
+                              "_meta": {}
+                            },
+                            "arguments": [],
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 41,
+                                "column": 14
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 41,
+                                "column": 30
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 41,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 41,
+                            "column": 31
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 42,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 42,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Println",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 42,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 42,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 42,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 42,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "MemberAccess",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "record",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 42,
+                                    "column": 14
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 42,
+                                    "column": 20
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                },
+                                "_meta": {}
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "IsManager",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 42,
+                                    "column": 21
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 42,
+                                    "column": 30
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                                },
+                                "_meta": {}
+                              },
+                              "computed": false,
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 42,
+                                  "column": 14
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 42,
+                                  "column": 30
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                              },
+                              "_meta": {}
+                            },
+                            "arguments": [],
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 42,
+                                "column": 14
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 42,
+                                "column": 32
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 42,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 42,
+                            "column": 33
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                        },
+                        "_meta": {}
+                      }
+                    ],
+                    "id": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 29,
+                        "column": 13
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 43,
+                        "column": 2
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                    },
+                    "_meta": {}
+                  },
+                  "modifiers": null,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 29,
+                      "column": 1
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 43,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+                  },
+                  "_meta": {}
+                }
+              ],
+              "language": "golang",
+              "languageVersion": "1.18",
+              "uri": "",
+              "version": "",
+              "loc": {
+                "start": {
+                  "Offset": 0,
+                  "line": 1,
+                  "column": 1
+                },
+                "end": {
+                  "Offset": 0,
+                  "line": 43,
+                  "column": 2
+                },
+                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_promotion.go"
+              },
+              "_meta": {}
+            },
+            "packageName": "__single__"
+          }
+        },
+        "subs": {}
+      }
+    }
+  },
+  "moduleName": "__single_module__"
+}

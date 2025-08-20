@@ -1,0 +1,194 @@
+name: Release Pipeline
+
+on:
+  push:
+    tags:
+      - 'v*'  # 支持 v1.0.0 和 v1.0.0-beta.1
+
+jobs:
+  # 1. 提取版本和发布通道
+  get_version:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.extract.outputs.version }}
+      npm_tag: ${{ steps.extract.outputs.npm_tag }}
+    steps:
+      - name: Extract version and tag
+        id: extract
+        run: |
+          tag="${GITHUB_REF#refs/tags/v}"
+          echo "version=$tag" >> $GITHUB_OUTPUT
+          if [[ "$tag" == *"-beta."* ]]; then
+            echo "npm_tag=beta" >> $GITHUB_OUTPUT
+          else
+            echo "npm_tag=latest" >> $GITHUB_OUTPUT
+          fi
+
+  # 2. 发布 specification
+  publish_spec:
+    needs: get_version
+    runs-on: ubuntu-latest
+    environment: release
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          registry-url: https://registry.npmjs.org/
+
+      - name: Publish specification
+        working-directory: specification
+        run: |
+          # 设置版本
+          npm version ${{ needs.get_version.outputs.version }} --no-git-tag-version
+          # 发布到 npm，并打标签
+          npm publish --tag ${{ needs.get_version.outputs.npm_tag }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+  # 3. 发布 parser-Java-Js
+  publish_parser_js:
+    needs: publish_spec
+    runs-on: ubuntu-latest
+    environment: release
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          registry-url: https://registry.npmjs.org/
+
+      - name: Install and Publish parser-Java-Js
+        working-directory: parser-Java-Js
+        run: |
+          # 更新依赖版本（可选：确保依赖最新的 beta 或 latest）
+          npm install @ant-yasa/uast-spec@${{ needs.get_version.outputs.npm_tag }}
+          # 设置版本
+          npm version ${{ needs.get_version.outputs.version }} --no-git-tag-version
+          # 发布
+          npm publish --tag ${{ needs.get_version.outputs.npm_tag }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+  # 4. 构建 Go 可执行文件（多平台）
+  build_go:
+    needs: publish_parser_js
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        goos: [linux, darwin, windows]
+        goarch: [amd64, arm64]
+    outputs:
+      artifacts: ${{ steps.set_output.outputs.artifacts }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.21'
+
+      - name: Build Go binary
+        working-directory: parser-Go
+        run: |
+          export CGO_ENABLED=0
+          export GOOS=${{ matrix.goos }}
+          export GOARCH=${{ matrix.goarch }}
+          SUFFIX=""
+          if [ "$GOOS" = "windows" ]; then SUFFIX=".exe"; fi
+          go build -o "uast4go-${GOOS}-${GOARCH}${SUFFIX}" .
+          mkdir -p dist
+          mv "uast4go-${GOOS}-${GOARCH}${SUFFIX}" dist/
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: go-${{ matrix.goos }}-${{ matrix.goarch }}
+          path: parser-Go/dist/
+
+      - name: Set output
+        id: set_output
+        run: |
+          echo "artifacts=go-${{ matrix.goos }}-${{ matrix.goarch }}" >> $GITHUB_OUTPUT
+
+  # 5. 构建 Python 可执行文件（多平台）
+  build_python:
+    needs: publish_parser_js
+    strategy:
+      matrix:
+        platform:
+          - os: ubuntu-latest
+            goos: linux
+            goarch: amd64
+          - os: macos-latest
+            goos: darwin
+            goarch: amd64
+          - os: macos-latest
+            goos: darwin
+            goarch: arm64
+          - os: windows-latest
+            goos: windows
+            goarch: amd64
+    runs-on: ${{ matrix.platform.os }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.13'
+
+      - name: Build Python executable
+        working-directory: parser-Python
+        run: |
+          python -m venv .venv
+          if [ "$RUNNER_OS" = "Windows" ]; then
+            source .venv/Scripts/activate
+          else
+            source .venv/bin/activate
+          fi
+          pip install -r requirements.txt
+          pip install pyinstaller
+          pyinstaller --onefile --paths .venv/lib/python3.13/site-packages ./uast/builder.py
+          mkdir -p dist
+          if [ "$RUNNER_OS" = "Windows" ]; then
+            mv dist/builder.exe "dist/uast4py-${{ matrix.platform.goos }}-${{ matrix.platform.goarch }}.exe"
+          else
+            mv dist/builder "dist/uast4py-${{ matrix.platform.goos }}-${{ matrix.platform.goarch }}"
+          fi
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: python-${{ matrix.platform.goos }}-${{ matrix.platform.goarch }}
+          path: parser-Python/dist/
+
+  # 6. 合并产物并创建 GitHub Release
+  create_release:
+    needs: [build_go, build_python]
+    runs-on: ubuntu-latest
+    environment: release
+    permissions:
+      contents: write
+    steps:
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: releases/
+
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ github.ref }}
+          name: Release ${{ github.ref }}
+          artifacts: "releases/**/*"
+          token: ${{ secrets.GITHUB_TOKEN }}
+

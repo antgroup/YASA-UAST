@@ -1,0 +1,451 @@
+{
+  "packageInfo": {
+    "PathName": "",
+    "files": {},
+    "subs": {
+      "/": {
+        "PathName": "",
+        "files": {
+          "/Users/ariel/code/uast/uast4go/examples/ill_but_correct.go": {
+            "node": {
+              "type": "CompileUnit",
+              "body": [
+                {
+                  "type": "PackageDeclaration",
+                  "name": {
+                    "type": "Identifier",
+                    "name": "examples",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 9
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 17
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/ill_but_correct.go"
+                    },
+                    "_meta": {}
+                  },
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 9
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 17
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/ill_but_correct.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "FunctionDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "main",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 3,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 3,
+                        "column": 10
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/ill_but_correct.go"
+                    },
+                    "_meta": {}
+                  },
+                  "parameters": [],
+                  "returnType": {
+                    "type": "VoidType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "body": {
+                    "type": "ScopedStatement",
+                    "body": [
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "ch",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 4,
+                              "column": 6
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 4,
+                              "column": 8
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/ill_but_correct.go"
+                          },
+                          "_meta": {
+                            "type": {
+                              "type": "ChanType",
+                              "id": {
+                                "type": "Identifier",
+                                "name": "ChanType",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 4,
+                                    "column": 16
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 4,
+                                    "column": 24
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/ill_but_correct.go"
+                                },
+                                "_meta": {}
+                              },
+                              "channelDirection": "",
+                              "valueType": {
+                                "type": "Identifier",
+                                "name": "int",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 4,
+                                    "column": 21
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 4,
+                                    "column": 24
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/ill_but_correct.go"
+                                },
+                                "_meta": {}
+                              },
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 4,
+                                  "column": 16
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 4,
+                                  "column": 24
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/ill_but_correct.go"
+                              },
+                              "_meta": {}
+                            }
+                          }
+                        },
+                        "init": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "Identifier",
+                            "name": "make",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 4,
+                                "column": 11
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 4,
+                                "column": 15
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/ill_but_correct.go"
+                            },
+                            "_meta": {}
+                          },
+                          "arguments": [
+                            {
+                              "type": "ChanType",
+                              "id": {
+                                "type": "Identifier",
+                                "name": "ChanType",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 4,
+                                    "column": 16
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 4,
+                                    "column": 24
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/ill_but_correct.go"
+                                },
+                                "_meta": {}
+                              },
+                              "channelDirection": "",
+                              "valueType": {
+                                "type": "Identifier",
+                                "name": "int",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 4,
+                                    "column": 21
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 4,
+                                    "column": 24
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/ill_but_correct.go"
+                                },
+                                "_meta": {}
+                              },
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 4,
+                                  "column": 16
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 4,
+                                  "column": 24
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/ill_but_correct.go"
+                              },
+                              "_meta": {}
+                            },
+                            {
+                              "type": "Literal",
+                              "value": "1",
+                              "literalType": "INT",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 4,
+                                  "column": 26
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 4,
+                                  "column": 27
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/ill_but_correct.go"
+                              },
+                              "_meta": {}
+                            }
+                          ],
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 4,
+                              "column": 11
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 4,
+                              "column": 28
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/ill_but_correct.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": false,
+                        "varType": {
+                          "type": "ChanType",
+                          "id": {
+                            "type": "Identifier",
+                            "name": "ChanType",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 4,
+                                "column": 16
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 4,
+                                "column": 24
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/ill_but_correct.go"
+                            },
+                            "_meta": {}
+                          },
+                          "channelDirection": "",
+                          "valueType": {
+                            "type": "Identifier",
+                            "name": "int",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 4,
+                                "column": 21
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 4,
+                                "column": 24
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/ill_but_correct.go"
+                            },
+                            "_meta": {}
+                          },
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 4,
+                              "column": 16
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 4,
+                              "column": 24
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/ill_but_correct.go"
+                          },
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 4,
+                            "column": 6
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 4,
+                            "column": 28
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/ill_but_correct.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "BinaryExpression",
+                        "operator": "push",
+                        "left": {
+                          "type": "Identifier",
+                          "name": "ch",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 5,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 5,
+                              "column": 4
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/ill_but_correct.go"
+                          },
+                          "_meta": {}
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": "1",
+                          "literalType": "INT",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 5,
+                              "column": 8
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 5,
+                              "column": 9
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/ill_but_correct.go"
+                          },
+                          "_meta": {}
+                        },
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 5,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 5,
+                            "column": 9
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/ill_but_correct.go"
+                        },
+                        "_meta": {}
+                      }
+                    ],
+                    "id": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 3,
+                        "column": 13
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 6,
+                        "column": 2
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/ill_but_correct.go"
+                    },
+                    "_meta": {}
+                  },
+                  "modifiers": null,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 3,
+                      "column": 1
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 6,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/ill_but_correct.go"
+                  },
+                  "_meta": {}
+                }
+              ],
+              "language": "golang",
+              "languageVersion": "1.18",
+              "uri": "",
+              "version": "",
+              "loc": {
+                "start": {
+                  "Offset": 0,
+                  "line": 1,
+                  "column": 1
+                },
+                "end": {
+                  "Offset": 0,
+                  "line": 6,
+                  "column": 2
+                },
+                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/ill_but_correct.go"
+              },
+              "_meta": {}
+            },
+            "packageName": "__single__"
+          }
+        },
+        "subs": {}
+      }
+    }
+  },
+  "moduleName": "__single_module__"
+}

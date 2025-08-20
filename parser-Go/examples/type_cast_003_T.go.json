@@ -1,0 +1,471 @@
+{
+  "packageInfo": {
+    "PathName": "",
+    "files": {},
+    "subs": {
+      "/": {
+        "PathName": "",
+        "files": {
+          "/Users/ariel/code/uast/uast4go/examples/type_cast_003_T.go": {
+            "node": {
+              "type": "CompileUnit",
+              "body": [
+                {
+                  "type": "PackageDeclaration",
+                  "name": {
+                    "type": "Identifier",
+                    "name": "examples",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 12,
+                        "column": 9
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 12,
+                        "column": 17
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/type_cast_003_T.go"
+                    },
+                    "_meta": {}
+                  },
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 12,
+                      "column": 9
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 12,
+                      "column": 17
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/type_cast_003_T.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "FunctionDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "type_cast_003_T",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 14,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 14,
+                        "column": 21
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/type_cast_003_T.go"
+                    },
+                    "_meta": {}
+                  },
+                  "parameters": [
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "__taint_src",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 14,
+                            "column": 22
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 14,
+                            "column": 33
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/type_cast_003_T.go"
+                        },
+                        "_meta": {
+                          "type": {
+                            "type": "DynamicType",
+                            "id": null,
+                            "typeArguments": null,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 14,
+                                "column": 34
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 14,
+                                "column": 45
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/type_cast_003_T.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "init": null,
+                      "cloned": true,
+                      "varType": {
+                        "type": "DynamicType",
+                        "id": null,
+                        "typeArguments": null,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 14,
+                            "column": 34
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 14,
+                            "column": 45
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/type_cast_003_T.go"
+                        },
+                        "_meta": {}
+                      },
+                      "variableParam": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 14,
+                          "column": 22
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 14,
+                          "column": 45
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/type_cast_003_T.go"
+                      },
+                      "_meta": {}
+                    }
+                  ],
+                  "returnType": {
+                    "type": "VoidType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "body": {
+                    "type": "ScopedStatement",
+                    "body": [
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "TupleExpression",
+                          "elements": [
+                            {
+                              "type": "Identifier",
+                              "name": "result",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 15,
+                                  "column": 2
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 15,
+                                  "column": 8
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/type_cast_003_T.go"
+                              },
+                              "_meta": {}
+                            },
+                            {
+                              "type": "Identifier",
+                              "name": "ok",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 15,
+                                  "column": 10
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 15,
+                                  "column": 12
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/type_cast_003_T.go"
+                              },
+                              "_meta": {}
+                            }
+                          ],
+                          "modifiable": false,
+                          "loc": null,
+                          "_meta": {}
+                        },
+                        "init": {
+                          "type": "BinaryExpression",
+                          "operator": "instanceof",
+                          "left": {
+                            "type": "Identifier",
+                            "name": "__taint_src",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 15,
+                                "column": 16
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 15,
+                                "column": 27
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/type_cast_003_T.go"
+                            },
+                            "_meta": {}
+                          },
+                          "right": {
+                            "type": "Identifier",
+                            "name": "string",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 15,
+                                "column": 29
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 15,
+                                "column": 35
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/type_cast_003_T.go"
+                            },
+                            "_meta": {}
+                          },
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 15,
+                              "column": 16
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 15,
+                              "column": 36
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/type_cast_003_T.go"
+                          },
+                          "_meta": {
+                            "type": {
+                              "type": "",
+                              "name": "string",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 15,
+                                  "column": 29
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 15,
+                                  "column": 35
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/type_cast_003_T.go"
+                              },
+                              "_meta": {}
+                            }
+                          }
+                        },
+                        "cloned": true,
+                        "varType": {
+                          "type": "DynamicType",
+                          "id": null,
+                          "typeArguments": null,
+                          "loc": null,
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 15,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 15,
+                            "column": 36
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/type_cast_003_T.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "AssignmentExpression",
+                        "left": {
+                          "type": "Identifier",
+                          "name": "_",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 16,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 16,
+                              "column": 3
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/type_cast_003_T.go"
+                          },
+                          "_meta": {}
+                        },
+                        "right": {
+                          "type": "Identifier",
+                          "name": "ok",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 16,
+                              "column": 6
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 16,
+                              "column": 8
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/type_cast_003_T.go"
+                          },
+                          "_meta": {}
+                        },
+                        "operator": "=",
+                        "cloned": true,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 16,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 16,
+                            "column": 8
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/type_cast_003_T.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "Identifier",
+                          "name": "__taint_sink",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 17,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 17,
+                              "column": 14
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/type_cast_003_T.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Identifier",
+                            "name": "result",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 17,
+                                "column": 15
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 17,
+                                "column": 21
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/type_cast_003_T.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 17,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 17,
+                            "column": 22
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/type_cast_003_T.go"
+                        },
+                        "_meta": {}
+                      }
+                    ],
+                    "id": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 14,
+                        "column": 47
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 18,
+                        "column": 2
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/type_cast_003_T.go"
+                    },
+                    "_meta": {}
+                  },
+                  "modifiers": null,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 14,
+                      "column": 1
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 18,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/type_cast_003_T.go"
+                  },
+                  "_meta": {}
+                }
+              ],
+              "language": "golang",
+              "languageVersion": "1.18",
+              "uri": "",
+              "version": "",
+              "loc": {
+                "start": {
+                  "Offset": 0,
+                  "line": 12,
+                  "column": 1
+                },
+                "end": {
+                  "Offset": 0,
+                  "line": 18,
+                  "column": 2
+                },
+                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/type_cast_003_T.go"
+              },
+              "_meta": {}
+            },
+            "packageName": "__single__"
+          }
+        },
+        "subs": {}
+      }
+    }
+  },
+  "moduleName": "__single_module__"
+}

@@ -1,0 +1,191 @@
+{
+  "type": "CompileUnit",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "AssignmentExpression",
+        "left": {
+          "type": "MemberAccess",
+          "object": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "getFirstChild",
+              "_meta": {
+                "_extra": {
+                  "end": 13
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 1
+                },
+                "end": {
+                  "line": 1,
+                  "column": 14
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/parseerror.js"
+              }
+            },
+            "arguments": [
+              {
+                "type": "Identifier",
+                "name": "targetScriptDOM",
+                "_meta": {
+                  "_extra": {
+                    "start": 14,
+                    "end": 29
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 1,
+                    "column": 15
+                  },
+                  "end": {
+                    "line": 1,
+                    "column": 30
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/parseerror.js"
+                }
+              }
+            ],
+            "_meta": {
+              "_extra": {
+                "end": 30
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 1
+              },
+              "end": {
+                "line": 1,
+                "column": 31
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/parseerror.js"
+            }
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "value",
+            "_meta": {
+              "_extra": {
+                "start": 31,
+                "end": 36
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 32
+              },
+              "end": {
+                "line": 1,
+                "column": 37
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/parseerror.js"
+            }
+          },
+          "computed": false,
+          "_meta": {
+            "_extra": {
+              "end": 36
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 1
+            },
+            "end": {
+              "line": 1,
+              "column": 37
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/parseerror.js"
+          }
+        },
+        "right": {
+          "type": "Literal",
+          "value": 1,
+          "literalType": "number",
+          "_meta": {
+            "_extra": {
+              "start": 39,
+              "end": 40
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 40
+            },
+            "end": {
+              "line": 1,
+              "column": 41
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/parseerror.js"
+          }
+        },
+        "operator": "=",
+        "cloned": false,
+        "_meta": {
+          "_extra": {
+            "end": 40
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 1
+          },
+          "end": {
+            "line": 1,
+            "column": 41
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/parseerror.js"
+        }
+      },
+      "_meta": {
+        "_extra": {
+          "end": 41
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 1
+        },
+        "end": {
+          "line": 1,
+          "column": 42
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/parseerror.js"
+      }
+    }
+  ],
+  "language": "javascript",
+  "languageVersion": null,
+  "uri": "",
+  "version": "0.1.63",
+  "_meta": {
+    "_extra": {
+      "end": 42,
+      "directives": []
+    }
+  },
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 1
+    },
+    "end": {
+      "line": 2,
+      "column": 1
+    },
+    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/parseerror.js"
+  }
+}

@@ -1,0 +1,3297 @@
+{
+  "type": "CompileUnit",
+  "body": [
+    {
+      "type": "Sequence",
+      "expressions": [
+        {
+          "type": "VariableDeclaration",
+          "id": {
+            "type": "Identifier",
+            "name": "transformDate",
+            "_meta": {
+              "_extra": {
+                "start": 28,
+                "end": 41
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 14
+              },
+              "end": {
+                "line": 3,
+                "column": 27
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+            }
+          },
+          "init": {
+            "type": "FunctionDefinition",
+            "id": null,
+            "parameters": [
+              {
+                "type": "VariableDeclaration",
+                "id": {
+                  "type": "Identifier",
+                  "name": "dateStr",
+                  "_meta": {
+                    "_extra": {
+                      "start": 44,
+                      "end": 51
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 30
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 37
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                  }
+                },
+                "init": null,
+                "cloned": false,
+                "varType": {
+                  "type": "DynamicType",
+                  "id": null,
+                  "_meta": {}
+                },
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 3,
+                    "column": 30
+                  },
+                  "end": {
+                    "line": 3,
+                    "column": 37
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                }
+              }
+            ],
+            "returnType": {
+              "type": "DynamicType",
+              "id": null,
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 30
+                },
+                "end": {
+                  "line": 19,
+                  "column": 2
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+              }
+            },
+            "body": {
+              "type": "ScopedStatement",
+              "body": [
+                {
+                  "type": "ScopedStatement",
+                  "body": [
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "dateObj",
+                        "_meta": {
+                          "_extra": {
+                            "start": 67,
+                            "end": 79
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 4,
+                            "column": 11
+                          },
+                          "end": {
+                            "line": 4,
+                            "column": 23
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                        }
+                      },
+                      "init": {
+                        "type": "ObjectExpression",
+                        "properties": [],
+                        "id": null,
+                        "_meta": {
+                          "_extra": {
+                            "start": 82,
+                            "end": 84
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 4,
+                            "column": 26
+                          },
+                          "end": {
+                            "line": 4,
+                            "column": 28
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                        }
+                      },
+                      "cloned": false,
+                      "varType": {
+                        "type": "DynamicType",
+                        "id": null,
+                        "_meta": {}
+                      },
+                      "_meta": {
+                        "_extra": {
+                          "start": 61,
+                          "end": 85
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 4,
+                          "column": 11
+                        },
+                        "end": {
+                          "line": 4,
+                          "column": 28
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                      }
+                    },
+                    {
+                      "type": "IfStatement",
+                      "test": {
+                        "type": "BinaryExpression",
+                        "operator": "||",
+                        "left": {
+                          "type": "UnaryExpression",
+                          "operator": "!",
+                          "argument": {
+                            "type": "Identifier",
+                            "name": "dateStr",
+                            "_meta": {
+                              "_extra": {
+                                "start": 100,
+                                "end": 107
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 6,
+                                "column": 10
+                              },
+                              "end": {
+                                "line": 6,
+                                "column": 17
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          },
+                          "isSuffix": false,
+                          "_meta": {
+                            "_extra": {
+                              "start": 99,
+                              "end": 107
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 6,
+                              "column": 9
+                            },
+                            "end": {
+                              "line": 6,
+                              "column": 17
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                          }
+                        },
+                        "right": {
+                          "type": "UnaryExpression",
+                          "operator": "!",
+                          "argument": {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "MemberAccess",
+                              "object": {
+                                "type": "Literal",
+                                "value": "^\\d{8}$",
+                                "literalType": "string",
+                                "_meta": {
+                                  "_extra": {
+                                    "start": 112,
+                                    "end": 121
+                                  }
+                                },
+                                "loc": {
+                                  "start": {
+                                    "line": 6,
+                                    "column": 22
+                                  },
+                                  "end": {
+                                    "line": 6,
+                                    "column": 31
+                                  },
+                                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                                }
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "test",
+                                "_meta": {
+                                  "_extra": {
+                                    "start": 122,
+                                    "end": 126
+                                  }
+                                },
+                                "loc": {
+                                  "start": {
+                                    "line": 6,
+                                    "column": 32
+                                  },
+                                  "end": {
+                                    "line": 6,
+                                    "column": 36
+                                  },
+                                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                                }
+                              },
+                              "computed": false,
+                              "_meta": {
+                                "_extra": {
+                                  "start": 112,
+                                  "end": 126
+                                }
+                              },
+                              "loc": {
+                                "start": {
+                                  "line": 6,
+                                  "column": 22
+                                },
+                                "end": {
+                                  "line": 6,
+                                  "column": 36
+                                },
+                                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                              }
+                            },
+                            "arguments": [
+                              {
+                                "type": "Identifier",
+                                "name": "dateStr",
+                                "_meta": {
+                                  "_extra": {
+                                    "start": 127,
+                                    "end": 134
+                                  }
+                                },
+                                "loc": {
+                                  "start": {
+                                    "line": 6,
+                                    "column": 37
+                                  },
+                                  "end": {
+                                    "line": 6,
+                                    "column": 44
+                                  },
+                                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                                }
+                              }
+                            ],
+                            "_meta": {
+                              "_extra": {
+                                "start": 112,
+                                "end": 135
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 6,
+                                "column": 22
+                              },
+                              "end": {
+                                "line": 6,
+                                "column": 45
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          },
+                          "isSuffix": false,
+                          "_meta": {
+                            "_extra": {
+                              "start": 111,
+                              "end": 135
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 6,
+                              "column": 21
+                            },
+                            "end": {
+                              "line": 6,
+                              "column": 45
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                          }
+                        },
+                        "_meta": {
+                          "_extra": {
+                            "start": 99,
+                            "end": 135
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 6,
+                            "column": 9
+                          },
+                          "end": {
+                            "line": 6,
+                            "column": 45
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                        }
+                      },
+                      "consequent": {
+                        "type": "ScopedStatement",
+                        "body": [
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "Identifier",
+                              "name": "dateObj",
+                              "_meta": {
+                                "_extra": {
+                                  "start": 154,
+                                  "end": 161
+                                }
+                              },
+                              "loc": {
+                                "start": {
+                                  "line": 7,
+                                  "column": 16
+                                },
+                                "end": {
+                                  "line": 7,
+                                  "column": 23
+                                },
+                                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                              }
+                            },
+                            "isYield": false,
+                            "_meta": {
+                              "_extra": {
+                                "start": 147,
+                                "end": 162
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 7,
+                                "column": 9
+                              },
+                              "end": {
+                                "line": 7,
+                                "column": 24
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          }
+                        ],
+                        "id": null,
+                        "_meta": {
+                          "_extra": {
+                            "start": 137,
+                            "end": 168,
+                            "directives": []
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 6,
+                            "column": 47
+                          },
+                          "end": {
+                            "line": 8,
+                            "column": 6
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                        }
+                      },
+                      "alternative": null,
+                      "_meta": {
+                        "_extra": {
+                          "start": 95,
+                          "end": 168,
+                          "trailingComments": [
+                            {
+                              "type": "CommentLine",
+                              "value": " 如果是纯数字先转换成字符串",
+                              "start": 178,
+                              "end": 194,
+                              "loc": {
+                                "start": {
+                                  "line": 10,
+                                  "column": 4,
+                                  "index": 178
+                                },
+                                "end": {
+                                  "line": 10,
+                                  "column": 20,
+                                  "index": 194
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 6,
+                          "column": 5
+                        },
+                        "end": {
+                          "line": 8,
+                          "column": 6
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                      }
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "left": {
+                          "type": "Identifier",
+                          "name": "dateStr",
+                          "_meta": {
+                            "_extra": {
+                              "start": 199,
+                              "end": 206
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 11,
+                              "column": 5
+                            },
+                            "end": {
+                              "line": 11,
+                              "column": 12
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                          }
+                        },
+                        "right": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "MemberAccess",
+                            "object": {
+                              "type": "Identifier",
+                              "name": "dateStr",
+                              "_meta": {
+                                "_extra": {
+                                  "start": 209,
+                                  "end": 216
+                                }
+                              },
+                              "loc": {
+                                "start": {
+                                  "line": 11,
+                                  "column": 15
+                                },
+                                "end": {
+                                  "line": 11,
+                                  "column": 22
+                                },
+                                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                              }
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "toString",
+                              "_meta": {
+                                "_extra": {
+                                  "start": 217,
+                                  "end": 225
+                                }
+                              },
+                              "loc": {
+                                "start": {
+                                  "line": 11,
+                                  "column": 23
+                                },
+                                "end": {
+                                  "line": 11,
+                                  "column": 31
+                                },
+                                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                              }
+                            },
+                            "computed": false,
+                            "_meta": {
+                              "_extra": {
+                                "start": 209,
+                                "end": 225
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 11,
+                                "column": 15
+                              },
+                              "end": {
+                                "line": 11,
+                                "column": 31
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          },
+                          "arguments": [],
+                          "_meta": {
+                            "_extra": {
+                              "start": 209,
+                              "end": 227
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 11,
+                              "column": 15
+                            },
+                            "end": {
+                              "line": 11,
+                              "column": 33
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                          }
+                        },
+                        "operator": "=",
+                        "cloned": false,
+                        "_meta": {
+                          "_extra": {
+                            "start": 199,
+                            "end": 227
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 11,
+                            "column": 5
+                          },
+                          "end": {
+                            "line": 11,
+                            "column": 33
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                        }
+                      },
+                      "_meta": {
+                        "_extra": {
+                          "start": 199,
+                          "end": 228,
+                          "leadingComments": [
+                            {
+                              "type": "CommentLine",
+                              "value": " 如果是纯数字先转换成字符串",
+                              "start": 178,
+                              "end": 194,
+                              "loc": {
+                                "start": {
+                                  "line": 10,
+                                  "column": 4,
+                                  "index": 178
+                                },
+                                "end": {
+                                  "line": 10,
+                                  "column": 20,
+                                  "index": 194
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 11,
+                          "column": 5
+                        },
+                        "end": {
+                          "line": 11,
+                          "column": 34
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                      }
+                    },
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "dateArr",
+                        "_meta": {
+                          "_extra": {
+                            "start": 239,
+                            "end": 246
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 12,
+                            "column": 11
+                          },
+                          "end": {
+                            "line": 12,
+                            "column": 18
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                        }
+                      },
+                      "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "dateStr",
+                            "_meta": {
+                              "_extra": {
+                                "start": 249,
+                                "end": 256
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 12,
+                                "column": 21
+                              },
+                              "end": {
+                                "line": 12,
+                                "column": 28
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "match",
+                            "_meta": {
+                              "_extra": {
+                                "start": 257,
+                                "end": 262
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 12,
+                                "column": 29
+                              },
+                              "end": {
+                                "line": 12,
+                                "column": 34
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          },
+                          "computed": false,
+                          "_meta": {
+                            "_extra": {
+                              "start": 249,
+                              "end": 262
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 12,
+                              "column": 21
+                            },
+                            "end": {
+                              "line": 12,
+                              "column": 34
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                          }
+                        },
+                        "arguments": [
+                          {
+                            "type": "Literal",
+                            "value": "(\\d{4})(\\d{2})(\\d{2})",
+                            "literalType": "string",
+                            "_meta": {
+                              "_extra": {
+                                "start": 263,
+                                "end": 286
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 12,
+                                "column": 35
+                              },
+                              "end": {
+                                "line": 12,
+                                "column": 58
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          }
+                        ],
+                        "_meta": {
+                          "_extra": {
+                            "start": 249,
+                            "end": 287
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 12,
+                            "column": 21
+                          },
+                          "end": {
+                            "line": 12,
+                            "column": 59
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                        }
+                      },
+                      "cloned": false,
+                      "varType": {
+                        "type": "DynamicType",
+                        "id": null,
+                        "_meta": {}
+                      },
+                      "_meta": {
+                        "_extra": {
+                          "start": 233,
+                          "end": 288
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 12,
+                          "column": 11
+                        },
+                        "end": {
+                          "line": 12,
+                          "column": 59
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                      }
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "left": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "dateObj",
+                            "_meta": {
+                              "_extra": {
+                                "start": 298,
+                                "end": 305
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 14,
+                                "column": 5
+                              },
+                              "end": {
+                                "line": 14,
+                                "column": 12
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "year",
+                            "_meta": {
+                              "_extra": {
+                                "start": 306,
+                                "end": 310
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 14,
+                                "column": 13
+                              },
+                              "end": {
+                                "line": 14,
+                                "column": 17
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          },
+                          "computed": false,
+                          "_meta": {
+                            "_extra": {
+                              "start": 298,
+                              "end": 310
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 14,
+                              "column": 5
+                            },
+                            "end": {
+                              "line": 14,
+                              "column": 17
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                          }
+                        },
+                        "right": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "dateArr",
+                            "_meta": {
+                              "_extra": {
+                                "start": 313,
+                                "end": 320
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 14,
+                                "column": 20
+                              },
+                              "end": {
+                                "line": 14,
+                                "column": 27
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          },
+                          "property": {
+                            "type": "Literal",
+                            "value": 1,
+                            "literalType": "number",
+                            "_meta": {
+                              "_extra": {
+                                "start": 321,
+                                "end": 322
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 14,
+                                "column": 28
+                              },
+                              "end": {
+                                "line": 14,
+                                "column": 29
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          },
+                          "computed": true,
+                          "_meta": {
+                            "_extra": {
+                              "start": 313,
+                              "end": 323
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 14,
+                              "column": 20
+                            },
+                            "end": {
+                              "line": 14,
+                              "column": 30
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                          }
+                        },
+                        "operator": "=",
+                        "cloned": false,
+                        "_meta": {
+                          "_extra": {
+                            "start": 298,
+                            "end": 323
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 14,
+                            "column": 5
+                          },
+                          "end": {
+                            "line": 14,
+                            "column": 30
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                        }
+                      },
+                      "_meta": {
+                        "_extra": {
+                          "start": 298,
+                          "end": 324
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 14,
+                          "column": 5
+                        },
+                        "end": {
+                          "line": 14,
+                          "column": 31
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                      }
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "left": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "dateObj",
+                            "_meta": {
+                              "_extra": {
+                                "start": 329,
+                                "end": 336
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 15,
+                                "column": 5
+                              },
+                              "end": {
+                                "line": 15,
+                                "column": 12
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "month",
+                            "_meta": {
+                              "_extra": {
+                                "start": 337,
+                                "end": 342
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 15,
+                                "column": 13
+                              },
+                              "end": {
+                                "line": 15,
+                                "column": 18
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          },
+                          "computed": false,
+                          "_meta": {
+                            "_extra": {
+                              "start": 329,
+                              "end": 342
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 15,
+                              "column": 5
+                            },
+                            "end": {
+                              "line": 15,
+                              "column": 18
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                          }
+                        },
+                        "right": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "dateArr",
+                            "_meta": {
+                              "_extra": {
+                                "start": 345,
+                                "end": 352
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 15,
+                                "column": 21
+                              },
+                              "end": {
+                                "line": 15,
+                                "column": 28
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          },
+                          "property": {
+                            "type": "Literal",
+                            "value": 2,
+                            "literalType": "number",
+                            "_meta": {
+                              "_extra": {
+                                "start": 353,
+                                "end": 354
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 15,
+                                "column": 29
+                              },
+                              "end": {
+                                "line": 15,
+                                "column": 30
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          },
+                          "computed": true,
+                          "_meta": {
+                            "_extra": {
+                              "start": 345,
+                              "end": 355
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 15,
+                              "column": 21
+                            },
+                            "end": {
+                              "line": 15,
+                              "column": 31
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                          }
+                        },
+                        "operator": "=",
+                        "cloned": false,
+                        "_meta": {
+                          "_extra": {
+                            "start": 329,
+                            "end": 355
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 15,
+                            "column": 5
+                          },
+                          "end": {
+                            "line": 15,
+                            "column": 31
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                        }
+                      },
+                      "_meta": {
+                        "_extra": {
+                          "start": 329,
+                          "end": 356
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 15,
+                          "column": 5
+                        },
+                        "end": {
+                          "line": 15,
+                          "column": 32
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                      }
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "left": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "dateObj",
+                            "_meta": {
+                              "_extra": {
+                                "start": 361,
+                                "end": 368
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 16,
+                                "column": 5
+                              },
+                              "end": {
+                                "line": 16,
+                                "column": 12
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "day",
+                            "_meta": {
+                              "_extra": {
+                                "start": 369,
+                                "end": 372
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 16,
+                                "column": 13
+                              },
+                              "end": {
+                                "line": 16,
+                                "column": 16
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          },
+                          "computed": false,
+                          "_meta": {
+                            "_extra": {
+                              "start": 361,
+                              "end": 372
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 16,
+                              "column": 5
+                            },
+                            "end": {
+                              "line": 16,
+                              "column": 16
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                          }
+                        },
+                        "right": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "dateArr",
+                            "_meta": {
+                              "_extra": {
+                                "start": 375,
+                                "end": 382
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 16,
+                                "column": 19
+                              },
+                              "end": {
+                                "line": 16,
+                                "column": 26
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          },
+                          "property": {
+                            "type": "Literal",
+                            "value": 3,
+                            "literalType": "number",
+                            "_meta": {
+                              "_extra": {
+                                "start": 383,
+                                "end": 384
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 16,
+                                "column": 27
+                              },
+                              "end": {
+                                "line": 16,
+                                "column": 28
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          },
+                          "computed": true,
+                          "_meta": {
+                            "_extra": {
+                              "start": 375,
+                              "end": 385
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 16,
+                              "column": 19
+                            },
+                            "end": {
+                              "line": 16,
+                              "column": 29
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                          }
+                        },
+                        "operator": "=",
+                        "cloned": false,
+                        "_meta": {
+                          "_extra": {
+                            "start": 361,
+                            "end": 385
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 16,
+                            "column": 5
+                          },
+                          "end": {
+                            "line": 16,
+                            "column": 29
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                        }
+                      },
+                      "_meta": {
+                        "_extra": {
+                          "start": 361,
+                          "end": 386
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 16,
+                          "column": 5
+                        },
+                        "end": {
+                          "line": 16,
+                          "column": 30
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                      }
+                    },
+                    {
+                      "type": "ReturnStatement",
+                      "argument": {
+                        "type": "Identifier",
+                        "name": "dateObj",
+                        "_meta": {
+                          "_extra": {
+                            "start": 403,
+                            "end": 410
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 18,
+                            "column": 12
+                          },
+                          "end": {
+                            "line": 18,
+                            "column": 19
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                        }
+                      },
+                      "isYield": false,
+                      "_meta": {
+                        "_extra": {
+                          "start": 396,
+                          "end": 411
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 18,
+                          "column": 5
+                        },
+                        "end": {
+                          "line": 18,
+                          "column": 20
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                      }
+                    }
+                  ],
+                  "id": null,
+                  "_meta": {
+                    "_extra": {
+                      "start": 55,
+                      "end": 413,
+                      "directives": []
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 41
+                    },
+                    "end": {
+                      "line": 19,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                  }
+                }
+              ],
+              "id": null,
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 30
+                },
+                "end": {
+                  "line": 19,
+                  "column": 2
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+              }
+            },
+            "modifiers": [],
+            "_meta": {
+              "_extra": {
+                "start": 44,
+                "end": 413
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 30
+              },
+              "end": {
+                "line": 19,
+                "column": 2
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+            }
+          },
+          "cloned": false,
+          "varType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {}
+          },
+          "_meta": {
+            "_extra": {
+              "start": 22,
+              "end": 414
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 14
+            },
+            "end": {
+              "line": 19,
+              "column": 2
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+          }
+        },
+        {
+          "type": "ExportStatement",
+          "argument": {
+            "type": "Identifier",
+            "name": "transformDate",
+            "_meta": {
+              "_extra": {
+                "start": 28,
+                "end": 41
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 14
+              },
+              "end": {
+                "line": 3,
+                "column": 27
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+            }
+          },
+          "alias": {
+            "type": "Identifier",
+            "name": "transformDate",
+            "_meta": {
+              "_extra": {
+                "start": 28,
+                "end": 41
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 14
+              },
+              "end": {
+                "line": 3,
+                "column": 27
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+            }
+          },
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 1
+            },
+            "end": {
+              "line": 19,
+              "column": 3
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+          }
+        }
+      ],
+      "_meta": {
+        "_extra": {
+          "start": 15,
+          "end": 414,
+          "trailingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * 获取当前时间下一个月份,带年\n *\n * @return {Object} 时间对象\n ",
+              "start": 416,
+              "end": 469,
+              "loc": {
+                "start": {
+                  "line": 21,
+                  "column": 0,
+                  "index": 416
+                },
+                "end": {
+                  "line": 25,
+                  "column": 3,
+                  "index": 469
+                }
+              }
+            }
+          ]
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 1
+        },
+        "end": {
+          "line": 19,
+          "column": 3
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+      }
+    },
+    {
+      "type": "Sequence",
+      "expressions": [
+        {
+          "type": "FunctionDefinition",
+          "id": {
+            "type": "Identifier",
+            "name": "getCurrentNextMonth",
+            "_meta": {
+              "_extra": {
+                "start": 486,
+                "end": 505
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 26,
+                "column": 17
+              },
+              "end": {
+                "line": 26,
+                "column": 36
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+            }
+          },
+          "parameters": [],
+          "returnType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 26,
+                "column": 8
+              },
+              "end": {
+                "line": 35,
+                "column": 2
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+            }
+          },
+          "body": {
+            "type": "ScopedStatement",
+            "body": [
+              {
+                "type": "ScopedStatement",
+                "body": [
+                  {
+                    "type": "VariableDeclaration",
+                    "id": {
+                      "type": "Identifier",
+                      "name": "now",
+                      "_meta": {
+                        "_extra": {
+                          "start": 520,
+                          "end": 523
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 27,
+                          "column": 11
+                        },
+                        "end": {
+                          "line": 27,
+                          "column": 14
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                      }
+                    },
+                    "init": {
+                      "type": "NewExpression",
+                      "callee": {
+                        "type": "Identifier",
+                        "name": "Date",
+                        "_meta": {
+                          "_extra": {
+                            "start": 530,
+                            "end": 534
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 27,
+                            "column": 21
+                          },
+                          "end": {
+                            "line": 27,
+                            "column": 25
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                        }
+                      },
+                      "arguments": [],
+                      "_meta": {
+                        "_extra": {
+                          "start": 526,
+                          "end": 536
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 27,
+                          "column": 17
+                        },
+                        "end": {
+                          "line": 27,
+                          "column": 27
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                      }
+                    },
+                    "cloned": false,
+                    "varType": {
+                      "type": "DynamicType",
+                      "id": null,
+                      "_meta": {}
+                    },
+                    "_meta": {
+                      "_extra": {
+                        "start": 514,
+                        "end": 537
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 27,
+                        "column": 11
+                      },
+                      "end": {
+                        "line": 27,
+                        "column": 27
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                    }
+                  },
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "MemberAccess",
+                        "object": {
+                          "type": "Identifier",
+                          "name": "now",
+                          "_meta": {
+                            "_extra": {
+                              "start": 547,
+                              "end": 550
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 29,
+                              "column": 5
+                            },
+                            "end": {
+                              "line": 29,
+                              "column": 8
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                          }
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "setMonth",
+                          "_meta": {
+                            "_extra": {
+                              "start": 551,
+                              "end": 559
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 29,
+                              "column": 9
+                            },
+                            "end": {
+                              "line": 29,
+                              "column": 17
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                          }
+                        },
+                        "computed": false,
+                        "_meta": {
+                          "_extra": {
+                            "start": 547,
+                            "end": 559
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 29,
+                            "column": 5
+                          },
+                          "end": {
+                            "line": 29,
+                            "column": 17
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                        }
+                      },
+                      "arguments": [
+                        {
+                          "type": "BinaryExpression",
+                          "operator": "+",
+                          "left": {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "MemberAccess",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "now",
+                                "_meta": {
+                                  "_extra": {
+                                    "start": 560,
+                                    "end": 563
+                                  }
+                                },
+                                "loc": {
+                                  "start": {
+                                    "line": 29,
+                                    "column": 18
+                                  },
+                                  "end": {
+                                    "line": 29,
+                                    "column": 21
+                                  },
+                                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                                }
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "getMonth",
+                                "_meta": {
+                                  "_extra": {
+                                    "start": 564,
+                                    "end": 572
+                                  }
+                                },
+                                "loc": {
+                                  "start": {
+                                    "line": 29,
+                                    "column": 22
+                                  },
+                                  "end": {
+                                    "line": 29,
+                                    "column": 30
+                                  },
+                                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                                }
+                              },
+                              "computed": false,
+                              "_meta": {
+                                "_extra": {
+                                  "start": 560,
+                                  "end": 572
+                                }
+                              },
+                              "loc": {
+                                "start": {
+                                  "line": 29,
+                                  "column": 18
+                                },
+                                "end": {
+                                  "line": 29,
+                                  "column": 30
+                                },
+                                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                              }
+                            },
+                            "arguments": [],
+                            "_meta": {
+                              "_extra": {
+                                "start": 560,
+                                "end": 574
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 29,
+                                "column": 18
+                              },
+                              "end": {
+                                "line": 29,
+                                "column": 32
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          },
+                          "right": {
+                            "type": "Literal",
+                            "value": 1,
+                            "literalType": "number",
+                            "_meta": {
+                              "_extra": {
+                                "start": 577,
+                                "end": 578
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 29,
+                                "column": 35
+                              },
+                              "end": {
+                                "line": 29,
+                                "column": 36
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          },
+                          "_meta": {
+                            "_extra": {
+                              "start": 560,
+                              "end": 578
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 29,
+                              "column": 18
+                            },
+                            "end": {
+                              "line": 29,
+                              "column": 36
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                          }
+                        },
+                        {
+                          "type": "Literal",
+                          "value": 1,
+                          "literalType": "number",
+                          "_meta": {
+                            "_extra": {
+                              "start": 580,
+                              "end": 581
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 29,
+                              "column": 38
+                            },
+                            "end": {
+                              "line": 29,
+                              "column": 39
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                          }
+                        }
+                      ],
+                      "_meta": {
+                        "_extra": {
+                          "start": 547,
+                          "end": 582
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 29,
+                          "column": 5
+                        },
+                        "end": {
+                          "line": 29,
+                          "column": 40
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                      }
+                    },
+                    "_meta": {
+                      "_extra": {
+                        "start": 547,
+                        "end": 583,
+                        "trailingComments": [
+                          {
+                            "type": "CommentLine",
+                            "value": " 强制指定为每个月的1号,防止3月31日调用变成5月1日",
+                            "start": 584,
+                            "end": 614,
+                            "loc": {
+                              "start": {
+                                "line": 29,
+                                "column": 41,
+                                "index": 584
+                              },
+                              "end": {
+                                "line": 29,
+                                "column": 71,
+                                "index": 614
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 29,
+                        "column": 5
+                      },
+                      "end": {
+                        "line": 29,
+                        "column": 41
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                    }
+                  },
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "ObjectExpression",
+                      "properties": [
+                        {
+                          "type": "ObjectProperty",
+                          "key": {
+                            "type": "Identifier",
+                            "name": "year",
+                            "_meta": {
+                              "_extra": {
+                                "start": 641,
+                                "end": 645
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 32,
+                                "column": 9
+                              },
+                              "end": {
+                                "line": 32,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          },
+                          "value": {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "MemberAccess",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "now",
+                                "_meta": {
+                                  "_extra": {
+                                    "start": 647,
+                                    "end": 650
+                                  }
+                                },
+                                "loc": {
+                                  "start": {
+                                    "line": 32,
+                                    "column": 15
+                                  },
+                                  "end": {
+                                    "line": 32,
+                                    "column": 18
+                                  },
+                                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                                }
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "getFullYear",
+                                "_meta": {
+                                  "_extra": {
+                                    "start": 651,
+                                    "end": 662
+                                  }
+                                },
+                                "loc": {
+                                  "start": {
+                                    "line": 32,
+                                    "column": 19
+                                  },
+                                  "end": {
+                                    "line": 32,
+                                    "column": 30
+                                  },
+                                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                                }
+                              },
+                              "computed": false,
+                              "_meta": {
+                                "_extra": {
+                                  "start": 647,
+                                  "end": 662
+                                }
+                              },
+                              "loc": {
+                                "start": {
+                                  "line": 32,
+                                  "column": 15
+                                },
+                                "end": {
+                                  "line": 32,
+                                  "column": 30
+                                },
+                                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                              }
+                            },
+                            "arguments": [],
+                            "_meta": {
+                              "_extra": {
+                                "start": 647,
+                                "end": 664
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 32,
+                                "column": 15
+                              },
+                              "end": {
+                                "line": 32,
+                                "column": 32
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          },
+                          "_meta": {
+                            "_extra": {
+                              "start": 641,
+                              "end": 664
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 32,
+                              "column": 9
+                            },
+                            "end": {
+                              "line": 32,
+                              "column": 32
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                          }
+                        },
+                        {
+                          "type": "ObjectProperty",
+                          "key": {
+                            "type": "Identifier",
+                            "name": "month",
+                            "_meta": {
+                              "_extra": {
+                                "start": 674,
+                                "end": 679
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 33,
+                                "column": 9
+                              },
+                              "end": {
+                                "line": 33,
+                                "column": 14
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          },
+                          "value": {
+                            "type": "BinaryExpression",
+                            "operator": "+",
+                            "left": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "MemberAccess",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "now",
+                                  "_meta": {
+                                    "_extra": {
+                                      "start": 681,
+                                      "end": 684
+                                    }
+                                  },
+                                  "loc": {
+                                    "start": {
+                                      "line": 33,
+                                      "column": 16
+                                    },
+                                    "end": {
+                                      "line": 33,
+                                      "column": 19
+                                    },
+                                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                                  }
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "getMonth",
+                                  "_meta": {
+                                    "_extra": {
+                                      "start": 685,
+                                      "end": 693
+                                    }
+                                  },
+                                  "loc": {
+                                    "start": {
+                                      "line": 33,
+                                      "column": 20
+                                    },
+                                    "end": {
+                                      "line": 33,
+                                      "column": 28
+                                    },
+                                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                                  }
+                                },
+                                "computed": false,
+                                "_meta": {
+                                  "_extra": {
+                                    "start": 681,
+                                    "end": 693
+                                  }
+                                },
+                                "loc": {
+                                  "start": {
+                                    "line": 33,
+                                    "column": 16
+                                  },
+                                  "end": {
+                                    "line": 33,
+                                    "column": 28
+                                  },
+                                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                                }
+                              },
+                              "arguments": [],
+                              "_meta": {
+                                "_extra": {
+                                  "start": 681,
+                                  "end": 695
+                                }
+                              },
+                              "loc": {
+                                "start": {
+                                  "line": 33,
+                                  "column": 16
+                                },
+                                "end": {
+                                  "line": 33,
+                                  "column": 30
+                                },
+                                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                              }
+                            },
+                            "right": {
+                              "type": "Literal",
+                              "value": 1,
+                              "literalType": "number",
+                              "_meta": {
+                                "_extra": {
+                                  "start": 698,
+                                  "end": 699
+                                }
+                              },
+                              "loc": {
+                                "start": {
+                                  "line": 33,
+                                  "column": 33
+                                },
+                                "end": {
+                                  "line": 33,
+                                  "column": 34
+                                },
+                                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                              }
+                            },
+                            "_meta": {
+                              "_extra": {
+                                "start": 681,
+                                "end": 699
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 33,
+                                "column": 16
+                              },
+                              "end": {
+                                "line": 33,
+                                "column": 34
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          },
+                          "_meta": {
+                            "_extra": {
+                              "start": 674,
+                              "end": 699
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 33,
+                              "column": 9
+                            },
+                            "end": {
+                              "line": 33,
+                              "column": 34
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                          }
+                        }
+                      ],
+                      "id": null,
+                      "_meta": {
+                        "_extra": {
+                          "start": 631,
+                          "end": 706
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 31,
+                          "column": 12
+                        },
+                        "end": {
+                          "line": 34,
+                          "column": 6
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                      }
+                    },
+                    "isYield": false,
+                    "_meta": {
+                      "_extra": {
+                        "start": 624,
+                        "end": 707,
+                        "leadingComments": [
+                          {
+                            "type": "CommentLine",
+                            "value": " 强制指定为每个月的1号,防止3月31日调用变成5月1日",
+                            "start": 584,
+                            "end": 614,
+                            "loc": {
+                              "start": {
+                                "line": 29,
+                                "column": 41,
+                                "index": 584
+                              },
+                              "end": {
+                                "line": 29,
+                                "column": 71,
+                                "index": 614
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 31,
+                        "column": 5
+                      },
+                      "end": {
+                        "line": 34,
+                        "column": 7
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                    }
+                  }
+                ],
+                "id": null,
+                "_meta": {
+                  "_extra": {
+                    "start": 508,
+                    "end": 709,
+                    "directives": []
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 26,
+                    "column": 39
+                  },
+                  "end": {
+                    "line": 35,
+                    "column": 2
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                }
+              }
+            ],
+            "id": null,
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 26,
+                "column": 8
+              },
+              "end": {
+                "line": 35,
+                "column": 2
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+            }
+          },
+          "modifiers": [],
+          "_meta": {
+            "_extra": {
+              "start": 477,
+              "end": 709
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 26,
+              "column": 8
+            },
+            "end": {
+              "line": 35,
+              "column": 2
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+          }
+        },
+        {
+          "type": "ExportStatement",
+          "argument": {
+            "type": "FunctionDefinition",
+            "id": {
+              "type": "Identifier",
+              "name": "getCurrentNextMonth",
+              "_meta": {
+                "_extra": {
+                  "start": 486,
+                  "end": 505
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 26,
+                  "column": 17
+                },
+                "end": {
+                  "line": 26,
+                  "column": 36
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+              }
+            },
+            "parameters": [],
+            "returnType": {
+              "type": "DynamicType",
+              "id": null,
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 26,
+                  "column": 8
+                },
+                "end": {
+                  "line": 35,
+                  "column": 2
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+              }
+            },
+            "body": {
+              "type": "ScopedStatement",
+              "body": [
+                {
+                  "type": "ScopedStatement",
+                  "body": [
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "now",
+                        "_meta": {
+                          "_extra": {
+                            "start": 520,
+                            "end": 523
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 27,
+                            "column": 11
+                          },
+                          "end": {
+                            "line": 27,
+                            "column": 14
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                        }
+                      },
+                      "init": {
+                        "type": "NewExpression",
+                        "callee": {
+                          "type": "Identifier",
+                          "name": "Date",
+                          "_meta": {
+                            "_extra": {
+                              "start": 530,
+                              "end": 534
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 27,
+                              "column": 21
+                            },
+                            "end": {
+                              "line": 27,
+                              "column": 25
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                          }
+                        },
+                        "arguments": [],
+                        "_meta": {
+                          "_extra": {
+                            "start": 526,
+                            "end": 536
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 27,
+                            "column": 17
+                          },
+                          "end": {
+                            "line": 27,
+                            "column": 27
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                        }
+                      },
+                      "cloned": false,
+                      "varType": {
+                        "type": "DynamicType",
+                        "id": null,
+                        "_meta": {}
+                      },
+                      "_meta": {
+                        "_extra": {
+                          "start": 514,
+                          "end": 537
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 27,
+                          "column": 11
+                        },
+                        "end": {
+                          "line": 27,
+                          "column": 27
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                      }
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "now",
+                            "_meta": {
+                              "_extra": {
+                                "start": 547,
+                                "end": 550
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 29,
+                                "column": 5
+                              },
+                              "end": {
+                                "line": 29,
+                                "column": 8
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "setMonth",
+                            "_meta": {
+                              "_extra": {
+                                "start": 551,
+                                "end": 559
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 29,
+                                "column": 9
+                              },
+                              "end": {
+                                "line": 29,
+                                "column": 17
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          },
+                          "computed": false,
+                          "_meta": {
+                            "_extra": {
+                              "start": 547,
+                              "end": 559
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 29,
+                              "column": 5
+                            },
+                            "end": {
+                              "line": 29,
+                              "column": 17
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                          }
+                        },
+                        "arguments": [
+                          {
+                            "type": "BinaryExpression",
+                            "operator": "+",
+                            "left": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "MemberAccess",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "now",
+                                  "_meta": {
+                                    "_extra": {
+                                      "start": 560,
+                                      "end": 563
+                                    }
+                                  },
+                                  "loc": {
+                                    "start": {
+                                      "line": 29,
+                                      "column": 18
+                                    },
+                                    "end": {
+                                      "line": 29,
+                                      "column": 21
+                                    },
+                                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                                  }
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "getMonth",
+                                  "_meta": {
+                                    "_extra": {
+                                      "start": 564,
+                                      "end": 572
+                                    }
+                                  },
+                                  "loc": {
+                                    "start": {
+                                      "line": 29,
+                                      "column": 22
+                                    },
+                                    "end": {
+                                      "line": 29,
+                                      "column": 30
+                                    },
+                                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                                  }
+                                },
+                                "computed": false,
+                                "_meta": {
+                                  "_extra": {
+                                    "start": 560,
+                                    "end": 572
+                                  }
+                                },
+                                "loc": {
+                                  "start": {
+                                    "line": 29,
+                                    "column": 18
+                                  },
+                                  "end": {
+                                    "line": 29,
+                                    "column": 30
+                                  },
+                                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                                }
+                              },
+                              "arguments": [],
+                              "_meta": {
+                                "_extra": {
+                                  "start": 560,
+                                  "end": 574
+                                }
+                              },
+                              "loc": {
+                                "start": {
+                                  "line": 29,
+                                  "column": 18
+                                },
+                                "end": {
+                                  "line": 29,
+                                  "column": 32
+                                },
+                                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                              }
+                            },
+                            "right": {
+                              "type": "Literal",
+                              "value": 1,
+                              "literalType": "number",
+                              "_meta": {
+                                "_extra": {
+                                  "start": 577,
+                                  "end": 578
+                                }
+                              },
+                              "loc": {
+                                "start": {
+                                  "line": 29,
+                                  "column": 35
+                                },
+                                "end": {
+                                  "line": 29,
+                                  "column": 36
+                                },
+                                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                              }
+                            },
+                            "_meta": {
+                              "_extra": {
+                                "start": 560,
+                                "end": 578
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 29,
+                                "column": 18
+                              },
+                              "end": {
+                                "line": 29,
+                                "column": 36
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          },
+                          {
+                            "type": "Literal",
+                            "value": 1,
+                            "literalType": "number",
+                            "_meta": {
+                              "_extra": {
+                                "start": 580,
+                                "end": 581
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 29,
+                                "column": 38
+                              },
+                              "end": {
+                                "line": 29,
+                                "column": 39
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          }
+                        ],
+                        "_meta": {
+                          "_extra": {
+                            "start": 547,
+                            "end": 582
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 29,
+                            "column": 5
+                          },
+                          "end": {
+                            "line": 29,
+                            "column": 40
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                        }
+                      },
+                      "_meta": {
+                        "_extra": {
+                          "start": 547,
+                          "end": 583,
+                          "trailingComments": [
+                            {
+                              "type": "CommentLine",
+                              "value": " 强制指定为每个月的1号,防止3月31日调用变成5月1日",
+                              "start": 584,
+                              "end": 614,
+                              "loc": {
+                                "start": {
+                                  "line": 29,
+                                  "column": 41,
+                                  "index": 584
+                                },
+                                "end": {
+                                  "line": 29,
+                                  "column": 71,
+                                  "index": 614
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 29,
+                          "column": 5
+                        },
+                        "end": {
+                          "line": 29,
+                          "column": 41
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                      }
+                    },
+                    {
+                      "type": "ReturnStatement",
+                      "argument": {
+                        "type": "ObjectExpression",
+                        "properties": [
+                          {
+                            "type": "ObjectProperty",
+                            "key": {
+                              "type": "Identifier",
+                              "name": "year",
+                              "_meta": {
+                                "_extra": {
+                                  "start": 641,
+                                  "end": 645
+                                }
+                              },
+                              "loc": {
+                                "start": {
+                                  "line": 32,
+                                  "column": 9
+                                },
+                                "end": {
+                                  "line": 32,
+                                  "column": 13
+                                },
+                                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                              }
+                            },
+                            "value": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "MemberAccess",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "now",
+                                  "_meta": {
+                                    "_extra": {
+                                      "start": 647,
+                                      "end": 650
+                                    }
+                                  },
+                                  "loc": {
+                                    "start": {
+                                      "line": 32,
+                                      "column": 15
+                                    },
+                                    "end": {
+                                      "line": 32,
+                                      "column": 18
+                                    },
+                                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                                  }
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "getFullYear",
+                                  "_meta": {
+                                    "_extra": {
+                                      "start": 651,
+                                      "end": 662
+                                    }
+                                  },
+                                  "loc": {
+                                    "start": {
+                                      "line": 32,
+                                      "column": 19
+                                    },
+                                    "end": {
+                                      "line": 32,
+                                      "column": 30
+                                    },
+                                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                                  }
+                                },
+                                "computed": false,
+                                "_meta": {
+                                  "_extra": {
+                                    "start": 647,
+                                    "end": 662
+                                  }
+                                },
+                                "loc": {
+                                  "start": {
+                                    "line": 32,
+                                    "column": 15
+                                  },
+                                  "end": {
+                                    "line": 32,
+                                    "column": 30
+                                  },
+                                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                                }
+                              },
+                              "arguments": [],
+                              "_meta": {
+                                "_extra": {
+                                  "start": 647,
+                                  "end": 664
+                                }
+                              },
+                              "loc": {
+                                "start": {
+                                  "line": 32,
+                                  "column": 15
+                                },
+                                "end": {
+                                  "line": 32,
+                                  "column": 32
+                                },
+                                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                              }
+                            },
+                            "_meta": {
+                              "_extra": {
+                                "start": 641,
+                                "end": 664
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 32,
+                                "column": 9
+                              },
+                              "end": {
+                                "line": 32,
+                                "column": 32
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          },
+                          {
+                            "type": "ObjectProperty",
+                            "key": {
+                              "type": "Identifier",
+                              "name": "month",
+                              "_meta": {
+                                "_extra": {
+                                  "start": 674,
+                                  "end": 679
+                                }
+                              },
+                              "loc": {
+                                "start": {
+                                  "line": 33,
+                                  "column": 9
+                                },
+                                "end": {
+                                  "line": 33,
+                                  "column": 14
+                                },
+                                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                              }
+                            },
+                            "value": {
+                              "type": "BinaryExpression",
+                              "operator": "+",
+                              "left": {
+                                "type": "CallExpression",
+                                "callee": {
+                                  "type": "MemberAccess",
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "now",
+                                    "_meta": {
+                                      "_extra": {
+                                        "start": 681,
+                                        "end": 684
+                                      }
+                                    },
+                                    "loc": {
+                                      "start": {
+                                        "line": 33,
+                                        "column": 16
+                                      },
+                                      "end": {
+                                        "line": 33,
+                                        "column": 19
+                                      },
+                                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                                    }
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "getMonth",
+                                    "_meta": {
+                                      "_extra": {
+                                        "start": 685,
+                                        "end": 693
+                                      }
+                                    },
+                                    "loc": {
+                                      "start": {
+                                        "line": 33,
+                                        "column": 20
+                                      },
+                                      "end": {
+                                        "line": 33,
+                                        "column": 28
+                                      },
+                                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                                    }
+                                  },
+                                  "computed": false,
+                                  "_meta": {
+                                    "_extra": {
+                                      "start": 681,
+                                      "end": 693
+                                    }
+                                  },
+                                  "loc": {
+                                    "start": {
+                                      "line": 33,
+                                      "column": 16
+                                    },
+                                    "end": {
+                                      "line": 33,
+                                      "column": 28
+                                    },
+                                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                                  }
+                                },
+                                "arguments": [],
+                                "_meta": {
+                                  "_extra": {
+                                    "start": 681,
+                                    "end": 695
+                                  }
+                                },
+                                "loc": {
+                                  "start": {
+                                    "line": 33,
+                                    "column": 16
+                                  },
+                                  "end": {
+                                    "line": 33,
+                                    "column": 30
+                                  },
+                                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                                }
+                              },
+                              "right": {
+                                "type": "Literal",
+                                "value": 1,
+                                "literalType": "number",
+                                "_meta": {
+                                  "_extra": {
+                                    "start": 698,
+                                    "end": 699
+                                  }
+                                },
+                                "loc": {
+                                  "start": {
+                                    "line": 33,
+                                    "column": 33
+                                  },
+                                  "end": {
+                                    "line": 33,
+                                    "column": 34
+                                  },
+                                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                                }
+                              },
+                              "_meta": {
+                                "_extra": {
+                                  "start": 681,
+                                  "end": 699
+                                }
+                              },
+                              "loc": {
+                                "start": {
+                                  "line": 33,
+                                  "column": 16
+                                },
+                                "end": {
+                                  "line": 33,
+                                  "column": 34
+                                },
+                                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                              }
+                            },
+                            "_meta": {
+                              "_extra": {
+                                "start": 674,
+                                "end": 699
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 33,
+                                "column": 9
+                              },
+                              "end": {
+                                "line": 33,
+                                "column": 34
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                            }
+                          }
+                        ],
+                        "id": null,
+                        "_meta": {
+                          "_extra": {
+                            "start": 631,
+                            "end": 706
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 31,
+                            "column": 12
+                          },
+                          "end": {
+                            "line": 34,
+                            "column": 6
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                        }
+                      },
+                      "isYield": false,
+                      "_meta": {
+                        "_extra": {
+                          "start": 624,
+                          "end": 707,
+                          "leadingComments": [
+                            {
+                              "type": "CommentLine",
+                              "value": " 强制指定为每个月的1号,防止3月31日调用变成5月1日",
+                              "start": 584,
+                              "end": 614,
+                              "loc": {
+                                "start": {
+                                  "line": 29,
+                                  "column": 41,
+                                  "index": 584
+                                },
+                                "end": {
+                                  "line": 29,
+                                  "column": 71,
+                                  "index": 614
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 31,
+                          "column": 5
+                        },
+                        "end": {
+                          "line": 34,
+                          "column": 7
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                      }
+                    }
+                  ],
+                  "id": null,
+                  "_meta": {
+                    "_extra": {
+                      "start": 508,
+                      "end": 709,
+                      "directives": []
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 26,
+                      "column": 39
+                    },
+                    "end": {
+                      "line": 35,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+                  }
+                }
+              ],
+              "id": null,
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 26,
+                  "column": 8
+                },
+                "end": {
+                  "line": 35,
+                  "column": 2
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+              }
+            },
+            "modifiers": [],
+            "_meta": {
+              "_extra": {
+                "start": 477,
+                "end": 709
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 26,
+                "column": 8
+              },
+              "end": {
+                "line": 35,
+                "column": 2
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+            }
+          },
+          "alias": {
+            "type": "Identifier",
+            "name": "getCurrentNextMonth",
+            "_meta": {
+              "_extra": {
+                "start": 486,
+                "end": 505
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 26,
+                "column": 17
+              },
+              "end": {
+                "line": 26,
+                "column": 36
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+            }
+          },
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 26,
+              "column": 1
+            },
+            "end": {
+              "line": 35,
+              "column": 2
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+          }
+        }
+      ],
+      "_meta": {
+        "_extra": {
+          "start": 470,
+          "end": 709,
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * 获取当前时间下一个月份,带年\n *\n * @return {Object} 时间对象\n ",
+              "start": 416,
+              "end": 469,
+              "loc": {
+                "start": {
+                  "line": 21,
+                  "column": 0,
+                  "index": 416
+                },
+                "end": {
+                  "line": 25,
+                  "column": 3,
+                  "index": 469
+                }
+              }
+            }
+          ]
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 26,
+          "column": 1
+        },
+        "end": {
+          "line": 35,
+          "column": 2
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+      }
+    }
+  ],
+  "language": "javascript",
+  "languageVersion": null,
+  "uri": "",
+  "version": "0.1.63",
+  "_meta": {
+    "_extra": {
+      "end": 710,
+      "directives": [
+        {
+          "type": "Directive",
+          "start": 0,
+          "end": 13,
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 0,
+              "index": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 13,
+              "index": 13
+            }
+          },
+          "value": {
+            "type": "DirectiveLiteral",
+            "start": 0,
+            "end": 12,
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 0,
+                "index": 0
+              },
+              "end": {
+                "line": 1,
+                "column": 12,
+                "index": 12
+              }
+            },
+            "extra": {
+              "rawValue": "use strict",
+              "raw": "'use strict'",
+              "expressionValue": "use strict"
+            },
+            "value": "use strict"
+          }
+        }
+      ]
+    }
+  },
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 1
+    },
+    "end": {
+      "line": 36,
+      "column": 1
+    },
+    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/export2.js"
+  }
+}

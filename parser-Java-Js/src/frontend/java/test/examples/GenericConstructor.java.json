@@ -1,0 +1,444 @@
+{
+  "type": "CompileUnit",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "ArrayList",
+        "_meta": {},
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 1
+          },
+          "end": {
+            "line": 1,
+            "column": 27
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/GenericConstructor.java"
+        }
+      },
+      "init": {
+        "type": "ImportExpression",
+        "from": {
+          "type": "Literal",
+          "value": "java.util.ArrayList",
+          "literalType": "string",
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 1
+            },
+            "end": {
+              "line": 1,
+              "column": 27
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/GenericConstructor.java"
+          }
+        },
+        "local": null,
+        "imported": null,
+        "_meta": {},
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 1
+          },
+          "end": {
+            "line": 1,
+            "column": 27
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/GenericConstructor.java"
+        }
+      },
+      "cloned": false,
+      "varType": {
+        "type": "ScopedType",
+        "id": {
+          "type": "Identifier",
+          "name": "java.util.ArrayList",
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 1
+            },
+            "end": {
+              "line": 1,
+              "column": 27
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/GenericConstructor.java"
+          }
+        },
+        "scope": null,
+        "typeArguments": null,
+        "_meta": {},
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 1
+          },
+          "end": {
+            "line": 1,
+            "column": 27
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/GenericConstructor.java"
+        }
+      },
+      "_meta": {},
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 1
+        },
+        "end": {
+          "line": 1,
+          "column": 27
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/GenericConstructor.java"
+      }
+    },
+    {
+      "type": "ExportStatement",
+      "argument": {
+        "type": "ClassDefinition",
+        "id": {
+          "type": "Identifier",
+          "name": "GenericConstructor",
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 14
+            },
+            "end": {
+              "line": 3,
+              "column": 14
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/GenericConstructor.java"
+          }
+        },
+        "body": [
+          {
+            "type": "FunctionDefinition",
+            "id": {
+              "type": "Identifier",
+              "name": "main",
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 24
+                },
+                "end": {
+                  "line": 4,
+                  "column": 24
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/GenericConstructor.java"
+              }
+            },
+            "parameters": [
+              {
+                "type": "VariableDeclaration",
+                "id": {
+                  "type": "Identifier",
+                  "name": "args",
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 38
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 38
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/GenericConstructor.java"
+                  }
+                },
+                "init": null,
+                "cloned": false,
+                "varType": {
+                  "type": "ScopedType",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "String",
+                    "_meta": {},
+                    "loc": {
+                      "start": {
+                        "line": 4,
+                        "column": 29
+                      },
+                      "end": {
+                        "line": 4,
+                        "column": 36
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/GenericConstructor.java"
+                    }
+                  },
+                  "scope": null,
+                  "typeArguments": null,
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 29
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 36
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/GenericConstructor.java"
+                  }
+                },
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 4,
+                    "column": 29
+                  },
+                  "end": {
+                    "line": 4,
+                    "column": 38
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/GenericConstructor.java"
+                }
+              }
+            ],
+            "returnType": {
+              "type": "PrimitiveType",
+              "id": {
+                "type": "Identifier",
+                "name": "void",
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 4,
+                    "column": 5
+                  },
+                  "end": {
+                    "line": 6,
+                    "column": 5
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/GenericConstructor.java"
+                }
+              },
+              "typeArguments": null,
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 5
+                },
+                "end": {
+                  "line": 6,
+                  "column": 5
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/GenericConstructor.java"
+              }
+            },
+            "body": {
+              "type": "ScopedStatement",
+              "body": [
+                {
+                  "type": "VariableDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "myList",
+                    "_meta": {},
+                    "loc": {
+                      "start": {
+                        "line": 5,
+                        "column": 28
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 28
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/GenericConstructor.java"
+                    }
+                  },
+                  "init": {
+                    "type": "NewExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "ArrayList",
+                      "_meta": {},
+                      "loc": {
+                        "start": {
+                          "line": 5,
+                          "column": 37
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 53
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/GenericConstructor.java"
+                      }
+                    },
+                    "arguments": [],
+                    "_meta": {},
+                    "loc": {
+                      "start": {
+                        "line": 5,
+                        "column": 37
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 53
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/GenericConstructor.java"
+                    }
+                  },
+                  "cloned": false,
+                  "varType": {
+                    "type": "ScopedType",
+                    "id": {
+                      "type": "Identifier",
+                      "name": "ArrayList",
+                      "_meta": {},
+                      "loc": {
+                        "start": {
+                          "line": 5,
+                          "column": 9
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 26
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/GenericConstructor.java"
+                      }
+                    },
+                    "scope": null,
+                    "typeArguments": null,
+                    "_meta": {},
+                    "loc": {
+                      "start": {
+                        "line": 5,
+                        "column": 9
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 26
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/GenericConstructor.java"
+                    }
+                  },
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 5,
+                      "column": 28
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 53
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/GenericConstructor.java"
+                  }
+                }
+              ],
+              "id": null,
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 43
+                },
+                "end": {
+                  "line": 6,
+                  "column": 5
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/GenericConstructor.java"
+              }
+            },
+            "modifiers": [],
+            "_meta": {
+              "modifiers": [
+                "public",
+                "static"
+              ],
+              "isPublic": true,
+              "isStatic": true
+            },
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 5
+              },
+              "end": {
+                "line": 6,
+                "column": 5
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/GenericConstructor.java"
+            }
+          }
+        ],
+        "supers": [],
+        "_meta": {
+          "modifiers": [
+            "public"
+          ],
+          "isPublic": true
+        },
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 8
+          },
+          "end": {
+            "line": 7,
+            "column": 1
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/GenericConstructor.java"
+        }
+      },
+      "alias": {
+        "type": "Identifier",
+        "name": "GenericConstructor",
+        "_meta": {},
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 14
+          },
+          "end": {
+            "line": 3,
+            "column": 14
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/GenericConstructor.java"
+        }
+      },
+      "_meta": {},
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 1
+        },
+        "end": {
+          "line": 7,
+          "column": 1
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/GenericConstructor.java"
+      }
+    }
+  ],
+  "language": "java",
+  "languageVersion": "17",
+  "uri": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/GenericConstructor.java",
+  "version": "0.1.63",
+  "_meta": {},
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 1
+    },
+    "end": {
+      "line": 7,
+      "column": 1
+    },
+    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/GenericConstructor.java"
+  }
+}

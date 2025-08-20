@@ -1,0 +1,1654 @@
+{
+  "type": "CompileUnit",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "foo",
+        "_meta": {
+          "_extra": {
+            "start": 6,
+            "end": 9
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 7
+          },
+          "end": {
+            "line": 1,
+            "column": 10
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+        }
+      },
+      "init": {
+        "type": "Literal",
+        "value": 3,
+        "literalType": "number",
+        "_meta": {
+          "_extra": {
+            "start": 12,
+            "end": 13
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 13
+          },
+          "end": {
+            "line": 1,
+            "column": 14
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+        }
+      },
+      "cloned": false,
+      "varType": {
+        "type": "DynamicType",
+        "id": null,
+        "_meta": {}
+      },
+      "_meta": {
+        "_extra": {
+          "end": 14,
+          "trailingComments": [
+            {
+              "type": "CommentLine",
+              "value": "Array Expression",
+              "start": 15,
+              "end": 33,
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 0,
+                  "index": 15
+                },
+                "end": {
+                  "line": 2,
+                  "column": 18,
+                  "index": 33
+                }
+              }
+            }
+          ]
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 7
+        },
+        "end": {
+          "line": 1,
+          "column": 14
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "ObjectExpression",
+        "properties": [
+          {
+            "type": "ObjectProperty",
+            "key": {
+              "type": "Literal",
+              "value": 0,
+              "literalType": "number",
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 1
+                },
+                "end": {
+                  "line": 3,
+                  "column": 25
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+              }
+            },
+            "value": {
+              "type": "Literal",
+              "value": 1,
+              "literalType": "number",
+              "_meta": {
+                "_extra": {
+                  "start": 35,
+                  "end": 36
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 2
+                },
+                "end": {
+                  "line": 3,
+                  "column": 3
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+              }
+            },
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 1
+              },
+              "end": {
+                "line": 3,
+                "column": 25
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+            }
+          },
+          {
+            "type": "ObjectProperty",
+            "key": {
+              "type": "Literal",
+              "value": 1,
+              "literalType": "number",
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 1
+                },
+                "end": {
+                  "line": 3,
+                  "column": 25
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+              }
+            },
+            "value": {
+              "type": "BinaryExpression",
+              "operator": "+",
+              "left": {
+                "type": "Literal",
+                "value": 1,
+                "literalType": "number",
+                "_meta": {
+                  "_extra": {
+                    "start": 38,
+                    "end": 39
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 3,
+                    "column": 5
+                  },
+                  "end": {
+                    "line": 3,
+                    "column": 6
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+                }
+              },
+              "right": {
+                "type": "Literal",
+                "value": 1,
+                "literalType": "number",
+                "_meta": {
+                  "_extra": {
+                    "start": 40,
+                    "end": 41
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 3,
+                    "column": 7
+                  },
+                  "end": {
+                    "line": 3,
+                    "column": 8
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+                }
+              },
+              "_meta": {
+                "_extra": {
+                  "start": 38,
+                  "end": 41
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 5
+                },
+                "end": {
+                  "line": 3,
+                  "column": 8
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+              }
+            },
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 1
+              },
+              "end": {
+                "line": 3,
+                "column": 25
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+            }
+          },
+          {
+            "type": "ObjectProperty",
+            "key": {
+              "type": "Literal",
+              "value": 2,
+              "literalType": "number",
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 1
+                },
+                "end": {
+                  "line": 3,
+                  "column": 25
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+              }
+            },
+            "value": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "FunctionDefinition",
+                "id": null,
+                "parameters": [],
+                "returnType": {
+                  "type": "DynamicType",
+                  "id": null,
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 11
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 16
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+                  }
+                },
+                "body": {
+                  "type": "ScopedStatement",
+                  "body": [
+                    {
+                      "type": "ScopedStatement",
+                      "body": [
+                        {
+                          "type": "ReturnStatement",
+                          "argument": {
+                            "type": "Literal",
+                            "value": 1,
+                            "literalType": "number",
+                            "_meta": {
+                              "_extra": {
+                                "start": 48,
+                                "end": 49
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 3,
+                                "column": 15
+                              },
+                              "end": {
+                                "line": 3,
+                                "column": 16
+                              },
+                              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+                            }
+                          },
+                          "isYield": false,
+                          "_meta": {},
+                          "loc": {
+                            "start": {
+                              "line": 3,
+                              "column": 11
+                            },
+                            "end": {
+                              "line": 3,
+                              "column": 16
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+                          }
+                        }
+                      ],
+                      "id": null,
+                      "_meta": {},
+                      "loc": {
+                        "start": {
+                          "line": 3,
+                          "column": 11
+                        },
+                        "end": {
+                          "line": 3,
+                          "column": 16
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+                      }
+                    }
+                  ],
+                  "id": null,
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 11
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 16
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+                  }
+                },
+                "modifiers": [],
+                "_meta": {
+                  "_extra": {
+                    "start": 44,
+                    "end": 49
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 3,
+                    "column": 11
+                  },
+                  "end": {
+                    "line": 3,
+                    "column": 16
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+                }
+              },
+              "arguments": [],
+              "_meta": {
+                "_extra": {
+                  "start": 43,
+                  "end": 52
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 10
+                },
+                "end": {
+                  "line": 3,
+                  "column": 19
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+              }
+            },
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 1
+              },
+              "end": {
+                "line": 3,
+                "column": 25
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+            }
+          },
+          {
+            "type": "ObjectProperty",
+            "key": {
+              "type": "Literal",
+              "value": 3,
+              "literalType": "number",
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 1
+                },
+                "end": {
+                  "line": 3,
+                  "column": 25
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+              }
+            },
+            "value": {
+              "type": "Identifier",
+              "name": "foo",
+              "_meta": {
+                "_extra": {
+                  "start": 54,
+                  "end": 57
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 21
+                },
+                "end": {
+                  "line": 3,
+                  "column": 24
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+              }
+            },
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 1
+              },
+              "end": {
+                "line": 3,
+                "column": 25
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+            }
+          }
+        ],
+        "id": null,
+        "_meta": {
+          "isArray": true,
+          "_extra": {
+            "start": 34,
+            "end": 58
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 1
+          },
+          "end": {
+            "line": 3,
+            "column": 25
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+        }
+      },
+      "_meta": {
+        "_extra": {
+          "start": 34,
+          "end": 59,
+          "leadingComments": [
+            {
+              "type": "CommentLine",
+              "value": "Array Expression",
+              "start": 15,
+              "end": 33,
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 0,
+                  "index": 15
+                },
+                "end": {
+                  "line": 2,
+                  "column": 18,
+                  "index": 33
+                }
+              }
+            }
+          ],
+          "trailingComments": [
+            {
+              "type": "CommentLine",
+              "value": "Object Exression",
+              "start": 61,
+              "end": 79,
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 0,
+                  "index": 61
+                },
+                "end": {
+                  "line": 5,
+                  "column": 18,
+                  "index": 79
+                }
+              }
+            }
+          ]
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 1
+        },
+        "end": {
+          "line": 3,
+          "column": 26
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+      }
+    },
+    {
+      "type": "VariableDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "bar",
+        "_meta": {
+          "_extra": {
+            "start": 86,
+            "end": 89
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 6,
+            "column": 7
+          },
+          "end": {
+            "line": 6,
+            "column": 10
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+        }
+      },
+      "init": {
+        "type": "ObjectExpression",
+        "properties": [
+          {
+            "type": "ObjectProperty",
+            "key": {
+              "type": "Identifier",
+              "name": "foo",
+              "_meta": {
+                "_extra": {
+                  "start": 96,
+                  "end": 99
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 7,
+                  "column": 3
+                },
+                "end": {
+                  "line": 7,
+                  "column": 6
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+              }
+            },
+            "value": {
+              "type": "Identifier",
+              "name": "foo",
+              "_meta": {
+                "_extra": {
+                  "start": 96,
+                  "end": 99
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 7,
+                  "column": 3
+                },
+                "end": {
+                  "line": 7,
+                  "column": 6
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+              }
+            },
+            "_meta": {
+              "_extra": {
+                "start": 96,
+                "end": 99
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 7,
+                "column": 3
+              },
+              "end": {
+                "line": 7,
+                "column": 6
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+            }
+          },
+          {
+            "type": "ObjectProperty",
+            "key": {
+              "type": "Identifier",
+              "name": "a1",
+              "_meta": {
+                "_extra": {
+                  "start": 103,
+                  "end": 105
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 8,
+                  "column": 3
+                },
+                "end": {
+                  "line": 8,
+                  "column": 5
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+              }
+            },
+            "value": {
+              "type": "Literal",
+              "value": 3,
+              "literalType": "number",
+              "_meta": {
+                "_extra": {
+                  "start": 108,
+                  "end": 109
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 8,
+                  "column": 8
+                },
+                "end": {
+                  "line": 8,
+                  "column": 9
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+              }
+            },
+            "_meta": {
+              "_extra": {
+                "start": 103,
+                "end": 109
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 8,
+                "column": 3
+              },
+              "end": {
+                "line": 8,
+                "column": 9
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+            }
+          },
+          {
+            "type": "ObjectProperty",
+            "key": {
+              "type": "Identifier",
+              "name": "a2",
+              "_meta": {
+                "_extra": {
+                  "start": 113,
+                  "end": 115
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 9,
+                  "column": 3
+                },
+                "end": {
+                  "line": 9,
+                  "column": 5
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+              }
+            },
+            "value": {
+              "type": "ObjectExpression",
+              "properties": [
+                {
+                  "type": "ObjectProperty",
+                  "key": {
+                    "type": "Identifier",
+                    "name": "a21",
+                    "_meta": {
+                      "_extra": {
+                        "start": 120,
+                        "end": 123
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 9,
+                        "column": 10
+                      },
+                      "end": {
+                        "line": 9,
+                        "column": 13
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+                    }
+                  },
+                  "value": {
+                    "type": "Literal",
+                    "value": true,
+                    "literalType": "boolean",
+                    "_meta": {
+                      "_extra": {
+                        "start": 125,
+                        "end": 129
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 9,
+                        "column": 15
+                      },
+                      "end": {
+                        "line": 9,
+                        "column": 19
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+                    }
+                  },
+                  "_meta": {
+                    "_extra": {
+                      "start": 120,
+                      "end": 129
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 9,
+                      "column": 10
+                    },
+                    "end": {
+                      "line": 9,
+                      "column": 19
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+                  }
+                },
+                {
+                  "type": "ObjectProperty",
+                  "key": {
+                    "type": "Identifier",
+                    "name": "a22",
+                    "_meta": {
+                      "_extra": {
+                        "start": 131,
+                        "end": 134
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 9,
+                        "column": 21
+                      },
+                      "end": {
+                        "line": 9,
+                        "column": 24
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+                    }
+                  },
+                  "value": {
+                    "type": "Literal",
+                    "value": false,
+                    "literalType": "boolean",
+                    "_meta": {
+                      "_extra": {
+                        "start": 136,
+                        "end": 141
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 9,
+                        "column": 26
+                      },
+                      "end": {
+                        "line": 9,
+                        "column": 31
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+                    }
+                  },
+                  "_meta": {
+                    "_extra": {
+                      "start": 131,
+                      "end": 141
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 9,
+                      "column": 21
+                    },
+                    "end": {
+                      "line": 9,
+                      "column": 31
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+                  }
+                }
+              ],
+              "id": null,
+              "_meta": {
+                "_extra": {
+                  "start": 118,
+                  "end": 143
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 9,
+                  "column": 8
+                },
+                "end": {
+                  "line": 9,
+                  "column": 33
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+              }
+            },
+            "_meta": {
+              "_extra": {
+                "start": 113,
+                "end": 143
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 9,
+                "column": 3
+              },
+              "end": {
+                "line": 9,
+                "column": 33
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+            }
+          },
+          {
+            "type": "ObjectProperty",
+            "key": {
+              "type": "Identifier",
+              "name": "a3",
+              "_meta": {
+                "_extra": {
+                  "start": 147,
+                  "end": 149
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 10,
+                  "column": 3
+                },
+                "end": {
+                  "line": 10,
+                  "column": 5
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+              }
+            },
+            "value": {
+              "type": "FunctionDefinition",
+              "id": {
+                "type": "Identifier",
+                "name": "a3",
+                "_meta": {
+                  "_extra": {
+                    "start": 147,
+                    "end": 149
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 10,
+                    "column": 3
+                  },
+                  "end": {
+                    "line": 10,
+                    "column": 5
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+                }
+              },
+              "parameters": [],
+              "returnType": {
+                "type": "DynamicType",
+                "id": null,
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 10,
+                    "column": 3
+                  },
+                  "end": {
+                    "line": 12,
+                    "column": 4
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+                }
+              },
+              "body": {
+                "type": "ScopedStatement",
+                "body": [
+                  {
+                    "type": "ScopedStatement",
+                    "body": [
+                      {
+                        "type": "ReturnStatement",
+                        "argument": {
+                          "type": "Literal",
+                          "value": 3,
+                          "literalType": "number",
+                          "_meta": {
+                            "_extra": {
+                              "start": 165,
+                              "end": 166
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 11,
+                              "column": 12
+                            },
+                            "end": {
+                              "line": 11,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+                          }
+                        },
+                        "isYield": false,
+                        "_meta": {
+                          "_extra": {
+                            "start": 158,
+                            "end": 167
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 11,
+                            "column": 5
+                          },
+                          "end": {
+                            "line": 11,
+                            "column": 14
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+                        }
+                      }
+                    ],
+                    "id": null,
+                    "_meta": {
+                      "_extra": {
+                        "start": 152,
+                        "end": 171,
+                        "directives": []
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 10,
+                        "column": 8
+                      },
+                      "end": {
+                        "line": 12,
+                        "column": 4
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+                    }
+                  }
+                ],
+                "id": null,
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 10,
+                    "column": 3
+                  },
+                  "end": {
+                    "line": 12,
+                    "column": 4
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+                }
+              },
+              "modifiers": [],
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 10,
+                  "column": 3
+                },
+                "end": {
+                  "line": 12,
+                  "column": 4
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+              }
+            },
+            "_meta": {
+              "_extra": {
+                "start": 147,
+                "end": 171
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 10,
+                "column": 3
+              },
+              "end": {
+                "line": 12,
+                "column": 4
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+            }
+          },
+          {
+            "type": "ObjectProperty",
+            "key": {
+              "type": "Identifier",
+              "name": "a4",
+              "_meta": {
+                "_extra": {
+                  "start": 175,
+                  "end": 177
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 13,
+                  "column": 3
+                },
+                "end": {
+                  "line": 13,
+                  "column": 5
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+              }
+            },
+            "value": {
+              "type": "FunctionDefinition",
+              "id": null,
+              "parameters": [],
+              "returnType": {
+                "type": "DynamicType",
+                "id": null,
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 13,
+                    "column": 7
+                  },
+                  "end": {
+                    "line": 15,
+                    "column": 4
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+                }
+              },
+              "body": {
+                "type": "ScopedStatement",
+                "body": [
+                  {
+                    "type": "ScopedStatement",
+                    "body": [
+                      {
+                        "type": "ReturnStatement",
+                        "argument": {
+                          "type": "Literal",
+                          "value": 3,
+                          "literalType": "number",
+                          "_meta": {
+                            "_extra": {
+                              "start": 203,
+                              "end": 204
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 14,
+                              "column": 12
+                            },
+                            "end": {
+                              "line": 14,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+                          }
+                        },
+                        "isYield": false,
+                        "_meta": {
+                          "_extra": {
+                            "start": 196,
+                            "end": 205
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 14,
+                            "column": 5
+                          },
+                          "end": {
+                            "line": 14,
+                            "column": 14
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+                        }
+                      }
+                    ],
+                    "id": null,
+                    "_meta": {
+                      "_extra": {
+                        "start": 190,
+                        "end": 209,
+                        "directives": []
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 13,
+                        "column": 18
+                      },
+                      "end": {
+                        "line": 15,
+                        "column": 4
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+                    }
+                  }
+                ],
+                "id": null,
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 13,
+                    "column": 7
+                  },
+                  "end": {
+                    "line": 15,
+                    "column": 4
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+                }
+              },
+              "modifiers": [],
+              "_meta": {
+                "_extra": {
+                  "start": 179,
+                  "end": 209
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 13,
+                  "column": 7
+                },
+                "end": {
+                  "line": 15,
+                  "column": 4
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+              }
+            },
+            "_meta": {
+              "_extra": {
+                "start": 175,
+                "end": 209
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 13,
+                "column": 3
+              },
+              "end": {
+                "line": 15,
+                "column": 4
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+            }
+          }
+        ],
+        "id": null,
+        "_meta": {
+          "_extra": {
+            "start": 92,
+            "end": 211
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 6,
+            "column": 13
+          },
+          "end": {
+            "line": 16,
+            "column": 2
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+        }
+      },
+      "cloned": false,
+      "varType": {
+        "type": "DynamicType",
+        "id": null,
+        "_meta": {}
+      },
+      "_meta": {
+        "_extra": {
+          "start": 80,
+          "end": 212,
+          "leadingComments": [
+            {
+              "type": "CommentLine",
+              "value": "Object Exression",
+              "start": 61,
+              "end": 79,
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 0,
+                  "index": 61
+                },
+                "end": {
+                  "line": 5,
+                  "column": 18,
+                  "index": 79
+                }
+              }
+            }
+          ]
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 7
+        },
+        "end": {
+          "line": 16,
+          "column": 2
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "Sequence",
+        "expressions": [
+          {
+            "type": "Literal",
+            "value": 1,
+            "literalType": "number",
+            "_meta": {
+              "_extra": {
+                "start": 216,
+                "end": 217
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 18,
+                "column": 3
+              },
+              "end": {
+                "line": 18,
+                "column": 4
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+            }
+          },
+          {
+            "type": "Literal",
+            "value": 2,
+            "literalType": "number",
+            "_meta": {
+              "_extra": {
+                "start": 219,
+                "end": 220
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 18,
+                "column": 6
+              },
+              "end": {
+                "line": 18,
+                "column": 7
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+            }
+          },
+          {
+            "type": "Literal",
+            "value": 34,
+            "literalType": "number",
+            "_meta": {
+              "_extra": {
+                "start": 222,
+                "end": 224
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 18,
+                "column": 9
+              },
+              "end": {
+                "line": 18,
+                "column": 11
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+            }
+          }
+        ],
+        "_meta": {
+          "_extra": {
+            "start": 216,
+            "end": 224
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 18,
+            "column": 3
+          },
+          "end": {
+            "line": 18,
+            "column": 11
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+        }
+      },
+      "_meta": {
+        "_extra": {
+          "start": 214,
+          "end": 226,
+          "trailingComments": [
+            {
+              "type": "CommentLine",
+              "value": "TODO RecordExpression TupleExpression",
+              "start": 228,
+              "end": 267,
+              "loc": {
+                "start": {
+                  "line": 20,
+                  "column": 0,
+                  "index": 228
+                },
+                "end": {
+                  "line": 20,
+                  "column": 39,
+                  "index": 267
+                }
+              }
+            }
+          ]
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 1
+        },
+        "end": {
+          "line": 18,
+          "column": 13
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "ConditionalExpression",
+        "test": {
+          "type": "Identifier",
+          "name": "foo",
+          "_meta": {
+            "_extra": {
+              "start": 269,
+              "end": 272
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 22,
+              "column": 1
+            },
+            "end": {
+              "line": 22,
+              "column": 4
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+          }
+        },
+        "consequent": {
+          "type": "Identifier",
+          "name": "foo",
+          "_meta": {
+            "_extra": {
+              "start": 274,
+              "end": 277
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 22,
+              "column": 6
+            },
+            "end": {
+              "line": 22,
+              "column": 9
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+          }
+        },
+        "alternative": {
+          "type": "Identifier",
+          "name": "bar",
+          "_meta": {
+            "_extra": {
+              "start": 279,
+              "end": 282
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 22,
+              "column": 11
+            },
+            "end": {
+              "line": 22,
+              "column": 14
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+          }
+        },
+        "_meta": {
+          "_extra": {
+            "start": 269,
+            "end": 282
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 22,
+            "column": 1
+          },
+          "end": {
+            "line": 22,
+            "column": 14
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+        }
+      },
+      "_meta": {
+        "_extra": {
+          "start": 269,
+          "end": 283,
+          "leadingComments": [
+            {
+              "type": "CommentLine",
+              "value": "TODO RecordExpression TupleExpression",
+              "start": 228,
+              "end": 267,
+              "loc": {
+                "start": {
+                  "line": 20,
+                  "column": 0,
+                  "index": 228
+                },
+                "end": {
+                  "line": 20,
+                  "column": 39,
+                  "index": 267
+                }
+              }
+            }
+          ]
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 1
+        },
+        "end": {
+          "line": 22,
+          "column": 15
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "BinaryExpression",
+        "operator": "+",
+        "left": {
+          "type": "Literal",
+          "value": 1,
+          "literalType": "number",
+          "_meta": {
+            "_extra": {
+              "start": 287,
+              "end": 288
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 24,
+              "column": 3
+            },
+            "end": {
+              "line": 24,
+              "column": 4
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+          }
+        },
+        "right": {
+          "type": "Literal",
+          "value": 3,
+          "literalType": "number",
+          "_meta": {
+            "_extra": {
+              "start": 289,
+              "end": 290
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 24,
+              "column": 5
+            },
+            "end": {
+              "line": 24,
+              "column": 6
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+          }
+        },
+        "_meta": {
+          "_extra": {
+            "start": 287,
+            "end": 290
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 24,
+            "column": 3
+          },
+          "end": {
+            "line": 24,
+            "column": 6
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+        }
+      },
+      "_meta": {
+        "_extra": {
+          "start": 285,
+          "end": 293
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 24,
+          "column": 1
+        },
+        "end": {
+          "line": 24,
+          "column": 9
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+      }
+    }
+  ],
+  "language": "javascript",
+  "languageVersion": null,
+  "uri": "",
+  "version": "0.1.63",
+  "_meta": {
+    "_extra": {
+      "end": 295,
+      "directives": []
+    }
+  },
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 1
+    },
+    "end": {
+      "line": 26,
+      "column": 1
+    },
+    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/expressions.js"
+  }
+}

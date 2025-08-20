@@ -1,0 +1,131 @@
+{
+  "type": "CompileUnit",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "\"fmt\""
+      },
+      "init": {
+        "type": "ImportExpression",
+        "from": {
+          "type": "Literal",
+          "value": "\"fmt\"",
+          "literalType": "string"
+        },
+        "local": null,
+        "imported": {}
+      },
+      "cloned": true,
+      "varType": {
+        "type": "DynamicType",
+        "id": null,
+        "typeArguments": null
+      },
+      "variableParam": false
+    },
+    {
+      "type": "FunctionDefinition",
+      "id": {
+        "type": "Identifier",
+        "name": "test1"
+      },
+      "parameters": [],
+      "returnType": {
+        "type": "VoidType",
+        "id": null,
+        "typeArguments": null
+      },
+      "body": {
+        "type": "ScopedStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "id": {
+              "type": "Identifier",
+              "name": "a"
+            },
+            "init": null,
+            "cloned": false,
+            "varType": {
+              "type": "DynamicType",
+              "id": null,
+              "typeArguments": null
+            },
+            "variableParam": false
+          },
+          {
+            "type": "VariableDeclaration",
+            "id": {
+              "type": "Identifier",
+              "name": "ok"
+            },
+            "init": {
+              "type": "Literal",
+              "value": "1",
+              "literalType": "INT"
+            },
+            "cloned": true,
+            "varType": {
+              "type": "DynamicType",
+              "id": null,
+              "typeArguments": null
+            },
+            "variableParam": false
+          },
+          {
+            "type": "AssignmentExpression",
+            "left": {
+              "type": "Identifier",
+              "name": "a"
+            },
+            "right": {
+              "type": "Literal",
+              "value": "2",
+              "literalType": "INT"
+            },
+            "operator": "=",
+            "cloned": true
+          },
+          {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberAccess",
+              "object": {
+                "type": "Identifier",
+                "name": "fmt"
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "Printf"
+              },
+              "computed": false
+            },
+            "arguments": [
+              {
+                "type": "Literal",
+                "value": "\"asdf%d%d\"",
+                "literalType": "STRING"
+              },
+              {
+                "type": "Identifier",
+                "name": "ok"
+              },
+              {
+                "type": "Identifier",
+                "name": "a"
+              }
+            ]
+          }
+        ],
+        "id": null
+      },
+      "modifiers": null
+    }
+  ],
+  "language": "golang",
+  "languageVersion": "1.18",
+  "uri": "",
+  "version": ""
+}

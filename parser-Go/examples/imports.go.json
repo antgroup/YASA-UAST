@@ -1,0 +1,425 @@
+{
+  "packageInfo": {
+    "PathName": "",
+    "files": {},
+    "subs": {
+      "/": {
+        "PathName": "",
+        "files": {
+          "/Users/ariel/code/uast/uast4go/examples/imports.go": {
+            "node": {
+              "type": "CompileUnit",
+              "body": [
+                {
+                  "type": "PackageDeclaration",
+                  "name": {
+                    "type": "Identifier",
+                    "name": "examples",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 9
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 17
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/imports.go"
+                    },
+                    "_meta": {}
+                  },
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 9
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 17
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/imports.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "fmt",
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "init": {
+                    "type": "ImportExpression",
+                    "from": {
+                      "type": "Literal",
+                      "value": "fmt",
+                      "literalType": "string",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 4,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 4,
+                          "column": 7
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/imports.go"
+                      },
+                      "_meta": {}
+                    },
+                    "local": null,
+                    "imported": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 4,
+                        "column": 2
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 4,
+                        "column": 7
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/imports.go"
+                    },
+                    "_meta": {}
+                  },
+                  "cloned": true,
+                  "varType": {
+                    "type": "DynamicType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "variableParam": false,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 4,
+                      "column": 2
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 4,
+                      "column": 7
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/imports.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "time",
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "init": {
+                    "type": "ImportExpression",
+                    "from": {
+                      "type": "Literal",
+                      "value": "time",
+                      "literalType": "string",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 5,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 5,
+                          "column": 8
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/imports.go"
+                      },
+                      "_meta": {}
+                    },
+                    "local": null,
+                    "imported": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 5,
+                        "column": 2
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 5,
+                        "column": 8
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/imports.go"
+                    },
+                    "_meta": {}
+                  },
+                  "cloned": true,
+                  "varType": {
+                    "type": "DynamicType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "variableParam": false,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 5,
+                      "column": 2
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 5,
+                      "column": 8
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/imports.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "FunctionDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "PrintNow",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 8,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 8,
+                        "column": 14
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/imports.go"
+                    },
+                    "_meta": {}
+                  },
+                  "parameters": [],
+                  "returnType": {
+                    "type": "VoidType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "body": {
+                    "type": "ScopedStatement",
+                    "body": [
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 9,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 9,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/imports.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Println",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 9,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 9,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/imports.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 9,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 9,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/imports.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "MemberAccess",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "time",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 9,
+                                    "column": 14
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 9,
+                                    "column": 18
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/imports.go"
+                                },
+                                "_meta": {}
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "Now",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 9,
+                                    "column": 19
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 9,
+                                    "column": 22
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/imports.go"
+                                },
+                                "_meta": {}
+                              },
+                              "computed": false,
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 9,
+                                  "column": 14
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 9,
+                                  "column": 22
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/imports.go"
+                              },
+                              "_meta": {}
+                            },
+                            "arguments": [],
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 9,
+                                "column": 14
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 9,
+                                "column": 24
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/imports.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 9,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 9,
+                            "column": 25
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/imports.go"
+                        },
+                        "_meta": {}
+                      }
+                    ],
+                    "id": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 8,
+                        "column": 17
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 10,
+                        "column": 2
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/imports.go"
+                    },
+                    "_meta": {}
+                  },
+                  "modifiers": null,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 8,
+                      "column": 1
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 10,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/imports.go"
+                  },
+                  "_meta": {}
+                }
+              ],
+              "language": "golang",
+              "languageVersion": "1.18",
+              "uri": "",
+              "version": "",
+              "loc": {
+                "start": {
+                  "Offset": 0,
+                  "line": 1,
+                  "column": 1
+                },
+                "end": {
+                  "Offset": 0,
+                  "line": 10,
+                  "column": 2
+                },
+                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/imports.go"
+              },
+              "_meta": {}
+            },
+            "packageName": "__single__"
+          }
+        },
+        "subs": {}
+      }
+    }
+  },
+  "moduleName": "__single_module__"
+}

@@ -1,0 +1,471 @@
+{
+  "packageInfo": {
+    "PathName": "",
+    "files": {},
+    "subs": {
+      "/": {
+        "PathName": "",
+        "files": {
+          "/Users/ariel/code/uast/uast4go/examples/defers.go": {
+            "node": {
+              "type": "CompileUnit",
+              "body": [
+                {
+                  "type": "PackageDeclaration",
+                  "name": {
+                    "type": "Identifier",
+                    "name": "examples",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 9
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 17
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/defers.go"
+                    },
+                    "_meta": {}
+                  },
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 9
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 17
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/defers.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "context",
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "init": {
+                    "type": "ImportExpression",
+                    "from": {
+                      "type": "Literal",
+                      "value": "context",
+                      "literalType": "string",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 4,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 4,
+                          "column": 11
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/defers.go"
+                      },
+                      "_meta": {}
+                    },
+                    "local": null,
+                    "imported": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 4,
+                        "column": 2
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 4,
+                        "column": 11
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/defers.go"
+                    },
+                    "_meta": {}
+                  },
+                  "cloned": true,
+                  "varType": {
+                    "type": "DynamicType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "variableParam": false,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 4,
+                      "column": 2
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 4,
+                      "column": 11
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/defers.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "FunctionDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "RunCommandInAntjail",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 7,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 7,
+                        "column": 25
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/defers.go"
+                    },
+                    "_meta": {}
+                  },
+                  "parameters": [
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "ctx",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 7,
+                            "column": 26
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 7,
+                            "column": 29
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/defers.go"
+                        },
+                        "_meta": {
+                          "type": {
+                            "type": "MemberAccess",
+                            "object": {
+                              "type": "Identifier",
+                              "name": "context",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 7,
+                                  "column": 30
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 7,
+                                  "column": 37
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/defers.go"
+                              },
+                              "_meta": {}
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "Context",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 7,
+                                  "column": 38
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 7,
+                                  "column": 45
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/defers.go"
+                              },
+                              "_meta": {}
+                            },
+                            "computed": false,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 7,
+                                "column": 30
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 7,
+                                "column": 45
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/defers.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "init": null,
+                      "cloned": true,
+                      "varType": {
+                        "type": "MemberAccess",
+                        "object": {
+                          "type": "Identifier",
+                          "name": "context",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 7,
+                              "column": 30
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 7,
+                              "column": 37
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/defers.go"
+                          },
+                          "_meta": {}
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "Context",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 7,
+                              "column": 38
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 7,
+                              "column": 45
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/defers.go"
+                          },
+                          "_meta": {}
+                        },
+                        "computed": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 7,
+                            "column": 30
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 7,
+                            "column": 45
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/defers.go"
+                        },
+                        "_meta": {}
+                      },
+                      "variableParam": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 7,
+                          "column": 26
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 7,
+                          "column": 45
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/defers.go"
+                      },
+                      "_meta": {}
+                    },
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "option",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 7,
+                            "column": 47
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 7,
+                            "column": 53
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/defers.go"
+                        },
+                        "_meta": {
+                          "type": {
+                            "type": "Identifier",
+                            "name": "Option",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 7,
+                                "column": 54
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 7,
+                                "column": 60
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/defers.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "init": null,
+                      "cloned": true,
+                      "varType": {
+                        "type": "Identifier",
+                        "name": "Option",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 7,
+                            "column": 54
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 7,
+                            "column": 60
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/defers.go"
+                        },
+                        "_meta": {}
+                      },
+                      "variableParam": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 7,
+                          "column": 47
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 7,
+                          "column": 60
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/defers.go"
+                      },
+                      "_meta": {}
+                    }
+                  ],
+                  "returnType": {
+                    "type": "VoidType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "body": {
+                    "type": "ScopedStatement",
+                    "body": [
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "Identifier",
+                          "name": "umountFn",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 8,
+                              "column": 8
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 8,
+                              "column": 16
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/defers.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 8,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 8,
+                            "column": 18
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/defers.go"
+                        },
+                        "_meta": {
+                          "defer": true
+                        }
+                      }
+                    ],
+                    "id": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 7,
+                        "column": 62
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 9,
+                        "column": 2
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/defers.go"
+                    },
+                    "_meta": {}
+                  },
+                  "modifiers": null,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 7,
+                      "column": 1
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 9,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/defers.go"
+                  },
+                  "_meta": {}
+                }
+              ],
+              "language": "golang",
+              "languageVersion": "1.18",
+              "uri": "",
+              "version": "",
+              "loc": {
+                "start": {
+                  "Offset": 0,
+                  "line": 1,
+                  "column": 1
+                },
+                "end": {
+                  "Offset": 0,
+                  "line": 9,
+                  "column": 2
+                },
+                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/defers.go"
+              },
+              "_meta": {}
+            },
+            "packageName": "__single__"
+          }
+        },
+        "subs": {}
+      }
+    }
+  },
+  "moduleName": "__single_module__"
+}

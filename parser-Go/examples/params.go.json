@@ -1,0 +1,1055 @@
+{
+  "packageInfo": {
+    "PathName": "",
+    "files": {},
+    "subs": {
+      "/": {
+        "PathName": "",
+        "files": {
+          "/Users/ariel/code/uast/uast4go/examples/params.go": {
+            "node": {
+              "type": "CompileUnit",
+              "body": [
+                {
+                  "type": "PackageDeclaration",
+                  "name": {
+                    "type": "Identifier",
+                    "name": "examples",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 9
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 17
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                    },
+                    "_meta": {}
+                  },
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 9
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 17
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "fmt",
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "init": {
+                    "type": "ImportExpression",
+                    "from": {
+                      "type": "Literal",
+                      "value": "fmt",
+                      "literalType": "string",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 4,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 4,
+                          "column": 7
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                      },
+                      "_meta": {}
+                    },
+                    "local": null,
+                    "imported": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 4,
+                        "column": 2
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 4,
+                        "column": 7
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                    },
+                    "_meta": {}
+                  },
+                  "cloned": true,
+                  "varType": {
+                    "type": "DynamicType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "variableParam": false,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 4,
+                      "column": 2
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 4,
+                      "column": 7
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "reflect",
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "init": {
+                    "type": "ImportExpression",
+                    "from": {
+                      "type": "Literal",
+                      "value": "reflect",
+                      "literalType": "string",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 5,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 5,
+                          "column": 11
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                      },
+                      "_meta": {}
+                    },
+                    "local": null,
+                    "imported": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 5,
+                        "column": 2
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 5,
+                        "column": 11
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                    },
+                    "_meta": {}
+                  },
+                  "cloned": true,
+                  "varType": {
+                    "type": "DynamicType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "variableParam": false,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 5,
+                      "column": 2
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 5,
+                      "column": 11
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "FunctionDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "ParamTest",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 8,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 8,
+                        "column": 15
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                    },
+                    "_meta": {}
+                  },
+                  "parameters": [
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "a",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 8,
+                            "column": 16
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 8,
+                            "column": 17
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                        },
+                        "_meta": {
+                          "type": {
+                            "type": "Identifier",
+                            "name": "int32",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 8,
+                                "column": 21
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 8,
+                                "column": 26
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "init": null,
+                      "cloned": true,
+                      "varType": {
+                        "type": "Identifier",
+                        "name": "int32",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 8,
+                            "column": 21
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 8,
+                            "column": 26
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                        },
+                        "_meta": {}
+                      },
+                      "variableParam": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 8,
+                          "column": 16
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 8,
+                          "column": 26
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                      },
+                      "_meta": {}
+                    },
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "b",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 8,
+                            "column": 19
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 8,
+                            "column": 20
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                        },
+                        "_meta": {
+                          "type": {
+                            "type": "Identifier",
+                            "name": "int32",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 8,
+                                "column": 21
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 8,
+                                "column": 26
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "init": null,
+                      "cloned": true,
+                      "varType": {
+                        "type": "Identifier",
+                        "name": "int32",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 8,
+                            "column": 21
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 8,
+                            "column": 26
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                        },
+                        "_meta": {}
+                      },
+                      "variableParam": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 8,
+                          "column": 16
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 8,
+                          "column": 26
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                      },
+                      "_meta": {}
+                    },
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "c",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 8,
+                            "column": 28
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 8,
+                            "column": 29
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                        },
+                        "_meta": {
+                          "type": {
+                            "type": "Identifier",
+                            "name": "int16",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 8,
+                                "column": 30
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 8,
+                                "column": 35
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "init": null,
+                      "cloned": true,
+                      "varType": {
+                        "type": "Identifier",
+                        "name": "int16",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 8,
+                            "column": 30
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 8,
+                            "column": 35
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                        },
+                        "_meta": {}
+                      },
+                      "variableParam": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 8,
+                          "column": 28
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 8,
+                          "column": 35
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                      },
+                      "_meta": {}
+                    }
+                  ],
+                  "returnType": {
+                    "type": "VoidType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "body": {
+                    "type": "ScopedStatement",
+                    "body": [
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 9,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 9,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Printf",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 9,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 9,
+                                "column": 12
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 9,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 9,
+                              "column": 12
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Literal",
+                            "value": "\"Type of a is %s\\n\"",
+                            "literalType": "STRING",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 9,
+                                "column": 13
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 9,
+                                "column": 32
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                            },
+                            "_meta": {}
+                          },
+                          {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "MemberAccess",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "reflect",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 9,
+                                    "column": 34
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 9,
+                                    "column": 41
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                                },
+                                "_meta": {}
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "TypeOf",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 9,
+                                    "column": 42
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 9,
+                                    "column": 48
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                                },
+                                "_meta": {}
+                              },
+                              "computed": false,
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 9,
+                                  "column": 34
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 9,
+                                  "column": 48
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                              },
+                              "_meta": {}
+                            },
+                            "arguments": [
+                              {
+                                "type": "Identifier",
+                                "name": "a",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 9,
+                                    "column": 49
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 9,
+                                    "column": 50
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                                },
+                                "_meta": {}
+                              }
+                            ],
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 9,
+                                "column": 34
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 9,
+                                "column": 51
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 9,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 9,
+                            "column": 52
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 10,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 10,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Printf",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 10,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 10,
+                                "column": 12
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 10,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 10,
+                              "column": 12
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Literal",
+                            "value": "\"Type of a is %s\\n\"",
+                            "literalType": "STRING",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 10,
+                                "column": 13
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 10,
+                                "column": 32
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                            },
+                            "_meta": {}
+                          },
+                          {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "MemberAccess",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "reflect",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 10,
+                                    "column": 34
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 10,
+                                    "column": 41
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                                },
+                                "_meta": {}
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "TypeOf",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 10,
+                                    "column": 42
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 10,
+                                    "column": 48
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                                },
+                                "_meta": {}
+                              },
+                              "computed": false,
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 10,
+                                  "column": 34
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 10,
+                                  "column": 48
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                              },
+                              "_meta": {}
+                            },
+                            "arguments": [
+                              {
+                                "type": "Identifier",
+                                "name": "b",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 10,
+                                    "column": 49
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 10,
+                                    "column": 50
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                                },
+                                "_meta": {}
+                              }
+                            ],
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 10,
+                                "column": 34
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 10,
+                                "column": 51
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 10,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 10,
+                            "column": 52
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 11,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 11,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Printf",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 11,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 11,
+                                "column": 12
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 11,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 11,
+                              "column": 12
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Literal",
+                            "value": "\"Type of a is %s\\n\"",
+                            "literalType": "STRING",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 11,
+                                "column": 13
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 11,
+                                "column": 32
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                            },
+                            "_meta": {}
+                          },
+                          {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "MemberAccess",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "reflect",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 11,
+                                    "column": 34
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 11,
+                                    "column": 41
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                                },
+                                "_meta": {}
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "TypeOf",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 11,
+                                    "column": 42
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 11,
+                                    "column": 48
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                                },
+                                "_meta": {}
+                              },
+                              "computed": false,
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 11,
+                                  "column": 34
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 11,
+                                  "column": 48
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                              },
+                              "_meta": {}
+                            },
+                            "arguments": [
+                              {
+                                "type": "Identifier",
+                                "name": "c",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 11,
+                                    "column": 49
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 11,
+                                    "column": 50
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                                },
+                                "_meta": {}
+                              }
+                            ],
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 11,
+                                "column": 34
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 11,
+                                "column": 51
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 11,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 11,
+                            "column": 52
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                        },
+                        "_meta": {}
+                      }
+                    ],
+                    "id": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 8,
+                        "column": 37
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 12,
+                        "column": 2
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                    },
+                    "_meta": {}
+                  },
+                  "modifiers": null,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 8,
+                      "column": 1
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 12,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+                  },
+                  "_meta": {}
+                }
+              ],
+              "language": "golang",
+              "languageVersion": "1.18",
+              "uri": "",
+              "version": "",
+              "loc": {
+                "start": {
+                  "Offset": 0,
+                  "line": 1,
+                  "column": 1
+                },
+                "end": {
+                  "Offset": 0,
+                  "line": 12,
+                  "column": 2
+                },
+                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/params.go"
+              },
+              "_meta": {}
+            },
+            "packageName": "__single__"
+          }
+        },
+        "subs": {}
+      }
+    }
+  },
+  "moduleName": "__single_module__"
+}

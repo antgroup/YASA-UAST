@@ -1,0 +1,563 @@
+{
+  "packageInfo": {
+    "PathName": "",
+    "files": {},
+    "subs": {
+      "/": {
+        "PathName": "",
+        "files": {
+          "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go": {
+            "node": {
+              "type": "CompileUnit",
+              "body": [
+                {
+                  "type": "PackageDeclaration",
+                  "name": {
+                    "type": "Identifier",
+                    "name": "examples",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 12,
+                        "column": 9
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 12,
+                        "column": 17
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go"
+                    },
+                    "_meta": {}
+                  },
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 12,
+                      "column": 9
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 12,
+                      "column": 17
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "ClassDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "AAA",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 23,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 23,
+                        "column": 9
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go"
+                    },
+                    "_meta": {}
+                  },
+                  "body": [
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "data",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 24,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 24,
+                            "column": 6
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go"
+                        },
+                        "_meta": {
+                          "type": {
+                            "type": "Identifier",
+                            "name": "string",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 24,
+                                "column": 7
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 24,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "init": null,
+                      "cloned": true,
+                      "varType": {
+                        "type": "Identifier",
+                        "name": "string",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 24,
+                            "column": 7
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 24,
+                            "column": 13
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go"
+                        },
+                        "_meta": {}
+                      },
+                      "variableParam": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 24,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 24,
+                          "column": 13
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go"
+                      },
+                      "_meta": {}
+                    }
+                  ],
+                  "supers": [],
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 23,
+                      "column": 6
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 25,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "FunctionDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "struct_003_T",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 27,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 27,
+                        "column": 18
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go"
+                    },
+                    "_meta": {}
+                  },
+                  "parameters": [
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "__taint_src",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 27,
+                            "column": 19
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 27,
+                            "column": 30
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go"
+                        },
+                        "_meta": {
+                          "type": {
+                            "type": "Identifier",
+                            "name": "string",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 27,
+                                "column": 31
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 27,
+                                "column": 37
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "init": null,
+                      "cloned": true,
+                      "varType": {
+                        "type": "Identifier",
+                        "name": "string",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 27,
+                            "column": 31
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 27,
+                            "column": 37
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go"
+                        },
+                        "_meta": {}
+                      },
+                      "variableParam": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 27,
+                          "column": 19
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 27,
+                          "column": 37
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go"
+                      },
+                      "_meta": {}
+                    }
+                  ],
+                  "returnType": {
+                    "type": "VoidType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "body": {
+                    "type": "ScopedStatement",
+                    "body": [
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "p",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 28,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 28,
+                              "column": 3
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go"
+                          },
+                          "_meta": {
+                            "type": {
+                              "type": "DynamicType",
+                              "id": null,
+                              "typeArguments": null,
+                              "loc": null,
+                              "_meta": {}
+                            }
+                          }
+                        },
+                        "init": {
+                          "type": "NewExpression",
+                          "callee": {
+                            "type": "Identifier",
+                            "name": "AAA",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 28,
+                                "column": 11
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 28,
+                                "column": 14
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go"
+                            },
+                            "_meta": {}
+                          },
+                          "arguments": [],
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 28,
+                              "column": 7
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 28,
+                              "column": 15
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": true,
+                        "varType": {
+                          "type": "DynamicType",
+                          "id": null,
+                          "typeArguments": null,
+                          "loc": null,
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 28,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 28,
+                            "column": 15
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "AssignmentExpression",
+                        "left": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "p",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 29,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 29,
+                                "column": 3
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "data",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 29,
+                                "column": 4
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 29,
+                                "column": 8
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 29,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 29,
+                              "column": 8
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go"
+                          },
+                          "_meta": {}
+                        },
+                        "right": {
+                          "type": "Identifier",
+                          "name": "__taint_src",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 29,
+                              "column": 11
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 29,
+                              "column": 22
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go"
+                          },
+                          "_meta": {}
+                        },
+                        "operator": "=",
+                        "cloned": true,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 29,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 29,
+                            "column": 22
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "Identifier",
+                          "name": "__taint_sink",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 30,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 30,
+                              "column": 14
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Identifier",
+                            "name": "p",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 30,
+                                "column": 15
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 30,
+                                "column": 16
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 30,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 30,
+                            "column": 17
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go"
+                        },
+                        "_meta": {}
+                      }
+                    ],
+                    "id": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 27,
+                        "column": 39
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 31,
+                        "column": 2
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go"
+                    },
+                    "_meta": {}
+                  },
+                  "modifiers": null,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 27,
+                      "column": 1
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 31,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go"
+                  },
+                  "_meta": {}
+                }
+              ],
+              "language": "golang",
+              "languageVersion": "1.18",
+              "uri": "",
+              "version": "",
+              "loc": {
+                "start": {
+                  "Offset": 0,
+                  "line": 12,
+                  "column": 1
+                },
+                "end": {
+                  "Offset": 0,
+                  "line": 31,
+                  "column": 2
+                },
+                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/struct_005_T.go"
+              },
+              "_meta": {}
+            },
+            "packageName": "__single__"
+          }
+        },
+        "subs": {}
+      }
+    }
+  },
+  "moduleName": "__single_module__"
+}

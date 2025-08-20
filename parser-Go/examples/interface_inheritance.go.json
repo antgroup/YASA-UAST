@@ -1,0 +1,4286 @@
+{
+  "packageInfo": {
+    "PathName": "",
+    "files": {},
+    "subs": {
+      "/": {
+        "PathName": "",
+        "files": {
+          "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go": {
+            "node": {
+              "type": "CompileUnit",
+              "body": [
+                {
+                  "type": "PackageDeclaration",
+                  "name": {
+                    "type": "Identifier",
+                    "name": "examples",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 9
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 1,
+                        "column": 17
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                    },
+                    "_meta": {}
+                  },
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 9
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 17
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "fmt",
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "init": {
+                    "type": "ImportExpression",
+                    "from": {
+                      "type": "Literal",
+                      "value": "fmt",
+                      "literalType": "string",
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 3,
+                          "column": 8
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 3,
+                          "column": 13
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                      },
+                      "_meta": {}
+                    },
+                    "local": null,
+                    "imported": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 3,
+                        "column": 8
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 3,
+                        "column": 13
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                    },
+                    "_meta": {}
+                  },
+                  "cloned": true,
+                  "varType": {
+                    "type": "DynamicType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "variableParam": false,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 3,
+                      "column": 8
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 3,
+                      "column": 13
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "ClassDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "TInterface1",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 5,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 5,
+                        "column": 17
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                    },
+                    "_meta": {}
+                  },
+                  "body": [
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "name",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 6,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 6,
+                            "column": 6
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {
+                          "type": {
+                            "type": "Identifier",
+                            "name": "string",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 6,
+                                "column": 7
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 6,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "init": null,
+                      "cloned": true,
+                      "varType": {
+                        "type": "Identifier",
+                        "name": "string",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 6,
+                            "column": 7
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 6,
+                            "column": 13
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      "variableParam": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 6,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 6,
+                          "column": 13
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                      },
+                      "_meta": {}
+                    },
+                    {
+                      "type": "FunctionDefinition",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "ClearName",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 9,
+                            "column": 22
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 9,
+                            "column": 31
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      "parameters": [],
+                      "returnType": {
+                        "type": "VoidType",
+                        "id": null,
+                        "typeArguments": null,
+                        "loc": null,
+                        "_meta": {}
+                      },
+                      "body": {
+                        "type": "ScopedStatement",
+                        "body": [
+                          {
+                            "type": "VariableDeclaration",
+                            "id": {
+                              "type": "Identifier",
+                              "name": "t",
+                              "loc": null,
+                              "_meta": {
+                                "type": {
+                                  "type": "Identifier",
+                                  "name": "TInterface1",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 9,
+                                      "column": 9
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 9,
+                                      "column": 20
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                  },
+                                  "_meta": {}
+                                }
+                              }
+                            },
+                            "init": {
+                              "type": "ThisExpression",
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            "cloned": true,
+                            "varType": {
+                              "type": "Identifier",
+                              "name": "TInterface1",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 9,
+                                  "column": 9
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 9,
+                                  "column": 20
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                              },
+                              "_meta": {}
+                            },
+                            "variableParam": false,
+                            "loc": null,
+                            "_meta": {}
+                          }
+                        ],
+                        "id": null,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 9,
+                            "column": 38
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 9,
+                            "column": 40
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      "modifiers": null,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 9,
+                          "column": 1
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 9,
+                          "column": 40
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                      },
+                      "_meta": {}
+                    },
+                    {
+                      "type": "FunctionDefinition",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "N",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 10,
+                            "column": 22
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 10,
+                            "column": 23
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      "parameters": [],
+                      "returnType": {
+                        "type": "VoidType",
+                        "id": null,
+                        "typeArguments": null,
+                        "loc": null,
+                        "_meta": {}
+                      },
+                      "body": {
+                        "type": "ScopedStatement",
+                        "body": [
+                          {
+                            "type": "VariableDeclaration",
+                            "id": {
+                              "type": "Identifier",
+                              "name": "t",
+                              "loc": null,
+                              "_meta": {
+                                "type": {
+                                  "type": "Identifier",
+                                  "name": "TInterface1",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 10,
+                                      "column": 9
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 10,
+                                      "column": 20
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                  },
+                                  "_meta": {}
+                                }
+                              }
+                            },
+                            "init": {
+                              "type": "ThisExpression",
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            "cloned": true,
+                            "varType": {
+                              "type": "Identifier",
+                              "name": "TInterface1",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 10,
+                                  "column": 9
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 10,
+                                  "column": 20
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                              },
+                              "_meta": {}
+                            },
+                            "variableParam": false,
+                            "loc": null,
+                            "_meta": {}
+                          }
+                        ],
+                        "id": null,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 10,
+                            "column": 38
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 10,
+                            "column": 40
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      "modifiers": null,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 10,
+                          "column": 1
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 10,
+                          "column": 40
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                      },
+                      "_meta": {}
+                    },
+                    {
+                      "type": "FunctionDefinition",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "String",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 11,
+                            "column": 22
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 11,
+                            "column": 28
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      "parameters": [],
+                      "returnType": {
+                        "type": "Identifier",
+                        "name": "string",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 11,
+                            "column": 31
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 11,
+                            "column": 37
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      "body": {
+                        "type": "ScopedStatement",
+                        "body": [
+                          {
+                            "type": "VariableDeclaration",
+                            "id": {
+                              "type": "Identifier",
+                              "name": "t",
+                              "loc": null,
+                              "_meta": {
+                                "type": {
+                                  "type": "Identifier",
+                                  "name": "TInterface1",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 11,
+                                      "column": 9
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 11,
+                                      "column": 20
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                  },
+                                  "_meta": {}
+                                }
+                              }
+                            },
+                            "init": {
+                              "type": "ThisExpression",
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            "cloned": true,
+                            "varType": {
+                              "type": "Identifier",
+                              "name": "TInterface1",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 11,
+                                  "column": 9
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 11,
+                                  "column": 20
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                              },
+                              "_meta": {}
+                            },
+                            "variableParam": false,
+                            "loc": null,
+                            "_meta": {}
+                          },
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "Literal",
+                              "value": "\"\"",
+                              "literalType": "STRING",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 11,
+                                  "column": 47
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 11,
+                                  "column": 49
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                              },
+                              "_meta": {}
+                            },
+                            "isYield": false,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 11,
+                                "column": 40
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 11,
+                                "column": 49
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "id": null,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 11,
+                            "column": 38
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 11,
+                            "column": 51
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      "modifiers": null,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 11,
+                          "column": 1
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 11,
+                          "column": 51
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                      },
+                      "_meta": {}
+                    },
+                    {
+                      "type": "FunctionDefinition",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "Error",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 12,
+                            "column": 22
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 12,
+                            "column": 27
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      "parameters": [],
+                      "returnType": {
+                        "type": "Identifier",
+                        "name": "string",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 12,
+                            "column": 30
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 12,
+                            "column": 36
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      "body": {
+                        "type": "ScopedStatement",
+                        "body": [
+                          {
+                            "type": "VariableDeclaration",
+                            "id": {
+                              "type": "Identifier",
+                              "name": "t",
+                              "loc": null,
+                              "_meta": {
+                                "type": {
+                                  "type": "Identifier",
+                                  "name": "TInterface1",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 12,
+                                      "column": 9
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 12,
+                                      "column": 20
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                  },
+                                  "_meta": {}
+                                }
+                              }
+                            },
+                            "init": {
+                              "type": "ThisExpression",
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            "cloned": true,
+                            "varType": {
+                              "type": "Identifier",
+                              "name": "TInterface1",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 12,
+                                  "column": 9
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 12,
+                                  "column": 20
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                              },
+                              "_meta": {}
+                            },
+                            "variableParam": false,
+                            "loc": null,
+                            "_meta": {}
+                          },
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "Literal",
+                              "value": "\"\"",
+                              "literalType": "STRING",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 12,
+                                  "column": 47
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 12,
+                                  "column": 49
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                              },
+                              "_meta": {}
+                            },
+                            "isYield": false,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 12,
+                                "column": 40
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 12,
+                                "column": 49
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "id": null,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 12,
+                            "column": 38
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 12,
+                            "column": 51
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      "modifiers": null,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 12,
+                          "column": 1
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 12,
+                          "column": 51
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                      },
+                      "_meta": {}
+                    }
+                  ],
+                  "supers": [],
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 5,
+                      "column": 6
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 7,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "ClassDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "TInterface2",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 14,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 14,
+                        "column": 17
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                    },
+                    "_meta": {}
+                  },
+                  "body": [
+                    {
+                      "type": "VariableDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "name",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 15,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 15,
+                            "column": 6
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {
+                          "type": {
+                            "type": "Identifier",
+                            "name": "string",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 15,
+                                "column": 7
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 15,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          }
+                        }
+                      },
+                      "init": null,
+                      "cloned": true,
+                      "varType": {
+                        "type": "Identifier",
+                        "name": "string",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 15,
+                            "column": 7
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 15,
+                            "column": 13
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      "variableParam": false,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 15,
+                          "column": 2
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 15,
+                          "column": 13
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                      },
+                      "_meta": {}
+                    },
+                    {
+                      "type": "FunctionDefinition",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "ClearName",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 18,
+                            "column": 22
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 18,
+                            "column": 31
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      "parameters": [],
+                      "returnType": {
+                        "type": "VoidType",
+                        "id": null,
+                        "typeArguments": null,
+                        "loc": null,
+                        "_meta": {}
+                      },
+                      "body": {
+                        "type": "ScopedStatement",
+                        "body": [
+                          {
+                            "type": "VariableDeclaration",
+                            "id": {
+                              "type": "Identifier",
+                              "name": "t",
+                              "loc": null,
+                              "_meta": {
+                                "type": {
+                                  "type": "Identifier",
+                                  "name": "TInterface2",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 18,
+                                      "column": 9
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 18,
+                                      "column": 20
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                  },
+                                  "_meta": {}
+                                }
+                              }
+                            },
+                            "init": {
+                              "type": "ThisExpression",
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            "cloned": true,
+                            "varType": {
+                              "type": "Identifier",
+                              "name": "TInterface2",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 18,
+                                  "column": 9
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 18,
+                                  "column": 20
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                              },
+                              "_meta": {}
+                            },
+                            "variableParam": false,
+                            "loc": null,
+                            "_meta": {}
+                          }
+                        ],
+                        "id": null,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 18,
+                            "column": 38
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 18,
+                            "column": 40
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      "modifiers": null,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 18,
+                          "column": 1
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 18,
+                          "column": 40
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                      },
+                      "_meta": {}
+                    },
+                    {
+                      "type": "FunctionDefinition",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "N",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 19,
+                            "column": 22
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 19,
+                            "column": 23
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      "parameters": [],
+                      "returnType": {
+                        "type": "VoidType",
+                        "id": null,
+                        "typeArguments": null,
+                        "loc": null,
+                        "_meta": {}
+                      },
+                      "body": {
+                        "type": "ScopedStatement",
+                        "body": [
+                          {
+                            "type": "VariableDeclaration",
+                            "id": {
+                              "type": "Identifier",
+                              "name": "t",
+                              "loc": null,
+                              "_meta": {
+                                "type": {
+                                  "type": "Identifier",
+                                  "name": "TInterface2",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 19,
+                                      "column": 9
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 19,
+                                      "column": 20
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                  },
+                                  "_meta": {}
+                                }
+                              }
+                            },
+                            "init": {
+                              "type": "ThisExpression",
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            "cloned": true,
+                            "varType": {
+                              "type": "Identifier",
+                              "name": "TInterface2",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 19,
+                                  "column": 9
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 19,
+                                  "column": 20
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                              },
+                              "_meta": {}
+                            },
+                            "variableParam": false,
+                            "loc": null,
+                            "_meta": {}
+                          }
+                        ],
+                        "id": null,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 19,
+                            "column": 38
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 19,
+                            "column": 40
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      "modifiers": null,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 19,
+                          "column": 1
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 19,
+                          "column": 40
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                      },
+                      "_meta": {}
+                    },
+                    {
+                      "type": "FunctionDefinition",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "String",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 20,
+                            "column": 22
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 20,
+                            "column": 28
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      "parameters": [],
+                      "returnType": {
+                        "type": "Identifier",
+                        "name": "string",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 20,
+                            "column": 31
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 20,
+                            "column": 37
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      "body": {
+                        "type": "ScopedStatement",
+                        "body": [
+                          {
+                            "type": "VariableDeclaration",
+                            "id": {
+                              "type": "Identifier",
+                              "name": "t",
+                              "loc": null,
+                              "_meta": {
+                                "type": {
+                                  "type": "Identifier",
+                                  "name": "TInterface2",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 20,
+                                      "column": 9
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 20,
+                                      "column": 20
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                  },
+                                  "_meta": {}
+                                }
+                              }
+                            },
+                            "init": {
+                              "type": "ThisExpression",
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            "cloned": true,
+                            "varType": {
+                              "type": "Identifier",
+                              "name": "TInterface2",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 20,
+                                  "column": 9
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 20,
+                                  "column": 20
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                              },
+                              "_meta": {}
+                            },
+                            "variableParam": false,
+                            "loc": null,
+                            "_meta": {}
+                          },
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "Literal",
+                              "value": "\"\"",
+                              "literalType": "STRING",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 20,
+                                  "column": 47
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 20,
+                                  "column": 49
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                              },
+                              "_meta": {}
+                            },
+                            "isYield": false,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 20,
+                                "column": 40
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 20,
+                                "column": 49
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "id": null,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 20,
+                            "column": 38
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 20,
+                            "column": 51
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      "modifiers": null,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 20,
+                          "column": 1
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 20,
+                          "column": 51
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                      },
+                      "_meta": {}
+                    },
+                    {
+                      "type": "FunctionDefinition",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "Error",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 21,
+                            "column": 22
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 21,
+                            "column": 27
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      "parameters": [],
+                      "returnType": {
+                        "type": "Identifier",
+                        "name": "string",
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 21,
+                            "column": 30
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 21,
+                            "column": 36
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      "body": {
+                        "type": "ScopedStatement",
+                        "body": [
+                          {
+                            "type": "VariableDeclaration",
+                            "id": {
+                              "type": "Identifier",
+                              "name": "t",
+                              "loc": null,
+                              "_meta": {
+                                "type": {
+                                  "type": "Identifier",
+                                  "name": "TInterface2",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 21,
+                                      "column": 9
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 21,
+                                      "column": 20
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                  },
+                                  "_meta": {}
+                                }
+                              }
+                            },
+                            "init": {
+                              "type": "ThisExpression",
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            "cloned": true,
+                            "varType": {
+                              "type": "Identifier",
+                              "name": "TInterface2",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 21,
+                                  "column": 9
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 21,
+                                  "column": 20
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                              },
+                              "_meta": {}
+                            },
+                            "variableParam": false,
+                            "loc": null,
+                            "_meta": {}
+                          },
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "Literal",
+                              "value": "\"\"",
+                              "literalType": "STRING",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 21,
+                                  "column": 47
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 21,
+                                  "column": 49
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                              },
+                              "_meta": {}
+                            },
+                            "isYield": false,
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 21,
+                                "column": 40
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 21,
+                                "column": 49
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "id": null,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 21,
+                            "column": 38
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 21,
+                            "column": 51
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      "modifiers": null,
+                      "loc": {
+                        "start": {
+                          "Offset": 0,
+                          "line": 21,
+                          "column": 1
+                        },
+                        "end": {
+                          "Offset": 0,
+                          "line": 21,
+                          "column": 51
+                        },
+                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                      },
+                      "_meta": {}
+                    }
+                  ],
+                  "supers": [],
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 14,
+                      "column": 6
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 16,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "ClassDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "I",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 23,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 23,
+                        "column": 7
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                    },
+                    "_meta": {}
+                  },
+                  "body": [],
+                  "supers": [],
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 23,
+                      "column": 6
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 25,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "ClassDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "V",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 29,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 29,
+                        "column": 7
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                    },
+                    "_meta": {}
+                  },
+                  "body": [],
+                  "supers": [],
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 29,
+                      "column": 6
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 34,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                  },
+                  "_meta": {}
+                },
+                {
+                  "type": "FunctionDefinition",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "main",
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 36,
+                        "column": 6
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 36,
+                        "column": 10
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                    },
+                    "_meta": {}
+                  },
+                  "parameters": [],
+                  "returnType": {
+                    "type": "VoidType",
+                    "id": null,
+                    "typeArguments": null,
+                    "loc": null,
+                    "_meta": {}
+                  },
+                  "body": {
+                    "type": "ScopedStatement",
+                    "body": [
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "m",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 37,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 37,
+                              "column": 3
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {
+                            "type": {
+                              "type": "MapType",
+                              "id": {
+                                "type": "Identifier",
+                                "name": "MapType",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 37,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 37,
+                                    "column": 21
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                },
+                                "_meta": {}
+                              },
+                              "keyType": {
+                                "type": "Identifier",
+                                "name": "I",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 37,
+                                    "column": 16
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 37,
+                                    "column": 17
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                },
+                                "_meta": {}
+                              },
+                              "valueType": {
+                                "type": "Identifier",
+                                "name": "int",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 37,
+                                    "column": 18
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 37,
+                                    "column": 21
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                },
+                                "_meta": {}
+                              },
+                              "typeArguments": null,
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 37,
+                                  "column": 12
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 37,
+                                  "column": 21
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                              },
+                              "_meta": {}
+                            }
+                          }
+                        },
+                        "init": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "Identifier",
+                            "name": "make",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 37,
+                                "column": 7
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 37,
+                                "column": 11
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          },
+                          "arguments": [
+                            {
+                              "type": "MapType",
+                              "id": {
+                                "type": "Identifier",
+                                "name": "MapType",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 37,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 37,
+                                    "column": 21
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                },
+                                "_meta": {}
+                              },
+                              "keyType": {
+                                "type": "Identifier",
+                                "name": "I",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 37,
+                                    "column": 16
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 37,
+                                    "column": 17
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                },
+                                "_meta": {}
+                              },
+                              "valueType": {
+                                "type": "Identifier",
+                                "name": "int",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 37,
+                                    "column": 18
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 37,
+                                    "column": 21
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                },
+                                "_meta": {}
+                              },
+                              "typeArguments": null,
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 37,
+                                  "column": 12
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 37,
+                                  "column": 21
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                              },
+                              "_meta": {}
+                            }
+                          ],
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 37,
+                              "column": 7
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 37,
+                              "column": 22
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": true,
+                        "varType": {
+                          "type": "MapType",
+                          "id": {
+                            "type": "Identifier",
+                            "name": "MapType",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 37,
+                                "column": 12
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 37,
+                                "column": 21
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          },
+                          "keyType": {
+                            "type": "Identifier",
+                            "name": "I",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 37,
+                                "column": 16
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 37,
+                                "column": 17
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          },
+                          "valueType": {
+                            "type": "Identifier",
+                            "name": "int",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 37,
+                                "column": 18
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 37,
+                                "column": 21
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          },
+                          "typeArguments": null,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 37,
+                              "column": 12
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 37,
+                              "column": 21
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 37,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 37,
+                            "column": 22
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "i1",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 38,
+                              "column": 6
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 38,
+                              "column": 8
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {
+                            "type": {
+                              "type": "Identifier",
+                              "name": "I",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 38,
+                                  "column": 9
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 38,
+                                  "column": 10
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                              },
+                              "_meta": {}
+                            }
+                          }
+                        },
+                        "init": {
+                          "type": "Sequence",
+                          "expressions": [
+                            {
+                              "type": "VariableDeclaration",
+                              "id": {
+                                "type": "Identifier",
+                                "name": "tmp1",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 38,
+                                    "column": 13
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 38,
+                                    "column": 31
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                },
+                                "_meta": {
+                                  "type": {
+                                    "type": "Identifier",
+                                    "name": "TInterface1",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 38,
+                                        "column": 13
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 38,
+                                        "column": 24
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                    },
+                                    "_meta": {}
+                                  }
+                                }
+                              },
+                              "init": {
+                                "type": "NewExpression",
+                                "callee": {
+                                  "type": "Identifier",
+                                  "name": "TInterface1",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 38,
+                                      "column": 13
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 38,
+                                      "column": 24
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "arguments": [],
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              "cloned": false,
+                              "varType": {
+                                "type": "Identifier",
+                                "name": "TInterface1",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 38,
+                                    "column": 13
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 38,
+                                    "column": 24
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                },
+                                "_meta": {}
+                              },
+                              "variableParam": false,
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            {
+                              "type": "AssignmentExpression",
+                              "left": {
+                                "type": "MemberAccess",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "tmp1",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 38,
+                                      "column": 13
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 38,
+                                      "column": 31
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                  },
+                                  "_meta": {
+                                    "type": {
+                                      "type": "Identifier",
+                                      "name": "TInterface1",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 38,
+                                          "column": 13
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 38,
+                                          "column": 24
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                      },
+                                      "_meta": {}
+                                    }
+                                  }
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "name",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 6,
+                                      "column": 2
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 6,
+                                      "column": 6
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "computed": false,
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              "right": {
+                                "type": "Literal",
+                                "value": "\"foo\"",
+                                "literalType": "STRING",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 38,
+                                    "column": 25
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 38,
+                                    "column": 30
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                },
+                                "_meta": {}
+                              },
+                              "operator": "=",
+                              "cloned": true,
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            {
+                              "type": "Identifier",
+                              "name": "tmp1",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 38,
+                                  "column": 13
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 38,
+                                  "column": 31
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                              },
+                              "_meta": {
+                                "type": {
+                                  "type": "Identifier",
+                                  "name": "TInterface1",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 38,
+                                      "column": 13
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 38,
+                                      "column": 24
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                  },
+                                  "_meta": {}
+                                }
+                              }
+                            }
+                          ],
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 38,
+                              "column": 13
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 38,
+                              "column": 31
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": false,
+                        "varType": {
+                          "type": "Identifier",
+                          "name": "I",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 38,
+                              "column": 9
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 38,
+                              "column": 10
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 38,
+                            "column": 6
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 38,
+                            "column": 31
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "i2",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 39,
+                              "column": 6
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 39,
+                              "column": 8
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {
+                            "type": {
+                              "type": "Identifier",
+                              "name": "I",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 39,
+                                  "column": 9
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 39,
+                                  "column": 10
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                              },
+                              "_meta": {}
+                            }
+                          }
+                        },
+                        "init": {
+                          "type": "Sequence",
+                          "expressions": [
+                            {
+                              "type": "VariableDeclaration",
+                              "id": {
+                                "type": "Identifier",
+                                "name": "tmp2",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 39,
+                                    "column": 13
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 39,
+                                    "column": 31
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                },
+                                "_meta": {
+                                  "type": {
+                                    "type": "Identifier",
+                                    "name": "TInterface2",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 39,
+                                        "column": 13
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 39,
+                                        "column": 24
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                    },
+                                    "_meta": {}
+                                  }
+                                }
+                              },
+                              "init": {
+                                "type": "NewExpression",
+                                "callee": {
+                                  "type": "Identifier",
+                                  "name": "TInterface2",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 39,
+                                      "column": 13
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 39,
+                                      "column": 24
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "arguments": [],
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              "cloned": false,
+                              "varType": {
+                                "type": "Identifier",
+                                "name": "TInterface2",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 39,
+                                    "column": 13
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 39,
+                                    "column": 24
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                },
+                                "_meta": {}
+                              },
+                              "variableParam": false,
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            {
+                              "type": "AssignmentExpression",
+                              "left": {
+                                "type": "MemberAccess",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "tmp2",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 39,
+                                      "column": 13
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 39,
+                                      "column": 31
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                  },
+                                  "_meta": {
+                                    "type": {
+                                      "type": "Identifier",
+                                      "name": "TInterface2",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 39,
+                                          "column": 13
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 39,
+                                          "column": 24
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                      },
+                                      "_meta": {}
+                                    }
+                                  }
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "name",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 15,
+                                      "column": 2
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 15,
+                                      "column": 6
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "computed": false,
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              "right": {
+                                "type": "Literal",
+                                "value": "\"bar\"",
+                                "literalType": "STRING",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 39,
+                                    "column": 25
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 39,
+                                    "column": 30
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                },
+                                "_meta": {}
+                              },
+                              "operator": "=",
+                              "cloned": true,
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            {
+                              "type": "Identifier",
+                              "name": "tmp2",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 39,
+                                  "column": 13
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 39,
+                                  "column": 31
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                              },
+                              "_meta": {
+                                "type": {
+                                  "type": "Identifier",
+                                  "name": "TInterface2",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 39,
+                                      "column": 13
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 39,
+                                      "column": 24
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                  },
+                                  "_meta": {}
+                                }
+                              }
+                            }
+                          ],
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 39,
+                              "column": 13
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 39,
+                              "column": 31
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": false,
+                        "varType": {
+                          "type": "Identifier",
+                          "name": "I",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 39,
+                              "column": 9
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 39,
+                              "column": 10
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 39,
+                            "column": 6
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 39,
+                            "column": 31
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "AssignmentExpression",
+                        "left": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "m",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 40,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 40,
+                                "column": 3
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "i1",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 40,
+                                "column": 4
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 40,
+                                "column": 6
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": true,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 40,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 40,
+                              "column": 7
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {}
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": "1",
+                          "literalType": "INT",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 40,
+                              "column": 10
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 40,
+                              "column": 11
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {}
+                        },
+                        "operator": "=",
+                        "cloned": true,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 40,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 40,
+                            "column": 11
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "AssignmentExpression",
+                        "left": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "m",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 41,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 41,
+                                "column": 3
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "i2",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 41,
+                                "column": 4
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 41,
+                                "column": 6
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": true,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 41,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 41,
+                              "column": 7
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {}
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": "2",
+                          "literalType": "INT",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 41,
+                              "column": 10
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 41,
+                              "column": 11
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {}
+                        },
+                        "operator": "=",
+                        "cloned": true,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 41,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 41,
+                            "column": 11
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 42,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 42,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Println",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 42,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 42,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 42,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 42,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Identifier",
+                            "name": "m",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 42,
+                                "column": 14
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 42,
+                                "column": 15
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 42,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 42,
+                            "column": 16
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "n",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 44,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 44,
+                              "column": 3
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {
+                            "type": {
+                              "type": "MapType",
+                              "id": {
+                                "type": "Identifier",
+                                "name": "MapType",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 44,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 44,
+                                    "column": 21
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                },
+                                "_meta": {}
+                              },
+                              "keyType": {
+                                "type": "Identifier",
+                                "name": "V",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 44,
+                                    "column": 16
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 44,
+                                    "column": 17
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                },
+                                "_meta": {}
+                              },
+                              "valueType": {
+                                "type": "Identifier",
+                                "name": "int",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 44,
+                                    "column": 18
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 44,
+                                    "column": 21
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                },
+                                "_meta": {}
+                              },
+                              "typeArguments": null,
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 44,
+                                  "column": 12
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 44,
+                                  "column": 21
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                              },
+                              "_meta": {}
+                            }
+                          }
+                        },
+                        "init": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "Identifier",
+                            "name": "make",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 44,
+                                "column": 7
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 44,
+                                "column": 11
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          },
+                          "arguments": [
+                            {
+                              "type": "MapType",
+                              "id": {
+                                "type": "Identifier",
+                                "name": "MapType",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 44,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 44,
+                                    "column": 21
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                },
+                                "_meta": {}
+                              },
+                              "keyType": {
+                                "type": "Identifier",
+                                "name": "V",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 44,
+                                    "column": 16
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 44,
+                                    "column": 17
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                },
+                                "_meta": {}
+                              },
+                              "valueType": {
+                                "type": "Identifier",
+                                "name": "int",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 44,
+                                    "column": 18
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 44,
+                                    "column": 21
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                },
+                                "_meta": {}
+                              },
+                              "typeArguments": null,
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 44,
+                                  "column": 12
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 44,
+                                  "column": 21
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                              },
+                              "_meta": {}
+                            }
+                          ],
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 44,
+                              "column": 7
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 44,
+                              "column": 22
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": true,
+                        "varType": {
+                          "type": "MapType",
+                          "id": {
+                            "type": "Identifier",
+                            "name": "MapType",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 44,
+                                "column": 12
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 44,
+                                "column": 21
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          },
+                          "keyType": {
+                            "type": "Identifier",
+                            "name": "V",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 44,
+                                "column": 16
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 44,
+                                "column": 17
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          },
+                          "valueType": {
+                            "type": "Identifier",
+                            "name": "int",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 44,
+                                "column": 18
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 44,
+                                "column": 21
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          },
+                          "typeArguments": null,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 44,
+                              "column": 12
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 44,
+                              "column": 21
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 44,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 44,
+                            "column": 22
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "v1",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 45,
+                              "column": 6
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 45,
+                              "column": 8
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {
+                            "type": {
+                              "type": "Identifier",
+                              "name": "V",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 45,
+                                  "column": 9
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 45,
+                                  "column": 10
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                              },
+                              "_meta": {}
+                            }
+                          }
+                        },
+                        "init": {
+                          "type": "Sequence",
+                          "expressions": [
+                            {
+                              "type": "VariableDeclaration",
+                              "id": {
+                                "type": "Identifier",
+                                "name": "tmp3",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 45,
+                                    "column": 13
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 45,
+                                    "column": 31
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                },
+                                "_meta": {
+                                  "type": {
+                                    "type": "Identifier",
+                                    "name": "TInterface1",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 45,
+                                        "column": 13
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 45,
+                                        "column": 24
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                    },
+                                    "_meta": {}
+                                  }
+                                }
+                              },
+                              "init": {
+                                "type": "NewExpression",
+                                "callee": {
+                                  "type": "Identifier",
+                                  "name": "TInterface1",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 45,
+                                      "column": 13
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 45,
+                                      "column": 24
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "arguments": [],
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              "cloned": false,
+                              "varType": {
+                                "type": "Identifier",
+                                "name": "TInterface1",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 45,
+                                    "column": 13
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 45,
+                                    "column": 24
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                },
+                                "_meta": {}
+                              },
+                              "variableParam": false,
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            {
+                              "type": "AssignmentExpression",
+                              "left": {
+                                "type": "MemberAccess",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "tmp3",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 45,
+                                      "column": 13
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 45,
+                                      "column": 31
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                  },
+                                  "_meta": {
+                                    "type": {
+                                      "type": "Identifier",
+                                      "name": "TInterface1",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 45,
+                                          "column": 13
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 45,
+                                          "column": 24
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                      },
+                                      "_meta": {}
+                                    }
+                                  }
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "name",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 6,
+                                      "column": 2
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 6,
+                                      "column": 6
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "computed": false,
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              "right": {
+                                "type": "Literal",
+                                "value": "\"foo\"",
+                                "literalType": "STRING",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 45,
+                                    "column": 25
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 45,
+                                    "column": 30
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                },
+                                "_meta": {}
+                              },
+                              "operator": "=",
+                              "cloned": true,
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            {
+                              "type": "Identifier",
+                              "name": "tmp3",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 45,
+                                  "column": 13
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 45,
+                                  "column": 31
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                              },
+                              "_meta": {
+                                "type": {
+                                  "type": "Identifier",
+                                  "name": "TInterface1",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 45,
+                                      "column": 13
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 45,
+                                      "column": 24
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                  },
+                                  "_meta": {}
+                                }
+                              }
+                            }
+                          ],
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 45,
+                              "column": 13
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 45,
+                              "column": 31
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": false,
+                        "varType": {
+                          "type": "Identifier",
+                          "name": "V",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 45,
+                              "column": 9
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 45,
+                              "column": 10
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 45,
+                            "column": 6
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 45,
+                            "column": 31
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "VariableDeclaration",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "v2",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 46,
+                              "column": 6
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 46,
+                              "column": 8
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {
+                            "type": {
+                              "type": "Identifier",
+                              "name": "V",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 46,
+                                  "column": 9
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 46,
+                                  "column": 10
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                              },
+                              "_meta": {}
+                            }
+                          }
+                        },
+                        "init": {
+                          "type": "Sequence",
+                          "expressions": [
+                            {
+                              "type": "VariableDeclaration",
+                              "id": {
+                                "type": "Identifier",
+                                "name": "tmp4",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 46,
+                                    "column": 13
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 46,
+                                    "column": 31
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                },
+                                "_meta": {
+                                  "type": {
+                                    "type": "Identifier",
+                                    "name": "TInterface2",
+                                    "loc": {
+                                      "start": {
+                                        "Offset": 0,
+                                        "line": 46,
+                                        "column": 13
+                                      },
+                                      "end": {
+                                        "Offset": 0,
+                                        "line": 46,
+                                        "column": 24
+                                      },
+                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                    },
+                                    "_meta": {}
+                                  }
+                                }
+                              },
+                              "init": {
+                                "type": "NewExpression",
+                                "callee": {
+                                  "type": "Identifier",
+                                  "name": "TInterface2",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 46,
+                                      "column": 13
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 46,
+                                      "column": 24
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "arguments": [],
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              "cloned": false,
+                              "varType": {
+                                "type": "Identifier",
+                                "name": "TInterface2",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 46,
+                                    "column": 13
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 46,
+                                    "column": 24
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                },
+                                "_meta": {}
+                              },
+                              "variableParam": false,
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            {
+                              "type": "AssignmentExpression",
+                              "left": {
+                                "type": "MemberAccess",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "tmp4",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 46,
+                                      "column": 13
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 46,
+                                      "column": 31
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                  },
+                                  "_meta": {
+                                    "type": {
+                                      "type": "Identifier",
+                                      "name": "TInterface2",
+                                      "loc": {
+                                        "start": {
+                                          "Offset": 0,
+                                          "line": 46,
+                                          "column": 13
+                                        },
+                                        "end": {
+                                          "Offset": 0,
+                                          "line": 46,
+                                          "column": 24
+                                        },
+                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                      },
+                                      "_meta": {}
+                                    }
+                                  }
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "name",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 15,
+                                      "column": 2
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 15,
+                                      "column": 6
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                  },
+                                  "_meta": {}
+                                },
+                                "computed": false,
+                                "loc": null,
+                                "_meta": {}
+                              },
+                              "right": {
+                                "type": "Literal",
+                                "value": "\"bar\"",
+                                "literalType": "STRING",
+                                "loc": {
+                                  "start": {
+                                    "Offset": 0,
+                                    "line": 46,
+                                    "column": 25
+                                  },
+                                  "end": {
+                                    "Offset": 0,
+                                    "line": 46,
+                                    "column": 30
+                                  },
+                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                },
+                                "_meta": {}
+                              },
+                              "operator": "=",
+                              "cloned": true,
+                              "loc": null,
+                              "_meta": {}
+                            },
+                            {
+                              "type": "Identifier",
+                              "name": "tmp4",
+                              "loc": {
+                                "start": {
+                                  "Offset": 0,
+                                  "line": 46,
+                                  "column": 13
+                                },
+                                "end": {
+                                  "Offset": 0,
+                                  "line": 46,
+                                  "column": 31
+                                },
+                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                              },
+                              "_meta": {
+                                "type": {
+                                  "type": "Identifier",
+                                  "name": "TInterface2",
+                                  "loc": {
+                                    "start": {
+                                      "Offset": 0,
+                                      "line": 46,
+                                      "column": 13
+                                    },
+                                    "end": {
+                                      "Offset": 0,
+                                      "line": 46,
+                                      "column": 24
+                                    },
+                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                                  },
+                                  "_meta": {}
+                                }
+                              }
+                            }
+                          ],
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 46,
+                              "column": 13
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 46,
+                              "column": 31
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {}
+                        },
+                        "cloned": false,
+                        "varType": {
+                          "type": "Identifier",
+                          "name": "V",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 46,
+                              "column": 9
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 46,
+                              "column": 10
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {}
+                        },
+                        "variableParam": false,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 46,
+                            "column": 6
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 46,
+                            "column": 31
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "v1",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 47,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 47,
+                                "column": 4
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "N",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 47,
+                                "column": 5
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 47,
+                                "column": 6
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 47,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 47,
+                              "column": 6
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 47,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 47,
+                            "column": 8
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "v2",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 48,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 48,
+                                "column": 4
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "ClearName",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 48,
+                                "column": 5
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 48,
+                                "column": 14
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 48,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 48,
+                              "column": 14
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 48,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 48,
+                            "column": 16
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "v1",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 49,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 49,
+                                "column": 4
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "String",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 49,
+                                "column": 5
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 49,
+                                "column": 11
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 49,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 49,
+                              "column": 11
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 49,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 49,
+                            "column": 13
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "v2",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 50,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 50,
+                                "column": 4
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Error",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 50,
+                                "column": 5
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 50,
+                                "column": 10
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 50,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 50,
+                              "column": 10
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 50,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 50,
+                            "column": 12
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "AssignmentExpression",
+                        "left": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "n",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 51,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 51,
+                                "column": 3
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "v1",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 51,
+                                "column": 4
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 51,
+                                "column": 6
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": true,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 51,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 51,
+                              "column": 7
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {}
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": "3",
+                          "literalType": "INT",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 51,
+                              "column": 10
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 51,
+                              "column": 11
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {}
+                        },
+                        "operator": "=",
+                        "cloned": true,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 51,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 51,
+                            "column": 11
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "AssignmentExpression",
+                        "left": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "n",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 52,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 52,
+                                "column": 3
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "v2",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 52,
+                                "column": 4
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 52,
+                                "column": 6
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": true,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 52,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 52,
+                              "column": 7
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {}
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": "4",
+                          "literalType": "INT",
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 52,
+                              "column": 10
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 52,
+                              "column": 11
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {}
+                        },
+                        "operator": "=",
+                        "cloned": true,
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 52,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 52,
+                            "column": 11
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      },
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "fmt",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 53,
+                                "column": 2
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 53,
+                                "column": 5
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Println",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 53,
+                                "column": 6
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 53,
+                                "column": 13
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          },
+                          "computed": false,
+                          "loc": {
+                            "start": {
+                              "Offset": 0,
+                              "line": 53,
+                              "column": 2
+                            },
+                            "end": {
+                              "Offset": 0,
+                              "line": 53,
+                              "column": 13
+                            },
+                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                          },
+                          "_meta": {}
+                        },
+                        "arguments": [
+                          {
+                            "type": "Identifier",
+                            "name": "n",
+                            "loc": {
+                              "start": {
+                                "Offset": 0,
+                                "line": 53,
+                                "column": 14
+                              },
+                              "end": {
+                                "Offset": 0,
+                                "line": 53,
+                                "column": 15
+                              },
+                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                            },
+                            "_meta": {}
+                          }
+                        ],
+                        "loc": {
+                          "start": {
+                            "Offset": 0,
+                            "line": 53,
+                            "column": 2
+                          },
+                          "end": {
+                            "Offset": 0,
+                            "line": 53,
+                            "column": 16
+                          },
+                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                        },
+                        "_meta": {}
+                      }
+                    ],
+                    "id": null,
+                    "loc": {
+                      "start": {
+                        "Offset": 0,
+                        "line": 36,
+                        "column": 13
+                      },
+                      "end": {
+                        "Offset": 0,
+                        "line": 54,
+                        "column": 2
+                      },
+                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                    },
+                    "_meta": {}
+                  },
+                  "modifiers": null,
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 36,
+                      "column": 1
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 54,
+                      "column": 2
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+                  },
+                  "_meta": {}
+                }
+              ],
+              "language": "golang",
+              "languageVersion": "1.18",
+              "uri": "",
+              "version": "",
+              "loc": {
+                "start": {
+                  "Offset": 0,
+                  "line": 1,
+                  "column": 1
+                },
+                "end": {
+                  "Offset": 0,
+                  "line": 54,
+                  "column": 2
+                },
+                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interface_inheritance.go"
+              },
+              "_meta": {}
+            },
+            "packageName": "__single__"
+          }
+        },
+        "subs": {}
+      }
+    }
+  },
+  "moduleName": "__single_module__"
+}

@@ -1,0 +1,1154 @@
+{
+  "type": "CompileUnit",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "CharPredicate",
+        "_meta": {},
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 1
+          },
+          "end": {
+            "line": 1,
+            "column": 45
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+        }
+      },
+      "init": {
+        "type": "ImportExpression",
+        "from": {
+          "type": "Literal",
+          "value": "java.util.regex.Pattern.CharPredicate",
+          "literalType": "string",
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 1
+            },
+            "end": {
+              "line": 1,
+              "column": 45
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+          }
+        },
+        "local": null,
+        "imported": null,
+        "_meta": {},
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 1
+          },
+          "end": {
+            "line": 1,
+            "column": 45
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+        }
+      },
+      "cloned": false,
+      "varType": {
+        "type": "ScopedType",
+        "id": {
+          "type": "Identifier",
+          "name": "java.util.regex.Pattern.CharPredicate",
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 1
+            },
+            "end": {
+              "line": 1,
+              "column": 45
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+          }
+        },
+        "scope": null,
+        "typeArguments": null,
+        "_meta": {},
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 1
+          },
+          "end": {
+            "line": 1,
+            "column": 45
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+        }
+      },
+      "_meta": {},
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 1
+        },
+        "end": {
+          "line": 1,
+          "column": 45
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+      }
+    },
+    {
+      "type": "ExportStatement",
+      "argument": {
+        "type": "ClassDefinition",
+        "id": {
+          "type": "Identifier",
+          "name": "ExpressionOrder",
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 14
+            },
+            "end": {
+              "line": 2,
+              "column": 14
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+          }
+        },
+        "body": [
+          {
+            "type": "FunctionDefinition",
+            "id": {
+              "type": "Identifier",
+              "name": "main",
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 24
+                },
+                "end": {
+                  "line": 3,
+                  "column": 24
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+              }
+            },
+            "parameters": [
+              {
+                "type": "VariableDeclaration",
+                "id": {
+                  "type": "Identifier",
+                  "name": "args",
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 38
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 38
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                  }
+                },
+                "init": null,
+                "cloned": false,
+                "varType": {
+                  "type": "ScopedType",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "String",
+                    "_meta": {},
+                    "loc": {
+                      "start": {
+                        "line": 3,
+                        "column": 29
+                      },
+                      "end": {
+                        "line": 3,
+                        "column": 36
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                    }
+                  },
+                  "scope": null,
+                  "typeArguments": null,
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 3,
+                      "column": 29
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 36
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                  }
+                },
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 3,
+                    "column": 29
+                  },
+                  "end": {
+                    "line": 3,
+                    "column": 38
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                }
+              }
+            ],
+            "returnType": {
+              "type": "PrimitiveType",
+              "id": {
+                "type": "Identifier",
+                "name": "void",
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 3,
+                    "column": 5
+                  },
+                  "end": {
+                    "line": 5,
+                    "column": 5
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                }
+              },
+              "typeArguments": null,
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 5
+                },
+                "end": {
+                  "line": 5,
+                  "column": 5
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+              }
+            },
+            "body": {
+              "type": "ScopedStatement",
+              "body": [
+                {
+                  "type": "VariableDeclaration",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "a",
+                    "_meta": {},
+                    "loc": {
+                      "start": {
+                        "line": 4,
+                        "column": 23
+                      },
+                      "end": {
+                        "line": 4,
+                        "column": 23
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                    }
+                  },
+                  "init": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "func",
+                      "_meta": {},
+                      "loc": {
+                        "start": {
+                          "line": 4,
+                          "column": 27
+                        },
+                        "end": {
+                          "line": 4,
+                          "column": 27
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                      }
+                    },
+                    "arguments": [
+                      {
+                        "type": "Literal",
+                        "value": "a",
+                        "literalType": "string",
+                        "_meta": {},
+                        "loc": {
+                          "start": {
+                            "line": 4,
+                            "column": 32
+                          },
+                          "end": {
+                            "line": 4,
+                            "column": 32
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                        }
+                      },
+                      {
+                        "type": "Literal",
+                        "value": "true",
+                        "literalType": "boolean",
+                        "_meta": {},
+                        "loc": {
+                          "start": {
+                            "line": 4,
+                            "column": 37
+                          },
+                          "end": {
+                            "line": 4,
+                            "column": 37
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                        }
+                      }
+                    ],
+                    "_meta": {},
+                    "loc": {
+                      "start": {
+                        "line": 4,
+                        "column": 27
+                      },
+                      "end": {
+                        "line": 4,
+                        "column": 41
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                    }
+                  },
+                  "cloned": false,
+                  "varType": {
+                    "type": "ScopedType",
+                    "id": {
+                      "type": "Identifier",
+                      "name": "Charpredicate",
+                      "_meta": {},
+                      "loc": {
+                        "start": {
+                          "line": 4,
+                          "column": 9
+                        },
+                        "end": {
+                          "line": 4,
+                          "column": 9
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                      }
+                    },
+                    "scope": null,
+                    "typeArguments": null,
+                    "_meta": {},
+                    "loc": {
+                      "start": {
+                        "line": 4,
+                        "column": 9
+                      },
+                      "end": {
+                        "line": 4,
+                        "column": 9
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                    }
+                  },
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 23
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 41
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                  }
+                }
+              ],
+              "id": null,
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 43
+                },
+                "end": {
+                  "line": 5,
+                  "column": 5
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+              }
+            },
+            "modifiers": [],
+            "_meta": {
+              "modifiers": [
+                "public",
+                "static"
+              ],
+              "isPublic": true,
+              "isStatic": true
+            },
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 5
+              },
+              "end": {
+                "line": 5,
+                "column": 5
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+            }
+          },
+          {
+            "type": "FunctionDefinition",
+            "id": {
+              "type": "Identifier",
+              "name": "func",
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 6,
+                  "column": 33
+                },
+                "end": {
+                  "line": 6,
+                  "column": 33
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+              }
+            },
+            "parameters": [
+              {
+                "type": "VariableDeclaration",
+                "id": {
+                  "type": "Identifier",
+                  "name": "name",
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 6,
+                      "column": 45
+                    },
+                    "end": {
+                      "line": 6,
+                      "column": 45
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                  }
+                },
+                "init": null,
+                "cloned": false,
+                "varType": {
+                  "type": "ScopedType",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "String",
+                    "_meta": {},
+                    "loc": {
+                      "start": {
+                        "line": 6,
+                        "column": 38
+                      },
+                      "end": {
+                        "line": 6,
+                        "column": 38
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                    }
+                  },
+                  "scope": null,
+                  "typeArguments": null,
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 6,
+                      "column": 38
+                    },
+                    "end": {
+                      "line": 6,
+                      "column": 38
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                  }
+                },
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 6,
+                    "column": 38
+                  },
+                  "end": {
+                    "line": 6,
+                    "column": 45
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                }
+              },
+              {
+                "type": "VariableDeclaration",
+                "id": {
+                  "type": "Identifier",
+                  "name": "caseIns",
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 6,
+                      "column": 59
+                    },
+                    "end": {
+                      "line": 6,
+                      "column": 59
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                  }
+                },
+                "init": null,
+                "cloned": false,
+                "varType": {
+                  "type": "PrimitiveType",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "boolean",
+                    "_meta": {},
+                    "loc": {
+                      "start": {
+                        "line": 6,
+                        "column": 51
+                      },
+                      "end": {
+                        "line": 6,
+                        "column": 51
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                    }
+                  },
+                  "typeArguments": null,
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 6,
+                      "column": 51
+                    },
+                    "end": {
+                      "line": 6,
+                      "column": 51
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                  }
+                },
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 6,
+                    "column": 51
+                  },
+                  "end": {
+                    "line": 6,
+                    "column": 59
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                }
+              }
+            ],
+            "returnType": {
+              "type": "ScopedType",
+              "id": {
+                "type": "Identifier",
+                "name": "CharPredicate",
+                "_meta": {},
+                "loc": {
+                  "start": {
+                    "line": 6,
+                    "column": 19
+                  },
+                  "end": {
+                    "line": 6,
+                    "column": 19
+                  },
+                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                }
+              },
+              "scope": null,
+              "typeArguments": null,
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 6,
+                  "column": 19
+                },
+                "end": {
+                  "line": 6,
+                  "column": 19
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+              }
+            },
+            "body": {
+              "type": "ScopedStatement",
+              "body": [
+                {
+                  "type": "ReturnStatement",
+                  "argument": {
+                    "type": "MemberAccess",
+                    "object": {
+                      "type": "ConditionalExpression",
+                      "test": {
+                        "type": "Identifier",
+                        "name": "caseIns",
+                        "_meta": {},
+                        "loc": {
+                          "start": {
+                            "line": 7,
+                            "column": 16
+                          },
+                          "end": {
+                            "line": 7,
+                            "column": 16
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                        }
+                      },
+                      "consequent": {
+                        "type": "FunctionDefinition",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "c",
+                          "_meta": {},
+                          "loc": {
+                            "start": {
+                              "line": 7,
+                              "column": 26
+                            },
+                            "end": {
+                              "line": 7,
+                              "column": 26
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                          }
+                        },
+                        "parameters": [],
+                        "returnType": {
+                          "type": "DynamicType",
+                          "id": null,
+                          "_meta": {},
+                          "loc": {
+                            "start": {
+                              "line": 7,
+                              "column": 26
+                            },
+                            "end": {
+                              "line": 9,
+                              "column": 56
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                          }
+                        },
+                        "body": {
+                          "type": "ScopedStatement",
+                          "body": [
+                            {
+                              "type": "BinaryExpression",
+                              "operator": "||",
+                              "left": {
+                                "type": "BinaryExpression",
+                                "operator": "||",
+                                "left": {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "MemberAccess",
+                                    "object": {
+                                      "type": "Identifier",
+                                      "name": "Character",
+                                      "_meta": {},
+                                      "loc": {
+                                        "start": {
+                                          "line": 7,
+                                          "column": 31
+                                        },
+                                        "end": {
+                                          "line": 7,
+                                          "column": 31
+                                        },
+                                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                                      }
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "isUpperCase",
+                                      "_meta": {},
+                                      "loc": {
+                                        "start": {
+                                          "line": 7,
+                                          "column": 41
+                                        },
+                                        "end": {
+                                          "line": 7,
+                                          "column": 41
+                                        },
+                                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                                      }
+                                    },
+                                    "computed": false,
+                                    "_meta": {},
+                                    "loc": {
+                                      "start": {
+                                        "line": 7,
+                                        "column": 31
+                                      },
+                                      "end": {
+                                        "line": 7,
+                                        "column": 41
+                                      },
+                                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                                    }
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "Identifier",
+                                      "name": "c",
+                                      "_meta": {},
+                                      "loc": {
+                                        "start": {
+                                          "line": 7,
+                                          "column": 53
+                                        },
+                                        "end": {
+                                          "line": 7,
+                                          "column": 53
+                                        },
+                                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                                      }
+                                    }
+                                  ],
+                                  "_meta": {},
+                                  "loc": {
+                                    "start": {
+                                      "line": 7,
+                                      "column": 31
+                                    },
+                                    "end": {
+                                      "line": 7,
+                                      "column": 54
+                                    },
+                                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                                  }
+                                },
+                                "right": {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "MemberAccess",
+                                    "object": {
+                                      "type": "Identifier",
+                                      "name": "Character",
+                                      "_meta": {},
+                                      "loc": {
+                                        "start": {
+                                          "line": 8,
+                                          "column": 33
+                                        },
+                                        "end": {
+                                          "line": 8,
+                                          "column": 33
+                                        },
+                                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                                      }
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "isLowerCase",
+                                      "_meta": {},
+                                      "loc": {
+                                        "start": {
+                                          "line": 8,
+                                          "column": 43
+                                        },
+                                        "end": {
+                                          "line": 8,
+                                          "column": 43
+                                        },
+                                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                                      }
+                                    },
+                                    "computed": false,
+                                    "_meta": {},
+                                    "loc": {
+                                      "start": {
+                                        "line": 8,
+                                        "column": 33
+                                      },
+                                      "end": {
+                                        "line": 8,
+                                        "column": 43
+                                      },
+                                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                                    }
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "Identifier",
+                                      "name": "c",
+                                      "_meta": {},
+                                      "loc": {
+                                        "start": {
+                                          "line": 8,
+                                          "column": 55
+                                        },
+                                        "end": {
+                                          "line": 8,
+                                          "column": 55
+                                        },
+                                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                                      }
+                                    }
+                                  ],
+                                  "_meta": {},
+                                  "loc": {
+                                    "start": {
+                                      "line": 8,
+                                      "column": 33
+                                    },
+                                    "end": {
+                                      "line": 8,
+                                      "column": 56
+                                    },
+                                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                                  }
+                                },
+                                "_meta": {},
+                                "loc": {
+                                  "start": {
+                                    "line": 7,
+                                    "column": 31
+                                  },
+                                  "end": {
+                                    "line": 8,
+                                    "column": 56
+                                  },
+                                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                                }
+                              },
+                              "right": {
+                                "type": "CallExpression",
+                                "callee": {
+                                  "type": "MemberAccess",
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "Character",
+                                    "_meta": {},
+                                    "loc": {
+                                      "start": {
+                                        "line": 9,
+                                        "column": 33
+                                      },
+                                      "end": {
+                                        "line": 9,
+                                        "column": 33
+                                      },
+                                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                                    }
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "isTitleCase",
+                                    "_meta": {},
+                                    "loc": {
+                                      "start": {
+                                        "line": 9,
+                                        "column": 43
+                                      },
+                                      "end": {
+                                        "line": 9,
+                                        "column": 43
+                                      },
+                                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                                    }
+                                  },
+                                  "computed": false,
+                                  "_meta": {},
+                                  "loc": {
+                                    "start": {
+                                      "line": 9,
+                                      "column": 33
+                                    },
+                                    "end": {
+                                      "line": 9,
+                                      "column": 43
+                                    },
+                                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                                  }
+                                },
+                                "arguments": [
+                                  {
+                                    "type": "Identifier",
+                                    "name": "c",
+                                    "_meta": {},
+                                    "loc": {
+                                      "start": {
+                                        "line": 9,
+                                        "column": 55
+                                      },
+                                      "end": {
+                                        "line": 9,
+                                        "column": 55
+                                      },
+                                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                                    }
+                                  }
+                                ],
+                                "_meta": {},
+                                "loc": {
+                                  "start": {
+                                    "line": 9,
+                                    "column": 33
+                                  },
+                                  "end": {
+                                    "line": 9,
+                                    "column": 56
+                                  },
+                                  "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                                }
+                              },
+                              "_meta": {},
+                              "loc": {
+                                "start": {
+                                  "line": 7,
+                                  "column": 31
+                                },
+                                "end": {
+                                  "line": 9,
+                                  "column": 56
+                                },
+                                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                              }
+                            }
+                          ],
+                          "id": null,
+                          "_meta": {},
+                          "loc": {
+                            "start": {
+                              "line": 7,
+                              "column": 31
+                            },
+                            "end": {
+                              "line": 9,
+                              "column": 56
+                            },
+                            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                          }
+                        },
+                        "modifiers": [],
+                        "_meta": {},
+                        "loc": {
+                          "start": {
+                            "line": 7,
+                            "column": 26
+                          },
+                          "end": {
+                            "line": 9,
+                            "column": 56
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                        }
+                      },
+                      "alternative": {
+                        "type": "Identifier",
+                        "name": "Character",
+                        "_meta": {},
+                        "loc": {
+                          "start": {
+                            "line": 10,
+                            "column": 27
+                          },
+                          "end": {
+                            "line": 10,
+                            "column": 27
+                          },
+                          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                        }
+                      },
+                      "_meta": {},
+                      "loc": {
+                        "start": {
+                          "line": 7,
+                          "column": 16
+                        },
+                        "end": {
+                          "line": 10,
+                          "column": 27
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                      }
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "isUpperCase",
+                      "_meta": {},
+                      "loc": {
+                        "start": {
+                          "line": 10,
+                          "column": 38
+                        },
+                        "end": {
+                          "line": 10,
+                          "column": 38
+                        },
+                        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                      }
+                    },
+                    "computed": false,
+                    "_meta": {},
+                    "loc": {
+                      "start": {
+                        "line": 7,
+                        "column": 16
+                      },
+                      "end": {
+                        "line": 10,
+                        "column": 38
+                      },
+                      "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                    }
+                  },
+                  "isYield": false,
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 7,
+                      "column": 9
+                    },
+                    "end": {
+                      "line": 10,
+                      "column": 49
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                  }
+                },
+                {
+                  "type": "Noop",
+                  "_meta": {},
+                  "loc": {
+                    "start": {
+                      "line": 10,
+                      "column": 50
+                    },
+                    "end": {
+                      "line": 10,
+                      "column": 50
+                    },
+                    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+                  }
+                }
+              ],
+              "id": null,
+              "_meta": {},
+              "loc": {
+                "start": {
+                  "line": 6,
+                  "column": 67
+                },
+                "end": {
+                  "line": 12,
+                  "column": 5
+                },
+                "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+              }
+            },
+            "modifiers": [],
+            "_meta": {
+              "modifiers": [
+                "public",
+                "static"
+              ],
+              "isPublic": true,
+              "isStatic": true
+            },
+            "loc": {
+              "start": {
+                "line": 6,
+                "column": 5
+              },
+              "end": {
+                "line": 12,
+                "column": 5
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+            }
+          }
+        ],
+        "supers": [],
+        "_meta": {
+          "modifiers": [
+            "public"
+          ],
+          "isPublic": true
+        },
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 8
+          },
+          "end": {
+            "line": 14,
+            "column": 1
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+        }
+      },
+      "alias": {
+        "type": "Identifier",
+        "name": "ExpressionOrder",
+        "_meta": {},
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 14
+          },
+          "end": {
+            "line": 2,
+            "column": 14
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+        }
+      },
+      "_meta": {},
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 1
+        },
+        "end": {
+          "line": 14,
+          "column": 1
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+      }
+    }
+  ],
+  "language": "java",
+  "languageVersion": "17",
+  "uri": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java",
+  "version": "0.1.63",
+  "_meta": {},
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 1
+    },
+    "end": {
+      "line": 14,
+      "column": 1
+    },
+    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ExpressionOrder.java"
+  }
+}

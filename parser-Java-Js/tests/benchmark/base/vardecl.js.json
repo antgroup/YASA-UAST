@@ -1,0 +1,491 @@
+{
+  "type": "CompileUnit",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "a",
+        "_meta": {
+          "_extra": {
+            "start": 4,
+            "end": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 5
+          },
+          "end": {
+            "line": 1,
+            "column": 6
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/vardecl.js"
+        }
+      },
+      "init": {
+        "type": "Literal",
+        "value": 3,
+        "literalType": "number",
+        "_meta": {
+          "_extra": {
+            "start": 8,
+            "end": 9
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 9
+          },
+          "end": {
+            "line": 1,
+            "column": 10
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/vardecl.js"
+        }
+      },
+      "cloned": false,
+      "varType": {
+        "type": "DynamicType",
+        "id": null,
+        "_meta": {}
+      },
+      "_meta": {
+        "_extra": {
+          "end": 10
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 5
+        },
+        "end": {
+          "line": 1,
+          "column": 10
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/vardecl.js"
+      }
+    },
+    {
+      "type": "VariableDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "b",
+        "_meta": {
+          "_extra": {
+            "start": 16,
+            "end": 17
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 5
+          },
+          "end": {
+            "line": 3,
+            "column": 6
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/vardecl.js"
+        }
+      },
+      "init": {
+        "type": "Identifier",
+        "name": "a",
+        "_meta": {
+          "_extra": {
+            "start": 20,
+            "end": 21
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 9
+          },
+          "end": {
+            "line": 3,
+            "column": 10
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/vardecl.js"
+        }
+      },
+      "cloned": false,
+      "varType": {
+        "type": "DynamicType",
+        "id": null,
+        "_meta": {}
+      },
+      "_meta": {
+        "_extra": {
+          "start": 12,
+          "end": 22
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 5
+        },
+        "end": {
+          "line": 3,
+          "column": 10
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/vardecl.js"
+      }
+    },
+    {
+      "type": "VariableDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "c",
+        "_meta": {
+          "_extra": {
+            "start": 30,
+            "end": 31
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 7
+          },
+          "end": {
+            "line": 5,
+            "column": 8
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/vardecl.js"
+        }
+      },
+      "init": {
+        "type": "Identifier",
+        "name": "b",
+        "_meta": {
+          "_extra": {
+            "start": 34,
+            "end": 35
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 11
+          },
+          "end": {
+            "line": 5,
+            "column": 12
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/vardecl.js"
+        }
+      },
+      "cloned": false,
+      "varType": {
+        "type": "DynamicType",
+        "id": null,
+        "_meta": {}
+      },
+      "_meta": {
+        "_extra": {
+          "start": 24,
+          "end": 36
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 7
+        },
+        "end": {
+          "line": 5,
+          "column": 12
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/vardecl.js"
+      }
+    },
+    {
+      "type": "Sequence",
+      "expressions": [
+        {
+          "type": "VariableDeclaration",
+          "id": {
+            "type": "Identifier",
+            "name": "a1",
+            "_meta": {
+              "_extra": {
+                "start": 42,
+                "end": 44
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 7,
+                "column": 5
+              },
+              "end": {
+                "line": 7,
+                "column": 7
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/vardecl.js"
+            }
+          },
+          "init": {
+            "type": "Literal",
+            "value": true,
+            "literalType": "boolean",
+            "_meta": {
+              "_extra": {
+                "start": 47,
+                "end": 51
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 7,
+                "column": 10
+              },
+              "end": {
+                "line": 7,
+                "column": 14
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/vardecl.js"
+            }
+          },
+          "cloned": false,
+          "varType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {}
+          },
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 5
+            },
+            "end": {
+              "line": 7,
+              "column": 14
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/vardecl.js"
+          }
+        },
+        {
+          "type": "VariableDeclaration",
+          "id": {
+            "type": "Identifier",
+            "name": "a2",
+            "_meta": {
+              "_extra": {
+                "start": 53,
+                "end": 55
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 7,
+                "column": 16
+              },
+              "end": {
+                "line": 7,
+                "column": 18
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/vardecl.js"
+            }
+          },
+          "init": {
+            "type": "Literal",
+            "value": false,
+            "literalType": "boolean",
+            "_meta": {
+              "_extra": {
+                "start": 58,
+                "end": 63
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 7,
+                "column": 21
+              },
+              "end": {
+                "line": 7,
+                "column": 26
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/vardecl.js"
+            }
+          },
+          "cloned": false,
+          "varType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {}
+          },
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 16
+            },
+            "end": {
+              "line": 7,
+              "column": 26
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/vardecl.js"
+          }
+        },
+        {
+          "type": "VariableDeclaration",
+          "id": {
+            "type": "Identifier",
+            "name": "a3",
+            "_meta": {
+              "_extra": {
+                "start": 65,
+                "end": 67
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 7,
+                "column": 28
+              },
+              "end": {
+                "line": 7,
+                "column": 30
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/vardecl.js"
+            }
+          },
+          "init": {
+            "type": "Identifier",
+            "name": "a1",
+            "_meta": {
+              "_extra": {
+                "start": 70,
+                "end": 72
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 7,
+                "column": 33
+              },
+              "end": {
+                "line": 7,
+                "column": 35
+              },
+              "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/vardecl.js"
+            }
+          },
+          "cloned": false,
+          "varType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {}
+          },
+          "_meta": {},
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 28
+            },
+            "end": {
+              "line": 7,
+              "column": 35
+            },
+            "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/vardecl.js"
+          }
+        }
+      ],
+      "_meta": {
+        "_extra": {
+          "start": 38,
+          "end": 73
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 1
+        },
+        "end": {
+          "line": 7,
+          "column": 36
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/vardecl.js"
+      }
+    },
+    {
+      "type": "VariableDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "a4",
+        "_meta": {
+          "_extra": {
+            "start": 79,
+            "end": 81
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 9,
+            "column": 5
+          },
+          "end": {
+            "line": 9,
+            "column": 7
+          },
+          "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/vardecl.js"
+        }
+      },
+      "init": null,
+      "cloned": false,
+      "varType": {
+        "type": "DynamicType",
+        "id": null,
+        "_meta": {}
+      },
+      "_meta": {
+        "_extra": {
+          "start": 75,
+          "end": 82
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 5
+        },
+        "end": {
+          "line": 9,
+          "column": 7
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/vardecl.js"
+      }
+    }
+  ],
+  "language": "javascript",
+  "languageVersion": null,
+  "uri": "",
+  "version": "0.1.63",
+  "_meta": {
+    "_extra": {
+      "end": 83,
+      "directives": []
+    }
+  },
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 1
+    },
+    "end": {
+      "line": 10,
+      "column": 1
+    },
+    "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/tests/benchmark/base/vardecl.js"
+  }
+}
