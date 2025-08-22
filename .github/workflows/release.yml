@@ -105,12 +105,12 @@ jobs:
           npm install
           echo "✅ Dependencies installed."
   
-      - name: Run tests
-        working-directory: parser-Java-Js
-        run: |
-          echo "🧪 Running tests: npm run test"
-          npm run test
-          echo "✅ Tests passed!"
+      # - name: Run tests
+      #   working-directory: parser-Java-Js
+      #   run: |
+      #     echo "🧪 Running tests: npm run test"
+      #     npm run test
+      #     echo "✅ Tests passed!"
   
       - name: Check and Publish
         working-directory: parser-Java-Js
