@@ -74,14 +74,14 @@ jobs:
 
   # 3. 发布 parser-Java-Js
   publish_parser_js:
-    needs: publish_spec
+    needs: [publish_spec, get_version]
     runs-on: ubuntu-latest
     environment: release
     env:
       VERSION: ${{ needs.get_version.outputs.version }}
       NPM_TAG: ${{ needs.get_version.outputs.npm_tag }}
     steps:
-      - name: Debug outputs
+      - name: Validate version
         run: |
           echo "🎯 VERSION: '$VERSION'"
           echo "🎯 NPM_TAG: '$NPM_TAG'"
@@ -115,7 +115,6 @@ jobs:
       - name: Check and Publish
         working-directory: parser-Java-Js
         run: |
-        
           echo "🔍 Publishing @ant-yasa/uast-parser-java-js"
           echo "📦 Version: $VERSION"
           echo "🏷  NPM Tag: $NPM_TAG"
