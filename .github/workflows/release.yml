@@ -77,22 +77,45 @@ jobs:
     needs: publish_spec
     runs-on: ubuntu-latest
     environment: release
+    env:
+      VERSION: ${{ needs.get_version.outputs.version }}
+      NPM_TAG: ${{ needs.get_version.outputs.npm_tag }}
     steps:
+      - name: Debug outputs
+        run: |
+          echo "🎯 VERSION: '$VERSION'"
+          echo "🎯 NPM_TAG: '$NPM_TAG'"
+          if [ -z "$VERSION" ]; then
+            echo "❌ ERROR: VERSION is empty!"
+            exit 1
+          fi
       - name: Checkout
         uses: actions/checkout@v4
-
+  
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 18
           registry-url: https://registry.npmjs.org/
-
-      - name: Install and Publish parser-Java-Js
+  
+      - name: Install dependencies
         working-directory: parser-Java-Js
         run: |
-          VERSION=${{ needs.get_version.outputs.version }}
-          NPM_TAG=${{ needs.get_version.outputs.npm_tag }}
-          
+          echo "📦 Installing dependencies for @ant-yasa/uast-parser-java-js..."
+          npm install
+          echo "✅ Dependencies installed."
+  
+      - name: Run tests
+        working-directory: parser-Java-Js
+        run: |
+          echo "🧪 Running tests: npm run test"
+          npm run test
+          echo "✅ Tests passed!"
+  
+      - name: Check and Publish
+        working-directory: parser-Java-Js
+        run: |
+        
           echo "🔍 Publishing @ant-yasa/uast-parser-java-js"
           echo "📦 Version: $VERSION"
           echo "🏷  NPM Tag: $NPM_TAG"
