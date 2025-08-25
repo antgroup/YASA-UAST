@@ -177,7 +177,43 @@ jobs:
       
           echo "📥 Installing @ant-yasa/uast-spec@$VERSION..."
           npm install @ant-yasa/uast-spec@$VERSION --no-save
-      
+
+          echo "🏗️  Running build..."
+          npm run build
+
+          # === 校验 dist/src/index.js 是否存在 ===
+          echo "🔍 Checking for dist/src/index.js..."
+          if [ ! -f dist/src/index.js ]; then
+            echo "❌ dist/src/index.js NOT found!"
+            echo "💡 Check your build script, output path, or tsconfig.json"
+            ls -R dist/ || echo "dist/ is empty or missing"
+            exit 1
+          else
+            echo "✅ dist/src/index.js exists"
+          fi
+
+          # === 校验 package.json 的 main 字段 ===
+          MAIN_FIELD=$(node -p "require('./package.json').main")
+          echo "🔗 package.json 'main' field: $MAIN_FIELD"
+          if [ "$MAIN_FIELD" != "dist/src/index.js" ]; then
+            echo "⚠️ Warning: 'main' field is not 'dist/src/index.js' — may cause runtime issues!"
+          fi
+          
+          # === dry-run 打包，检查内容 ===
+          echo "📦 Running 'npm pack --dry-run' to verify package contents..."
+          DRY_RUN_OUTPUT=$(npm pack --dry-run 2>&1)
+          echo "$DRY_RUN_OUTPUT"
+          
+          if echo "$DRY_RUN_OUTPUT" | grep -q "dist/src/index.js"; then
+            echo "✅ dist/src/index.js is included in the npm package."
+          else
+            echo "❌ dist/src/index.js is NOT included in the npm package!"
+            echo "💡 Check .npmignore, .gitignore, or files field in package.json"
+            exit 1
+          fi
+
+          # === 设置版本号 ===
+          echo "🔄 Setting version in package.json..."      
           npm version $VERSION --no-git-tag-version
           npm publish --tag $NPM_TAG
       
