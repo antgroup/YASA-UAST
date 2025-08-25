@@ -62,6 +62,10 @@ jobs:
             echo "✅ Version $VERSION of @ant-yasa/uast-spec already published, skipping."
             exit 0
           fi
+              # === 安装依赖 ===
+          echo "🟢 Installing dependencies..."
+          npm install
+          echo "✅ Dependencies installed."
           
           # === 构建项目 ===
           echo "🏗️  Running build..."
