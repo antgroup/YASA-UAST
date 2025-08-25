@@ -31,6 +31,7 @@ jobs:
           fi
 
   # 2. 发布 specification
+  # 2. 发布 specification
   publish_spec:
     needs: get_version
     runs-on: ubuntu-latest
@@ -58,19 +59,48 @@ jobs:
           
           # 检查该版本是否已存在
           if npm view @ant-yasa/uast-spec@$VERSION version > /dev/null 2>&1; then
-              echo "✅ Version $VERSION of @ant-yasa/uast-spec already published, skipping."
-              exit 0
+            echo "✅ Version $VERSION of @ant-yasa/uast-spec already published, skipping."
+            exit 0
           fi
           
+          # === 构建项目 ===
+          echo "🏗️  Running build..."
+          npm run build
+          
+          # === 验证 dist/index.js 是否生成 ===
+          if [ ! -f dist/index.js ]; then
+            echo "❌ dist/index.js not found after build!"
+            echo "💡 Check your build script and .npmignore/.gitignore"
+            ls -R dist/ || echo "dist/ is empty or missing"
+            exit 1
+          fi
+          echo "✅ dist/index.js generated successfully."
+          
+          # === 验证 npm pack 是否包含 dist/ ===
+          echo "📦 Running 'npm pack --dry-run' to verify package contents..."
+          DRY_RUN_OUTPUT=$(npm pack --dry-run 2>&1)
+          echo "$DRY_RUN_OUTPUT"
+          
+          if echo "$DRY_RUN_OUTPUT" | grep -q "dist/index.js"; then
+            echo "✅ dist/index.js is included in the npm package."
+          else
+            echo "❌ dist/index.js is NOT included in the npm package!"
+            echo "💡 Check .npmignore and .gitignore – make sure 'dist/' is not ignored."
+            exit 1
+          fi
+          
+          # === 设置版本号 ===
           echo "🔄 Setting version in package.json..."
           npm version $VERSION --no-git-tag-version
           
+          # === 发布到 npm ===
           echo "🎯 Publishing to npm..."
           npm publish --tag $NPM_TAG
           
           echo "✅ @ant-yasa/uast-spec@$VERSION published successfully!"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
 
   # 3. 发布 parser-Java-Js
   publish_parser_js:
