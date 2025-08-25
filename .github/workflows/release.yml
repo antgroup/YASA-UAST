@@ -118,28 +118,39 @@ jobs:
           echo "🔍 Publishing @ant-yasa/uast-parser-java-js"
           echo "📦 Version: $VERSION"
           echo "🏷  NPM Tag: $NPM_TAG"
-          echo "🧾 package.json version before: $(cat package.json | grep version)"
-          echo "📦 Dependencies before install:"
-          cat package.json | grep "@ant-yasa/uast-spec"
-          
-          # 检查该版本是否已存在
+      
           if npm view @ant-yasa/uast-parser-java-js@$VERSION version > /dev/null 2>&1; then
-            echo "✅ Version $VERSION of @ant-yasa/uast-parser-java-js already published, skipping."
+            echo "✅ Version $VERSION already published, skipping."
             exit 0
           fi
-          
-          echo "📥 Installing @ant-yasa/uast-spec@$NPM_TAG (with --no-save)..."
-          npm install @ant-yasa/uast-spec@$NPM_TAG --no-save
-          
-          echo "🔄 Setting version in package.json..."
+      
+          # 等待 uast-spec 发布完成
+          echo "⏳ Waiting for @ant-yasa/uast-spec@$VERSION to be available..."
+          for i in {1..30}; do
+            if npm view @ant-yasa/uast-spec@$VERSION version > /dev/null 2>&1; then
+              echo "✅ @ant-yasa/uast-spec@$VERSION is available."
+              break
+            else
+              echo "⏳ Attempt $i: @ant-yasa/uast-spec@$VERSION not found, retrying in 10s..."
+              sleep 10
+            fi
+          done
+      
+          if ! npm view @ant-yasa/uast-spec@$VERSION version > /dev/null 2>&1; then
+            echo "❌ Failed to find @ant-yasa/uast-spec@$VERSION after waiting."
+            exit 1
+          fi
+      
+          echo "📥 Installing @ant-yasa/uast-spec@$VERSION..."
+          npm install @ant-yasa/uast-spec@$VERSION --no-save
+      
           npm version $VERSION --no-git-tag-version
-          
-          echo "🎯 Publishing to npm..."
           npm publish --tag $NPM_TAG
-          
-          echo "✅ @ant-yasa/uast-parser-java-js@$VERSION published successfully!"
+      
+          echo "✅ Published @ant-yasa/uast-parser-java-js@$VERSION"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
 
   # 4. 构建 Go 可执行文件（多平台）
   build_go:
