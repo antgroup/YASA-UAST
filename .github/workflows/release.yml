@@ -41,7 +41,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - name: Publish specification
         working-directory: specification
-        run: >
+        run: |
           VERSION=${{ needs.get_version.outputs.version }}
 
           NPM_TAG=${{ needs.get_version.outputs.npm_tag }}
@@ -157,7 +157,7 @@ jobs:
           echo "✅ Dependencies installed."
       - name: Check and Publish
         working-directory: parser-Java-Js
-        run: >
+        run: |
           echo "🔍 Publishing @ant-yasa/uast-parser-java-js"
 
           echo "📦 Version: $VERSION"
@@ -317,126 +317,112 @@ jobs:
           path: parser-Go/dist/
       - name: Set output
         id: set_output
-        run: >
+        run: |
           echo "artifacts=go-${{ matrix.goos }}-${{ matrix.goarch }}" >>
           $GITHUB_OUTPUT
   build_python:
     needs: publish_parser_js
     strategy:
       matrix:
-        - target: linux
-          os: ubuntu-latest
-          goos: linux
-          goarch: amd64
-          runner: docker
-        - target: darwin
-          os: macos-latest
-          goos: darwin
-          goarch: amd64
-          runner: native
-        - target: darwin
-          os: macos-latest
-          goos: darwin
-          goarch: arm64
-          runner: native
-        - target: windows
-          os: windows-latest
-          goos: windows
-          goarch: amd64
-          runner: native
+        include:
+          - runner: docker
+            os: ubuntu-latest
+            target: linux
+            goos: linux
+            goarch: amd64
+            artifact_name: python-linux-amd64
+            output_path: dist/uast4py-linux-amd64
+
+          - runner: native
+            os: macos-latest
+            target: darwin
+            goos: darwin
+            goarch: amd64
+            artifact_name: python-darwin-amd64
+            output_path: parser-Python/dist/uast4py-darwin-amd64
+
+          - runner: native
+            os: macos-latest
+            target: darwin
+            goos: darwin
+            goarch: arm64
+            artifact_name: python-darwin-arm64
+            output_path: parser-Python/dist/uast4py-darwin-arm64
+
+          - runner: native
+            os: windows-latest
+            target: windows
+            goos: windows
+            goarch: amd64
+            artifact_name: python-windows-amd64
+            output_path: parser-Python/dist/uast4py-windows-amd64.exe
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Build Linux binary with Docker
-        if: matrix.runner == 'docker'
-        run: >
-          echo "🐳 Building Linux binary in CentOS 7 Docker container..."
 
+      # ========== Linux: Docker 构建 ==========
+      - name: Build Linux binary with Docker
+        if: ${{ matrix.runner == 'docker' }}
+        run: |
+          echo "🐳 Building Linux binary in CentOS 7 container..."
           docker build \
             --build-arg GOOS=${{ matrix.goos }} \
             --build-arg GOARCH=${{ matrix.goarch }} \
             -f parser-Python/Dockerfile.linux \
             -t uast4py-linux .
-          docker run --name uast4py-container uast4py-linux cp /app/dist/builder /dist/uast4py-linux-amd64
-
+          docker create --name temp-container uast4py-linux
           mkdir -p dist
-
-          docker cp uast4py-container:/dist/uast4py-linux-amd64 dist/
-
-          docker rm uast4py-container
-
+          docker cp temp-container:/app/dist/builder dist/uast4py-linux-amd64
+          docker rm temp-container
           chmod +x dist/uast4py-linux-amd64
-
           echo "✅ Built: dist/uast4py-linux-amd64"
+
       - name: Upload Linux artifact
-        if: matrix.runner == 'docker'
+        if: ${{ matrix.runner == 'docker' }}
         uses: actions/upload-artifact@v4
         with:
-          name: python-linux-amd64
-          path: dist/uast4py-linux-amd64
+          name: ${{ matrix.artifact_name }}
+          path: ${{ matrix.output_path }}
+
+      # ========== macOS / Windows: 原生构建 ==========
       - name: Setup Python
-        if: matrix.runner == 'native'
+        if: ${{ matrix.runner == 'native' }}
         uses: actions/setup-python@v4
         with:
-          python-version: "3.13"
+          python-version: '3.13'
+
       - name: Build macOS/Windows binary
-        if: matrix.runner == 'native'
+        if: ${{ matrix.runner == 'native' }}
         working-directory: parser-Python
-        run: >
+        run: |
           echo "🏗️ Building for ${{ matrix.goos }}-${{ matrix.goarch }}"
-
           python -m venv .venv
-
-
           if [ "$RUNNER_OS" = "Windows" ]; then
             source .venv/Scripts/activate
           else
             source .venv/bin/activate
           fi
-
-
           pip install -r requirements.txt
-
           pip install pyinstaller
-
-
-          echo "📦 Running PyInstaller..."
-
           pyinstaller --onefile --paths .venv/lib/python3.13/site-packages uast/builder.py
-
-
           mkdir -p dist
-
           OUTPUT_NAME="uast4py-${{ matrix.goos }}-${{ matrix.goarch }}"
-
           if [ "$RUNNER_OS" = "Windows" ]; then
             mv dist/builder.exe "dist/${OUTPUT_NAME}.exe"
-            echo "✅ Built: dist/${OUTPUT_NAME}.exe"
+            echo "✅ Built: ${OUTPUT_NAME}.exe"
           else
             mv dist/builder "dist/${OUTPUT_NAME}"
-            echo "✅ Built: dist/${OUTPUT_NAME}"
+            echo "✅ Built: ${OUTPUT_NAME}"
           fi
-      - name: Upload macOS x64 artifact
-        if: matrix.runner == 'native' && matrix.goos == 'darwin' && matrix.goarch ==
-          'amd64'
+
+      - name: Upload artifact
+        if: ${{ matrix.runner == 'native' }}
         uses: actions/upload-artifact@v4
         with:
-          name: python-darwin-amd64
-          path: parser-Python/dist/uast4py-darwin-amd64
-      - name: Upload macOS arm64 artifact
-        if: matrix.runner == 'native' && matrix.goos == 'darwin' && matrix.goarch ==
-          'arm64'
-        uses: actions/upload-artifact@v4
-        with:
-          name: python-darwin-arm64
-          path: parser-Python/dist/uast4py-darwin-arm64
-      - name: Upload Windows artifact
-        if: matrix.runner == 'native' && matrix.goos == 'windows'
-        uses: actions/upload-artifact@v4
-        with:
-          name: python-windows-amd64
-          path: parser-Python/dist/uast4py-windows-amd64.exe
+          name: ${{ matrix.artifact_name }}
+          path: ${{ matrix.output_path }}
+
   create_release:
     needs:
       - build_go
