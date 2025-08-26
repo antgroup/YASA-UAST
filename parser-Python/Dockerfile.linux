@@ -1,46 +1,27 @@
 # parser-Python/Dockerfile.linux
-FROM centos:7
+FROM python:3.13-slim
 
-RUN cd /etc/yum.repos.d \
-    && curl -o CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo \
-    && curl -o epel-release.rpm https://mirrors.aliyun.com/epel/epel-release-latest-7.noarch.rpm \
-    && rpm -ivh epel-release.rpm \
-    && sed -i 's|^#baseurl=https://download.fedoraproject.org/pub|baseurl=https://mirrors.aliyun.com|g' /etc/yum.repos.d/epel*.repo \
-    && sed -i 's|^metalink|#metalink|g' /etc/yum.repos.d/epel*.repo \
-    && rm -f epel-release.rpm
-    
-# 安装工具
-RUN yum update -y && \
-    yum install -y gcc gcc-c++ make wget tar bzip2 git which curl
-
-# 安装 Miniconda
-RUN curl -L -o Miniconda3.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh && \
-    bash Miniconda3.sh -b -p /opt/conda && \
-    rm Miniconda3.sh
-
-ENV PATH=/opt/conda/bin:$PATH
-
-# 创建 Python 3.13 环境
-RUN conda create -n py313 python=3.13 -y && \
-    conda activate py313 && \
-    pip install pyinstaller
-
-ENV CONDA_DEFAULT_ENV=py313
-ENV PATH=/opt/conda/envs/py313/bin:$PATH
+# 安装构建依赖（PyInstaller 需要这些）
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+        gcc \
+        g++ \
+        make \
+        git \
+        wget \
+        binutils \
+        && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
-# 参数化构建
-ARG GOOS
-ARG GOARCH
-
 COPY parser-Python .
 
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install pyinstaller
 
 RUN pyinstaller \
     --onefile \
-    --paths /opt/conda/envs/py313/lib/python3.13/site-packages \
     uast/builder.py
 
+# 构建完成，输出在 dist/
 CMD ["echo", "Build complete"]
