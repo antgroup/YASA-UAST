@@ -1,6 +1,14 @@
 # parser-Python/Dockerfile.linux
 FROM centos:7
 
+RUN cd /etc/yum.repos.d \
+    && curl -o CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo \
+    && curl -o epel-release.rpm https://mirrors.aliyun.com/epel/epel-release-latest-7.noarch.rpm \
+    && rpm -ivh epel-release.rpm \
+    && sed -i 's|^#baseurl=https://download.fedoraproject.org/pub|baseurl=https://mirrors.aliyun.com|g' /etc/yum.repos.d/epel*.repo \
+    && sed -i 's|^metalink|#metalink|g' /etc/yum.repos.d/epel*.repo \
+    && rm -f epel-release.rpm
+    
 # 安装工具
 RUN yum update -y && \
     yum install -y gcc gcc-c++ make wget tar bzip2 git which curl
