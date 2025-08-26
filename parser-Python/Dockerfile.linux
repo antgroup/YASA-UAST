@@ -1,0 +1,38 @@
+# parser-Python/Dockerfile.linux
+FROM centos:7
+
+# 安装工具
+RUN yum update -y && \
+    yum install -y gcc gcc-c++ make wget tar bzip2 git which curl
+
+# 安装 Miniconda
+RUN curl -L -o Miniconda3.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh && \
+    bash Miniconda3.sh -b -p /opt/conda && \
+    rm Miniconda3.sh
+
+ENV PATH=/opt/conda/bin:$PATH
+
+# 创建 Python 3.13 环境
+RUN conda create -n py313 python=3.13 -y && \
+    conda activate py313 && \
+    pip install pyinstaller
+
+ENV CONDA_DEFAULT_ENV=py313
+ENV PATH=/opt/conda/envs/py313/bin:$PATH
+
+WORKDIR /app
+
+# 参数化构建
+ARG GOOS
+ARG GOARCH
+
+COPY parser-Python .
+
+RUN pip install -r requirements.txt
+
+RUN pyinstaller \
+    --onefile \
+    --paths /opt/conda/envs/py313/lib/python3.13/site-packages \
+    uast/builder.py
+
+CMD ["echo", "Build complete"]
