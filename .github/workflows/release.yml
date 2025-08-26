@@ -363,6 +363,7 @@ jobs:
             mv dist/builder "dist/${OUTPUT_NAME}"
             echo "✅ Built: ${OUTPUT_NAME}"
           fi
+        shell: bash  # 显式指定 bash（虽然 Ubuntu/macOS 默认就是，保持一致）
 
       - name: Upload artifact
         if: ${{ matrix.runner == 'native' }}
