@@ -339,7 +339,7 @@ jobs:
       - name: Build Linux binary with Docker
         if: ${{ matrix.runner == 'docker' }}
         run: |
-          echo "🐳 Building Linux binary in CentOS 7 container..."
+          echo "🐳 Building Linux binary in CentOS 8 container..."
           docker build \
             --build-arg GOOS=${{ matrix.goos }} \
             --build-arg GOARCH=${{ matrix.goarch }} \

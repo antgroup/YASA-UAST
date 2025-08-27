@@ -1,12 +1,21 @@
-# parser-Python/Dockerfile.linux
 FROM almalinux:8
 
-# ✅ 正确替换为阿里云镜像（关键修复）
-RUN sed -i 's|^mirrorlist=|#mirrorlist=|g' /etc/yum.repos.d/almalinux*.repo && \
-    sed -i 's|#baseurl=https://repo.almalinux.org|baseurl=https://mirrors.aliyun.com/almalinux|g' /etc/yum.repos.d/almalinux*.repo && \
-    sed -i 's|almalinux/\$releasever|almalinux/8|g' /etc/yum.repos.d/almalinux*.repo && \
-    dnf clean all && \
-    dnf makecache
+# 使用阿里云镜像源（推荐：直接覆盖 repo）
+RUN cat > /etc/yum.repos.d/almalinux.repo <<EOF
+[baseos]
+name=AlmaLinux \$releasever - BaseOS
+baseurl=https://mirrors.aliyun.com/almalinux/8/BaseOS/x86_64/os/
+gpgcheck=1
+gpgkey=https://mirrors.aliyun.com/almalinux/RPM-GPG-KEY-AlmaLinux
+enabled=1
+
+[appstream]
+name=AlmaLinux \$releasever - AppStream
+baseurl=https://mirrors.aliyun.com/almalinux/8/AppStream/x86_64/os/
+gpgcheck=1
+gpgkey=https://mirrors.aliyun.com/almalinux/RPM-GPG-KEY-AlmaLinux
+enabled=1
+EOF
 
 # 安装构建工具
 RUN dnf groupinstall -y "Development Tools" && \
@@ -34,19 +43,13 @@ ENV PATH=/opt/conda/envs/py313/bin:$PATH
 
 WORKDIR /app
 
-# 参数化构建
 ARG GOOS
 ARG GOARCH
 
 COPY parser-Python .
 
-# 安装项目依赖
 RUN pip install -r requirements.txt
 
-# 打包 PyInstaller 二进制
-RUN pyinstaller \
-    --onefile \
-    uast/builder.py
+RUN pyinstaller --onefile uast/builder.py
 
-# 输出构建完成提示
-CMD ["echo", "Build complete: uast4py-linux-amd64 (glibc 2.28 compatible)"]
+CMD ["echo", "Build complete"]
