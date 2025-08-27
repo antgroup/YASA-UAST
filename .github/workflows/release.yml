@@ -218,54 +218,115 @@ jobs:
 
 
   # 4. 构建 Go 可执行文件（多平台）
+  # 4. 构建 Go 可执行文件（多平台）—— 精确枚举模式
   build_go:
     needs: publish_parser_js
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        goos: [linux, darwin, windows]
-        goarch: [amd64, arm64]
-    outputs:
-      artifacts: ${{ steps.set_output.outputs.artifacts }}
+        include:
+          # ========== Linux ==========
+          - os: ubuntu-latest
+            goos: linux
+            goarch: amd64
+            artifact_name: go-linux-amd64
+            output_path: parser-Go/dist/uast4go-linux-amd64
+  
+          # - os: ubuntu-latest
+          #   goos: linux
+          #   goarch: arm64
+          #   artifact_name: go-linux-arm64
+          #   output_path: parser-Go/dist/uast4go-linux-arm64
+  
+          # 可选：32-bit Linux
+          # - os: ubuntu-latest
+          #   goos: linux
+          #   goarch: 386
+          #   artifact_name: go-linux-386
+          #   output_path: parser-Go/dist/uast4go-linux-386
+  
+          # 可选：ARM v6/v7（常用于树莓派）
+          # - os: ubuntu-latest
+          #   goos: linux
+          #   goarch: arm
+          #   goarm: "6"
+          #   artifact_name: go-linux-armv6
+          #   output_path: parser-Go/dist/uast4go-linux-armv6
+          #
+          # - os: ubuntu-latest
+          #   goos: linux
+          #   goarch: arm
+          #   goarm: "7"
+          #   artifact_name: go-linux-armv7
+          #   output_path: parser-Go/dist/uast4go-linux-armv7
+  
+          # ========== macOS ==========
+          - os: macos-latest
+            goos: darwin
+            goarch: amd64
+            artifact_name: go-darwin-amd64
+            output_path: parser-Go/dist/uast4go-darwin-amd64
+  
+          - os: macos-latest
+            goos: darwin
+            goarch: arm64
+            artifact_name: go-darwin-arm64
+            output_path: parser-Go/dist/uast4go-darwin-arm64
+  
+          # ========== Windows ==========
+          - os: windows-latest
+            goos: windows
+            goarch: amd64
+            artifact_name: go-windows-amd64
+            output_path: parser-Go/dist/uast4go-windows-amd64.exe
+  
+          # 可选：32-bit Windows
+          # - os: windows-latest
+          #   goos: windows
+          #   goarch: 386
+          #   artifact_name: go-windows-386
+          #   output_path: parser-Go/dist/uast4go-windows-386.exe
+  
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
+  
       - name: Setup Go
         uses: actions/setup-go@v4
         with:
           go-version: '1.21'
-
+  
       - name: Build Go binary
         working-directory: parser-Go
+        shell: bash
         run: |
           export CGO_ENABLED=0
           export GOOS=${{ matrix.goos }}
           export GOARCH=${{ matrix.goarch }}
+          # 可选：ARM 版本
+          {% if matrix.goarm %}export GOARM={{ matrix.goarm }}{% endif %}
+  
+          echo "🏗️ Building for $GOOS/$GOARCH${GOARM:+/$GOARM}"
+          echo "Go version: $(go version)"
+  
           SUFFIX=""
           if [ "$GOOS" = "windows" ]; then SUFFIX=".exe"; fi
-          
-          echo "🏗️  Building Go binary for $GOOS/$GOARCH"
-          echo "Go version: $(go version)"
-          echo "GOOS=$GOOS, GOARCH=$GOARCH"
-          
-          go build -o "uast4go-${GOOS}-${GOARCH}${SUFFIX}" .
-          mkdir -p dist
-          mv "uast4go-${GOOS}-${GOARCH}${SUFFIX}" dist/
-          
-          echo "✅ Built: uast4go-${GOOS}-${GOARCH}${SUFFIX}"
-        shell: bash  # 显式指定 bash（虽然 Ubuntu/macOS 默认就是，保持一致）
-
+  
+          go build -o "dist/uast4go-${{ matrix.goos }}-${{ matrix.goarch }}${SUFFIX}" .
+          echo "✅ Built: uast4go-${{ matrix.goos }}-${{ matrix.goarch }}${SUFFIX}"
+  
+          # 验证输出文件存在
+          if [ ! -f "dist/uast4go-${{ matrix.goos }}-${{ matrix.goarch }}${SUFFIX}" ]; then
+            echo "❌ Build failed: binary not found!"
+            exit 1
+          fi
+  
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: go-${{ matrix.goos }}-${{ matrix.goarch }}
-          path: parser-Go/dist/
-
-      - name: Set output
-        id: set_output
-        run: |
-          echo "artifacts=go-${{ matrix.goos }}-${{ matrix.goarch }}" >> $GITHUB_OUTPUT
+          name: ${{ matrix.artifact_name }}
+          path: ${{ matrix.output_path }}
+  
 
   # 5. 构建 Python 可执行文件（多平台）
   build_python:
