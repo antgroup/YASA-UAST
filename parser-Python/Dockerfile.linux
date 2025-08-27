@@ -33,11 +33,14 @@ RUN curl -L -o Miniconda3.sh https://repo.anaconda.com/miniconda/Miniconda3-late
 
 ENV PATH=/opt/conda/bin:$PATH
 
-# 创建 Python 3.13 环境
-RUN conda create -n py313 python=3.13 -y && \
+# 接受 Anaconda ToS 并创建 Python 3.13 环境
+RUN conda tos accept --override-channels \
+    --channel https://repo.anaconda.com/pkgs/main \
+    --channel https://repo.anaconda.com/pkgs/r && \
+    conda create -n py313 python=3.13 -y && \
     /opt/conda/envs/py313/bin/pip install pyinstaller
 
-# 设置环境
+# 设置环境变量
 ENV CONDA_DEFAULT_ENV=py313
 ENV PATH=/opt/conda/envs/py313/bin:$PATH
 
