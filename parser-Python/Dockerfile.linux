@@ -1,24 +1,52 @@
-# Dockerfile.uast4py-ubuntu22
-FROM ubuntu:22.04
+# parser-Python/Dockerfile.linux
+FROM almalinux:8
 
-RUN apt update && \
-    DEBIAN_FRONTEND=noninteractive apt install -y \
-        software-properties-common && \
-    add-apt-repository ppa:deadsnakes/ppa -y && \
-    apt update && \
-    apt install -y \
-        python3.13 python3.13-dev python3.13-venv \
-        curl && \
-    rm -rf /var/lib/apt/lists/*
+# 使用阿里云镜像加速 yum
+RUN sed -e 's|^mirrorlist=|#mirrorlist=|g' \
+        -e 's|^#baseurl=http://mirror.centos.org|baseurl=https://mirrors.aliyun.com|g' \
+        -i /etc/yum.repos.d/CentOS-*.repo && \
+    dnf clean all && \
+    dnf makecache
+
+# 安装构建工具
+RUN dnf groupinstall -y "Development Tools" && \
+    dnf install -y \
+        wget tar bzip2 gzip \
+        zlib-devel bzip2-devel openssl-devel \
+        ncurses-devel sqlite-devel readline-devel \
+        tk-devel libffi-devel xz-devel && \
+    dnf clean all
+
+# 安装 Miniconda
+RUN curl -L -o Miniconda3.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh && \
+    bash Miniconda3.sh -b -p /opt/conda && \
+    rm Miniconda3.sh
+
+ENV PATH=/opt/conda/bin:$PATH
+
+# 创建 Python 3.13 环境
+RUN conda create -n py313 python=3.13 -y && \
+    /opt/conda/envs/py313/bin/pip install pyinstaller
+
+# 设置环境
+ENV CONDA_DEFAULT_ENV=py313
+ENV PATH=/opt/conda/envs/py313/bin:$PATH
 
 WORKDIR /app
+
+# 参数化构建
+ARG GOOS
+ARG GOARCH
+
 COPY parser-Python .
 
-RUN curl -sS https://bootstrap.pypa.io/get-pip.py | python3.13 && \
-    python3.13 -m venv venv && \
-    . venv/bin/activate && \
-    pip install -r requirements.txt && \
-    pip install pyinstaller && \
-    pyinstaller --onefile uast/builder.py
+# 安装项目依赖
+RUN pip install -r requirements.txt
 
-CMD ["cp", "dist/builder", "/output/uast4py-linux-amd64"]
+# 打包 PyInstaller 二进制
+RUN pyinstaller \
+    --onefile \
+    uast/builder.py
+
+# 输出构建完成提示
+CMD ["echo", "Build complete: uast4py-linux-amd64 (glibc 2.28 compatible)"]
