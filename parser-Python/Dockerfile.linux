@@ -1,27 +1,24 @@
-# parser-Python/Dockerfile.linux
-FROM python:3.13-slim
+# Dockerfile.uast4py-ubuntu22
+FROM ubuntu:22.04
 
-# 安装构建依赖（PyInstaller 需要这些）
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
-        gcc \
-        g++ \
-        make \
-        git \
-        wget \
-        binutils \
-        && rm -rf /var/lib/apt/lists/*
+RUN apt update && \
+    DEBIAN_FRONTEND=noninteractive apt install -y \
+        software-properties-common && \
+    add-apt-repository ppa:deadsnakes/ppa -y && \
+    apt update && \
+    apt install -y \
+        python3.13 python3.13-dev python3.13-venv \
+        curl && \
+    rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
-
 COPY parser-Python .
 
-RUN pip install --no-cache-dir -r requirements.txt
-RUN pip install pyinstaller
+RUN curl -sS https://bootstrap.pypa.io/get-pip.py | python3.13 && \
+    python3.13 -m venv venv && \
+    . venv/bin/activate && \
+    pip install -r requirements.txt && \
+    pip install pyinstaller && \
+    pyinstaller --onefile uast/builder.py
 
-RUN pyinstaller \
-    --onefile \
-    uast/builder.py
-
-# 构建完成，输出在 dist/
-CMD ["echo", "Build complete"]
+CMD ["cp", "dist/builder", "/output/uast4py-linux-amd64"]
