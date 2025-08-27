@@ -1,10 +1,9 @@
 # parser-Python/Dockerfile.linux
 FROM almalinux:8
 
-# 使用阿里云镜像加速 yum
-RUN sed -e 's|^mirrorlist=|#mirrorlist=|g' \
-        -e 's|^#baseurl=http://mirror.centos.org|baseurl=https://mirrors.aliyun.com|g' \
-        -i /etc/yum.repos.d/CentOS-*.repo && \
+# ✅ 正确替换 AlmaLinux 的镜像源为阿里云
+RUN sed -i 's|^mirrorlist=|#mirrorlist=|g' /etc/yum.repos.d/almalinux*.repo && \
+    sed -i 's|#baseurl=https://repo.almalinux.org|baseurl=https://mirrors.aliyun.com/almalinux|g' /etc/yum.repos.d/almalinux*.repo && \
     dnf clean all && \
     dnf makecache
 
@@ -34,7 +33,7 @@ ENV PATH=/opt/conda/envs/py313/bin:$PATH
 
 WORKDIR /app
 
-# 参数化构建
+# 参数化构建（可选）
 ARG GOOS
 ARG GOARCH
 
