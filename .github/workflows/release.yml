@@ -31,7 +31,6 @@ jobs:
           fi
 
   # 2. 发布 specification
-  # 2. 发布 specification
   publish_spec:
     needs: get_version
     runs-on: ubuntu-latest
@@ -62,7 +61,8 @@ jobs:
             echo "✅ Version $VERSION of @ant-yasa/uast-spec already published, skipping."
             exit 0
           fi
-              # === 安装依赖 ===
+          
+          # === 安装依赖 ===
           echo "🟢 Installing dependencies..."
           npm install
           echo "✅ Dependencies installed."
@@ -105,7 +105,6 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-
   # 3. 发布 parser-Java-Js
   publish_parser_js:
     needs: [publish_spec, get_version]
@@ -131,13 +130,6 @@ jobs:
         with:
           node-version: 18
           registry-url: https://registry.npmjs.org/
-  
-      # - name: Run tests
-      #   working-directory: parser-Java-Js
-      #   run: |
-      #     echo "🧪 Running tests: npm run test"
-      #     npm run test
-      #     echo "✅ Tests passed!"
 
       - name: Check and Publish
         working-directory: parser-Java-Js
@@ -216,9 +208,7 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-
   # 4. 构建 Go 可执行文件（多平台）
-  # 4. 构建 Go 可执行文件（多平台）—— 精确枚举模式
   build_go:
     needs: publish_parser_js
     runs-on: ubuntu-latest
@@ -231,36 +221,36 @@ jobs:
             goarch: amd64
             artifact_name: go-linux-amd64
             output_path: parser-Go/dist/uast4go-linux-amd64
-  
+
           # ========== macOS ==========
           - os: macos-latest
             goos: darwin
             goarch: amd64
-            artifact_name: go-darwin-amd64
-            output_path: parser-Go/dist/uast4go-darwin-amd64
-  
+            artifact_name: go-mac-amd64
+            output_path: parser-Go/dist/uast4go-mac-amd64
+
           - os: macos-latest
             goos: darwin
             goarch: arm64
-            artifact_name: go-darwin-arm64
-            output_path: parser-Go/dist/uast4go-darwin-arm64
-  
+            artifact_name: go-mac-arm64
+            output_path: parser-Go/dist/uast4go-mac-arm64
+
           # ========== Windows ==========
           # - os: windows-latest
           #   goos: windows
           #   goarch: amd64
           #   artifact_name: go-windows-amd64
           #   output_path: parser-Go/dist/uast4go-windows-amd64.exe
-  
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-  
+
       - name: Setup Go
         uses: actions/setup-go@v4
         with:
           go-version: '1.21'
-  
+
       - name: Build Go binary
         working-directory: parser-Go
         shell: bash
@@ -268,30 +258,32 @@ jobs:
           export CGO_ENABLED=0
           export GOOS=${{ matrix.goos }}
           export GOARCH=${{ matrix.goarch }}
-          # 可选：ARM 版本
           [ -n "${{ matrix.goarm }}" ] && export GOARM=${{ matrix.goarm }}
-  
+
           echo "🏗️ Building for $GOOS/$GOARCH${GOARM:+/$GOARM}"
           echo "Go version: $(go version)"
-  
+
           SUFFIX=""
-          if [ "$GOOS" = "windows" ]; then SUFFIX=".exe"; fi
-  
-          go build -o "dist/uast4go-${{ matrix.goos }}-${{ matrix.goarch }}${SUFFIX}" .
-          echo "✅ Built: uast4go-${{ matrix.goos }}-${{ matrix.goarch }}${SUFFIX}"
-  
-          # 验证输出文件存在
-          if [ ! -f "dist/uast4go-${{ matrix.goos }}-${{ matrix.goarch }}${SUFFIX}" ]; then
+          OUTPUT_NAME="uast4go-${{ matrix.goos }}-${{ matrix.goarch }}"
+          if [ "$GOOS" = "windows" ]; then
+            SUFFIX=".exe"
+          elif [ "$GOOS" = "darwin" ]; then
+            OUTPUT_NAME="uast4go-mac-${{ matrix.goarch }}"
+          fi
+
+          go build -o "dist/${OUTPUT_NAME}${SUFFIX}" .
+          echo "✅ Built: ${OUTPUT_NAME}${SUFFIX}"
+
+          if [ ! -f "dist/${OUTPUT_NAME}${SUFFIX}" ]; then
             echo "❌ Build failed: binary not found!"
             exit 1
           fi
-  
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.artifact_name }}
           path: ${{ matrix.output_path }}
-  
 
   # 5. 构建 Python 可执行文件（多平台）
   build_python:
@@ -309,20 +301,21 @@ jobs:
 
           - runner: native
             os: macos-latest
-            target: darwin
+            target: mac
             goos: darwin
             goarch: amd64
-            artifact_name: python-darwin-amd64
-            output_path: parser-Python/dist/uast4py-darwin-amd64
+            artifact_name: python-mac-amd64
+            output_path: parser-Python/dist/uast4py-mac-amd64
 
           - runner: native
             os: macos-latest
-            target: darwin
+            target: mac
             goos: darwin
             goarch: arm64
-            artifact_name: python-darwin-arm64
-            output_path: parser-Python/dist/uast4py-darwin-arm64
+            artifact_name: python-mac-arm64
+            output_path: parser-Python/dist/uast4py-mac-arm64
 
+          # ========== Windows ==========
           # - runner: native
           #   os: windows-latest
           #   target: windows
@@ -330,6 +323,7 @@ jobs:
           #   goarch: amd64
           #   artifact_name: python-windows-amd64
           #   output_path: parser-Python/dist/uast4py-windows-amd64.exe
+
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout
@@ -339,7 +333,7 @@ jobs:
       - name: Build Linux binary with Docker
         if: ${{ matrix.runner == 'docker' }}
         run: |
-          echo "🐳 Building Linux binary in CentOS 8 container..."
+          echo "🐳 Building Linux binary in container..."
           docker build \
             --build-arg GOOS=${{ matrix.goos }} \
             --build-arg GOARCH=${{ matrix.goarch }} \
@@ -370,7 +364,7 @@ jobs:
         if: ${{ matrix.runner == 'native' }}
         working-directory: parser-Python
         run: |
-          echo "🏗️ Building for ${{ matrix.goos }}-${{ matrix.goarch }}"
+          echo "🏗️ Building for ${{ matrix.target }} ${{ matrix.goarch }}"
           python -m venv .venv
           if [ "$RUNNER_OS" = "Windows" ]; then
             source .venv/Scripts/activate
@@ -380,16 +374,19 @@ jobs:
           pip install -r requirements.txt
           pip install pyinstaller
           pyinstaller --onefile --paths .venv/lib/python3.13/site-packages uast/builder.py
+
           mkdir -p dist
-          OUTPUT_NAME="uast4py-${{ matrix.goos }}-${{ matrix.goarch }}"
+          OUTPUT_NAME=""
           if [ "$RUNNER_OS" = "Windows" ]; then
+            OUTPUT_NAME="uast4py-windows-${{ matrix.goarch }}"
             mv dist/builder.exe "dist/${OUTPUT_NAME}.exe"
             echo "✅ Built: ${OUTPUT_NAME}.exe"
           else
+            OUTPUT_NAME="uast4py-mac-${{ matrix.goarch }}"
             mv dist/builder "dist/${OUTPUT_NAME}"
             echo "✅ Built: ${OUTPUT_NAME}"
           fi
-        shell: bash  # 显式指定 bash（虽然 Ubuntu/macOS 默认就是，保持一致）
+        shell: bash
 
       - name: Upload artifact
         if: ${{ matrix.runner == 'native' }}
