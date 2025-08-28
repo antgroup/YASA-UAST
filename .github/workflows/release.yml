@@ -246,11 +246,11 @@ jobs:
             output_path: parser-Go/dist/uast4go-darwin-arm64
   
           # ========== Windows ==========
-          - os: windows-latest
-            goos: windows
-            goarch: amd64
-            artifact_name: go-windows-amd64
-            output_path: parser-Go/dist/uast4go-windows-amd64.exe
+          # - os: windows-latest
+          #   goos: windows
+          #   goarch: amd64
+          #   artifact_name: go-windows-amd64
+          #   output_path: parser-Go/dist/uast4go-windows-amd64.exe
   
     steps:
       - name: Checkout
@@ -323,13 +323,13 @@ jobs:
             artifact_name: python-darwin-arm64
             output_path: parser-Python/dist/uast4py-darwin-arm64
 
-          - runner: native
-            os: windows-latest
-            target: windows
-            goos: windows
-            goarch: amd64
-            artifact_name: python-windows-amd64
-            output_path: parser-Python/dist/uast4py-windows-amd64.exe
+          # - runner: native
+          #   os: windows-latest
+          #   target: windows
+          #   goos: windows
+          #   goarch: amd64
+          #   artifact_name: python-windows-amd64
+          #   output_path: parser-Python/dist/uast4py-windows-amd64.exe
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout
