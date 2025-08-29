@@ -202,15 +202,7 @@ export class RESOURCEMANAGER extends ServiceSummary {
             },
             columns: ['full_host_name']
         })
-        // serviceStatusRecord = [{
-        //   full_host_name: 'antyarn1.inc.alipay.net'
-        // }]
-        // serviceStatusRecord = [{
-        //   full_host_name: 'rm-dsaas.prefromoffice.alipay.net'
-        // }, {
-        //   full_host_name: 'rm2-dsaas.prefromoffice.alipay.net'
-        // }]
-        //得到resourcemanager的Active和StandBy的RM
+
         this.ret['haState'] = []
         for (let i = 0; i < serviceStatusRecord.length; i++) {
             let fullHostName = serviceStatusRecord[i].full_host_name
@@ -409,7 +401,7 @@ export class NODEMANAGER extends ServiceSummary {
 
     public async getPartitionsByNmServiceName (nmServiceName: string) {
         let rmActiveHost = await this.getActiveRmHostByNmServiceName(nmServiceName)
-        // rmActiveHost = 'rm-dsaas.prefromoffice.alipay.net'
+        // rmActiveHost = 'rm-dsaas.prefromoffice.xxxxx.net'
         return this.getPartitionsByRmHost(rmActiveHost)
     }
 
@@ -527,7 +519,7 @@ export class NODEMANAGER extends ServiceSummary {
      */
     public async getNodeToLabels (nmServiceName: string) {
         // console.log('nmServiceName', nmServiceName)
-        // let rmActiveHost = 'antyarn1.inc.alipay.net'
+        // let rmActiveHost = 'antyarn1.inc.xxxxx.net'
         let rmActiveHost = await this.getActiveRmHostByNmServiceName(nmServiceName)
         let entry = []
         const options = {
@@ -591,7 +583,7 @@ export class NODEMANAGER extends ServiceSummary {
      */
     public async getNodeListByLabel (nmServiceName: string, labelList: string[]) {
 
-        // rmActiveHost = 'rm2-dsaas.prefromoffice.alipay.net'
+        // rmActiveHost = 'rm2-dsaas.prefromoffice.xxxxx.net'
 
         let nodeToLabels = await this.getNodeToLabels(nmServiceName)
         let nodeHostList = []
@@ -637,7 +629,7 @@ export class NODEMANAGER extends ServiceSummary {
     public async getClusterMetaOfNodeList (nmServiceName: string) {
         let rmActiveHost = await this.getActiveRmHostByNmServiceName(nmServiceName)
 
-        // rmActiveHost = 'rm2-dsaas.prefromoffice.alipay.net'
+        // rmActiveHost = 'rm2-dsaas.prefromoffice.xxxxx.net'
 
         let nodes = await this.getClusterNodesByRmHost(rmActiveHost)
         let queues = await this.getClusterQueuesByRmHost(rmActiveHost)
@@ -703,7 +695,7 @@ export class NODEMANAGER extends ServiceSummary {
     public async getSummary (nmServiceName) {
         // console.log('nmServiceName', nmServiceName)
         let rmActiveHost = await this.getActiveRmHostByNmServiceName(nmServiceName)
-        // let rmActiveHost = 'antyarn1.inc.alipay.net'
+        // let rmActiveHost = 'antyarn1.inc.xxxxx.net'
         let nodes = await this.getClusterNodesByRmHost(rmActiveHost)
 
         this.ctx.logger.warn('nodes nodes nodes', JSON.stringify(nodes))

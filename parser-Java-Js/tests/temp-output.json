@@ -1,0 +1,1809 @@
+{
+  "type": "CompileUnit",
+  "body": [
+    {
+      "type": "ClassDefinition",
+      "id": {
+        "type": "Identifier",
+        "name": "Base1",
+        "_meta": {
+          "_extra": {
+            "start": 6,
+            "end": 11
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 7
+          },
+          "end": {
+            "line": 1,
+            "column": 12
+          },
+          "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+        }
+      },
+      "body": [
+        {
+          "type": "FunctionDefinition",
+          "id": {
+            "type": "Identifier",
+            "name": "constructor",
+            "_meta": {
+              "_extra": {
+                "start": 16,
+                "end": 27
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 3
+              },
+              "end": {
+                "line": 2,
+                "column": 14
+              }
+            }
+          },
+          "parameters": [],
+          "returnType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 3
+              },
+              "end": {
+                "line": 4,
+                "column": 4
+              },
+              "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+            }
+          },
+          "body": {
+            "type": "ScopedStatement",
+            "body": [
+              {
+                "type": "ScopedStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "AssignmentExpression",
+                      "left": {
+                        "type": "MemberAccess",
+                        "object": {
+                          "type": "ThisExpression",
+                          "_meta": {
+                            "_extra": {
+                              "start": 36,
+                              "end": 40
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 3,
+                              "column": 5
+                            },
+                            "end": {
+                              "line": 3,
+                              "column": 9
+                            },
+                            "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                          }
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "a1",
+                          "_meta": {
+                            "_extra": {
+                              "start": 41,
+                              "end": 43
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 3,
+                              "column": 10
+                            },
+                            "end": {
+                              "line": 3,
+                              "column": 12
+                            },
+                            "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                          }
+                        },
+                        "computed": false,
+                        "_meta": {
+                          "_extra": {
+                            "start": 36,
+                            "end": 43
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 3,
+                            "column": 5
+                          },
+                          "end": {
+                            "line": 3,
+                            "column": 12
+                          },
+                          "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                        }
+                      },
+                      "right": {
+                        "type": "Literal",
+                        "value": 3,
+                        "literalType": "number",
+                        "_meta": {
+                          "_extra": {
+                            "start": 46,
+                            "end": 47
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 3,
+                            "column": 15
+                          },
+                          "end": {
+                            "line": 3,
+                            "column": 16
+                          },
+                          "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                        }
+                      },
+                      "operator": "=",
+                      "cloned": false,
+                      "_meta": {
+                        "_extra": {
+                          "start": 36,
+                          "end": 47
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 3,
+                          "column": 5
+                        },
+                        "end": {
+                          "line": 3,
+                          "column": 16
+                        },
+                        "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                      }
+                    },
+                    "_meta": {
+                      "_extra": {
+                        "start": 36,
+                        "end": 48
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 3,
+                        "column": 5
+                      },
+                      "end": {
+                        "line": 3,
+                        "column": 17
+                      },
+                      "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                    }
+                  }
+                ],
+                "id": null,
+                "_meta": {
+                  "_extra": {
+                    "start": 30,
+                    "end": 52,
+                    "directives": []
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 2,
+                    "column": 17
+                  },
+                  "end": {
+                    "line": 4,
+                    "column": 4
+                  },
+                  "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                }
+              }
+            ],
+            "id": null,
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 3
+              },
+              "end": {
+                "line": 4,
+                "column": 4
+              },
+              "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+            }
+          },
+          "modifiers": [],
+          "_meta": {
+            "isConstructor": true,
+            "_extra": {
+              "start": 16,
+              "end": 52
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 3
+            },
+            "end": {
+              "line": 4,
+              "column": 4
+            },
+            "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+          }
+        },
+        {
+          "type": "FunctionDefinition",
+          "id": {
+            "type": "Identifier",
+            "name": "b1",
+            "_meta": {
+              "_extra": {
+                "start": 56,
+                "end": 58
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 6,
+                "column": 3
+              },
+              "end": {
+                "line": 6,
+                "column": 5
+              }
+            }
+          },
+          "parameters": [],
+          "returnType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 6,
+                "column": 3
+              },
+              "end": {
+                "line": 8,
+                "column": 4
+              },
+              "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+            }
+          },
+          "body": {
+            "type": "ScopedStatement",
+            "body": [
+              {
+                "type": "ScopedStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "MemberAccess",
+                      "object": {
+                        "type": "ThisExpression",
+                        "_meta": {
+                          "_extra": {
+                            "start": 74,
+                            "end": 78
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 7,
+                            "column": 12
+                          },
+                          "end": {
+                            "line": 7,
+                            "column": 16
+                          },
+                          "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                        }
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "a1",
+                        "_meta": {
+                          "_extra": {
+                            "start": 79,
+                            "end": 81
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 7,
+                            "column": 17
+                          },
+                          "end": {
+                            "line": 7,
+                            "column": 19
+                          },
+                          "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                        }
+                      },
+                      "computed": false,
+                      "_meta": {
+                        "_extra": {
+                          "start": 74,
+                          "end": 81
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 7,
+                          "column": 12
+                        },
+                        "end": {
+                          "line": 7,
+                          "column": 19
+                        },
+                        "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                      }
+                    },
+                    "isYield": false,
+                    "_meta": {
+                      "_extra": {
+                        "start": 67,
+                        "end": 82
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 7,
+                        "column": 5
+                      },
+                      "end": {
+                        "line": 7,
+                        "column": 20
+                      },
+                      "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                    }
+                  }
+                ],
+                "id": null,
+                "_meta": {
+                  "_extra": {
+                    "start": 61,
+                    "end": 86,
+                    "directives": []
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 6,
+                    "column": 8
+                  },
+                  "end": {
+                    "line": 8,
+                    "column": 4
+                  },
+                  "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                }
+              }
+            ],
+            "id": null,
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 6,
+                "column": 3
+              },
+              "end": {
+                "line": 8,
+                "column": 4
+              },
+              "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+            }
+          },
+          "modifiers": [],
+          "_meta": {
+            "_extra": {
+              "start": 56,
+              "end": 86
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 6,
+              "column": 3
+            },
+            "end": {
+              "line": 8,
+              "column": 4
+            },
+            "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+          }
+        }
+      ],
+      "supers": [
+        null
+      ],
+      "_meta": {
+        "_extra": {
+          "end": 88
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 1
+        },
+        "end": {
+          "line": 9,
+          "column": 2
+        },
+        "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+      }
+    },
+    {
+      "type": "ClassDefinition",
+      "id": {
+        "type": "Identifier",
+        "name": "Base2",
+        "_meta": {
+          "_extra": {
+            "start": 96,
+            "end": 101
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 11,
+            "column": 7
+          },
+          "end": {
+            "line": 11,
+            "column": 12
+          },
+          "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+        }
+      },
+      "body": [
+        {
+          "type": "FunctionDefinition",
+          "id": {
+            "type": "Identifier",
+            "name": "constructor",
+            "_meta": {
+              "_extra": {
+                "start": 119,
+                "end": 130
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 12,
+                "column": 3
+              },
+              "end": {
+                "line": 12,
+                "column": 14
+              }
+            }
+          },
+          "parameters": [],
+          "returnType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 12,
+                "column": 3
+              },
+              "end": {
+                "line": 16,
+                "column": 4
+              },
+              "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+            }
+          },
+          "body": {
+            "type": "ScopedStatement",
+            "body": [
+              {
+                "type": "ScopedStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "SuperExpression",
+                        "_meta": {
+                          "_extra": {
+                            "start": 139,
+                            "end": 144
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 13,
+                            "column": 5
+                          },
+                          "end": {
+                            "line": 13,
+                            "column": 10
+                          },
+                          "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                        }
+                      },
+                      "arguments": [],
+                      "_meta": {
+                        "_extra": {
+                          "start": 139,
+                          "end": 146
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 13,
+                          "column": 5
+                        },
+                        "end": {
+                          "line": 13,
+                          "column": 12
+                        },
+                        "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                      }
+                    },
+                    "_meta": {
+                      "_extra": {
+                        "start": 139,
+                        "end": 147
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 13,
+                        "column": 5
+                      },
+                      "end": {
+                        "line": 13,
+                        "column": 13
+                      },
+                      "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                    }
+                  },
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "AssignmentExpression",
+                      "left": {
+                        "type": "MemberAccess",
+                        "object": {
+                          "type": "ThisExpression",
+                          "_meta": {
+                            "_extra": {
+                              "start": 152,
+                              "end": 156
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 14,
+                              "column": 5
+                            },
+                            "end": {
+                              "line": 14,
+                              "column": 9
+                            },
+                            "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                          }
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "a1",
+                          "_meta": {
+                            "_extra": {
+                              "start": 157,
+                              "end": 159
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 14,
+                              "column": 10
+                            },
+                            "end": {
+                              "line": 14,
+                              "column": 12
+                            },
+                            "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                          }
+                        },
+                        "computed": false,
+                        "_meta": {
+                          "_extra": {
+                            "start": 152,
+                            "end": 159
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 14,
+                            "column": 5
+                          },
+                          "end": {
+                            "line": 14,
+                            "column": 12
+                          },
+                          "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                        }
+                      },
+                      "right": {
+                        "type": "Literal",
+                        "value": 4,
+                        "literalType": "number",
+                        "_meta": {
+                          "_extra": {
+                            "start": 162,
+                            "end": 163
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 14,
+                            "column": 15
+                          },
+                          "end": {
+                            "line": 14,
+                            "column": 16
+                          },
+                          "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                        }
+                      },
+                      "operator": "=",
+                      "cloned": false,
+                      "_meta": {
+                        "_extra": {
+                          "start": 152,
+                          "end": 163
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 14,
+                          "column": 5
+                        },
+                        "end": {
+                          "line": 14,
+                          "column": 16
+                        },
+                        "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                      }
+                    },
+                    "_meta": {
+                      "_extra": {
+                        "start": 152,
+                        "end": 164
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 14,
+                        "column": 5
+                      },
+                      "end": {
+                        "line": 14,
+                        "column": 17
+                      },
+                      "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                    }
+                  },
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "AssignmentExpression",
+                      "left": {
+                        "type": "MemberAccess",
+                        "object": {
+                          "type": "ThisExpression",
+                          "_meta": {
+                            "_extra": {
+                              "start": 169,
+                              "end": 173
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 15,
+                              "column": 5
+                            },
+                            "end": {
+                              "line": 15,
+                              "column": 9
+                            },
+                            "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                          }
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "a2",
+                          "_meta": {
+                            "_extra": {
+                              "start": 174,
+                              "end": 176
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 15,
+                              "column": 10
+                            },
+                            "end": {
+                              "line": 15,
+                              "column": 12
+                            },
+                            "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                          }
+                        },
+                        "computed": false,
+                        "_meta": {
+                          "_extra": {
+                            "start": 169,
+                            "end": 176
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 15,
+                            "column": 5
+                          },
+                          "end": {
+                            "line": 15,
+                            "column": 12
+                          },
+                          "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                        }
+                      },
+                      "right": {
+                        "type": "Literal",
+                        "value": 5,
+                        "literalType": "number",
+                        "_meta": {
+                          "_extra": {
+                            "start": 179,
+                            "end": 180
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 15,
+                            "column": 15
+                          },
+                          "end": {
+                            "line": 15,
+                            "column": 16
+                          },
+                          "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                        }
+                      },
+                      "operator": "=",
+                      "cloned": false,
+                      "_meta": {
+                        "_extra": {
+                          "start": 169,
+                          "end": 180
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 15,
+                          "column": 5
+                        },
+                        "end": {
+                          "line": 15,
+                          "column": 16
+                        },
+                        "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                      }
+                    },
+                    "_meta": {
+                      "_extra": {
+                        "start": 169,
+                        "end": 181
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 15,
+                        "column": 5
+                      },
+                      "end": {
+                        "line": 15,
+                        "column": 17
+                      },
+                      "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                    }
+                  }
+                ],
+                "id": null,
+                "_meta": {
+                  "_extra": {
+                    "start": 133,
+                    "end": 185,
+                    "directives": []
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 12,
+                    "column": 17
+                  },
+                  "end": {
+                    "line": 16,
+                    "column": 4
+                  },
+                  "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                }
+              }
+            ],
+            "id": null,
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 12,
+                "column": 3
+              },
+              "end": {
+                "line": 16,
+                "column": 4
+              },
+              "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+            }
+          },
+          "modifiers": [],
+          "_meta": {
+            "isConstructor": true,
+            "_extra": {
+              "start": 119,
+              "end": 185
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 12,
+              "column": 3
+            },
+            "end": {
+              "line": 16,
+              "column": 4
+            },
+            "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+          }
+        },
+        {
+          "type": "FunctionDefinition",
+          "id": {
+            "type": "Identifier",
+            "name": "b2",
+            "_meta": {
+              "_extra": {
+                "start": 189,
+                "end": 191
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 18,
+                "column": 3
+              },
+              "end": {
+                "line": 18,
+                "column": 5
+              }
+            }
+          },
+          "parameters": [],
+          "returnType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 18,
+                "column": 3
+              },
+              "end": {
+                "line": 20,
+                "column": 4
+              },
+              "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+            }
+          },
+          "body": {
+            "type": "ScopedStatement",
+            "body": [
+              {
+                "type": "ScopedStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "BinaryExpression",
+                      "operator": "+",
+                      "left": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "SuperExpression",
+                            "_meta": {
+                              "_extra": {
+                                "start": 207,
+                                "end": 212
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 19,
+                                "column": 12
+                              },
+                              "end": {
+                                "line": 19,
+                                "column": 17
+                              },
+                              "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                            }
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "b1",
+                            "_meta": {
+                              "_extra": {
+                                "start": 213,
+                                "end": 215
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 19,
+                                "column": 18
+                              },
+                              "end": {
+                                "line": 19,
+                                "column": 20
+                              },
+                              "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                            }
+                          },
+                          "computed": false,
+                          "_meta": {
+                            "_extra": {
+                              "start": 207,
+                              "end": 215
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 19,
+                              "column": 12
+                            },
+                            "end": {
+                              "line": 19,
+                              "column": 20
+                            },
+                            "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                          }
+                        },
+                        "arguments": [],
+                        "_meta": {
+                          "_extra": {
+                            "start": 207,
+                            "end": 217
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 19,
+                            "column": 12
+                          },
+                          "end": {
+                            "line": 19,
+                            "column": 22
+                          },
+                          "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                        }
+                      },
+                      "right": {
+                        "type": "Literal",
+                        "value": 1,
+                        "literalType": "number",
+                        "_meta": {
+                          "_extra": {
+                            "start": 220,
+                            "end": 221
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 19,
+                            "column": 25
+                          },
+                          "end": {
+                            "line": 19,
+                            "column": 26
+                          },
+                          "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                        }
+                      },
+                      "_meta": {
+                        "_extra": {
+                          "start": 207,
+                          "end": 221
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 19,
+                          "column": 12
+                        },
+                        "end": {
+                          "line": 19,
+                          "column": 26
+                        },
+                        "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                      }
+                    },
+                    "isYield": false,
+                    "_meta": {
+                      "_extra": {
+                        "start": 200,
+                        "end": 222
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 19,
+                        "column": 5
+                      },
+                      "end": {
+                        "line": 19,
+                        "column": 27
+                      },
+                      "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                    }
+                  }
+                ],
+                "id": null,
+                "_meta": {
+                  "_extra": {
+                    "start": 194,
+                    "end": 226,
+                    "directives": []
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 18,
+                    "column": 8
+                  },
+                  "end": {
+                    "line": 20,
+                    "column": 4
+                  },
+                  "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                }
+              }
+            ],
+            "id": null,
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 18,
+                "column": 3
+              },
+              "end": {
+                "line": 20,
+                "column": 4
+              },
+              "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+            }
+          },
+          "modifiers": [],
+          "_meta": {
+            "_extra": {
+              "start": 189,
+              "end": 226
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 18,
+              "column": 3
+            },
+            "end": {
+              "line": 20,
+              "column": 4
+            },
+            "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+          }
+        }
+      ],
+      "supers": [
+        {
+          "type": "Identifier",
+          "name": "Base1",
+          "_meta": {
+            "_extra": {
+              "start": 110,
+              "end": 115
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 11,
+              "column": 21
+            },
+            "end": {
+              "line": 11,
+              "column": 26
+            },
+            "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+          }
+        }
+      ],
+      "_meta": {
+        "_extra": {
+          "start": 90,
+          "end": 228
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 1
+        },
+        "end": {
+          "line": 21,
+          "column": 2
+        },
+        "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+      }
+    },
+    {
+      "type": "ClassDefinition",
+      "id": {
+        "type": "Identifier",
+        "name": "Derived",
+        "_meta": {
+          "_extra": {
+            "start": 236,
+            "end": 243
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 23,
+            "column": 7
+          },
+          "end": {
+            "line": 23,
+            "column": 14
+          },
+          "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+        }
+      },
+      "body": [
+        {
+          "type": "FunctionDefinition",
+          "id": {
+            "type": "Identifier",
+            "name": "constructor",
+            "_meta": {
+              "_extra": {
+                "start": 261,
+                "end": 272
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 24,
+                "column": 3
+              },
+              "end": {
+                "line": 24,
+                "column": 14
+              }
+            }
+          },
+          "parameters": [],
+          "returnType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 24,
+                "column": 3
+              },
+              "end": {
+                "line": 27,
+                "column": 4
+              },
+              "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+            }
+          },
+          "body": {
+            "type": "ScopedStatement",
+            "body": [
+              {
+                "type": "ScopedStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "SuperExpression",
+                        "_meta": {
+                          "_extra": {
+                            "start": 281,
+                            "end": 286
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 25,
+                            "column": 5
+                          },
+                          "end": {
+                            "line": 25,
+                            "column": 10
+                          },
+                          "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                        }
+                      },
+                      "arguments": [],
+                      "_meta": {
+                        "_extra": {
+                          "start": 281,
+                          "end": 288
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 25,
+                          "column": 5
+                        },
+                        "end": {
+                          "line": 25,
+                          "column": 12
+                        },
+                        "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                      }
+                    },
+                    "_meta": {
+                      "_extra": {
+                        "start": 281,
+                        "end": 289
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 25,
+                        "column": 5
+                      },
+                      "end": {
+                        "line": 25,
+                        "column": 13
+                      },
+                      "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                    }
+                  },
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "AssignmentExpression",
+                      "left": {
+                        "type": "MemberAccess",
+                        "object": {
+                          "type": "ThisExpression",
+                          "_meta": {
+                            "_extra": {
+                              "start": 294,
+                              "end": 298
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 26,
+                              "column": 5
+                            },
+                            "end": {
+                              "line": 26,
+                              "column": 9
+                            },
+                            "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                          }
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "a3",
+                          "_meta": {
+                            "_extra": {
+                              "start": 299,
+                              "end": 301
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 26,
+                              "column": 10
+                            },
+                            "end": {
+                              "line": 26,
+                              "column": 12
+                            },
+                            "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                          }
+                        },
+                        "computed": false,
+                        "_meta": {
+                          "_extra": {
+                            "start": 294,
+                            "end": 301
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 26,
+                            "column": 5
+                          },
+                          "end": {
+                            "line": 26,
+                            "column": 12
+                          },
+                          "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                        }
+                      },
+                      "right": {
+                        "type": "Literal",
+                        "value": 6,
+                        "literalType": "number",
+                        "_meta": {
+                          "_extra": {
+                            "start": 304,
+                            "end": 305
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 26,
+                            "column": 15
+                          },
+                          "end": {
+                            "line": 26,
+                            "column": 16
+                          },
+                          "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                        }
+                      },
+                      "operator": "=",
+                      "cloned": false,
+                      "_meta": {
+                        "_extra": {
+                          "start": 294,
+                          "end": 305
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 26,
+                          "column": 5
+                        },
+                        "end": {
+                          "line": 26,
+                          "column": 16
+                        },
+                        "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                      }
+                    },
+                    "_meta": {
+                      "_extra": {
+                        "start": 294,
+                        "end": 306
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 26,
+                        "column": 5
+                      },
+                      "end": {
+                        "line": 26,
+                        "column": 17
+                      },
+                      "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                    }
+                  }
+                ],
+                "id": null,
+                "_meta": {
+                  "_extra": {
+                    "start": 275,
+                    "end": 310,
+                    "directives": []
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 24,
+                    "column": 17
+                  },
+                  "end": {
+                    "line": 27,
+                    "column": 4
+                  },
+                  "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                }
+              }
+            ],
+            "id": null,
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 24,
+                "column": 3
+              },
+              "end": {
+                "line": 27,
+                "column": 4
+              },
+              "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+            }
+          },
+          "modifiers": [],
+          "_meta": {
+            "isConstructor": true,
+            "_extra": {
+              "start": 261,
+              "end": 310
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 24,
+              "column": 3
+            },
+            "end": {
+              "line": 27,
+              "column": 4
+            },
+            "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+          }
+        },
+        {
+          "type": "FunctionDefinition",
+          "id": {
+            "type": "Identifier",
+            "name": "b3",
+            "_meta": {
+              "_extra": {
+                "start": 314,
+                "end": 316
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 29,
+                "column": 3
+              },
+              "end": {
+                "line": 29,
+                "column": 5
+              }
+            }
+          },
+          "parameters": [],
+          "returnType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 29,
+                "column": 3
+              },
+              "end": {
+                "line": 31,
+                "column": 4
+              },
+              "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+            }
+          },
+          "body": {
+            "type": "ScopedStatement",
+            "body": [
+              {
+                "type": "ScopedStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "BinaryExpression",
+                      "operator": "+",
+                      "left": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberAccess",
+                          "object": {
+                            "type": "SuperExpression",
+                            "_meta": {
+                              "_extra": {
+                                "start": 332,
+                                "end": 337
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 30,
+                                "column": 12
+                              },
+                              "end": {
+                                "line": 30,
+                                "column": 17
+                              },
+                              "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                            }
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "b2",
+                            "_meta": {
+                              "_extra": {
+                                "start": 338,
+                                "end": 340
+                              }
+                            },
+                            "loc": {
+                              "start": {
+                                "line": 30,
+                                "column": 18
+                              },
+                              "end": {
+                                "line": 30,
+                                "column": 20
+                              },
+                              "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                            }
+                          },
+                          "computed": false,
+                          "_meta": {
+                            "_extra": {
+                              "start": 332,
+                              "end": 340
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 30,
+                              "column": 12
+                            },
+                            "end": {
+                              "line": 30,
+                              "column": 20
+                            },
+                            "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                          }
+                        },
+                        "arguments": [],
+                        "_meta": {
+                          "_extra": {
+                            "start": 332,
+                            "end": 342
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 30,
+                            "column": 12
+                          },
+                          "end": {
+                            "line": 30,
+                            "column": 22
+                          },
+                          "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                        }
+                      },
+                      "right": {
+                        "type": "Literal",
+                        "value": 4,
+                        "literalType": "number",
+                        "_meta": {
+                          "_extra": {
+                            "start": 345,
+                            "end": 346
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 30,
+                            "column": 25
+                          },
+                          "end": {
+                            "line": 30,
+                            "column": 26
+                          },
+                          "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                        }
+                      },
+                      "_meta": {
+                        "_extra": {
+                          "start": 332,
+                          "end": 346
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 30,
+                          "column": 12
+                        },
+                        "end": {
+                          "line": 30,
+                          "column": 26
+                        },
+                        "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                      }
+                    },
+                    "isYield": false,
+                    "_meta": {
+                      "_extra": {
+                        "start": 325,
+                        "end": 347
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 30,
+                        "column": 5
+                      },
+                      "end": {
+                        "line": 30,
+                        "column": 27
+                      },
+                      "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                    }
+                  }
+                ],
+                "id": null,
+                "_meta": {
+                  "_extra": {
+                    "start": 319,
+                    "end": 351,
+                    "directives": []
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 29,
+                    "column": 8
+                  },
+                  "end": {
+                    "line": 31,
+                    "column": 4
+                  },
+                  "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+                }
+              }
+            ],
+            "id": null,
+            "_meta": {},
+            "loc": {
+              "start": {
+                "line": 29,
+                "column": 3
+              },
+              "end": {
+                "line": 31,
+                "column": 4
+              },
+              "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+            }
+          },
+          "modifiers": [],
+          "_meta": {
+            "_extra": {
+              "start": 314,
+              "end": 351
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 29,
+              "column": 3
+            },
+            "end": {
+              "line": 31,
+              "column": 4
+            },
+            "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+          }
+        }
+      ],
+      "supers": [
+        {
+          "type": "Identifier",
+          "name": "Base2",
+          "_meta": {
+            "_extra": {
+              "start": 252,
+              "end": 257
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 23,
+              "column": 23
+            },
+            "end": {
+              "line": 23,
+              "column": 28
+            },
+            "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+          }
+        }
+      ],
+      "_meta": {
+        "_extra": {
+          "start": 230,
+          "end": 353
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 1
+        },
+        "end": {
+          "line": 32,
+          "column": 2
+        },
+        "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+      }
+    }
+  ],
+  "language": "javascript",
+  "languageVersion": null,
+  "uri": "",
+  "version": "0.1.19-beta.6",
+  "_meta": {
+    "_extra": {
+      "end": 354,
+      "directives": []
+    }
+  },
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 1
+    },
+    "end": {
+      "line": 33,
+      "column": 1
+    },
+    "sourcefile": "/Users/curry/IdeaProjects/git/YASA-UAST/parser-Java-Js/tests/benchmark/base/class.js"
+  }
+}

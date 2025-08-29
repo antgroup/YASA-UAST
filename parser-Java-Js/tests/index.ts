@@ -1,66 +1,129 @@
 import 'mocha';
 import * as assert from 'assert';
-import { parse } from '../src/frontend/javascript/parser'
-import * as fs from 'fs'
-import * as path from 'path'
+import { parse } from '../src/frontend/javascript/parser';
+import * as fs from 'fs';
+import * as path from 'path';
 import * as globby from 'fast-glob';
 
-function refreshUastJson() {
-  const suffixMatch = ['*.js'];
-  const jsFiles = globby.sync(suffixMatch, { cwd: path.join(__dirname, '/benchmark/base') });
-  for (let file of jsFiles) {
-    const content = fs.readFileSync(path.join(__dirname, '/benchmark/base', file), 'utf8');
-    const ast = parse(content)
-    fs.writeFileSync(path.join(__dirname,'/benchmark/base', `${file}.json`), JSON.stringify(ast, null, 2), 'utf8');
+// 获取当前版本：优先使用环境变量，否则 fallback 到 package.json
+function getCurrentVersion(): string {
+  return process.env.UAST_VERSION || require('../package.json').version;
+}
+
+// 动态替换 AST 中的 sourcefile 和 version 字段
+function normalizeAst(ast: any, currentSourceFile: string, currentVersion: string): any {
+  if (!ast || typeof ast !== 'object') return ast;
+
+  const cloned = Array.isArray(ast) ? [...ast] : { ...ast };
+
+  for (const key in cloned) {
+    if (Object.prototype.hasOwnProperty.call(cloned, key)) {
+      // 替换 sourcefile 为当前环境的真实路径
+      if (key === 'sourcefile' && typeof cloned[key] === 'string') {
+        cloned[key] = currentSourceFile;
+      }
+      // 替换 version 为当前版本
+      else if (key === 'version' && typeof cloned[key] === 'string') {
+        cloned[key] = currentVersion;
+      }
+      // 删除空的 uri 字段（可选）
+      else if (key === 'uri' && cloned[key] === '') {
+        delete cloned[key];
+      }
+      // 可选：删除 _meta._extra.start/end（避免字节偏移差异）
+      else if (key === '_meta' && cloned[key]?.['_extra']?.hasOwnProperty('start')) {
+        const extra = { ...cloned[key]['_extra'] };
+        delete extra.start;
+        delete extra.end;
+        cloned[key] = { ...cloned[key], _extra: extra };
+      }
+      // 递归处理子节点
+      else {
+        cloned[key] = normalizeAst(cloned[key], currentSourceFile, currentVersion);
+      }
+    }
   }
+  return cloned;
 }
 
-// uastparser变更了以后，确认修改都对的情况下，使用tsc编译在yasa替换uastparser验证无误以后
-// 需要重新生成baseline
-// refreshUastJson()
+// 用于开发者更新 baseline（会写入当前版本）
+function refreshUastJson() {
+  const BASE_DIR = path.join(__dirname, 'benchmark', 'base');
+  const jsFiles = globby.sync('*.js', { cwd: BASE_DIR });
+  const currentVersion = getCurrentVersion();
 
+  console.log(`🔄 Refreshing UAST baselines with version: ${currentVersion}`);
 
+  for (const file of jsFiles) {
+    const fullPath = path.join(BASE_DIR, file);
+    const content = fs.readFileSync(fullPath, 'utf8');
+    const ast = parse(content, { sourcefile: fullPath, language: 'javascript' });
+
+    // ✅ 写入当前版本
+    ast.version = currentVersion;
+
+    fs.writeFileSync(`${fullPath}.json`, JSON.stringify(ast, null, 2), 'utf8');
+    console.log(`✅ Updated baseline: ${file}.json`);
+  }
+
+  console.log('✅ All baselines updated.');
+}
+
+// 检查是否是刷新模式
+function shouldRefresh(): boolean {
+  return process.argv.includes('--refresh') || process.argv.includes('-r');
+}
+
+// 主测试逻辑
 describe('benchmark for javascript', () => {
-    const suffixMatch = ['*.js'];
-    const jsFiles = globby.sync(suffixMatch, { cwd: path.join(__dirname, '/benchmark/base') });
-    for (const jsFile of jsFiles) {
-        it(jsFile, () => {
-            // fs.writeFileSync(path.join(__dirname, `test.json`), JSON.stringify(parse(content), null, 2), 'utf8');
-            const content = fs.readFileSync(path.join(__dirname, '/benchmark/base', jsFile), 'utf8');
-            const actual = parse(content,{sourcefile :path.join(__dirname, '/benchmark/base', jsFile),language:"javascript"});
-            // console.log(JSON.stringify(parsed));
-            // const filePath = path.join(__dirname, '/benchmark/base', jsFile + '.json');
-            // fs.writeFile(filePath, JSON.stringify(actual,null,2), (err) => {
-            //     if (err) {
-            //         console.error('写入文件时发生错误:', err);
-            //         return;
-            //     }
-            //     console.log('文件已成功写入:', filePath);
-            // });
-            const baselineJson = fs.readFileSync(path.join(__dirname, '/benchmark/base', jsFile + '.json'), 'utf8')
-            // const baseline = JSON.parse(jsonContent);
-            // assert.ok(deepEqual(parsed, baseline), jsFile);
+  const BASE_DIR = path.join(__dirname, 'benchmark', 'base');
+  const jsFiles = globby.sync('*.js', { cwd: BASE_DIR });
+  const currentVersion = getCurrentVersion();
 
-            assert.strictEqual(JSON.stringify(actual,null,2),baselineJson,jsFile)
-        });
-    }
+  // 如果是刷新模式，只更新 baseline
+  if (shouldRefresh()) {
+    before(() => {
+      refreshUastJson();
+      process.exit(0);
+    });
+    return;
+  }
+
+  // 正常测试流程
+  for (const jsFile of jsFiles) {
+    it(jsFile, () => {
+      const fullPath = path.join(BASE_DIR, jsFile);
+      const content = fs.readFileSync(fullPath, 'utf8');
+
+      // 实际解析结果
+      const actual = parse(content, {
+        sourcefile: fullPath,
+        language: 'javascript',
+      });
+
+      // 读取 baseline
+      const baselinePath = `${fullPath}.json`;
+      let expected: any;
+      try {
+        const baselineRaw = fs.readFileSync(baselinePath, 'utf8');
+        expected = JSON.parse(baselineRaw);
+      } catch (err) {
+        assert.fail(`❌ Failed to read baseline ${baselinePath}: ${err}`);
+      }
+
+      // ✅ 标准化 baseline：替换 sourcefile 和 version
+      const normalizedExpected = normalizeAst(expected, fullPath, currentVersion);
+
+      // 字符串化对比（格式化一致）
+      const actualStr = JSON.stringify(actual, null, 2);
+      const expectedStr = JSON.stringify(normalizedExpected, null, 2);
+
+      // 断言
+      assert.strictEqual(
+        actualStr,
+        expectedStr,
+        `UAST mismatch in ${jsFile}\n\n👉 Run with --refresh to update baselines if changes are expected.`
+      );
+    });
+  }
 });
-
-function deepEqual(obj1: any, obj2: any): boolean {
-    if (obj1 === obj2) return true
-
-    if ((typeof obj1 === 'object' && obj1 !== null) && (typeof obj2 === 'object' && obj2 !== null)) {
-        if (Object.keys(obj1).length !== Object.keys(obj2).length)
-            return false;
-
-        for (const prop in obj1) {
-            if (Object.prototype.hasOwnProperty.call(obj2, prop)) {
-                if (!deepEqual(obj1[prop], obj2[prop]))
-                    return false;
-            }
-        }
-        return true;
-    } else {
-        return false;
-    }
-}
