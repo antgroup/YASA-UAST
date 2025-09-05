@@ -935,7 +935,6 @@ function visit(orig: ASTNodeOrNull, opts): ParseResult<UAST.Node> {
     const mVisitor = visitor(opts);
 
     if (typeof mVisitor[orig.type] !== 'function') {
-        console.warn(`There is no visitor function associated with '${orig.type}'`)
         const noop = UAST.noop();
         appendLocRec(noop, orig, opts?.sourcefile);
         noop._meta.origin = orig;  // 如果没有找到对应节点的visitor， 将原始ast节点记录到meta.origin中
