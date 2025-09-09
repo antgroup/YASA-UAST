@@ -1097,6 +1097,13 @@ func (u *Builder) VisitCallExpr(node *ast.CallExpr) UNode {
 			Arguments: args,
 		}
 	}
+	if call, ok := node.Fun.(*ast.IndexListExpr); ok {
+		return &CallExpression{
+			Type:      "CallExpression",
+			Callee:    u.visit(call.X),
+			Arguments: args,
+		}
+	}
 	return &CallExpression{
 		Type:      "CallExpression",
 		Callee:    u.visit(node.Fun),
