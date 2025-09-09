@@ -324,6 +324,10 @@ func (u *Builder) visitFunc(bodystmt *ast.BlockStmt, funcType *ast.FuncType, rec
 		u.recursiveActionInUNode(body, func(node UNode) {
 			switch v := node.(type) {
 			case *ReturnStatement:
+				// 只有裸返回才需要增加默认返回变量名
+				if _, ok := v.Argument.(*Noop); !ok {
+					break
+				}
 				if len(returnVarDecls) == 1 {
 					v.Argument = returnVarDecls[0].Id
 				} else {
