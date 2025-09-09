@@ -984,7 +984,7 @@ func (u *Builder) VisitCompositeLit(node *ast.CompositeLit) UNode {
 								key = u.visit(structType.Fields.List[i].Type)
 								value = u.visit(specElt)
 							}
-						} else if structType.Fields.List[i].Names == nil {
+						} else if i < len(structType.Fields.List) && structType.Fields.List[i].Names == nil {
 							key = u.visit(structType.Fields.List[i].Type)
 							value = u.visit(specElt)
 						}
