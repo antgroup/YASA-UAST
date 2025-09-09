@@ -209,6 +209,9 @@ func (u *Builder) VisitTypeSpec(node *ast.TypeSpec) UNode {
 			break
 		case *Sequence:
 			ret.Body = append(ret.Body, unode.Expressions...)
+			if unode.Meta.IsInterface {
+				ret.Meta.IsInterface = true
+			}
 			//break
 		case *MapType, *ArrayType, *ChanType:
 			ret.Supers = append(ret.Supers, u.visit(node.Type))
@@ -1281,7 +1284,25 @@ func (u *Builder) visitAsType(node *ast.Expr) Type {
 }
 
 func (u *Builder) VisitInterfaceType(node *ast.InterfaceType) UNode {
-	return &DynamicType{Type: "DynamicType"}
+	ret := make([]Instruction, 0)
+	methodList := node.Methods.List
+	if methodList == nil || len(methodList) == 0 {
+		return &DynamicType{Type: "DynamicType"}
+	}
+	for _, method := range methodList {
+		// TODO：接口嵌入接口未处理
+		if len(method.Names) <= 0 {
+			continue
+		}
+		methodName := method.Names[0].Name
+		// 调用visitFuncType解析参数和返回值类型
+		methodType := u.visit(method.Type)
+		if methodType, ok := methodType.(*FuncType); ok {
+			methodType.Id.Name = methodName
+			ret = append(ret, methodType)
+		}
+	}
+	return &Sequence{Type: "Sequence", Expressions: ret, Meta: Meta{IsInterface: true}}
 }
 
 func (u *Builder) VisitArrayType(node *ast.ArrayType) Type {
