@@ -883,6 +883,8 @@ func (u *Builder) VisitReturnStmt(node *ast.ReturnStmt) UNode {
 	var arg Expression
 	if len(elts) == 1 {
 		arg = elts[0]
+	} else if len(elts) == 0 { // 如果是裸返回，将return_arg设为Noop类型
+		arg = &Noop{}
 	} else {
 		arg = &TupleExpression{
 			Type:     "TupleExpression",
