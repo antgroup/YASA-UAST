@@ -712,21 +712,11 @@ func (u *Builder) VisitAssignStmt(node *ast.AssignStmt) UNode {
 			}
 		}
 	}
-
-	if len(leftValues) > len(rightValues) && len(rightValues) == 1 {
-		leftTuple := &TupleExpression{Type: "TupleExpression", Elements: leftValues}
-		exprs = append(exprs, &VariableDeclaration{
-			Type:    "VariableDeclaration",
-			Id:      leftTuple,
-			Init:    rightValues[0],
-			Cloned:  true,
-			VarType: &DynamicType{Type: "DynamicType"},
-		})
-	}
-
-	if len(leftValues) == len(rightValues) {
-		minLen := len(leftValues)
-		for i := 0; i < minLen; i++ {
+	leftLen := len(leftValues)
+	rightLen := len(rightValues)
+	// (左值) = (右值)。左值和右值长度相等
+	if leftLen == rightLen {
+		for i := 0; i < leftLen; i++ {
 			if node.Tok == token.DEFINE {
 				if v, isId := leftValues[i].(*Identifier); isId {
 					if !u.isDefinedInCurrentScope(v.Name) {
@@ -759,6 +749,26 @@ func (u *Builder) VisitAssignStmt(node *ast.AssignStmt) UNode {
 				Type:     "AssignmentExpression",
 				Left:     leftValues[i],
 				Right:    rightValues[i],
+				Operator: node.Tok.String(),
+				Cloned:   true,
+			})
+		}
+		// (左值) = (右值)。左值和右值长度不相等：e.g.,a,b =/:= builtIn()
+	} else if leftLen > rightLen && rightLen == 1 {
+		leftTuple := &TupleExpression{Type: "TupleExpression", Elements: leftValues}
+		if node.Tok == token.DEFINE {
+			exprs = append(exprs, &VariableDeclaration{
+				Type:    "VariableDeclaration",
+				Id:      leftTuple,
+				Init:    rightValues[0],
+				Cloned:  true,
+				VarType: &DynamicType{Type: "DynamicType"},
+			})
+		} else {
+			exprs = append(exprs, &AssignmentExpression{
+				Type:     "AssignmentExpression",
+				Left:     leftTuple,
+				Right:    rightValues[0],
 				Operator: node.Tok.String(),
 				Cloned:   true,
 			})
