@@ -3,7 +3,6 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/stretchr/testify/assert"
 	"go/ast"
 	"go/parser"
 	"go/token"
@@ -14,12 +13,13 @@ import (
 	"strings"
 	"testing"
 	"uast4go/uast"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestCreatePackage(t *testing.T) {
 	// Assume we're in the module root directory
-	//rootDir := "/Users/liudijun/GolandProjects/awesomeProject1/examples/"
-	rootDir := "/Users/liudijun/dev/uast/yasa/yasa/deps/uast4go/examples/asdf"
+	rootDir := "/Users/xxxxx/dev/uast/yasa/yasa/deps/uast4go/examples/asdf"
 
 	// Read the module name from go.mod
 	moduleName, err := readModuleName(filepath.Join(rootDir, "go.mod"))

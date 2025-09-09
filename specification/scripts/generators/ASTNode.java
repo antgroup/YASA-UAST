@@ -195,6 +195,6 @@ function writeto(dir, filename, content) {
     }
 }
 
-generateAstTypes('/Users/liudijun/dev/uast/yasa_java/src/main/java/org/uast');
+generateAstTypes('/Users/xxxxx/dev/uast/yasa_java/src/main/java/org/uast');
 
 
