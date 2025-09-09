@@ -30,7 +30,7 @@ func (u *Builder) VisitImportSpec(node *ast.ImportSpec) UNode {
 					LiteralType: "string",
 				},
 			}, node.Path),
-			Cloned:        true,
+			Cloned:        false,
 			VarType:       &DynamicType{Type: "DynamicType"},
 			VariableParam: false,
 		}
