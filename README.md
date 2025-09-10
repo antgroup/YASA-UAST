@@ -1,6 +1,17 @@
-# YASA-UAST 项目结构
+# 项目说明
 
-本项目包含多个语言解析器模块，各模块职责如下：
+本项目为YASA项目的YASA-UAST部分。
+
+YASA项目包含
+
+- YASA-UAST
+- [YASA-Engine](https://github.com/antgroup/YASA-Engine)
+- YASA-UQL（暂未开源，敬请期待）
+- YASA-MCP（暂未开源，敬请期待）
+
+想了解更多YASA项目的内容，请点[这里]()
+
+# YASA-UAST结构
 
 ## specification
 - UAST 的节点描述
