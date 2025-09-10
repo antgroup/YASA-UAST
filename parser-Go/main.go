@@ -52,6 +52,7 @@ func readModuleName(modFilePath string) (string, error) {
 type Output struct {
 	PackageInfo *uast.PackagePathInfo `json:"packageInfo"`
 	ModuleName  string                `json:"moduleName"`
+	GoModPath   string                `json:"goModPath"`
 }
 
 func main() {
@@ -87,7 +88,7 @@ func parseSingleFile(file string, output string) {
 	packages := make(map[string]*ast.Package)
 	packages["__single__"] = pkg
 
-	buildAndPrint("__single_module__", packages, fset, output)
+	buildAndPrint("__single_module__", packages, fset, output, "")
 }
 
 func parseGoModule(rootDir string, output string) {
@@ -108,7 +109,7 @@ func parseGoModule(rootDir string, output string) {
 	//if err != nil {
 	//	panic(err)
 	//}
-	buildAndPrint(moduleName, packages, fset, output)
+	buildAndPrint(moduleName, packages, fset, output, goModPath)
 }
 
 // findGoMod searches for a go.mod file starting from dir and recursing into subdirectories if not found
@@ -143,11 +144,12 @@ func findGoMod(dir string) (string, error) {
 	return "", fmt.Errorf("go.mod not found in directory or subdirectories: %s", dir)
 }
 
-func buildAndPrint(moduleName string, packages map[string]*ast.Package, fset *token.FileSet, outputPath string) {
+func buildAndPrint(moduleName string, packages map[string]*ast.Package, fset *token.FileSet, outputPath string, goModPath string) {
 	packageInfo := buildPackage(moduleName, packages, fset)
 	output := &Output{
 		PackageInfo: packageInfo,
 		ModuleName:  moduleName,
+		GoModPath:   goModPath,
 	}
 	//jsonBytes, err := json.MarshalIndent(output, "", "  ")
 	//if err != nil {

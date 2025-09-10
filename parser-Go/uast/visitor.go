@@ -30,7 +30,7 @@ func (u *Builder) VisitImportSpec(node *ast.ImportSpec) UNode {
 					LiteralType: "string",
 				},
 			}, node.Path),
-			Cloned:        true,
+			Cloned:        false,
 			VarType:       &DynamicType{Type: "DynamicType"},
 			VariableParam: false,
 		}
@@ -209,6 +209,9 @@ func (u *Builder) VisitTypeSpec(node *ast.TypeSpec) UNode {
 			break
 		case *Sequence:
 			ret.Body = append(ret.Body, unode.Expressions...)
+			if unode.Meta.IsInterface {
+				ret.Meta.IsInterface = true
+			}
 			//break
 		case *MapType, *ArrayType, *ChanType:
 			ret.Supers = append(ret.Supers, u.visit(node.Type))
@@ -324,6 +327,10 @@ func (u *Builder) visitFunc(bodystmt *ast.BlockStmt, funcType *ast.FuncType, rec
 		u.recursiveActionInUNode(body, func(node UNode) {
 			switch v := node.(type) {
 			case *ReturnStatement:
+				// 只有裸返回才需要增加默认返回变量名
+				if _, ok := v.Argument.(*Noop); !ok {
+					break
+				}
 				if len(returnVarDecls) == 1 {
 					v.Argument = returnVarDecls[0].Id
 				} else {
@@ -712,21 +719,11 @@ func (u *Builder) VisitAssignStmt(node *ast.AssignStmt) UNode {
 			}
 		}
 	}
-
-	if len(leftValues) > len(rightValues) && len(rightValues) == 1 {
-		leftTuple := &TupleExpression{Type: "TupleExpression", Elements: leftValues}
-		exprs = append(exprs, &VariableDeclaration{
-			Type:    "VariableDeclaration",
-			Id:      leftTuple,
-			Init:    rightValues[0],
-			Cloned:  true,
-			VarType: &DynamicType{Type: "DynamicType"},
-		})
-	}
-
-	if len(leftValues) == len(rightValues) {
-		minLen := len(leftValues)
-		for i := 0; i < minLen; i++ {
+	leftLen := len(leftValues)
+	rightLen := len(rightValues)
+	// (左值) = (右值)。左值和右值长度相等
+	if leftLen == rightLen {
+		for i := 0; i < leftLen; i++ {
 			if node.Tok == token.DEFINE {
 				if v, isId := leftValues[i].(*Identifier); isId {
 					if !u.isDefinedInCurrentScope(v.Name) {
@@ -759,6 +756,26 @@ func (u *Builder) VisitAssignStmt(node *ast.AssignStmt) UNode {
 				Type:     "AssignmentExpression",
 				Left:     leftValues[i],
 				Right:    rightValues[i],
+				Operator: node.Tok.String(),
+				Cloned:   true,
+			})
+		}
+		// (左值) = (右值)。左值和右值长度不相等：e.g.,a,b =/:= builtIn()
+	} else if leftLen > rightLen && rightLen == 1 {
+		leftTuple := &TupleExpression{Type: "TupleExpression", Elements: leftValues}
+		if node.Tok == token.DEFINE {
+			exprs = append(exprs, &VariableDeclaration{
+				Type:    "VariableDeclaration",
+				Id:      leftTuple,
+				Init:    rightValues[0],
+				Cloned:  true,
+				VarType: &DynamicType{Type: "DynamicType"},
+			})
+		} else {
+			exprs = append(exprs, &AssignmentExpression{
+				Type:     "AssignmentExpression",
+				Left:     leftTuple,
+				Right:    rightValues[0],
 				Operator: node.Tok.String(),
 				Cloned:   true,
 			})
@@ -866,6 +883,8 @@ func (u *Builder) VisitReturnStmt(node *ast.ReturnStmt) UNode {
 	var arg Expression
 	if len(elts) == 1 {
 		arg = elts[0]
+	} else if len(elts) == 0 { // 如果是裸返回，将return_arg设为Noop类型
+		arg = &Noop{}
 	} else {
 		arg = &TupleExpression{
 			Type:     "TupleExpression",
@@ -974,7 +993,7 @@ func (u *Builder) VisitCompositeLit(node *ast.CompositeLit) UNode {
 								key = u.visit(structType.Fields.List[i].Type)
 								value = u.visit(specElt)
 							}
-						} else if structType.Fields.List[i].Names == nil {
+						} else if i < len(structType.Fields.List) && structType.Fields.List[i].Names == nil {
 							key = u.visit(structType.Fields.List[i].Type)
 							value = u.visit(specElt)
 						}
@@ -1072,6 +1091,13 @@ func (u *Builder) VisitCallExpr(node *ast.CallExpr) UNode {
 	}
 	//todo 这里忽略了泛型参数 my_model.List[ruleModel.Rule](ruleModel.Rule{}, ds)
 	if call, ok := node.Fun.(*ast.IndexExpr); ok {
+		return &CallExpression{
+			Type:      "CallExpression",
+			Callee:    u.visit(call.X),
+			Arguments: args,
+		}
+	}
+	if call, ok := node.Fun.(*ast.IndexListExpr); ok {
 		return &CallExpression{
 			Type:      "CallExpression",
 			Callee:    u.visit(call.X),
@@ -1267,7 +1293,25 @@ func (u *Builder) visitAsType(node *ast.Expr) Type {
 }
 
 func (u *Builder) VisitInterfaceType(node *ast.InterfaceType) UNode {
-	return &DynamicType{Type: "DynamicType"}
+	ret := make([]Instruction, 0)
+	methodList := node.Methods.List
+	if methodList == nil || len(methodList) == 0 {
+		return &DynamicType{Type: "DynamicType"}
+	}
+	for _, method := range methodList {
+		// TODO：接口嵌入接口未处理
+		if len(method.Names) <= 0 {
+			continue
+		}
+		methodName := method.Names[0].Name
+		// 调用visitFuncType解析参数和返回值类型
+		methodType := u.visit(method.Type)
+		if methodType, ok := methodType.(*FuncType); ok {
+			methodType.Id.Name = methodName
+			ret = append(ret, methodType)
+		}
+	}
+	return &Sequence{Type: "Sequence", Expressions: ret, Meta: Meta{IsInterface: true}}
 }
 
 func (u *Builder) VisitArrayType(node *ast.ArrayType) Type {
