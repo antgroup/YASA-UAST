@@ -9,7 +9,7 @@ YASA项目包含
 - YASA-UQL（暂未开源，敬请期待）
 - YASA-MCP（暂未开源，敬请期待）
 
-想了解更多YASA项目的内容，请点[这里]()
+想了解更多YASA项目的内容，请点[这里](https://www.yuque.com/u22090306/bebf6g)
 
 # YASA-UAST结构
 
