@@ -22,7 +22,7 @@ YASA项目包含
 - UAST Go 语言解析器，将 Go 语言代码解析为 UAST
 
 ## parser-Java-JS
-- UAST Java 语言和 JS 语言解析器，将 Java 语言 / JS 语言的代码解析为 UAST
+- UAST Java 语言和 JS 语言解析器，将 Java 语言 / JS / TS 语言的代码解析为 UAST
 
 ## parser-Python
 - UAST Python 语言的解析器，将 Python 语言代码解析为 UAST
