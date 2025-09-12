@@ -1,6 +1,6 @@
 <img src="folder-img/logo.png" style="width:50%;"  />
 
-#### [简体中文](README_ch.md) / [English](README.md)
+#### [简体中文](README_ZH.md) / [English](README.md)
 
 YASA (Yet Another Static Analyzer) is an open-source static program analysis project. Its core innovation lies in a unified intermediate representation called the Unified Abstract Syntax Tree (UAST), designed to support multiple programming languages. Built on top of UAST, YASA provides a highly accurate static analysis framework. Users can extend its capabilities by writing custom checkers to perform various program analysis tasks—such as AST queries, data flow analysis, and function call graph analysis—and expose functionality through SDK, declarative query language (QL), or MCP.
 
