@@ -6,15 +6,17 @@ YASA项目包含
 
 - YASA-UAST
 - [YASA-Engine](https://github.com/antgroup/YASA-Engine)
-- YASA-UQL（暂未开源，敬请期待）
-- YASA-MCP（暂未开源，敬请期待）
+- YASA-UQL
+- YASA-MCP
+- YASA-SDK
+- [xAST](https://github.com/alipay/ant-application-security-testing-benchmark)
 
 想了解更多YASA项目的内容，请点[这里](https://www.yuque.com/u22090306/bebf6g)
 
 # YASA-UAST结构
 
 ## specification
-- UAST 的节点描述
+- [UAST 的节点描述](https://github.com/antgroup/YASA-UAST/blob/main/specification/specification.md)
 
 ## parser-Go
 - UAST Go 语言解析器，将 Go 语言代码解析为 UAST
