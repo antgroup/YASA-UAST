@@ -35,7 +35,7 @@ ENV PATH=/opt/conda/envs/py313/bin:$PATH
 # 复制源码 & 安装依赖
 # -------------------------------
 # 注意：只复制 parser-Python 内容到 /app 下，避免嵌套
-COPY parser-Python/ ./           # 把 parser-Python 的内容平铺到 /app
+COPY parser-Python/ ./
 
 RUN pip install -r requirements.txt
 
@@ -43,7 +43,7 @@ RUN pip install -r requirements.txt
 # 使用 PyInstaller 打包
 # -------------------------------
 # 确保 uast/builder.py 存在
-RUN ls -R                   # 调试用：查看结构
+RUN ls -R uast/ || echo "⚠️ uast/ not found!"
 RUN pyinstaller --onefile uast/builder.py
 
 # 验证输出是否存在
