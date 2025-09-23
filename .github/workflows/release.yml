@@ -354,9 +354,9 @@ jobs:
           # 创建容器以提取二进制文件
           docker create --name temp-container uast4py-linux
 
-          # 调试：查看容器内 dist 目录内容
-          echo "📂 Contents of /app/dist inside container:"
-          docker exec temp-container ls -R /app/dist || echo "dist/ is empty or missing"
+          # # 调试：查看容器内 dist 目录内容
+          # echo "📂 Contents of /app/dist inside container:"
+          # docker exec temp-container ls -R /app/dist || echo "dist/ is empty or missing"
 
           # 创建本地输出目录
           mkdir -p dist
@@ -370,7 +370,7 @@ jobs:
           # 添加可执行权限
           chmod +x dist/uast4py-linux-amd64
 
-          echo "✅ Successfully built and extracted: dist/uast4py-linux-amd64"
+          echo "✅ Built: dist/uast4py-linux-amd64 (size: $(ls -lh dist/uast4py-linux-amd64))"
         shell: bash
 
       - name: Upload Linux artifact
