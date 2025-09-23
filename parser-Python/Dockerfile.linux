@@ -1,58 +1,56 @@
-FROM almalinux:8
+# ================================
+# 多阶段构建：基于 manylinux2014 (glibc 2.17+) + Miniforge
+# ================================
+FROM quay.io/pypa/manylinux2014_x86_64 AS builder
 
-# 使用阿里云镜像源（推荐：直接覆盖 repo）
-RUN cat > /etc/yum.repos.d/almalinux.repo <<EOF
-[baseos]
-name=AlmaLinux \$releasever - BaseOS
-baseurl=https://mirrors.aliyun.com/almalinux/8/BaseOS/x86_64/os/
-gpgcheck=1
-gpgkey=https://mirrors.aliyun.com/almalinux/RPM-GPG-KEY-AlmaLinux
-enabled=1
+# 设置工作目录
+WORKDIR /app
 
-[appstream]
-name=AlmaLinux \$releasever - AppStream
-baseurl=https://mirrors.aliyun.com/almalinux/8/AppStream/x86_64/os/
-gpgcheck=1
-gpgkey=https://mirrors.aliyun.com/almalinux/RPM-GPG-KEY-AlmaLinux
-enabled=1
-EOF
+# 传递构建参数
+ARG GOOS=linux
+ARG GOARCH=amd64
 
-# 安装构建工具
-RUN dnf groupinstall -y "Development Tools" && \
-    dnf install -y \
-        wget tar bzip2 gzip \
-        zlib-devel bzip2-devel openssl-devel \
-        ncurses-devel sqlite-devel readline-devel \
-        tk-devel libffi-devel xz-devel && \
-    dnf clean all
+# 检查是否正确传参
+RUN echo "🏗 Building for $GOOS/$GOARCH"
 
-# 安装 Miniconda
-RUN curl -L -o Miniconda3.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh && \
-    bash Miniconda3.sh -b -p /opt/conda && \
-    rm Miniconda3.sh
+# -------------------------------
+# 安装 Miniforge
+# -------------------------------
+ENV MAMBA_ROOT_PREFIX=/opt/conda
+ENV PATH=/opt/conda/bin:${PATH}
 
-ENV PATH=/opt/conda/bin:$PATH
+RUN curl -L -o miniforge.sh https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh && \
+    bash miniforge.sh -b -p /opt/conda && \
+    rm miniforge.sh && \
+    conda clean --all
 
-# 接受 Anaconda ToS 并创建 Python 3.13 环境
-RUN conda tos accept --override-channels \
-    --channel https://repo.anaconda.com/pkgs/main \
-    --channel https://repo.anaconda.com/pkgs/r && \
+# 接受许可并创建环境
+RUN conda init bash && \
+    echo "conda activate base" >> ~/.bashrc && \
     conda create -n py313 python=3.13 -y && \
     /opt/conda/envs/py313/bin/pip install pyinstaller
 
-# 设置环境变量
+# 激活 py313 环境为默认
 ENV CONDA_DEFAULT_ENV=py313
 ENV PATH=/opt/conda/envs/py313/bin:$PATH
 
-WORKDIR /app
-
-ARG GOOS
-ARG GOARCH
-
+# -------------------------------
+# 复制源码 & 安装依赖
+# -------------------------------
 COPY parser-Python .
 
 RUN pip install -r requirements.txt
 
+# -------------------------------
+# 使用 PyInstaller 打包
+# -------------------------------
 RUN pyinstaller --onefile uast/builder.py
+
+# 将结果复制到干净镜像（可选优化）
+FROM quay.io/pypa/manylinux2014_x86_64
+
+WORKDIR /dist
+COPY --from=builder /app/dist/builder ./uast4py-linux-amd64
+RUN chmod +x uast4py-linux-amd64
 
 CMD ["echo", "Build complete"]
