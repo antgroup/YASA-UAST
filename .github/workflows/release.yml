@@ -331,7 +331,6 @@ jobs:
 
       # ========== Linux: Docker 构建 ==========
       - name: Build Linux binary with Docker
-        if: ${{ matrix.runner == 'docker' }}
         run: |
           echo "🐳 Building Linux binary in container..."
           docker build \
@@ -339,12 +338,25 @@ jobs:
             --build-arg GOARCH=${{ matrix.goarch }} \
             -f parser-Python/Dockerfile.linux \
             -t uast4py-linux .
+          
+          # 创建容器并检查文件是否存在
           docker create --name temp-container uast4py-linux
+          
+          # 查看容器内文件结构（用于调试）
+          echo "📂 Checking files in container..."
+          docker exec temp-container ls -R /app/dist || true
+
+          # 确保 dist 目录存在且有 builder 文件
           mkdir -p dist
           docker cp temp-container:/app/dist/builder dist/uast4py-linux-amd64
+
+          # 清理
           docker rm temp-container
+          
+          # 添加权限
           chmod +x dist/uast4py-linux-amd64
           echo "✅ Built: dist/uast4py-linux-amd64"
+
 
       - name: Upload Linux artifact
         if: ${{ matrix.runner == 'docker' }}
