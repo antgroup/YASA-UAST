@@ -6,25 +6,25 @@ FROM quay.io/pypa/manylinux2014_x86_64 AS builder
 # 设置工作目录
 WORKDIR /app
 
-# 传递构建参数
+# 传递构建参数（用于跨平台编译，本例中固定为 linux/amd64）
 ARG GOOS=linux
 ARG GOARCH=amd64
 RUN echo "🏗 Building for $GOOS/$GOARCH"
 
 # -------------------------------
-# 安装 Miniforge 和 PyInstaller
+# 安装 Miniforge
 # -------------------------------
 ENV MAMBA_ROOT_PREFIX=/opt/conda
 ENV PATH=/opt/conda/bin:${PATH}
 
+# 下载并安装 Miniforge
 RUN curl -L -o miniforge.sh https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh && \
     bash miniforge.sh -b -p /opt/conda && \
     rm miniforge.sh && \
     conda clean --all
 
-RUN conda init bash && \
-    echo "conda activate base" >> ~/.bashrc && \
-    conda create -n py313 python=3.13 -y && \
+# 创建 Python 3.13 环境并安装 PyInstaller
+RUN conda create -n py313 python=3.13 -y && \
     /opt/conda/envs/py313/bin/pip install pyinstaller
 
 # 激活 py313 环境为默认
@@ -34,7 +34,6 @@ ENV PATH=/opt/conda/envs/py313/bin:$PATH
 # -------------------------------
 # 复制源码 & 安装依赖
 # -------------------------------
-# 注意：只复制 parser-Python 内容到 /app 下，避免嵌套
 COPY parser-Python/ ./
 
 RUN pip install -r requirements.txt
@@ -42,24 +41,22 @@ RUN pip install -r requirements.txt
 # -------------------------------
 # 使用 PyInstaller 打包
 # -------------------------------
-# 确保 uast/builder.py 存在
-RUN ls -R uast/ || echo "⚠️ uast/ not found!"
 RUN pyinstaller --onefile uast/builder.py
 
 # 验证输出是否存在
 RUN if [ ! -f "dist/builder" ]; then \
-        echo "❌ ERROR: dist/builder was not created by PyInstaller!" >&2; \
+        echo "❌ ERROR: dist/builder was not created!" >&2; \
         exit 1; \
     fi && \
-    echo "✅ Successfully built /app/dist/builder" && \
-    ls -l dist/
+    echo "✅ Successfully built binary at /app/dist/builder"
 
-# -------------------------------
-# 最终镜像（轻量）
-# -------------------------------
+# ================================
+# 第二阶段：轻量运行镜像（可选优化）
+# ================================
 FROM quay.io/pypa/manylinux2014_x86_64
 
 WORKDIR /dist
+# 从 builder 阶段复制最终二进制
 COPY --from=builder /app/dist/builder ./uast4py-linux-amd64
 RUN chmod +x uast4py-linux-amd64
 

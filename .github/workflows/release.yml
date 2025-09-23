@@ -315,29 +315,15 @@ jobs:
             artifact_name: python-mac-arm64
             output_path: parser-Python/dist/uast4py-mac-arm64
 
-          # ========== Windows ==========
-          # - runner: native
-          #   os: windows-latest
-          #   target: windows
-          #   goos: windows
-          #   goarch: amd64
-          #   artifact_name: python-windows-amd64
-          #   output_path: parser-Python/dist/uast4py-windows-amd64.exe
-
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # ========== Linux: 使用 Docker 构建 ==========
-      - name: Set up QEMU
-        if: ${{ matrix.runner == 'docker' }}
-        uses: docker/setup-qemu-action@v3
-
+      # ========== Linux: 使用 Docker 构建（兼容 glibc 2.17+）==========
       - name: Set up Docker
         if: ${{ matrix.runner == 'docker' }}
         uses: docker/setup-docker-action@v3
-        # 自动安装并启动 Docker daemon
 
       - name: Build Linux binary with Docker
         if: ${{ matrix.runner == 'docker' }}
@@ -351,18 +337,14 @@ jobs:
             -f parser-Python/Dockerfile.linux \
             -t uast4py-linux .
 
-          # 创建容器以提取二进制文件
+          # 创建容器以提取文件
           docker create --name temp-container uast4py-linux
-
-          # # 调试：查看容器内 dist 目录内容
-          # echo "📂 Contents of /app/dist inside container:"
-          # docker exec temp-container ls -R /app/dist || echo "dist/ is empty or missing"
 
           # 创建本地输出目录
           mkdir -p dist
 
-          # 复制构建产物
-          docker cp temp-container:/app/dist/builder dist/uast4py-linux-amd64
+          # 从容器中复制已构建好的二进制文件
+          docker cp temp-container:/dist/uast4py-linux-amd64 dist/uast4py-linux-amd64
 
           # 清理容器
           docker rm temp-container
@@ -370,8 +352,7 @@ jobs:
           # 添加可执行权限
           chmod +x dist/uast4py-linux-amd64
 
-          echo "✅ Built: dist/uast4py-linux-amd64 (size: $(ls -lh dist/uast4py-linux-amd64))"
-        shell: bash
+          echo "✅ Built: dist/uast4py-linux-amd64"
 
       - name: Upload Linux artifact
         if: ${{ matrix.runner == 'docker' }}
@@ -380,7 +361,7 @@ jobs:
           name: ${{ matrix.artifact_name }}
           path: ${{ matrix.output_path }}
 
-      # ========== macOS / Windows: 原生构建 ==========
+      # ========== macOS: 原生构建 ==========
       - name: Setup Python
         if: ${{ matrix.runner == 'native' }}
         uses: actions/setup-python@v4
@@ -410,6 +391,7 @@ jobs:
         with:
           name: ${{ matrix.artifact_name }}
           path: ${{ matrix.output_path }}
+
 
   # 6. 合并产物并创建 GitHub Release
   create_release:
