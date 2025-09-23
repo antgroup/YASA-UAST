@@ -326,37 +326,52 @@ jobs:
 
     runs-on: ${{ matrix.os }}
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      # ========== Linux: Docker 构建 ==========
+      # ========== Linux: 使用 Docker 构建 ==========
+      - name: Set up QEMU
+        if: ${{ matrix.runner == 'docker' }}
+        uses: docker/setup-qemu-action@v3
+
+      - name: Set up Docker
+        if: ${{ matrix.runner == 'docker' }}
+        uses: docker/setup-docker-action@v3
+        # 自动安装并启动 Docker daemon
+
       - name: Build Linux binary with Docker
+        if: ${{ matrix.runner == 'docker' }}
         run: |
           echo "🐳 Building Linux binary in container..."
+
+          # 构建镜像
           docker build \
             --build-arg GOOS=${{ matrix.goos }} \
             --build-arg GOARCH=${{ matrix.goarch }} \
             -f parser-Python/Dockerfile.linux \
             -t uast4py-linux .
-          
-          # 创建容器并检查文件是否存在
-          docker create --name temp-container uast4py-linux
-          
-          # 查看容器内文件结构（用于调试）
-          echo "📂 Checking files in container..."
-          docker exec temp-container ls -R /app/dist || true
 
-          # 确保 dist 目录存在且有 builder 文件
+          # 创建容器以提取二进制文件
+          docker create --name temp-container uast4py-linux
+
+          # 调试：查看容器内 dist 目录内容
+          echo "📂 Contents of /app/dist inside container:"
+          docker exec temp-container ls -R /app/dist || echo "dist/ is empty or missing"
+
+          # 创建本地输出目录
           mkdir -p dist
+
+          # 复制构建产物
           docker cp temp-container:/app/dist/builder dist/uast4py-linux-amd64
 
-          # 清理
+          # 清理容器
           docker rm temp-container
-          
-          # 添加权限
-          chmod +x dist/uast4py-linux-amd64
-          echo "✅ Built: dist/uast4py-linux-amd64"
 
+          # 添加可执行权限
+          chmod +x dist/uast4py-linux-amd64
+
+          echo "✅ Successfully built and extracted: dist/uast4py-linux-amd64"
+        shell: bash
 
       - name: Upload Linux artifact
         if: ${{ matrix.runner == 'docker' }}
@@ -372,35 +387,24 @@ jobs:
         with:
           python-version: '3.13'
 
-      - name: Build macOS/Windows binary
+      - name: Build macOS binary
         if: ${{ matrix.runner == 'native' }}
         working-directory: parser-Python
         run: |
           echo "🏗️ Building for ${{ matrix.target }} ${{ matrix.goarch }}"
           python -m venv .venv
-          if [ "$RUNNER_OS" = "Windows" ]; then
-            source .venv/Scripts/activate
-          else
-            source .venv/bin/activate
-          fi
+          source .venv/bin/activate
           pip install -r requirements.txt
           pip install pyinstaller
-          pyinstaller --onefile --paths .venv/lib/python3.13/site-packages uast/builder.py
+          pyinstaller --onefile uast/builder.py
 
           mkdir -p dist
-          OUTPUT_NAME=""
-          if [ "$RUNNER_OS" = "Windows" ]; then
-            OUTPUT_NAME="uast4py-windows-${{ matrix.goarch }}"
-            mv dist/builder.exe "dist/${OUTPUT_NAME}.exe"
-            echo "✅ Built: ${OUTPUT_NAME}.exe"
-          else
-            OUTPUT_NAME="uast4py-mac-${{ matrix.goarch }}"
-            mv dist/builder "dist/${OUTPUT_NAME}"
-            echo "✅ Built: ${OUTPUT_NAME}"
-          fi
+          OUTPUT_NAME="uast4py-${{ matrix.target }}-${{ matrix.goarch }}"
+          mv dist/builder "dist/$OUTPUT_NAME"
+          echo "✅ Built: dist/$OUTPUT_NAME"
         shell: bash
 
-      - name: Upload artifact
+      - name: Upload macOS artifact
         if: ${{ matrix.runner == 'native' }}
         uses: actions/upload-artifact@v4
         with:
