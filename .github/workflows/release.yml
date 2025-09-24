@@ -315,35 +315,43 @@ jobs:
             artifact_name: python-mac-arm64
             output_path: parser-Python/dist/uast4py-mac-arm64
 
-          # ========== Windows ==========
-          # - runner: native
-          #   os: windows-latest
-          #   target: windows
-          #   goos: windows
-          #   goarch: amd64
-          #   artifact_name: python-windows-amd64
-          #   output_path: parser-Python/dist/uast4py-windows-amd64.exe
-
     runs-on: ${{ matrix.os }}
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      # ========== Linux: Docker 构建 ==========
+      # ========== Linux: 使用 Docker 构建（兼容 glibc 2.17+）==========
+      - name: Set up Docker
+        if: ${{ matrix.runner == 'docker' }}
+        uses: docker/setup-docker-action@v3
+
       - name: Build Linux binary with Docker
         if: ${{ matrix.runner == 'docker' }}
         run: |
           echo "🐳 Building Linux binary in container..."
+
+          # 构建镜像
           docker build \
             --build-arg GOOS=${{ matrix.goos }} \
             --build-arg GOARCH=${{ matrix.goarch }} \
             -f parser-Python/Dockerfile.linux \
             -t uast4py-linux .
+
+          # 创建容器以提取文件
           docker create --name temp-container uast4py-linux
+
+          # 创建本地输出目录
           mkdir -p dist
-          docker cp temp-container:/app/dist/builder dist/uast4py-linux-amd64
+
+          # 从容器中复制已构建好的二进制文件
+          docker cp temp-container:/dist/uast4py-linux-amd64 dist/uast4py-linux-amd64
+
+          # 清理容器
           docker rm temp-container
+
+          # 添加可执行权限
           chmod +x dist/uast4py-linux-amd64
+
           echo "✅ Built: dist/uast4py-linux-amd64"
 
       - name: Upload Linux artifact
@@ -353,47 +361,37 @@ jobs:
           name: ${{ matrix.artifact_name }}
           path: ${{ matrix.output_path }}
 
-      # ========== macOS / Windows: 原生构建 ==========
+      # ========== macOS: 原生构建 ==========
       - name: Setup Python
         if: ${{ matrix.runner == 'native' }}
         uses: actions/setup-python@v4
         with:
           python-version: '3.13'
 
-      - name: Build macOS/Windows binary
+      - name: Build macOS binary
         if: ${{ matrix.runner == 'native' }}
         working-directory: parser-Python
         run: |
           echo "🏗️ Building for ${{ matrix.target }} ${{ matrix.goarch }}"
           python -m venv .venv
-          if [ "$RUNNER_OS" = "Windows" ]; then
-            source .venv/Scripts/activate
-          else
-            source .venv/bin/activate
-          fi
+          source .venv/bin/activate
           pip install -r requirements.txt
           pip install pyinstaller
-          pyinstaller --onefile --paths .venv/lib/python3.13/site-packages uast/builder.py
+          pyinstaller --onefile uast/builder.py
 
           mkdir -p dist
-          OUTPUT_NAME=""
-          if [ "$RUNNER_OS" = "Windows" ]; then
-            OUTPUT_NAME="uast4py-windows-${{ matrix.goarch }}"
-            mv dist/builder.exe "dist/${OUTPUT_NAME}.exe"
-            echo "✅ Built: ${OUTPUT_NAME}.exe"
-          else
-            OUTPUT_NAME="uast4py-mac-${{ matrix.goarch }}"
-            mv dist/builder "dist/${OUTPUT_NAME}"
-            echo "✅ Built: ${OUTPUT_NAME}"
-          fi
+          OUTPUT_NAME="uast4py-${{ matrix.target }}-${{ matrix.goarch }}"
+          mv dist/builder "dist/$OUTPUT_NAME"
+          echo "✅ Built: dist/$OUTPUT_NAME"
         shell: bash
 
-      - name: Upload artifact
+      - name: Upload macOS artifact
         if: ${{ matrix.runner == 'native' }}
         uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.artifact_name }}
           path: ${{ matrix.output_path }}
+
 
   # 6. 合并产物并创建 GitHub Release
   create_release:
