@@ -292,11 +292,7 @@ func (u *Builder) visitFunc(bodystmt *ast.BlockStmt, funcType *ast.FuncType, rec
 	var funcName string
 	var nameNode UNode
 	if name == nil {
-		funcName = ""
-		nameNode = &Identifier{
-			Type: "Identifier",
-			Name: funcName,
-		}
+		nameNode = nil
 	} else {
 		funcName = name.Name
 		nameNode = u.packPos(&Identifier{Type: "Identifier", Name: funcName}, name)
