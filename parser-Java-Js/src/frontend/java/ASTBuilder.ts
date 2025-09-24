@@ -1488,7 +1488,6 @@ export class ASTBuilder
         let params: UAST.VariableDeclaration[];
         const lambdaParametersCtx = ctx.lambdaParameters()
         const idsCtx = lambdaParametersCtx.identifier();
-        const id = this.safeVisit(idsCtx.shift()) as UAST.Identifier;
         const formalParameterListCtx = lambdaParametersCtx.formalParameterList();
         if (idsCtx.length !== 0) {
             params = idsCtx.map(idCtx => {
@@ -1515,9 +1514,9 @@ export class ASTBuilder
         const lambdaBodyCtx = ctx.lambdaBody();
         const exprCtx = lambdaBodyCtx.expression();
         if (exprCtx) {
-            return UAST.functionDefinition(id, params, UAST.dynamicType(), UAST.scopedStatement([this.visit(exprCtx) as UAST.Expression], null), []);
+            return UAST.functionDefinition(null, params, UAST.dynamicType(), UAST.scopedStatement([this.visit(exprCtx) as UAST.Expression], null), []);
         } else {
-            return UAST.functionDefinition(id, params, UAST.dynamicType(), this.visit(lambdaBodyCtx.block()) as UAST.ScopedStatement, []);
+            return UAST.functionDefinition(null, params, UAST.dynamicType(), this.visit(lambdaBodyCtx.block()) as UAST.ScopedStatement, []);
         }
     }
 
