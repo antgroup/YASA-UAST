@@ -244,7 +244,10 @@ class UASTTransformer(ast.NodeTransformer):
         return "&&"
 
     def visit_arg(self, node):
-        return self.packPos(node, UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), node.arg))
+        arg_node = self.packPos(node, UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), node.arg))
+        if node.annotation is not None:
+            arg_node.loc.end.column = node.annotation.col_offset - 1
+        return arg_node
 
     def visit_Del(self, node):  # python 3.8之后被弃用
         targets = []
