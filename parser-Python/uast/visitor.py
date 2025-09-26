@@ -333,15 +333,16 @@ class UASTTransformer(ast.NodeTransformer):
                     varType = self.packPos(node.args[i].annotation, self.visit(node.args[i].annotation))
 
                 arguments.append(
-                    UNode.VariableDeclaration(
-                        UNode.SourceLocation(),
-                        UNode.Meta(),
-                        self.packPos(node.args[i], self.visit(node.args[i])),
-                        default_value,
-                        False,
-                        varType
-                    )
-                )
+                    self.packPos(node.args[i],
+                                 UNode.VariableDeclaration(
+                                     UNode.SourceLocation(),
+                                     UNode.Meta(),
+                                     self.visit(node.args[i]),
+                                     default_value,
+                                     False,
+                                     varType
+                                 )
+                                 ))
         if len(node.kw_defaults) == len(node.kwonlyargs):
             for i in range(len(node.kwonlyargs)):
                 if node.kw_defaults[i] is not None:
