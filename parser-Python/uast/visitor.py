@@ -1298,8 +1298,8 @@ class UASTTransformer(ast.NodeTransformer):
                 return UNode.SourceLocation()  # 可根据需求调整
 
             # 取所有子节点位置的最大值作为当前节点的位置
-            start_lineno = max(loc.start.line for loc in child_locations)
-            start_col = max(loc.start.column for loc in child_locations)
+            start_lineno = min(loc.start.line for loc in child_locations)
+            start_col = min(loc.start.column for loc in child_locations)
             end_lineno = max(loc.end.line for loc in child_locations)
             end_col = max(loc.end.column for loc in child_locations)
 
