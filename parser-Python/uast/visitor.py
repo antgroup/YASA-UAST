@@ -1290,6 +1290,9 @@ class UASTTransformer(ast.NodeTransformer):
             start_col = node.col_offset
             end_lineno = node.end_lineno
             end_col = node.end_col_offset
+            # 构建自定义的 SourceLocation 对象
+            start_pos = UNode.Position(start_lineno, start_col + 1)
+            end_pos = UNode.Position(end_lineno, end_col + 1)
         else:
             # 递归收集所有子节点的位置
             child_locations = collect_child_locations(node)
@@ -1303,7 +1306,7 @@ class UASTTransformer(ast.NodeTransformer):
             end_lineno = max(loc.end.line for loc in child_locations)
             end_col = max(loc.end.column for loc in child_locations)
 
-        # 构建自定义的 SourceLocation 对象
-        start_pos = UNode.Position(start_lineno, start_col + 1)
-        end_pos = UNode.Position(end_lineno, end_col + 1)
+            # 构建自定义的 SourceLocation 对象
+            start_pos = UNode.Position(start_lineno, start_col)
+            end_pos = UNode.Position(end_lineno, end_col)
         return UNode.SourceLocation(start_pos, end_pos, self.sourcefile)
