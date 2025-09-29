@@ -14,7 +14,7 @@ abstract public class ASTNode {
     public ASTNode parent;
     public String type;
     public Loc loc;
-    public Meta _meta;
+    public Map<String, Object> _meta;
     abstract public <T> T accept(UastVisitor visitor);
 };`
     }
@@ -41,16 +41,6 @@ public class LineColumn {
     }
 }
 
-const Meta = function(){
-    return function(){
-        return `${DISCLAIMER}${packageDecl}
-import java.util.Map;
-
-public class Meta {
-    public Map<String, Object> _meta;
-};`
-    }
-}
 
 
 // java的每个 AST 节点的描述会作为一个类，单独写到一个文件中
