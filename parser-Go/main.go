@@ -163,7 +163,6 @@ func buildAndPrint(moduleName string, packages map[string]*ast.Package, fset *to
 	defer file.Close()
 
 	encoder := json.NewEncoder(file)
-	encoder.SetIndent("", "  ") // 美化 JSON 输出，缩进为两个空格
 	if err := encoder.Encode(output); err != nil {
 		fmt.Println("编码失败:", err)
 		return
