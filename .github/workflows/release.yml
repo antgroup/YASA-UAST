@@ -285,76 +285,35 @@ jobs:
           name: ${{ matrix.artifact_name }}
           path: ${{ matrix.output_path }}
 
-  # 5. 构建 Python 可执行文件（多平台）
-  build_python:
+  # ========== 5. 构建 Python 可执行文件（多平台，拆分处理）==========
+
+  # Job 1: Build for Linux using Docker (for maximum compatibility)
+  build_python_linux:
+    name: Build Python Binary - Linux x64
     needs: publish_parser_js
-    strategy:
-      matrix:
-        include:
-          - runner: docker
-            os: ubuntu-latest
-            target: linux
-            goos: linux
-            goarch: amd64
-            artifact_name: python-linux-amd64
-            output_path: dist/uast4py-linux-amd64
-
-          - runner: native
-            os: macos-latest
-            target: mac
-            goos: darwin
-            goarch: amd64
-            artifact_name: python-mac-amd64
-            output_path: parser-Python/dist/uast4py-mac-amd64
-
-          - runner: native
-            os: macos-latest
-            target: mac
-            goos: darwin
-            goarch: arm64
-            artifact_name: python-mac-arm64
-            output_path: parser-Python/dist/uast4py-mac-arm64
-          # ========== Windows ==========
-          - runner: native
-            os: windows-latest
-            target: win
-            goos: windows
-            goarch: amd64
-            artifact_name: python-windows-amd64
-            output_path: parser-Python/dist/uast4py-windows-amd64.exe
-
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # ========== Linux: 使用 Docker 构建（兼容 glibc 2.17+）==========
       - name: Set up Docker
-        if: ${{ matrix.runner == 'docker' }}
         uses: docker/setup-docker-action@v3
 
-      - name: Build Linux binary with Docker
-        if: ${{ matrix.runner == 'docker' }}
+      - name: Build with Docker
         run: |
           echo "🐳 Building Linux binary in container..."
-
+          
           # 构建镜像
           docker build \
-            --build-arg GOOS=${{ matrix.goos }} \
-            --build-arg GOARCH=${{ matrix.goarch }} \
+            --build-arg GOOS=linux \
+            --build-arg GOARCH=amd64 \
             -f parser-Python/Dockerfile.linux \
             -t uast4py-linux .
 
-          # 创建容器以提取文件
+          # 创建容器提取产物
           docker create --name temp-container uast4py-linux
-
-          # 创建本地输出目录
           mkdir -p dist
-
-          # 从容器中复制已构建好的二进制文件
           docker cp temp-container:/dist/uast4py-linux-amd64 dist/uast4py-linux-amd64
-
-          # 清理容器
           docker rm temp-container
 
           # 添加可执行权限
@@ -362,55 +321,104 @@ jobs:
 
           echo "✅ Built: dist/uast4py-linux-amd64"
 
-      - name: Upload Linux artifact
-        if: ${{ matrix.runner == 'docker' }}
+      - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ matrix.artifact_name }}
-          path: ${{ matrix.output_path }}
+          name: python-linux-amd64
+          path: dist/uast4py-linux-amd64
 
-      # ========== macOS / Windows: 原生构建 ==========
-      - name: Setup Python
-        if: ${{ matrix.runner == 'native' }}
+
+  # Job 2: Build for macOS (Intel & Apple Silicon)
+  build_python_macos:
+    name: Build Python Binary - macOS Universal
+    needs: publish_parser_js
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        arch:
+          - amd64
+          - arm64
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python ${{ matrix.arch }}
         uses: actions/setup-python@v4
         with:
           python-version: '3.13'
 
-      - name: Build native binary (macOS or Windows)
-        if: ${{ matrix.runner == 'native' }}
-        working-directory: parser-
+      - name: Install Dependencies and Build
+        working-directory: parser-Python
         shell: bash
         run: |
-          echo "🏗️ Building for ${{ matrix.target }} ${{ matrix.goarch }}"
+          echo "🏗️ Building for macOS (${matrix.arch})..."
+
           python -m venv .venv
-          source .venv/bin/activate || source .venv/Scripts/activate  # 兼容 Windows
+          source .venv/bin/activate
+
+          pip install --upgrade pip
           pip install -r requirements.txt
           pip install pyinstaller
 
-          # 构建
           pyinstaller --onefile uast/builder.py
 
-          mkdir -p dist
-          OUTPUT_NAME="uast4py-${{ matrix.target }}-${{ matrix.goarch }}"
-          if [ "${{ matrix.goos }}" = "windows" ]; then
-            mv dist/builder.exe "dist/${OUTPUT_NAME}.exe"
-          else
-            mv dist/builder "dist/${OUTPUT_NAME}"
-          fi
-          echo "✅ Built: dist/${OUTPUT_NAME}${{ matrix.goos == 'windows' && '.exe' || '' }}"
-        
+          OUTPUT_NAME="uast4py-mac-${{ matrix.arch }}"
+          mv "dist/builder" "dist/${OUTPUT_NAME}"
 
-      - name: Upload macOS artifact
-        if: ${{ matrix.runner == 'native' }}
+          echo "✅ Built: dist/${OUTPUT_NAME}"
+
+      - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ matrix.artifact_name }}
-          path: ${{ matrix.output_path }}
+          name: python-mac-${{ matrix.arch }}
+          path: parser-Python/dist/uast4py-mac-${{ matrix.arch }}
+
+
+  # Job 3: Build for Windows
+  build_python_windows:
+    name: Build Python Binary - Windows x64
+    needs: publish_parser_js
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.13'
+
+      - name: Install Dependencies and Build
+        working-directory: parser-Python
+        shell: pwsh
+        run: |
+          Write-Output "🏗️ Building for Windows x64..."
+
+          python -m venv .venv
+          .venv\Scripts\Activate.ps1
+
+          pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pyinstaller
+
+          pyinstaller --onefile uast\builder.py
+
+          New-Item -ItemType Directory -Path dist -ErrorAction SilentlyContinue
+          Move-Item -Path "dist\builder.exe" -Destination "dist\uast4py-windows-amd64.exe"
+          
+          Write-Output "✅ Built: dist\uast4py-windows-amd64.exe"
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: python-windows-amd64
+          path: parser-Python/dist/uast4py-windows-amd64.exe
+
 
 
   # 6. 合并产物并创建 GitHub Release
   create_release:
-    needs: [build_go, build_python]
+    needs: [build_go, build_python_linux, build_python_macos, build_python_windows]
     runs-on: ubuntu-latest
     environment: release
     permissions:
