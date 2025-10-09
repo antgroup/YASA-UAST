@@ -351,21 +351,17 @@ jobs:
         working-directory: parser-Python
         shell: bash
         run: |
-          echo "🏗️ Building for macOS (${matrix.arch})..."
+            echo "🏗️ Building for ${{ matrix.target }} ${{ matrix.goarch }}"
+            python -m venv .venv
+            source .venv/bin/activate
+            pip install -r requirements.txt
+            pip install pyinstaller
+            pyinstaller --onefile uast/builder.py
 
-          python -m venv .venv
-          source .venv/bin/activate
-
-          pip install --upgrade pip
-          pip install -r requirements.txt
-          pip install pyinstaller
-
-          pyinstaller --onefile uast/builder.py
-
-          OUTPUT_NAME="uast4py-mac-${{ matrix.arch }}"
-          mv "dist/builder" "dist/${OUTPUT_NAME}"
-
-          echo "✅ Built: dist/${OUTPUT_NAME}"
+            mkdir -p dist
+            OUTPUT_NAME="uast4py-${{ matrix.target }}-${{ matrix.goarch }}"
+            mv dist/builder "dist/$OUTPUT_NAME"
+            echo "✅ Built: dist/$OUTPUT_NAME"
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
