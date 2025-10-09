@@ -236,11 +236,11 @@ jobs:
             output_path: parser-Go/dist/uast4go-mac-arm64
 
           # ========== Windows ==========
-          # - os: windows-latest
-          #   goos: windows
-          #   goarch: amd64
-          #   artifact_name: go-windows-amd64
-          #   output_path: parser-Go/dist/uast4go-windows-amd64.exe
+          - os: windows-latest
+            goos: windows
+            goarch: amd64
+            artifact_name: go-windows-amd64
+            output_path: parser-Go/dist/uast4go-windows-amd64.exe
 
     steps:
       - name: Checkout
@@ -314,6 +314,14 @@ jobs:
             goarch: arm64
             artifact_name: python-mac-arm64
             output_path: parser-Python/dist/uast4py-mac-arm64
+          # ========== Windows ==========
+          - runner: native
+            os: windows-latest
+            target: win
+            goos: windows
+            goarch: amd64
+            artifact_name: python-windows-amd64
+            output_path: parser-Python/dist/uast4py-windows-amd64.exe
 
     runs-on: ${{ matrix.os }}
     steps:
@@ -361,29 +369,36 @@ jobs:
           name: ${{ matrix.artifact_name }}
           path: ${{ matrix.output_path }}
 
-      # ========== macOS: 原生构建 ==========
+      # ========== macOS / Windows: 原生构建 ==========
       - name: Setup Python
         if: ${{ matrix.runner == 'native' }}
         uses: actions/setup-python@v4
         with:
           python-version: '3.13'
 
-      - name: Build macOS binary
+      - name: Build native binary (macOS or Windows)
         if: ${{ matrix.runner == 'native' }}
-        working-directory: parser-Python
+        working-directory: parser-
+        shell: bash
         run: |
           echo "🏗️ Building for ${{ matrix.target }} ${{ matrix.goarch }}"
           python -m venv .venv
-          source .venv/bin/activate
+          source .venv/bin/activate || source .venv/Scripts/activate  # 兼容 Windows
           pip install -r requirements.txt
           pip install pyinstaller
+
+          # 构建
           pyinstaller --onefile uast/builder.py
 
           mkdir -p dist
           OUTPUT_NAME="uast4py-${{ matrix.target }}-${{ matrix.goarch }}"
-          mv dist/builder "dist/$OUTPUT_NAME"
-          echo "✅ Built: dist/$OUTPUT_NAME"
-        shell: bash
+          if [ "${{ matrix.goos }}" = "windows" ]; then
+            mv dist/builder.exe "dist/${OUTPUT_NAME}.exe"
+          else
+            mv dist/builder "dist/${OUTPUT_NAME}"
+          fi
+          echo "✅ Built: dist/${OUTPUT_NAME}${{ matrix.goos == 'windows' && '.exe' || '' }}"
+        
 
       - name: Upload macOS artifact
         if: ${{ matrix.runner == 'native' }}
