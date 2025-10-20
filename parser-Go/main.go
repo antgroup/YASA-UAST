@@ -98,11 +98,11 @@ func parseGoModule(rootDir string, output string) {
 	var moduleName string
 	// Read the module name from go.mod
 	// Find the go.mod file
-	goModPath, err := findAllGoMod(rootDir)
+	goModPaths, err := findAllGoMod(rootDir)
 	if err != nil {
 		moduleName = "__unknown_module__"
 	} else {
-		name, _ := readModuleName(goModPath[0])
+		name, _ := readModuleName(goModPaths[0])
 		moduleName = name
 	}
 
@@ -111,7 +111,11 @@ func parseGoModule(rootDir string, output string) {
 	//	panic(err)
 	//}
 	//默认取找到的第一个go.mod
-	buildAndPrint(moduleName, packages, fset, output, goModPath[0], len(goModPath))
+	firstGoModPath := ""
+	if goModPaths != nil {
+		firstGoModPath = goModPaths[0]
+	}
+	buildAndPrint(moduleName, packages, fset, output, firstGoModPath, len(goModPaths))
 }
 
 // findGoMod searches for a go.mod file starting from dir and recursing into subdirectories if not found
@@ -144,8 +148,11 @@ func findAllGoMod(dir string) ([]string, error) {
 			}
 		}
 	}
-
-	return paths, nil
+	if paths != nil {
+		return paths, nil
+	} else {
+		return nil, fmt.Errorf("not found go.mod")
+	}
 }
 
 func buildAndPrint(moduleName string, packages map[string]*ast.Package, fset *token.FileSet, outputPath string, goModPath string, numOfGoMod int) {
