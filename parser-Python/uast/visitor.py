@@ -217,10 +217,31 @@ class UASTTransformer(ast.NodeTransformer):
 
     def visit_While(self, node):
         bodys = []
-        for body in node.body:
-            bodys.append(self.packPos(body, self.visit(body)))
-        return self.packPos(node, UNode.WhileStatement(UNode.SourceLocation(), UNode.Meta(),
-                                                       self.packPos(node.test, self.visit(node.test)), bodys))
+        if node.body:
+            col_offsets = [body.col_offset for body in node.body]
+            end_col_offsets = [body.end_col_offset for body in node.body]
+            min_col = min(col_offsets)
+            max_col = max(end_col_offsets)
+            body_loc = UNode.SourceLocation(
+                UNode.Position(node.body[0].lineno, min_col),
+                UNode.Position(node.body[-1].end_lineno, max_col),
+                self.sourcefile
+            )
+            # 处理 body
+            for body in node.body:
+                bodys.append(self.packPos(body, self.visit(body)))
+        else:
+            body_loc = UNode.SourceLocation()
+
+        return self.packPos(
+            node,
+            UNode.WhileStatement(
+                UNode.SourceLocation(),
+                UNode.Meta(),
+                self.packPos(node.test, self.visit(node.test)),
+                UNode.ScopedStatement(body_loc, UNode.Meta(), bodys)
+            )
+        )
 
     def visit_Gt(self, node):
         return ">"
