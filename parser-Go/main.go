@@ -53,6 +53,7 @@ type Output struct {
 	PackageInfo *uast.PackagePathInfo `json:"packageInfo"`
 	ModuleName  string                `json:"moduleName"`
 	GoModPath   string                `json:"goModPath"`
+	NumOfGoMod  int                   `json:"numOfGoMod"`
 }
 
 func main() {
@@ -88,7 +89,7 @@ func parseSingleFile(file string, output string) {
 	packages := make(map[string]*ast.Package)
 	packages["__single__"] = pkg
 
-	buildAndPrint("__single_module__", packages, fset, output, "")
+	buildAndPrint("__single_module__", packages, fset, output, "", 0)
 }
 
 func parseGoModule(rootDir string, output string) {
@@ -97,11 +98,11 @@ func parseGoModule(rootDir string, output string) {
 	var moduleName string
 	// Read the module name from go.mod
 	// Find the go.mod file
-	goModPath, err := findGoMod(rootDir)
+	goModPaths, err := findAllGoMod(rootDir)
 	if err != nil {
 		moduleName = "__unknown_module__"
 	} else {
-		name, _ := readModuleName(goModPath)
+		name, _ := readModuleName(goModPaths[0])
 		moduleName = name
 	}
 
@@ -109,47 +110,58 @@ func parseGoModule(rootDir string, output string) {
 	//if err != nil {
 	//	panic(err)
 	//}
-	buildAndPrint(moduleName, packages, fset, output, goModPath)
+	//默认取找到的第一个go.mod
+	firstGoModPath := ""
+	if goModPaths != nil {
+		firstGoModPath = goModPaths[0]
+	}
+	buildAndPrint(moduleName, packages, fset, output, firstGoModPath, len(goModPaths))
 }
 
 // findGoMod searches for a go.mod file starting from dir and recursing into subdirectories if not found
-func findGoMod(dir string) (string, error) {
+func findAllGoMod(dir string) ([]string, error) {
 	if strings.Contains(dir, "/vendor") {
-		return "", fmt.Errorf("find vendor")
+		return nil, fmt.Errorf("find vendor")
 	}
 	const goModFileName = "go.mod"
 
+	var paths []string
+
 	// Check if go.mod exists in the current directory
 	goModPath := filepath.Join(dir, goModFileName)
-	if _, err := os.Stat(goModPath); !os.IsNotExist(err) {
-		return goModPath, nil
+	if _, err := os.Stat(goModPath); err == nil {
+		paths = append(paths, goModPath)
 	}
 
 	// If not found, recurse into subdirectories
 	entries, err := os.ReadDir(dir)
 	if err != nil {
-		return "", err
+		return nil, err
 	}
 
 	for _, entry := range entries {
 		if entry.IsDir() {
 			subDir := filepath.Join(dir, entry.Name())
-			goModPath, err := findGoMod(subDir)
-			if err == nil {
-				return goModPath, nil
+			subPaths, err := findAllGoMod(subDir)
+			if err == nil && len(subPaths) > 0 {
+				paths = append(paths, subPaths...)
 			}
 		}
 	}
-
-	return "", fmt.Errorf("go.mod not found in directory or subdirectories: %s", dir)
+	if paths != nil {
+		return paths, nil
+	} else {
+		return nil, fmt.Errorf("not found go.mod")
+	}
 }
 
-func buildAndPrint(moduleName string, packages map[string]*ast.Package, fset *token.FileSet, outputPath string, goModPath string) {
+func buildAndPrint(moduleName string, packages map[string]*ast.Package, fset *token.FileSet, outputPath string, goModPath string, numOfGoMod int) {
 	packageInfo := buildPackage(moduleName, packages, fset)
 	output := &Output{
 		PackageInfo: packageInfo,
 		ModuleName:  moduleName,
 		GoModPath:   goModPath,
+		NumOfGoMod:  numOfGoMod,
 	}
 	//jsonBytes, err := json.MarshalIndent(output, "", "  ")
 	//if err != nil {
