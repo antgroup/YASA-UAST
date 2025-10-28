@@ -1086,13 +1086,22 @@ class UASTTransformer(ast.NodeTransformer):
                                                         self.packPos(node.operand, self.visit(node.operand))))
 
     def visit_ExceptHandler(self, node):
-        body = []
-        for stmt in node.body:
-            unode = self.packPos(stmt, self.visit(stmt))
-            if isinstance(unode, list):
-                body.extend(unode)
-            else:
-                body.append(unode)
+        bodys = []
+        if node.body:
+            col_offsets = [body.col_offset for body in node.body]
+            end_col_offsets = [body.end_col_offset for body in node.body]
+            min_col = min(col_offsets)
+            max_col = max(end_col_offsets)
+            body_loc = UNode.SourceLocation(
+                UNode.Position(node.body[0].lineno, min_col),
+                UNode.Position(node.body[-1].end_lineno, max_col),
+                self.sourcefile
+            )
+            # 处理 body
+            for body in node.body:
+                bodys.append(self.packPos(body, self.visit(body)))
+        else:
+            body_loc = UNode.SourceLocation()
         type = None
         if node.type is not None and node.name is not None:
             type = self.packPos(node.type, self.visit(node.type))
@@ -1105,7 +1114,7 @@ class UASTTransformer(ast.NodeTransformer):
                                                                            UNode.DynamicType(UNode.SourceLocation(),
                                                                                              UNode.Meta()))))
         return self.packPos(node, UNode.CatchClause(UNode.SourceLocation(), UNode.Meta(), parameter,
-                                                    body))
+                                                    UNode.ScopedStatement(body_loc, UNode.Meta(), bodys)))
 
     def visit_FormattedValue(self, node):
         return self.packPos(node.value, self.visit(node.value))
