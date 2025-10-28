@@ -407,59 +407,48 @@ Type = Union[
 Conditional = Union[IfStatement , SwitchStatement , ConditionalExpression]
 
 Node = Union[ArrayType
-, AssignmentExpression
-, BinaryExpression
+    , AssignmentExpression
+    , BinaryExpression
     , BreakStatement
-, CallExpression
+    , CallExpression
     , CaseClause
-    # , CastExpression
-    # , CatchClause
-    # , ChanType
-, ClassDefinition
-, CompileUnit
+    , CatchClause
+    , ClassDefinition
+    , CompileUnit
     , ConditionalExpression
     , ContinueStatement
     , DereferenceExpression
-, DynamicType
-, ExportStatement
-    # , ExpressionStatement
-, ForStatement
-    # , FuncType
-, FunctionDefinition
-, Identifier
-, IfStatement
+    , DynamicType
+    , ExportStatement
+    , ExpressionStatement
+    , ForStatement
+    , FunctionDefinition
+    , Identifier
+    , IfStatement
     , ImportExpression
-    # , LabeledStatement
-, Literal
-    # , MapType
-, MemberAccess
+    , Literal
+    , MemberAccess
     , NewExpression
-, Noop
-, ObjectExpression
-, ObjectProperty
-    # , PackageDeclaration
-    # , PointerType
-, PrimitiveType
-, RangeStatement
+    , Noop
+    , ObjectExpression
+    , ObjectProperty
+    , PrimitiveType
+    , RangeStatement
     , ReferenceExpression
     , ReturnStatement
-, ScopedStatement
-    # , ScopedType
+    , ScopedStatement
     , Sequence
     , SliceExpression
-, SpreadElement
-    # , SuperExpression
+    , SpreadElement
+    , SuperExpression
     , SwitchStatement
-    # , ThisExpression  test?: Expression | null
-    #   body: Instruction
-    # , ThrowStatement
+    , ThisExpression
+    , ThrowStatement
     , TryStatement
-, TupleExpression
-    # , TupleType
+    , TupleExpression
     , UnaryExpression
-, VariableDeclaration
-    # , VoidType
-, WhileStatement
+    , VariableDeclaration
+    , WhileStatement
     , YieldExpression
 ]
 
