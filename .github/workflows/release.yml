@@ -236,11 +236,11 @@ jobs:
             output_path: parser-Go/dist/uast4go-mac-arm64
 
           # ========== Windows ==========
-          - os: windows-latest
-            goos: windows
-            goarch: amd64
-            artifact_name: go-windows-amd64
-            output_path: parser-Go/dist/uast4go-windows-amd64.exe
+          # - os: windows-latest
+          #   goos: windows
+          #   goarch: amd64
+          #   artifact_name: go-windows-amd64
+          #   output_path: parser-Go/dist/uast4go-windows-amd64.exe
 
     steps:
       - name: Checkout
@@ -370,39 +370,39 @@ jobs:
           path: parser-Python/dist/uast4py-mac-${{ matrix.arch }}
 
 
-  # Job 3: Build for Windows
-  build_python_windows:
-    name: Build Python Binary - Windows x64
-    needs: publish_parser_js
-    runs-on: windows-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+  # # Job 3: Build for Windows
+  # build_python_windows:
+  #   name: Build Python Binary - Windows x64
+  #   needs: publish_parser_js
+  #   runs-on: windows-latest
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.13'
+  #     - name: Setup Python
+  #       uses: actions/setup-python@v4
+  #       with:
+  #         python-version: '3.13'
 
-      - name: Install Dependencies and Build
-        working-directory: parser-Python
-        shell: pwsh
-        run: |
-          Write-Output "🏗️ Building for Windows x64..."
+  #     - name: Install Dependencies and Build
+  #       working-directory: parser-Python
+  #       shell: pwsh
+  #       run: |
+  #         Write-Output "🏗️ Building for Windows x64..."
 
-          python -m venv .venv
-          .venv\Scripts\Activate.ps1
+  #         python -m venv .venv
+  #         .venv\Scripts\Activate.ps1
 
-          pip install --upgrade pip
-          pip install -r requirements.txt
-          pip install pyinstaller
+  #         pip install --upgrade pip
+  #         pip install -r requirements.txt
+  #         pip install pyinstaller
 
-          pyinstaller --onefile uast\builder.py
+  #         pyinstaller --onefile uast\builder.py
 
-          New-Item -ItemType Directory -Path dist -ErrorAction SilentlyContinue
-          Move-Item -Path "dist\builder.exe" -Destination "dist\uast4py-windows-amd64.exe"
+  #         New-Item -ItemType Directory -Path dist -ErrorAction SilentlyContinue
+  #         Move-Item -Path "dist\builder.exe" -Destination "dist\uast4py-windows-amd64.exe"
           
-          Write-Output "✅ Built: dist\uast4py-windows-amd64.exe"
+  #         Write-Output "✅ Built: dist\uast4py-windows-amd64.exe"
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
@@ -414,7 +414,8 @@ jobs:
 
   # 6. 合并产物并创建 GitHub Release
   create_release:
-    needs: [build_go, build_python_linux, build_python_macos, build_python_windows]
+    # needs: [build_go, build_python_linux, build_python_macos, build_python_windows]
+    needs: [build_go, build_python_linux, build_python_macos]
     runs-on: ubuntu-latest
     environment: release
     permissions:
