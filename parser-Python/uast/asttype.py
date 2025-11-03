@@ -453,3 +453,58 @@ Node = Union[ArrayType
 ]
 
 # 其他类型别名类似定义...
+
+# ========== Performance Optimization ==========
+# 优化：使用 msgspec 加速 JSON 序列化
+try:
+    import msgspec
+    
+    # 保存原始方法（仅在 to_json 需要调用原始方法时使用）
+    _original_to_json = CompileUnit.to_json
+    
+    # 定义优化后的 to_dict 方法
+    def _optimized_to_dict(self, encode_json=False):
+        """使用 dataclasses.asdict，手动处理字段名映射"""
+        from dataclasses import asdict
+        
+        FIELD_NAME_MAPPINGS = {
+            'from_': 'from',
+        }
+        
+        def _convert_field_names(obj):
+            """递归转换对象，处理字段名映射"""
+            if isinstance(obj, dict):
+                result = {}
+                for key, value in obj.items():
+                    json_key = FIELD_NAME_MAPPINGS.get(key, key)
+                    result[json_key] = _convert_field_names(value)
+                return result
+            elif isinstance(obj, list):
+                return [_convert_field_names(item) for item in obj]
+            else:
+                return obj
+        
+        data_dict = asdict(self)
+        return _convert_field_names(data_dict)
+    
+    # 定义优化后的 to_json 方法
+    def _optimized_to_json(self, indent=2, ensure_ascii=False, **kwargs):
+        """使用 msgspec 优化的 to_json 方法"""
+        # indent=None 时使用原始方法以保持与 dataclasses_json 一致
+        if kwargs or indent is None or indent != 2:
+            if ensure_ascii is False and 'ensure_ascii' not in kwargs:
+                return _original_to_json(self, indent=indent, **kwargs)
+            else:
+                return _original_to_json(self, indent=indent, ensure_ascii=ensure_ascii, **kwargs)
+        
+        # 默认参数时使用 msgspec 优化
+        data_dict = self.to_dict(encode_json=False)
+        return msgspec.json.encode(data_dict, order=None).decode('utf-8')
+    
+    # 应用优化
+    CompileUnit.to_dict = _optimized_to_dict
+    CompileUnit.to_json = _optimized_to_json
+    
+except ImportError:
+    # msgspec 不可用，保持原样
+    pass
