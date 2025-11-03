@@ -31,12 +31,12 @@ def _parse_file_worker(args):
     """Worker function for parallel file parsing
     
     Args:
-        args: tuple of (filepath, target_file, verbose)
+        args: tuple of (filepath, target_file)
     
     Returns:
         tuple: (filepath, elapsed_time, success, error_msg)
     """
-    filepath, target_file, verbose = args
+    filepath, target_file = args
     start_time = time.time()
     success, error_msg = parse_single_file(filepath, target_file, verbose=True)  # 并行模式下设置为 verbose，不输出错误信息，由主进程统一输出
     elapsed_time = time.time() - start_time
@@ -81,37 +81,44 @@ def parse_project(dir, output_path, verbose=False, parallel=1):
     with ProcessPoolExecutor(max_workers=max_workers) as executor:
         # 提交所有任务
         future_to_file = {
-            executor.submit(_parse_file_worker, (filepath, target_file, verbose)): (index, filepath)
-            for index, (filepath, target_file) in enumerate(files_to_process, 1)
+            executor.submit(_parse_file_worker, (filepath, target_file)): filepath
+            for filepath, target_file in files_to_process
         }
         
         # 处理完成的任务
         completed_count = 0
-        for future in as_completed(future_to_file):
-            index, filepath = future_to_file[future]
-            try:
-                result_filepath, elapsed_time, success, error_msg = future.result()
-                completed_count += 1
-                if not success:
-                    failed_count += 1
-                
-                if verbose:
-                    time_str = format_time(elapsed_time, always_ms=True)
-                    status = "Completed" if success else "Failed"
-                    msg = f"{status} {result_filepath} ({completed_count}/{total_files}) [elapsed: {time_str}]"
+        try:
+            for future in as_completed(future_to_file):
+                filepath = future_to_file[future]
+                try:
+                    result_filepath, elapsed_time, success, error_msg = future.result()
+                    completed_count += 1
                     if not success:
-                        msg += f" - {error_msg}"
-                    print(msg)
-                elif not success:
-                    print(f"Error processing {result_filepath}: {error_msg}")
-            except Exception as exc:
-                completed_count += 1
-                failed_count += 1
-                error_msg = str(exc)
-                if verbose:
-                    print(f"File {filepath} generated an exception: {error_msg}")
-                else:
-                    print(f"Error processing {filepath}: {error_msg}")
+                        failed_count += 1
+                    
+                    if verbose:
+                        time_str = format_time(elapsed_time, always_ms=True)
+                        status = "Completed" if success else "Failed"
+                        msg = f"{status} {result_filepath} ({completed_count}/{total_files}) [elapsed: {time_str}]"
+                        if not success:
+                            msg += f" - {error_msg}"
+                        print(msg)
+                    elif not success:
+                        print(f"Error processing {result_filepath}: {error_msg}")
+                except Exception as exc:
+                    completed_count += 1
+                    failed_count += 1
+                    error_msg = str(exc)
+                    if verbose:
+                        print(f"File {filepath} generated an exception: {error_msg}")
+                    else:
+                        print(f"Error processing {filepath}: {error_msg}")
+        except KeyboardInterrupt:
+            # 处理用户中断，优雅关闭
+            if verbose:
+                print(f"\nInterrupted by user. Shutting down workers...")
+            executor.shutdown(wait=False, cancel_futures=True)
+            raise
     
     # 计算总耗时
     total_elapsed_time = time.time() - total_start_time
@@ -170,7 +177,8 @@ def parse_single_file(file, output_path, verbose=False):
         try:
             with open(output_path, mode='w', encoding='utf-8') as f:
                 f.write(error_msg)
-        except:
+        except (OSError, IOError) as e:
+            # 无法写入文件时，至少记录错误（静默失败以避免重复错误信息）
             pass
         return (False, error_msg)
 
@@ -180,7 +188,7 @@ def main():
     parser.add_argument('--rootDir', type=str,
                         help='The root directory or single file path of the Python project')
     # singleFileParse 参数，用于决定是否解析单文件
-    parser.add_argument('--singleFileParse', type=str, default="False",
+    parser.add_argument('--singleFileParse', action='store_true',
                         help='Whether to parse a single file (default: False)')
     # output 参数，指定输出路径
     parser.add_argument('--output', type=str,
@@ -195,12 +203,7 @@ def main():
     
     args = parser.parse_args()
     root_dir = args.rootDir
-    if args.singleFileParse == "True":
-        single_file_parse = True
-    elif args.singleFileParse == "False":
-        single_file_parse = False
-    else:
-        raise ValueError(f"Error: {args.singleFileParse} should be True or False.")
+    single_file_parse = args.singleFileParse
     output_path = args.output
     verbose = args.verbose
     parallel = args.parallel
