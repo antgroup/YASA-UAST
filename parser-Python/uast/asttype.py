@@ -453,3 +453,46 @@ Node = Union[ArrayType
 ]
 
 # 其他类型别名类似定义...
+
+# ========== Performance Optimization ==========
+# 优化：使用优化的 to_dict 方法加速序列化
+# 保存原始方法（仅在 to_json 需要调用原始方法时使用）
+_original_to_json = CompileUnit.to_json
+
+# 定义优化后的 to_dict 方法
+def _optimized_to_dict(self, encode_json=False):
+    """使用 dataclasses.asdict，处理 from_ -> from 字段名映射"""
+    from dataclasses import asdict
+    
+    def _convert_field_names(obj):
+        """递归转换对象，将 from_ 字段名映射为 from"""
+        if isinstance(obj, dict):
+            result = {}
+            for k, v in obj.items():
+                # 直接将 from_ 映射为 from
+                result['from' if k == 'from_' else k] = _convert_field_names(v)
+            return result
+        elif isinstance(obj, list):
+            return [_convert_field_names(item) for item in obj]
+        else:
+            return obj
+    
+    return _convert_field_names(asdict(self))
+
+# 定义优化后的 to_json 方法
+def _optimized_to_json(self, indent=2, ensure_ascii=False, **kwargs):
+    """优化的 to_json 方法，确保 ensure_ascii=False 以保持中文原样"""
+    # indent=None 时使用原始方法以保持与 dataclasses_json 一致
+    if kwargs or indent is None or indent != 2:
+        # 避免ensure_ascii参数重复传递
+        if 'ensure_ascii' in kwargs:
+            return _original_to_json(self, indent=indent, **kwargs)
+        else:
+            return _original_to_json(self, indent=indent, ensure_ascii=ensure_ascii, **kwargs)
+    
+    # indent=2 时也使用原始方法（当前不会执行到这里）
+    return _original_to_json(self, indent=indent, ensure_ascii=ensure_ascii, **kwargs)
+
+# 应用优化
+CompileUnit.to_dict = _optimized_to_dict
+CompileUnit.to_json = _optimized_to_json

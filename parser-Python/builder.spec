@@ -3,10 +3,10 @@
 
 a = Analysis(
     ['uast/builder.py'],
-    pathex=['.venv/lib/python3.9/site-packages'],
+    pathex=['.venv/lib/python3.13/site-packages'],
     binaries=[],
     datas=[],
-    hiddenimports=[],
+    hiddenimports=['dataclasses_json', 'marshmallow', 'astunparse'],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
