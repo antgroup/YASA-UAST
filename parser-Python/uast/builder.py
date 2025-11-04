@@ -1,6 +1,7 @@
 import ast
 import argparse
 import os
+import sys
 import warnings
 import time
 import multiprocessing
@@ -35,6 +36,9 @@ def _parse_file_worker(args):
     
     Returns:
         tuple: (filepath, elapsed_time, success, error_msg)
+    
+    Note: This function must be importable at module level for multiprocessing
+    to work correctly in frozen (PyInstaller) environments.
     """
     filepath, target_file = args
     start_time = time.time()
@@ -243,7 +247,17 @@ def main():
 
 
 if __name__ == "__main__":
+    # PyInstaller support: Fix multiprocessing in frozen environments
+    if getattr(sys, 'frozen', False):
+        multiprocessing.freeze_support()
+        try:
+            multiprocessing.set_start_method('spawn', force=True)
+        except (RuntimeError, ValueError):
+            # Start method already set, ignore
+            pass
+   
     main()
+
 
 # ./dist/builder --rootDir="/Users/ariel/code/language-maturity-benchmark/xast-python/benchmark-python/case" --singleFileParse=False --output="/Users/ariel/code/uast/UAST4Python/output"
 # pyinstaller --onefile --paths .venv/lib/python3.13/site-packages ./uast/builder.py
