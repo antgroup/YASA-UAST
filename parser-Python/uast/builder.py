@@ -191,9 +191,23 @@ def main():
     # rootDir 参数，用于指定目录或文件路径
     parser.add_argument('--rootDir', type=str,
                         help='The root directory or single file path of the Python project')
-    # singleFileParse 参数，用于决定是否解析单文件
-    parser.add_argument('--singleFileParse', action='store_true',
-                        help='Whether to parse a single file (default: False)')
+    # 兼容旧版本参数 --singleFileParse=True 或 --singleFileParse=False 以及新版参数 --singleFileParse
+    def str_to_bool(v):
+        if isinstance(v, bool):
+            return v
+        if not v or not isinstance(v, str):
+            raise argparse.ArgumentTypeError(f'Boolean value expected, got: {v}')
+        v_lower = v.lower().strip()
+        if v_lower in ('yes', 'true', 't', 'y', '1'):
+            return True
+        elif v_lower in ('no', 'false', 'f', 'n', '0'):
+            return False
+        else:
+            raise argparse.ArgumentTypeError(f'Boolean value expected, got: {v}')
+    
+    parser.add_argument('--singleFileParse', nargs='?', const=True, type=str_to_bool, default=False,
+                        help='Parse a single file (default: False, use --singleFileParse or --singleFileParse=True for True)')
+
     # output 参数，指定输出路径
     parser.add_argument('--output', type=str,
                         help='The output file path to save the UAST')
