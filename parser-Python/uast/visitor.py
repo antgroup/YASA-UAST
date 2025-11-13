@@ -159,13 +159,11 @@ class UASTTransformer(ast.NodeTransformer):
                         id = self.packPos(node.targets[index].elts[i], self.visit(node.targets[index].elts[i]))
                         init = self.packPos(node.value.elts[i], self.visit(node.value.elts[i]))
                         exprs.append(
-                            UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(), id, init, False,
-                                                      UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())))
+                            UNode.AssignmentExpression(UNode.SourceLocation(), UNode.Meta(), id, init, '='))
             else:  # a = b = 3
                 id = self.packPos(node.targets[index], self.visit(node.targets[index]))
                 init = self.packPos(node.value, self.visit(node.value))
-                exprs.append(UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(), id, init, False,
-                                                       UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())))
+                exprs.append(UNode.AssignmentExpression(UNode.SourceLocation(), UNode.Meta(), id, init, '='))
         return exprs
 
     def visit_AsyncFunctionDef(self, node):
