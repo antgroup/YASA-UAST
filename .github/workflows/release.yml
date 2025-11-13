@@ -296,8 +296,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Docker
-        uses: docker/setup-docker-action@v3
+      # - name: Set up Docker
+      #   uses: docker/setup-docker-action@v3
 
       - name: Build with Docker
         run: |
