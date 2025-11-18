@@ -1,6 +1,6 @@
 import ast
 import sys
-
+import math
 import uast.asttype as UNode
 
 
@@ -325,7 +325,14 @@ class UASTTransformer(ast.NodeTransformer):
         elif isinstance(node.value, bytes):
             literal_type = 'bytes'
         elif isinstance(node.value, float):
-            literal_type = 'float'
+            if math.isinf(node.value):
+                node.value = 'inf' if node.value > 0 else '-inf'
+                literal_type = 'string'
+            elif math.isnan(node.value):
+                node.value = 'nan'
+                literal_type = 'string'
+            else:
+                literal_type = 'float'
         if literal_type is not None:
             return self.packPos(node, UNode.Literal(UNode.SourceLocation(), UNode.Meta(), node.value, literal_type))
         else:
