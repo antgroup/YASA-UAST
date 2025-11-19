@@ -25,7 +25,7 @@ class UASTTransformer(ast.NodeTransformer):
     def visit_FunctionDef(self, node):
         body = []
 
-        params = self.packPos(node.args, self.visit(node.args))
+        params = self.visit(node.args)
         for param in node.args.args:
             # if param.arg == 'self' and node.name != '__init__':
             if param.arg == 'self':
@@ -164,7 +164,9 @@ class UASTTransformer(ast.NodeTransformer):
                 id = self.packPos(node.targets[index], self.visit(node.targets[index]))
                 init = self.packPos(node.value, self.visit(node.value))
                 exprs.append(UNode.AssignmentExpression(UNode.SourceLocation(), UNode.Meta(), id, init, '='))
-        return exprs
+        if len(exprs) == 1:
+            return self.packPos(node, exprs[0])
+        return self.packPos(node, UNode.Sequence(UNode.SourceLocation(), UNode.Meta(), exprs))
 
     def visit_AsyncFunctionDef(self, node):
         func_def = self.packPos(node, self.visit_FunctionDef(node))
@@ -307,7 +309,7 @@ class UASTTransformer(ast.NodeTransformer):
 
     def visit_BinOp(self, node):
         return self.packPos(node, UNode.BinaryExpression(UNode.SourceLocation(), UNode.Meta(),
-                                                         self.packPos(node.op, self.visit(node.op)),
+                                                         self.visit(node.op),
                                                          self.packPos(node.left, self.visit(node.left)),
                                                          self.packPos(node.right, self.visit(node.right))))
 
@@ -388,7 +390,7 @@ class UASTTransformer(ast.NodeTransformer):
             arguments.append(UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(),
                                                        self.packPos(node.kwarg, kwarg), None, False,
                                                        UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())))
-        return self.packPos(node, arguments)
+        return arguments
 
     def visit_Attribute(self, node):
         return self.packPos(node, UNode.MemberAccess(UNode.SourceLocation(), UNode.Meta(),
@@ -868,8 +870,7 @@ class UASTTransformer(ast.NodeTransformer):
                                                              self.packPos(node.target, self.visit(node.target)),
                                                              UNode.BinaryExpression(UNode.SourceLocation(),
                                                                                     UNode.Meta(),
-                                                                                    self.packPos(node.op,
-                                                                                                 self.visit(node.op)),
+                                                                                                 self.visit(node.op),
                                                                                     self.packPos(node.target,
                                                                                                  self.visit(
                                                                                                      node.target)),
@@ -933,7 +934,7 @@ class UASTTransformer(ast.NodeTransformer):
     def visit_BoolOp(self, node):
         if len(node.values) >= 2:
             binaryExpr = UNode.BinaryExpression(UNode.SourceLocation(), UNode.Meta(),
-                                                self.packPos(node.op, self.visit(node.op)),
+                                                self.visit(node.op),
                                                 self.packPos(node.values[0], self.visit(node.values[0])),
                                                 self.packPos(node.values[1], self.visit(node.values[1])))
             if len(node.values) == 2:
@@ -942,7 +943,7 @@ class UASTTransformer(ast.NodeTransformer):
                 i = 2
                 while i < len(node.values):
                     binaryExpr = UNode.BinaryExpression(UNode.SourceLocation(), UNode.Meta(),
-                                                        self.packPos(node.op, self.visit(node.op)), binaryExpr,
+                                                        self.visit(node.op), binaryExpr,
                                                         self.packPos(node.values[i], self.visit(node.values[i])))
                     i += 1
                 return self.packPos(node, binaryExpr)
@@ -1080,7 +1081,7 @@ class UASTTransformer(ast.NodeTransformer):
 
     def visit_UnaryOp(self, node):
         return self.packPos(node, UNode.UnaryExpression(UNode.SourceLocation(), UNode.Meta(),
-                                                        self.packPos(node.op, self.visit(node.op)),
+                                                        self.visit(node.op),
                                                         self.packPos(node.operand, self.visit(node.operand))))
 
     def visit_ExceptHandler(self, node):
@@ -1278,13 +1279,14 @@ class UASTTransformer(ast.NodeTransformer):
     def packPos(self, node, unode):
         if node is None:
             return None
-        loc = self.convertToLineColumn(node)
-        if isinstance(unode, UNode.Node):
-            unode.loc = loc
-        elif isinstance(unode, list):
-            for item in unode:
-                if isinstance(item, UNode.Node):
-                    item.loc = loc
+        if unode.loc.start is None:
+            loc = self.convertToLineColumn(node)
+            if isinstance(unode, UNode.Node):
+                unode.loc = loc
+            elif isinstance(unode, list):
+                for item in unode:
+                    if isinstance(item, UNode.Node):
+                        item.loc = loc
         return unode
 
     def convertToLineColumn(self, node):
