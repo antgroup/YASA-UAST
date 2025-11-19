@@ -15,11 +15,11 @@ class UASTTransformer(ast.NodeTransformer):
             if (isinstance(node.body[i], ast.Expr) and isinstance(node.body[i].value, ast.Constant) and
                     isinstance(node.body[i].value.value, str)):  # 跳过文档字符串注释
                 continue
-            unode = self.packPos(node.body[i], self.visit(node.body[i]))
+            unode = self.visit(node.body[i])
             if isinstance(unode, list):
                 body.extend(unode)
             else:
-                body.append(unode)
+                body.append(self.packPos(node.body[i], unode))
         return body
 
     def visit_FunctionDef(self, node):
@@ -41,11 +41,11 @@ class UASTTransformer(ast.NodeTransformer):
                 continue
             max_col = max(max_col, stmt.end_col_offset)
             min_col = min(min_col, stmt.col_offset)
-            unode = self.packPos(stmt, self.visit(stmt))
+            unode = self.visit(stmt)
             if isinstance(unode, list):
                 body.extend(unode)
             else:
-                body.append(unode)
+                body.append(self.packPos(stmt, unode))
         body_loc = None
         if len(node.body) > 0:
             body_loc = UNode.SourceLocation(UNode.Position(node.body[0].lineno, min_col),
@@ -111,7 +111,7 @@ class UASTTransformer(ast.NodeTransformer):
             for stmt in node.body:
                 max_col = max(max_col, stmt.end_col_offset)
                 min_col = min(min_col, stmt.col_offset)
-                unode = self.packPos(stmt, self.visit(stmt))
+                unode = self.visit(stmt)
                 # if isinstance(stmt, ast.FunctionDef) and stmt.name == '__init__':
                 #     for param in stmt.args.args:
                 #         if param.arg == 'self':
@@ -127,7 +127,7 @@ class UASTTransformer(ast.NodeTransformer):
                 if isinstance(unode, list):
                     body.extend(unode)
                 else:
-                    body.append(unode)
+                    body.append(self.packPos(stmt, unode))
             if len(node.body) > 0:
                 body_loc = UNode.SourceLocation(UNode.Position(node.body[0].lineno, min_col),
                                                 UNode.Position(node.body[-1].end_lineno, max_col), self.sourcefile)
@@ -135,13 +135,13 @@ class UASTTransformer(ast.NodeTransformer):
         super = []
         for base in node.bases:
             if isinstance(base, ast.Subscript):  # 暂不处理泛型
-                unode = self.packPos(base, self.visit(base.value))
+                unode = self.visit(base.value)
             else:
-                unode = self.packPos(base, self.visit(base))
+                unode = self.visit(base)
             if isinstance(unode, list):
                 super.extend(unode)
             else:
-                super.append(unode)
+                super.append(self.packPos(base, unode))
         class_def = self.packPos(node, UNode.ClassDefinition(UNode.SourceLocation(), UNode.Meta(), name,
                                                              body, super))
         decorator_list = []
@@ -184,11 +184,11 @@ class UASTTransformer(ast.NodeTransformer):
         for stmt in node.body:
             max_col = max(max_col, stmt.end_col_offset)
             min_col = min(min_col, stmt.col_offset)
-            unode = self.packPos(stmt, self.visit(stmt))
+            unode = self.visit(stmt)
             if isinstance(unode, list):
                 cons_body.extend(unode)
             else:
-                cons_body.append(unode)
+                cons_body.append(self.packPos(stmt, unode))
         cons_body_loc = None
         if len(node.body) > 0:
             cons_body_loc = UNode.SourceLocation(UNode.Position(node.body[0].lineno, min_col),
@@ -201,11 +201,11 @@ class UASTTransformer(ast.NodeTransformer):
         for stmt in node.orelse:
             max_col = max(max_col, stmt.end_col_offset)
             min_col = min(min_col, stmt.col_offset)
-            unode = self.packPos(stmt, self.visit(stmt))
+            unode = self.visit(stmt)
             if isinstance(unode, list):
                 alter_body.extend(unode)
             else:
-                alter_body.append(unode)
+                alter_body.append(self.packPos(stmt, unode))
         if len(node.orelse) > 0:
             alter_body_loc = UNode.SourceLocation(UNode.Position(node.orelse[0].lineno, min_col),
                                                   UNode.Position(node.orelse[-1].end_lineno, max_col), self.sourcefile)
@@ -289,11 +289,11 @@ class UASTTransformer(ast.NodeTransformer):
         for stmt in node.body:
             max_col = max(max_col, stmt.end_col_offset)
             min_col = min(min_col, stmt.col_offset)
-            unode = self.packPos(stmt, self.visit(stmt))
+            unode = self.visit(stmt)
             if isinstance(unode, list):
                 range_body.extend(unode)
             else:
-                range_body.append(unode)
+                range_body.append(self.packPos(stmt, unode))
         range_body_loc = None
         if len(node.body) > 0:
             range_body_loc = UNode.SourceLocation(UNode.Position(node.body[0].lineno, min_col),
@@ -630,11 +630,11 @@ class UASTTransformer(ast.NodeTransformer):
     def visit_Try(self, node):
         body = []
         for stmt in node.body:
-            unode = self.packPos(stmt, self.visit(stmt))
+            unode = self.visit(stmt)
             if isinstance(unode, list):
                 body.extend(unode)
             else:
-                body.append(unode)
+                body.append(self.packPos(stmt, unode))
 
         handler_list = []
         max_col = 0
@@ -670,18 +670,18 @@ class UASTTransformer(ast.NodeTransformer):
     def visit_Call(self, node):
         arguments = []
         for arg in node.args:
-            u_arg = self.packPos(arg, self.visit(arg))
+            u_arg = self.visit(arg)
             if isinstance(u_arg, list):
                 arguments.extend(u_arg)
             else:
-                arguments.append(u_arg)
+                arguments.append(self.packPos(arg, u_arg))
 
         for keyword in node.keywords:
-            u_arg = self.packPos(keyword, self.visit(keyword))
+            u_arg = self.visit(keyword)
             if isinstance(u_arg, list):
                 arguments.extend(u_arg)
             else:
-                arguments.append(u_arg)
+                arguments.append(self.packPos(keyword, u_arg))
 
         callee = self.packPos(node.func, self.visit(node.func))
         if isinstance(node.func, ast.Name):
@@ -737,11 +737,11 @@ class UASTTransformer(ast.NodeTransformer):
         for item in node.items:
             exprs.append(self.packPos(item, self.visit(item)))
         for stmt in node.body:
-            unode = self.packPos(stmt, self.visit(stmt))
+            unode = self.visit(stmt)
             if isinstance(unode, list):
                 exprs.extend(unode)
             else:
-                exprs.append(unode)
+                exprs.append(self.packPos(stmt, unode))
 
         return self.packPos(node, UNode.Sequence(UNode.SourceLocation(), UNode.Meta(), exprs))
 
@@ -1286,7 +1286,7 @@ class UASTTransformer(ast.NodeTransformer):
     def packPos(self, node, unode):
         if node is None:
             return None
-        if unode.loc.start is None:
+        if hasattr(unode, "loc") and unode.loc.start is None:
             loc = self.convertToLineColumn(node)
             if isinstance(unode, UNode.Node):
                 unode.loc = loc
