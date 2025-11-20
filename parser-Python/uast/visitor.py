@@ -163,7 +163,20 @@ class UASTTransformer(ast.NodeTransformer):
             else:  # a = b = 3
                 id = self.packPos(node.targets[index], self.visit(node.targets[index]))
                 init = self.packPos(node.value, self.visit(node.value))
-                exprs.append(UNode.AssignmentExpression(UNode.SourceLocation(), UNode.Meta(), id, init, '='))
+                # 为链式赋值设置正确的位置
+                # 对于 a=b=c=3，每个赋值表达式的位置应该是：
+                # - 每个赋值表达式从当前target开始到value结束（语义上每个赋值都包含整个右侧表达式）
+                if len(node.targets) > 1:  # 链式赋值
+                    # 每个赋值表达式的位置：从当前target开始到value结束
+                    start_pos = UNode.Position(node.targets[index].lineno, node.targets[index].col_offset + 1)
+                    end_pos = UNode.Position(node.value.end_lineno, node.value.end_col_offset + 1)
+                    assign_loc = UNode.SourceLocation(start_pos, end_pos, self.sourcefile)
+                    assign_expr = UNode.AssignmentExpression(assign_loc, UNode.Meta(), id, init, '=')
+                else:
+                    # 单个赋值，使用packPos设置位置
+                    assign_expr = UNode.AssignmentExpression(UNode.SourceLocation(), UNode.Meta(), id, init, '=')
+                    assign_expr = self.packPos(node, assign_expr)
+                exprs.append(assign_expr)
         if len(exprs) == 1:
             return self.packPos(node, exprs[0])
         return self.packPos(node, UNode.Sequence(UNode.SourceLocation(), UNode.Meta(), exprs))
@@ -360,43 +373,88 @@ class UASTTransformer(ast.NodeTransformer):
                 if node.args[i].annotation is not None:
                     varType = self.packPos(node.args[i].annotation, self.visit(node.args[i].annotation))
 
-                arguments.append(
-                    self.packPos(node.args[i],
-                                 UNode.VariableDeclaration(
-                                     UNode.SourceLocation(),
-                                     UNode.Meta(),
-                                     self.visit(node.args[i]),
-                                     default_value,
-                                     False,
-                                     varType
-                                 )
-                                 ))
+                arg_id = self.visit(node.args[i])
+                var_decl = UNode.VariableDeclaration(
+                    UNode.SourceLocation(),
+                    UNode.Meta(),
+                    arg_id,
+                    default_value,
+                    False,
+                    varType
+                )
+                # 手动设置位置：从参数名开始，到 annotation 或 default_value 结束
+                start_pos = UNode.Position(node.args[i].lineno, node.args[i].col_offset + 1)
+                if default_value is not None:
+                    # 如果有默认值，位置到默认值结束
+                    end_pos = UNode.Position(default_value.loc.end.line, default_value.loc.end.column)
+                elif node.args[i].annotation is not None:
+                    # 如果有 annotation，位置到 annotation 结束
+                    end_pos = UNode.Position(varType.loc.end.line, varType.loc.end.column)
+                else:
+                    # 只有参数名，位置到参数名结束
+                    end_pos = UNode.Position(node.args[i].end_lineno, node.args[i].end_col_offset + 1)
+                var_decl.loc = UNode.SourceLocation(start_pos, end_pos, self.sourcefile)
+                arguments.append(var_decl)
         if len(node.kw_defaults) == len(node.kwonlyargs):
             for i in range(len(node.kwonlyargs)):
                 if node.kw_defaults[i] is not None:
                     default_value = self.packPos(node.kw_defaults[i], self.visit(node.kw_defaults[i]))
                 else:
                     default_value = None
-                arguments.append(
-                    UNode.VariableDeclaration(
-                        UNode.SourceLocation(),
-                        UNode.Meta(),
-                        self.packPos(node.kwonlyargs[i], self.visit(node.kwonlyargs[i])),
-                        default_value,
-                        False,
-                        UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())
-                    )
+
+                arg_id = self.packPos(node.kwonlyargs[i], self.visit(node.kwonlyargs[i]))
+                arg_node = UNode.VariableDeclaration(
+                    UNode.SourceLocation(),
+                    UNode.Meta(),
+                    arg_id,
+                    default_value,
+                    False,
+                    UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())
                 )
+                # 手动设置位置：从参数名开始，到 default_value 结束（如果有）
+                start_pos = UNode.Position(node.kwonlyargs[i].lineno, node.kwonlyargs[i].col_offset + 1)
+                if default_value is not None:
+                    # 如果有默认值，位置到默认值结束（包括行和列）
+                    end_pos = UNode.Position(default_value.loc.end.line, default_value.loc.end.column)
+                else:
+                    # 只有参数名，位置到参数名结束
+                    end_pos = UNode.Position(node.kwonlyargs[i].end_lineno, node.kwonlyargs[i].end_col_offset + 1)
+                arg_node.loc = UNode.SourceLocation(start_pos, end_pos, self.sourcefile)
+                arguments.append(arg_node)
         if node.vararg is not None:
-            arguments.append(UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(),
-                                                       self.packPos(node.vararg, self.visit(node.vararg)), None, False,
-                                                       UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())))
+            arg_id = self.packPos(node.vararg, self.visit(node.vararg))
+            arg_node = UNode.VariableDeclaration(
+                UNode.SourceLocation(),
+                UNode.Meta(),
+                arg_id,
+                None,
+                False,
+                UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())
+            )
+            # 使用 packPos 设置基础位置，然后调整以包含 * 符号
+            arg_node = self.packPos(node.vararg, arg_node)
+            # 调整 start.column 以包含 * 符号（* 在参数名之前）
+            if arg_node.loc.start is not None:
+                arg_node.loc.start.column = arg_node.loc.start.column - 1
+            arguments.append(arg_node)
         if node.kwarg is not None:
             kwarg = self.visit(node.kwarg)
             kwarg._meta.isKwargs = True
-            arguments.append(UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(),
-                                                       self.packPos(node.kwarg, kwarg), None, False,
-                                                       UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())))
+            arg_id = self.packPos(node.kwarg, kwarg)
+            arg_node = UNode.VariableDeclaration(
+                UNode.SourceLocation(),
+                UNode.Meta(),
+                arg_id,
+                None,
+                False,
+                UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())
+            )
+            # 使用 packPos 设置基础位置，然后调整以包含 ** 符号
+            arg_node = self.packPos(node.kwarg, arg_node)
+            # 调整 start.column 以包含 ** 符号（** 在参数名之前）
+            if arg_node.loc.start is not None:
+                arg_node.loc.start.column = arg_node.loc.start.column - 2
+            arguments.append(arg_node)
         return arguments
 
     def visit_Attribute(self, node):
@@ -490,13 +548,19 @@ class UASTTransformer(ast.NodeTransformer):
 
     def visit_Lambda(self, node):
         params = self.packPos(node.args, self.visit(node.args))
+        bodys = []
+        bodys.append(self.packPos(node.body,
+                                  UNode.ReturnStatement(
+                                      UNode.SourceLocation(),
+                                      UNode.Meta(),
+                                      self.packPos(
+                                          node.body,
+                                          self.visit(
+                                              node.body)))))
         return self.packPos(node, UNode.FunctionDefinition(UNode.SourceLocation(), UNode.Meta(), params, None,
                                                            self.packPos(node.body,
-                                                                        UNode.ReturnStatement(UNode.SourceLocation(),
-                                                                                              UNode.Meta(),
-                                                                                              self.packPos(node.body,
-                                                                                                           self.visit(
-                                                                                                               node.body))))))
+                                                                        UNode.ScopedStatement(UNode.SourceLocation(),
+                                                                                              UNode.Meta(), bodys))))
 
     def visit_Match(self, node):
         cases = []
@@ -877,7 +941,7 @@ class UASTTransformer(ast.NodeTransformer):
                                                              self.packPos(node.target, self.visit(node.target)),
                                                              UNode.BinaryExpression(UNode.SourceLocation(),
                                                                                     UNode.Meta(),
-                                                                                                 self.visit(node.op),
+                                                                                    self.visit(node.op),
                                                                                     self.packPos(node.target,
                                                                                                  self.visit(
                                                                                                      node.target)),
