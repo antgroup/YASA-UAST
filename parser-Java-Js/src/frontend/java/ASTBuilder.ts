@@ -41,7 +41,7 @@ abstract class ParseTreeVisitor<Result> extends AbstractParseTreeVisitor<Result>
         return node;
     }
 
-    private adJustNodeLoc(node: UAST.Node) {
+    private adJustNodeLoc(node) {
         switch (node.type) {
             case 'VariableDeclaration':
                 if (node?.loc?.end?.column && node?.id?.name && !node.init) {
