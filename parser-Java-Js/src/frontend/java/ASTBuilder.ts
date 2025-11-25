@@ -1427,7 +1427,20 @@ export class ASTBuilder
             return UAST.unaryExpression(toText(ctx._postfix) as '++' | '--', this.visit(ctx.expression()[0]) as UAST.Expression, true);
         }
         if (ctx._prefix) {
-            return UAST.unaryExpression(toText(ctx._prefix) as '--', this.visit(ctx.expression()[0]) as UAST.Expression, false);
+            const text = toText(ctx._prefix)
+            if (text === '-') {
+              const argExpr = this.visit(ctx.expression()[0]) as UAST.Expression;
+              if (argExpr.type === 'Literal') {
+                argExpr.value = String(-Number(argExpr.value))
+                return argExpr;
+              } else {
+                return UAST.unaryExpression(toText(ctx._prefix) as '--', argExpr, false);
+              }
+            } else if (text === '+') {
+              return this.visit(ctx.expression()[0]) as UAST.Expression
+            } else {
+              return UAST.unaryExpression(toText(ctx._prefix) as '--', this.visit(ctx.expression()[0]) as UAST.Expression, false);
+            }
         }
 
 
@@ -1988,7 +2001,7 @@ export class ASTBuilder
         const typeTypeCtx = ctx.typeTypeOrVoid();
         if (typeTypeCtx) {
             const typeType = this.visit(typeTypeCtx) as UAST.Type;
-            return UAST.memberAccess(convertToMemberAccess(('id' in typeType && typeType.id.name) || ('name' in typeType && typeType.name)), UAST.identifier('Class'), false);
+            return UAST.memberAccess(convertToMemberAccess(('id' in typeType && typeType.id.name) || ('name' in typeType && typeType.name)), UAST.identifier('class'), false);
         }
         throw new Error(`Primary type: ${toText(ctx)} not supported`);
     }
