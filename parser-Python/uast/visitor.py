@@ -1,6 +1,6 @@
 import ast
 import sys
-
+import math
 import uast.asttype as UNode
 
 
@@ -15,17 +15,17 @@ class UASTTransformer(ast.NodeTransformer):
             if (isinstance(node.body[i], ast.Expr) and isinstance(node.body[i].value, ast.Constant) and
                     isinstance(node.body[i].value.value, str)):  # 跳过文档字符串注释
                 continue
-            unode = self.packPos(node.body[i], self.visit(node.body[i]))
+            unode = self.visit(node.body[i])
             if isinstance(unode, list):
                 body.extend(unode)
             else:
-                body.append(unode)
+                body.append(self.packPos(node.body[i], unode))
         return body
 
     def visit_FunctionDef(self, node):
         body = []
 
-        params = self.packPos(node.args, self.visit(node.args))
+        params = self.visit(node.args)
         for param in node.args.args:
             # if param.arg == 'self' and node.name != '__init__':
             if param.arg == 'self':
@@ -41,11 +41,11 @@ class UASTTransformer(ast.NodeTransformer):
                 continue
             max_col = max(max_col, stmt.end_col_offset)
             min_col = min(min_col, stmt.col_offset)
-            unode = self.packPos(stmt, self.visit(stmt))
+            unode = self.visit(stmt)
             if isinstance(unode, list):
                 body.extend(unode)
             else:
-                body.append(unode)
+                body.append(self.packPos(stmt, unode))
         body_loc = None
         if len(node.body) > 0:
             body_loc = UNode.SourceLocation(UNode.Position(node.body[0].lineno, min_col),
@@ -111,7 +111,7 @@ class UASTTransformer(ast.NodeTransformer):
             for stmt in node.body:
                 max_col = max(max_col, stmt.end_col_offset)
                 min_col = min(min_col, stmt.col_offset)
-                unode = self.packPos(stmt, self.visit(stmt))
+                unode = self.visit(stmt)
                 # if isinstance(stmt, ast.FunctionDef) and stmt.name == '__init__':
                 #     for param in stmt.args.args:
                 #         if param.arg == 'self':
@@ -127,7 +127,7 @@ class UASTTransformer(ast.NodeTransformer):
                 if isinstance(unode, list):
                     body.extend(unode)
                 else:
-                    body.append(unode)
+                    body.append(self.packPos(stmt, unode))
             if len(node.body) > 0:
                 body_loc = UNode.SourceLocation(UNode.Position(node.body[0].lineno, min_col),
                                                 UNode.Position(node.body[-1].end_lineno, max_col), self.sourcefile)
@@ -135,13 +135,13 @@ class UASTTransformer(ast.NodeTransformer):
         super = []
         for base in node.bases:
             if isinstance(base, ast.Subscript):  # 暂不处理泛型
-                unode = self.packPos(base, self.visit(base.value))
+                unode = self.visit(base.value)
             else:
-                unode = self.packPos(base, self.visit(base))
+                unode = self.visit(base)
             if isinstance(unode, list):
                 super.extend(unode)
             else:
-                super.append(unode)
+                super.append(self.packPos(base, unode))
         class_def = self.packPos(node, UNode.ClassDefinition(UNode.SourceLocation(), UNode.Meta(), name,
                                                              body, super))
         decorator_list = []
@@ -163,8 +163,23 @@ class UASTTransformer(ast.NodeTransformer):
             else:  # a = b = 3
                 id = self.packPos(node.targets[index], self.visit(node.targets[index]))
                 init = self.packPos(node.value, self.visit(node.value))
-                exprs.append(UNode.AssignmentExpression(UNode.SourceLocation(), UNode.Meta(), id, init, '='))
-        return exprs
+                # 为链式赋值设置正确的位置
+                # 对于 a=b=c=3，每个赋值表达式的位置应该是：
+                # - 每个赋值表达式从当前target开始到value结束（语义上每个赋值都包含整个右侧表达式）
+                if len(node.targets) > 1:  # 链式赋值
+                    # 每个赋值表达式的位置：从当前target开始到value结束
+                    start_pos = UNode.Position(node.targets[index].lineno, node.targets[index].col_offset + 1)
+                    end_pos = UNode.Position(node.value.end_lineno, node.value.end_col_offset + 1)
+                    assign_loc = UNode.SourceLocation(start_pos, end_pos, self.sourcefile)
+                    assign_expr = UNode.AssignmentExpression(assign_loc, UNode.Meta(), id, init, '=')
+                else:
+                    # 单个赋值，使用packPos设置位置
+                    assign_expr = UNode.AssignmentExpression(UNode.SourceLocation(), UNode.Meta(), id, init, '=')
+                    assign_expr = self.packPos(node, assign_expr)
+                exprs.append(assign_expr)
+        if len(exprs) == 1:
+            return self.packPos(node, exprs[0])
+        return self.packPos(node, UNode.Sequence(UNode.SourceLocation(), UNode.Meta(), exprs))
 
     def visit_AsyncFunctionDef(self, node):
         func_def = self.packPos(node, self.visit_FunctionDef(node))
@@ -182,11 +197,11 @@ class UASTTransformer(ast.NodeTransformer):
         for stmt in node.body:
             max_col = max(max_col, stmt.end_col_offset)
             min_col = min(min_col, stmt.col_offset)
-            unode = self.packPos(stmt, self.visit(stmt))
+            unode = self.visit(stmt)
             if isinstance(unode, list):
                 cons_body.extend(unode)
             else:
-                cons_body.append(unode)
+                cons_body.append(self.packPos(stmt, unode))
         cons_body_loc = None
         if len(node.body) > 0:
             cons_body_loc = UNode.SourceLocation(UNode.Position(node.body[0].lineno, min_col),
@@ -199,11 +214,11 @@ class UASTTransformer(ast.NodeTransformer):
         for stmt in node.orelse:
             max_col = max(max_col, stmt.end_col_offset)
             min_col = min(min_col, stmt.col_offset)
-            unode = self.packPos(stmt, self.visit(stmt))
+            unode = self.visit(stmt)
             if isinstance(unode, list):
                 alter_body.extend(unode)
             else:
-                alter_body.append(unode)
+                alter_body.append(self.packPos(stmt, unode))
         if len(node.orelse) > 0:
             alter_body_loc = UNode.SourceLocation(UNode.Position(node.orelse[0].lineno, min_col),
                                                   UNode.Position(node.orelse[-1].end_lineno, max_col), self.sourcefile)
@@ -287,11 +302,11 @@ class UASTTransformer(ast.NodeTransformer):
         for stmt in node.body:
             max_col = max(max_col, stmt.end_col_offset)
             min_col = min(min_col, stmt.col_offset)
-            unode = self.packPos(stmt, self.visit(stmt))
+            unode = self.visit(stmt)
             if isinstance(unode, list):
                 range_body.extend(unode)
             else:
-                range_body.append(unode)
+                range_body.append(self.packPos(stmt, unode))
         range_body_loc = None
         if len(node.body) > 0:
             range_body_loc = UNode.SourceLocation(UNode.Position(node.body[0].lineno, min_col),
@@ -307,7 +322,7 @@ class UASTTransformer(ast.NodeTransformer):
 
     def visit_BinOp(self, node):
         return self.packPos(node, UNode.BinaryExpression(UNode.SourceLocation(), UNode.Meta(),
-                                                         self.packPos(node.op, self.visit(node.op)),
+                                                         self.visit(node.op),
                                                          self.packPos(node.left, self.visit(node.left)),
                                                          self.packPos(node.right, self.visit(node.right))))
 
@@ -325,7 +340,14 @@ class UASTTransformer(ast.NodeTransformer):
         elif isinstance(node.value, bytes):
             literal_type = 'bytes'
         elif isinstance(node.value, float):
-            literal_type = 'float'
+            if math.isinf(node.value):
+                node.value = 'inf' if node.value > 0 else '-inf'
+                literal_type = 'string'
+            elif math.isnan(node.value):
+                node.value = 'nan'
+                literal_type = 'string'
+            else:
+                literal_type = 'float'
         if literal_type is not None:
             return self.packPos(node, UNode.Literal(UNode.SourceLocation(), UNode.Meta(), node.value, literal_type))
         else:
@@ -351,44 +373,89 @@ class UASTTransformer(ast.NodeTransformer):
                 if node.args[i].annotation is not None:
                     varType = self.packPos(node.args[i].annotation, self.visit(node.args[i].annotation))
 
-                arguments.append(
-                    self.packPos(node.args[i],
-                                 UNode.VariableDeclaration(
-                                     UNode.SourceLocation(),
-                                     UNode.Meta(),
-                                     self.visit(node.args[i]),
-                                     default_value,
-                                     False,
-                                     varType
-                                 )
-                                 ))
+                arg_id = self.visit(node.args[i])
+                var_decl = UNode.VariableDeclaration(
+                    UNode.SourceLocation(),
+                    UNode.Meta(),
+                    arg_id,
+                    default_value,
+                    False,
+                    varType
+                )
+                # 手动设置位置：从参数名开始，到 annotation 或 default_value 结束
+                start_pos = UNode.Position(node.args[i].lineno, node.args[i].col_offset + 1)
+                if default_value is not None:
+                    # 如果有默认值，位置到默认值结束
+                    end_pos = UNode.Position(default_value.loc.end.line, default_value.loc.end.column)
+                elif node.args[i].annotation is not None:
+                    # 如果有 annotation，位置到 annotation 结束
+                    end_pos = UNode.Position(varType.loc.end.line, varType.loc.end.column)
+                else:
+                    # 只有参数名，位置到参数名结束
+                    end_pos = UNode.Position(node.args[i].end_lineno, node.args[i].end_col_offset + 1)
+                var_decl.loc = UNode.SourceLocation(start_pos, end_pos, self.sourcefile)
+                arguments.append(var_decl)
         if len(node.kw_defaults) == len(node.kwonlyargs):
             for i in range(len(node.kwonlyargs)):
                 if node.kw_defaults[i] is not None:
                     default_value = self.packPos(node.kw_defaults[i], self.visit(node.kw_defaults[i]))
                 else:
                     default_value = None
-                arguments.append(
-                    UNode.VariableDeclaration(
-                        UNode.SourceLocation(),
-                        UNode.Meta(),
-                        self.packPos(node.kwonlyargs[i], self.visit(node.kwonlyargs[i])),
-                        default_value,
-                        False,
-                        UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())
-                    )
+
+                arg_id = self.packPos(node.kwonlyargs[i], self.visit(node.kwonlyargs[i]))
+                arg_node = UNode.VariableDeclaration(
+                    UNode.SourceLocation(),
+                    UNode.Meta(),
+                    arg_id,
+                    default_value,
+                    False,
+                    UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())
                 )
+                # 手动设置位置：从参数名开始，到 default_value 结束（如果有）
+                start_pos = UNode.Position(node.kwonlyargs[i].lineno, node.kwonlyargs[i].col_offset + 1)
+                if default_value is not None:
+                    # 如果有默认值，位置到默认值结束（包括行和列）
+                    end_pos = UNode.Position(default_value.loc.end.line, default_value.loc.end.column)
+                else:
+                    # 只有参数名，位置到参数名结束
+                    end_pos = UNode.Position(node.kwonlyargs[i].end_lineno, node.kwonlyargs[i].end_col_offset + 1)
+                arg_node.loc = UNode.SourceLocation(start_pos, end_pos, self.sourcefile)
+                arguments.append(arg_node)
         if node.vararg is not None:
-            arguments.append(UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(),
-                                                       self.packPos(node.vararg, self.visit(node.vararg)), None, False,
-                                                       UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())))
+            arg_id = self.packPos(node.vararg, self.visit(node.vararg))
+            arg_node = UNode.VariableDeclaration(
+                UNode.SourceLocation(),
+                UNode.Meta(),
+                arg_id,
+                None,
+                False,
+                UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())
+            )
+            # 使用 packPos 设置基础位置，然后调整以包含 * 符号
+            arg_node = self.packPos(node.vararg, arg_node)
+            # 调整 start.column 以包含 * 符号（* 在参数名之前）
+            if arg_node.loc.start is not None:
+                arg_node.loc.start.column = arg_node.loc.start.column - 1
+            arguments.append(arg_node)
         if node.kwarg is not None:
             kwarg = self.visit(node.kwarg)
             kwarg._meta.isKwargs = True
-            arguments.append(UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(),
-                                                       self.packPos(node.kwarg, kwarg), None, False,
-                                                       UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())))
-        return self.packPos(node, arguments)
+            arg_id = self.packPos(node.kwarg, kwarg)
+            arg_node = UNode.VariableDeclaration(
+                UNode.SourceLocation(),
+                UNode.Meta(),
+                arg_id,
+                None,
+                False,
+                UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())
+            )
+            # 使用 packPos 设置基础位置，然后调整以包含 ** 符号
+            arg_node = self.packPos(node.kwarg, arg_node)
+            # 调整 start.column 以包含 ** 符号（** 在参数名之前）
+            if arg_node.loc.start is not None:
+                arg_node.loc.start.column = arg_node.loc.start.column - 2
+            arguments.append(arg_node)
+        return arguments
 
     def visit_Attribute(self, node):
         return self.packPos(node, UNode.MemberAccess(UNode.SourceLocation(), UNode.Meta(),
@@ -481,13 +548,19 @@ class UASTTransformer(ast.NodeTransformer):
 
     def visit_Lambda(self, node):
         params = self.packPos(node.args, self.visit(node.args))
+        bodys = []
+        bodys.append(self.packPos(node.body,
+                                  UNode.ReturnStatement(
+                                      UNode.SourceLocation(),
+                                      UNode.Meta(),
+                                      self.packPos(
+                                          node.body,
+                                          self.visit(
+                                              node.body)))))
         return self.packPos(node, UNode.FunctionDefinition(UNode.SourceLocation(), UNode.Meta(), params, None,
                                                            self.packPos(node.body,
-                                                                        UNode.ReturnStatement(UNode.SourceLocation(),
-                                                                                              UNode.Meta(),
-                                                                                              self.packPos(node.body,
-                                                                                                           self.visit(
-                                                                                                               node.body))))))
+                                                                        UNode.ScopedStatement(UNode.SourceLocation(),
+                                                                                              UNode.Meta(), bodys))))
 
     def visit_Match(self, node):
         cases = []
@@ -621,11 +694,11 @@ class UASTTransformer(ast.NodeTransformer):
     def visit_Try(self, node):
         body = []
         for stmt in node.body:
-            unode = self.packPos(stmt, self.visit(stmt))
+            unode = self.visit(stmt)
             if isinstance(unode, list):
                 body.extend(unode)
             else:
-                body.append(unode)
+                body.append(self.packPos(stmt, unode))
 
         handler_list = []
         max_col = 0
@@ -661,18 +734,18 @@ class UASTTransformer(ast.NodeTransformer):
     def visit_Call(self, node):
         arguments = []
         for arg in node.args:
-            u_arg = self.packPos(arg, self.visit(arg))
+            u_arg = self.visit(arg)
             if isinstance(u_arg, list):
                 arguments.extend(u_arg)
             else:
-                arguments.append(u_arg)
+                arguments.append(self.packPos(arg, u_arg))
 
         for keyword in node.keywords:
-            u_arg = self.packPos(keyword, self.visit(keyword))
+            u_arg = self.visit(keyword)
             if isinstance(u_arg, list):
                 arguments.extend(u_arg)
             else:
-                arguments.append(u_arg)
+                arguments.append(self.packPos(keyword, u_arg))
 
         callee = self.packPos(node.func, self.visit(node.func))
         if isinstance(node.func, ast.Name):
@@ -728,11 +801,11 @@ class UASTTransformer(ast.NodeTransformer):
         for item in node.items:
             exprs.append(self.packPos(item, self.visit(item)))
         for stmt in node.body:
-            unode = self.packPos(stmt, self.visit(stmt))
+            unode = self.visit(stmt)
             if isinstance(unode, list):
                 exprs.extend(unode)
             else:
-                exprs.append(unode)
+                exprs.append(self.packPos(stmt, unode))
 
         return self.packPos(node, UNode.Sequence(UNode.SourceLocation(), UNode.Meta(), exprs))
 
@@ -868,8 +941,7 @@ class UASTTransformer(ast.NodeTransformer):
                                                              self.packPos(node.target, self.visit(node.target)),
                                                              UNode.BinaryExpression(UNode.SourceLocation(),
                                                                                     UNode.Meta(),
-                                                                                    self.packPos(node.op,
-                                                                                                 self.visit(node.op)),
+                                                                                    self.visit(node.op),
                                                                                     self.packPos(node.target,
                                                                                                  self.visit(
                                                                                                      node.target)),
@@ -933,7 +1005,7 @@ class UASTTransformer(ast.NodeTransformer):
     def visit_BoolOp(self, node):
         if len(node.values) >= 2:
             binaryExpr = UNode.BinaryExpression(UNode.SourceLocation(), UNode.Meta(),
-                                                self.packPos(node.op, self.visit(node.op)),
+                                                self.visit(node.op),
                                                 self.packPos(node.values[0], self.visit(node.values[0])),
                                                 self.packPos(node.values[1], self.visit(node.values[1])))
             if len(node.values) == 2:
@@ -942,7 +1014,7 @@ class UASTTransformer(ast.NodeTransformer):
                 i = 2
                 while i < len(node.values):
                     binaryExpr = UNode.BinaryExpression(UNode.SourceLocation(), UNode.Meta(),
-                                                        self.packPos(node.op, self.visit(node.op)), binaryExpr,
+                                                        self.visit(node.op), binaryExpr,
                                                         self.packPos(node.values[i], self.visit(node.values[i])))
                     i += 1
                 return self.packPos(node, binaryExpr)
@@ -1080,7 +1152,7 @@ class UASTTransformer(ast.NodeTransformer):
 
     def visit_UnaryOp(self, node):
         return self.packPos(node, UNode.UnaryExpression(UNode.SourceLocation(), UNode.Meta(),
-                                                        self.packPos(node.op, self.visit(node.op)),
+                                                        self.visit(node.op),
                                                         self.packPos(node.operand, self.visit(node.operand))))
 
     def visit_ExceptHandler(self, node):
@@ -1278,13 +1350,14 @@ class UASTTransformer(ast.NodeTransformer):
     def packPos(self, node, unode):
         if node is None:
             return None
-        loc = self.convertToLineColumn(node)
-        if isinstance(unode, UNode.Node):
-            unode.loc = loc
-        elif isinstance(unode, list):
-            for item in unode:
-                if isinstance(item, UNode.Node):
-                    item.loc = loc
+        if hasattr(unode, "loc") and unode.loc.start is None:
+            loc = self.convertToLineColumn(node)
+            if isinstance(unode, UNode.Node):
+                unode.loc = loc
+            elif isinstance(unode, list):
+                for item in unode:
+                    if isinstance(item, UNode.Node):
+                        item.loc = loc
         return unode
 
     def convertToLineColumn(self, node):

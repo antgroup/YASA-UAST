@@ -33,6 +33,9 @@ func (u *Builder) VisitImportSpec(node *ast.ImportSpec) UNode {
 			Cloned:        false,
 			VarType:       &DynamicType{Type: "DynamicType"},
 			VariableParam: false,
+			Meta: Meta{
+				IsDefaultImport: true,
+			},
 		}
 	} else {
 		localName := node.Name.Name
@@ -61,7 +64,7 @@ func (u *Builder) VisitImportSpec(node *ast.ImportSpec) UNode {
 						LiteralType: "string",
 					},
 				}, node.Path),
-				Cloned:        true,
+				Cloned:        false,
 				VarType:       &DynamicType{Type: "DynamicType"},
 				VariableParam: false,
 			}
