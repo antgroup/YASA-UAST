@@ -36,8 +36,21 @@ abstract class ParseTreeVisitor<Result> extends AbstractParseTreeVisitor<Result>
                 end: { line: tree._stop?.line, column: tree._stop?._charPositionInLine + 1 },
                 sourcefile: this.sourcefile
             };
+            this.adJustNodeLoc(node)
         }
         return node;
+    }
+
+    private adJustNodeLoc(node: UAST.Node) {
+        switch (node.type) {
+            case 'VariableDeclaration':
+                if (node?.loc?.end?.column && node?.id?.name && !node.init) {
+                    node.loc.end.column = node.loc.end.column + node.id.name.length - 1
+                }
+                break
+            default:
+                break
+        }
     }
 }
 
