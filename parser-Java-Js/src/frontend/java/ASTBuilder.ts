@@ -2058,15 +2058,24 @@ export class ASTBuilder
     //     : annotation* (classOrInterfaceType | primitiveType) (annotation* '[' ']')*
     //     ;
     public visitTypeType(ctx: JP.TypeTypeContext): UAST.Type {
+        let typeResult;
         const primitiveType = ctx.primitiveType();
         if (primitiveType) {
-            return this.visit(primitiveType) as UAST.Type;
+            typeResult = this.visit(primitiveType) as UAST.Type;
         }
         const classOrInterfaceType = ctx.classOrInterfaceType();
         if (classOrInterfaceType) {
-            return this.visit(classOrInterfaceType) as UAST.Type;
+            typeResult = this.visit(classOrInterfaceType) as UAST.Type;
         }
-        throw new Error('Unexpected TypeType');
+
+        if (!typeResult) {
+          throw new Error('Unexpected TypeType');
+        }
+
+        if (ctx.children?.length === 3 && ctx.children[1].text === '[' && ctx.children[2].text === ']') {
+            typeResult = UAST.arrayType(typeResult.id, typeResult)
+        }
+        return typeResult
     }
 
     //primitiveType
