@@ -36,8 +36,21 @@ abstract class ParseTreeVisitor<Result> extends AbstractParseTreeVisitor<Result>
                 end: { line: tree._stop?.line, column: tree._stop?._charPositionInLine + 1 },
                 sourcefile: this.sourcefile
             };
+            this.adJustNodeLoc(node)
         }
         return node;
+    }
+
+    private adJustNodeLoc(node) {
+        switch (node.type) {
+            case 'VariableDeclaration':
+                if (node?.loc?.end?.column && node?.id?.name && !node.init) {
+                    node.loc.end.column = node.loc.end.column + node.id.name.length - 1
+                }
+                break
+            default:
+                break
+        }
     }
 }
 
@@ -1203,6 +1216,12 @@ export class ASTBuilder
     //     : variableModifier* typeType annotation* '...' variableDeclaratorId
     public visitLastFormalParameter(ctx: JP.LastFormalParameterContext): UAST.Instruction {
         const leftType = this.visit(ctx.typeType()) as UAST.Type;
+        if (ctx.children?.length === 3 && ctx.children[1].text === '...') {
+            if (!leftType._meta) {
+                leftType._meta = {}
+            }
+            leftType._meta.varargs = true
+        }
         this.typesState.push(leftType);
         const varId = this.visit(ctx.variableDeclaratorId()) as UAST.Identifier;
         const type = this.typesState.pop();
@@ -1427,7 +1446,20 @@ export class ASTBuilder
             return UAST.unaryExpression(toText(ctx._postfix) as '++' | '--', this.visit(ctx.expression()[0]) as UAST.Expression, true);
         }
         if (ctx._prefix) {
-            return UAST.unaryExpression(toText(ctx._prefix) as '--', this.visit(ctx.expression()[0]) as UAST.Expression, false);
+            const text = toText(ctx._prefix)
+            if (text === '-') {
+              const argExpr = this.visit(ctx.expression()[0]) as UAST.Expression;
+              if (argExpr.type === 'Literal') {
+                argExpr.value = String(-Number(argExpr.value))
+                return argExpr;
+              } else {
+                return UAST.unaryExpression(toText(ctx._prefix) as '--', argExpr, false);
+              }
+            } else if (text === '+') {
+              return this.visit(ctx.expression()[0]) as UAST.Expression
+            } else {
+              return UAST.unaryExpression(toText(ctx._prefix) as '--', this.visit(ctx.expression()[0]) as UAST.Expression, false);
+            }
         }
 
 
@@ -1988,7 +2020,7 @@ export class ASTBuilder
         const typeTypeCtx = ctx.typeTypeOrVoid();
         if (typeTypeCtx) {
             const typeType = this.visit(typeTypeCtx) as UAST.Type;
-            return UAST.memberAccess(convertToMemberAccess(('id' in typeType && typeType.id.name) || ('name' in typeType && typeType.name)), UAST.identifier('Class'), false);
+            return UAST.memberAccess(convertToMemberAccess(('id' in typeType && typeType.id.name) || ('name' in typeType && typeType.name)), UAST.identifier('class'), false);
         }
         throw new Error(`Primary type: ${toText(ctx)} not supported`);
     }
@@ -2045,15 +2077,24 @@ export class ASTBuilder
     //     : annotation* (classOrInterfaceType | primitiveType) (annotation* '[' ']')*
     //     ;
     public visitTypeType(ctx: JP.TypeTypeContext): UAST.Type {
+        let typeResult;
         const primitiveType = ctx.primitiveType();
         if (primitiveType) {
-            return this.visit(primitiveType) as UAST.Type;
+            typeResult = this.visit(primitiveType) as UAST.Type;
         }
         const classOrInterfaceType = ctx.classOrInterfaceType();
         if (classOrInterfaceType) {
-            return this.visit(classOrInterfaceType) as UAST.Type;
+            typeResult = this.visit(classOrInterfaceType) as UAST.Type;
         }
-        throw new Error('Unexpected TypeType');
+
+        if (!typeResult) {
+          throw new Error('Unexpected TypeType');
+        }
+
+        if (ctx.children?.length === 3 && ctx.children[1].text === '[' && ctx.children[2].text === ']') {
+            typeResult = UAST.arrayType(typeResult.id, typeResult)
+        }
+        return typeResult
     }
 
     //primitiveType
