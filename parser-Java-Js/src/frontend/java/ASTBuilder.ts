@@ -1216,6 +1216,12 @@ export class ASTBuilder
     //     : variableModifier* typeType annotation* '...' variableDeclaratorId
     public visitLastFormalParameter(ctx: JP.LastFormalParameterContext): UAST.Instruction {
         const leftType = this.visit(ctx.typeType()) as UAST.Type;
+        if (ctx.children?.length === 3 && ctx.children[1].text === '...') {
+            if (!leftType._meta) {
+                leftType._meta = {}
+            }
+            leftType._meta.varargs = true
+        }
         this.typesState.push(leftType);
         const varId = this.visit(ctx.variableDeclaratorId()) as UAST.Identifier;
         const type = this.typesState.pop();
