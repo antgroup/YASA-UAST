@@ -1660,6 +1660,9 @@ export class ASTBuilder
             const init = arrayCreatorRest.arrayInitializer()
             if (init) {
                 return this.visit(init) as UAST.Expression;
+            } else if (arrayCreatorRest.children?.length === 3 && arrayCreatorRest.children[0]?.text === '[' && /^[1-9]\d*$/.test(arrayCreatorRest.children[1]?.text) && arrayCreatorRest.children[2]?.text === ']') {
+                const memberAccess = UAST.memberAccess(callee, UAST.identifier(arrayCreatorRest.children[1].text))
+                return UAST.newExpression(memberAccess, [])
             } else {
                 return UAST.newExpression(callee, [])
             }
