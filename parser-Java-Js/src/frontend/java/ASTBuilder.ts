@@ -1020,8 +1020,15 @@ export class ASTBuilder
             if (qualifiedName) {
                 seqBody.push(convertToMemberAccess(toText(qualifiedName)));
             } else {
+                let type: any = UAST.dynamicType()
+                if (resource.classOrInterfaceType()) {
+                    type = this.visit(resource.classOrInterfaceType()) as UAST.Type
+                    if (!type) {
+                        type = UAST.dynamicType()
+                    }
+                }
                 const identifier: UAST.Identifier = (this.visit(resource.identifier()) || this.visit(resource.variableDeclaratorId())) as UAST.Identifier;
-                const varDecl = UAST.variableDeclaration(identifier, this.visit(resource.expression()) as UAST.Expression, false, UAST.dynamicType());
+                const varDecl = UAST.variableDeclaration(identifier, this.visit(resource.expression()) as UAST.Expression, false, type);
                 seqBody.push(varDecl);
             }
         })
