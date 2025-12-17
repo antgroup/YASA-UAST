@@ -51,6 +51,26 @@ jobs:
             echo "== Node & npm version =="
             node -v
             npm -v
+            
+        - name: Disable npm token & clear npmrc
+          run: |
+            echo "Before cleanup:"
+            echo "NODE_AUTH_TOKEN=${NODE_AUTH_TOKEN:-<empty>}"
+            echo "NPM_CONFIG_USERCONFIG=${NPM_CONFIG_USERCONFIG:-<empty>}"
+
+            # 1) 清空环境变量中的 token
+            unset NODE_AUTH_TOKEN
+            unset NPM_TOKEN
+
+            # 2) 清空/覆盖当前 userconfig .npmrc
+            if [ -n "${NPM_CONFIG_USERCONFIG:-}" ]; then
+              echo "# cleaned by CI, no auth token" > "$NPM_CONFIG_USERCONFIG"
+            fi
+
+            echo "After cleanup:"
+            echo "NODE_AUTH_TOKEN=${NODE_AUTH_TOKEN:-<empty>}"
+            echo "NPM_TOKEN=${NPM_TOKEN:-<empty>}"
+            echo "NPM_CONFIG_USERCONFIG=${NPM_CONFIG_USERCONFIG:-<empty>}"
 
         # 2. 环境变量，确认没有 token
         - name: Debug env
