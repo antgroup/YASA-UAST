@@ -33,88 +33,6 @@ jobs:
             echo "🔖 Detected stable release, using npm tag: latest"
             echo "npm_tag=latest" >> $GITHUB_OUTPUT
           fi
-  publish_spec_only:
-    runs-on: ubuntu-latest
-    permissions:
-      id-token: write
-      contents: read
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      # 1. 先打印原始 env（可选调试）
-      - name: Show raw env
-        run: |
-          echo "== RAW env NODE_AUTH_TOKEN =="
-          echo "NODE_AUTH_TOKEN=${NODE_AUTH_TOKEN:-<empty>}"
-          echo "NPM_TOKEN=${NPM_TOKEN:-<empty>}"
-          echo "NPM_CONFIG_USERCONFIG=${NPM_CONFIG_USERCONFIG:-<empty>}"
-          env | grep -i npm || echo "no npm-related env vars"
-
-      # 2. 设置 Node（可能会注入 token）
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          registry-url: https://registry.npmjs.org/
-          always-auth: true
-      - name: Upgrade npm
-        run: |
-          npm install -g npm@latest
-          echo "npm after upgrade:"
-          npm -v
-
-
-      # 3. 再清理 token（关键：在 setup-node 之后、任何 npm 操作之前）
-      - name: Disable npm token & clear npmrc
-      # 这里不要用 `env:`，只写 run
-        run: |
-          echo "== Before cleanup =="
-          echo "NODE_AUTH_TOKEN=${NODE_AUTH_TOKEN:-<empty>}"
-          echo "NPM_TOKEN=${NPM_TOKEN:-<empty>}"
-          echo "NPM_CONFIG_USERCONFIG=${NPM_CONFIG_USERCONFIG:-<empty>}"
-
-          # 清空环境变量
-          unset NODE_AUTH_TOKEN
-          unset NPM_TOKEN
-
-          # 覆盖当前 userconfig .npmrc，防止里面有 _authToken
-          if [ -n "${NPM_CONFIG_USERCONFIG:-}" ]; then
-            echo "# cleaned by CI, no auth token" > "$NPM_CONFIG_USERCONFIG"
-          fi
-
-          echo "== After cleanup =="
-          echo "NODE_AUTH_TOKEN=${NODE_AUTH_TOKEN:-<empty>}"
-          echo "NPM_TOKEN=${NPM_TOKEN:-<empty>}"
-          echo "NPM_CONFIG_USERCONFIG=${NPM_CONFIG_USERCONFIG:-<empty>}"
-
-      # 4. 再确认一次（debug）
-      - name: Debug env
-        run: |
-          echo "== Token related env =="
-          echo "NPM_TOKEN=${NPM_TOKEN:-<empty>}"
-          echo "NODE_AUTH_TOKEN=${NODE_AUTH_TOKEN:-<empty>}"
-          echo "NPM_CONFIG_USERCONFIG=${NPM_CONFIG_USERCONFIG:-<empty>}"
-          env | grep -i npm || echo "no npm-related env vars"
-
-      - name: Show Node & npm version
-        run: |
-          node -v
-          npm -v
-
-      - name: Install deps & build
-        working-directory: specification
-        run: |
-          npm install
-          npm run build --if-present
-
-      - name: Set version and publish
-        working-directory: specification
-        run: |
-          VERSION=$(node -p "require('./package.json').version")
-          echo "Version in package.json: $VERSION"
-          npm publish --access public --loglevel verbose
-
 
   # 2. 发布 specification
   publish_spec:
@@ -130,6 +48,14 @@ jobs:
         with:
           node-version: 18
           registry-url: https://registry.npmjs.org/
+                
+      - name: Upgrade npm
+        run: |
+          npm install -g npm@latest
+          echo "npm after upgrade:"
+          npm -v
+          echo "node after upgrade:"
+          node -v
 
       - name: Publish specification
         working-directory: specification
@@ -214,6 +140,14 @@ jobs:
         with:
           node-version: 18
           registry-url: https://registry.npmjs.org/
+      
+      - name: Upgrade npm
+        run: |
+          npm install -g npm@latest
+          echo "npm after upgrade:"
+          npm -v
+          echo "node after upgrade:"
+          node -v
 
       - name: Check and Publish
         working-directory: parser-Java-Js
