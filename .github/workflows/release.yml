@@ -34,38 +34,78 @@ jobs:
             echo "npm_tag=latest" >> $GITHUB_OUTPUT
           fi
   publish_spec_only:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          registry-url: https://registry.npmjs.org/
+        # 1. Node + npm 版本信息
+        - name: Setup Node
+          uses: actions/setup-node@v4
+          with:
+            node-version: 20
+            registry-url: https://registry.npmjs.org/
 
-      - name: Show Node & npm version
-        run: |
-          node -v
-          npm -v
+        - name: Show Node & npm version
+          run: |
+            echo "== Node & npm version =="
+            node -v
+            npm -v
 
-      - name: Debug env
-        run: |
-          echo "NPM_TOKEN=${NPM_TOKEN:-<empty>}"
-          echo "NODE_AUTH_TOKEN=${NODE_AUTH_TOKEN:-<empty>}"
-          env | grep -i npm || echo "no npm-related env vars"
+        # 2. 环境变量，确认没有 token
+        - name: Debug env
+          run: |
+            echo "== Token related env =="
+            echo "NPM_TOKEN=${NPM_TOKEN:-<empty>}"
+            echo "NODE_AUTH_TOKEN=${NODE_AUTH_TOKEN:-<empty>}"
+            echo "NPM_CONFIG_USERCONFIG=${NPM_CONFIG_USERCONFIG:-<empty>}"
+            echo
+            echo "== env | grep -i npm =="
+            env | grep -i npm || echo "no npm-related env vars"
+            echo
+            echo "== Full env (sorted) =="
+            env | sort
 
-      - name: Install deps & build
-        working-directory: specification
-        run: |
-          npm install
-          npm run build --if-present
+        # 3. npm 的配置和 registry 信息
+        - name: Show npm config
+          run: |
+            echo "== npm config list =="
+            npm config list
+            echo
+            echo "== npm config get registry =="
+            npm config get registry
 
-      - name: Set version and publish
-        working-directory: specification
-        run: |
-          VERSION=$(node -p "require('./package.json').version")
-          echo "Version in package.json: $VERSION"
-          npm publish --access public
+        # 4. 检查 package.json 和 npm view 的信息
+        - name: Check package info
+          working-directory: specification
+          run: |
+            echo "== package.json =="
+            cat package.json
+            echo
+            echo "== npm view @ant-yasa/uast-spec =="
+            npm view @ant-yasa/uast-spec || echo "npm view error (maybe not published yet)"
+            echo
+            echo "== npm whoami =="
+            npm whoami || echo "npm whoami failed (expected in Trusted Publishing)"
+
+        # 5. 安装依赖 & 构建
+        - name: Install deps & build
+          working-directory: specification
+          run: |
+            echo "== npm ci / install =="
+            npm install
+            echo
+            echo "== build =="
+            npm run build --if-present
+
+        # 6. 直接尝试发布
+        - name: Set version and publish
+          working-directory: specification
+          run: |
+            echo "== Start publish =="
+            VERSION=$(node -p "require('./package.json').version")
+            echo "Version in package.json: $VERSION"
+            npm publish --access public --loglevel verbose
 
   # 2. 发布 specification
   publish_spec:
