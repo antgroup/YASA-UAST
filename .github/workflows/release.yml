@@ -57,6 +57,13 @@ jobs:
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org/
+          always-auth: true
+      - name: Upgrade npm
+        run: |
+          npm install -g npm@latest
+          echo "npm after upgrade:"
+          npm -v
+
 
       # 3. 再清理 token（关键：在 setup-node 之后、任何 npm 操作之前）
       - name: Disable npm token & clear npmrc
