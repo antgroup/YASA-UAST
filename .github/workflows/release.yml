@@ -34,98 +34,80 @@ jobs:
             echo "npm_tag=latest" >> $GITHUB_OUTPUT
           fi
   publish_spec_only:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Checkout
-          uses: actions/checkout@v4
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-        # 1. Node + npm 版本信息
-        - name: Setup Node
-          uses: actions/setup-node@v4
-          with:
-            node-version: 20
-            registry-url: https://registry.npmjs.org/
+      # 1. 先打印原始 env（可选调试）
+      - name: Show raw env
+        run: |
+          echo "== RAW env NODE_AUTH_TOKEN =="
+          echo "NODE_AUTH_TOKEN=${NODE_AUTH_TOKEN:-<empty>}"
+          echo "NPM_TOKEN=${NPM_TOKEN:-<empty>}"
+          echo "NPM_CONFIG_USERCONFIG=${NPM_CONFIG_USERCONFIG:-<empty>}"
+          env | grep -i npm || echo "no npm-related env vars"
 
-        - name: Show Node & npm version
-          run: |
-            echo "== Node & npm version =="
-            node -v
-            npm -v
-            
-        - name: Disable npm token & clear npmrc
-          run: |
-            echo "Before cleanup:"
-            echo "NODE_AUTH_TOKEN=${NODE_AUTH_TOKEN:-<empty>}"
-            echo "NPM_CONFIG_USERCONFIG=${NPM_CONFIG_USERCONFIG:-<empty>}"
+      # 2. 设置 Node（可能会注入 token）
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org/
 
-            # 1) 清空环境变量中的 token
-            unset NODE_AUTH_TOKEN
-            unset NPM_TOKEN
+      # 3. 再清理 token（关键：在 setup-node 之后、任何 npm 操作之前）
+      - name: Disable npm token & clear npmrc
+      # 这里不要用 `env:`，只写 run
+        run: |
+          echo "== Before cleanup =="
+          echo "NODE_AUTH_TOKEN=${NODE_AUTH_TOKEN:-<empty>}"
+          echo "NPM_TOKEN=${NPM_TOKEN:-<empty>}"
+          echo "NPM_CONFIG_USERCONFIG=${NPM_CONFIG_USERCONFIG:-<empty>}"
 
-            # 2) 清空/覆盖当前 userconfig .npmrc
-            if [ -n "${NPM_CONFIG_USERCONFIG:-}" ]; then
-              echo "# cleaned by CI, no auth token" > "$NPM_CONFIG_USERCONFIG"
-            fi
+          # 清空环境变量
+          unset NODE_AUTH_TOKEN
+          unset NPM_TOKEN
 
-            echo "After cleanup:"
-            echo "NODE_AUTH_TOKEN=${NODE_AUTH_TOKEN:-<empty>}"
-            echo "NPM_TOKEN=${NPM_TOKEN:-<empty>}"
-            echo "NPM_CONFIG_USERCONFIG=${NPM_CONFIG_USERCONFIG:-<empty>}"
+          # 覆盖当前 userconfig .npmrc，防止里面有 _authToken
+          if [ -n "${NPM_CONFIG_USERCONFIG:-}" ]; then
+            echo "# cleaned by CI, no auth token" > "$NPM_CONFIG_USERCONFIG"
+          fi
 
-        # 2. 环境变量，确认没有 token
-        - name: Debug env
-          run: |
-            echo "== Token related env =="
-            echo "NPM_TOKEN=${NPM_TOKEN:-<empty>}"
-            echo "NODE_AUTH_TOKEN=${NODE_AUTH_TOKEN:-<empty>}"
-            echo "NPM_CONFIG_USERCONFIG=${NPM_CONFIG_USERCONFIG:-<empty>}"
-            echo
-            echo "== env | grep -i npm =="
-            env | grep -i npm || echo "no npm-related env vars"
-            echo
-            echo "== Full env (sorted) =="
-            env | sort
+          echo "== After cleanup =="
+          echo "NODE_AUTH_TOKEN=${NODE_AUTH_TOKEN:-<empty>}"
+          echo "NPM_TOKEN=${NPM_TOKEN:-<empty>}"
+          echo "NPM_CONFIG_USERCONFIG=${NPM_CONFIG_USERCONFIG:-<empty>}"
 
-        # 3. npm 的配置和 registry 信息
-        - name: Show npm config
-          run: |
-            echo "== npm config list =="
-            npm config list
-            echo
-            echo "== npm config get registry =="
-            npm config get registry
+      # 4. 再确认一次（debug）
+      - name: Debug env
+        run: |
+          echo "== Token related env =="
+          echo "NPM_TOKEN=${NPM_TOKEN:-<empty>}"
+          echo "NODE_AUTH_TOKEN=${NODE_AUTH_TOKEN:-<empty>}"
+          echo "NPM_CONFIG_USERCONFIG=${NPM_CONFIG_USERCONFIG:-<empty>}"
+          env | grep -i npm || echo "no npm-related env vars"
 
-        # 4. 检查 package.json 和 npm view 的信息
-        - name: Check package info
-          working-directory: specification
-          run: |
-            echo "== package.json =="
-            cat package.json
-            echo
-            echo "== npm view @ant-yasa/uast-spec =="
-            npm view @ant-yasa/uast-spec || echo "npm view error (maybe not published yet)"
-            echo
-            echo "== npm whoami =="
-            npm whoami || echo "npm whoami failed (expected in Trusted Publishing)"
+      - name: Show Node & npm version
+        run: |
+          node -v
+          npm -v
 
-        # 5. 安装依赖 & 构建
-        - name: Install deps & build
-          working-directory: specification
-          run: |
-            echo "== npm ci / install =="
-            npm install
-            echo
-            echo "== build =="
-            npm run build --if-present
+      - name: Install deps & build
+        working-directory: specification
+        run: |
+          npm install
+          npm run build --if-present
 
-        # 6. 直接尝试发布
-        - name: Set version and publish
-          working-directory: specification
-          run: |
-            echo "== Start publish =="
-            VERSION=$(node -p "require('./package.json').version")
-            echo "Version in package.json: $VERSION"
-            npm publish --access public --loglevel verbose
+      - name: Set version and publish
+        working-directory: specification
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          echo "Version in package.json: $VERSION"
+          npm publish --access public --loglevel verbose
+
 
   # 2. 发布 specification
   publish_spec:
