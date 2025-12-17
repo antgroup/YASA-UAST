@@ -8,7 +8,7 @@ on:
 permissions:
   id-token: write  # Required for OIDC
   contents: read
-  
+
 jobs:
   # 1. 提取版本和发布通道
   get_version:
@@ -106,8 +106,6 @@ jobs:
           npm publish --tag $NPM_TAG
           
           echo "✅ @ant-yasa/uast-spec@$VERSION published successfully!"
-        # env:
-        #   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   # 3. 发布 parser-Java-Js
   publish_parser_js:
@@ -209,8 +207,6 @@ jobs:
           npm publish --tag $NPM_TAG
 
           echo "✅ Published @ant-yasa/uast-parser-java-js@$VERSION"
-        # env:
-        #   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   # 4. 构建 Go 可执行文件（多平台）
   build_go:
