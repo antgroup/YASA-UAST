@@ -402,9 +402,11 @@ export class ASTBuilder
         }
 
         const body = this.visitInterfaceBody(ctx.interfaceBody());
-        const scope = UAST.scopedStatement(body);
+        // const scope = UAST.scopedStatement(body);
 
-        return UAST.classDefinition(id, [scope], supers);
+        const classDef = UAST.classDefinition(id, body, supers);
+        classDef._meta.isInterface = true
+        return classDef
     }
 
     // interfaceBody
