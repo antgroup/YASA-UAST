@@ -1385,10 +1385,14 @@ export class ASTBuilder
             //       expression
             else if (['*', '/', '%', '+', '-', '<=', '>=', '>', '<', '>>', '<<', '==', '!=', '&', '|', '^', '&&', '||'].indexOf(bopText) !== -1) {
                 // e.g. a*b
-                const left = this.visit(ctx.expression()[0]) as UAST.Expression;
-                const right = this.visit(ctx.expression()[1]) as UAST.Expression;
-                // @ts-ignore
-                return UAST.binaryExpression(bopText, left, right);
+                try {
+                    const left = this.visit(ctx.expression()[0]) as UAST.Expression;
+                    const right = this.visit(ctx.expression()[1]) as UAST.Expression;
+                    // @ts-ignore
+                    return UAST.binaryExpression(bopText, left, right);
+                } catch (e) {
+                    return UAST.noop()
+                }
             } else if (['=', '^=', '&=', '<<=', '>>=', '>>>=', '+=', '-=', '*=', '/=', '%=', ',=', '**=', '|='].indexOf(bopText) !== -1) {
                 // e.g. a=b
                 const left = this.visit(ctx.expression()[0]) as UAST.Expression;
