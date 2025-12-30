@@ -1385,10 +1385,14 @@ export class ASTBuilder
             //       expression
             else if (['*', '/', '%', '+', '-', '<=', '>=', '>', '<', '>>', '<<', '==', '!=', '&', '|', '^', '&&', '||'].indexOf(bopText) !== -1) {
                 // e.g. a*b
-                const left = this.visit(ctx.expression()[0]) as UAST.Expression;
-                const right = this.visit(ctx.expression()[1]) as UAST.Expression;
-                // @ts-ignore
-                return UAST.binaryExpression(bopText, left, right);
+                if (bopText === '+' && willExceedStackLimit(ctx.text)) {
+                    return UAST.noop()
+                } else {
+                    const left = this.visit(ctx.expression()[0]) as UAST.Expression;
+                    const right = this.visit(ctx.expression()[1]) as UAST.Expression;
+                    // @ts-ignore
+                    return UAST.binaryExpression(bopText, left, right);
+                }
             } else if (['=', '^=', '&=', '<<=', '>>=', '>>>=', '+=', '-=', '*=', '/=', '%=', ',=', '**=', '|='].indexOf(bopText) !== -1) {
                 // e.g. a=b
                 const left = this.visit(ctx.expression()[0]) as UAST.Expression;
@@ -2503,6 +2507,12 @@ function addLoc(target, name, descriptor) {
     return descriptor;
 }
 
+function willExceedStackLimit(str) {
+    if (!str) {
+        return false
+    }
+    return str.split('+').length > 1000
+}
 
 function getUpperCase(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
