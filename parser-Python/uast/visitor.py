@@ -8,6 +8,241 @@ class UASTTransformer(ast.NodeTransformer):
     tmpVarIndex = 0
     sourcefile = ""
 
+    def _parse_type_annotation(self, annotation_node):
+        """解析类型注解，支持以下类型注解：
+        1. 基本类型：int, float, str, bool, None
+        2. 容器类型：List[T], Dict[K, V], Tuple[T1, T2, ...], Set[T]
+        3. 特殊类型：Optional[T], Union[T1, T2, ...], Literal[value, ...], Any
+        4. 泛型类型：Generic[T], TypeVar, 用户定义的泛型类
+        5. 其他：Callable, Type[C], NewType, Protocol 等
+        
+        Args:
+            annotation_node: AST 节点，可能是 ast.Name, ast.Subscript, ast.List, ast.Constant 等
+            
+        Returns:
+            UAST Type 节点 (PrimitiveType, ArrayType, MapType, DynamicType, Identifier 等)
+        """
+        if annotation_node is None:
+            return None
+        
+        # ========== 1. 处理基本类型名称 ==========
+        # 根据 PEP 484: 基本类型 int, float, str, bool
+        # 不包括 None 类型, 因为 None 节点是 Constant 类型而不是 ast.Name
+        if isinstance(annotation_node, ast.Name):
+            if annotation_node.id == "float" or annotation_node.id == "int":
+                # int 和 float 都映射为 number 类型
+                return self.packPos(annotation_node,
+                                   UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(), "number"))
+            elif annotation_node.id == "str":
+                return self.packPos(annotation_node,
+                                   UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(), "string"))
+            elif annotation_node.id == "bool":
+                return self.packPos(annotation_node,
+                                   UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(), "boolean"))
+            elif annotation_node.id == "Any":
+                # typing.Any: 特殊类型，表示任意类型 (PEP 484)
+                return self.packPos(annotation_node,
+                                   UNode.DynamicType(UNode.SourceLocation(), UNode.Meta()))
+            else:
+                # 其他类型名称（自定义类型、类名等），使用 Identifier
+                return self.packPos(annotation_node,
+                                   UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), annotation_node.id))
+        
+        # ========== 2. 处理泛型类型（使用 ast.Subscript） ==========
+        # 根据 PEP 484, PEP 585: 支持 List[T], Dict[K, V], Tuple[T1, T2, ...] 等
+        elif isinstance(annotation_node, ast.Subscript):
+            if isinstance(annotation_node.value, ast.Name):
+                type_name = annotation_node.value.id
+                
+                # ========== 2.1 Dict 类型: Dict[K, V] 或 dict[K, V] ==========
+                # PEP 484: Dict 接受两个类型参数，键类型和值类型
+                # Python 3.9+ 支持 dict[K, V] 语法 (PEP 585)
+                if type_name == "dict" or type_name == "Dict":
+                    keyType = valType = None
+                    if isinstance(annotation_node.slice, ast.Tuple):
+                        if len(annotation_node.slice.elts) == 2:
+                            # 解析键类型
+                            keyType = self._parse_type_annotation(annotation_node.slice.elts[0])
+                            # 解析值类型
+                            valType = self._parse_type_annotation(annotation_node.slice.elts[1])
+                    
+                    return self.packPos(annotation_node,
+                                       UNode.MapType(UNode.SourceLocation(), UNode.Meta(), 
+                                       keyType, valType))
+                
+                # ========== 2.2 List 类型: List[T] 或 list[T] ==========
+                # PEP 484: List 接受一个类型参数，表示元素类型
+                # Python 3.9+ 支持 list[T] 语法 (PEP 585)
+                elif type_name == "list" or type_name == "List":
+                    type_arg = self._parse_type_annotation(annotation_node.slice)
+                    return self.packPos(annotation_node,
+                                       UNode.ArrayType(UNode.SourceLocation(), UNode.Meta(), 
+                                       [type_arg] if type_arg else None))
+                
+                # ========== 2.3 Tuple 类型: Tuple[T1, T2, ...] 或 tuple[T1, T2, ...] ==========
+                # PEP 484: Tuple 可以接受任意数量的类型参数
+                # Tuple[int, str] 表示固定长度元组，第一个元素是 int，第二个是 str
+                # tuple[int, ...] 表示任意长度的元组，所有元素类型为 int
+                # Python 3.9+ 支持 tuple[T1, T2, ...] 语法 (PEP 585)
+                elif type_name == "tuple" or type_name == "Tuple":
+                    type_args = []
+                    if isinstance(annotation_node.slice, ast.Tuple):
+                        # 处理多个类型参数的情况：Tuple[int, str] 或 tuple[int, ...]
+                        for elt in annotation_node.slice.elts:
+                            # 跳过 Ellipsis (...)，它表示可变长度
+                            # Python 3.8+ 使用 ast.Constant(value=...)
+                            if isinstance(elt, ast.Constant) and elt.value == ...:
+                                continue
+                            type_args.append(self._parse_type_annotation(elt))
+                    else:
+                        # 单个参数：Tuple[int]，slice 直接是类型节点
+                        type_args.append(self._parse_type_annotation(annotation_node.slice))
+                    
+                    # 使用 DynamicType 保存 Tuple 类型，id 为 "Tuple" 或 "tuple"
+                    # typeArguments 包含所有元素类型
+                    return self.packPos(annotation_node,
+                                       UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(),
+                                                        UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), type_name),
+                                                        type_args if type_args else None))
+                
+                # ========== 2.4 Set 类型: Set[T] 或 set[T] ==========
+                # PEP 484: Set 接受一个类型参数，表示元素类型
+                # Python 3.9+ 支持 set[T] 语法 (PEP 585)
+                elif type_name == "set" or type_name == "Set":
+                    type_arg = self._parse_type_annotation(annotation_node.slice)
+                    
+                    return self.packPos(annotation_node,
+                                       UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(),
+                                                        UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), type_name),
+                                                        [type_arg] if type_arg else None))
+                
+                # ========== 2.5 Optional 类型: Optional[T] ==========
+                # PEP 484: Optional[T] 等价于 Union[T, None]
+                # Optional 只接受一个类型参数，slice 直接是类型节点（ast.Name 或 ast.Subscript）
+                elif type_name == "Optional":
+                    type_arg = self._parse_type_annotation(annotation_node.slice)
+                    return self.packPos(annotation_node,
+                                       UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(),
+                                                        UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), type_name),
+                                                        [type_arg] if type_arg else None))
+                
+                # ========== 2.6 Union 类型: Union[T1, T2, ...] ==========
+                # PEP 484: Union[X, Y] 表示 X 或 Y 类型
+                # Python 3.10+ 支持 X | Y 语法 (PEP 604)
+                # 使用 DynamicType 保存所有联合类型，以保留完整的类型信息
+                elif type_name == "Union":
+                    type_args = []
+                    if isinstance(annotation_node.slice, ast.Tuple):
+                        for elt in annotation_node.slice.elts:
+                            type_args.append(self._parse_type_annotation(elt))
+                    else:
+                        type_args.append(self._parse_type_annotation(annotation_node.slice))
+                    
+                    return self.packPos(annotation_node,
+                                       UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(),
+                                                        UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), type_name),
+                                                        type_args if type_args else None))
+                
+                # ========== 2.7 Literal 类型: Literal["a", "b", ...] ==========
+                # PEP 586: Literal 用于定义"字面值类型"
+                # Literal["a", "b"] 表示值只能是 "a" 或 "b"
+                elif type_name == "Literal":
+                    literal_values = []
+                    if isinstance(annotation_node.slice, ast.Tuple):
+                        for elt in annotation_node.slice.elts:
+                            literal_values.append(self._parse_type_annotation(elt))
+                    else:
+                        literal_values.append(self._parse_type_annotation(annotation_node.slice))
+                    
+                    return self.packPos(annotation_node,
+                                       UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(),
+                                                        UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), type_name),
+                                                        literal_values if literal_values else None))
+                
+                # ========== 2.8 Callable 类型: Callable[[Args], ReturnType] ==========
+                # PEP 484: Callable 用于标注可调用对象
+                # Callable[[int, str], bool] 表示接受 int 和 str 参数，返回 bool 的函数
+                # slice 是 ast.Tuple，包含两个元素：[参数列表(ast.List), 返回类型]
+                # 需要区分参数类型列表和返回类型
+                elif type_name == "Callable":
+                    param_types_list = None
+                    return_type = None
+                    
+                    if isinstance(annotation_node.slice, ast.Tuple):
+                        if len(annotation_node.slice.elts) >= 2:
+                            # 第一个元素是参数列表，第二个是返回类型
+                            param_list_node = annotation_node.slice.elts[0]
+                            return_type_node = annotation_node.slice.elts[1]
+                            
+                            # 处理参数列表
+                            if isinstance(param_list_node, ast.List):
+                                # 解析参数类型列表
+                                param_types = []
+                                for param_type in param_list_node.elts:
+                                    param_types.append(self._parse_type_annotation(param_type))
+                                # 将参数类型列表包装为 DynamicType，id 为 "Params"
+                                if param_types:
+                                    param_types_list = UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(),
+                                                                        UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), "Params"),
+                                                                        param_types)
+                            elif isinstance(param_list_node, ast.Constant) and param_list_node.value == ...:
+                                # Callable[..., ReturnType] 表示任意参数
+                                param_types_list = UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(),
+                                                                    UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), "Params"),
+                                                                    None)  # None 表示任意参数
+                            
+                            # 处理返回类型
+                            return_type = self._parse_type_annotation(return_type_node)
+                        elif len(annotation_node.slice.elts) == 1:
+                            # 只有一个元素，可能是返回类型
+                            return_type = self._parse_type_annotation(annotation_node.slice.elts[0])
+                    else:
+                        # 单个元素，可能是返回类型
+                        return_type = self._parse_type_annotation(annotation_node.slice)
+                    
+                    # typeArguments: [参数类型列表, 返回类型]
+                    type_args = []
+                    if param_types_list:
+                        type_args.append(param_types_list)
+                    if return_type:
+                        type_args.append(return_type)
+                    
+                    return self.packPos(annotation_node,
+                                       UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(),
+                                                        UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), type_name),
+                                                        type_args if type_args else None))
+                
+                # ========== 2.9 其他泛型类型（用户定义的泛型类、Generic[T] 等） ==========
+                # 包括：用户定义的泛型类、Protocol、TypedDict 等
+                else:
+                    type_args = []
+                    if isinstance(annotation_node.slice, ast.Tuple):
+                        for elt in annotation_node.slice.elts:
+                            type_args.append(self._parse_type_annotation(elt))
+                    else:
+                        type_args.append(self._parse_type_annotation(annotation_node.slice))
+                    
+                    return self.packPos(annotation_node,
+                                       UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(),
+                                                        UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), type_name),
+                                                        type_args if type_args else None))
+            
+            else:
+                return self.packPos(annotation_node, self.visit(annotation_node.value))
+        
+        # ========== 3. 处理 None 常量 ==========
+        # PEP 484: None 可以作为类型注解，表示 None 类型
+        # Python 3.8+ 使用 ast.Constant(value=None)
+        elif isinstance(annotation_node, ast.Constant) and annotation_node.value is None:
+            return self.packPos(annotation_node,
+                               UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(), "null"))
+        
+        # ========== 4. 其他情况 ==========
+        # 对于无法识别的类型注解，使用默认的 visit 方法处理
+        # 这可能包括：复杂的表达式、前向引用等
+        else:
+            return self.packPos(annotation_node, self.visit(annotation_node))
+
     def visit_Module(self, node):
         self.sourcefile = node.sourcefile
         body = []
@@ -54,23 +289,8 @@ class UASTTransformer(ast.NodeTransformer):
         id = UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), node.name)
         id.loc = UNode.SourceLocation(UNode.Position(node.lineno, None), UNode.Position(node.lineno, None),
                                       self.sourcefile)
-        if isinstance(node.returns, ast.Name):
-            if node.returns.id == 'int' or node.returns.id == 'float':
-                return_type = self.packPos(node.returns,
-                                           UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(), 'PrimitiveType',
-                                                               'number', None))
-            elif node.returns.id == 'str':
-                return_type = self.packPos(node.returns,
-                                           UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(), 'PrimitiveType',
-                                                               'string', None))
-            elif node.returns.id == 'bool':
-                return_type = self.packPos(node.returns,
-                                           UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(), 'PrimitiveType',
-                                                               'boolean', None))
-            else:
-                return_type = self.packPos(node.returns, self.visit(node.returns))
-        else:
-            return_type = None
+        # 使用统一的类型注解解析方法，支持所有类型
+        return_type = self._parse_type_annotation(node.returns) if node.returns is not None else None
         function_def = self.packPos(node,
                                     UNode.FunctionDefinition(UNode.SourceLocation(), UNode.Meta(), params, return_type,
                                                              UNode.ScopedStatement(body_loc, UNode.Meta(),
@@ -369,9 +589,8 @@ class UASTTransformer(ast.NodeTransformer):
                     default_index = i - num_non_default  # 计算默认值索引
                     default_value = self.packPos(node.defaults[default_index], self.visit(node.defaults[default_index]))
 
-                varType = UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())
-                if node.args[i].annotation is not None:
-                    varType = self.packPos(node.args[i].annotation, self.visit(node.args[i].annotation))
+                # 使用统一的类型注解解析方法，支持所有类型
+                varType = self._parse_type_annotation(node.args[i].annotation)
 
                 arg_id = self.visit(node.args[i])
                 var_decl = UNode.VariableDeclaration(
@@ -852,77 +1071,8 @@ class UASTTransformer(ast.NodeTransformer):
                                                               self.packPos(node.value, self.visit(node.value))))
 
     def visit_AnnAssign(self, node):
-        vartype = UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())
-        if node.annotation is not None:
-            if isinstance(node.annotation, ast.Name):
-                if node.annotation.id == "float" or node.annotation.id == "int":
-                    vartype = self.packPos(node.annotation,
-                                           UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(), "number"))
-                elif node.annotation.id == "str":
-                    vartype = self.packPos(node.annotation,
-                                           UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(), "string"))
-                elif node.annotation.id == "bool":
-                    vartype = self.packPos(node.annotation,
-                                           UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(), "boolean"))
-            elif isinstance(node.annotation, ast.Subscript):
-                keyType = valType = None
-                if isinstance(node.annotation.value, ast.Name):
-                    if node.annotation.value.id == "dict":
-                        if isinstance(node.annotation.slice, ast.Tuple):
-                            if len(node.annotation.slice.elts) == 2:
-                                if isinstance(node.annotation.slice.elts[0], ast.Name):
-                                    if node.annotation.slice.elts[0].id == "float" or node.annotation.slice.elts[
-                                        0].id == "int":
-                                        keyType = self.packPos(node.annotation.slice.elts[0],
-                                                               UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(),
-                                                                                   "number"))
-                                    elif node.annotation.slice.elts[0].id == "str":
-                                        keyType = self.packPos(node.annotation.slice.elts[0],
-                                                               UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(),
-                                                                                   "string"))
-                                    elif node.annotation.slice.elts[0].id == "bool":
-                                        keyType = self.packPos(node.annotation.slice.elts[0],
-                                                               UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(),
-                                                                                   "boolean"))
-                                if isinstance(node.annotation.slice.elts[0], ast.Subscript):
-                                    if isinstance(node.annotation.slice.elts[0].value, ast.Name) and \
-                                            node.annotation.slice.elts[0].value.id == 'tuple':
-                                        keyType = self.packPos(node.annotation.slice.elts[0],
-                                                               UNode.ArrayType(UNode.SourceLocation(), UNode.Meta(),
-                                                                               UNode.Identifier(UNode.SourceLocation(),
-                                                                                                UNode.Meta(),
-                                                                                                node.annotation.slice.elts[
-                                                                                                    0].slice.elts[
-                                                                                                    0].id)))
-                                if isinstance(node.annotation.slice.elts[1], ast.Name):
-                                    if node.annotation.slice.elts[1].id == "float" or node.annotation.slice.elts[
-                                        1].id == "int":
-                                        valType = self.packPos(node.annotation.slice.elts[1],
-                                                               UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(),
-                                                                                   "number"))
-                                    elif node.annotation.slice.elts[1].id == "str":
-                                        valType = self.packPos(node.annotation.slice.elts[1],
-                                                               UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(),
-                                                                                   "string"))
-                                    elif node.annotation.slice.elts[1].id == "bool":
-                                        valType = self.packPos(node.annotation.slice.elts[1],
-                                                               UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(),
-                                                                                   "boolean"))
-                        vartype = UNode.MapType(UNode.SourceLocation(), UNode.Meta(), keyType, valType)
-            elif isinstance(node.annotation, ast.List):
-                eleType = None
-                if node.annotation.elts is not None and len(node.annotation.elts) > 0:
-                    if isinstance(node.annotation.elts[0], ast.Name):
-                        if node.annotation.elts[0].id == "float" or node.annotation.elts[0].id == "int":
-                            eleType = self.packPos(node.annotation.elts[0],
-                                                   UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(), "number"))
-                        elif node.annotation.elts[0].id == "str":
-                            eleType = self.packPos(node.annotation.elts[0],
-                                                   UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(), "string"))
-                        elif node.annotation.elts[0].id == "bool":
-                            eleType = self.packPos(node.annotation.elts[0],
-                                                   UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(), "boolean"))
-                vartype = UNode.ArrayType(UNode.SourceLocation(), UNode.Meta(), eleType)
+        # 使用统一的类型注解解析方法
+        vartype = self._parse_type_annotation(node.annotation)
 
         init = None
         if node.value is not None:
