@@ -51,9 +51,17 @@ class UASTTransformer(ast.NodeTransformer):
         
         # ========== 2. 处理泛型类型（使用 ast.Subscript） ==========
         # 根据 PEP 484, PEP 585: 支持 List[T], Dict[K, V], Tuple[T1, T2, ...] 等
+        # 支持限定名称：typing.List[int], collections.abc.Mapping[str, int] 等
         elif isinstance(annotation_node, ast.Subscript):
+            # 提取类型名称：支持 ast.Name (如 List) 和 ast.Attribute (如 typing.List)
+            type_name = None
             if isinstance(annotation_node.value, ast.Name):
                 type_name = annotation_node.value.id
+            elif isinstance(annotation_node.value, ast.Attribute):
+                # 对于限定名称（如 typing.List），提取最后的属性名
+                type_name = annotation_node.value.attr
+            
+            if type_name:
                 
                 # ========== 2.1 Dict 类型: Dict[K, V] 或 dict[K, V] ==========
                 # PEP 484: Dict 接受两个类型参数，键类型和值类型
@@ -89,20 +97,31 @@ class UASTTransformer(ast.NodeTransformer):
                 # Python 3.9+ 支持 tuple[T1, T2, ...] 语法 (PEP 585)
                 elif type_name in ("tuple", "Tuple"):
                     type_args = []
+                    has_ellipsis = False
                     if isinstance(annotation_node.slice, ast.Tuple):
                         # 处理多个类型参数的情况：Tuple[int, str] 或 tuple[int, ...]
                         for elt in annotation_node.slice.elts:
-                            # 跳过 Ellipsis (...)，它表示可变长度
+                            # 检测 Ellipsis (...)，它表示可变长度
                             # Python 3.8+ 使用 ast.Constant(value=...)
                             if isinstance(elt, ast.Constant) and elt.value == ...:
+                                has_ellipsis = True
+                                # 记录Ellipsis信息，在typeArguments最后添加特殊标记
                                 continue
                             type_args.append(self._parse_type_annotation(elt))
                     else:
                         # 单个参数：Tuple[int]，slice 直接是类型节点
                         type_args.append(self._parse_type_annotation(annotation_node.slice))
                     
+                    # 如果包含 Ellipsis，在 typeArguments 最后添加特殊标记以表示可变长度
+                    # tuple[int, ...] → typeArguments=[int, DynamicType(id="Ellipsis")]
+                    # Tuple[int] → typeArguments=[int]
+                    if has_ellipsis:
+                        ellipsis_marker = UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(),
+                                                            UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), "Ellipsis"),
+                                                            None)
+                        type_args.append(ellipsis_marker)
 
-                    # 返回: UAST DynamicType (id="Tuple"/"tuple", typeArguments=[元素类型列表])
+                    # 返回: UAST DynamicType (id="Tuple"/"tuple", typeArguments=[元素类型列表, 可能包含 Ellipsis 标记])
                     return self.packPos(annotation_node,
                                        UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(),
                                                         UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), type_name),
@@ -188,10 +207,13 @@ class UASTTransformer(ast.NodeTransformer):
                                 for param_type in param_list_node.elts:
                                     param_types.append(self._parse_type_annotation(param_type))
                                 # 将参数类型列表包装为 DynamicType，id 为 "Params"
-                                if param_types:
-                                    param_types_list = UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(),
-                                                                        UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), "Params"),
-                                                                        param_types)
+                                # 空列表 [] 表示无参数, None 表示任意参数（..., 非空列表表示具体参数类型
+                                # Callable[[], bool] → Params 包装器, typeArguments=[]（空列表，表示无参数）
+                                # Callable[..., bool] → Params 包装器, typeArguments=None（None，表示任意参数）
+                                # Callable[[int, str], bool] → Params 包装器, typeArguments=[int, str]（具体参数类型）
+                                param_types_list = UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(),
+                                                                    UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), "Params"),
+                                                                    param_types if param_types else [])
                             elif isinstance(param_list_node, ast.Constant) and param_list_node.value == ...:
                                 # Callable[..., ReturnType] 表示任意参数
                                 param_types_list = UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(),
