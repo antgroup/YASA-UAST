@@ -223,6 +223,12 @@ def test_callable_ellipsis() -> Callable[..., str]:
         return "result"
     return func
 
+def test_callable_no_args() -> Callable[[], bool]:
+    """测试 Callable[[], bool] 类型注解（无参数）"""
+    def func() -> bool:
+        return True
+    return func
+
 # ========== 10. Type 类型 (PEP 484) ==========
 # 测试：Type[C] 用于标注类对象本身
 
