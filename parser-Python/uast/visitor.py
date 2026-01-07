@@ -30,35 +30,29 @@ class UASTTransformer(ast.NodeTransformer):
         # 根据 PEP 484: 基本类型 int, float, str, bool
         # 不包括 None 类型, 因为 None 节点是 Constant 类型而不是 ast.Name
         if isinstance(node, ast.Name):
-            loc = UNode.SourceLocation(UNode.Position(node.lineno, node.col_offset + 1),
-                                     UNode.Position(node.end_lineno, node.end_col_offset + 1),
-                                     self.sourcefile)
             if node.id == "float" or node.id == "int":
                 # int 和 float 都映射为 number 类型
                 return self.packPos(node,
-                                   UNode.PrimitiveType(loc, UNode.Meta(), "number"))
+                                   UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(), kind="number"))
             elif node.id == "str":
                 return self.packPos(node,
-                                   UNode.PrimitiveType(loc, UNode.Meta(), "string"))
+                                   UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(), kind="string"))
             elif node.id == "bool":
                 return self.packPos(node,
-                                   UNode.PrimitiveType(loc, UNode.Meta(), "boolean"))
+                                   UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(), kind="boolean"))
             elif node.id == "Any":
                 # typing.Any: 特殊类型，表示任意类型 (PEP 484)
                 return self.packPos(node,
-                                   UNode.DynamicType(loc, UNode.Meta()))
+                                   UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(), id="Any"))
             else:
                 # 其他类型名称（自定义类型、类名等），使用 Identifier
                 return self.packPos(node,
-                                   UNode.Identifier(loc, UNode.Meta(), node.id))
+                                   UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), name=node.id))
         
         # ========== 2. 处理泛型类型（使用 ast.Subscript） ==========
         # 根据 PEP 484, PEP 585: 支持 List[T], Dict[K, V], Tuple[T1, T2, ...] 等
         # 支持限定名称：typing.List[int], collections.abc.Mapping[str, int] 等
         elif isinstance(node, ast.Subscript):
-            loc = UNode.SourceLocation(UNode.Position(node.lineno, node.col_offset + 1),
-                                     UNode.Position(node.end_lineno, node.end_col_offset + 1),
-                                     self.sourcefile)
             # 提取类型名称：支持 ast.Name (如 List) 和 ast.Attribute (如 typing.List)
             type_name = None
             if isinstance(node.value, ast.Name):
@@ -82,9 +76,8 @@ class UASTTransformer(ast.NodeTransformer):
                             valType = self._parse_type_annotation(node.slice.elts[1])
                     
                     # 返回: UAST MapType (keyType=键类型, valueType=值类型)
-                    return self.packPos(node,
-                                       UNode.MapType(loc, UNode.Meta(), 
-                                       keyType, valType))
+                    return self.packPos(node, UNode.MapType(UNode.SourceLocation(), UNode.Meta(), 
+                                       keyType=keyType, valueType=valType))
                 
                 # ========== 2.2 List 类型: List[T] 或 list[T] ==========
                 # PEP 484: List 接受一个类型参数，表示元素类型
@@ -92,9 +85,8 @@ class UASTTransformer(ast.NodeTransformer):
                 elif type_name in ("list", "List"):
                     type_arg = self._parse_type_annotation(node.slice)
                     # 返回: UAST ArrayType (element=元素类型)
-                    return self.packPos(node,
-                                       UNode.ArrayType(loc, UNode.Meta(), 
-                                       type_arg))
+                    return self.packPos(node, UNode.ArrayType(UNode.SourceLocation(), UNode.Meta(), 
+                                        element=type_arg))
                 
                 # ========== 2.3 Tuple 类型: Tuple[T1, T2, ...] 或 tuple[T1, T2, ...] ==========
                 # PEP 484: Tuple 可以接受任意数量的类型参数
@@ -103,36 +95,17 @@ class UASTTransformer(ast.NodeTransformer):
                 # Python 3.9+ 支持 tuple[T1, T2, ...] 语法 (PEP 585)
                 elif type_name in ("tuple", "Tuple"):
                     type_args = []
-                    has_ellipsis = False
                     if isinstance(node.slice, ast.Tuple):
                         # 处理多个类型参数的情况：Tuple[int, str] 或 tuple[int, ...]
                         for elt in node.slice.elts:
-                            # 检测 Ellipsis (...)，它表示可变长度
-                            # Python 3.8+ 使用 ast.Constant(value=...)
-                            if isinstance(elt, ast.Constant) and elt.value == ...:
-                                has_ellipsis = True
-                                # 记录Ellipsis信息，在typeArguments最后添加特殊标记
-                                continue
                             type_args.append(self._parse_type_annotation(elt))
                     else:
                         # 单个参数：Tuple[int]，slice 直接是类型节点
                         type_args.append(self._parse_type_annotation(node.slice))
-                    
-                    # 如果包含 Ellipsis，在 typeArguments 最后添加特殊标记以表示可变长度
-                    # tuple[int, ...] → typeArguments=[int, DynamicType(id="Ellipsis")]
-                    # Tuple[int] → typeArguments=[int]
-                    if has_ellipsis:
-                        # Ellipsis 标记使用空位置信息，因为它是内部标记
-                        ellipsis_marker = UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(),
-                                                            UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), "Ellipsis"),
-                                                            None)
-                        type_args.append(ellipsis_marker)
 
                     # 返回: UAST DynamicType (id="Tuple"/"tuple", typeArguments=[元素类型列表, 可能包含 Ellipsis 标记])
-                    return self.packPos(node,
-                                       UNode.DynamicType(loc, UNode.Meta(),
-                                                        UNode.Identifier(loc, UNode.Meta(), type_name),
-                                                        type_args if type_args else None))
+                    return self.packPos(node, UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(),
+                                        id=type_name, typeArguments=type_args if type_args else None))
                 
                 # ========== 2.4 Set 类型: Set[T] 或 set[T] ==========
                 # PEP 484: Set 接受一个类型参数，表示元素类型
@@ -141,10 +114,8 @@ class UASTTransformer(ast.NodeTransformer):
                     type_arg = self._parse_type_annotation(node.slice)
                     
                     # 返回: UAST DynamicType (id="Set"/"set", typeArguments=[元素类型])
-                    return self.packPos(node,
-                                       UNode.DynamicType(loc, UNode.Meta(),
-                                                        UNode.Identifier(loc, UNode.Meta(), type_name),
-                                                        [type_arg] if type_arg else None))
+                    return self.packPos(node, UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(),
+                                        id=type_name, typeArguments=[type_arg] if type_arg else None))
                 
                 # ========== 2.5 Optional 类型: Optional[T] ==========
                 # PEP 484: Optional[T] 等价于 Union[T, None]
@@ -152,10 +123,8 @@ class UASTTransformer(ast.NodeTransformer):
                 elif type_name == "Optional":
                     type_arg = self._parse_type_annotation(node.slice)
                     # 返回: UAST DynamicType (id="Optional", typeArguments=[类型参数])
-                    return self.packPos(node,
-                                       UNode.DynamicType(loc, UNode.Meta(),
-                                                        UNode.Identifier(loc, UNode.Meta(), type_name),
-                                                        [type_arg] if type_arg else None))
+                    return self.packPos(node, UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(),
+                                        id=type_name, typeArguments=[type_arg] if type_arg else None))
                 
                 # ========== 2.6 Union 类型: Union[T1, T2, ...] ==========
                 # PEP 484: Union[X, Y] 表示 X 或 Y 类型
@@ -170,10 +139,8 @@ class UASTTransformer(ast.NodeTransformer):
                         type_args.append(self._parse_type_annotation(node.slice))
                     
                     # 返回: UAST DynamicType (id="Union", typeArguments=[所有联合类型])
-                    return self.packPos(node,
-                                       UNode.DynamicType(loc, UNode.Meta(),
-                                                        UNode.Identifier(loc, UNode.Meta(), type_name),
-                                                        type_args if type_args else None))
+                    return self.packPos(node, UNode.DynamicType(UNode.SourceLocation(), 
+                                        UNode.Meta(), id=type_name, typeArguments=type_args if type_args else None))
                 
                 # ========== 2.7 Literal 类型: Literal["a", "b", ...] ==========
                 # PEP 586: Literal 用于定义"字面值类型"
@@ -187,10 +154,8 @@ class UASTTransformer(ast.NodeTransformer):
                         literal_values.append(self._parse_type_annotation(node.slice))
                     
                     # 返回: UAST DynamicType (id="Literal", typeArguments=[Literal值列表，每个值可能是PrimitiveType或Identifier])
-                    return self.packPos(node,
-                                       UNode.DynamicType(loc, UNode.Meta(),
-                                                        UNode.Identifier(loc, UNode.Meta(), type_name),
-                                                        literal_values if literal_values else None))
+                    return self.packPos(node, UNode.DynamicType(UNode.SourceLocation(), 
+                                        UNode.Meta(), id=type_name, typeArguments=literal_values if literal_values else None))
                 
                 # ========== 2.8 Callable 类型: Callable[[Args], ReturnType] ==========
                 # PEP 484: Callable 用于标注可调用对象
@@ -218,20 +183,12 @@ class UASTTransformer(ast.NodeTransformer):
                                 # Callable[[], bool] → Params 包装器, typeArguments=[]（空列表，表示无参数）
                                 # Callable[..., bool] → Params 包装器, typeArguments=None（None，表示任意参数）
                                 # Callable[[int, str], bool] → Params 包装器, typeArguments=[int, str]（具体参数类型）
-                                param_list_loc = UNode.SourceLocation(UNode.Position(param_list_node.lineno, param_list_node.col_offset + 1),
-                                                                     UNode.Position(param_list_node.end_lineno, param_list_node.end_col_offset + 1),
-                                                                     self.sourcefile)
-                                param_types_list = UNode.DynamicType(param_list_loc, UNode.Meta(),
-                                                                    UNode.Identifier(param_list_loc, UNode.Meta(), "Params"),
-                                                                    param_types if param_types else [])
+                                param_types_list = self.packPos(param_list_node, UNode.ArrayType(UNode.SourceLocation(), 
+                                                        UNode.Meta(), element=param_types if param_types else []))
                             elif isinstance(param_list_node, ast.Constant) and param_list_node.value == ...:
                                 # Callable[..., ReturnType] 表示任意参数
-                                param_list_loc = UNode.SourceLocation(UNode.Position(param_list_node.lineno, param_list_node.col_offset + 1),
-                                                                     UNode.Position(param_list_node.end_lineno, param_list_node.end_col_offset + 1),
-                                                                     self.sourcefile)
-                                param_types_list = UNode.DynamicType(param_list_loc, UNode.Meta(),
-                                                                    UNode.Identifier(param_list_loc, UNode.Meta(), "Params"),
-                                                                    None)  # None 表示任意参数
+                                param_types_list = self.packPos(param_list_node, UNode.DynamicType(UNode.SourceLocation(), 
+                                                                    UNode.Meta(), id="Params", typeArguments="Ellipsis"))  # Any 表示任意参数
                             
                             # 处理返回类型
                             return_type = self._parse_type_annotation(return_type_node)
@@ -250,10 +207,8 @@ class UASTTransformer(ast.NodeTransformer):
                         type_args.append(return_type)
                     
                     # 返回: UAST DynamicType (id="Callable", typeArguments=[DynamicType(id="Params", typeArguments=[参数类型列表]), 返回类型])
-                    return self.packPos(node,
-                                       UNode.DynamicType(loc, UNode.Meta(),
-                                                        UNode.Identifier(loc, UNode.Meta(), type_name),
-                                                        type_args if type_args else None))
+                    return self.packPos(node, UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(),
+                                        id=type_name, typeArguments=type_args if type_args else None))
                 
                 # ========== 2.9 其他泛型类型（用户定义的泛型类、Generic[T] 等） ==========
                 # 包括：用户定义的泛型类、Protocol、TypedDict 等
@@ -266,10 +221,8 @@ class UASTTransformer(ast.NodeTransformer):
                         type_args.append(self._parse_type_annotation(node.slice))
                     
                     # 返回: UAST DynamicType (id=类型名称, typeArguments=[类型参数列表])
-                    return self.packPos(node,
-                                       UNode.DynamicType(loc, UNode.Meta(),
-                                                        UNode.Identifier(loc, UNode.Meta(), type_name),
-                                                        type_args if type_args else None))
+                    return self.packPos(node, UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(),
+                                        id=type_name, typeArguments=type_args if type_args else None))
             
             else:
                 # 返回: 根据 annotation_node.value 的类型返回相应的 UAST 节点
@@ -279,9 +232,6 @@ class UASTTransformer(ast.NodeTransformer):
         # int | str 等价于 Union[int, str]
         # 使用 ast.BinOp 表示，操作符是 ast.BitOr
         elif isinstance(node, ast.BinOp) and isinstance(node.op, ast.BitOr):
-            loc = UNode.SourceLocation(UNode.Position(node.lineno, node.col_offset + 1),
-                                     UNode.Position(node.end_lineno, node.end_col_offset + 1),
-                                     self.sourcefile)
             # 递归收集所有联合类型
             # 对于 int | str | bool，AST 结构是嵌套的 BinOp:
             # BinOp(left=BinOp(left=int, op=BitOr(), right=str), op=BitOr(), right=bool)
@@ -300,21 +250,15 @@ class UASTTransformer(ast.NodeTransformer):
             collect_union_types(node)
             
             # 返回: UAST DynamicType (id="Union", typeArguments=[所有联合类型列表])
-            return self.packPos(node,
-                               UNode.DynamicType(loc, UNode.Meta(),
-                                                UNode.Identifier(loc, UNode.Meta(), "Union"),
-                                                type_args if type_args else None))
+            return self.packPos(node, UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(),
+                                                id="Union", typeArguments=type_args if type_args else None))
         
         # ========== 4. 处理 None 常量 ==========
         # PEP 484: None 可以作为类型注解，表示 None 类型
         # Python 3.8+ 使用 ast.Constant(value=None)
         elif isinstance(node, ast.Constant) and node.value is None:
-            loc = UNode.SourceLocation(UNode.Position(node.lineno, node.col_offset + 1),
-                                     UNode.Position(node.end_lineno, node.end_col_offset + 1),
-                                     self.sourcefile)
             # 返回: UAST PrimitiveType (kind="null")
-            return self.packPos(node,
-                               UNode.PrimitiveType(loc, UNode.Meta(), "null"))
+            return self.packPos(node, UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(), "null"))
         
         # ========== 5. 其他情况 ==========
         # 对于无法识别的类型注解，使用默认的 visit 方法处理
