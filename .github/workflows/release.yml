@@ -348,12 +348,14 @@ jobs:
   build_python_macos:
     name: Build Python Binary - macOS Universal
     needs: publish_parser_js
-    runs-on: macos-latest
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        arch:
-          - amd64
-          - arm64
+        include:
+          - os: macos-15-intel
+            arch: amd64
+          - os: macos-latest
+            arch: arm64
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
