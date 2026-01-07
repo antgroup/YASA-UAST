@@ -183,12 +183,12 @@ class UASTTransformer(ast.NodeTransformer):
                                 # Callable[[], bool] → Params 包装器, typeArguments=[]（空列表，表示无参数）
                                 # Callable[..., bool] → Params 包装器, typeArguments=None（None，表示任意参数）
                                 # Callable[[int, str], bool] → Params 包装器, typeArguments=[int, str]（具体参数类型）
-                                param_types_list = self.packPos(param_list_node, UNode.ArrayType(UNode.SourceLocation(), 
-                                                        UNode.Meta(), element=param_types if param_types else []))
+                                param_types_list = self.packPos(param_list_node, UNode.DynamicType(UNode.SourceLocation(), 
+                                                        UNode.Meta(), id="Params", typeArguments=param_types if param_types else []))
                             elif isinstance(param_list_node, ast.Constant) and param_list_node.value == ...:
                                 # Callable[..., ReturnType] 表示任意参数
                                 param_types_list = self.packPos(param_list_node, UNode.DynamicType(UNode.SourceLocation(), 
-                                                                    UNode.Meta(), id="Params", typeArguments="Ellipsis"))  # Any 表示任意参数
+                                                                    UNode.Meta(), id="Params", typeArguments=["Any"]))  # Any 表示任意参数
                             
                             # 处理返回类型
                             return_type = self._parse_type_annotation(return_type_node)
