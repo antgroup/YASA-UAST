@@ -134,10 +134,7 @@ class UASTTransformer(ast.NodeTransformer):
 
         super = []
         for base in node.bases:
-            if isinstance(base, ast.Subscript):  # 暂不处理泛型
-                unode = self.visit(base.value)
-            else:
-                unode = self.visit(base)
+            unode = self.visit(base)
             if isinstance(unode, list):
                 super.extend(unode)
             else:
