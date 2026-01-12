@@ -382,6 +382,13 @@ class DynamicType(BaseNode):
     id: Identifier = None
     typeArguments: Optional[List['Type']] = None
 
+@dataclass_json
+@dataclass
+class ScopedType(BaseNode):
+    id: Identifier = None
+    scope: Optional['Type'] = None
+    typeArguments: Optional[List['Type']] = None
+
 
 # ========== Type Aliases ==========
 Instruction = Union[
@@ -402,7 +409,7 @@ Statement = Union[Sequence, SwitchStatement, BreakStatement, ContinueStatement, 
 LVal = Union[Identifier, MemberAccess, TupleExpression]
 
 Type = Union[
-    PrimitiveType, ArrayType, DynamicType, Identifier, MapType
+    PrimitiveType, ArrayType, DynamicType, ScopedType, MapType
 ]
 Conditional = Union[IfStatement , SwitchStatement , ConditionalExpression]
 
@@ -451,6 +458,7 @@ Node = Union[ArrayType
     , VariableDeclaration
     , WhileStatement
     , YieldExpression
+    , ScopedType
 ]
 
 # 其他类型别名类似定义...
