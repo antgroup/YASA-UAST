@@ -427,6 +427,7 @@ Node = Union[ArrayType
     , IfStatement
     , ImportExpression
     , Literal
+    , MapType
     , MemberAccess
     , NewExpression
     , Noop
