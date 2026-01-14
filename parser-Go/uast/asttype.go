@@ -3,7 +3,6 @@
 package uast
 
 type Position struct {
-	Offset int // offset, starting at 0
 	Line   int `json:"line"`   // line number, starting at 1
 	Column int `json:"column"` // column number, starting at 1 (byte count)
 }
