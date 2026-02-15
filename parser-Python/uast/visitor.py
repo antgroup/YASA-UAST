@@ -1093,12 +1093,15 @@ class UASTTransformer(ast.NodeTransformer):
 
     def visit_keyword(self, node):
         # todo 当函数调用使用 **kwargs 展开一个字典时，node.arg 的值为 None
-        return self.packPos(node, UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(),
+        keyword = self.packPos(node, UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(),
                                                             UNode.Identifier(UNode.SourceLocation(), UNode.Meta(),
                                                                              node.arg),
                                                             self.packPos(node.value, self.visit(node.value)),
                                                             False,
                                                             UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())))
+        if keyword.id.name is None:
+            keyword.id.name = "kwargs"
+        return keyword
 
     def visit_Starred(self, node):
         return self.packPos(node, UNode.DereferenceExpression(UNode.SourceLocation(), UNode.Meta(),
