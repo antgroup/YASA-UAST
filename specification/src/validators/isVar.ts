@@ -1,6 +1,6 @@
 import { isVariableDeclaration } from "./generated";
 import { BLOCK_SCOPED_SYMBOL } from "../constants";
-import type * as t from "..";
+import type * as t from "../ast-types/generated";
 
 /**
  * Check if the input `node` is a variable declaration.

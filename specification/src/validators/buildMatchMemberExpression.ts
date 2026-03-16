@@ -1,5 +1,5 @@
 import matchesPattern from "./matchesPattern";
-import type * as t from "..";
+import type * as t from "../ast-types/generated";
 
 /**
  * Build a function that when called will return whether or not the

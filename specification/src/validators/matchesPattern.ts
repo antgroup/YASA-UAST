@@ -3,7 +3,7 @@ import {
   isLiteral,
   isThisExpression,
 } from "./generated";
-import type * as t from "..";
+import type * as t from "../ast-types/generated";
 
 /**
  * Determines whether or not the input node `member` matches the

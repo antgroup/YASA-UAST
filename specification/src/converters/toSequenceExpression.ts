@@ -1,5 +1,5 @@
 import gatherSequenceExpressions from "./gatherSequenceExpressions";
-import type * as t from "..";
+import type * as t from "../ast-types/generated";
 import type { Scope } from "./Scope";
 
 /**

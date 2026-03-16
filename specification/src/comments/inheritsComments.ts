@@ -1,7 +1,7 @@
 import inheritTrailingComments from "./inheritTrailingComments";
 import inheritLeadingComments from "./inheritLeadingComments";
 import inheritInnerComments from "./inheritInnerComments";
-import type * as t from "..";
+import type * as t from "../ast-types/generated";
 
 /**
  * Inherit all unique comments from `parent` node to `child` node.

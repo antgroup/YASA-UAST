@@ -3,7 +3,7 @@ import {
   isDeclaration,
   isFunctionDefinition,
 } from "../validators/generated";
-import type * as t from "..";
+import type * as t from "../ast-types/generated";
 
 export { getBindingIdentifiers as default };
 
