@@ -18,7 +18,6 @@ export interface Meta {
   decorators?: any[]
   modifiers?: any[]
   type?: any
-  isCatchParm?: boolean
   isCatchParam?: boolean
   isRestElement?: boolean
   isPublic?: boolean
