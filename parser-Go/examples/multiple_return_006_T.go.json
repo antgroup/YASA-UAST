@@ -1,4 +1,5 @@
 {
+  "moduleName": "__single_module__",
   "packageInfo": {
     "PathName": "",
     "files": {},
@@ -6,1003 +7,914 @@
       "/": {
         "PathName": "",
         "files": {
-          "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go": {
+          "$EXAMPLES/multiple_return_006_T.go": {
             "node": {
-              "type": "CompileUnit",
+              "_meta": {},
               "body": [
                 {
-                  "type": "PackageDeclaration",
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 12,
-                      "column": 9
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 12,
-                      "column": 17
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                  },
                   "_meta": {},
-                  "packageName": {
-                    "type": "Identifier",
-                    "name": "examples",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 12,
-                        "column": 9
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 12,
-                        "column": 17
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
+                  "loc": {
+                    "end": {
+                      "column": 17,
+                      "line": 12
                     },
-                    "_meta": {}
-                  }
+                    "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                    "start": {
+                      "column": 9,
+                      "line": 12
+                    }
+                  },
+                  "packageName": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 17,
+                        "line": 12
+                      },
+                      "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                      "start": {
+                        "column": 9,
+                        "line": 12
+                      }
+                    },
+                    "name": "examples",
+                    "type": "Identifier"
+                  },
+                  "type": "PackageDeclaration"
                 },
                 {
-                  "type": "FunctionDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "multiple_return_006_T",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 14,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 14,
-                        "column": 27
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                    },
-                    "_meta": {}
-                  },
-                  "parameters": [
-                    {
-                      "type": "VariableDeclaration",
-                      "id": {
-                        "type": "Identifier",
-                        "name": "__taint_src",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 14,
-                            "column": 28
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 14,
-                            "column": 39
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                        },
-                        "_meta": {
-                          "type": {
-                            "type": "DynamicType",
-                            "id": null,
-                            "typeArguments": null,
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 14,
-                                "column": 40
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 14,
-                                "column": 51
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                            },
-                            "_meta": {}
-                          }
-                        }
-                      },
-                      "init": null,
-                      "cloned": true,
-                      "varType": {
-                        "type": "DynamicType",
-                        "id": null,
-                        "typeArguments": null,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 14,
-                            "column": 40
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 14,
-                            "column": 51
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                        },
-                        "_meta": {}
-                      },
-                      "variableParam": false,
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 14,
-                          "column": 28
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 14,
-                          "column": 51
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                      },
-                      "_meta": {}
-                    }
-                  ],
-                  "returnType": {
-                    "type": "VoidType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "body": {
-                    "type": "ScopedStatement",
+                    "_meta": {},
                     "body": [
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": true,
                         "id": {
-                          "type": "Identifier",
-                          "name": "a",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 15,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 15,
-                              "column": 3
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                          },
                           "_meta": {
+                            "ReceiveCls": "",
                             "type": {
-                              "type": "Identifier",
-                              "name": "string",
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
                               "loc": null,
-                              "_meta": {}
+                              "name": "string",
+                              "type": "Identifier"
                             }
-                          }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 3,
+                              "line": 15
+                            },
+                            "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                            "start": {
+                              "column": 2,
+                              "line": 15
+                            }
+                          },
+                          "name": "a",
+                          "type": "Identifier"
                         },
                         "init": {
-                          "type": "Literal",
-                          "value": "\"_\"",
+                          "_meta": {},
                           "literalType": "STRING",
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 15,
-                              "column": 7
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 15,
-                              "column": 10
+                              "column": 10,
+                              "line": 15
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
+                            "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                            "start": {
+                              "column": 7,
+                              "line": 15
+                            }
                           },
-                          "_meta": {}
+                          "type": "Literal",
+                          "value": "\"_\""
                         },
-                        "cloned": true,
+                        "loc": {
+                          "end": {
+                            "column": 10,
+                            "line": 15
+                          },
+                          "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                          "start": {
+                            "column": 2,
+                            "line": 15
+                          }
+                        },
+                        "type": "VariableDeclaration",
                         "varType": {
-                          "type": "Identifier",
-                          "name": "string",
+                          "_meta": {},
                           "loc": null,
-                          "_meta": {}
+                          "name": "string",
+                          "type": "Identifier"
                         },
-                        "variableParam": false,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 15,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 15,
-                            "column": 10
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                        },
-                        "_meta": {}
+                        "variableParam": false
                       },
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": false,
                         "id": {
-                          "type": "Identifier",
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "id": null,
+                              "loc": {
+                                "end": {
+                                  "column": 22,
+                                  "line": 16
+                                },
+                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/multiple_return_006_T.go",
+                                "start": {
+                                  "column": 11,
+                                  "line": 16
+                                }
+                              },
+                              "type": "DynamicType",
+                              "typeArguments": null
+                            }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 10,
+                              "line": 16
+                            },
+                            "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                            "start": {
+                              "column": 6,
+                              "line": 16
+                            }
+                          },
                           "name": "ret1",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 16,
-                              "column": 6
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 16,
-                              "column": 10
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "DynamicType",
-                              "id": null,
-                              "typeArguments": null,
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 16,
-                                  "column": 11
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 16,
-                                  "column": 22
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                              },
-                              "_meta": {}
-                            }
-                          }
+                          "type": "Identifier"
                         },
                         "init": null,
-                        "cloned": false,
-                        "varType": {
-                          "type": "DynamicType",
-                          "id": null,
-                          "typeArguments": null,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 16,
-                              "column": 11
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 16,
-                              "column": 22
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                          },
-                          "_meta": {}
-                        },
-                        "variableParam": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 16,
-                            "column": 6
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 16,
-                            "column": 22
+                            "column": 22,
+                            "line": 16
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
+                          "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                          "start": {
+                            "column": 6,
+                            "line": 16
+                          }
                         },
-                        "_meta": {}
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "id": null,
+                          "loc": {
+                            "end": {
+                              "column": 22,
+                              "line": 16
+                            },
+                            "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                            "start": {
+                              "column": 11,
+                              "line": 16
+                            }
+                          },
+                          "type": "DynamicType",
+                          "typeArguments": null
+                        },
+                        "variableParam": false
                       },
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": false,
                         "id": {
-                          "type": "Identifier",
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "id": null,
+                              "loc": {
+                                "end": {
+                                  "column": 22,
+                                  "line": 17
+                                },
+                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/multiple_return_006_T.go",
+                                "start": {
+                                  "column": 11,
+                                  "line": 17
+                                }
+                              },
+                              "type": "DynamicType",
+                              "typeArguments": null
+                            }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 10,
+                              "line": 17
+                            },
+                            "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                            "start": {
+                              "column": 6,
+                              "line": 17
+                            }
+                          },
                           "name": "ret2",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 17,
-                              "column": 6
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 17,
-                              "column": 10
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "DynamicType",
-                              "id": null,
-                              "typeArguments": null,
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 17,
-                                  "column": 11
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 17,
-                                  "column": 22
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                              },
-                              "_meta": {}
-                            }
-                          }
+                          "type": "Identifier"
                         },
                         "init": null,
-                        "cloned": false,
-                        "varType": {
-                          "type": "DynamicType",
-                          "id": null,
-                          "typeArguments": null,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 17,
-                              "column": 11
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 17,
-                              "column": 22
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                          },
-                          "_meta": {}
-                        },
-                        "variableParam": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 17,
-                            "column": 6
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 17,
-                            "column": 22
+                            "column": 22,
+                            "line": 17
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
+                          "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                          "start": {
+                            "column": 6,
+                            "line": 17
+                          }
                         },
-                        "_meta": {}
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "id": null,
+                          "loc": {
+                            "end": {
+                              "column": 22,
+                              "line": 17
+                            },
+                            "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                            "start": {
+                              "column": 11,
+                              "line": 17
+                            }
+                          },
+                          "type": "DynamicType",
+                          "typeArguments": null
+                        },
+                        "variableParam": false
                       },
                       {
-                        "type": "VariableDeclaration",
-                        "id": {
-                          "type": "TupleExpression",
+                        "_meta": {},
+                        "cloned": true,
+                        "left": {
+                          "_meta": {},
                           "elements": [
                             {
-                              "type": "Identifier",
+                              "_meta": {},
+                              "loc": {
+                                "end": {
+                                  "column": 6,
+                                  "line": 18
+                                },
+                                "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                                "start": {
+                                  "column": 2,
+                                  "line": 18
+                                }
+                              },
                               "name": "ret1",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 18,
-                                  "column": 2
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 18,
-                                  "column": 6
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                              },
-                              "_meta": {}
+                              "type": "Identifier"
                             },
                             {
-                              "type": "Identifier",
+                              "_meta": {},
+                              "loc": {
+                                "end": {
+                                  "column": 12,
+                                  "line": 18
+                                },
+                                "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                                "start": {
+                                  "column": 8,
+                                  "line": 18
+                                }
+                              },
                               "name": "ret2",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 18,
-                                  "column": 8
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 18,
-                                  "column": 12
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                              },
-                              "_meta": {}
+                              "type": "Identifier"
                             }
                           ],
+                          "loc": null,
                           "modifiable": false,
-                          "loc": null,
-                          "_meta": {}
+                          "type": "TupleExpression"
                         },
-                        "init": {
-                          "type": "CallExpression",
-                          "callee": {
-                            "type": "Identifier",
-                            "name": "processData",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 18,
-                                "column": 15
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 18,
-                                "column": 26
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                            },
-                            "_meta": {}
-                          },
-                          "arguments": [
-                            {
-                              "type": "Identifier",
-                              "name": "__taint_src",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 18,
-                                  "column": 27
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 18,
-                                  "column": 38
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                              },
-                              "_meta": {}
-                            },
-                            {
-                              "type": "Identifier",
-                              "name": "a",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 18,
-                                  "column": 40
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 18,
-                                  "column": 41
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                              },
-                              "_meta": {}
-                            }
-                          ],
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 18,
-                              "column": 15
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 18,
-                              "column": 42
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                          },
-                          "_meta": {}
-                        },
-                        "cloned": true,
-                        "varType": {
-                          "type": "DynamicType",
-                          "id": null,
-                          "typeArguments": null,
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "variableParam": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 18,
-                            "column": 2
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 18,
-                            "column": 42
+                            "column": 42,
+                            "line": 18
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                        },
-                        "_meta": {}
-                      },
-                      {
-                        "type": "AssignmentExpression",
-                        "left": {
-                          "type": "Identifier",
-                          "name": "_",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 19,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 19,
-                              "column": 3
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                          },
-                          "_meta": {}
-                        },
-                        "right": {
-                          "type": "Identifier",
-                          "name": "ret2",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 19,
-                              "column": 6
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 19,
-                              "column": 10
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                          },
-                          "_meta": {}
+                          "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                          "start": {
+                            "column": 2,
+                            "line": 18
+                          }
                         },
                         "operator": "=",
-                        "cloned": true,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 19,
-                            "column": 2
+                        "right": {
+                          "_meta": {},
+                          "arguments": [
+                            {
+                              "_meta": {},
+                              "loc": {
+                                "end": {
+                                  "column": 38,
+                                  "line": 18
+                                },
+                                "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                                "start": {
+                                  "column": 27,
+                                  "line": 18
+                                }
+                              },
+                              "name": "__taint_src",
+                              "type": "Identifier"
+                            },
+                            {
+                              "_meta": {},
+                              "loc": {
+                                "end": {
+                                  "column": 41,
+                                  "line": 18
+                                },
+                                "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                                "start": {
+                                  "column": 40,
+                                  "line": 18
+                                }
+                              },
+                              "name": "a",
+                              "type": "Identifier"
+                            }
+                          ],
+                          "callee": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 26,
+                                "line": 18
+                              },
+                              "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                              "start": {
+                                "column": 15,
+                                "line": 18
+                              }
+                            },
+                            "name": "processData",
+                            "type": "Identifier"
                           },
-                          "end": {
-                            "Offset": 0,
-                            "line": 19,
-                            "column": 10
+                          "loc": {
+                            "end": {
+                              "column": 42,
+                              "line": 18
+                            },
+                            "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                            "start": {
+                              "column": 15,
+                              "line": 18
+                            }
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
+                          "type": "CallExpression"
                         },
-                        "_meta": {}
+                        "type": "AssignmentExpression"
                       },
                       {
-                        "type": "CallExpression",
-                        "callee": {
-                          "type": "Identifier",
-                          "name": "__taint_sink",
+                        "_meta": {},
+                        "cloned": true,
+                        "left": {
+                          "_meta": {},
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 20,
-                              "column": 2
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 20,
-                              "column": 14
+                              "column": 3,
+                              "line": 19
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
+                            "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                            "start": {
+                              "column": 2,
+                              "line": 19
+                            }
                           },
-                          "_meta": {}
+                          "name": "_",
+                          "type": "Identifier"
                         },
+                        "loc": {
+                          "end": {
+                            "column": 10,
+                            "line": 19
+                          },
+                          "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                          "start": {
+                            "column": 2,
+                            "line": 19
+                          }
+                        },
+                        "operator": "=",
+                        "right": {
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 10,
+                              "line": 19
+                            },
+                            "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                            "start": {
+                              "column": 6,
+                              "line": 19
+                            }
+                          },
+                          "name": "ret2",
+                          "type": "Identifier"
+                        },
+                        "type": "AssignmentExpression"
+                      },
+                      {
+                        "_meta": {},
                         "arguments": [
                           {
-                            "type": "Identifier",
-                            "name": "ret1",
+                            "_meta": {},
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 20,
-                                "column": 15
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 20,
-                                "column": 19
+                                "column": 19,
+                                "line": 20
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
+                              "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                              "start": {
+                                "column": 15,
+                                "line": 20
+                              }
                             },
-                            "_meta": {}
+                            "name": "ret1",
+                            "type": "Identifier"
                           }
                         ],
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 20,
-                            "column": 2
+                        "callee": {
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 14,
+                              "line": 20
+                            },
+                            "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                            "start": {
+                              "column": 2,
+                              "line": 20
+                            }
                           },
-                          "end": {
-                            "Offset": 0,
-                            "line": 20,
-                            "column": 20
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
+                          "name": "__taint_sink",
+                          "type": "Identifier"
                         },
-                        "_meta": {}
+                        "loc": {
+                          "end": {
+                            "column": 20,
+                            "line": 20
+                          },
+                          "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                          "start": {
+                            "column": 2,
+                            "line": 20
+                          }
+                        },
+                        "type": "CallExpression"
                       }
                     ],
                     "id": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 14,
-                        "column": 53
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 21,
-                        "column": 2
+                        "column": 2,
+                        "line": 21
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
+                      "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                      "start": {
+                        "column": 53,
+                        "line": 14
+                      }
                     },
-                    "_meta": {}
+                    "type": "ScopedStatement"
+                  },
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 27,
+                        "line": 14
+                      },
+                      "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                      "start": {
+                        "column": 6,
+                        "line": 14
+                      }
+                    },
+                    "name": "multiple_return_006_T",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 21
+                    },
+                    "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                    "start": {
+                      "column": 1,
+                      "line": 14
+                    }
                   },
                   "modifiers": null,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 14,
-                      "column": 1
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 21,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                  },
-                  "_meta": {}
-                },
-                {
-                  "type": "FunctionDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "processData",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 23,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 23,
-                        "column": 17
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                    },
-                    "_meta": {}
-                  },
                   "parameters": [
                     {
-                      "type": "VariableDeclaration",
+                      "_meta": {},
+                      "cloned": true,
                       "id": {
-                        "type": "Identifier",
-                        "name": "s",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 23,
-                            "column": 18
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 23,
-                            "column": 19
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                        },
                         "_meta": {
+                          "ReceiveCls": "",
                           "type": {
-                            "type": "DynamicType",
-                            "id": null,
-                            "typeArguments": null,
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 23,
-                                "column": 20
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 23,
-                                "column": 31
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
+                            "_meta": {
+                              "ReceiveCls": ""
                             },
-                            "_meta": {}
+                            "id": null,
+                            "loc": {
+                              "end": {
+                                "column": 51,
+                                "line": 14
+                              },
+                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/multiple_return_006_T.go",
+                              "start": {
+                                "column": 40,
+                                "line": 14
+                              }
+                            },
+                            "type": "DynamicType",
+                            "typeArguments": null
                           }
-                        }
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 39,
+                            "line": 14
+                          },
+                          "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                          "start": {
+                            "column": 28,
+                            "line": 14
+                          }
+                        },
+                        "name": "__taint_src",
+                        "type": "Identifier"
                       },
                       "init": null,
-                      "cloned": true,
-                      "varType": {
-                        "type": "DynamicType",
-                        "id": null,
-                        "typeArguments": null,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 23,
-                            "column": 20
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 23,
-                            "column": 31
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                        },
-                        "_meta": {}
-                      },
-                      "variableParam": false,
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 23,
-                          "column": 18
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 23,
-                          "column": 31
+                          "column": 51,
+                          "line": 14
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                      },
-                      "_meta": {}
-                    },
-                    {
-                      "type": "VariableDeclaration",
-                      "id": {
-                        "type": "Identifier",
-                        "name": "i",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 23,
-                            "column": 33
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 23,
-                            "column": 34
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                        },
-                        "_meta": {
-                          "type": {
-                            "type": "DynamicType",
-                            "id": null,
-                            "typeArguments": null,
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 23,
-                                "column": 35
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 23,
-                                "column": 46
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                            },
-                            "_meta": {}
-                          }
+                        "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                        "start": {
+                          "column": 28,
+                          "line": 14
                         }
                       },
-                      "init": null,
-                      "cloned": true,
+                      "type": "VariableDeclaration",
                       "varType": {
-                        "type": "DynamicType",
+                        "_meta": {},
                         "id": null,
-                        "typeArguments": null,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 23,
-                            "column": 35
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 23,
-                            "column": 46
+                            "column": 51,
+                            "line": 14
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
+                          "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                          "start": {
+                            "column": 40,
+                            "line": 14
+                          }
                         },
-                        "_meta": {}
+                        "type": "DynamicType",
+                        "typeArguments": null
                       },
-                      "variableParam": false,
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 23,
-                          "column": 33
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 23,
-                          "column": 46
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                      },
-                      "_meta": {}
+                      "variableParam": false
                     }
                   ],
                   "returnType": {
-                    "type": "TupleType",
+                    "_meta": {},
                     "id": null,
-                    "elements": [
-                      {
-                        "type": "DynamicType",
-                        "id": null,
-                        "typeArguments": null,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 23,
-                            "column": 49
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 23,
-                            "column": 60
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                        },
-                        "_meta": {}
-                      },
-                      {
-                        "type": "DynamicType",
-                        "id": null,
-                        "typeArguments": null,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 23,
-                            "column": 62
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 23,
-                            "column": 73
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
-                        },
-                        "_meta": {}
-                      }
-                    ],
-                    "typeArguments": null,
                     "loc": null,
-                    "_meta": {}
+                    "type": "VoidType",
+                    "typeArguments": null
                   },
+                  "type": "FunctionDefinition"
+                },
+                {
+                  "_meta": {},
                   "body": {
-                    "type": "ScopedStatement",
+                    "_meta": {},
                     "body": [
                       {
-                        "type": "ReturnStatement",
+                        "_meta": {},
                         "argument": {
-                          "type": "TupleExpression",
+                          "_meta": {},
                           "elements": [
                             {
-                              "type": "Identifier",
-                              "name": "s",
+                              "_meta": {},
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 24,
-                                  "column": 9
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 24,
-                                  "column": 10
+                                  "column": 10,
+                                  "line": 24
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
+                                "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                                "start": {
+                                  "column": 9,
+                                  "line": 24
+                                }
                               },
-                              "_meta": {}
+                              "name": "s",
+                              "type": "Identifier"
                             },
                             {
-                              "type": "Identifier",
-                              "name": "i",
+                              "_meta": {},
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 24,
-                                  "column": 12
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 24,
-                                  "column": 13
+                                  "column": 13,
+                                  "line": 24
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
+                                "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                                "start": {
+                                  "column": 12,
+                                  "line": 24
+                                }
                               },
-                              "_meta": {}
+                              "name": "i",
+                              "type": "Identifier"
                             }
                           ],
-                          "modifiable": false,
                           "loc": null,
-                          "_meta": {}
+                          "modifiable": false,
+                          "type": "TupleExpression"
                         },
                         "isYield": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 24,
-                            "column": 2
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 24,
-                            "column": 13
+                            "column": 13,
+                            "line": 24
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
+                          "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                          "start": {
+                            "column": 2,
+                            "line": 24
+                          }
                         },
-                        "_meta": {}
+                        "type": "ReturnStatement"
                       }
                     ],
                     "id": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 23,
-                        "column": 75
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 25,
-                        "column": 2
+                        "column": 2,
+                        "line": 25
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
+                      "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                      "start": {
+                        "column": 75,
+                        "line": 23
+                      }
                     },
-                    "_meta": {}
+                    "type": "ScopedStatement"
+                  },
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 17,
+                        "line": 23
+                      },
+                      "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                      "start": {
+                        "column": 6,
+                        "line": 23
+                      }
+                    },
+                    "name": "processData",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 25
+                    },
+                    "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                    "start": {
+                      "column": 1,
+                      "line": 23
+                    }
                   },
                   "modifiers": null,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 23,
-                      "column": 1
+                  "parameters": [
+                    {
+                      "_meta": {},
+                      "cloned": true,
+                      "id": {
+                        "_meta": {
+                          "ReceiveCls": "",
+                          "type": {
+                            "_meta": {
+                              "ReceiveCls": ""
+                            },
+                            "id": null,
+                            "loc": {
+                              "end": {
+                                "column": 31,
+                                "line": 23
+                              },
+                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/multiple_return_006_T.go",
+                              "start": {
+                                "column": 20,
+                                "line": 23
+                              }
+                            },
+                            "type": "DynamicType",
+                            "typeArguments": null
+                          }
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 19,
+                            "line": 23
+                          },
+                          "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                          "start": {
+                            "column": 18,
+                            "line": 23
+                          }
+                        },
+                        "name": "s",
+                        "type": "Identifier"
+                      },
+                      "init": null,
+                      "loc": {
+                        "end": {
+                          "column": 31,
+                          "line": 23
+                        },
+                        "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                        "start": {
+                          "column": 18,
+                          "line": 23
+                        }
+                      },
+                      "type": "VariableDeclaration",
+                      "varType": {
+                        "_meta": {},
+                        "id": null,
+                        "loc": {
+                          "end": {
+                            "column": 31,
+                            "line": 23
+                          },
+                          "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                          "start": {
+                            "column": 20,
+                            "line": 23
+                          }
+                        },
+                        "type": "DynamicType",
+                        "typeArguments": null
+                      },
+                      "variableParam": false
                     },
-                    "end": {
-                      "Offset": 0,
-                      "line": 25,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
+                    {
+                      "_meta": {},
+                      "cloned": true,
+                      "id": {
+                        "_meta": {
+                          "ReceiveCls": "",
+                          "type": {
+                            "_meta": {
+                              "ReceiveCls": ""
+                            },
+                            "id": null,
+                            "loc": {
+                              "end": {
+                                "column": 46,
+                                "line": 23
+                              },
+                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/multiple_return_006_T.go",
+                              "start": {
+                                "column": 35,
+                                "line": 23
+                              }
+                            },
+                            "type": "DynamicType",
+                            "typeArguments": null
+                          }
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 34,
+                            "line": 23
+                          },
+                          "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                          "start": {
+                            "column": 33,
+                            "line": 23
+                          }
+                        },
+                        "name": "i",
+                        "type": "Identifier"
+                      },
+                      "init": null,
+                      "loc": {
+                        "end": {
+                          "column": 46,
+                          "line": 23
+                        },
+                        "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                        "start": {
+                          "column": 33,
+                          "line": 23
+                        }
+                      },
+                      "type": "VariableDeclaration",
+                      "varType": {
+                        "_meta": {},
+                        "id": null,
+                        "loc": {
+                          "end": {
+                            "column": 46,
+                            "line": 23
+                          },
+                          "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                          "start": {
+                            "column": 35,
+                            "line": 23
+                          }
+                        },
+                        "type": "DynamicType",
+                        "typeArguments": null
+                      },
+                      "variableParam": false
+                    }
+                  ],
+                  "returnType": {
+                    "_meta": {},
+                    "elements": [
+                      {
+                        "_meta": {},
+                        "id": null,
+                        "loc": {
+                          "end": {
+                            "column": 60,
+                            "line": 23
+                          },
+                          "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                          "start": {
+                            "column": 49,
+                            "line": 23
+                          }
+                        },
+                        "type": "DynamicType",
+                        "typeArguments": null
+                      },
+                      {
+                        "_meta": {},
+                        "id": null,
+                        "loc": {
+                          "end": {
+                            "column": 73,
+                            "line": 23
+                          },
+                          "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                          "start": {
+                            "column": 62,
+                            "line": 23
+                          }
+                        },
+                        "type": "DynamicType",
+                        "typeArguments": null
+                      }
+                    ],
+                    "id": null,
+                    "loc": null,
+                    "type": "TupleType",
+                    "typeArguments": null
                   },
-                  "_meta": {}
+                  "type": "FunctionDefinition"
                 }
               ],
               "language": "golang",
               "languageVersion": "1.18",
-              "uri": "",
-              "version": "",
               "loc": {
-                "start": {
-                  "Offset": 0,
-                  "line": 12,
-                  "column": 1
-                },
                 "end": {
-                  "Offset": 0,
-                  "line": 25,
-                  "column": 2
+                  "column": 2,
+                  "line": 25
                 },
-                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_return_006_T.go"
+                "sourcefile": "$EXAMPLES/multiple_return_006_T.go",
+                "start": {
+                  "column": 1,
+                  "line": 12
+                }
               },
-              "_meta": {}
+              "type": "CompileUnit",
+              "uri": "",
+              "version": ""
             },
             "packageName": "__single__"
           }
@@ -1010,6 +922,5 @@
         "subs": {}
       }
     }
-  },
-  "moduleName": "__single_module__"
+  }
 }

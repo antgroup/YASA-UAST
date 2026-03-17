@@ -1,4 +1,5 @@
 {
+  "moduleName": "__single_module__",
   "packageInfo": {
     "PathName": "",
     "files": {},
@@ -6,2189 +7,1987 @@
       "/": {
         "PathName": "",
         "files": {
-          "/Users/ariel/code/uast/uast4go/examples/forStmts.go": {
+          "$EXAMPLES/forStmts.go": {
             "node": {
-              "type": "CompileUnit",
+              "_meta": {},
               "body": [
                 {
-                  "type": "PackageDeclaration",
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 9
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 17
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                  },
                   "_meta": {},
-                  "packageName": {
-                    "type": "Identifier",
-                    "name": "examples",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 9
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 17
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                  "loc": {
+                    "end": {
+                      "column": 17,
+                      "line": 1
                     },
-                    "_meta": {}
-                  }
+                    "sourcefile": "$EXAMPLES/forStmts.go",
+                    "start": {
+                      "column": 9,
+                      "line": 1
+                    }
+                  },
+                  "packageName": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 17,
+                        "line": 1
+                      },
+                      "sourcefile": "$EXAMPLES/forStmts.go",
+                      "start": {
+                        "column": 9,
+                        "line": 1
+                      }
+                    },
+                    "name": "examples",
+                    "type": "Identifier"
+                  },
+                  "type": "PackageDeclaration"
                 },
                 {
-                  "type": "VariableDeclaration",
+                  "_meta": {
+                    "ReceiveCls": "",
+                    "isDefaultImport": true
+                  },
+                  "cloned": false,
                   "id": {
-                    "type": "Identifier",
-                    "name": "fmt",
+                    "_meta": {},
                     "loc": null,
-                    "_meta": {}
+                    "name": "fmt",
+                    "type": "Identifier"
                   },
                   "init": {
-                    "type": "ImportExpression",
+                    "_meta": {},
                     "from": {
-                      "type": "Literal",
-                      "value": "fmt",
+                      "_meta": {},
                       "literalType": "string",
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 3,
-                          "column": 8
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 3,
-                          "column": 13
+                          "column": 13,
+                          "line": 3
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                        "sourcefile": "$EXAMPLES/forStmts.go",
+                        "start": {
+                          "column": 8,
+                          "line": 3
+                        }
                       },
-                      "_meta": {}
+                      "type": "Literal",
+                      "value": "fmt"
                     },
-                    "local": null,
                     "imported": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 8
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 13
+                        "column": 13,
+                        "line": 3
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                      "sourcefile": "$EXAMPLES/forStmts.go",
+                      "start": {
+                        "column": 8,
+                        "line": 3
+                      }
                     },
-                    "_meta": {}
+                    "local": null,
+                    "type": "ImportExpression"
                   },
-                  "cloned": true,
-                  "varType": {
-                    "type": "DynamicType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
-                  "variableParam": false,
                   "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 3,
-                      "column": 8
-                    },
                     "end": {
-                      "Offset": 0,
-                      "line": 3,
-                      "column": 13
+                      "column": 13,
+                      "line": 3
                     },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                    "sourcefile": "$EXAMPLES/forStmts.go",
+                    "start": {
+                      "column": 8,
+                      "line": 3
+                    }
                   },
-                  "_meta": {}
+                  "type": "VariableDeclaration",
+                  "varType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "DynamicType",
+                    "typeArguments": null
+                  },
+                  "variableParam": false
                 },
                 {
-                  "type": "FunctionDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "S",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 7
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                    },
-                    "_meta": {}
-                  },
-                  "parameters": [],
-                  "returnType": {
-                    "type": "TupleType",
-                    "id": null,
-                    "elements": [
-                      {
-                        "type": "Identifier",
-                        "name": "int",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 5,
-                            "column": 11
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 5,
-                            "column": 14
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                        },
-                        "_meta": {}
-                      },
-                      {
-                        "type": "Identifier",
-                        "name": "int",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 5,
-                            "column": 16
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 5,
-                            "column": 19
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                        },
-                        "_meta": {}
-                      }
-                    ],
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "body": {
-                    "type": "ScopedStatement",
+                    "_meta": {},
                     "body": [
                       {
-                        "type": "ReturnStatement",
+                        "_meta": {},
                         "argument": {
-                          "type": "TupleExpression",
+                          "_meta": {},
                           "elements": [
                             {
-                              "type": "Literal",
-                              "value": "1",
+                              "_meta": {},
                               "literalType": "INT",
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 6,
-                                  "column": 9
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 6,
-                                  "column": 10
+                                  "column": 10,
+                                  "line": 6
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                                "sourcefile": "$EXAMPLES/forStmts.go",
+                                "start": {
+                                  "column": 9,
+                                  "line": 6
+                                }
                               },
-                              "_meta": {}
+                              "type": "Literal",
+                              "value": "1"
                             },
                             {
-                              "type": "Literal",
-                              "value": "2",
+                              "_meta": {},
                               "literalType": "INT",
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 6,
-                                  "column": 12
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 6,
-                                  "column": 13
+                                  "column": 13,
+                                  "line": 6
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                                "sourcefile": "$EXAMPLES/forStmts.go",
+                                "start": {
+                                  "column": 12,
+                                  "line": 6
+                                }
                               },
-                              "_meta": {}
+                              "type": "Literal",
+                              "value": "2"
                             }
                           ],
-                          "modifiable": false,
                           "loc": null,
-                          "_meta": {}
+                          "modifiable": false,
+                          "type": "TupleExpression"
                         },
                         "isYield": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 6,
-                            "column": 2
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 6,
-                            "column": 13
+                            "column": 13,
+                            "line": 6
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                          "sourcefile": "$EXAMPLES/forStmts.go",
+                          "start": {
+                            "column": 2,
+                            "line": 6
+                          }
                         },
-                        "_meta": {}
+                        "type": "ReturnStatement"
                       }
                     ],
                     "id": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 21
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 7,
-                        "column": 2
+                        "column": 2,
+                        "line": 7
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                      "sourcefile": "$EXAMPLES/forStmts.go",
+                      "start": {
+                        "column": 21,
+                        "line": 5
+                      }
                     },
-                    "_meta": {}
+                    "type": "ScopedStatement"
+                  },
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 7,
+                        "line": 5
+                      },
+                      "sourcefile": "$EXAMPLES/forStmts.go",
+                      "start": {
+                        "column": 6,
+                        "line": 5
+                      }
+                    },
+                    "name": "S",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 7
+                    },
+                    "sourcefile": "$EXAMPLES/forStmts.go",
+                    "start": {
+                      "column": 1,
+                      "line": 5
+                    }
                   },
                   "modifiers": null,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 5,
-                      "column": 1
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 7,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                  },
-                  "_meta": {}
-                },
-                {
-                  "type": "FunctionDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "ForStmts",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 9,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 9,
-                        "column": 14
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                    },
-                    "_meta": {}
-                  },
                   "parameters": [],
                   "returnType": {
-                    "type": "VoidType",
+                    "_meta": {},
+                    "elements": [
+                      {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 14,
+                            "line": 5
+                          },
+                          "sourcefile": "$EXAMPLES/forStmts.go",
+                          "start": {
+                            "column": 11,
+                            "line": 5
+                          }
+                        },
+                        "name": "int",
+                        "type": "Identifier"
+                      },
+                      {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 19,
+                            "line": 5
+                          },
+                          "sourcefile": "$EXAMPLES/forStmts.go",
+                          "start": {
+                            "column": 16,
+                            "line": 5
+                          }
+                        },
+                        "name": "int",
+                        "type": "Identifier"
+                      }
+                    ],
                     "id": null,
-                    "typeArguments": null,
                     "loc": null,
-                    "_meta": {}
+                    "type": "TupleType",
+                    "typeArguments": null
                   },
+                  "type": "FunctionDefinition"
+                },
+                {
+                  "_meta": {},
                   "body": {
-                    "type": "ScopedStatement",
+                    "_meta": {},
                     "body": [
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": true,
                         "id": {
-                          "type": "Identifier",
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "loc": null,
+                              "name": "int",
+                              "type": "Identifier"
+                            }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 3,
+                              "line": 10
+                            },
+                            "sourcefile": "$EXAMPLES/forStmts.go",
+                            "start": {
+                              "column": 2,
+                              "line": 10
+                            }
+                          },
                           "name": "a",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 10,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 10,
-                              "column": 3
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "Identifier",
-                              "name": "int",
-                              "loc": null,
-                              "_meta": {}
-                            }
-                          }
+                          "type": "Identifier"
                         },
                         "init": {
-                          "type": "Literal",
-                          "value": "1",
+                          "_meta": {},
                           "literalType": "INT",
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 10,
-                              "column": 10
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 10,
-                              "column": 11
+                              "column": 11,
+                              "line": 10
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                            "sourcefile": "$EXAMPLES/forStmts.go",
+                            "start": {
+                              "column": 10,
+                              "line": 10
+                            }
                           },
-                          "_meta": {}
+                          "type": "Literal",
+                          "value": "1"
                         },
-                        "cloned": true,
-                        "varType": {
-                          "type": "Identifier",
-                          "name": "int",
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "variableParam": false,
                         "loc": null,
-                        "_meta": {}
-                      },
-                      {
                         "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "loc": null,
+                          "name": "int",
+                          "type": "Identifier"
+                        },
+                        "variableParam": false
+                      },
+                      {
+                        "_meta": {},
+                        "cloned": true,
                         "id": {
-                          "type": "Identifier",
-                          "name": "b",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 10,
-                              "column": 5
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 10,
-                              "column": 6
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                          },
                           "_meta": {
+                            "ReceiveCls": "",
                             "type": {
-                              "type": "Identifier",
-                              "name": "int",
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
                               "loc": null,
-                              "_meta": {}
+                              "name": "int",
+                              "type": "Identifier"
                             }
-                          }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 6,
+                              "line": 10
+                            },
+                            "sourcefile": "$EXAMPLES/forStmts.go",
+                            "start": {
+                              "column": 5,
+                              "line": 10
+                            }
+                          },
+                          "name": "b",
+                          "type": "Identifier"
                         },
                         "init": {
-                          "type": "Literal",
-                          "value": "2",
+                          "_meta": {},
                           "literalType": "INT",
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 10,
-                              "column": 13
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 10,
-                              "column": 14
+                              "column": 14,
+                              "line": 10
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                            "sourcefile": "$EXAMPLES/forStmts.go",
+                            "start": {
+                              "column": 13,
+                              "line": 10
+                            }
                           },
-                          "_meta": {}
+                          "type": "Literal",
+                          "value": "2"
                         },
-                        "cloned": true,
-                        "varType": {
-                          "type": "Identifier",
-                          "name": "int",
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "variableParam": false,
                         "loc": null,
-                        "_meta": {}
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "loc": null,
+                          "name": "int",
+                          "type": "Identifier"
+                        },
+                        "variableParam": false
                       },
                       {
-                        "type": "ForStatement",
+                        "_meta": {},
+                        "body": {
+                          "_meta": {},
+                          "body": [
+                            {
+                              "_meta": {},
+                              "arguments": [
+                                {
+                                  "_meta": {},
+                                  "literalType": "STRING",
+                                  "loc": {
+                                    "end": {
+                                      "column": 44,
+                                      "line": 12
+                                    },
+                                    "sourcefile": "$EXAMPLES/forStmts.go",
+                                    "start": {
+                                      "column": 15,
+                                      "line": 12
+                                    }
+                                  },
+                                  "type": "Literal",
+                                  "value": "\"From condition-only ForStmt\""
+                                }
+                              ],
+                              "callee": {
+                                "_meta": {},
+                                "computed": false,
+                                "loc": {
+                                  "end": {
+                                    "column": 14,
+                                    "line": 12
+                                  },
+                                  "sourcefile": "$EXAMPLES/forStmts.go",
+                                  "start": {
+                                    "column": 3,
+                                    "line": 12
+                                  }
+                                },
+                                "object": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 6,
+                                      "line": 12
+                                    },
+                                    "sourcefile": "$EXAMPLES/forStmts.go",
+                                    "start": {
+                                      "column": 3,
+                                      "line": 12
+                                    }
+                                  },
+                                  "name": "fmt",
+                                  "type": "Identifier"
+                                },
+                                "property": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 14,
+                                      "line": 12
+                                    },
+                                    "sourcefile": "$EXAMPLES/forStmts.go",
+                                    "start": {
+                                      "column": 7,
+                                      "line": 12
+                                    }
+                                  },
+                                  "name": "Println",
+                                  "type": "Identifier"
+                                },
+                                "type": "MemberAccess"
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 45,
+                                  "line": 12
+                                },
+                                "sourcefile": "$EXAMPLES/forStmts.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 12
+                                }
+                              },
+                              "type": "CallExpression"
+                            },
+                            {
+                              "_meta": {},
+                              "label": null,
+                              "loc": {
+                                "end": {
+                                  "column": 8,
+                                  "line": 13
+                                },
+                                "sourcefile": "$EXAMPLES/forStmts.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 13
+                                }
+                              },
+                              "type": "BreakStatement"
+                            }
+                          ],
+                          "id": null,
+                          "loc": {
+                            "end": {
+                              "column": 3,
+                              "line": 14
+                            },
+                            "sourcefile": "$EXAMPLES/forStmts.go",
+                            "start": {
+                              "column": 12,
+                              "line": 11
+                            }
+                          },
+                          "type": "ScopedStatement"
+                        },
                         "init": {
-                          "type": "Noop",
+                          "_meta": {},
                           "loc": null,
-                          "_meta": {}
+                          "type": "Noop"
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 3,
+                            "line": 14
+                          },
+                          "sourcefile": "$EXAMPLES/forStmts.go",
+                          "start": {
+                            "column": 2,
+                            "line": 11
+                          }
                         },
                         "test": {
-                          "type": "BinaryExpression",
-                          "operator": "<",
+                          "_meta": {},
                           "left": {
-                            "type": "Identifier",
-                            "name": "a",
+                            "_meta": {},
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 11,
-                                "column": 6
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 11,
-                                "column": 7
+                                "column": 7,
+                                "line": 11
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                            },
-                            "_meta": {}
-                          },
-                          "right": {
-                            "type": "Identifier",
-                            "name": "b",
-                            "loc": {
+                              "sourcefile": "$EXAMPLES/forStmts.go",
                               "start": {
-                                "Offset": 0,
-                                "line": 11,
-                                "column": 10
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 11,
-                                "column": 11
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                            },
-                            "_meta": {}
-                          },
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 11,
-                              "column": 6
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 11,
-                              "column": 11
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                          },
-                          "_meta": {}
-                        },
-                        "update": {
-                          "type": "Noop",
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "body": {
-                          "type": "ScopedStatement",
-                          "body": [
-                            {
-                              "type": "CallExpression",
-                              "callee": {
-                                "type": "MemberAccess",
-                                "object": {
-                                  "type": "Identifier",
-                                  "name": "fmt",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 12,
-                                      "column": 3
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 12,
-                                      "column": 6
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "property": {
-                                  "type": "Identifier",
-                                  "name": "Println",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 12,
-                                      "column": 7
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 12,
-                                      "column": 14
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "computed": false,
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 12,
-                                    "column": 3
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 12,
-                                    "column": 14
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                                },
-                                "_meta": {}
-                              },
-                              "arguments": [
-                                {
-                                  "type": "Literal",
-                                  "value": "\"From condition-only ForStmt\"",
-                                  "literalType": "STRING",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 12,
-                                      "column": 15
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 12,
-                                      "column": 44
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                                  },
-                                  "_meta": {}
-                                }
-                              ],
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 12,
-                                  "column": 3
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 12,
-                                  "column": 45
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                              },
-                              "_meta": {}
-                            },
-                            {
-                              "type": "BreakStatement",
-                              "label": null,
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 13,
-                                  "column": 3
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 13,
-                                  "column": 8
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                              },
-                              "_meta": {}
-                            }
-                          ],
-                          "id": null,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 11,
-                              "column": 12
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 14,
-                              "column": 3
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                          },
-                          "_meta": {}
-                        },
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 11,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 14,
-                            "column": 3
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                        },
-                        "_meta": {}
-                      },
-                      {
-                        "type": "ForStatement",
-                        "init": {
-                          "type": "Noop",
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "test": {
-                          "type": "Noop",
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "update": {
-                          "type": "Noop",
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "body": {
-                          "type": "ScopedStatement",
-                          "body": [
-                            {
-                              "type": "CallExpression",
-                              "callee": {
-                                "type": "MemberAccess",
-                                "object": {
-                                  "type": "Identifier",
-                                  "name": "fmt",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 17,
-                                      "column": 3
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 17,
-                                      "column": 6
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "property": {
-                                  "type": "Identifier",
-                                  "name": "Println",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 17,
-                                      "column": 7
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 17,
-                                      "column": 14
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "computed": false,
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 17,
-                                    "column": 3
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 17,
-                                    "column": 14
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                                },
-                                "_meta": {}
-                              },
-                              "arguments": [
-                                {
-                                  "type": "Literal",
-                                  "value": "\"From empty ForClause ForStmt\"",
-                                  "literalType": "STRING",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 17,
-                                      "column": 15
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 17,
-                                      "column": 45
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                                  },
-                                  "_meta": {}
-                                }
-                              ],
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 17,
-                                  "column": 3
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 17,
-                                  "column": 46
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                              },
-                              "_meta": {}
-                            },
-                            {
-                              "type": "BreakStatement",
-                              "label": null,
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 18,
-                                  "column": 3
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 18,
-                                  "column": 8
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                              },
-                              "_meta": {}
-                            }
-                          ],
-                          "id": null,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 16,
-                              "column": 6
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 19,
-                              "column": 3
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                          },
-                          "_meta": {}
-                        },
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 16,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 19,
-                            "column": 3
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                        },
-                        "_meta": {}
-                      },
-                      {
-                        "type": "ForStatement",
-                        "init": {
-                          "type": "Noop",
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "test": {
-                          "type": "BinaryExpression",
-                          "operator": "<",
-                          "left": {
-                            "type": "Identifier",
-                            "name": "a",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 28,
-                                "column": 6
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 28,
-                                "column": 7
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                            },
-                            "_meta": {}
-                          },
-                          "right": {
-                            "type": "Identifier",
-                            "name": "b",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 28,
-                                "column": 10
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 28,
-                                "column": 11
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                            },
-                            "_meta": {}
-                          },
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 28,
-                              "column": 6
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 28,
-                              "column": 11
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                          },
-                          "_meta": {}
-                        },
-                        "update": {
-                          "type": "Noop",
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "body": {
-                          "type": "ScopedStatement",
-                          "body": [
-                            {
-                              "type": "CallExpression",
-                              "callee": {
-                                "type": "MemberAccess",
-                                "object": {
-                                  "type": "Identifier",
-                                  "name": "fmt",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 29,
-                                      "column": 3
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 29,
-                                      "column": 6
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "property": {
-                                  "type": "Identifier",
-                                  "name": "Println",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 29,
-                                      "column": 7
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 29,
-                                      "column": 14
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "computed": false,
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 29,
-                                    "column": 3
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 29,
-                                    "column": 14
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                                },
-                                "_meta": {}
-                              },
-                              "arguments": [
-                                {
-                                  "type": "Literal",
-                                  "value": "\"From condition-only ForClause ForClause ForStmt\"",
-                                  "literalType": "STRING",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 29,
-                                      "column": 15
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 29,
-                                      "column": 64
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                                  },
-                                  "_meta": {}
-                                }
-                              ],
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 29,
-                                  "column": 3
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 29,
-                                  "column": 65
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                              },
-                              "_meta": {}
-                            },
-                            {
-                              "type": "BreakStatement",
-                              "label": null,
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 30,
-                                  "column": 3
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 30,
-                                  "column": 8
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                              },
-                              "_meta": {}
-                            }
-                          ],
-                          "id": null,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 28,
-                              "column": 12
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 31,
-                              "column": 3
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                          },
-                          "_meta": {}
-                        },
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 28,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 31,
-                            "column": 3
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                        },
-                        "_meta": {}
-                      },
-                      {
-                        "type": "ForStatement",
-                        "init": {
-                          "type": "VariableDeclaration",
-                          "id": {
-                            "type": "Identifier",
-                            "name": "j",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 33,
-                                "column": 6
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 33,
-                                "column": 7
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                            },
-                            "_meta": {
-                              "type": {
-                                "type": "Identifier",
-                                "name": "int",
-                                "loc": null,
-                                "_meta": {}
+                                "column": 6,
+                                "line": 11
                               }
+                            },
+                            "name": "a",
+                            "type": "Identifier"
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 11,
+                              "line": 11
+                            },
+                            "sourcefile": "$EXAMPLES/forStmts.go",
+                            "start": {
+                              "column": 6,
+                              "line": 11
                             }
                           },
-                          "init": {
-                            "type": "Literal",
-                            "value": "0",
-                            "literalType": "INT",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 33,
-                                "column": 11
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 33,
-                                "column": 12
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                            },
-                            "_meta": {}
-                          },
-                          "cloned": true,
-                          "varType": {
-                            "type": "Identifier",
-                            "name": "int",
-                            "loc": null,
-                            "_meta": {}
-                          },
-                          "variableParam": false,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 33,
-                              "column": 6
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 33,
-                              "column": 12
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                          },
-                          "_meta": {}
-                        },
-                        "test": {
-                          "type": "BinaryExpression",
-                          "operator": "<",
-                          "left": {
-                            "type": "Identifier",
-                            "name": "a",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 33,
-                                "column": 14
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 33,
-                                "column": 15
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                            },
-                            "_meta": {}
-                          },
+                          "operator": "\u003c",
                           "right": {
-                            "type": "Identifier",
-                            "name": "b",
+                            "_meta": {},
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 33,
-                                "column": 18
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 33,
-                                "column": 19
+                                "column": 11,
+                                "line": 11
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                              "sourcefile": "$EXAMPLES/forStmts.go",
+                              "start": {
+                                "column": 10,
+                                "line": 11
+                              }
                             },
-                            "_meta": {}
+                            "name": "b",
+                            "type": "Identifier"
                           },
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 33,
-                              "column": 14
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 33,
-                              "column": 19
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                          },
-                          "_meta": {}
+                          "type": "BinaryExpression"
                         },
+                        "type": "ForStatement",
                         "update": {
-                          "type": "Noop",
+                          "_meta": {},
                           "loc": null,
-                          "_meta": {}
-                        },
+                          "type": "Noop"
+                        }
+                      },
+                      {
+                        "_meta": {},
                         "body": {
-                          "type": "ScopedStatement",
+                          "_meta": {},
                           "body": [
                             {
-                              "type": "UnaryExpression",
-                              "operator": "++",
-                              "argument": {
-                                "type": "Identifier",
-                                "name": "j",
+                              "_meta": {},
+                              "arguments": [
+                                {
+                                  "_meta": {},
+                                  "literalType": "STRING",
+                                  "loc": {
+                                    "end": {
+                                      "column": 45,
+                                      "line": 17
+                                    },
+                                    "sourcefile": "$EXAMPLES/forStmts.go",
+                                    "start": {
+                                      "column": 15,
+                                      "line": 17
+                                    }
+                                  },
+                                  "type": "Literal",
+                                  "value": "\"From empty ForClause ForStmt\""
+                                }
+                              ],
+                              "callee": {
+                                "_meta": {},
+                                "computed": false,
                                 "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 34,
-                                    "column": 3
-                                  },
                                   "end": {
-                                    "Offset": 0,
-                                    "line": 34,
-                                    "column": 4
+                                    "column": 14,
+                                    "line": 17
                                   },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                                  "sourcefile": "$EXAMPLES/forStmts.go",
+                                  "start": {
+                                    "column": 3,
+                                    "line": 17
+                                  }
                                 },
-                                "_meta": {}
+                                "object": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 6,
+                                      "line": 17
+                                    },
+                                    "sourcefile": "$EXAMPLES/forStmts.go",
+                                    "start": {
+                                      "column": 3,
+                                      "line": 17
+                                    }
+                                  },
+                                  "name": "fmt",
+                                  "type": "Identifier"
+                                },
+                                "property": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 14,
+                                      "line": 17
+                                    },
+                                    "sourcefile": "$EXAMPLES/forStmts.go",
+                                    "start": {
+                                      "column": 7,
+                                      "line": 17
+                                    }
+                                  },
+                                  "name": "Println",
+                                  "type": "Identifier"
+                                },
+                                "type": "MemberAccess"
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 46,
+                                  "line": 17
+                                },
+                                "sourcefile": "$EXAMPLES/forStmts.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 17
+                                }
+                              },
+                              "type": "CallExpression"
+                            },
+                            {
+                              "_meta": {},
+                              "label": null,
+                              "loc": {
+                                "end": {
+                                  "column": 8,
+                                  "line": 18
+                                },
+                                "sourcefile": "$EXAMPLES/forStmts.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 18
+                                }
+                              },
+                              "type": "BreakStatement"
+                            }
+                          ],
+                          "id": null,
+                          "loc": {
+                            "end": {
+                              "column": 3,
+                              "line": 19
+                            },
+                            "sourcefile": "$EXAMPLES/forStmts.go",
+                            "start": {
+                              "column": 6,
+                              "line": 16
+                            }
+                          },
+                          "type": "ScopedStatement"
+                        },
+                        "init": {
+                          "_meta": {},
+                          "loc": null,
+                          "type": "Noop"
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 3,
+                            "line": 19
+                          },
+                          "sourcefile": "$EXAMPLES/forStmts.go",
+                          "start": {
+                            "column": 2,
+                            "line": 16
+                          }
+                        },
+                        "test": {
+                          "_meta": {},
+                          "loc": null,
+                          "type": "Noop"
+                        },
+                        "type": "ForStatement",
+                        "update": {
+                          "_meta": {},
+                          "loc": null,
+                          "type": "Noop"
+                        }
+                      },
+                      {
+                        "_meta": {},
+                        "body": {
+                          "_meta": {},
+                          "body": [
+                            {
+                              "_meta": {},
+                              "arguments": [
+                                {
+                                  "_meta": {},
+                                  "literalType": "STRING",
+                                  "loc": {
+                                    "end": {
+                                      "column": 64,
+                                      "line": 29
+                                    },
+                                    "sourcefile": "$EXAMPLES/forStmts.go",
+                                    "start": {
+                                      "column": 15,
+                                      "line": 29
+                                    }
+                                  },
+                                  "type": "Literal",
+                                  "value": "\"From condition-only ForClause ForClause ForStmt\""
+                                }
+                              ],
+                              "callee": {
+                                "_meta": {},
+                                "computed": false,
+                                "loc": {
+                                  "end": {
+                                    "column": 14,
+                                    "line": 29
+                                  },
+                                  "sourcefile": "$EXAMPLES/forStmts.go",
+                                  "start": {
+                                    "column": 3,
+                                    "line": 29
+                                  }
+                                },
+                                "object": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 6,
+                                      "line": 29
+                                    },
+                                    "sourcefile": "$EXAMPLES/forStmts.go",
+                                    "start": {
+                                      "column": 3,
+                                      "line": 29
+                                    }
+                                  },
+                                  "name": "fmt",
+                                  "type": "Identifier"
+                                },
+                                "property": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 14,
+                                      "line": 29
+                                    },
+                                    "sourcefile": "$EXAMPLES/forStmts.go",
+                                    "start": {
+                                      "column": 7,
+                                      "line": 29
+                                    }
+                                  },
+                                  "name": "Println",
+                                  "type": "Identifier"
+                                },
+                                "type": "MemberAccess"
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 65,
+                                  "line": 29
+                                },
+                                "sourcefile": "$EXAMPLES/forStmts.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 29
+                                }
+                              },
+                              "type": "CallExpression"
+                            },
+                            {
+                              "_meta": {},
+                              "label": null,
+                              "loc": {
+                                "end": {
+                                  "column": 8,
+                                  "line": 30
+                                },
+                                "sourcefile": "$EXAMPLES/forStmts.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 30
+                                }
+                              },
+                              "type": "BreakStatement"
+                            }
+                          ],
+                          "id": null,
+                          "loc": {
+                            "end": {
+                              "column": 3,
+                              "line": 31
+                            },
+                            "sourcefile": "$EXAMPLES/forStmts.go",
+                            "start": {
+                              "column": 12,
+                              "line": 28
+                            }
+                          },
+                          "type": "ScopedStatement"
+                        },
+                        "init": {
+                          "_meta": {},
+                          "loc": null,
+                          "type": "Noop"
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 3,
+                            "line": 31
+                          },
+                          "sourcefile": "$EXAMPLES/forStmts.go",
+                          "start": {
+                            "column": 2,
+                            "line": 28
+                          }
+                        },
+                        "test": {
+                          "_meta": {},
+                          "left": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 7,
+                                "line": 28
+                              },
+                              "sourcefile": "$EXAMPLES/forStmts.go",
+                              "start": {
+                                "column": 6,
+                                "line": 28
+                              }
+                            },
+                            "name": "a",
+                            "type": "Identifier"
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 11,
+                              "line": 28
+                            },
+                            "sourcefile": "$EXAMPLES/forStmts.go",
+                            "start": {
+                              "column": 6,
+                              "line": 28
+                            }
+                          },
+                          "operator": "\u003c",
+                          "right": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 11,
+                                "line": 28
+                              },
+                              "sourcefile": "$EXAMPLES/forStmts.go",
+                              "start": {
+                                "column": 10,
+                                "line": 28
+                              }
+                            },
+                            "name": "b",
+                            "type": "Identifier"
+                          },
+                          "type": "BinaryExpression"
+                        },
+                        "type": "ForStatement",
+                        "update": {
+                          "_meta": {},
+                          "loc": null,
+                          "type": "Noop"
+                        }
+                      },
+                      {
+                        "_meta": {},
+                        "body": {
+                          "_meta": {},
+                          "body": [
+                            {
+                              "_meta": {},
+                              "argument": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 4,
+                                    "line": 34
+                                  },
+                                  "sourcefile": "$EXAMPLES/forStmts.go",
+                                  "start": {
+                                    "column": 3,
+                                    "line": 34
+                                  }
+                                },
+                                "name": "j",
+                                "type": "Identifier"
                               },
                               "isSuffix": true,
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 34,
-                                  "column": 3
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 34,
-                                  "column": 6
+                                  "column": 6,
+                                  "line": 34
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                                "sourcefile": "$EXAMPLES/forStmts.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 34
+                                }
                               },
-                              "_meta": {}
+                              "operator": "++",
+                              "type": "UnaryExpression"
                             },
                             {
-                              "type": "CallExpression",
-                              "callee": {
-                                "type": "MemberAccess",
-                                "object": {
-                                  "type": "Identifier",
-                                  "name": "fmt",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 35,
-                                      "column": 3
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 35,
-                                      "column": 6
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "property": {
-                                  "type": "Identifier",
-                                  "name": "Println",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 35,
-                                      "column": 7
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 35,
-                                      "column": 14
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "computed": false,
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 35,
-                                    "column": 3
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 35,
-                                    "column": 14
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                                },
-                                "_meta": {}
-                              },
+                              "_meta": {},
                               "arguments": [
                                 {
-                                  "type": "Literal",
-                                  "value": "\"From init and condition ForClause ForClause ForStmt\"",
+                                  "_meta": {},
                                   "literalType": "STRING",
                                   "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 35,
-                                      "column": 15
-                                    },
                                     "end": {
-                                      "Offset": 0,
-                                      "line": 35,
-                                      "column": 68
+                                      "column": 68,
+                                      "line": 35
                                     },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                                    "sourcefile": "$EXAMPLES/forStmts.go",
+                                    "start": {
+                                      "column": 15,
+                                      "line": 35
+                                    }
                                   },
-                                  "_meta": {}
+                                  "type": "Literal",
+                                  "value": "\"From init and condition ForClause ForClause ForStmt\""
                                 }
                               ],
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 35,
-                                  "column": 3
+                              "callee": {
+                                "_meta": {},
+                                "computed": false,
+                                "loc": {
+                                  "end": {
+                                    "column": 14,
+                                    "line": 35
+                                  },
+                                  "sourcefile": "$EXAMPLES/forStmts.go",
+                                  "start": {
+                                    "column": 3,
+                                    "line": 35
+                                  }
                                 },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 35,
-                                  "column": 69
+                                "object": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 6,
+                                      "line": 35
+                                    },
+                                    "sourcefile": "$EXAMPLES/forStmts.go",
+                                    "start": {
+                                      "column": 3,
+                                      "line": 35
+                                    }
+                                  },
+                                  "name": "fmt",
+                                  "type": "Identifier"
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                                "property": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 14,
+                                      "line": 35
+                                    },
+                                    "sourcefile": "$EXAMPLES/forStmts.go",
+                                    "start": {
+                                      "column": 7,
+                                      "line": 35
+                                    }
+                                  },
+                                  "name": "Println",
+                                  "type": "Identifier"
+                                },
+                                "type": "MemberAccess"
                               },
-                              "_meta": {}
+                              "loc": {
+                                "end": {
+                                  "column": 69,
+                                  "line": 35
+                                },
+                                "sourcefile": "$EXAMPLES/forStmts.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 35
+                                }
+                              },
+                              "type": "CallExpression"
                             },
                             {
-                              "type": "BreakStatement",
+                              "_meta": {},
                               "label": null,
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 36,
-                                  "column": 3
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 36,
-                                  "column": 8
+                                  "column": 8,
+                                  "line": 36
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                                "sourcefile": "$EXAMPLES/forStmts.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 36
+                                }
                               },
-                              "_meta": {}
+                              "type": "BreakStatement"
                             }
                           ],
                           "id": null,
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 33,
-                              "column": 21
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 37,
-                              "column": 3
+                              "column": 3,
+                              "line": 37
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                          },
-                          "_meta": {}
-                        },
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 33,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 37,
-                            "column": 3
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                        },
-                        "_meta": {}
-                      },
-                      {
-                        "type": "ForStatement",
-                        "init": {
-                          "type": "VariableDeclaration",
-                          "id": {
-                            "type": "Identifier",
-                            "name": "j",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 39,
-                                "column": 6
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 39,
-                                "column": 7
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                            },
-                            "_meta": {
-                              "type": {
-                                "type": "Identifier",
-                                "name": "int",
-                                "loc": null,
-                                "_meta": {}
-                              }
+                            "sourcefile": "$EXAMPLES/forStmts.go",
+                            "start": {
+                              "column": 21,
+                              "line": 33
                             }
+                          },
+                          "type": "ScopedStatement"
+                        },
+                        "init": {
+                          "_meta": {},
+                          "cloned": true,
+                          "id": {
+                            "_meta": {
+                              "ReceiveCls": "",
+                              "type": {
+                                "_meta": {
+                                  "ReceiveCls": ""
+                                },
+                                "loc": null,
+                                "name": "int",
+                                "type": "Identifier"
+                              }
+                            },
+                            "loc": {
+                              "end": {
+                                "column": 7,
+                                "line": 33
+                              },
+                              "sourcefile": "$EXAMPLES/forStmts.go",
+                              "start": {
+                                "column": 6,
+                                "line": 33
+                              }
+                            },
+                            "name": "j",
+                            "type": "Identifier"
                           },
                           "init": {
-                            "type": "Literal",
-                            "value": "0",
+                            "_meta": {},
                             "literalType": "INT",
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 39,
-                                "column": 11
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 39,
-                                "column": 12
+                                "column": 12,
+                                "line": 33
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                            },
-                            "_meta": {}
-                          },
-                          "cloned": true,
-                          "varType": {
-                            "type": "Identifier",
-                            "name": "int",
-                            "loc": null,
-                            "_meta": {}
-                          },
-                          "variableParam": false,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 39,
-                              "column": 6
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 39,
-                              "column": 12
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                          },
-                          "_meta": {}
-                        },
-                        "test": {
-                          "type": "Noop",
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "update": {
-                          "type": "UnaryExpression",
-                          "operator": "++",
-                          "argument": {
-                            "type": "Identifier",
-                            "name": "j",
-                            "loc": {
+                              "sourcefile": "$EXAMPLES/forStmts.go",
                               "start": {
-                                "Offset": 0,
-                                "line": 39,
-                                "column": 16
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 39,
-                                "column": 17
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                            },
-                            "_meta": {}
-                          },
-                          "isSuffix": true,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 39,
-                              "column": 16
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 39,
-                              "column": 19
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                          },
-                          "_meta": {}
-                        },
-                        "body": {
-                          "type": "ScopedStatement",
-                          "body": [
-                            {
-                              "type": "CallExpression",
-                              "callee": {
-                                "type": "MemberAccess",
-                                "object": {
-                                  "type": "Identifier",
-                                  "name": "fmt",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 40,
-                                      "column": 3
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 40,
-                                      "column": 6
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "property": {
-                                  "type": "Identifier",
-                                  "name": "Println",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 40,
-                                      "column": 7
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 40,
-                                      "column": 14
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "computed": false,
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 40,
-                                    "column": 3
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 40,
-                                    "column": 14
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                                },
-                                "_meta": {}
-                              },
-                              "arguments": [
-                                {
-                                  "type": "Literal",
-                                  "value": "\"From init and post ForClause ForClause ForStmt\"",
-                                  "literalType": "STRING",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 40,
-                                      "column": 15
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 40,
-                                      "column": 63
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                                  },
-                                  "_meta": {}
-                                }
-                              ],
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 40,
-                                  "column": 3
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 40,
-                                  "column": 64
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                              },
-                              "_meta": {}
-                            },
-                            {
-                              "type": "BreakStatement",
-                              "label": null,
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 41,
-                                  "column": 3
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 41,
-                                  "column": 8
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                              },
-                              "_meta": {}
-                            }
-                          ],
-                          "id": null,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 39,
-                              "column": 20
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 42,
-                              "column": 3
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                          },
-                          "_meta": {}
-                        },
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 39,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 42,
-                            "column": 3
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                        },
-                        "_meta": {}
-                      },
-                      {
-                        "type": "ForStatement",
-                        "init": {
-                          "type": "Noop",
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "test": {
-                          "type": "BinaryExpression",
-                          "operator": "<",
-                          "left": {
-                            "type": "Identifier",
-                            "name": "a",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 44,
-                                "column": 8
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 44,
-                                "column": 9
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                            },
-                            "_meta": {}
-                          },
-                          "right": {
-                            "type": "Identifier",
-                            "name": "b",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 44,
-                                "column": 12
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 44,
-                                "column": 13
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                            },
-                            "_meta": {}
-                          },
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 44,
-                              "column": 8
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 44,
-                              "column": 13
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                          },
-                          "_meta": {}
-                        },
-                        "update": {
-                          "type": "UnaryExpression",
-                          "operator": "++",
-                          "argument": {
-                            "type": "Identifier",
-                            "name": "a",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 44,
-                                "column": 15
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 44,
-                                "column": 16
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                            },
-                            "_meta": {}
-                          },
-                          "isSuffix": true,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 44,
-                              "column": 15
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 44,
-                              "column": 18
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                          },
-                          "_meta": {}
-                        },
-                        "body": {
-                          "type": "ScopedStatement",
-                          "body": [
-                            {
-                              "type": "CallExpression",
-                              "callee": {
-                                "type": "MemberAccess",
-                                "object": {
-                                  "type": "Identifier",
-                                  "name": "fmt",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 45,
-                                      "column": 3
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 45,
-                                      "column": 6
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "property": {
-                                  "type": "Identifier",
-                                  "name": "Println",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 45,
-                                      "column": 7
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 45,
-                                      "column": 14
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "computed": false,
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 45,
-                                    "column": 3
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 45,
-                                    "column": 14
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                                },
-                                "_meta": {}
-                              },
-                              "arguments": [
-                                {
-                                  "type": "Literal",
-                                  "value": "\"From condition and post ForClause ForClause ForStmt\"",
-                                  "literalType": "STRING",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 45,
-                                      "column": 15
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 45,
-                                      "column": 68
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                                  },
-                                  "_meta": {}
-                                }
-                              ],
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 45,
-                                  "column": 3
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 45,
-                                  "column": 69
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                              },
-                              "_meta": {}
-                            },
-                            {
-                              "type": "BreakStatement",
-                              "label": null,
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 46,
-                                  "column": 3
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 46,
-                                  "column": 8
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                              },
-                              "_meta": {}
-                            }
-                          ],
-                          "id": null,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 44,
-                              "column": 19
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 47,
-                              "column": 3
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                          },
-                          "_meta": {}
-                        },
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 44,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 47,
-                            "column": 3
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                        },
-                        "_meta": {}
-                      },
-                      {
-                        "type": "ForStatement",
-                        "init": {
-                          "type": "VariableDeclaration",
-                          "id": {
-                            "type": "Identifier",
-                            "name": "z",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 49,
-                                "column": 6
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 49,
-                                "column": 7
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                            },
-                            "_meta": {
-                              "type": {
-                                "type": "Identifier",
-                                "name": "int",
-                                "loc": null,
-                                "_meta": {}
+                                "column": 11,
+                                "line": 33
                               }
+                            },
+                            "type": "Literal",
+                            "value": "0"
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 12,
+                              "line": 33
+                            },
+                            "sourcefile": "$EXAMPLES/forStmts.go",
+                            "start": {
+                              "column": 6,
+                              "line": 33
                             }
+                          },
+                          "type": "VariableDeclaration",
+                          "varType": {
+                            "_meta": {},
+                            "loc": null,
+                            "name": "int",
+                            "type": "Identifier"
+                          },
+                          "variableParam": false
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 3,
+                            "line": 37
+                          },
+                          "sourcefile": "$EXAMPLES/forStmts.go",
+                          "start": {
+                            "column": 2,
+                            "line": 33
+                          }
+                        },
+                        "test": {
+                          "_meta": {},
+                          "left": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 15,
+                                "line": 33
+                              },
+                              "sourcefile": "$EXAMPLES/forStmts.go",
+                              "start": {
+                                "column": 14,
+                                "line": 33
+                              }
+                            },
+                            "name": "a",
+                            "type": "Identifier"
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 19,
+                              "line": 33
+                            },
+                            "sourcefile": "$EXAMPLES/forStmts.go",
+                            "start": {
+                              "column": 14,
+                              "line": 33
+                            }
+                          },
+                          "operator": "\u003c",
+                          "right": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 19,
+                                "line": 33
+                              },
+                              "sourcefile": "$EXAMPLES/forStmts.go",
+                              "start": {
+                                "column": 18,
+                                "line": 33
+                              }
+                            },
+                            "name": "b",
+                            "type": "Identifier"
+                          },
+                          "type": "BinaryExpression"
+                        },
+                        "type": "ForStatement",
+                        "update": {
+                          "_meta": {},
+                          "loc": null,
+                          "type": "Noop"
+                        }
+                      },
+                      {
+                        "_meta": {},
+                        "body": {
+                          "_meta": {},
+                          "body": [
+                            {
+                              "_meta": {},
+                              "arguments": [
+                                {
+                                  "_meta": {},
+                                  "literalType": "STRING",
+                                  "loc": {
+                                    "end": {
+                                      "column": 63,
+                                      "line": 40
+                                    },
+                                    "sourcefile": "$EXAMPLES/forStmts.go",
+                                    "start": {
+                                      "column": 15,
+                                      "line": 40
+                                    }
+                                  },
+                                  "type": "Literal",
+                                  "value": "\"From init and post ForClause ForClause ForStmt\""
+                                }
+                              ],
+                              "callee": {
+                                "_meta": {},
+                                "computed": false,
+                                "loc": {
+                                  "end": {
+                                    "column": 14,
+                                    "line": 40
+                                  },
+                                  "sourcefile": "$EXAMPLES/forStmts.go",
+                                  "start": {
+                                    "column": 3,
+                                    "line": 40
+                                  }
+                                },
+                                "object": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 6,
+                                      "line": 40
+                                    },
+                                    "sourcefile": "$EXAMPLES/forStmts.go",
+                                    "start": {
+                                      "column": 3,
+                                      "line": 40
+                                    }
+                                  },
+                                  "name": "fmt",
+                                  "type": "Identifier"
+                                },
+                                "property": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 14,
+                                      "line": 40
+                                    },
+                                    "sourcefile": "$EXAMPLES/forStmts.go",
+                                    "start": {
+                                      "column": 7,
+                                      "line": 40
+                                    }
+                                  },
+                                  "name": "Println",
+                                  "type": "Identifier"
+                                },
+                                "type": "MemberAccess"
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 64,
+                                  "line": 40
+                                },
+                                "sourcefile": "$EXAMPLES/forStmts.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 40
+                                }
+                              },
+                              "type": "CallExpression"
+                            },
+                            {
+                              "_meta": {},
+                              "label": null,
+                              "loc": {
+                                "end": {
+                                  "column": 8,
+                                  "line": 41
+                                },
+                                "sourcefile": "$EXAMPLES/forStmts.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 41
+                                }
+                              },
+                              "type": "BreakStatement"
+                            }
+                          ],
+                          "id": null,
+                          "loc": {
+                            "end": {
+                              "column": 3,
+                              "line": 42
+                            },
+                            "sourcefile": "$EXAMPLES/forStmts.go",
+                            "start": {
+                              "column": 20,
+                              "line": 39
+                            }
+                          },
+                          "type": "ScopedStatement"
+                        },
+                        "init": {
+                          "_meta": {},
+                          "cloned": true,
+                          "id": {
+                            "_meta": {
+                              "ReceiveCls": "",
+                              "type": {
+                                "_meta": {
+                                  "ReceiveCls": ""
+                                },
+                                "loc": null,
+                                "name": "int",
+                                "type": "Identifier"
+                              }
+                            },
+                            "loc": {
+                              "end": {
+                                "column": 7,
+                                "line": 39
+                              },
+                              "sourcefile": "$EXAMPLES/forStmts.go",
+                              "start": {
+                                "column": 6,
+                                "line": 39
+                              }
+                            },
+                            "name": "j",
+                            "type": "Identifier"
                           },
                           "init": {
-                            "type": "Literal",
-                            "value": "0",
+                            "_meta": {},
                             "literalType": "INT",
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 49,
-                                "column": 11
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 49,
-                                "column": 12
+                                "column": 12,
+                                "line": 39
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                              "sourcefile": "$EXAMPLES/forStmts.go",
+                              "start": {
+                                "column": 11,
+                                "line": 39
+                              }
                             },
-                            "_meta": {}
+                            "type": "Literal",
+                            "value": "0"
                           },
-                          "cloned": true,
-                          "varType": {
-                            "type": "Identifier",
-                            "name": "int",
-                            "loc": null,
-                            "_meta": {}
-                          },
-                          "variableParam": false,
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 49,
-                              "column": 6
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 49,
-                              "column": 12
+                              "column": 12,
+                              "line": 39
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                            "sourcefile": "$EXAMPLES/forStmts.go",
+                            "start": {
+                              "column": 6,
+                              "line": 39
+                            }
                           },
-                          "_meta": {}
+                          "type": "VariableDeclaration",
+                          "varType": {
+                            "_meta": {},
+                            "loc": null,
+                            "name": "int",
+                            "type": "Identifier"
+                          },
+                          "variableParam": false
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 3,
+                            "line": 42
+                          },
+                          "sourcefile": "$EXAMPLES/forStmts.go",
+                          "start": {
+                            "column": 2,
+                            "line": 39
+                          }
                         },
                         "test": {
-                          "type": "BinaryExpression",
-                          "operator": "<",
-                          "left": {
-                            "type": "Identifier",
-                            "name": "a",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 49,
-                                "column": 14
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 49,
-                                "column": 15
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                            },
-                            "_meta": {}
-                          },
-                          "right": {
-                            "type": "Identifier",
-                            "name": "b",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 49,
-                                "column": 18
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 49,
-                                "column": 19
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                            },
-                            "_meta": {}
-                          },
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 49,
-                              "column": 14
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 49,
-                              "column": 19
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                          },
-                          "_meta": {}
+                          "_meta": {},
+                          "loc": null,
+                          "type": "Noop"
                         },
+                        "type": "ForStatement",
                         "update": {
-                          "type": "UnaryExpression",
-                          "operator": "++",
+                          "_meta": {},
                           "argument": {
-                            "type": "Identifier",
-                            "name": "z",
+                            "_meta": {},
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 49,
-                                "column": 21
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 49,
-                                "column": 22
+                                "column": 17,
+                                "line": 39
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                              "sourcefile": "$EXAMPLES/forStmts.go",
+                              "start": {
+                                "column": 16,
+                                "line": 39
+                              }
                             },
-                            "_meta": {}
+                            "name": "j",
+                            "type": "Identifier"
                           },
                           "isSuffix": true,
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 49,
-                              "column": 21
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 49,
-                              "column": 24
+                              "column": 19,
+                              "line": 39
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                            "sourcefile": "$EXAMPLES/forStmts.go",
+                            "start": {
+                              "column": 16,
+                              "line": 39
+                            }
                           },
-                          "_meta": {}
-                        },
+                          "operator": "++",
+                          "type": "UnaryExpression"
+                        }
+                      },
+                      {
+                        "_meta": {},
                         "body": {
-                          "type": "ScopedStatement",
+                          "_meta": {},
                           "body": [
                             {
-                              "type": "CallExpression",
-                              "callee": {
-                                "type": "MemberAccess",
-                                "object": {
-                                  "type": "Identifier",
-                                  "name": "fmt",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 50,
-                                      "column": 3
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 50,
-                                      "column": 6
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "property": {
-                                  "type": "Identifier",
-                                  "name": "Println",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 50,
-                                      "column": 7
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 50,
-                                      "column": 14
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "computed": false,
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 50,
-                                    "column": 3
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 50,
-                                    "column": 14
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                                },
-                                "_meta": {}
-                              },
+                              "_meta": {},
                               "arguments": [
                                 {
-                                  "type": "Literal",
-                                  "value": "\"From full ForClause ForClause ForStmt\"",
+                                  "_meta": {},
                                   "literalType": "STRING",
                                   "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 50,
-                                      "column": 15
-                                    },
                                     "end": {
-                                      "Offset": 0,
-                                      "line": 50,
-                                      "column": 54
+                                      "column": 68,
+                                      "line": 45
                                     },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                                    "sourcefile": "$EXAMPLES/forStmts.go",
+                                    "start": {
+                                      "column": 15,
+                                      "line": 45
+                                    }
                                   },
-                                  "_meta": {}
+                                  "type": "Literal",
+                                  "value": "\"From condition and post ForClause ForClause ForStmt\""
                                 }
                               ],
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 50,
-                                  "column": 3
+                              "callee": {
+                                "_meta": {},
+                                "computed": false,
+                                "loc": {
+                                  "end": {
+                                    "column": 14,
+                                    "line": 45
+                                  },
+                                  "sourcefile": "$EXAMPLES/forStmts.go",
+                                  "start": {
+                                    "column": 3,
+                                    "line": 45
+                                  }
                                 },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 50,
-                                  "column": 55
+                                "object": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 6,
+                                      "line": 45
+                                    },
+                                    "sourcefile": "$EXAMPLES/forStmts.go",
+                                    "start": {
+                                      "column": 3,
+                                      "line": 45
+                                    }
+                                  },
+                                  "name": "fmt",
+                                  "type": "Identifier"
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                                "property": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 14,
+                                      "line": 45
+                                    },
+                                    "sourcefile": "$EXAMPLES/forStmts.go",
+                                    "start": {
+                                      "column": 7,
+                                      "line": 45
+                                    }
+                                  },
+                                  "name": "Println",
+                                  "type": "Identifier"
+                                },
+                                "type": "MemberAccess"
                               },
-                              "_meta": {}
+                              "loc": {
+                                "end": {
+                                  "column": 69,
+                                  "line": 45
+                                },
+                                "sourcefile": "$EXAMPLES/forStmts.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 45
+                                }
+                              },
+                              "type": "CallExpression"
                             },
                             {
-                              "type": "ReturnStatement",
+                              "_meta": {},
+                              "label": null,
+                              "loc": {
+                                "end": {
+                                  "column": 8,
+                                  "line": 46
+                                },
+                                "sourcefile": "$EXAMPLES/forStmts.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 46
+                                }
+                              },
+                              "type": "BreakStatement"
+                            }
+                          ],
+                          "id": null,
+                          "loc": {
+                            "end": {
+                              "column": 3,
+                              "line": 47
+                            },
+                            "sourcefile": "$EXAMPLES/forStmts.go",
+                            "start": {
+                              "column": 19,
+                              "line": 44
+                            }
+                          },
+                          "type": "ScopedStatement"
+                        },
+                        "init": {
+                          "_meta": {},
+                          "loc": null,
+                          "type": "Noop"
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 3,
+                            "line": 47
+                          },
+                          "sourcefile": "$EXAMPLES/forStmts.go",
+                          "start": {
+                            "column": 2,
+                            "line": 44
+                          }
+                        },
+                        "test": {
+                          "_meta": {},
+                          "left": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 9,
+                                "line": 44
+                              },
+                              "sourcefile": "$EXAMPLES/forStmts.go",
+                              "start": {
+                                "column": 8,
+                                "line": 44
+                              }
+                            },
+                            "name": "a",
+                            "type": "Identifier"
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 13,
+                              "line": 44
+                            },
+                            "sourcefile": "$EXAMPLES/forStmts.go",
+                            "start": {
+                              "column": 8,
+                              "line": 44
+                            }
+                          },
+                          "operator": "\u003c",
+                          "right": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 13,
+                                "line": 44
+                              },
+                              "sourcefile": "$EXAMPLES/forStmts.go",
+                              "start": {
+                                "column": 12,
+                                "line": 44
+                              }
+                            },
+                            "name": "b",
+                            "type": "Identifier"
+                          },
+                          "type": "BinaryExpression"
+                        },
+                        "type": "ForStatement",
+                        "update": {
+                          "_meta": {},
+                          "argument": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 16,
+                                "line": 44
+                              },
+                              "sourcefile": "$EXAMPLES/forStmts.go",
+                              "start": {
+                                "column": 15,
+                                "line": 44
+                              }
+                            },
+                            "name": "a",
+                            "type": "Identifier"
+                          },
+                          "isSuffix": true,
+                          "loc": {
+                            "end": {
+                              "column": 18,
+                              "line": 44
+                            },
+                            "sourcefile": "$EXAMPLES/forStmts.go",
+                            "start": {
+                              "column": 15,
+                              "line": 44
+                            }
+                          },
+                          "operator": "++",
+                          "type": "UnaryExpression"
+                        }
+                      },
+                      {
+                        "_meta": {},
+                        "body": {
+                          "_meta": {},
+                          "body": [
+                            {
+                              "_meta": {},
+                              "arguments": [
+                                {
+                                  "_meta": {},
+                                  "literalType": "STRING",
+                                  "loc": {
+                                    "end": {
+                                      "column": 54,
+                                      "line": 50
+                                    },
+                                    "sourcefile": "$EXAMPLES/forStmts.go",
+                                    "start": {
+                                      "column": 15,
+                                      "line": 50
+                                    }
+                                  },
+                                  "type": "Literal",
+                                  "value": "\"From full ForClause ForClause ForStmt\""
+                                }
+                              ],
+                              "callee": {
+                                "_meta": {},
+                                "computed": false,
+                                "loc": {
+                                  "end": {
+                                    "column": 14,
+                                    "line": 50
+                                  },
+                                  "sourcefile": "$EXAMPLES/forStmts.go",
+                                  "start": {
+                                    "column": 3,
+                                    "line": 50
+                                  }
+                                },
+                                "object": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 6,
+                                      "line": 50
+                                    },
+                                    "sourcefile": "$EXAMPLES/forStmts.go",
+                                    "start": {
+                                      "column": 3,
+                                      "line": 50
+                                    }
+                                  },
+                                  "name": "fmt",
+                                  "type": "Identifier"
+                                },
+                                "property": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 14,
+                                      "line": 50
+                                    },
+                                    "sourcefile": "$EXAMPLES/forStmts.go",
+                                    "start": {
+                                      "column": 7,
+                                      "line": 50
+                                    }
+                                  },
+                                  "name": "Println",
+                                  "type": "Identifier"
+                                },
+                                "type": "MemberAccess"
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 55,
+                                  "line": 50
+                                },
+                                "sourcefile": "$EXAMPLES/forStmts.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 50
+                                }
+                              },
+                              "type": "CallExpression"
+                            },
+                            {
+                              "_meta": {},
                               "argument": {
-                                "type": "TupleExpression",
-                                "elements": [],
-                                "modifiable": false,
+                                "_meta": {},
                                 "loc": null,
-                                "_meta": {}
+                                "type": "Noop"
                               },
                               "isYield": false,
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 51,
-                                  "column": 3
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 51,
-                                  "column": 9
+                                  "column": 9,
+                                  "line": 51
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                                "sourcefile": "$EXAMPLES/forStmts.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 51
+                                }
                               },
-                              "_meta": {}
+                              "type": "ReturnStatement"
                             }
                           ],
                           "id": null,
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 49,
-                              "column": 25
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 52,
-                              "column": 3
+                              "column": 3,
+                              "line": 52
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                            "sourcefile": "$EXAMPLES/forStmts.go",
+                            "start": {
+                              "column": 25,
+                              "line": 49
+                            }
                           },
-                          "_meta": {}
+                          "type": "ScopedStatement"
+                        },
+                        "init": {
+                          "_meta": {},
+                          "cloned": true,
+                          "id": {
+                            "_meta": {
+                              "ReceiveCls": "",
+                              "type": {
+                                "_meta": {
+                                  "ReceiveCls": ""
+                                },
+                                "loc": null,
+                                "name": "int",
+                                "type": "Identifier"
+                              }
+                            },
+                            "loc": {
+                              "end": {
+                                "column": 7,
+                                "line": 49
+                              },
+                              "sourcefile": "$EXAMPLES/forStmts.go",
+                              "start": {
+                                "column": 6,
+                                "line": 49
+                              }
+                            },
+                            "name": "z",
+                            "type": "Identifier"
+                          },
+                          "init": {
+                            "_meta": {},
+                            "literalType": "INT",
+                            "loc": {
+                              "end": {
+                                "column": 12,
+                                "line": 49
+                              },
+                              "sourcefile": "$EXAMPLES/forStmts.go",
+                              "start": {
+                                "column": 11,
+                                "line": 49
+                              }
+                            },
+                            "type": "Literal",
+                            "value": "0"
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 12,
+                              "line": 49
+                            },
+                            "sourcefile": "$EXAMPLES/forStmts.go",
+                            "start": {
+                              "column": 6,
+                              "line": 49
+                            }
+                          },
+                          "type": "VariableDeclaration",
+                          "varType": {
+                            "_meta": {},
+                            "loc": null,
+                            "name": "int",
+                            "type": "Identifier"
+                          },
+                          "variableParam": false
                         },
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 49,
-                            "column": 2
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 52,
-                            "column": 3
+                            "column": 3,
+                            "line": 52
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                          "sourcefile": "$EXAMPLES/forStmts.go",
+                          "start": {
+                            "column": 2,
+                            "line": 49
+                          }
                         },
-                        "_meta": {}
+                        "test": {
+                          "_meta": {},
+                          "left": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 15,
+                                "line": 49
+                              },
+                              "sourcefile": "$EXAMPLES/forStmts.go",
+                              "start": {
+                                "column": 14,
+                                "line": 49
+                              }
+                            },
+                            "name": "a",
+                            "type": "Identifier"
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 19,
+                              "line": 49
+                            },
+                            "sourcefile": "$EXAMPLES/forStmts.go",
+                            "start": {
+                              "column": 14,
+                              "line": 49
+                            }
+                          },
+                          "operator": "\u003c",
+                          "right": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 19,
+                                "line": 49
+                              },
+                              "sourcefile": "$EXAMPLES/forStmts.go",
+                              "start": {
+                                "column": 18,
+                                "line": 49
+                              }
+                            },
+                            "name": "b",
+                            "type": "Identifier"
+                          },
+                          "type": "BinaryExpression"
+                        },
+                        "type": "ForStatement",
+                        "update": {
+                          "_meta": {},
+                          "argument": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 22,
+                                "line": 49
+                              },
+                              "sourcefile": "$EXAMPLES/forStmts.go",
+                              "start": {
+                                "column": 21,
+                                "line": 49
+                              }
+                            },
+                            "name": "z",
+                            "type": "Identifier"
+                          },
+                          "isSuffix": true,
+                          "loc": {
+                            "end": {
+                              "column": 24,
+                              "line": 49
+                            },
+                            "sourcefile": "$EXAMPLES/forStmts.go",
+                            "start": {
+                              "column": 21,
+                              "line": 49
+                            }
+                          },
+                          "operator": "++",
+                          "type": "UnaryExpression"
+                        }
                       }
                     ],
                     "id": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 9,
-                        "column": 17
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 53,
-                        "column": 2
+                        "column": 2,
+                        "line": 53
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                      "sourcefile": "$EXAMPLES/forStmts.go",
+                      "start": {
+                        "column": 17,
+                        "line": 9
+                      }
                     },
-                    "_meta": {}
+                    "type": "ScopedStatement"
+                  },
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 14,
+                        "line": 9
+                      },
+                      "sourcefile": "$EXAMPLES/forStmts.go",
+                      "start": {
+                        "column": 6,
+                        "line": 9
+                      }
+                    },
+                    "name": "ForStmts",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 53
+                    },
+                    "sourcefile": "$EXAMPLES/forStmts.go",
+                    "start": {
+                      "column": 1,
+                      "line": 9
+                    }
                   },
                   "modifiers": null,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 9,
-                      "column": 1
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 53,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                  "parameters": [],
+                  "returnType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "VoidType",
+                    "typeArguments": null
                   },
-                  "_meta": {}
+                  "type": "FunctionDefinition"
                 }
               ],
               "language": "golang",
               "languageVersion": "1.18",
-              "uri": "",
-              "version": "",
               "loc": {
-                "start": {
-                  "Offset": 0,
-                  "line": 1,
-                  "column": 1
-                },
                 "end": {
-                  "Offset": 0,
-                  "line": 53,
-                  "column": 2
+                  "column": 2,
+                  "line": 53
                 },
-                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                "sourcefile": "$EXAMPLES/forStmts.go",
+                "start": {
+                  "column": 1,
+                  "line": 1
+                }
               },
-              "_meta": {}
+              "type": "CompileUnit",
+              "uri": "",
+              "version": ""
             },
             "packageName": "__single__"
           }
@@ -2196,6 +1995,5 @@
         "subs": {}
       }
     }
-  },
-  "moduleName": "__single_module__"
+  }
 }

@@ -1,4 +1,5 @@
 {
+  "moduleName": "__single_module__",
   "packageInfo": {
     "PathName": "",
     "files": {},
@@ -6,232 +7,213 @@
       "/": {
         "PathName": "",
         "files": {
-          "/Users/ariel/code/uast/uast4go/examples/newline.go": {
+          "$EXAMPLES/newline.go": {
             "node": {
-              "type": "CompileUnit",
+              "_meta": {},
               "body": [
                 {
-                  "type": "PackageDeclaration",
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 9
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 17
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/newline.go"
-                  },
                   "_meta": {},
-                  "packageName": {
-                    "type": "Identifier",
-                    "name": "examples",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 9
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 17
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/newline.go"
+                  "loc": {
+                    "end": {
+                      "column": 17,
+                      "line": 1
                     },
-                    "_meta": {}
-                  }
+                    "sourcefile": "$EXAMPLES/newline.go",
+                    "start": {
+                      "column": 9,
+                      "line": 1
+                    }
+                  },
+                  "packageName": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 17,
+                        "line": 1
+                      },
+                      "sourcefile": "$EXAMPLES/newline.go",
+                      "start": {
+                        "column": 9,
+                        "line": 1
+                      }
+                    },
+                    "name": "examples",
+                    "type": "Identifier"
+                  },
+                  "type": "PackageDeclaration"
                 },
                 {
-                  "type": "FunctionDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "main",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 10
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/newline.go"
-                    },
-                    "_meta": {}
-                  },
-                  "parameters": [],
-                  "returnType": {
-                    "type": "VoidType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "body": {
-                    "type": "ScopedStatement",
+                    "_meta": {},
                     "body": [
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": true,
                         "id": {
-                          "type": "Identifier",
-                          "name": "i",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 4,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 4,
-                              "column": 3
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/newline.go"
-                          },
                           "_meta": {
+                            "ReceiveCls": "",
                             "type": {
-                              "type": "Identifier",
-                              "name": "int",
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
                               "loc": null,
-                              "_meta": {}
+                              "name": "int",
+                              "type": "Identifier"
                             }
-                          }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 3,
+                              "line": 4
+                            },
+                            "sourcefile": "$EXAMPLES/newline.go",
+                            "start": {
+                              "column": 2,
+                              "line": 4
+                            }
+                          },
+                          "name": "i",
+                          "type": "Identifier"
                         },
                         "init": {
-                          "type": "Literal",
-                          "value": "10",
+                          "_meta": {},
                           "literalType": "INT",
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 4,
-                              "column": 7
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 4,
-                              "column": 9
+                              "column": 9,
+                              "line": 4
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/newline.go"
+                            "sourcefile": "$EXAMPLES/newline.go",
+                            "start": {
+                              "column": 7,
+                              "line": 4
+                            }
                           },
-                          "_meta": {}
+                          "type": "Literal",
+                          "value": "10"
                         },
-                        "cloned": true,
-                        "varType": {
-                          "type": "Identifier",
-                          "name": "int",
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "variableParam": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 4,
-                            "column": 2
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 4,
-                            "column": 9
+                            "column": 9,
+                            "line": 4
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/newline.go"
+                          "sourcefile": "$EXAMPLES/newline.go",
+                          "start": {
+                            "column": 2,
+                            "line": 4
+                          }
                         },
-                        "_meta": {}
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "loc": null,
+                          "name": "int",
+                          "type": "Identifier"
+                        },
+                        "variableParam": false
                       },
                       {
-                        "type": "DereferenceExpression",
+                        "_meta": {},
                         "argument": {
-                          "type": "Identifier",
-                          "name": "p",
+                          "_meta": {},
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 5,
-                              "column": 3
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 5,
-                              "column": 4
+                              "column": 4,
+                              "line": 5
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/newline.go"
+                            "sourcefile": "$EXAMPLES/newline.go",
+                            "start": {
+                              "column": 3,
+                              "line": 5
+                            }
                           },
-                          "_meta": {}
+                          "name": "p",
+                          "type": "Identifier"
                         },
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 5,
-                            "column": 2
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 5,
-                            "column": 4
+                            "column": 4,
+                            "line": 5
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/newline.go"
+                          "sourcefile": "$EXAMPLES/newline.go",
+                          "start": {
+                            "column": 2,
+                            "line": 5
+                          }
                         },
-                        "_meta": {}
+                        "type": "DereferenceExpression"
                       }
                     ],
                     "id": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 13
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 6,
-                        "column": 2
+                        "column": 2,
+                        "line": 6
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/newline.go"
+                      "sourcefile": "$EXAMPLES/newline.go",
+                      "start": {
+                        "column": 13,
+                        "line": 3
+                      }
                     },
-                    "_meta": {}
+                    "type": "ScopedStatement"
+                  },
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 10,
+                        "line": 3
+                      },
+                      "sourcefile": "$EXAMPLES/newline.go",
+                      "start": {
+                        "column": 6,
+                        "line": 3
+                      }
+                    },
+                    "name": "main",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 6
+                    },
+                    "sourcefile": "$EXAMPLES/newline.go",
+                    "start": {
+                      "column": 1,
+                      "line": 3
+                    }
                   },
                   "modifiers": null,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 3,
-                      "column": 1
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 6,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/newline.go"
+                  "parameters": [],
+                  "returnType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "VoidType",
+                    "typeArguments": null
                   },
-                  "_meta": {}
+                  "type": "FunctionDefinition"
                 }
               ],
               "language": "golang",
               "languageVersion": "1.18",
-              "uri": "",
-              "version": "",
               "loc": {
-                "start": {
-                  "Offset": 0,
-                  "line": 1,
-                  "column": 1
-                },
                 "end": {
-                  "Offset": 0,
-                  "line": 6,
-                  "column": 2
+                  "column": 2,
+                  "line": 6
                 },
-                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/newline.go"
+                "sourcefile": "$EXAMPLES/newline.go",
+                "start": {
+                  "column": 1,
+                  "line": 1
+                }
               },
-              "_meta": {}
+              "type": "CompileUnit",
+              "uri": "",
+              "version": ""
             },
             "packageName": "__single__"
           }
@@ -239,6 +221,5 @@
         "subs": {}
       }
     }
-  },
-  "moduleName": "__single_module__"
+  }
 }

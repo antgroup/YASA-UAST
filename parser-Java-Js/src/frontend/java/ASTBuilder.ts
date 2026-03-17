@@ -201,7 +201,8 @@ export class ASTBuilder
             // single import case
             const classNameId = identifierBuild(tailName);
             const qualifiedClassNameId = identifierBuild(qualifiedName);
-            const importExpr = UAST.importExpression(literalBuild(qualifiedName, 'string'), null, null);
+            const packageName = qualifiedNameList.join('.');
+            const importExpr = UAST.importExpression(literalBuild(packageName, 'string'), classNameId, classNameId);
             return UAST.variableDeclaration(classNameId, importExpr, false, UAST.scopedType(qualifiedClassNameId, null))
         }
     }
@@ -615,7 +616,7 @@ export class ASTBuilder
         const varDecl = UAST.variableDeclaration(annotationVarId, UAST.newExpression(qualifiedExpr, []), false, UAST.scopedType(UAST.identifier(qualifiedNameStr), null))
         if (ctx.elementValue() || ctx.elementValuePairs()) {
             const expr = this.safeVisit(ctx.elementValue()) || this._visitElementValuePairs(ctx.elementValuePairs(), annotationVarId);
-            return UAST.sequence([varDecl, expr, varDecl.id]);
+            return UAST.scopedStatement([varDecl, expr]);
         } else {
             return varDecl;
         }
@@ -1403,7 +1404,7 @@ export class ASTBuilder
                 const left = this.visit(ctx.expression()[0]) as UAST.Expression;
                 if (!ctx.pattern()) {
                     const right = this.visit(ctx.typeType()[0]) as UAST.Type;
-                    return UAST.binaryExpression('instanceof', left, ('id' in right && right.id) || ('name' in right && right));
+                    return UAST.binaryExpression('instanceof', left, (('id' in right && right.id) || ('name' in right && right)) as UAST.Expression);
                 } else {
                     const patternCtx = ctx.pattern();
                     const type = this.visit(patternCtx.typeType()) as UAST.Type;

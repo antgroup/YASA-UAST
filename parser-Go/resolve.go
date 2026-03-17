@@ -171,5 +171,5 @@ func CreatePackage(fset *token.FileSet, files map[string]*ast.File, importer ast
 	}
 
 	p.errors.Sort()
-	return &ast.Package{pkgName, pkgScope, imports, files}, p.errors.Err()
+	return &ast.Package{Name: pkgName, Scope: pkgScope, Imports: imports, Files: files}, p.errors.Err()
 }

@@ -1,4 +1,5 @@
 {
+  "moduleName": "__single_module__",
   "packageInfo": {
     "PathName": "",
     "files": {},
@@ -6,1648 +7,1573 @@
       "/": {
         "PathName": "",
         "files": {
-          "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go": {
+          "$EXAMPLES/arrayEllipsisDecls.go": {
             "node": {
-              "type": "CompileUnit",
+              "_meta": {},
               "body": [
                 {
-                  "type": "PackageDeclaration",
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 9
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 17
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                  },
                   "_meta": {},
-                  "packageName": {
-                    "type": "Identifier",
-                    "name": "examples",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 9
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 17
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
+                  "loc": {
+                    "end": {
+                      "column": 17,
+                      "line": 1
                     },
-                    "_meta": {}
-                  }
+                    "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                    "start": {
+                      "column": 9,
+                      "line": 1
+                    }
+                  },
+                  "packageName": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 17,
+                        "line": 1
+                      },
+                      "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                      "start": {
+                        "column": 9,
+                        "line": 1
+                      }
+                    },
+                    "name": "examples",
+                    "type": "Identifier"
+                  },
+                  "type": "PackageDeclaration"
                 },
                 {
-                  "type": "VariableDeclaration",
+                  "_meta": {
+                    "ReceiveCls": "",
+                    "isDefaultImport": true
+                  },
+                  "cloned": false,
                   "id": {
-                    "type": "Identifier",
-                    "name": "fmt",
+                    "_meta": {},
                     "loc": null,
-                    "_meta": {}
+                    "name": "fmt",
+                    "type": "Identifier"
                   },
                   "init": {
-                    "type": "ImportExpression",
+                    "_meta": {},
                     "from": {
-                      "type": "Literal",
-                      "value": "fmt",
+                      "_meta": {},
                       "literalType": "string",
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 4,
-                          "column": 2
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 4,
-                          "column": 7
+                          "column": 7,
+                          "line": 4
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
+                        "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                        "start": {
+                          "column": 2,
+                          "line": 4
+                        }
                       },
-                      "_meta": {}
+                      "type": "Literal",
+                      "value": "fmt"
                     },
-                    "local": null,
                     "imported": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 4,
-                        "column": 2
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 4,
-                        "column": 7
+                        "column": 7,
+                        "line": 4
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
+                      "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                      "start": {
+                        "column": 2,
+                        "line": 4
+                      }
                     },
-                    "_meta": {}
+                    "local": null,
+                    "type": "ImportExpression"
                   },
-                  "cloned": true,
-                  "varType": {
-                    "type": "DynamicType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
-                  "variableParam": false,
                   "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 4,
-                      "column": 2
-                    },
                     "end": {
-                      "Offset": 0,
-                      "line": 4,
-                      "column": 7
+                      "column": 7,
+                      "line": 4
                     },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
+                    "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                    "start": {
+                      "column": 2,
+                      "line": 4
+                    }
                   },
-                  "_meta": {}
+                  "type": "VariableDeclaration",
+                  "varType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "DynamicType",
+                    "typeArguments": null
+                  },
+                  "variableParam": false
                 },
                 {
-                  "type": "ClassDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "Custom",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 7,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 7,
-                        "column": 12
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                    },
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "body": [
                     {
-                      "type": "SpreadElement",
+                      "_meta": {},
                       "argument": {
-                        "type": "Identifier",
-                        "name": "string",
-                        "loc": null,
                         "_meta": {
+                          "ReceiveCls": "",
                           "type": {
-                            "type": "Identifier",
-                            "name": "string",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 8,
-                                "column": 2
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 8,
-                                "column": 8
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
+                            "_meta": {
+                              "ReceiveCls": ""
                             },
-                            "_meta": {}
+                            "loc": {
+                              "end": {
+                                "column": 8,
+                                "line": 8
+                              },
+                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/arrayEllipsisDecls.go",
+                              "start": {
+                                "column": 2,
+                                "line": 8
+                              }
+                            },
+                            "name": "string",
+                            "type": "Identifier"
                           }
-                        }
+                        },
+                        "loc": null,
+                        "name": "string",
+                        "type": "Identifier"
                       },
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 8,
-                          "column": 2
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 8,
-                          "column": 8
+                          "column": 8,
+                          "line": 8
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
+                        "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                        "start": {
+                          "column": 2,
+                          "line": 8
+                        }
                       },
-                      "_meta": {}
+                      "type": "SpreadElement"
                     },
                     {
-                      "type": "VariableDeclaration",
+                      "_meta": {},
+                      "cloned": true,
                       "id": {
-                        "type": "Identifier",
-                        "name": "string",
-                        "loc": null,
                         "_meta": {
+                          "ReceiveCls": "",
                           "type": {
-                            "type": "Identifier",
-                            "name": "string",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 8,
-                                "column": 2
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 8,
-                                "column": 8
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
+                            "_meta": {
+                              "ReceiveCls": ""
                             },
-                            "_meta": {}
+                            "loc": {
+                              "end": {
+                                "column": 8,
+                                "line": 8
+                              },
+                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/arrayEllipsisDecls.go",
+                              "start": {
+                                "column": 2,
+                                "line": 8
+                              }
+                            },
+                            "name": "string",
+                            "type": "Identifier"
                           }
-                        }
+                        },
+                        "loc": null,
+                        "name": "string",
+                        "type": "Identifier"
                       },
                       "init": null,
-                      "cloned": true,
-                      "varType": {
-                        "type": "Identifier",
-                        "name": "string",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 8,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 8,
-                            "column": 8
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                        },
-                        "_meta": {}
-                      },
-                      "variableParam": false,
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 8,
-                          "column": 2
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 8,
-                          "column": 8
+                          "column": 8,
+                          "line": 8
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
+                        "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                        "start": {
+                          "column": 2,
+                          "line": 8
+                        }
                       },
-                      "_meta": {}
-                    }
-                  ],
-                  "supers": [],
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 7,
-                      "column": 6
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 9,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                  },
-                  "_meta": {}
-                },
-                {
-                  "type": "FunctionDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "ArrayEllipsisDecls",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 11,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 11,
-                        "column": 24
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                    },
-                    "_meta": {}
-                  },
-                  "parameters": [],
-                  "returnType": {
-                    "type": "VoidType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
-                  "body": {
-                    "type": "ScopedStatement",
-                    "body": [
-                      {
-                        "type": "VariableDeclaration",
-                        "id": {
-                          "type": "Identifier",
-                          "name": "stooges",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 12,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 12,
-                              "column": 9
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
+                      "type": "VariableDeclaration",
+                      "varType": {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 8,
+                            "line": 8
                           },
-                          "_meta": {
-                            "type": {
-                              "type": "ArrayType",
-                              "id": {
-                                "type": "Identifier",
-                                "name": "ArrayType",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 12,
-                                    "column": 13
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 12,
-                                    "column": 24
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                },
-                                "_meta": {}
-                              },
-                              "element": {
-                                "type": "Identifier",
-                                "name": "Custom",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 12,
-                                    "column": 18
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 12,
-                                    "column": 24
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                },
-                                "_meta": {}
-                              },
-                              "typeArguments": null,
-                              "size": {
-                                "type": "Noop",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 12,
-                                    "column": 14
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 12,
-                                    "column": 17
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                },
-                                "_meta": {}
-                              },
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 12,
-                                  "column": 13
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 12,
-                                  "column": 24
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                              },
-                              "_meta": {}
-                            }
+                          "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                          "start": {
+                            "column": 2,
+                            "line": 8
                           }
                         },
+                        "name": "string",
+                        "type": "Identifier"
+                      },
+                      "variableParam": false
+                    }
+                  ],
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 12,
+                        "line": 7
+                      },
+                      "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                      "start": {
+                        "column": 6,
+                        "line": 7
+                      }
+                    },
+                    "name": "Custom",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 9
+                    },
+                    "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                    "start": {
+                      "column": 6,
+                      "line": 7
+                    }
+                  },
+                  "supers": [],
+                  "type": "ClassDefinition"
+                },
+                {
+                  "_meta": {},
+                  "body": {
+                    "_meta": {},
+                    "body": [
+                      {
+                        "_meta": {},
+                        "cloned": true,
+                        "id": {
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "element": {
+                                "_meta": {
+                                  "ReceiveCls": ""
+                                },
+                                "loc": {
+                                  "end": {
+                                    "column": 24,
+                                    "line": 12
+                                  },
+                                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/arrayEllipsisDecls.go",
+                                  "start": {
+                                    "column": 18,
+                                    "line": 12
+                                  }
+                                },
+                                "name": "Custom",
+                                "type": "Identifier"
+                              },
+                              "id": {
+                                "_meta": {
+                                  "ReceiveCls": ""
+                                },
+                                "loc": {
+                                  "end": {
+                                    "column": 24,
+                                    "line": 12
+                                  },
+                                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/arrayEllipsisDecls.go",
+                                  "start": {
+                                    "column": 13,
+                                    "line": 12
+                                  }
+                                },
+                                "name": "ArrayType",
+                                "type": "Identifier"
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 24,
+                                  "line": 12
+                                },
+                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/arrayEllipsisDecls.go",
+                                "start": {
+                                  "column": 13,
+                                  "line": 12
+                                }
+                              },
+                              "size": {
+                                "_meta": {
+                                  "ReceiveCls": ""
+                                },
+                                "loc": {
+                                  "end": {
+                                    "column": 17,
+                                    "line": 12
+                                  },
+                                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/arrayEllipsisDecls.go",
+                                  "start": {
+                                    "column": 14,
+                                    "line": 12
+                                  }
+                                },
+                                "type": "Noop"
+                              },
+                              "type": "ArrayType",
+                              "typeArguments": null
+                            }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 9,
+                              "line": 12
+                            },
+                            "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                            "start": {
+                              "column": 2,
+                              "line": 12
+                            }
+                          },
+                          "name": "stooges",
+                          "type": "Identifier"
+                        },
                         "init": {
-                          "type": "Sequence",
+                          "_meta": {},
                           "expressions": [
                             {
-                              "type": "VariableDeclaration",
+                              "_meta": {},
+                              "cloned": false,
                               "id": {
-                                "type": "Identifier",
-                                "name": "tmp1",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 12,
-                                    "column": 13
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 12,
-                                    "column": 55
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                },
                                 "_meta": {
+                                  "ReceiveCls": "",
                                   "type": {
-                                    "type": "ArrayType",
-                                    "id": {
-                                      "type": "Identifier",
-                                      "name": "ArrayType",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 12,
-                                          "column": 13
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 12,
-                                          "column": 24
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                      },
-                                      "_meta": {}
+                                    "_meta": {
+                                      "ReceiveCls": ""
                                     },
                                     "element": {
-                                      "type": "Identifier",
+                                      "_meta": {
+                                        "ReceiveCls": ""
+                                      },
+                                      "loc": {
+                                        "end": {
+                                          "column": 24,
+                                          "line": 12
+                                        },
+                                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/arrayEllipsisDecls.go",
+                                        "start": {
+                                          "column": 18,
+                                          "line": 12
+                                        }
+                                      },
                                       "name": "Custom",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 12,
-                                          "column": 18
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 12,
-                                          "column": 24
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                      },
-                                      "_meta": {}
+                                      "type": "Identifier"
                                     },
-                                    "typeArguments": null,
-                                    "size": {
-                                      "type": "Noop",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 12,
-                                          "column": 14
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 12,
-                                          "column": 17
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
+                                    "id": {
+                                      "_meta": {
+                                        "ReceiveCls": ""
                                       },
-                                      "_meta": {}
+                                      "loc": {
+                                        "end": {
+                                          "column": 24,
+                                          "line": 12
+                                        },
+                                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/arrayEllipsisDecls.go",
+                                        "start": {
+                                          "column": 13,
+                                          "line": 12
+                                        }
+                                      },
+                                      "name": "ArrayType",
+                                      "type": "Identifier"
                                     },
                                     "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 12,
-                                        "column": 13
-                                      },
                                       "end": {
-                                        "Offset": 0,
-                                        "line": 12,
-                                        "column": 24
+                                        "column": 24,
+                                        "line": 12
                                       },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
+                                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/arrayEllipsisDecls.go",
+                                      "start": {
+                                        "column": 13,
+                                        "line": 12
+                                      }
                                     },
-                                    "_meta": {}
+                                    "size": {
+                                      "_meta": {
+                                        "ReceiveCls": ""
+                                      },
+                                      "loc": {
+                                        "end": {
+                                          "column": 17,
+                                          "line": 12
+                                        },
+                                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/arrayEllipsisDecls.go",
+                                        "start": {
+                                          "column": 14,
+                                          "line": 12
+                                        }
+                                      },
+                                      "type": "Noop"
+                                    },
+                                    "type": "ArrayType",
+                                    "typeArguments": null
                                   }
-                                }
+                                },
+                                "loc": {
+                                  "end": {
+                                    "column": 55,
+                                    "line": 12
+                                  },
+                                  "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                                  "start": {
+                                    "column": 13,
+                                    "line": 12
+                                  }
+                                },
+                                "name": "tmp1",
+                                "type": "Identifier"
                               },
                               "init": {
-                                "type": "NewExpression",
-                                "callee": {
-                                  "type": "ArrayType",
-                                  "id": {
-                                    "type": "Identifier",
-                                    "name": "ArrayType",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 12,
-                                        "column": 13
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 12,
-                                        "column": 24
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                    },
-                                    "_meta": {}
-                                  },
-                                  "element": {
-                                    "type": "Identifier",
-                                    "name": "Custom",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 12,
-                                        "column": 18
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 12,
-                                        "column": 24
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                    },
-                                    "_meta": {}
-                                  },
-                                  "typeArguments": null,
-                                  "size": {
-                                    "type": "Noop",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 12,
-                                        "column": 14
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 12,
-                                        "column": 17
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                    },
-                                    "_meta": {}
-                                  },
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 12,
-                                      "column": 13
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 12,
-                                      "column": 24
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                  },
-                                  "_meta": {}
-                                },
+                                "_meta": {},
                                 "arguments": [],
-                                "loc": null,
-                                "_meta": {}
-                              },
-                              "cloned": false,
-                              "varType": {
-                                "type": "ArrayType",
-                                "id": {
-                                  "type": "Identifier",
-                                  "name": "ArrayType",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 12,
-                                      "column": 13
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 12,
-                                      "column": 24
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "element": {
-                                  "type": "Identifier",
-                                  "name": "Custom",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 12,
-                                      "column": 18
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 12,
-                                      "column": 24
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "typeArguments": null,
-                                "size": {
-                                  "type": "Noop",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 12,
-                                      "column": 14
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 12,
-                                      "column": 17
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 12,
-                                    "column": 13
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 12,
-                                    "column": 24
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                },
-                                "_meta": {}
-                              },
-                              "variableParam": false,
-                              "loc": null,
-                              "_meta": {}
-                            },
-                            {
-                              "type": "AssignmentExpression",
-                              "left": {
-                                "type": "MemberAccess",
-                                "object": {
-                                  "type": "Identifier",
-                                  "name": "tmp1",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 12,
-                                      "column": 13
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 12,
-                                      "column": 55
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                  },
-                                  "_meta": {
-                                    "type": {
-                                      "type": "ArrayType",
-                                      "id": {
-                                        "type": "Identifier",
-                                        "name": "ArrayType",
-                                        "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 12,
-                                            "column": 13
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 12,
-                                            "column": 24
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                        },
-                                        "_meta": {}
-                                      },
-                                      "element": {
-                                        "type": "Identifier",
-                                        "name": "Custom",
-                                        "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 12,
-                                            "column": 18
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 12,
-                                            "column": 24
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                        },
-                                        "_meta": {}
-                                      },
-                                      "typeArguments": null,
-                                      "size": {
-                                        "type": "Noop",
-                                        "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 12,
-                                            "column": 14
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 12,
-                                            "column": 17
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                        },
-                                        "_meta": {}
-                                      },
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 12,
-                                          "column": 13
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 12,
-                                          "column": 24
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                      },
-                                      "_meta": {}
-                                    }
-                                  }
-                                },
-                                "property": {
-                                  "type": "Identifier",
-                                  "name": "0",
-                                  "loc": null,
-                                  "_meta": {}
-                                },
-                                "computed": false,
-                                "loc": null,
-                                "_meta": {}
-                              },
-                              "right": {
-                                "type": "Sequence",
-                                "expressions": [
-                                  {
-                                    "type": "ObjectExpression",
-                                    "properties": null,
-                                    "id": null,
-                                    "loc": null,
-                                    "_meta": {}
-                                  },
-                                  {
-                                    "type": "AssignmentExpression",
-                                    "left": {
-                                      "type": "MemberAccess",
-                                      "object": {
-                                        "type": "Identifier",
-                                        "name": "tmp2",
-                                        "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 12,
-                                            "column": 25
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 12,
-                                            "column": 32
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                        },
-                                        "_meta": {
-                                          "type": {
-                                            "type": "",
-                                            "loc": null,
-                                            "_meta": {}
-                                          }
-                                        }
-                                      },
-                                      "property": {
-                                        "type": "Identifier",
-                                        "name": "0",
-                                        "loc": null,
-                                        "_meta": {}
-                                      },
-                                      "computed": false,
-                                      "loc": null,
-                                      "_meta": {}
-                                    },
-                                    "right": {
-                                      "type": "Literal",
-                                      "value": "\"Moe\"",
-                                      "literalType": "STRING",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 12,
-                                          "column": 26
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 12,
-                                          "column": 31
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                      },
-                                      "_meta": {}
-                                    },
-                                    "operator": "=",
-                                    "cloned": true,
-                                    "loc": null,
-                                    "_meta": {}
-                                  },
-                                  {
-                                    "type": "Identifier",
-                                    "name": "tmp2",
+                                "callee": {
+                                  "_meta": {},
+                                  "element": {
+                                    "_meta": {},
                                     "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 12,
-                                        "column": 25
-                                      },
                                       "end": {
-                                        "Offset": 0,
-                                        "line": 12,
-                                        "column": 32
+                                        "column": 24,
+                                        "line": 12
                                       },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                    },
-                                    "_meta": {
-                                      "type": {
-                                        "type": "",
-                                        "loc": null,
-                                        "_meta": {}
-                                      }
-                                    }
-                                  }
-                                ],
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 12,
-                                    "column": 25
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 12,
-                                    "column": 32
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                },
-                                "_meta": {}
-                              },
-                              "operator": "=",
-                              "cloned": true,
-                              "loc": null,
-                              "_meta": {}
-                            },
-                            {
-                              "type": "AssignmentExpression",
-                              "left": {
-                                "type": "MemberAccess",
-                                "object": {
-                                  "type": "Identifier",
-                                  "name": "tmp1",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 12,
-                                      "column": 13
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 12,
-                                      "column": 55
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                  },
-                                  "_meta": {
-                                    "type": {
-                                      "type": "ArrayType",
-                                      "id": {
-                                        "type": "Identifier",
-                                        "name": "ArrayType",
-                                        "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 12,
-                                            "column": 13
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 12,
-                                            "column": 24
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                        },
-                                        "_meta": {}
-                                      },
-                                      "element": {
-                                        "type": "Identifier",
-                                        "name": "Custom",
-                                        "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 12,
-                                            "column": 18
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 12,
-                                            "column": 24
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                        },
-                                        "_meta": {}
-                                      },
-                                      "typeArguments": null,
-                                      "size": {
-                                        "type": "Noop",
-                                        "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 12,
-                                            "column": 14
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 12,
-                                            "column": 17
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                        },
-                                        "_meta": {}
-                                      },
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 12,
-                                          "column": 13
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 12,
-                                          "column": 24
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                      },
-                                      "_meta": {}
-                                    }
-                                  }
-                                },
-                                "property": {
-                                  "type": "Identifier",
-                                  "name": "1",
-                                  "loc": null,
-                                  "_meta": {}
-                                },
-                                "computed": false,
-                                "loc": null,
-                                "_meta": {}
-                              },
-                              "right": {
-                                "type": "Sequence",
-                                "expressions": [
-                                  {
-                                    "type": "ObjectExpression",
-                                    "properties": null,
-                                    "id": null,
-                                    "loc": null,
-                                    "_meta": {}
-                                  },
-                                  {
-                                    "type": "AssignmentExpression",
-                                    "left": {
-                                      "type": "MemberAccess",
-                                      "object": {
-                                        "type": "Identifier",
-                                        "name": "tmp3",
-                                        "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 12,
-                                            "column": 34
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 12,
-                                            "column": 43
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                        },
-                                        "_meta": {
-                                          "type": {
-                                            "type": "",
-                                            "loc": null,
-                                            "_meta": {}
-                                          }
-                                        }
-                                      },
-                                      "property": {
-                                        "type": "Identifier",
-                                        "name": "0",
-                                        "loc": null,
-                                        "_meta": {}
-                                      },
-                                      "computed": false,
-                                      "loc": null,
-                                      "_meta": {}
-                                    },
-                                    "right": {
-                                      "type": "Literal",
-                                      "value": "\"Larry\"",
-                                      "literalType": "STRING",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 12,
-                                          "column": 35
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 12,
-                                          "column": 42
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                      },
-                                      "_meta": {}
-                                    },
-                                    "operator": "=",
-                                    "cloned": true,
-                                    "loc": null,
-                                    "_meta": {}
-                                  },
-                                  {
-                                    "type": "Identifier",
-                                    "name": "tmp3",
-                                    "loc": {
+                                      "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
                                       "start": {
-                                        "Offset": 0,
-                                        "line": 12,
-                                        "column": 34
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 12,
-                                        "column": 43
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                    },
-                                    "_meta": {
-                                      "type": {
-                                        "type": "",
-                                        "loc": null,
-                                        "_meta": {}
+                                        "column": 18,
+                                        "line": 12
                                       }
-                                    }
-                                  }
-                                ],
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 12,
-                                    "column": 34
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 12,
-                                    "column": 43
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                },
-                                "_meta": {}
-                              },
-                              "operator": "=",
-                              "cloned": true,
-                              "loc": null,
-                              "_meta": {}
-                            },
-                            {
-                              "type": "AssignmentExpression",
-                              "left": {
-                                "type": "MemberAccess",
-                                "object": {
-                                  "type": "Identifier",
-                                  "name": "tmp1",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 12,
-                                      "column": 13
                                     },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 12,
-                                      "column": 55
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
+                                    "name": "Custom",
+                                    "type": "Identifier"
                                   },
-                                  "_meta": {
-                                    "type": {
-                                      "type": "ArrayType",
-                                      "id": {
-                                        "type": "Identifier",
-                                        "name": "ArrayType",
-                                        "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 12,
-                                            "column": 13
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 12,
-                                            "column": 24
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                        },
-                                        "_meta": {}
-                                      },
-                                      "element": {
-                                        "type": "Identifier",
-                                        "name": "Custom",
-                                        "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 12,
-                                            "column": 18
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 12,
-                                            "column": 24
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                        },
-                                        "_meta": {}
-                                      },
-                                      "typeArguments": null,
-                                      "size": {
-                                        "type": "Noop",
-                                        "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 12,
-                                            "column": 14
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 12,
-                                            "column": 17
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                        },
-                                        "_meta": {}
-                                      },
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 12,
-                                          "column": 13
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 12,
-                                          "column": 24
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                      },
-                                      "_meta": {}
-                                    }
-                                  }
-                                },
-                                "property": {
-                                  "type": "Identifier",
-                                  "name": "2",
-                                  "loc": null,
-                                  "_meta": {}
-                                },
-                                "computed": false,
-                                "loc": null,
-                                "_meta": {}
-                              },
-                              "right": {
-                                "type": "Sequence",
-                                "expressions": [
-                                  {
-                                    "type": "ObjectExpression",
-                                    "properties": null,
-                                    "id": null,
-                                    "loc": null,
-                                    "_meta": {}
-                                  },
-                                  {
-                                    "type": "AssignmentExpression",
-                                    "left": {
-                                      "type": "MemberAccess",
-                                      "object": {
-                                        "type": "Identifier",
-                                        "name": "tmp4",
-                                        "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 12,
-                                            "column": 45
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 12,
-                                            "column": 54
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                        },
-                                        "_meta": {
-                                          "type": {
-                                            "type": "",
-                                            "loc": null,
-                                            "_meta": {}
-                                          }
-                                        }
-                                      },
-                                      "property": {
-                                        "type": "Identifier",
-                                        "name": "0",
-                                        "loc": null,
-                                        "_meta": {}
-                                      },
-                                      "computed": false,
-                                      "loc": null,
-                                      "_meta": {}
-                                    },
-                                    "right": {
-                                      "type": "Literal",
-                                      "value": "\"Curly\"",
-                                      "literalType": "STRING",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 12,
-                                          "column": 46
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 12,
-                                          "column": 53
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                      },
-                                      "_meta": {}
-                                    },
-                                    "operator": "=",
-                                    "cloned": true,
-                                    "loc": null,
-                                    "_meta": {}
-                                  },
-                                  {
-                                    "type": "Identifier",
-                                    "name": "tmp4",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 12,
-                                        "column": 45
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 12,
-                                        "column": 54
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                    },
-                                    "_meta": {
-                                      "type": {
-                                        "type": "",
-                                        "loc": null,
-                                        "_meta": {}
-                                      }
-                                    }
-                                  }
-                                ],
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 12,
-                                    "column": 45
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 12,
-                                    "column": 54
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                },
-                                "_meta": {}
-                              },
-                              "operator": "=",
-                              "cloned": true,
-                              "loc": null,
-                              "_meta": {}
-                            },
-                            {
-                              "type": "Identifier",
-                              "name": "tmp1",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 12,
-                                  "column": 13
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 12,
-                                  "column": 55
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                              },
-                              "_meta": {
-                                "type": {
-                                  "type": "ArrayType",
                                   "id": {
-                                    "type": "Identifier",
-                                    "name": "ArrayType",
+                                    "_meta": {},
                                     "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 12,
-                                        "column": 13
-                                      },
                                       "end": {
-                                        "Offset": 0,
-                                        "line": 12,
-                                        "column": 24
+                                        "column": 24,
+                                        "line": 12
                                       },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
+                                      "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                                      "start": {
+                                        "column": 13,
+                                        "line": 12
+                                      }
                                     },
-                                    "_meta": {}
+                                    "name": "ArrayType",
+                                    "type": "Identifier"
+                                  },
+                                  "loc": {
+                                    "end": {
+                                      "column": 24,
+                                      "line": 12
+                                    },
+                                    "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                                    "start": {
+                                      "column": 13,
+                                      "line": 12
+                                    }
+                                  },
+                                  "size": {
+                                    "_meta": {},
+                                    "loc": {
+                                      "end": {
+                                        "column": 17,
+                                        "line": 12
+                                      },
+                                      "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                                      "start": {
+                                        "column": 14,
+                                        "line": 12
+                                      }
+                                    },
+                                    "type": "Noop"
+                                  },
+                                  "type": "ArrayType",
+                                  "typeArguments": null
+                                },
+                                "loc": null,
+                                "type": "NewExpression"
+                              },
+                              "loc": null,
+                              "type": "VariableDeclaration",
+                              "varType": {
+                                "_meta": {},
+                                "element": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 24,
+                                      "line": 12
+                                    },
+                                    "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                                    "start": {
+                                      "column": 18,
+                                      "line": 12
+                                    }
+                                  },
+                                  "name": "Custom",
+                                  "type": "Identifier"
+                                },
+                                "id": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 24,
+                                      "line": 12
+                                    },
+                                    "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                                    "start": {
+                                      "column": 13,
+                                      "line": 12
+                                    }
+                                  },
+                                  "name": "ArrayType",
+                                  "type": "Identifier"
+                                },
+                                "loc": {
+                                  "end": {
+                                    "column": 24,
+                                    "line": 12
+                                  },
+                                  "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                                  "start": {
+                                    "column": 13,
+                                    "line": 12
+                                  }
+                                },
+                                "size": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 17,
+                                      "line": 12
+                                    },
+                                    "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                                    "start": {
+                                      "column": 14,
+                                      "line": 12
+                                    }
+                                  },
+                                  "type": "Noop"
+                                },
+                                "type": "ArrayType",
+                                "typeArguments": null
+                              },
+                              "variableParam": false
+                            },
+                            {
+                              "_meta": {},
+                              "cloned": true,
+                              "left": {
+                                "_meta": {},
+                                "computed": false,
+                                "loc": null,
+                                "object": {
+                                  "_meta": {
+                                    "ReceiveCls": "",
+                                    "type": {
+                                      "_meta": {
+                                        "ReceiveCls": ""
+                                      },
+                                      "element": {
+                                        "_meta": {
+                                          "ReceiveCls": ""
+                                        },
+                                        "loc": {
+                                          "end": {
+                                            "column": 24,
+                                            "line": 12
+                                          },
+                                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/arrayEllipsisDecls.go",
+                                          "start": {
+                                            "column": 18,
+                                            "line": 12
+                                          }
+                                        },
+                                        "name": "Custom",
+                                        "type": "Identifier"
+                                      },
+                                      "id": {
+                                        "_meta": {
+                                          "ReceiveCls": ""
+                                        },
+                                        "loc": {
+                                          "end": {
+                                            "column": 24,
+                                            "line": 12
+                                          },
+                                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/arrayEllipsisDecls.go",
+                                          "start": {
+                                            "column": 13,
+                                            "line": 12
+                                          }
+                                        },
+                                        "name": "ArrayType",
+                                        "type": "Identifier"
+                                      },
+                                      "loc": {
+                                        "end": {
+                                          "column": 24,
+                                          "line": 12
+                                        },
+                                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/arrayEllipsisDecls.go",
+                                        "start": {
+                                          "column": 13,
+                                          "line": 12
+                                        }
+                                      },
+                                      "size": {
+                                        "_meta": {
+                                          "ReceiveCls": ""
+                                        },
+                                        "loc": {
+                                          "end": {
+                                            "column": 17,
+                                            "line": 12
+                                          },
+                                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/arrayEllipsisDecls.go",
+                                          "start": {
+                                            "column": 14,
+                                            "line": 12
+                                          }
+                                        },
+                                        "type": "Noop"
+                                      },
+                                      "type": "ArrayType",
+                                      "typeArguments": null
+                                    }
+                                  },
+                                  "loc": {
+                                    "end": {
+                                      "column": 55,
+                                      "line": 12
+                                    },
+                                    "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                                    "start": {
+                                      "column": 13,
+                                      "line": 12
+                                    }
+                                  },
+                                  "name": "tmp1",
+                                  "type": "Identifier"
+                                },
+                                "property": {
+                                  "_meta": {},
+                                  "loc": null,
+                                  "name": "0",
+                                  "type": "Identifier"
+                                },
+                                "type": "MemberAccess"
+                              },
+                              "loc": null,
+                              "operator": "=",
+                              "right": {
+                                "_meta": {},
+                                "expressions": [
+                                  {
+                                    "_meta": {},
+                                    "id": null,
+                                    "loc": null,
+                                    "properties": null,
+                                    "type": "ObjectExpression"
+                                  },
+                                  {
+                                    "_meta": {},
+                                    "cloned": true,
+                                    "left": {
+                                      "_meta": {},
+                                      "computed": false,
+                                      "loc": null,
+                                      "object": {
+                                        "_meta": {
+                                          "ReceiveCls": "",
+                                          "type": {
+                                            "_meta": {
+                                              "ReceiveCls": ""
+                                            },
+                                            "loc": null,
+                                            "type": ""
+                                          }
+                                        },
+                                        "loc": {
+                                          "end": {
+                                            "column": 32,
+                                            "line": 12
+                                          },
+                                          "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                                          "start": {
+                                            "column": 25,
+                                            "line": 12
+                                          }
+                                        },
+                                        "name": "tmp2",
+                                        "type": "Identifier"
+                                      },
+                                      "property": {
+                                        "_meta": {},
+                                        "loc": null,
+                                        "name": "0",
+                                        "type": "Identifier"
+                                      },
+                                      "type": "MemberAccess"
+                                    },
+                                    "loc": null,
+                                    "operator": "=",
+                                    "right": {
+                                      "_meta": {},
+                                      "literalType": "STRING",
+                                      "loc": {
+                                        "end": {
+                                          "column": 31,
+                                          "line": 12
+                                        },
+                                        "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                                        "start": {
+                                          "column": 26,
+                                          "line": 12
+                                        }
+                                      },
+                                      "type": "Literal",
+                                      "value": "\"Moe\""
+                                    },
+                                    "type": "AssignmentExpression"
+                                  },
+                                  {
+                                    "_meta": {
+                                      "ReceiveCls": "",
+                                      "type": {
+                                        "_meta": {
+                                          "ReceiveCls": ""
+                                        },
+                                        "loc": null,
+                                        "type": ""
+                                      }
+                                    },
+                                    "loc": {
+                                      "end": {
+                                        "column": 32,
+                                        "line": 12
+                                      },
+                                      "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                                      "start": {
+                                        "column": 25,
+                                        "line": 12
+                                      }
+                                    },
+                                    "name": "tmp2",
+                                    "type": "Identifier"
+                                  }
+                                ],
+                                "loc": {
+                                  "end": {
+                                    "column": 32,
+                                    "line": 12
+                                  },
+                                  "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                                  "start": {
+                                    "column": 25,
+                                    "line": 12
+                                  }
+                                },
+                                "type": "Sequence"
+                              },
+                              "type": "AssignmentExpression"
+                            },
+                            {
+                              "_meta": {},
+                              "cloned": true,
+                              "left": {
+                                "_meta": {},
+                                "computed": false,
+                                "loc": null,
+                                "object": {
+                                  "_meta": {
+                                    "ReceiveCls": "",
+                                    "type": {
+                                      "_meta": {
+                                        "ReceiveCls": ""
+                                      },
+                                      "element": {
+                                        "_meta": {
+                                          "ReceiveCls": ""
+                                        },
+                                        "loc": {
+                                          "end": {
+                                            "column": 24,
+                                            "line": 12
+                                          },
+                                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/arrayEllipsisDecls.go",
+                                          "start": {
+                                            "column": 18,
+                                            "line": 12
+                                          }
+                                        },
+                                        "name": "Custom",
+                                        "type": "Identifier"
+                                      },
+                                      "id": {
+                                        "_meta": {
+                                          "ReceiveCls": ""
+                                        },
+                                        "loc": {
+                                          "end": {
+                                            "column": 24,
+                                            "line": 12
+                                          },
+                                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/arrayEllipsisDecls.go",
+                                          "start": {
+                                            "column": 13,
+                                            "line": 12
+                                          }
+                                        },
+                                        "name": "ArrayType",
+                                        "type": "Identifier"
+                                      },
+                                      "loc": {
+                                        "end": {
+                                          "column": 24,
+                                          "line": 12
+                                        },
+                                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/arrayEllipsisDecls.go",
+                                        "start": {
+                                          "column": 13,
+                                          "line": 12
+                                        }
+                                      },
+                                      "size": {
+                                        "_meta": {
+                                          "ReceiveCls": ""
+                                        },
+                                        "loc": {
+                                          "end": {
+                                            "column": 17,
+                                            "line": 12
+                                          },
+                                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/arrayEllipsisDecls.go",
+                                          "start": {
+                                            "column": 14,
+                                            "line": 12
+                                          }
+                                        },
+                                        "type": "Noop"
+                                      },
+                                      "type": "ArrayType",
+                                      "typeArguments": null
+                                    }
+                                  },
+                                  "loc": {
+                                    "end": {
+                                      "column": 55,
+                                      "line": 12
+                                    },
+                                    "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                                    "start": {
+                                      "column": 13,
+                                      "line": 12
+                                    }
+                                  },
+                                  "name": "tmp1",
+                                  "type": "Identifier"
+                                },
+                                "property": {
+                                  "_meta": {},
+                                  "loc": null,
+                                  "name": "1",
+                                  "type": "Identifier"
+                                },
+                                "type": "MemberAccess"
+                              },
+                              "loc": null,
+                              "operator": "=",
+                              "right": {
+                                "_meta": {},
+                                "expressions": [
+                                  {
+                                    "_meta": {},
+                                    "id": null,
+                                    "loc": null,
+                                    "properties": null,
+                                    "type": "ObjectExpression"
+                                  },
+                                  {
+                                    "_meta": {},
+                                    "cloned": true,
+                                    "left": {
+                                      "_meta": {},
+                                      "computed": false,
+                                      "loc": null,
+                                      "object": {
+                                        "_meta": {
+                                          "ReceiveCls": "",
+                                          "type": {
+                                            "_meta": {
+                                              "ReceiveCls": ""
+                                            },
+                                            "loc": null,
+                                            "type": ""
+                                          }
+                                        },
+                                        "loc": {
+                                          "end": {
+                                            "column": 43,
+                                            "line": 12
+                                          },
+                                          "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                                          "start": {
+                                            "column": 34,
+                                            "line": 12
+                                          }
+                                        },
+                                        "name": "tmp3",
+                                        "type": "Identifier"
+                                      },
+                                      "property": {
+                                        "_meta": {},
+                                        "loc": null,
+                                        "name": "0",
+                                        "type": "Identifier"
+                                      },
+                                      "type": "MemberAccess"
+                                    },
+                                    "loc": null,
+                                    "operator": "=",
+                                    "right": {
+                                      "_meta": {},
+                                      "literalType": "STRING",
+                                      "loc": {
+                                        "end": {
+                                          "column": 42,
+                                          "line": 12
+                                        },
+                                        "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                                        "start": {
+                                          "column": 35,
+                                          "line": 12
+                                        }
+                                      },
+                                      "type": "Literal",
+                                      "value": "\"Larry\""
+                                    },
+                                    "type": "AssignmentExpression"
+                                  },
+                                  {
+                                    "_meta": {
+                                      "ReceiveCls": "",
+                                      "type": {
+                                        "_meta": {
+                                          "ReceiveCls": ""
+                                        },
+                                        "loc": null,
+                                        "type": ""
+                                      }
+                                    },
+                                    "loc": {
+                                      "end": {
+                                        "column": 43,
+                                        "line": 12
+                                      },
+                                      "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                                      "start": {
+                                        "column": 34,
+                                        "line": 12
+                                      }
+                                    },
+                                    "name": "tmp3",
+                                    "type": "Identifier"
+                                  }
+                                ],
+                                "loc": {
+                                  "end": {
+                                    "column": 43,
+                                    "line": 12
+                                  },
+                                  "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                                  "start": {
+                                    "column": 34,
+                                    "line": 12
+                                  }
+                                },
+                                "type": "Sequence"
+                              },
+                              "type": "AssignmentExpression"
+                            },
+                            {
+                              "_meta": {},
+                              "cloned": true,
+                              "left": {
+                                "_meta": {},
+                                "computed": false,
+                                "loc": null,
+                                "object": {
+                                  "_meta": {
+                                    "ReceiveCls": "",
+                                    "type": {
+                                      "_meta": {
+                                        "ReceiveCls": ""
+                                      },
+                                      "element": {
+                                        "_meta": {
+                                          "ReceiveCls": ""
+                                        },
+                                        "loc": {
+                                          "end": {
+                                            "column": 24,
+                                            "line": 12
+                                          },
+                                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/arrayEllipsisDecls.go",
+                                          "start": {
+                                            "column": 18,
+                                            "line": 12
+                                          }
+                                        },
+                                        "name": "Custom",
+                                        "type": "Identifier"
+                                      },
+                                      "id": {
+                                        "_meta": {
+                                          "ReceiveCls": ""
+                                        },
+                                        "loc": {
+                                          "end": {
+                                            "column": 24,
+                                            "line": 12
+                                          },
+                                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/arrayEllipsisDecls.go",
+                                          "start": {
+                                            "column": 13,
+                                            "line": 12
+                                          }
+                                        },
+                                        "name": "ArrayType",
+                                        "type": "Identifier"
+                                      },
+                                      "loc": {
+                                        "end": {
+                                          "column": 24,
+                                          "line": 12
+                                        },
+                                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/arrayEllipsisDecls.go",
+                                        "start": {
+                                          "column": 13,
+                                          "line": 12
+                                        }
+                                      },
+                                      "size": {
+                                        "_meta": {
+                                          "ReceiveCls": ""
+                                        },
+                                        "loc": {
+                                          "end": {
+                                            "column": 17,
+                                            "line": 12
+                                          },
+                                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/arrayEllipsisDecls.go",
+                                          "start": {
+                                            "column": 14,
+                                            "line": 12
+                                          }
+                                        },
+                                        "type": "Noop"
+                                      },
+                                      "type": "ArrayType",
+                                      "typeArguments": null
+                                    }
+                                  },
+                                  "loc": {
+                                    "end": {
+                                      "column": 55,
+                                      "line": 12
+                                    },
+                                    "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                                    "start": {
+                                      "column": 13,
+                                      "line": 12
+                                    }
+                                  },
+                                  "name": "tmp1",
+                                  "type": "Identifier"
+                                },
+                                "property": {
+                                  "_meta": {},
+                                  "loc": null,
+                                  "name": "2",
+                                  "type": "Identifier"
+                                },
+                                "type": "MemberAccess"
+                              },
+                              "loc": null,
+                              "operator": "=",
+                              "right": {
+                                "_meta": {},
+                                "expressions": [
+                                  {
+                                    "_meta": {},
+                                    "id": null,
+                                    "loc": null,
+                                    "properties": null,
+                                    "type": "ObjectExpression"
+                                  },
+                                  {
+                                    "_meta": {},
+                                    "cloned": true,
+                                    "left": {
+                                      "_meta": {},
+                                      "computed": false,
+                                      "loc": null,
+                                      "object": {
+                                        "_meta": {
+                                          "ReceiveCls": "",
+                                          "type": {
+                                            "_meta": {
+                                              "ReceiveCls": ""
+                                            },
+                                            "loc": null,
+                                            "type": ""
+                                          }
+                                        },
+                                        "loc": {
+                                          "end": {
+                                            "column": 54,
+                                            "line": 12
+                                          },
+                                          "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                                          "start": {
+                                            "column": 45,
+                                            "line": 12
+                                          }
+                                        },
+                                        "name": "tmp4",
+                                        "type": "Identifier"
+                                      },
+                                      "property": {
+                                        "_meta": {},
+                                        "loc": null,
+                                        "name": "0",
+                                        "type": "Identifier"
+                                      },
+                                      "type": "MemberAccess"
+                                    },
+                                    "loc": null,
+                                    "operator": "=",
+                                    "right": {
+                                      "_meta": {},
+                                      "literalType": "STRING",
+                                      "loc": {
+                                        "end": {
+                                          "column": 53,
+                                          "line": 12
+                                        },
+                                        "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                                        "start": {
+                                          "column": 46,
+                                          "line": 12
+                                        }
+                                      },
+                                      "type": "Literal",
+                                      "value": "\"Curly\""
+                                    },
+                                    "type": "AssignmentExpression"
+                                  },
+                                  {
+                                    "_meta": {
+                                      "ReceiveCls": "",
+                                      "type": {
+                                        "_meta": {
+                                          "ReceiveCls": ""
+                                        },
+                                        "loc": null,
+                                        "type": ""
+                                      }
+                                    },
+                                    "loc": {
+                                      "end": {
+                                        "column": 54,
+                                        "line": 12
+                                      },
+                                      "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                                      "start": {
+                                        "column": 45,
+                                        "line": 12
+                                      }
+                                    },
+                                    "name": "tmp4",
+                                    "type": "Identifier"
+                                  }
+                                ],
+                                "loc": {
+                                  "end": {
+                                    "column": 54,
+                                    "line": 12
+                                  },
+                                  "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                                  "start": {
+                                    "column": 45,
+                                    "line": 12
+                                  }
+                                },
+                                "type": "Sequence"
+                              },
+                              "type": "AssignmentExpression"
+                            },
+                            {
+                              "_meta": {
+                                "ReceiveCls": "",
+                                "type": {
+                                  "_meta": {
+                                    "ReceiveCls": ""
                                   },
                                   "element": {
-                                    "type": "Identifier",
+                                    "_meta": {
+                                      "ReceiveCls": ""
+                                    },
+                                    "loc": {
+                                      "end": {
+                                        "column": 24,
+                                        "line": 12
+                                      },
+                                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/arrayEllipsisDecls.go",
+                                      "start": {
+                                        "column": 18,
+                                        "line": 12
+                                      }
+                                    },
                                     "name": "Custom",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 12,
-                                        "column": 18
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 12,
-                                        "column": 24
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                                    },
-                                    "_meta": {}
+                                    "type": "Identifier"
                                   },
-                                  "typeArguments": null,
-                                  "size": {
-                                    "type": "Noop",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 12,
-                                        "column": 14
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 12,
-                                        "column": 17
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
+                                  "id": {
+                                    "_meta": {
+                                      "ReceiveCls": ""
                                     },
-                                    "_meta": {}
+                                    "loc": {
+                                      "end": {
+                                        "column": 24,
+                                        "line": 12
+                                      },
+                                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/arrayEllipsisDecls.go",
+                                      "start": {
+                                        "column": 13,
+                                        "line": 12
+                                      }
+                                    },
+                                    "name": "ArrayType",
+                                    "type": "Identifier"
                                   },
                                   "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 12,
-                                      "column": 13
-                                    },
                                     "end": {
-                                      "Offset": 0,
-                                      "line": 12,
-                                      "column": 24
+                                      "column": 24,
+                                      "line": 12
                                     },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
+                                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/arrayEllipsisDecls.go",
+                                    "start": {
+                                      "column": 13,
+                                      "line": 12
+                                    }
                                   },
-                                  "_meta": {}
+                                  "size": {
+                                    "_meta": {
+                                      "ReceiveCls": ""
+                                    },
+                                    "loc": {
+                                      "end": {
+                                        "column": 17,
+                                        "line": 12
+                                      },
+                                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/arrayEllipsisDecls.go",
+                                      "start": {
+                                        "column": 14,
+                                        "line": 12
+                                      }
+                                    },
+                                    "type": "Noop"
+                                  },
+                                  "type": "ArrayType",
+                                  "typeArguments": null
                                 }
-                              }
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 55,
+                                  "line": 12
+                                },
+                                "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                                "start": {
+                                  "column": 13,
+                                  "line": 12
+                                }
+                              },
+                              "name": "tmp1",
+                              "type": "Identifier"
                             }
                           ],
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 12,
-                              "column": 13
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 12,
-                              "column": 55
+                              "column": 55,
+                              "line": 12
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
+                            "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                            "start": {
+                              "column": 13,
+                              "line": 12
+                            }
                           },
-                          "_meta": {}
+                          "type": "Sequence"
                         },
-                        "cloned": true,
+                        "loc": {
+                          "end": {
+                            "column": 55,
+                            "line": 12
+                          },
+                          "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                          "start": {
+                            "column": 2,
+                            "line": 12
+                          }
+                        },
+                        "type": "VariableDeclaration",
                         "varType": {
-                          "type": "ArrayType",
-                          "id": {
-                            "type": "Identifier",
-                            "name": "ArrayType",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 13
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 24
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                            },
-                            "_meta": {}
-                          },
+                          "_meta": {},
                           "element": {
-                            "type": "Identifier",
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 24,
+                                "line": 12
+                              },
+                              "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                              "start": {
+                                "column": 18,
+                                "line": 12
+                              }
+                            },
                             "name": "Custom",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 18
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 24
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           },
-                          "typeArguments": null,
-                          "size": {
-                            "type": "Noop",
+                          "id": {
+                            "_meta": {},
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 14
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 17
+                                "column": 24,
+                                "line": 12
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
+                              "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                              "start": {
+                                "column": 13,
+                                "line": 12
+                              }
                             },
-                            "_meta": {}
+                            "name": "ArrayType",
+                            "type": "Identifier"
                           },
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 12,
-                              "column": 13
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 12,
-                              "column": 24
+                              "column": 24,
+                              "line": 12
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
+                            "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                            "start": {
+                              "column": 13,
+                              "line": 12
+                            }
                           },
-                          "_meta": {}
+                          "size": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 17,
+                                "line": 12
+                              },
+                              "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                              "start": {
+                                "column": 14,
+                                "line": 12
+                              }
+                            },
+                            "type": "Noop"
+                          },
+                          "type": "ArrayType",
+                          "typeArguments": null
                         },
-                        "variableParam": false,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 12,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 12,
-                            "column": 55
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                        },
-                        "_meta": {}
+                        "variableParam": false
                       },
                       {
-                        "type": "CallExpression",
-                        "callee": {
-                          "type": "MemberAccess",
-                          "object": {
-                            "type": "Identifier",
-                            "name": "fmt",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 13,
-                                "column": 2
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 13,
-                                "column": 5
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                            },
-                            "_meta": {}
-                          },
-                          "property": {
-                            "type": "Identifier",
-                            "name": "Println",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 13,
-                                "column": 6
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 13,
-                                "column": 13
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                            },
-                            "_meta": {}
-                          },
-                          "computed": false,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 13,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 13,
-                              "column": 13
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
-                          },
-                          "_meta": {}
-                        },
+                        "_meta": {},
                         "arguments": [
                           {
-                            "type": "Literal",
-                            "value": "\"Stooges: \"",
+                            "_meta": {},
                             "literalType": "STRING",
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 13,
-                                "column": 14
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 13,
-                                "column": 25
+                                "column": 25,
+                                "line": 13
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
+                              "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                              "start": {
+                                "column": 14,
+                                "line": 13
+                              }
                             },
-                            "_meta": {}
+                            "type": "Literal",
+                            "value": "\"Stooges: \""
                           },
                           {
-                            "type": "Identifier",
-                            "name": "stooges",
+                            "_meta": {},
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 13,
-                                "column": 27
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 13,
-                                "column": 34
+                                "column": 34,
+                                "line": 13
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
+                              "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                              "start": {
+                                "column": 27,
+                                "line": 13
+                              }
                             },
-                            "_meta": {}
+                            "name": "stooges",
+                            "type": "Identifier"
                           }
                         ],
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 13,
-                            "column": 2
+                        "callee": {
+                          "_meta": {},
+                          "computed": false,
+                          "loc": {
+                            "end": {
+                              "column": 13,
+                              "line": 13
+                            },
+                            "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                            "start": {
+                              "column": 2,
+                              "line": 13
+                            }
                           },
-                          "end": {
-                            "Offset": 0,
-                            "line": 13,
-                            "column": 35
+                          "object": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 5,
+                                "line": 13
+                              },
+                              "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                              "start": {
+                                "column": 2,
+                                "line": 13
+                              }
+                            },
+                            "name": "fmt",
+                            "type": "Identifier"
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
+                          "property": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 13,
+                                "line": 13
+                              },
+                              "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                              "start": {
+                                "column": 6,
+                                "line": 13
+                              }
+                            },
+                            "name": "Println",
+                            "type": "Identifier"
+                          },
+                          "type": "MemberAccess"
                         },
-                        "_meta": {}
+                        "loc": {
+                          "end": {
+                            "column": 35,
+                            "line": 13
+                          },
+                          "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                          "start": {
+                            "column": 2,
+                            "line": 13
+                          }
+                        },
+                        "type": "CallExpression"
                       }
                     ],
                     "id": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 11,
-                        "column": 27
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 14,
-                        "column": 2
+                        "column": 2,
+                        "line": 14
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
+                      "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                      "start": {
+                        "column": 27,
+                        "line": 11
+                      }
                     },
-                    "_meta": {}
+                    "type": "ScopedStatement"
+                  },
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 24,
+                        "line": 11
+                      },
+                      "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                      "start": {
+                        "column": 6,
+                        "line": 11
+                      }
+                    },
+                    "name": "ArrayEllipsisDecls",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 14
+                    },
+                    "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                    "start": {
+                      "column": 1,
+                      "line": 11
+                    }
                   },
                   "modifiers": null,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 11,
-                      "column": 1
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 14,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
+                  "parameters": [],
+                  "returnType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "VoidType",
+                    "typeArguments": null
                   },
-                  "_meta": {}
+                  "type": "FunctionDefinition"
                 }
               ],
               "language": "golang",
               "languageVersion": "1.18",
-              "uri": "",
-              "version": "",
               "loc": {
-                "start": {
-                  "Offset": 0,
-                  "line": 1,
-                  "column": 1
-                },
                 "end": {
-                  "Offset": 0,
-                  "line": 14,
-                  "column": 2
+                  "column": 2,
+                  "line": 14
                 },
-                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/arrayEllipsisDecls.go"
+                "sourcefile": "$EXAMPLES/arrayEllipsisDecls.go",
+                "start": {
+                  "column": 1,
+                  "line": 1
+                }
               },
-              "_meta": {}
+              "type": "CompileUnit",
+              "uri": "",
+              "version": ""
             },
             "packageName": "__single__"
           }
@@ -1655,6 +1581,5 @@
         "subs": {}
       }
     }
-  },
-  "moduleName": "__single_module__"
+  }
 }

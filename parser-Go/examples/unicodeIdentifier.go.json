@@ -1,4 +1,5 @@
 {
+  "moduleName": "__single_module__",
   "packageInfo": {
     "PathName": "",
     "files": {},
@@ -6,406 +7,382 @@
       "/": {
         "PathName": "",
         "files": {
-          "/Users/ariel/code/uast/uast4go/examples/unicodeIdentifier.go": {
+          "$EXAMPLES/unicodeIdentifier.go": {
             "node": {
-              "type": "CompileUnit",
+              "_meta": {},
               "body": [
                 {
-                  "type": "PackageDeclaration",
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 9
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 17
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/unicodeIdentifier.go"
-                  },
                   "_meta": {},
-                  "packageName": {
-                    "type": "Identifier",
-                    "name": "examples",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 9
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 17
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/unicodeIdentifier.go"
+                  "loc": {
+                    "end": {
+                      "column": 17,
+                      "line": 1
                     },
-                    "_meta": {}
-                  }
+                    "sourcefile": "$EXAMPLES/unicodeIdentifier.go",
+                    "start": {
+                      "column": 9,
+                      "line": 1
+                    }
+                  },
+                  "packageName": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 17,
+                        "line": 1
+                      },
+                      "sourcefile": "$EXAMPLES/unicodeIdentifier.go",
+                      "start": {
+                        "column": 9,
+                        "line": 1
+                      }
+                    },
+                    "name": "examples",
+                    "type": "Identifier"
+                  },
+                  "type": "PackageDeclaration"
                 },
                 {
-                  "type": "FunctionDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "main",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 10
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/unicodeIdentifier.go"
-                    },
-                    "_meta": {}
-                  },
-                  "parameters": [],
-                  "returnType": {
-                    "type": "VoidType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "body": {
-                    "type": "ScopedStatement",
+                    "_meta": {},
                     "body": [
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": true,
                         "id": {
-                          "type": "Identifier",
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "id": null,
+                              "loc": null,
+                              "type": "DynamicType",
+                              "typeArguments": null
+                            }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 20,
+                              "line": 4
+                            },
+                            "sourcefile": "$EXAMPLES/unicodeIdentifier.go",
+                            "start": {
+                              "column": 2,
+                              "line": 4
+                            }
+                          },
                           "name": "我们记得可橙",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 4,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 4,
-                              "column": 20
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/unicodeIdentifier.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "DynamicType",
-                              "id": null,
-                              "typeArguments": null,
-                              "loc": null,
-                              "_meta": {}
-                            }
-                          }
+                          "type": "Identifier"
                         },
                         "init": {
-                          "type": "Identifier",
-                          "name": "true",
+                          "_meta": {},
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 4,
-                              "column": 24
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 4,
-                              "column": 28
+                              "column": 28,
+                              "line": 4
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/unicodeIdentifier.go"
+                            "sourcefile": "$EXAMPLES/unicodeIdentifier.go",
+                            "start": {
+                              "column": 24,
+                              "line": 4
+                            }
                           },
-                          "_meta": {}
+                          "name": "true",
+                          "type": "Identifier"
                         },
-                        "cloned": true,
-                        "varType": {
-                          "type": "DynamicType",
-                          "id": null,
-                          "typeArguments": null,
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "variableParam": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 4,
-                            "column": 2
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 4,
-                            "column": 28
+                            "column": 28,
+                            "line": 4
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/unicodeIdentifier.go"
+                          "sourcefile": "$EXAMPLES/unicodeIdentifier.go",
+                          "start": {
+                            "column": 2,
+                            "line": 4
+                          }
                         },
-                        "_meta": {}
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "id": null,
+                          "loc": null,
+                          "type": "DynamicType",
+                          "typeArguments": null
+                        },
+                        "variableParam": false
                       },
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": true,
                         "id": {
-                          "type": "Identifier",
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "id": null,
+                              "loc": null,
+                              "type": "DynamicType",
+                              "typeArguments": null
+                            }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 20,
+                              "line": 5
+                            },
+                            "sourcefile": "$EXAMPLES/unicodeIdentifier.go",
+                            "start": {
+                              "column": 2,
+                              "line": 5
+                            }
+                          },
                           "name": "我们记得她们",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 5,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 5,
-                              "column": 20
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/unicodeIdentifier.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "DynamicType",
-                              "id": null,
-                              "typeArguments": null,
-                              "loc": null,
-                              "_meta": {}
-                            }
-                          }
+                          "type": "Identifier"
                         },
                         "init": {
-                          "type": "Identifier",
-                          "name": "true",
+                          "_meta": {},
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 5,
-                              "column": 24
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 5,
-                              "column": 28
+                              "column": 28,
+                              "line": 5
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/unicodeIdentifier.go"
+                            "sourcefile": "$EXAMPLES/unicodeIdentifier.go",
+                            "start": {
+                              "column": 24,
+                              "line": 5
+                            }
                           },
-                          "_meta": {}
+                          "name": "true",
+                          "type": "Identifier"
                         },
-                        "cloned": true,
-                        "varType": {
-                          "type": "DynamicType",
-                          "id": null,
-                          "typeArguments": null,
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "variableParam": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 5,
-                            "column": 2
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 5,
-                            "column": 28
+                            "column": 28,
+                            "line": 5
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/unicodeIdentifier.go"
+                          "sourcefile": "$EXAMPLES/unicodeIdentifier.go",
+                          "start": {
+                            "column": 2,
+                            "line": 5
+                          }
                         },
-                        "_meta": {}
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "id": null,
+                          "loc": null,
+                          "type": "DynamicType",
+                          "typeArguments": null
+                        },
+                        "variableParam": false
                       },
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": true,
                         "id": {
-                          "type": "Identifier",
-                          "name": "他们管这叫矫正叫治疗",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 6,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 6,
-                              "column": 32
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/unicodeIdentifier.go"
-                          },
                           "_meta": {
+                            "ReceiveCls": "",
                             "type": {
-                              "type": "Identifier",
-                              "name": "string",
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
                               "loc": null,
-                              "_meta": {}
+                              "name": "string",
+                              "type": "Identifier"
                             }
-                          }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 32,
+                              "line": 6
+                            },
+                            "sourcefile": "$EXAMPLES/unicodeIdentifier.go",
+                            "start": {
+                              "column": 2,
+                              "line": 6
+                            }
+                          },
+                          "name": "他们管这叫矫正叫治疗",
+                          "type": "Identifier"
                         },
                         "init": {
-                          "type": "Literal",
-                          "value": "\"而我更愿意叫它有组织的屠杀\"",
+                          "_meta": {},
                           "literalType": "STRING",
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 6,
-                              "column": 36
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 6,
-                              "column": 77
+                              "column": 77,
+                              "line": 6
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/unicodeIdentifier.go"
-                          },
-                          "_meta": {}
-                        },
-                        "cloned": true,
-                        "varType": {
-                          "type": "Identifier",
-                          "name": "string",
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "variableParam": false,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 6,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 6,
-                            "column": 77
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/unicodeIdentifier.go"
-                        },
-                        "_meta": {}
-                      },
-                      {
-                        "type": "VariableDeclaration",
-                        "id": {
-                          "type": "Identifier",
-                          "name": "都2020年了还搞得像1820年",
-                          "loc": {
+                            "sourcefile": "$EXAMPLES/unicodeIdentifier.go",
                             "start": {
-                              "Offset": 0,
-                              "line": 7,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 7,
-                              "column": 34
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/unicodeIdentifier.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "Identifier",
-                              "name": "char",
-                              "loc": null,
-                              "_meta": {}
+                              "column": 36,
+                              "line": 6
                             }
+                          },
+                          "type": "Literal",
+                          "value": "\"而我更愿意叫它有组织的屠杀\""
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 77,
+                            "line": 6
+                          },
+                          "sourcefile": "$EXAMPLES/unicodeIdentifier.go",
+                          "start": {
+                            "column": 2,
+                            "line": 6
                           }
                         },
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "loc": null,
+                          "name": "string",
+                          "type": "Identifier"
+                        },
+                        "variableParam": false
+                      },
+                      {
+                        "_meta": {},
+                        "cloned": true,
+                        "id": {
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "loc": null,
+                              "name": "char",
+                              "type": "Identifier"
+                            }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 34,
+                              "line": 7
+                            },
+                            "sourcefile": "$EXAMPLES/unicodeIdentifier.go",
+                            "start": {
+                              "column": 2,
+                              "line": 7
+                            }
+                          },
+                          "name": "都2020年了还搞得像1820年",
+                          "type": "Identifier"
+                        },
                         "init": {
-                          "type": "Literal",
-                          "value": "'呸'",
+                          "_meta": {},
                           "literalType": "CHAR",
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 7,
-                              "column": 38
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 7,
-                              "column": 43
+                              "column": 43,
+                              "line": 7
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/unicodeIdentifier.go"
+                            "sourcefile": "$EXAMPLES/unicodeIdentifier.go",
+                            "start": {
+                              "column": 38,
+                              "line": 7
+                            }
                           },
-                          "_meta": {}
+                          "type": "Literal",
+                          "value": "'呸'"
                         },
-                        "cloned": true,
-                        "varType": {
-                          "type": "Identifier",
-                          "name": "char",
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "variableParam": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 7,
-                            "column": 2
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 7,
-                            "column": 43
+                            "column": 43,
+                            "line": 7
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/unicodeIdentifier.go"
+                          "sourcefile": "$EXAMPLES/unicodeIdentifier.go",
+                          "start": {
+                            "column": 2,
+                            "line": 7
+                          }
                         },
-                        "_meta": {}
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "loc": null,
+                          "name": "char",
+                          "type": "Identifier"
+                        },
+                        "variableParam": false
                       }
                     ],
                     "id": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 13
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 8,
-                        "column": 2
+                        "column": 2,
+                        "line": 8
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/unicodeIdentifier.go"
+                      "sourcefile": "$EXAMPLES/unicodeIdentifier.go",
+                      "start": {
+                        "column": 13,
+                        "line": 3
+                      }
                     },
-                    "_meta": {}
+                    "type": "ScopedStatement"
+                  },
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 10,
+                        "line": 3
+                      },
+                      "sourcefile": "$EXAMPLES/unicodeIdentifier.go",
+                      "start": {
+                        "column": 6,
+                        "line": 3
+                      }
+                    },
+                    "name": "main",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 8
+                    },
+                    "sourcefile": "$EXAMPLES/unicodeIdentifier.go",
+                    "start": {
+                      "column": 1,
+                      "line": 3
+                    }
                   },
                   "modifiers": null,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 3,
-                      "column": 1
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 8,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/unicodeIdentifier.go"
+                  "parameters": [],
+                  "returnType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "VoidType",
+                    "typeArguments": null
                   },
-                  "_meta": {}
+                  "type": "FunctionDefinition"
                 }
               ],
               "language": "golang",
               "languageVersion": "1.18",
-              "uri": "",
-              "version": "",
               "loc": {
-                "start": {
-                  "Offset": 0,
-                  "line": 1,
-                  "column": 1
-                },
                 "end": {
-                  "Offset": 0,
-                  "line": 8,
-                  "column": 2
+                  "column": 2,
+                  "line": 8
                 },
-                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/unicodeIdentifier.go"
+                "sourcefile": "$EXAMPLES/unicodeIdentifier.go",
+                "start": {
+                  "column": 1,
+                  "line": 1
+                }
               },
-              "_meta": {}
+              "type": "CompileUnit",
+              "uri": "",
+              "version": ""
             },
             "packageName": "__single__"
           }
@@ -413,6 +390,5 @@
         "subs": {}
       }
     }
-  },
-  "moduleName": "__single_module__"
+  }
 }

@@ -460,15 +460,16 @@ const visitor = (opts: any) => ({
         return UAST.scopedStatement(node.body.map((stmt) => visit(stmt, opts) as Statement));
     },
     ClassDeclaration(node: AST.ClassDeclaration): ParseResult<UAST.ClassDefinition> {
-
+        const supers = node.superClass ? [visit(node.superClass, opts) as Expression] : [];
         return UAST.classDefinition(visit(node.id, opts) as Identifier, node.body.body.map((n) => {
             return visit(n, opts) as UAST.Statement;
-        }), [visit(node.superClass, opts) as Expression]);
+        }), supers);
     },
     ClassExpression(node: AST.ClassExpression): ParseResult<UAST.ClassDefinition> {
+        const supers = node.superClass ? [visit(node.superClass, opts) as Expression] : [];
         return UAST.classDefinition(visit(node.id, opts) as Identifier, node.body.body.map((n) => {
             return visit(n, opts) as UAST.Statement;
-        }), [visit(node.superClass, opts) as Expression]);
+        }), supers);
     },
     MetaProperty(node: AST.MetaProperty): ParseResult<UAST.ObjectProperty> {
         return UAST.objectProperty(visit(node.meta, opts) as Identifier, visit(node.property, opts) as Identifier);

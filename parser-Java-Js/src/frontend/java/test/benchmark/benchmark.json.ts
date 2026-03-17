@@ -89,14 +89,11 @@ export default {
                 "type": "Identifier",
                 "name": "Person",
             },
-            "body": [
-                {
-                    "type": "ScopedStatement",
-                    "body": [],
-                    "id": null,
-                }
-            ],
+            "body": [],
             "supers": [],
+            "_meta": {
+                "isInterface": true
+            }
         },
         parse: parseClass,
     },
@@ -148,6 +145,10 @@ export default {
                             "id": null,
                         },
                         "modifiers": [],
+                        "_meta": {
+                            "isPublic": true,
+                            "modifiers": ["public"]
+                        }
                     },
                     {
                         "type": "FunctionDefinition",
@@ -534,7 +535,7 @@ export default {
                                 "body": [
                                     {
                                         "type": "Literal",
-                                        "value": "\"Jan\"",
+                                        "value": "Jan",
                                         "literalType": "string"
                                     }
                                 ],
@@ -559,7 +560,7 @@ export default {
                                         "body": [
                                             {
                                                 "type": "Literal",
-                                                "value": "\"Oth\"",
+                                                "value": "Oth",
                                                 "literalType": "string"
                                             }
                                         ],
@@ -636,7 +637,7 @@ export default {
                                             },
                                             "right": {
                                                 "type": "Literal",
-                                                "value": "\"Jan\"",
+                                                "value": "Jan",
                                                 "literalType": "string"
                                             }
                                         }
@@ -672,7 +673,7 @@ export default {
                                         "body": [
                                             {
                                                 "type": "Literal",
-                                                "value": "\"Jan\"",
+                                                "value": "Jan",
                                                 "literalType": "string"
                                             }
                                         ],
@@ -855,7 +856,8 @@ export default {
                             ],
                             "modifiers": [
                                 "public"
-                            ]
+                            ],
+                            "isPublic": true
                         }
                     },
                     "alias": {

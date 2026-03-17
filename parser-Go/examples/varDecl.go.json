@@ -1,4 +1,5 @@
 {
+  "moduleName": "__single_module__",
   "packageInfo": {
     "PathName": "",
     "files": {},
@@ -6,723 +7,668 @@
       "/": {
         "PathName": "",
         "files": {
-          "/Users/ariel/code/uast/uast4go/examples/varDecl.go": {
+          "$EXAMPLES/varDecl.go": {
             "node": {
-              "type": "CompileUnit",
+              "_meta": {},
               "body": [
                 {
-                  "type": "PackageDeclaration",
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 9
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 17
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
-                  },
                   "_meta": {},
-                  "packageName": {
-                    "type": "Identifier",
-                    "name": "examples",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 9
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 17
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
+                  "loc": {
+                    "end": {
+                      "column": 17,
+                      "line": 1
                     },
-                    "_meta": {}
-                  }
-                },
-                {
-                  "type": "VariableDeclaration",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "entries",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 5
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 12
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
-                    },
-                    "_meta": {
-                      "type": {
-                        "type": "MapType",
-                        "id": {
-                          "type": "Identifier",
-                          "name": "MapType",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 3,
-                              "column": 13
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 3,
-                              "column": 27
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
-                          },
-                          "_meta": {}
-                        },
-                        "keyType": {
-                          "type": "Identifier",
-                          "name": "string",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 3,
-                              "column": 17
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 3,
-                              "column": 23
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
-                          },
-                          "_meta": {}
-                        },
-                        "valueType": {
-                          "type": "Identifier",
-                          "name": "int",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 3,
-                              "column": 24
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 3,
-                              "column": 27
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
-                          },
-                          "_meta": {}
-                        },
-                        "typeArguments": null,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 3,
-                            "column": 13
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 3,
-                            "column": 27
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
-                        },
-                        "_meta": {}
-                      }
+                    "sourcefile": "$EXAMPLES/varDecl.go",
+                    "start": {
+                      "column": 9,
+                      "line": 1
                     }
                   },
-                  "init": null,
-                  "cloned": false,
-                  "varType": {
-                    "type": "MapType",
-                    "id": {
-                      "type": "Identifier",
-                      "name": "MapType",
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 3,
-                          "column": 13
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 3,
-                          "column": 27
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
-                      },
-                      "_meta": {}
-                    },
-                    "keyType": {
-                      "type": "Identifier",
-                      "name": "string",
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 3,
-                          "column": 17
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 3,
-                          "column": 23
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
-                      },
-                      "_meta": {}
-                    },
-                    "valueType": {
-                      "type": "Identifier",
-                      "name": "int",
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 3,
-                          "column": 24
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 3,
-                          "column": 27
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
-                      },
-                      "_meta": {}
-                    },
-                    "typeArguments": null,
+                  "packageName": {
+                    "_meta": {},
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 13
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 27
+                        "column": 17,
+                        "line": 1
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
+                      "sourcefile": "$EXAMPLES/varDecl.go",
+                      "start": {
+                        "column": 9,
+                        "line": 1
+                      }
                     },
-                    "_meta": {}
+                    "name": "examples",
+                    "type": "Identifier"
                   },
-                  "variableParam": false,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 3,
-                      "column": 5
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 3,
-                      "column": 27
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
-                  },
-                  "_meta": {}
+                  "type": "PackageDeclaration"
                 },
                 {
-                  "type": "FunctionDefinition",
+                  "_meta": {},
+                  "cloned": false,
                   "id": {
-                    "type": "Identifier",
-                    "name": "multiRet",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 14
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
-                    },
-                    "_meta": {}
-                  },
-                  "parameters": [],
-                  "returnType": {
-                    "type": "TupleType",
-                    "id": null,
-                    "elements": [
-                      {
-                        "type": "Identifier",
-                        "name": "int",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 5,
-                            "column": 18
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 5,
-                            "column": 21
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
+                    "_meta": {
+                      "ReceiveCls": "",
+                      "type": {
+                        "_meta": {
+                          "ReceiveCls": ""
                         },
-                        "_meta": {}
-                      },
-                      {
-                        "type": "Identifier",
-                        "name": "int",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 5,
-                            "column": 23
+                        "id": {
+                          "_meta": {
+                            "ReceiveCls": ""
                           },
-                          "end": {
-                            "Offset": 0,
-                            "line": 5,
-                            "column": 26
+                          "loc": {
+                            "end": {
+                              "column": 27,
+                              "line": 3
+                            },
+                            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/varDecl.go",
+                            "start": {
+                              "column": 13,
+                              "line": 3
+                            }
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
+                          "name": "MapType",
+                          "type": "Identifier"
                         },
-                        "_meta": {}
+                        "keyType": {
+                          "_meta": {
+                            "ReceiveCls": ""
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 23,
+                              "line": 3
+                            },
+                            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/varDecl.go",
+                            "start": {
+                              "column": 17,
+                              "line": 3
+                            }
+                          },
+                          "name": "string",
+                          "type": "Identifier"
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 27,
+                            "line": 3
+                          },
+                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/varDecl.go",
+                          "start": {
+                            "column": 13,
+                            "line": 3
+                          }
+                        },
+                        "type": "MapType",
+                        "typeArguments": null,
+                        "valueType": {
+                          "_meta": {
+                            "ReceiveCls": ""
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 27,
+                              "line": 3
+                            },
+                            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/varDecl.go",
+                            "start": {
+                              "column": 24,
+                              "line": 3
+                            }
+                          },
+                          "name": "int",
+                          "type": "Identifier"
+                        }
                       }
-                    ],
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
+                    },
+                    "loc": {
+                      "end": {
+                        "column": 12,
+                        "line": 3
+                      },
+                      "sourcefile": "$EXAMPLES/varDecl.go",
+                      "start": {
+                        "column": 5,
+                        "line": 3
+                      }
+                    },
+                    "name": "entries",
+                    "type": "Identifier"
                   },
+                  "init": null,
+                  "loc": {
+                    "end": {
+                      "column": 27,
+                      "line": 3
+                    },
+                    "sourcefile": "$EXAMPLES/varDecl.go",
+                    "start": {
+                      "column": 5,
+                      "line": 3
+                    }
+                  },
+                  "type": "VariableDeclaration",
+                  "varType": {
+                    "_meta": {},
+                    "id": {
+                      "_meta": {},
+                      "loc": {
+                        "end": {
+                          "column": 27,
+                          "line": 3
+                        },
+                        "sourcefile": "$EXAMPLES/varDecl.go",
+                        "start": {
+                          "column": 13,
+                          "line": 3
+                        }
+                      },
+                      "name": "MapType",
+                      "type": "Identifier"
+                    },
+                    "keyType": {
+                      "_meta": {},
+                      "loc": {
+                        "end": {
+                          "column": 23,
+                          "line": 3
+                        },
+                        "sourcefile": "$EXAMPLES/varDecl.go",
+                        "start": {
+                          "column": 17,
+                          "line": 3
+                        }
+                      },
+                      "name": "string",
+                      "type": "Identifier"
+                    },
+                    "loc": {
+                      "end": {
+                        "column": 27,
+                        "line": 3
+                      },
+                      "sourcefile": "$EXAMPLES/varDecl.go",
+                      "start": {
+                        "column": 13,
+                        "line": 3
+                      }
+                    },
+                    "type": "MapType",
+                    "typeArguments": null,
+                    "valueType": {
+                      "_meta": {},
+                      "loc": {
+                        "end": {
+                          "column": 27,
+                          "line": 3
+                        },
+                        "sourcefile": "$EXAMPLES/varDecl.go",
+                        "start": {
+                          "column": 24,
+                          "line": 3
+                        }
+                      },
+                      "name": "int",
+                      "type": "Identifier"
+                    }
+                  },
+                  "variableParam": false
+                },
+                {
+                  "_meta": {},
                   "body": {
-                    "type": "ScopedStatement",
+                    "_meta": {},
                     "body": [
                       {
-                        "type": "ReturnStatement",
+                        "_meta": {},
                         "argument": {
-                          "type": "TupleExpression",
+                          "_meta": {},
                           "elements": [
                             {
-                              "type": "Literal",
-                              "value": "1",
+                              "_meta": {},
                               "literalType": "INT",
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 6,
-                                  "column": 9
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 6,
-                                  "column": 10
+                                  "column": 10,
+                                  "line": 6
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
+                                "sourcefile": "$EXAMPLES/varDecl.go",
+                                "start": {
+                                  "column": 9,
+                                  "line": 6
+                                }
                               },
-                              "_meta": {}
+                              "type": "Literal",
+                              "value": "1"
                             },
                             {
-                              "type": "Literal",
-                              "value": "2",
+                              "_meta": {},
                               "literalType": "INT",
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 6,
-                                  "column": 12
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 6,
-                                  "column": 13
+                                  "column": 13,
+                                  "line": 6
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
+                                "sourcefile": "$EXAMPLES/varDecl.go",
+                                "start": {
+                                  "column": 12,
+                                  "line": 6
+                                }
                               },
-                              "_meta": {}
+                              "type": "Literal",
+                              "value": "2"
                             }
                           ],
-                          "modifiable": false,
                           "loc": null,
-                          "_meta": {}
+                          "modifiable": false,
+                          "type": "TupleExpression"
                         },
                         "isYield": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 6,
-                            "column": 2
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 6,
-                            "column": 13
+                            "column": 13,
+                            "line": 6
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
+                          "sourcefile": "$EXAMPLES/varDecl.go",
+                          "start": {
+                            "column": 2,
+                            "line": 6
+                          }
                         },
-                        "_meta": {}
+                        "type": "ReturnStatement"
                       }
                     ],
                     "id": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 28
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 7,
-                        "column": 2
+                        "column": 2,
+                        "line": 7
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
+                      "sourcefile": "$EXAMPLES/varDecl.go",
+                      "start": {
+                        "column": 28,
+                        "line": 5
+                      }
                     },
-                    "_meta": {}
+                    "type": "ScopedStatement"
+                  },
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 14,
+                        "line": 5
+                      },
+                      "sourcefile": "$EXAMPLES/varDecl.go",
+                      "start": {
+                        "column": 6,
+                        "line": 5
+                      }
+                    },
+                    "name": "multiRet",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 7
+                    },
+                    "sourcefile": "$EXAMPLES/varDecl.go",
+                    "start": {
+                      "column": 1,
+                      "line": 5
+                    }
                   },
                   "modifiers": null,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 5,
-                      "column": 1
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 7,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
-                  },
-                  "_meta": {}
-                },
-                {
-                  "type": "FunctionDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "VarDecls",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 9,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 9,
-                        "column": 14
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
-                    },
-                    "_meta": {}
-                  },
                   "parameters": [],
                   "returnType": {
-                    "type": "VoidType",
+                    "_meta": {},
+                    "elements": [
+                      {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 21,
+                            "line": 5
+                          },
+                          "sourcefile": "$EXAMPLES/varDecl.go",
+                          "start": {
+                            "column": 18,
+                            "line": 5
+                          }
+                        },
+                        "name": "int",
+                        "type": "Identifier"
+                      },
+                      {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 26,
+                            "line": 5
+                          },
+                          "sourcefile": "$EXAMPLES/varDecl.go",
+                          "start": {
+                            "column": 23,
+                            "line": 5
+                          }
+                        },
+                        "name": "int",
+                        "type": "Identifier"
+                      }
+                    ],
                     "id": null,
-                    "typeArguments": null,
                     "loc": null,
-                    "_meta": {}
+                    "type": "TupleType",
+                    "typeArguments": null
                   },
+                  "type": "FunctionDefinition"
+                },
+                {
+                  "_meta": {},
                   "body": {
-                    "type": "ScopedStatement",
+                    "_meta": {},
                     "body": [
                       {
-                        "type": "Sequence",
+                        "_meta": {},
                         "expressions": [
                           {
-                            "type": "VariableDeclaration",
+                            "_meta": {},
+                            "cloned": false,
                             "id": {
-                              "type": "Identifier",
-                              "name": "l",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 19,
-                                  "column": 6
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 19,
-                                  "column": 7
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
-                              },
                               "_meta": {
+                                "ReceiveCls": "",
                                 "type": {
-                                  "type": "DynamicType",
+                                  "_meta": {
+                                    "ReceiveCls": ""
+                                  },
                                   "id": null,
-                                  "typeArguments": null,
                                   "loc": null,
-                                  "_meta": {}
+                                  "type": "DynamicType",
+                                  "typeArguments": null
                                 }
-                              }
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 7,
+                                  "line": 19
+                                },
+                                "sourcefile": "$EXAMPLES/varDecl.go",
+                                "start": {
+                                  "column": 6,
+                                  "line": 19
+                                }
+                              },
+                              "name": "l",
+                              "type": "Identifier"
                             },
                             "init": {
-                              "type": "CallExpression",
-                              "callee": {
-                                "type": "Identifier",
-                                "name": "multiRet",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 19,
-                                    "column": 13
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 19,
-                                    "column": 21
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
-                                },
-                                "_meta": {}
-                              },
+                              "_meta": {},
                               "arguments": [],
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 19,
-                                  "column": 13
+                              "callee": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 21,
+                                    "line": 19
+                                  },
+                                  "sourcefile": "$EXAMPLES/varDecl.go",
+                                  "start": {
+                                    "column": 13,
+                                    "line": 19
+                                  }
                                 },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 19,
-                                  "column": 23
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
+                                "name": "multiRet",
+                                "type": "Identifier"
                               },
-                              "_meta": {}
+                              "loc": {
+                                "end": {
+                                  "column": 23,
+                                  "line": 19
+                                },
+                                "sourcefile": "$EXAMPLES/varDecl.go",
+                                "start": {
+                                  "column": 13,
+                                  "line": 19
+                                }
+                              },
+                              "type": "CallExpression"
                             },
-                            "cloned": false,
-                            "varType": {
-                              "type": "DynamicType",
-                              "id": null,
-                              "typeArguments": null,
-                              "loc": null,
-                              "_meta": {}
-                            },
-                            "variableParam": false,
                             "loc": null,
-                            "_meta": {}
+                            "type": "VariableDeclaration",
+                            "varType": {
+                              "_meta": {},
+                              "id": null,
+                              "loc": null,
+                              "type": "DynamicType",
+                              "typeArguments": null
+                            },
+                            "variableParam": false
                           },
                           {
-                            "type": "VariableDeclaration",
+                            "_meta": {},
+                            "cloned": false,
                             "id": {
-                              "type": "Identifier",
-                              "name": "m",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 19,
-                                  "column": 9
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 19,
-                                  "column": 10
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
-                              },
                               "_meta": {
+                                "ReceiveCls": "",
                                 "type": {
-                                  "type": "DynamicType",
+                                  "_meta": {
+                                    "ReceiveCls": ""
+                                  },
                                   "id": null,
-                                  "typeArguments": null,
                                   "loc": null,
-                                  "_meta": {}
+                                  "type": "DynamicType",
+                                  "typeArguments": null
                                 }
-                              }
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 10,
+                                  "line": 19
+                                },
+                                "sourcefile": "$EXAMPLES/varDecl.go",
+                                "start": {
+                                  "column": 9,
+                                  "line": 19
+                                }
+                              },
+                              "name": "m",
+                              "type": "Identifier"
                             },
                             "init": null,
-                            "cloned": false,
-                            "varType": {
-                              "type": "DynamicType",
-                              "id": null,
-                              "typeArguments": null,
-                              "loc": null,
-                              "_meta": {}
-                            },
-                            "variableParam": false,
                             "loc": null,
-                            "_meta": {}
+                            "type": "VariableDeclaration",
+                            "varType": {
+                              "_meta": {},
+                              "id": null,
+                              "loc": null,
+                              "type": "DynamicType",
+                              "typeArguments": null
+                            },
+                            "variableParam": false
                           }
                         ],
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 19,
-                            "column": 6
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 19,
-                            "column": 23
+                            "column": 23,
+                            "line": 19
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
+                          "sourcefile": "$EXAMPLES/varDecl.go",
+                          "start": {
+                            "column": 6,
+                            "line": 19
+                          }
                         },
-                        "_meta": {}
+                        "type": "Sequence"
                       },
                       {
-                        "type": "AssignmentExpression",
+                        "_meta": {},
+                        "cloned": true,
                         "left": {
-                          "type": "Identifier",
-                          "name": "_",
+                          "_meta": {},
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 20,
-                              "column": 2
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 20,
-                              "column": 3
+                              "column": 3,
+                              "line": 20
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
+                            "sourcefile": "$EXAMPLES/varDecl.go",
+                            "start": {
+                              "column": 2,
+                              "line": 20
+                            }
                           },
-                          "_meta": {}
+                          "name": "_",
+                          "type": "Identifier"
                         },
+                        "loc": {
+                          "end": {
+                            "column": 7,
+                            "line": 20
+                          },
+                          "sourcefile": "$EXAMPLES/varDecl.go",
+                          "start": {
+                            "column": 2,
+                            "line": 20
+                          }
+                        },
+                        "operator": "=",
                         "right": {
-                          "type": "Identifier",
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 7,
+                              "line": 20
+                            },
+                            "sourcefile": "$EXAMPLES/varDecl.go",
+                            "start": {
+                              "column": 6,
+                              "line": 20
+                            }
+                          },
                           "name": "l",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 20,
-                              "column": 6
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 20,
-                              "column": 7
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
-                          },
-                          "_meta": {}
+                          "type": "Identifier"
                         },
-                        "operator": "=",
-                        "cloned": true,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 20,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 20,
-                            "column": 7
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
-                        },
-                        "_meta": {}
+                        "type": "AssignmentExpression"
                       },
                       {
-                        "type": "AssignmentExpression",
+                        "_meta": {},
+                        "cloned": true,
                         "left": {
-                          "type": "Identifier",
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 3,
+                              "line": 21
+                            },
+                            "sourcefile": "$EXAMPLES/varDecl.go",
+                            "start": {
+                              "column": 2,
+                              "line": 21
+                            }
+                          },
                           "name": "_",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 21,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 21,
-                              "column": 3
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
-                          },
-                          "_meta": {}
+                          "type": "Identifier"
                         },
-                        "right": {
-                          "type": "Identifier",
-                          "name": "m",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 21,
-                              "column": 6
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 21,
-                              "column": 7
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
+                        "loc": {
+                          "end": {
+                            "column": 7,
+                            "line": 21
                           },
-                          "_meta": {}
+                          "sourcefile": "$EXAMPLES/varDecl.go",
+                          "start": {
+                            "column": 2,
+                            "line": 21
+                          }
                         },
                         "operator": "=",
-                        "cloned": true,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 21,
-                            "column": 2
+                        "right": {
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 7,
+                              "line": 21
+                            },
+                            "sourcefile": "$EXAMPLES/varDecl.go",
+                            "start": {
+                              "column": 6,
+                              "line": 21
+                            }
                           },
-                          "end": {
-                            "Offset": 0,
-                            "line": 21,
-                            "column": 7
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
+                          "name": "m",
+                          "type": "Identifier"
                         },
-                        "_meta": {}
+                        "type": "AssignmentExpression"
                       }
                     ],
                     "id": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 9,
-                        "column": 17
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 23,
-                        "column": 2
+                        "column": 2,
+                        "line": 23
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
+                      "sourcefile": "$EXAMPLES/varDecl.go",
+                      "start": {
+                        "column": 17,
+                        "line": 9
+                      }
                     },
-                    "_meta": {}
+                    "type": "ScopedStatement"
+                  },
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 14,
+                        "line": 9
+                      },
+                      "sourcefile": "$EXAMPLES/varDecl.go",
+                      "start": {
+                        "column": 6,
+                        "line": 9
+                      }
+                    },
+                    "name": "VarDecls",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 23
+                    },
+                    "sourcefile": "$EXAMPLES/varDecl.go",
+                    "start": {
+                      "column": 1,
+                      "line": 9
+                    }
                   },
                   "modifiers": null,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 9,
-                      "column": 1
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 23,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
+                  "parameters": [],
+                  "returnType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "VoidType",
+                    "typeArguments": null
                   },
-                  "_meta": {}
+                  "type": "FunctionDefinition"
                 }
               ],
               "language": "golang",
               "languageVersion": "1.18",
-              "uri": "",
-              "version": "",
               "loc": {
-                "start": {
-                  "Offset": 0,
-                  "line": 1,
-                  "column": 1
-                },
                 "end": {
-                  "Offset": 0,
-                  "line": 23,
-                  "column": 2
+                  "column": 2,
+                  "line": 23
                 },
-                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/varDecl.go"
+                "sourcefile": "$EXAMPLES/varDecl.go",
+                "start": {
+                  "column": 1,
+                  "line": 1
+                }
               },
-              "_meta": {}
+              "type": "CompileUnit",
+              "uri": "",
+              "version": ""
             },
             "packageName": "__single__"
           }
@@ -730,6 +676,5 @@
         "subs": {}
       }
     }
-  },
-  "moduleName": "__single_module__"
+  }
 }

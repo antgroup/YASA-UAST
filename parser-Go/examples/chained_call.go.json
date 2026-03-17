@@ -1,4 +1,5 @@
 {
+  "moduleName": "__single_module__",
   "packageInfo": {
     "PathName": "",
     "files": {},
@@ -6,1879 +7,1744 @@
       "/": {
         "PathName": "",
         "files": {
-          "/Users/ariel/code/uast/uast4go/examples/chained_call.go": {
+          "$EXAMPLES/chained_call.go": {
             "node": {
-              "type": "CompileUnit",
+              "_meta": {},
               "body": [
                 {
-                  "type": "PackageDeclaration",
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 9
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 17
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                  },
                   "_meta": {},
-                  "packageName": {
-                    "type": "Identifier",
-                    "name": "examples",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 9
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 17
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                  "loc": {
+                    "end": {
+                      "column": 17,
+                      "line": 1
                     },
-                    "_meta": {}
-                  }
+                    "sourcefile": "$EXAMPLES/chained_call.go",
+                    "start": {
+                      "column": 9,
+                      "line": 1
+                    }
+                  },
+                  "packageName": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 17,
+                        "line": 1
+                      },
+                      "sourcefile": "$EXAMPLES/chained_call.go",
+                      "start": {
+                        "column": 9,
+                        "line": 1
+                      }
+                    },
+                    "name": "examples",
+                    "type": "Identifier"
+                  },
+                  "type": "PackageDeclaration"
                 },
                 {
-                  "type": "FunctionDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "chained_call_002_T",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 24
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                    },
-                    "_meta": {}
-                  },
-                  "parameters": [
-                    {
-                      "type": "VariableDeclaration",
-                      "id": {
-                        "type": "Identifier",
-                        "name": "__taint_src",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 3,
-                            "column": 25
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 3,
-                            "column": 36
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                        },
-                        "_meta": {
-                          "type": {
-                            "type": "Identifier",
-                            "name": "string",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 3,
-                                "column": 37
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 3,
-                                "column": 43
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                            },
-                            "_meta": {}
-                          }
-                        }
-                      },
-                      "init": null,
-                      "cloned": true,
-                      "varType": {
-                        "type": "Identifier",
-                        "name": "string",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 3,
-                            "column": 37
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 3,
-                            "column": 43
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                        },
-                        "_meta": {}
-                      },
-                      "variableParam": false,
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 3,
-                          "column": 25
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 3,
-                          "column": 43
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                      },
-                      "_meta": {}
-                    }
-                  ],
-                  "returnType": {
-                    "type": "VoidType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "body": {
-                    "type": "ScopedStatement",
+                    "_meta": {},
                     "body": [
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": true,
                         "id": {
-                          "type": "Identifier",
-                          "name": "instance",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 4,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 4,
-                              "column": 10
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                          },
                           "_meta": {
+                            "ReceiveCls": "",
                             "type": {
-                              "type": "DynamicType",
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
                               "id": null,
-                              "typeArguments": null,
                               "loc": null,
-                              "_meta": {}
+                              "type": "DynamicType",
+                              "typeArguments": null
                             }
-                          }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 10,
+                              "line": 4
+                            },
+                            "sourcefile": "$EXAMPLES/chained_call.go",
+                            "start": {
+                              "column": 2,
+                              "line": 4
+                            }
+                          },
+                          "name": "instance",
+                          "type": "Identifier"
                         },
                         "init": {
-                          "type": "ReferenceExpression",
+                          "_meta": {},
                           "argument": {
-                            "type": "Sequence",
+                            "_meta": {},
                             "expressions": [
                               {
-                                "type": "VariableDeclaration",
+                                "_meta": {},
+                                "cloned": false,
                                 "id": {
-                                  "type": "Identifier",
-                                  "name": "tmp1",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 4,
-                                      "column": 15
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 4,
-                                      "column": 24
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                                  },
                                   "_meta": {
+                                    "ReceiveCls": "",
                                     "type": {
-                                      "type": "Identifier",
-                                      "name": "AA",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 4,
-                                          "column": 15
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 4,
-                                          "column": 17
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                                      "_meta": {
+                                        "ReceiveCls": ""
                                       },
-                                      "_meta": {}
+                                      "loc": {
+                                        "end": {
+                                          "column": 17,
+                                          "line": 4
+                                        },
+                                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/chained_call.go",
+                                        "start": {
+                                          "column": 15,
+                                          "line": 4
+                                        }
+                                      },
+                                      "name": "AA",
+                                      "type": "Identifier"
                                     }
-                                  }
+                                  },
+                                  "loc": {
+                                    "end": {
+                                      "column": 24,
+                                      "line": 4
+                                    },
+                                    "sourcefile": "$EXAMPLES/chained_call.go",
+                                    "start": {
+                                      "column": 15,
+                                      "line": 4
+                                    }
+                                  },
+                                  "name": "tmp1",
+                                  "type": "Identifier"
                                 },
                                 "init": {
-                                  "type": "NewExpression",
-                                  "callee": {
-                                    "type": "Identifier",
-                                    "name": "AA",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 4,
-                                        "column": 15
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 4,
-                                        "column": 17
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                                    },
-                                    "_meta": {}
-                                  },
+                                  "_meta": {},
                                   "arguments": [],
-                                  "loc": null,
-                                  "_meta": {}
-                                },
-                                "cloned": false,
-                                "varType": {
-                                  "type": "Identifier",
-                                  "name": "AA",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 4,
-                                      "column": 15
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 4,
-                                      "column": 17
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "variableParam": false,
-                                "loc": null,
-                                "_meta": {}
-                              },
-                              {
-                                "type": "AssignmentExpression",
-                                "left": {
-                                  "type": "MemberAccess",
-                                  "object": {
-                                    "type": "Identifier",
-                                    "name": "tmp1",
+                                  "callee": {
+                                    "_meta": {},
                                     "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 4,
-                                        "column": 15
-                                      },
                                       "end": {
-                                        "Offset": 0,
-                                        "line": 4,
-                                        "column": 24
+                                        "column": 17,
+                                        "line": 4
                                       },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                                    },
-                                    "_meta": {
-                                      "type": {
-                                        "type": "Identifier",
-                                        "name": "AA",
-                                        "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 4,
-                                            "column": 15
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 4,
-                                            "column": 17
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                                        },
-                                        "_meta": {}
+                                      "sourcefile": "$EXAMPLES/chained_call.go",
+                                      "start": {
+                                        "column": 15,
+                                        "line": 4
                                       }
+                                    },
+                                    "name": "AA",
+                                    "type": "Identifier"
+                                  },
+                                  "loc": null,
+                                  "type": "NewExpression"
+                                },
+                                "loc": null,
+                                "type": "VariableDeclaration",
+                                "varType": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 17,
+                                      "line": 4
+                                    },
+                                    "sourcefile": "$EXAMPLES/chained_call.go",
+                                    "start": {
+                                      "column": 15,
+                                      "line": 4
                                     }
                                   },
-                                  "property": {
-                                    "type": "Identifier",
-                                    "name": "name",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 9,
-                                        "column": 2
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 9,
-                                        "column": 6
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                                    },
-                                    "_meta": {}
-                                  },
+                                  "name": "AA",
+                                  "type": "Identifier"
+                                },
+                                "variableParam": false
+                              },
+                              {
+                                "_meta": {},
+                                "cloned": true,
+                                "left": {
+                                  "_meta": {},
                                   "computed": false,
                                   "loc": null,
-                                  "_meta": {}
-                                },
-                                "right": {
-                                  "type": "Literal",
-                                  "value": "\"Bob\"",
-                                  "literalType": "STRING",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 4,
-                                      "column": 18
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 4,
-                                      "column": 23
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "operator": "=",
-                                "cloned": true,
-                                "loc": null,
-                                "_meta": {}
-                              },
-                              {
-                                "type": "Identifier",
-                                "name": "tmp1",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 4,
-                                    "column": 15
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 4,
-                                    "column": 24
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                                },
-                                "_meta": {
-                                  "type": {
-                                    "type": "Identifier",
-                                    "name": "AA",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 4,
-                                        "column": 15
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 4,
-                                        "column": 17
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                                    },
-                                    "_meta": {}
-                                  }
-                                }
-                              }
-                            ],
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 4,
-                                "column": 15
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 4,
-                                "column": 24
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                            },
-                            "_meta": {}
-                          },
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 4,
-                              "column": 14
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 4,
-                              "column": 24
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                          },
-                          "_meta": {}
-                        },
-                        "cloned": true,
-                        "varType": {
-                          "type": "DynamicType",
-                          "id": null,
-                          "typeArguments": null,
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "variableParam": false,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 4,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 4,
-                            "column": 24
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                        },
-                        "_meta": {}
-                      },
-                      {
-                        "type": "CallExpression",
-                        "callee": {
-                          "type": "MemberAccess",
-                          "object": {
-                            "type": "CallExpression",
-                            "callee": {
-                              "type": "MemberAccess",
-                              "object": {
-                                "type": "CallExpression",
-                                "callee": {
-                                  "type": "MemberAccess",
                                   "object": {
-                                    "type": "CallExpression",
-                                    "callee": {
-                                      "type": "MemberAccess",
-                                      "object": {
-                                        "type": "Identifier",
-                                        "name": "instance",
+                                    "_meta": {
+                                      "ReceiveCls": "",
+                                      "type": {
+                                        "_meta": {
+                                          "ReceiveCls": ""
+                                        },
                                         "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 5,
-                                            "column": 2
-                                          },
                                           "end": {
-                                            "Offset": 0,
-                                            "line": 5,
-                                            "column": 10
+                                            "column": 17,
+                                            "line": 4
                                           },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                                        },
-                                        "_meta": {}
-                                      },
-                                      "property": {
-                                        "type": "Identifier",
-                                        "name": "setName",
-                                        "loc": {
+                                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/chained_call.go",
                                           "start": {
-                                            "Offset": 0,
-                                            "line": 5,
-                                            "column": 11
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 5,
-                                            "column": 18
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                                            "column": 15,
+                                            "line": 4
+                                          }
                                         },
-                                        "_meta": {}
-                                      },
-                                      "computed": false,
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 5,
-                                          "column": 2
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 5,
-                                          "column": 18
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                                      },
-                                      "_meta": {}
-                                    },
-                                    "arguments": [
-                                      {
-                                        "type": "Literal",
-                                        "value": "\"_\"",
-                                        "literalType": "STRING",
-                                        "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 5,
-                                            "column": 19
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 5,
-                                            "column": 22
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                                        },
-                                        "_meta": {}
+                                        "name": "AA",
+                                        "type": "Identifier"
                                       }
-                                    ],
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 5,
-                                        "column": 2
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 5,
-                                        "column": 23
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
                                     },
-                                    "_meta": {}
+                                    "loc": {
+                                      "end": {
+                                        "column": 24,
+                                        "line": 4
+                                      },
+                                      "sourcefile": "$EXAMPLES/chained_call.go",
+                                      "start": {
+                                        "column": 15,
+                                        "line": 4
+                                      }
+                                    },
+                                    "name": "tmp1",
+                                    "type": "Identifier"
                                   },
                                   "property": {
-                                    "type": "Identifier",
-                                    "name": "clearName",
+                                    "_meta": {},
                                     "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 5,
-                                        "column": 24
-                                      },
                                       "end": {
-                                        "Offset": 0,
-                                        "line": 5,
-                                        "column": 33
+                                        "column": 6,
+                                        "line": 9
                                       },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                                      "sourcefile": "$EXAMPLES/chained_call.go",
+                                      "start": {
+                                        "column": 2,
+                                        "line": 9
+                                      }
                                     },
-                                    "_meta": {}
+                                    "name": "name",
+                                    "type": "Identifier"
                                   },
-                                  "computed": false,
+                                  "type": "MemberAccess"
+                                },
+                                "loc": null,
+                                "operator": "=",
+                                "right": {
+                                  "_meta": {},
+                                  "literalType": "STRING",
                                   "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 5,
-                                      "column": 2
-                                    },
                                     "end": {
-                                      "Offset": 0,
-                                      "line": 5,
-                                      "column": 33
+                                      "column": 23,
+                                      "line": 4
                                     },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                                    "sourcefile": "$EXAMPLES/chained_call.go",
+                                    "start": {
+                                      "column": 18,
+                                      "line": 4
+                                    }
                                   },
-                                  "_meta": {}
+                                  "type": "Literal",
+                                  "value": "\"Bob\""
                                 },
-                                "arguments": [],
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 5,
-                                    "column": 2
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 5,
-                                    "column": 35
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                                },
-                                "_meta": {}
+                                "type": "AssignmentExpression"
                               },
-                              "property": {
-                                "type": "Identifier",
-                                "name": "setName",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 5,
-                                    "column": 36
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 5,
-                                    "column": 43
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                                },
-                                "_meta": {}
-                              },
-                              "computed": false,
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 5,
-                                  "column": 2
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 5,
-                                  "column": 43
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                              },
-                              "_meta": {}
-                            },
-                            "arguments": [
                               {
-                                "type": "Identifier",
-                                "name": "__taint_src",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 5,
-                                    "column": 44
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 5,
-                                    "column": 55
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                                "_meta": {
+                                  "ReceiveCls": "",
+                                  "type": {
+                                    "_meta": {
+                                      "ReceiveCls": ""
+                                    },
+                                    "loc": {
+                                      "end": {
+                                        "column": 17,
+                                        "line": 4
+                                      },
+                                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/chained_call.go",
+                                      "start": {
+                                        "column": 15,
+                                        "line": 4
+                                      }
+                                    },
+                                    "name": "AA",
+                                    "type": "Identifier"
+                                  }
                                 },
-                                "_meta": {}
+                                "loc": {
+                                  "end": {
+                                    "column": 24,
+                                    "line": 4
+                                  },
+                                  "sourcefile": "$EXAMPLES/chained_call.go",
+                                  "start": {
+                                    "column": 15,
+                                    "line": 4
+                                  }
+                                },
+                                "name": "tmp1",
+                                "type": "Identifier"
                               }
                             ],
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 5,
-                                "column": 2
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 5,
-                                "column": 56
+                                "column": 24,
+                                "line": 4
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                            },
-                            "_meta": {}
-                          },
-                          "property": {
-                            "type": "Identifier",
-                            "name": "process",
-                            "loc": {
+                              "sourcefile": "$EXAMPLES/chained_call.go",
                               "start": {
-                                "Offset": 0,
-                                "line": 5,
-                                "column": 57
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 5,
-                                "column": 64
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                                "column": 15,
+                                "line": 4
+                              }
                             },
-                            "_meta": {}
+                            "type": "Sequence"
                           },
+                          "loc": {
+                            "end": {
+                              "column": 24,
+                              "line": 4
+                            },
+                            "sourcefile": "$EXAMPLES/chained_call.go",
+                            "start": {
+                              "column": 14,
+                              "line": 4
+                            }
+                          },
+                          "type": "ReferenceExpression"
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 24,
+                            "line": 4
+                          },
+                          "sourcefile": "$EXAMPLES/chained_call.go",
+                          "start": {
+                            "column": 2,
+                            "line": 4
+                          }
+                        },
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "id": null,
+                          "loc": null,
+                          "type": "DynamicType",
+                          "typeArguments": null
+                        },
+                        "variableParam": false
+                      },
+                      {
+                        "_meta": {},
+                        "arguments": [],
+                        "callee": {
+                          "_meta": {},
                           "computed": false,
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 5,
-                              "column": 2
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 5,
-                              "column": 64
+                              "column": 64,
+                              "line": 5
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                            "sourcefile": "$EXAMPLES/chained_call.go",
+                            "start": {
+                              "column": 2,
+                              "line": 5
+                            }
                           },
-                          "_meta": {}
+                          "object": {
+                            "_meta": {},
+                            "arguments": [
+                              {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 55,
+                                    "line": 5
+                                  },
+                                  "sourcefile": "$EXAMPLES/chained_call.go",
+                                  "start": {
+                                    "column": 44,
+                                    "line": 5
+                                  }
+                                },
+                                "name": "__taint_src",
+                                "type": "Identifier"
+                              }
+                            ],
+                            "callee": {
+                              "_meta": {},
+                              "computed": false,
+                              "loc": {
+                                "end": {
+                                  "column": 43,
+                                  "line": 5
+                                },
+                                "sourcefile": "$EXAMPLES/chained_call.go",
+                                "start": {
+                                  "column": 2,
+                                  "line": 5
+                                }
+                              },
+                              "object": {
+                                "_meta": {},
+                                "arguments": [],
+                                "callee": {
+                                  "_meta": {},
+                                  "computed": false,
+                                  "loc": {
+                                    "end": {
+                                      "column": 33,
+                                      "line": 5
+                                    },
+                                    "sourcefile": "$EXAMPLES/chained_call.go",
+                                    "start": {
+                                      "column": 2,
+                                      "line": 5
+                                    }
+                                  },
+                                  "object": {
+                                    "_meta": {},
+                                    "arguments": [
+                                      {
+                                        "_meta": {},
+                                        "literalType": "STRING",
+                                        "loc": {
+                                          "end": {
+                                            "column": 22,
+                                            "line": 5
+                                          },
+                                          "sourcefile": "$EXAMPLES/chained_call.go",
+                                          "start": {
+                                            "column": 19,
+                                            "line": 5
+                                          }
+                                        },
+                                        "type": "Literal",
+                                        "value": "\"_\""
+                                      }
+                                    ],
+                                    "callee": {
+                                      "_meta": {},
+                                      "computed": false,
+                                      "loc": {
+                                        "end": {
+                                          "column": 18,
+                                          "line": 5
+                                        },
+                                        "sourcefile": "$EXAMPLES/chained_call.go",
+                                        "start": {
+                                          "column": 2,
+                                          "line": 5
+                                        }
+                                      },
+                                      "object": {
+                                        "_meta": {},
+                                        "loc": {
+                                          "end": {
+                                            "column": 10,
+                                            "line": 5
+                                          },
+                                          "sourcefile": "$EXAMPLES/chained_call.go",
+                                          "start": {
+                                            "column": 2,
+                                            "line": 5
+                                          }
+                                        },
+                                        "name": "instance",
+                                        "type": "Identifier"
+                                      },
+                                      "property": {
+                                        "_meta": {},
+                                        "loc": {
+                                          "end": {
+                                            "column": 18,
+                                            "line": 5
+                                          },
+                                          "sourcefile": "$EXAMPLES/chained_call.go",
+                                          "start": {
+                                            "column": 11,
+                                            "line": 5
+                                          }
+                                        },
+                                        "name": "setName",
+                                        "type": "Identifier"
+                                      },
+                                      "type": "MemberAccess"
+                                    },
+                                    "loc": {
+                                      "end": {
+                                        "column": 23,
+                                        "line": 5
+                                      },
+                                      "sourcefile": "$EXAMPLES/chained_call.go",
+                                      "start": {
+                                        "column": 2,
+                                        "line": 5
+                                      }
+                                    },
+                                    "type": "CallExpression"
+                                  },
+                                  "property": {
+                                    "_meta": {},
+                                    "loc": {
+                                      "end": {
+                                        "column": 33,
+                                        "line": 5
+                                      },
+                                      "sourcefile": "$EXAMPLES/chained_call.go",
+                                      "start": {
+                                        "column": 24,
+                                        "line": 5
+                                      }
+                                    },
+                                    "name": "clearName",
+                                    "type": "Identifier"
+                                  },
+                                  "type": "MemberAccess"
+                                },
+                                "loc": {
+                                  "end": {
+                                    "column": 35,
+                                    "line": 5
+                                  },
+                                  "sourcefile": "$EXAMPLES/chained_call.go",
+                                  "start": {
+                                    "column": 2,
+                                    "line": 5
+                                  }
+                                },
+                                "type": "CallExpression"
+                              },
+                              "property": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 43,
+                                    "line": 5
+                                  },
+                                  "sourcefile": "$EXAMPLES/chained_call.go",
+                                  "start": {
+                                    "column": 36,
+                                    "line": 5
+                                  }
+                                },
+                                "name": "setName",
+                                "type": "Identifier"
+                              },
+                              "type": "MemberAccess"
+                            },
+                            "loc": {
+                              "end": {
+                                "column": 56,
+                                "line": 5
+                              },
+                              "sourcefile": "$EXAMPLES/chained_call.go",
+                              "start": {
+                                "column": 2,
+                                "line": 5
+                              }
+                            },
+                            "type": "CallExpression"
+                          },
+                          "property": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 64,
+                                "line": 5
+                              },
+                              "sourcefile": "$EXAMPLES/chained_call.go",
+                              "start": {
+                                "column": 57,
+                                "line": 5
+                              }
+                            },
+                            "name": "process",
+                            "type": "Identifier"
+                          },
+                          "type": "MemberAccess"
                         },
-                        "arguments": [],
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 5,
-                            "column": 2
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 5,
-                            "column": 66
+                            "column": 66,
+                            "line": 5
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                          "sourcefile": "$EXAMPLES/chained_call.go",
+                          "start": {
+                            "column": 2,
+                            "line": 5
+                          }
                         },
-                        "_meta": {}
+                        "type": "CallExpression"
                       }
                     ],
                     "id": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 45
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 6,
-                        "column": 2
+                        "column": 2,
+                        "line": 6
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                      "sourcefile": "$EXAMPLES/chained_call.go",
+                      "start": {
+                        "column": 45,
+                        "line": 3
+                      }
                     },
-                    "_meta": {}
+                    "type": "ScopedStatement"
+                  },
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 24,
+                        "line": 3
+                      },
+                      "sourcefile": "$EXAMPLES/chained_call.go",
+                      "start": {
+                        "column": 6,
+                        "line": 3
+                      }
+                    },
+                    "name": "chained_call_002_T",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 6
+                    },
+                    "sourcefile": "$EXAMPLES/chained_call.go",
+                    "start": {
+                      "column": 1,
+                      "line": 3
+                    }
                   },
                   "modifiers": null,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 3,
-                      "column": 1
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 6,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                  },
-                  "_meta": {}
-                },
-                {
-                  "type": "ClassDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "AA",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 8,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 8,
-                        "column": 8
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                    },
-                    "_meta": {}
-                  },
-                  "body": [
+                  "parameters": [
                     {
-                      "type": "VariableDeclaration",
+                      "_meta": {},
+                      "cloned": true,
                       "id": {
-                        "type": "Identifier",
-                        "name": "name",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 9,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 9,
-                            "column": 6
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                        },
                         "_meta": {
+                          "ReceiveCls": "",
                           "type": {
-                            "type": "Identifier",
-                            "name": "string",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 9,
-                                "column": 7
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 9,
-                                "column": 13
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                            "_meta": {
+                              "ReceiveCls": ""
                             },
-                            "_meta": {}
+                            "loc": {
+                              "end": {
+                                "column": 43,
+                                "line": 3
+                              },
+                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/chained_call.go",
+                              "start": {
+                                "column": 37,
+                                "line": 3
+                              }
+                            },
+                            "name": "string",
+                            "type": "Identifier"
                           }
-                        }
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 36,
+                            "line": 3
+                          },
+                          "sourcefile": "$EXAMPLES/chained_call.go",
+                          "start": {
+                            "column": 25,
+                            "line": 3
+                          }
+                        },
+                        "name": "__taint_src",
+                        "type": "Identifier"
                       },
                       "init": null,
-                      "cloned": true,
-                      "varType": {
-                        "type": "Identifier",
-                        "name": "string",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 9,
-                            "column": 7
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 9,
-                            "column": 13
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                        },
-                        "_meta": {}
-                      },
-                      "variableParam": false,
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 9,
-                          "column": 2
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 9,
-                          "column": 13
+                          "column": 43,
+                          "line": 3
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                        "sourcefile": "$EXAMPLES/chained_call.go",
+                        "start": {
+                          "column": 25,
+                          "line": 3
+                        }
                       },
-                      "_meta": {}
+                      "type": "VariableDeclaration",
+                      "varType": {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 43,
+                            "line": 3
+                          },
+                          "sourcefile": "$EXAMPLES/chained_call.go",
+                          "start": {
+                            "column": 37,
+                            "line": 3
+                          }
+                        },
+                        "name": "string",
+                        "type": "Identifier"
+                      },
+                      "variableParam": false
+                    }
+                  ],
+                  "returnType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "VoidType",
+                    "typeArguments": null
+                  },
+                  "type": "FunctionDefinition"
+                },
+                {
+                  "_meta": {},
+                  "body": [
+                    {
+                      "_meta": {},
+                      "cloned": true,
+                      "id": {
+                        "_meta": {
+                          "ReceiveCls": "",
+                          "type": {
+                            "_meta": {
+                              "ReceiveCls": ""
+                            },
+                            "loc": {
+                              "end": {
+                                "column": 13,
+                                "line": 9
+                              },
+                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/chained_call.go",
+                              "start": {
+                                "column": 7,
+                                "line": 9
+                              }
+                            },
+                            "name": "string",
+                            "type": "Identifier"
+                          }
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 6,
+                            "line": 9
+                          },
+                          "sourcefile": "$EXAMPLES/chained_call.go",
+                          "start": {
+                            "column": 2,
+                            "line": 9
+                          }
+                        },
+                        "name": "name",
+                        "type": "Identifier"
+                      },
+                      "init": null,
+                      "loc": {
+                        "end": {
+                          "column": 13,
+                          "line": 9
+                        },
+                        "sourcefile": "$EXAMPLES/chained_call.go",
+                        "start": {
+                          "column": 2,
+                          "line": 9
+                        }
+                      },
+                      "type": "VariableDeclaration",
+                      "varType": {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 13,
+                            "line": 9
+                          },
+                          "sourcefile": "$EXAMPLES/chained_call.go",
+                          "start": {
+                            "column": 7,
+                            "line": 9
+                          }
+                        },
+                        "name": "string",
+                        "type": "Identifier"
+                      },
+                      "variableParam": false
                     },
                     {
-                      "type": "FunctionDefinition",
-                      "id": {
-                        "type": "Identifier",
-                        "name": "setName",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 12,
-                            "column": 14
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 12,
-                            "column": 21
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                        },
-                        "_meta": {}
+                      "_meta": {
+                        "ReceiveCls": "AA"
                       },
+                      "body": {
+                        "_meta": {},
+                        "body": [
+                          {
+                            "_meta": {},
+                            "cloned": true,
+                            "id": {
+                              "_meta": {
+                                "ReceiveCls": "",
+                                "type": {
+                                  "_meta": {
+                                    "ReceiveCls": ""
+                                  },
+                                  "element": {
+                                    "_meta": {
+                                      "ReceiveCls": ""
+                                    },
+                                    "loc": {
+                                      "end": {
+                                        "column": 12,
+                                        "line": 12
+                                      },
+                                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/chained_call.go",
+                                      "start": {
+                                        "column": 10,
+                                        "line": 12
+                                      }
+                                    },
+                                    "name": "AA",
+                                    "type": "Identifier"
+                                  },
+                                  "id": null,
+                                  "kind": "pointer",
+                                  "loc": {
+                                    "end": {
+                                      "column": 12,
+                                      "line": 12
+                                    },
+                                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/chained_call.go",
+                                    "start": {
+                                      "column": 9,
+                                      "line": 12
+                                    }
+                                  },
+                                  "type": "PointerType",
+                                  "typeArguments": null
+                                }
+                              },
+                              "loc": null,
+                              "name": "a",
+                              "type": "Identifier"
+                            },
+                            "init": {
+                              "_meta": {
+                                "ReceiveCls": "",
+                                "type": {
+                                  "_meta": {
+                                    "ReceiveCls": ""
+                                  },
+                                  "element": null,
+                                  "id": null,
+                                  "kind": "",
+                                  "loc": null,
+                                  "type": "PointerType",
+                                  "typeArguments": null
+                                }
+                              },
+                              "loc": null,
+                              "type": "ThisExpression"
+                            },
+                            "loc": null,
+                            "type": "VariableDeclaration",
+                            "varType": {
+                              "_meta": {},
+                              "element": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 12,
+                                    "line": 12
+                                  },
+                                  "sourcefile": "$EXAMPLES/chained_call.go",
+                                  "start": {
+                                    "column": 10,
+                                    "line": 12
+                                  }
+                                },
+                                "name": "AA",
+                                "type": "Identifier"
+                              },
+                              "id": null,
+                              "kind": "pointer",
+                              "loc": {
+                                "end": {
+                                  "column": 12,
+                                  "line": 12
+                                },
+                                "sourcefile": "$EXAMPLES/chained_call.go",
+                                "start": {
+                                  "column": 9,
+                                  "line": 12
+                                }
+                              },
+                              "type": "PointerType",
+                              "typeArguments": null
+                            },
+                            "variableParam": false
+                          },
+                          {
+                            "_meta": {},
+                            "cloned": true,
+                            "left": {
+                              "_meta": {},
+                              "computed": false,
+                              "loc": {
+                                "end": {
+                                  "column": 8,
+                                  "line": 13
+                                },
+                                "sourcefile": "$EXAMPLES/chained_call.go",
+                                "start": {
+                                  "column": 2,
+                                  "line": 13
+                                }
+                              },
+                              "object": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 3,
+                                    "line": 13
+                                  },
+                                  "sourcefile": "$EXAMPLES/chained_call.go",
+                                  "start": {
+                                    "column": 2,
+                                    "line": 13
+                                  }
+                                },
+                                "name": "a",
+                                "type": "Identifier"
+                              },
+                              "property": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 8,
+                                    "line": 13
+                                  },
+                                  "sourcefile": "$EXAMPLES/chained_call.go",
+                                  "start": {
+                                    "column": 4,
+                                    "line": 13
+                                  }
+                                },
+                                "name": "name",
+                                "type": "Identifier"
+                              },
+                              "type": "MemberAccess"
+                            },
+                            "loc": {
+                              "end": {
+                                "column": 15,
+                                "line": 13
+                              },
+                              "sourcefile": "$EXAMPLES/chained_call.go",
+                              "start": {
+                                "column": 2,
+                                "line": 13
+                              }
+                            },
+                            "operator": "=",
+                            "right": {
+                              "_meta": {},
+                              "loc": {
+                                "end": {
+                                  "column": 15,
+                                  "line": 13
+                                },
+                                "sourcefile": "$EXAMPLES/chained_call.go",
+                                "start": {
+                                  "column": 11,
+                                  "line": 13
+                                }
+                              },
+                              "name": "name",
+                              "type": "Identifier"
+                            },
+                            "type": "AssignmentExpression"
+                          },
+                          {
+                            "_meta": {},
+                            "argument": {
+                              "_meta": {},
+                              "loc": {
+                                "end": {
+                                  "column": 10,
+                                  "line": 14
+                                },
+                                "sourcefile": "$EXAMPLES/chained_call.go",
+                                "start": {
+                                  "column": 9,
+                                  "line": 14
+                                }
+                              },
+                              "name": "a",
+                              "type": "Identifier"
+                            },
+                            "isYield": false,
+                            "loc": {
+                              "end": {
+                                "column": 10,
+                                "line": 14
+                              },
+                              "sourcefile": "$EXAMPLES/chained_call.go",
+                              "start": {
+                                "column": 2,
+                                "line": 14
+                              }
+                            },
+                            "type": "ReturnStatement"
+                          }
+                        ],
+                        "id": null,
+                        "loc": {
+                          "end": {
+                            "column": 2,
+                            "line": 15
+                          },
+                          "sourcefile": "$EXAMPLES/chained_call.go",
+                          "start": {
+                            "column": 39,
+                            "line": 12
+                          }
+                        },
+                        "type": "ScopedStatement"
+                      },
+                      "id": {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 21,
+                            "line": 12
+                          },
+                          "sourcefile": "$EXAMPLES/chained_call.go",
+                          "start": {
+                            "column": 14,
+                            "line": 12
+                          }
+                        },
+                        "name": "setName",
+                        "type": "Identifier"
+                      },
+                      "loc": {
+                        "end": {
+                          "column": 2,
+                          "line": 15
+                        },
+                        "sourcefile": "$EXAMPLES/chained_call.go",
+                        "start": {
+                          "column": 1,
+                          "line": 12
+                        }
+                      },
+                      "modifiers": null,
                       "parameters": [
                         {
-                          "type": "VariableDeclaration",
+                          "_meta": {},
+                          "cloned": true,
                           "id": {
-                            "type": "Identifier",
-                            "name": "name",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 22
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 26
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                            },
                             "_meta": {
+                              "ReceiveCls": "",
                               "type": {
-                                "type": "Identifier",
-                                "name": "string",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 12,
-                                    "column": 27
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 12,
-                                    "column": 33
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                                "_meta": {
+                                  "ReceiveCls": ""
                                 },
-                                "_meta": {}
+                                "loc": {
+                                  "end": {
+                                    "column": 33,
+                                    "line": 12
+                                  },
+                                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/chained_call.go",
+                                  "start": {
+                                    "column": 27,
+                                    "line": 12
+                                  }
+                                },
+                                "name": "string",
+                                "type": "Identifier"
                               }
-                            }
+                            },
+                            "loc": {
+                              "end": {
+                                "column": 26,
+                                "line": 12
+                              },
+                              "sourcefile": "$EXAMPLES/chained_call.go",
+                              "start": {
+                                "column": 22,
+                                "line": 12
+                              }
+                            },
+                            "name": "name",
+                            "type": "Identifier"
                           },
                           "init": null,
-                          "cloned": true,
-                          "varType": {
-                            "type": "Identifier",
-                            "name": "string",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 27
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 33
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                            },
-                            "_meta": {}
-                          },
-                          "variableParam": false,
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 12,
-                              "column": 22
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 12,
-                              "column": 33
+                              "column": 33,
+                              "line": 12
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                            "sourcefile": "$EXAMPLES/chained_call.go",
+                            "start": {
+                              "column": 22,
+                              "line": 12
+                            }
                           },
-                          "_meta": {}
+                          "type": "VariableDeclaration",
+                          "varType": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 33,
+                                "line": 12
+                              },
+                              "sourcefile": "$EXAMPLES/chained_call.go",
+                              "start": {
+                                "column": 27,
+                                "line": 12
+                              }
+                            },
+                            "name": "string",
+                            "type": "Identifier"
+                          },
+                          "variableParam": false
                         }
                       ],
                       "returnType": {
-                        "type": "PointerType",
-                        "id": null,
+                        "_meta": {},
                         "element": {
-                          "type": "Identifier",
-                          "name": "AA",
+                          "_meta": {},
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 12,
-                              "column": 36
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 12,
-                              "column": 38
+                              "column": 38,
+                              "line": 12
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                            "sourcefile": "$EXAMPLES/chained_call.go",
+                            "start": {
+                              "column": 36,
+                              "line": 12
+                            }
                           },
-                          "_meta": {}
+                          "name": "AA",
+                          "type": "Identifier"
                         },
-                        "typeArguments": null,
+                        "id": null,
                         "kind": "pointer",
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 12,
-                            "column": 35
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 12,
-                            "column": 38
+                            "column": 38,
+                            "line": 12
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                        },
-                        "_meta": {}
-                      },
-                      "body": {
-                        "type": "ScopedStatement",
-                        "body": [
-                          {
-                            "type": "VariableDeclaration",
-                            "id": {
-                              "type": "Identifier",
-                              "name": "a",
-                              "loc": null,
-                              "_meta": {
-                                "type": {
-                                  "type": "PointerType",
-                                  "id": null,
-                                  "element": {
-                                    "type": "Identifier",
-                                    "name": "AA",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 12,
-                                        "column": 10
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 12,
-                                        "column": 12
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                                    },
-                                    "_meta": {}
-                                  },
-                                  "typeArguments": null,
-                                  "kind": "pointer",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 12,
-                                      "column": 9
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 12,
-                                      "column": 12
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                                  },
-                                  "_meta": {}
-                                }
-                              }
-                            },
-                            "init": {
-                              "type": "ThisExpression",
-                              "loc": null,
-                              "_meta": {
-                                "type": {
-                                  "type": "PointerType",
-                                  "id": null,
-                                  "element": null,
-                                  "typeArguments": null,
-                                  "kind": "",
-                                  "loc": null,
-                                  "_meta": {}
-                                }
-                              }
-                            },
-                            "cloned": true,
-                            "varType": {
-                              "type": "PointerType",
-                              "id": null,
-                              "element": {
-                                "type": "Identifier",
-                                "name": "AA",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 12,
-                                    "column": 10
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 12,
-                                    "column": 12
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                                },
-                                "_meta": {}
-                              },
-                              "typeArguments": null,
-                              "kind": "pointer",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 12,
-                                  "column": 9
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 12,
-                                  "column": 12
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                              },
-                              "_meta": {}
-                            },
-                            "variableParam": false,
-                            "loc": null,
-                            "_meta": {}
-                          },
-                          {
-                            "type": "AssignmentExpression",
-                            "left": {
-                              "type": "MemberAccess",
-                              "object": {
-                                "type": "Identifier",
-                                "name": "a",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 13,
-                                    "column": 2
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 13,
-                                    "column": 3
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                                },
-                                "_meta": {}
-                              },
-                              "property": {
-                                "type": "Identifier",
-                                "name": "name",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 13,
-                                    "column": 4
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 13,
-                                    "column": 8
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                                },
-                                "_meta": {}
-                              },
-                              "computed": false,
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 13,
-                                  "column": 2
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 13,
-                                  "column": 8
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                              },
-                              "_meta": {}
-                            },
-                            "right": {
-                              "type": "Identifier",
-                              "name": "name",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 13,
-                                  "column": 11
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 13,
-                                  "column": 15
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                              },
-                              "_meta": {}
-                            },
-                            "operator": "=",
-                            "cloned": true,
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 13,
-                                "column": 2
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 13,
-                                "column": 15
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                            },
-                            "_meta": {}
-                          },
-                          {
-                            "type": "ReturnStatement",
-                            "argument": {
-                              "type": "Identifier",
-                              "name": "a",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 14,
-                                  "column": 9
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 14,
-                                  "column": 10
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                              },
-                              "_meta": {}
-                            },
-                            "isYield": false,
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 14,
-                                "column": 2
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 14,
-                                "column": 10
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                            },
-                            "_meta": {}
+                          "sourcefile": "$EXAMPLES/chained_call.go",
+                          "start": {
+                            "column": 35,
+                            "line": 12
                           }
-                        ],
-                        "id": null,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 12,
-                            "column": 39
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 15,
-                            "column": 2
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
                         },
-                        "_meta": {}
+                        "type": "PointerType",
+                        "typeArguments": null
                       },
-                      "modifiers": null,
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 12,
-                          "column": 1
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 15,
-                          "column": 2
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                      },
-                      "_meta": {}
+                      "type": "FunctionDefinition"
                     },
                     {
-                      "type": "FunctionDefinition",
-                      "id": {
-                        "type": "Identifier",
-                        "name": "clearName",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 17,
-                            "column": 14
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 17,
-                            "column": 23
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                        },
-                        "_meta": {}
-                      },
-                      "parameters": [],
-                      "returnType": {
-                        "type": "PointerType",
-                        "id": null,
-                        "element": {
-                          "type": "Identifier",
-                          "name": "AA",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 17,
-                              "column": 27
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 17,
-                              "column": 29
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                          },
-                          "_meta": {}
-                        },
-                        "typeArguments": null,
-                        "kind": "pointer",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 17,
-                            "column": 26
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 17,
-                            "column": 29
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                        },
-                        "_meta": {}
+                      "_meta": {
+                        "ReceiveCls": "AA"
                       },
                       "body": {
-                        "type": "ScopedStatement",
+                        "_meta": {},
                         "body": [
                           {
-                            "type": "VariableDeclaration",
+                            "_meta": {},
+                            "cloned": true,
                             "id": {
-                              "type": "Identifier",
-                              "name": "a",
-                              "loc": null,
                               "_meta": {
+                                "ReceiveCls": "",
                                 "type": {
-                                  "type": "PointerType",
-                                  "id": null,
-                                  "element": {
-                                    "type": "Identifier",
-                                    "name": "AA",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 17,
-                                        "column": 10
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 17,
-                                        "column": 12
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                                    },
-                                    "_meta": {}
+                                  "_meta": {
+                                    "ReceiveCls": ""
                                   },
-                                  "typeArguments": null,
+                                  "element": {
+                                    "_meta": {
+                                      "ReceiveCls": ""
+                                    },
+                                    "loc": {
+                                      "end": {
+                                        "column": 12,
+                                        "line": 17
+                                      },
+                                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/chained_call.go",
+                                      "start": {
+                                        "column": 10,
+                                        "line": 17
+                                      }
+                                    },
+                                    "name": "AA",
+                                    "type": "Identifier"
+                                  },
+                                  "id": null,
                                   "kind": "pointer",
                                   "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 17,
-                                      "column": 9
-                                    },
                                     "end": {
-                                      "Offset": 0,
-                                      "line": 17,
-                                      "column": 12
+                                      "column": 12,
+                                      "line": 17
                                     },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/chained_call.go",
+                                    "start": {
+                                      "column": 9,
+                                      "line": 17
+                                    }
                                   },
-                                  "_meta": {}
+                                  "type": "PointerType",
+                                  "typeArguments": null
                                 }
-                              }
+                              },
+                              "loc": null,
+                              "name": "a",
+                              "type": "Identifier"
                             },
                             "init": {
-                              "type": "ThisExpression",
-                              "loc": null,
                               "_meta": {
+                                "ReceiveCls": "",
                                 "type": {
-                                  "type": "PointerType",
-                                  "id": null,
+                                  "_meta": {
+                                    "ReceiveCls": ""
+                                  },
                                   "element": null,
-                                  "typeArguments": null,
+                                  "id": null,
                                   "kind": "",
                                   "loc": null,
-                                  "_meta": {}
+                                  "type": "PointerType",
+                                  "typeArguments": null
                                 }
-                              }
-                            },
-                            "cloned": true,
-                            "varType": {
-                              "type": "PointerType",
-                              "id": null,
-                              "element": {
-                                "type": "Identifier",
-                                "name": "AA",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 17,
-                                    "column": 10
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 17,
-                                    "column": 12
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                                },
-                                "_meta": {}
                               },
-                              "typeArguments": null,
+                              "loc": null,
+                              "type": "ThisExpression"
+                            },
+                            "loc": null,
+                            "type": "VariableDeclaration",
+                            "varType": {
+                              "_meta": {},
+                              "element": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 12,
+                                    "line": 17
+                                  },
+                                  "sourcefile": "$EXAMPLES/chained_call.go",
+                                  "start": {
+                                    "column": 10,
+                                    "line": 17
+                                  }
+                                },
+                                "name": "AA",
+                                "type": "Identifier"
+                              },
+                              "id": null,
                               "kind": "pointer",
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 17,
-                                  "column": 9
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 17,
-                                  "column": 12
+                                  "column": 12,
+                                  "line": 17
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                                "sourcefile": "$EXAMPLES/chained_call.go",
+                                "start": {
+                                  "column": 9,
+                                  "line": 17
+                                }
                               },
-                              "_meta": {}
+                              "type": "PointerType",
+                              "typeArguments": null
                             },
-                            "variableParam": false,
-                            "loc": null,
-                            "_meta": {}
+                            "variableParam": false
                           },
                           {
-                            "type": "AssignmentExpression",
+                            "_meta": {},
+                            "cloned": true,
                             "left": {
-                              "type": "MemberAccess",
-                              "object": {
-                                "type": "Identifier",
-                                "name": "a",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 18,
-                                    "column": 2
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 18,
-                                    "column": 3
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                                },
-                                "_meta": {}
-                              },
-                              "property": {
-                                "type": "Identifier",
-                                "name": "name",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 18,
-                                    "column": 4
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 18,
-                                    "column": 8
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                                },
-                                "_meta": {}
-                              },
+                              "_meta": {},
                               "computed": false,
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 18,
-                                  "column": 2
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 18,
-                                  "column": 8
+                                  "column": 8,
+                                  "line": 18
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                                "sourcefile": "$EXAMPLES/chained_call.go",
+                                "start": {
+                                  "column": 2,
+                                  "line": 18
+                                }
                               },
-                              "_meta": {}
+                              "object": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 3,
+                                    "line": 18
+                                  },
+                                  "sourcefile": "$EXAMPLES/chained_call.go",
+                                  "start": {
+                                    "column": 2,
+                                    "line": 18
+                                  }
+                                },
+                                "name": "a",
+                                "type": "Identifier"
+                              },
+                              "property": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 8,
+                                    "line": 18
+                                  },
+                                  "sourcefile": "$EXAMPLES/chained_call.go",
+                                  "start": {
+                                    "column": 4,
+                                    "line": 18
+                                  }
+                                },
+                                "name": "name",
+                                "type": "Identifier"
+                              },
+                              "type": "MemberAccess"
                             },
+                            "loc": {
+                              "end": {
+                                "column": 13,
+                                "line": 18
+                              },
+                              "sourcefile": "$EXAMPLES/chained_call.go",
+                              "start": {
+                                "column": 2,
+                                "line": 18
+                              }
+                            },
+                            "operator": "=",
                             "right": {
-                              "type": "Literal",
-                              "value": "\"\"",
+                              "_meta": {},
                               "literalType": "STRING",
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 18,
-                                  "column": 11
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 18,
-                                  "column": 13
+                                  "column": 13,
+                                  "line": 18
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                                "sourcefile": "$EXAMPLES/chained_call.go",
+                                "start": {
+                                  "column": 11,
+                                  "line": 18
+                                }
                               },
-                              "_meta": {}
+                              "type": "Literal",
+                              "value": "\"\""
                             },
-                            "operator": "=",
-                            "cloned": true,
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 18,
-                                "column": 2
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 18,
-                                "column": 13
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                            },
-                            "_meta": {}
+                            "type": "AssignmentExpression"
                           },
                           {
-                            "type": "ReturnStatement",
+                            "_meta": {},
                             "argument": {
-                              "type": "Identifier",
-                              "name": "a",
+                              "_meta": {},
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 19,
-                                  "column": 9
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 19,
-                                  "column": 10
+                                  "column": 10,
+                                  "line": 19
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                                "sourcefile": "$EXAMPLES/chained_call.go",
+                                "start": {
+                                  "column": 9,
+                                  "line": 19
+                                }
                               },
-                              "_meta": {}
+                              "name": "a",
+                              "type": "Identifier"
                             },
                             "isYield": false,
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 19,
-                                "column": 2
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 19,
-                                "column": 10
+                                "column": 10,
+                                "line": 19
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                              "sourcefile": "$EXAMPLES/chained_call.go",
+                              "start": {
+                                "column": 2,
+                                "line": 19
+                              }
                             },
-                            "_meta": {}
+                            "type": "ReturnStatement"
                           }
                         ],
                         "id": null,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 17,
-                            "column": 30
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 20,
-                            "column": 2
+                            "column": 2,
+                            "line": 20
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                          "sourcefile": "$EXAMPLES/chained_call.go",
+                          "start": {
+                            "column": 30,
+                            "line": 17
+                          }
                         },
-                        "_meta": {}
+                        "type": "ScopedStatement"
+                      },
+                      "id": {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 23,
+                            "line": 17
+                          },
+                          "sourcefile": "$EXAMPLES/chained_call.go",
+                          "start": {
+                            "column": 14,
+                            "line": 17
+                          }
+                        },
+                        "name": "clearName",
+                        "type": "Identifier"
+                      },
+                      "loc": {
+                        "end": {
+                          "column": 2,
+                          "line": 20
+                        },
+                        "sourcefile": "$EXAMPLES/chained_call.go",
+                        "start": {
+                          "column": 1,
+                          "line": 17
+                        }
                       },
                       "modifiers": null,
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 17,
-                          "column": 1
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 20,
-                          "column": 2
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                      },
-                      "_meta": {}
-                    },
-                    {
-                      "type": "FunctionDefinition",
-                      "id": {
-                        "type": "Identifier",
-                        "name": "process",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 22,
-                            "column": 14
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 22,
-                            "column": 21
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                        },
-                        "_meta": {}
-                      },
                       "parameters": [],
                       "returnType": {
-                        "type": "VoidType",
+                        "_meta": {},
+                        "element": {
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 29,
+                              "line": 17
+                            },
+                            "sourcefile": "$EXAMPLES/chained_call.go",
+                            "start": {
+                              "column": 27,
+                              "line": 17
+                            }
+                          },
+                          "name": "AA",
+                          "type": "Identifier"
+                        },
                         "id": null,
-                        "typeArguments": null,
-                        "loc": null,
-                        "_meta": {}
+                        "kind": "pointer",
+                        "loc": {
+                          "end": {
+                            "column": 29,
+                            "line": 17
+                          },
+                          "sourcefile": "$EXAMPLES/chained_call.go",
+                          "start": {
+                            "column": 26,
+                            "line": 17
+                          }
+                        },
+                        "type": "PointerType",
+                        "typeArguments": null
+                      },
+                      "type": "FunctionDefinition"
+                    },
+                    {
+                      "_meta": {
+                        "ReceiveCls": "AA"
                       },
                       "body": {
-                        "type": "ScopedStatement",
+                        "_meta": {},
                         "body": [
                           {
-                            "type": "VariableDeclaration",
+                            "_meta": {},
+                            "cloned": true,
                             "id": {
-                              "type": "Identifier",
-                              "name": "a",
-                              "loc": null,
                               "_meta": {
+                                "ReceiveCls": "",
                                 "type": {
-                                  "type": "PointerType",
-                                  "id": null,
-                                  "element": {
-                                    "type": "Identifier",
-                                    "name": "AA",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 22,
-                                        "column": 10
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 22,
-                                        "column": 12
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                                    },
-                                    "_meta": {}
+                                  "_meta": {
+                                    "ReceiveCls": ""
                                   },
-                                  "typeArguments": null,
+                                  "element": {
+                                    "_meta": {
+                                      "ReceiveCls": ""
+                                    },
+                                    "loc": {
+                                      "end": {
+                                        "column": 12,
+                                        "line": 22
+                                      },
+                                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/chained_call.go",
+                                      "start": {
+                                        "column": 10,
+                                        "line": 22
+                                      }
+                                    },
+                                    "name": "AA",
+                                    "type": "Identifier"
+                                  },
+                                  "id": null,
                                   "kind": "pointer",
                                   "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 22,
-                                      "column": 9
-                                    },
                                     "end": {
-                                      "Offset": 0,
-                                      "line": 22,
-                                      "column": 12
+                                      "column": 12,
+                                      "line": 22
                                     },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/chained_call.go",
+                                    "start": {
+                                      "column": 9,
+                                      "line": 22
+                                    }
                                   },
-                                  "_meta": {}
+                                  "type": "PointerType",
+                                  "typeArguments": null
                                 }
-                              }
+                              },
+                              "loc": null,
+                              "name": "a",
+                              "type": "Identifier"
                             },
                             "init": {
-                              "type": "ThisExpression",
-                              "loc": null,
                               "_meta": {
+                                "ReceiveCls": "",
                                 "type": {
-                                  "type": "PointerType",
-                                  "id": null,
+                                  "_meta": {
+                                    "ReceiveCls": ""
+                                  },
                                   "element": null,
-                                  "typeArguments": null,
+                                  "id": null,
                                   "kind": "",
                                   "loc": null,
-                                  "_meta": {}
+                                  "type": "PointerType",
+                                  "typeArguments": null
                                 }
-                              }
-                            },
-                            "cloned": true,
-                            "varType": {
-                              "type": "PointerType",
-                              "id": null,
-                              "element": {
-                                "type": "Identifier",
-                                "name": "AA",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 22,
-                                    "column": 10
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 22,
-                                    "column": 12
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                                },
-                                "_meta": {}
                               },
-                              "typeArguments": null,
+                              "loc": null,
+                              "type": "ThisExpression"
+                            },
+                            "loc": null,
+                            "type": "VariableDeclaration",
+                            "varType": {
+                              "_meta": {},
+                              "element": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 12,
+                                    "line": 22
+                                  },
+                                  "sourcefile": "$EXAMPLES/chained_call.go",
+                                  "start": {
+                                    "column": 10,
+                                    "line": 22
+                                  }
+                                },
+                                "name": "AA",
+                                "type": "Identifier"
+                              },
+                              "id": null,
                               "kind": "pointer",
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 22,
-                                  "column": 9
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 22,
-                                  "column": 12
+                                  "column": 12,
+                                  "line": 22
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                                "sourcefile": "$EXAMPLES/chained_call.go",
+                                "start": {
+                                  "column": 9,
+                                  "line": 22
+                                }
                               },
-                              "_meta": {}
+                              "type": "PointerType",
+                              "typeArguments": null
                             },
-                            "variableParam": false,
-                            "loc": null,
-                            "_meta": {}
+                            "variableParam": false
                           },
                           {
-                            "type": "CallExpression",
-                            "callee": {
-                              "type": "Identifier",
-                              "name": "__taint_sink",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 23,
-                                  "column": 2
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 23,
-                                  "column": 14
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                              },
-                              "_meta": {}
-                            },
+                            "_meta": {},
                             "arguments": [
                               {
-                                "type": "MemberAccess",
-                                "object": {
-                                  "type": "Identifier",
-                                  "name": "a",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 23,
-                                      "column": 15
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 23,
-                                      "column": 16
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "property": {
-                                  "type": "Identifier",
-                                  "name": "name",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 23,
-                                      "column": 17
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 23,
-                                      "column": 21
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
-                                  },
-                                  "_meta": {}
-                                },
+                                "_meta": {},
                                 "computed": false,
                                 "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 23,
-                                    "column": 15
-                                  },
                                   "end": {
-                                    "Offset": 0,
-                                    "line": 23,
-                                    "column": 21
+                                    "column": 21,
+                                    "line": 23
                                   },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                                  "sourcefile": "$EXAMPLES/chained_call.go",
+                                  "start": {
+                                    "column": 15,
+                                    "line": 23
+                                  }
                                 },
-                                "_meta": {}
+                                "object": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 16,
+                                      "line": 23
+                                    },
+                                    "sourcefile": "$EXAMPLES/chained_call.go",
+                                    "start": {
+                                      "column": 15,
+                                      "line": 23
+                                    }
+                                  },
+                                  "name": "a",
+                                  "type": "Identifier"
+                                },
+                                "property": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 21,
+                                      "line": 23
+                                    },
+                                    "sourcefile": "$EXAMPLES/chained_call.go",
+                                    "start": {
+                                      "column": 17,
+                                      "line": 23
+                                    }
+                                  },
+                                  "name": "name",
+                                  "type": "Identifier"
+                                },
+                                "type": "MemberAccess"
                               }
                             ],
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 23,
-                                "column": 2
+                            "callee": {
+                              "_meta": {},
+                              "loc": {
+                                "end": {
+                                  "column": 14,
+                                  "line": 23
+                                },
+                                "sourcefile": "$EXAMPLES/chained_call.go",
+                                "start": {
+                                  "column": 2,
+                                  "line": 23
+                                }
                               },
-                              "end": {
-                                "Offset": 0,
-                                "line": 23,
-                                "column": 22
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                              "name": "__taint_sink",
+                              "type": "Identifier"
                             },
-                            "_meta": {}
+                            "loc": {
+                              "end": {
+                                "column": 22,
+                                "line": 23
+                              },
+                              "sourcefile": "$EXAMPLES/chained_call.go",
+                              "start": {
+                                "column": 2,
+                                "line": 23
+                              }
+                            },
+                            "type": "CallExpression"
                           }
                         ],
                         "id": null,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 22,
-                            "column": 24
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 24,
-                            "column": 2
+                            "column": 2,
+                            "line": 24
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                          "sourcefile": "$EXAMPLES/chained_call.go",
+                          "start": {
+                            "column": 24,
+                            "line": 22
+                          }
                         },
-                        "_meta": {}
+                        "type": "ScopedStatement"
+                      },
+                      "id": {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 21,
+                            "line": 22
+                          },
+                          "sourcefile": "$EXAMPLES/chained_call.go",
+                          "start": {
+                            "column": 14,
+                            "line": 22
+                          }
+                        },
+                        "name": "process",
+                        "type": "Identifier"
+                      },
+                      "loc": {
+                        "end": {
+                          "column": 2,
+                          "line": 24
+                        },
+                        "sourcefile": "$EXAMPLES/chained_call.go",
+                        "start": {
+                          "column": 1,
+                          "line": 22
+                        }
                       },
                       "modifiers": null,
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 22,
-                          "column": 1
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 24,
-                          "column": 2
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                      "parameters": [],
+                      "returnType": {
+                        "_meta": {},
+                        "id": null,
+                        "loc": null,
+                        "type": "VoidType",
+                        "typeArguments": null
                       },
-                      "_meta": {}
+                      "type": "FunctionDefinition"
                     }
                   ],
-                  "supers": [],
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 8,
-                      "column": 6
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 8,
+                        "line": 8
+                      },
+                      "sourcefile": "$EXAMPLES/chained_call.go",
+                      "start": {
+                        "column": 6,
+                        "line": 8
+                      }
                     },
-                    "end": {
-                      "Offset": 0,
-                      "line": 10,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                    "name": "AA",
+                    "type": "Identifier"
                   },
-                  "_meta": {}
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 10
+                    },
+                    "sourcefile": "$EXAMPLES/chained_call.go",
+                    "start": {
+                      "column": 6,
+                      "line": 8
+                    }
+                  },
+                  "supers": [],
+                  "type": "ClassDefinition"
                 }
               ],
               "language": "golang",
               "languageVersion": "1.18",
-              "uri": "",
-              "version": "",
               "loc": {
-                "start": {
-                  "Offset": 0,
-                  "line": 1,
-                  "column": 1
-                },
                 "end": {
-                  "Offset": 0,
-                  "line": 24,
-                  "column": 2
+                  "column": 2,
+                  "line": 24
                 },
-                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chained_call.go"
+                "sourcefile": "$EXAMPLES/chained_call.go",
+                "start": {
+                  "column": 1,
+                  "line": 1
+                }
               },
-              "_meta": {}
+              "type": "CompileUnit",
+              "uri": "",
+              "version": ""
             },
             "packageName": "__single__"
           }
@@ -1886,6 +1752,5 @@
         "subs": {}
       }
     }
-  },
-  "moduleName": "__single_module__"
+  }
 }

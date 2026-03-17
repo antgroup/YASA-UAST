@@ -1,4 +1,5 @@
 {
+  "moduleName": "__single_module__",
   "packageInfo": {
     "PathName": "",
     "files": {},
@@ -6,2259 +7,2161 @@
       "/": {
         "PathName": "",
         "files": {
-          "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go": {
+          "$EXAMPLES/multiple_type_decl.go": {
             "node": {
-              "type": "CompileUnit",
+              "_meta": {},
               "body": [
                 {
-                  "type": "PackageDeclaration",
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 9
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 17
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                  },
                   "_meta": {},
+                  "loc": {
+                    "end": {
+                      "column": 17,
+                      "line": 1
+                    },
+                    "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                    "start": {
+                      "column": 9,
+                      "line": 1
+                    }
+                  },
                   "packageName": {
-                    "type": "Identifier",
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 17,
+                        "line": 1
+                      },
+                      "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                      "start": {
+                        "column": 9,
+                        "line": 1
+                      }
+                    },
                     "name": "examples",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 9
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 17
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                    },
-                    "_meta": {}
-                  }
+                    "type": "Identifier"
+                  },
+                  "type": "PackageDeclaration"
                 },
                 {
-                  "type": "VariableDeclaration",
+                  "_meta": {
+                    "ReceiveCls": "",
+                    "isDefaultImport": true
+                  },
+                  "cloned": false,
                   "id": {
-                    "type": "Identifier",
+                    "_meta": {},
+                    "loc": null,
                     "name": "fmt",
-                    "loc": null,
-                    "_meta": {}
+                    "type": "Identifier"
                   },
                   "init": {
-                    "type": "ImportExpression",
+                    "_meta": {},
                     "from": {
-                      "type": "Literal",
-                      "value": "fmt",
+                      "_meta": {},
                       "literalType": "string",
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 4,
-                          "column": 2
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 4,
-                          "column": 7
+                          "column": 7,
+                          "line": 4
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                        "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                        "start": {
+                          "column": 2,
+                          "line": 4
+                        }
                       },
-                      "_meta": {}
+                      "type": "Literal",
+                      "value": "fmt"
                     },
-                    "local": null,
                     "imported": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 4,
-                        "column": 2
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 4,
-                        "column": 7
+                        "column": 7,
+                        "line": 4
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                      "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                      "start": {
+                        "column": 2,
+                        "line": 4
+                      }
                     },
-                    "_meta": {}
+                    "local": null,
+                    "type": "ImportExpression"
                   },
-                  "cloned": true,
-                  "varType": {
-                    "type": "DynamicType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
-                  "variableParam": false,
                   "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 4,
-                      "column": 2
-                    },
                     "end": {
-                      "Offset": 0,
-                      "line": 4,
-                      "column": 7
+                      "column": 7,
+                      "line": 4
                     },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                    "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                    "start": {
+                      "column": 2,
+                      "line": 4
+                    }
                   },
-                  "_meta": {}
-                },
-                {
                   "type": "VariableDeclaration",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "time",
+                  "varType": {
+                    "_meta": {},
+                    "id": null,
                     "loc": null,
-                    "_meta": {}
+                    "type": "DynamicType",
+                    "typeArguments": null
+                  },
+                  "variableParam": false
+                },
+                {
+                  "_meta": {
+                    "ReceiveCls": "",
+                    "isDefaultImport": true
+                  },
+                  "cloned": false,
+                  "id": {
+                    "_meta": {},
+                    "loc": null,
+                    "name": "time",
+                    "type": "Identifier"
                   },
                   "init": {
-                    "type": "ImportExpression",
+                    "_meta": {},
                     "from": {
-                      "type": "Literal",
-                      "value": "time",
+                      "_meta": {},
                       "literalType": "string",
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 5,
-                          "column": 2
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 5,
-                          "column": 8
+                          "column": 8,
+                          "line": 5
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                        "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                        "start": {
+                          "column": 2,
+                          "line": 5
+                        }
                       },
-                      "_meta": {}
+                      "type": "Literal",
+                      "value": "time"
                     },
-                    "local": null,
                     "imported": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 2
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 8
+                        "column": 8,
+                        "line": 5
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                      "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                      "start": {
+                        "column": 2,
+                        "line": 5
+                      }
                     },
-                    "_meta": {}
+                    "local": null,
+                    "type": "ImportExpression"
                   },
-                  "cloned": true,
+                  "loc": {
+                    "end": {
+                      "column": 8,
+                      "line": 5
+                    },
+                    "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                    "start": {
+                      "column": 2,
+                      "line": 5
+                    }
+                  },
+                  "type": "VariableDeclaration",
                   "varType": {
-                    "type": "DynamicType",
+                    "_meta": {},
                     "id": null,
-                    "typeArguments": null,
                     "loc": null,
-                    "_meta": {}
+                    "type": "DynamicType",
+                    "typeArguments": null
                   },
-                  "variableParam": false,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 5,
-                      "column": 2
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 5,
-                      "column": 8
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                  },
-                  "_meta": {}
+                  "variableParam": false
                 },
                 {
-                  "type": "ClassDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "Abser",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 9,
-                        "column": 2
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 9,
-                        "column": 7
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                    },
-                    "_meta": {}
-                  },
-                  "body": [],
-                  "supers": [],
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 9,
-                      "column": 2
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 11,
-                      "column": 3
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                  },
-                  "_meta": {}
-                },
-                {
-                  "type": "ClassDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "MyError",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 13,
-                        "column": 2
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 13,
-                        "column": 9
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                    },
-                    "_meta": {}
+                  "_meta": {
+                    "ReceiveCls": "",
+                    "isInterface": true
                   },
                   "body": [
                     {
-                      "type": "VariableDeclaration",
+                      "_meta": {},
                       "id": {
-                        "type": "Identifier",
-                        "name": "When",
+                        "_meta": {},
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 14,
-                            "column": 3
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 14,
-                            "column": 7
+                            "column": 16,
+                            "line": 10
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                          "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                          "start": {
+                            "column": 6,
+                            "line": 10
+                          }
                         },
-                        "_meta": {
-                          "type": {
-                            "type": "MemberAccess",
-                            "object": {
-                              "type": "Identifier",
-                              "name": "time",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 14,
-                                  "column": 8
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 14,
-                                  "column": 12
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                              },
-                              "_meta": {}
+                        "name": "Abs",
+                        "type": "Identifier"
+                      },
+                      "loc": {
+                        "end": {
+                          "column": 16,
+                          "line": 10
+                        },
+                        "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                        "start": {
+                          "column": 6,
+                          "line": 10
+                        }
+                      },
+                      "params": null,
+                      "results": [
+                        {
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 16,
+                              "line": 10
                             },
-                            "property": {
-                              "type": "Identifier",
-                              "name": "Time",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 14,
-                                  "column": 13
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 14,
-                                  "column": 17
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                              },
-                              "_meta": {}
+                            "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                            "start": {
+                              "column": 9,
+                              "line": 10
+                            }
+                          },
+                          "name": "float64",
+                          "type": "Identifier"
+                        }
+                      ],
+                      "type": "FuncType",
+                      "typeParams": null
+                    }
+                  ],
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 7,
+                        "line": 9
+                      },
+                      "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                      "start": {
+                        "column": 2,
+                        "line": 9
+                      }
+                    },
+                    "name": "Abser",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 3,
+                      "line": 11
+                    },
+                    "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                    "start": {
+                      "column": 2,
+                      "line": 9
+                    }
+                  },
+                  "supers": [],
+                  "type": "ClassDefinition"
+                },
+                {
+                  "_meta": {},
+                  "body": [
+                    {
+                      "_meta": {},
+                      "cloned": true,
+                      "id": {
+                        "_meta": {
+                          "ReceiveCls": "",
+                          "type": {
+                            "_meta": {
+                              "ReceiveCls": ""
                             },
                             "computed": false,
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 14,
-                                "column": 8
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 14,
-                                "column": 17
+                                "column": 17,
+                                "line": 14
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/multiple_type_decl.go",
+                              "start": {
+                                "column": 8,
+                                "line": 14
+                              }
                             },
-                            "_meta": {}
+                            "object": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 12,
+                                  "line": 14
+                                },
+                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/multiple_type_decl.go",
+                                "start": {
+                                  "column": 8,
+                                  "line": 14
+                                }
+                              },
+                              "name": "time",
+                              "type": "Identifier"
+                            },
+                            "property": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 17,
+                                  "line": 14
+                                },
+                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/multiple_type_decl.go",
+                                "start": {
+                                  "column": 13,
+                                  "line": 14
+                                }
+                              },
+                              "name": "Time",
+                              "type": "Identifier"
+                            },
+                            "type": "MemberAccess"
                           }
-                        }
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 7,
+                            "line": 14
+                          },
+                          "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                          "start": {
+                            "column": 3,
+                            "line": 14
+                          }
+                        },
+                        "name": "When",
+                        "type": "Identifier"
                       },
                       "init": null,
-                      "cloned": true,
+                      "loc": {
+                        "end": {
+                          "column": 17,
+                          "line": 14
+                        },
+                        "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                        "start": {
+                          "column": 3,
+                          "line": 14
+                        }
+                      },
+                      "type": "VariableDeclaration",
                       "varType": {
-                        "type": "MemberAccess",
-                        "object": {
-                          "type": "Identifier",
-                          "name": "time",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 14,
-                              "column": 8
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 14,
-                              "column": 12
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                          },
-                          "_meta": {}
-                        },
-                        "property": {
-                          "type": "Identifier",
-                          "name": "Time",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 14,
-                              "column": 13
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 14,
-                              "column": 17
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                          },
-                          "_meta": {}
-                        },
+                        "_meta": {},
                         "computed": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 14,
-                            "column": 8
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 14,
-                            "column": 17
+                            "column": 17,
+                            "line": 14
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                          "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                          "start": {
+                            "column": 8,
+                            "line": 14
+                          }
                         },
-                        "_meta": {}
+                        "object": {
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 12,
+                              "line": 14
+                            },
+                            "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                            "start": {
+                              "column": 8,
+                              "line": 14
+                            }
+                          },
+                          "name": "time",
+                          "type": "Identifier"
+                        },
+                        "property": {
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 17,
+                              "line": 14
+                            },
+                            "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                            "start": {
+                              "column": 13,
+                              "line": 14
+                            }
+                          },
+                          "name": "Time",
+                          "type": "Identifier"
+                        },
+                        "type": "MemberAccess"
                       },
-                      "variableParam": false,
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 14,
-                          "column": 3
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 14,
-                          "column": 17
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                      },
-                      "_meta": {}
+                      "variableParam": false
                     },
                     {
-                      "type": "VariableDeclaration",
+                      "_meta": {},
+                      "cloned": true,
                       "id": {
-                        "type": "Identifier",
-                        "name": "What",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 15,
-                            "column": 3
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 15,
-                            "column": 7
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                        },
                         "_meta": {
+                          "ReceiveCls": "",
                           "type": {
-                            "type": "Identifier",
-                            "name": "string",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 15,
-                                "column": 8
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 15,
-                                "column": 14
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                            "_meta": {
+                              "ReceiveCls": ""
                             },
-                            "_meta": {}
+                            "loc": {
+                              "end": {
+                                "column": 14,
+                                "line": 15
+                              },
+                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/multiple_type_decl.go",
+                              "start": {
+                                "column": 8,
+                                "line": 15
+                              }
+                            },
+                            "name": "string",
+                            "type": "Identifier"
                           }
-                        }
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 7,
+                            "line": 15
+                          },
+                          "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                          "start": {
+                            "column": 3,
+                            "line": 15
+                          }
+                        },
+                        "name": "What",
+                        "type": "Identifier"
                       },
                       "init": null,
-                      "cloned": true,
-                      "varType": {
-                        "type": "Identifier",
-                        "name": "string",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 15,
-                            "column": 8
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 15,
-                            "column": 14
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                        },
-                        "_meta": {}
-                      },
-                      "variableParam": false,
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 15,
-                          "column": 3
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 15,
-                          "column": 14
+                          "column": 14,
+                          "line": 15
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                        "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                        "start": {
+                          "column": 3,
+                          "line": 15
+                        }
                       },
-                      "_meta": {}
+                      "type": "VariableDeclaration",
+                      "varType": {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 14,
+                            "line": 15
+                          },
+                          "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                          "start": {
+                            "column": 8,
+                            "line": 15
+                          }
+                        },
+                        "name": "string",
+                        "type": "Identifier"
+                      },
+                      "variableParam": false
                     }
                   ],
-                  "supers": [],
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 13,
-                      "column": 2
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 9,
+                        "line": 13
+                      },
+                      "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                      "start": {
+                        "column": 2,
+                        "line": 13
+                      }
                     },
-                    "end": {
-                      "Offset": 0,
-                      "line": 16,
-                      "column": 3
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                    "name": "MyError",
+                    "type": "Identifier"
                   },
-                  "_meta": {}
+                  "loc": {
+                    "end": {
+                      "column": 3,
+                      "line": 16
+                    },
+                    "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                    "start": {
+                      "column": 2,
+                      "line": 13
+                    }
+                  },
+                  "supers": [],
+                  "type": "ClassDefinition"
                 },
                 {
-                  "type": "ClassDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "MyCustomError",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 18,
-                        "column": 2
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 18,
-                        "column": 15
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                    },
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "body": [
                     {
-                      "type": "VariableDeclaration",
+                      "_meta": {},
+                      "cloned": true,
                       "id": {
-                        "type": "Identifier",
-                        "name": "Message",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 19,
-                            "column": 3
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 19,
-                            "column": 10
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                        },
                         "_meta": {
+                          "ReceiveCls": "",
                           "type": {
-                            "type": "Identifier",
+                            "_meta": {
+                              "ReceiveCls": ""
+                            },
+                            "loc": {
+                              "end": {
+                                "column": 17,
+                                "line": 19
+                              },
+                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/multiple_type_decl.go",
+                              "start": {
+                                "column": 11,
+                                "line": 19
+                              }
+                            },
                             "name": "string",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 19,
-                                "column": 11
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 19,
-                                "column": 17
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           }
-                        }
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 10,
+                            "line": 19
+                          },
+                          "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                          "start": {
+                            "column": 3,
+                            "line": 19
+                          }
+                        },
+                        "name": "Message",
+                        "type": "Identifier"
                       },
                       "init": null,
-                      "cloned": true,
+                      "loc": {
+                        "end": {
+                          "column": 17,
+                          "line": 19
+                        },
+                        "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                        "start": {
+                          "column": 3,
+                          "line": 19
+                        }
+                      },
+                      "type": "VariableDeclaration",
                       "varType": {
-                        "type": "Identifier",
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 17,
+                            "line": 19
+                          },
+                          "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                          "start": {
+                            "column": 11,
+                            "line": 19
+                          }
+                        },
                         "name": "string",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 19,
-                            "column": 11
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 19,
-                            "column": 17
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                        },
-                        "_meta": {}
+                        "type": "Identifier"
                       },
-                      "variableParam": false,
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 19,
-                          "column": 3
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 19,
-                          "column": 17
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                      },
-                      "_meta": {}
+                      "variableParam": false
                     },
                     {
-                      "type": "SpreadElement",
+                      "_meta": {},
                       "argument": {
-                        "type": "Identifier",
-                        "name": "Abser",
-                        "loc": null,
                         "_meta": {
+                          "ReceiveCls": "",
                           "type": {
-                            "type": "Identifier",
-                            "name": "Abser",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 20,
-                                "column": 3
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 20,
-                                "column": 8
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                            "_meta": {
+                              "ReceiveCls": ""
                             },
-                            "_meta": {}
+                            "loc": {
+                              "end": {
+                                "column": 8,
+                                "line": 20
+                              },
+                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/multiple_type_decl.go",
+                              "start": {
+                                "column": 3,
+                                "line": 20
+                              }
+                            },
+                            "name": "Abser",
+                            "type": "Identifier"
                           }
-                        }
+                        },
+                        "loc": null,
+                        "name": "Abser",
+                        "type": "Identifier"
                       },
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 20,
-                          "column": 3
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 20,
-                          "column": 8
+                          "column": 8,
+                          "line": 20
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                        "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                        "start": {
+                          "column": 3,
+                          "line": 20
+                        }
                       },
-                      "_meta": {}
+                      "type": "SpreadElement"
                     },
                     {
-                      "type": "VariableDeclaration",
+                      "_meta": {},
+                      "cloned": true,
                       "id": {
-                        "type": "Identifier",
-                        "name": "Abser",
-                        "loc": null,
                         "_meta": {
+                          "ReceiveCls": "",
                           "type": {
-                            "type": "Identifier",
-                            "name": "Abser",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 20,
-                                "column": 3
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 20,
-                                "column": 8
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                            "_meta": {
+                              "ReceiveCls": ""
                             },
-                            "_meta": {}
+                            "loc": {
+                              "end": {
+                                "column": 8,
+                                "line": 20
+                              },
+                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/multiple_type_decl.go",
+                              "start": {
+                                "column": 3,
+                                "line": 20
+                              }
+                            },
+                            "name": "Abser",
+                            "type": "Identifier"
                           }
-                        }
+                        },
+                        "loc": null,
+                        "name": "Abser",
+                        "type": "Identifier"
                       },
                       "init": null,
-                      "cloned": true,
-                      "varType": {
-                        "type": "Identifier",
-                        "name": "Abser",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 20,
-                            "column": 3
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 20,
-                            "column": 8
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                        },
-                        "_meta": {}
-                      },
-                      "variableParam": false,
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 20,
-                          "column": 3
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 20,
-                          "column": 8
+                          "column": 8,
+                          "line": 20
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                      },
-                      "_meta": {}
-                    },
-                    {
-                      "type": "SpreadElement",
-                      "argument": {
-                        "type": "Identifier",
-                        "name": "MyError",
-                        "loc": null,
-                        "_meta": {
-                          "type": {
-                            "type": "Identifier",
-                            "name": "MyError",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 21,
-                                "column": 3
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 21,
-                                "column": 10
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                            },
-                            "_meta": {}
-                          }
+                        "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                        "start": {
+                          "column": 3,
+                          "line": 20
                         }
                       },
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 21,
-                          "column": 3
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 21,
-                          "column": 10
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                      },
-                      "_meta": {}
-                    },
-                    {
                       "type": "VariableDeclaration",
-                      "id": {
-                        "type": "Identifier",
-                        "name": "MyError",
-                        "loc": null,
-                        "_meta": {
-                          "type": {
-                            "type": "Identifier",
-                            "name": "MyError",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 21,
-                                "column": 3
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 21,
-                                "column": 10
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                            },
-                            "_meta": {}
+                      "varType": {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 8,
+                            "line": 20
+                          },
+                          "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                          "start": {
+                            "column": 3,
+                            "line": 20
                           }
+                        },
+                        "name": "Abser",
+                        "type": "Identifier"
+                      },
+                      "variableParam": false
+                    },
+                    {
+                      "_meta": {},
+                      "argument": {
+                        "_meta": {
+                          "ReceiveCls": "",
+                          "type": {
+                            "_meta": {
+                              "ReceiveCls": ""
+                            },
+                            "loc": {
+                              "end": {
+                                "column": 10,
+                                "line": 21
+                              },
+                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/multiple_type_decl.go",
+                              "start": {
+                                "column": 3,
+                                "line": 21
+                              }
+                            },
+                            "name": "MyError",
+                            "type": "Identifier"
+                          }
+                        },
+                        "loc": null,
+                        "name": "MyError",
+                        "type": "Identifier"
+                      },
+                      "loc": {
+                        "end": {
+                          "column": 10,
+                          "line": 21
+                        },
+                        "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                        "start": {
+                          "column": 3,
+                          "line": 21
                         }
+                      },
+                      "type": "SpreadElement"
+                    },
+                    {
+                      "_meta": {},
+                      "cloned": true,
+                      "id": {
+                        "_meta": {
+                          "ReceiveCls": "",
+                          "type": {
+                            "_meta": {
+                              "ReceiveCls": ""
+                            },
+                            "loc": {
+                              "end": {
+                                "column": 10,
+                                "line": 21
+                              },
+                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/multiple_type_decl.go",
+                              "start": {
+                                "column": 3,
+                                "line": 21
+                              }
+                            },
+                            "name": "MyError",
+                            "type": "Identifier"
+                          }
+                        },
+                        "loc": null,
+                        "name": "MyError",
+                        "type": "Identifier"
                       },
                       "init": null,
-                      "cloned": true,
-                      "varType": {
-                        "type": "Identifier",
-                        "name": "MyError",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 21,
-                            "column": 3
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 21,
-                            "column": 10
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                        },
-                        "_meta": {}
-                      },
-                      "variableParam": false,
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 21,
-                          "column": 3
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 21,
-                          "column": 10
+                          "column": 10,
+                          "line": 21
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                        "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                        "start": {
+                          "column": 3,
+                          "line": 21
+                        }
                       },
-                      "_meta": {}
+                      "type": "VariableDeclaration",
+                      "varType": {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 10,
+                            "line": 21
+                          },
+                          "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                          "start": {
+                            "column": 3,
+                            "line": 21
+                          }
+                        },
+                        "name": "MyError",
+                        "type": "Identifier"
+                      },
+                      "variableParam": false
                     },
                     {
-                      "type": "FunctionDefinition",
-                      "id": {
-                        "type": "Identifier",
-                        "name": "Abs",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 26,
-                            "column": 29
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 26,
-                            "column": 32
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                        },
-                        "_meta": {}
-                      },
-                      "parameters": [],
-                      "returnType": {
-                        "type": "Identifier",
-                        "name": "float64",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 26,
-                            "column": 35
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 26,
-                            "column": 42
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                        },
-                        "_meta": {}
+                      "_meta": {
+                        "ReceiveCls": "MyCustomError"
                       },
                       "body": {
-                        "type": "ScopedStatement",
+                        "_meta": {},
                         "body": [
                           {
-                            "type": "VariableDeclaration",
+                            "_meta": {},
+                            "cloned": true,
                             "id": {
-                              "type": "Identifier",
-                              "name": "myErr",
-                              "loc": null,
                               "_meta": {
+                                "ReceiveCls": "",
                                 "type": {
-                                  "type": "PointerType",
-                                  "id": null,
-                                  "element": {
-                                    "type": "Identifier",
-                                    "name": "MyCustomError",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 26,
-                                        "column": 14
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 26,
-                                        "column": 27
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                    },
-                                    "_meta": {}
+                                  "_meta": {
+                                    "ReceiveCls": ""
                                   },
-                                  "typeArguments": null,
+                                  "element": {
+                                    "_meta": {
+                                      "ReceiveCls": ""
+                                    },
+                                    "loc": {
+                                      "end": {
+                                        "column": 27,
+                                        "line": 26
+                                      },
+                                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/multiple_type_decl.go",
+                                      "start": {
+                                        "column": 14,
+                                        "line": 26
+                                      }
+                                    },
+                                    "name": "MyCustomError",
+                                    "type": "Identifier"
+                                  },
+                                  "id": null,
                                   "kind": "pointer",
                                   "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 26,
-                                      "column": 13
-                                    },
                                     "end": {
-                                      "Offset": 0,
-                                      "line": 26,
-                                      "column": 27
+                                      "column": 27,
+                                      "line": 26
                                     },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/multiple_type_decl.go",
+                                    "start": {
+                                      "column": 13,
+                                      "line": 26
+                                    }
                                   },
-                                  "_meta": {}
+                                  "type": "PointerType",
+                                  "typeArguments": null
                                 }
-                              }
+                              },
+                              "loc": null,
+                              "name": "myErr",
+                              "type": "Identifier"
                             },
                             "init": {
-                              "type": "ThisExpression",
-                              "loc": null,
                               "_meta": {
+                                "ReceiveCls": "",
                                 "type": {
-                                  "type": "PointerType",
-                                  "id": null,
+                                  "_meta": {
+                                    "ReceiveCls": ""
+                                  },
                                   "element": null,
-                                  "typeArguments": null,
+                                  "id": null,
                                   "kind": "",
                                   "loc": null,
-                                  "_meta": {}
+                                  "type": "PointerType",
+                                  "typeArguments": null
                                 }
-                              }
-                            },
-                            "cloned": true,
-                            "varType": {
-                              "type": "PointerType",
-                              "id": null,
-                              "element": {
-                                "type": "Identifier",
-                                "name": "MyCustomError",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 26,
-                                    "column": 14
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 26,
-                                    "column": 27
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                },
-                                "_meta": {}
                               },
-                              "typeArguments": null,
+                              "loc": null,
+                              "type": "ThisExpression"
+                            },
+                            "loc": null,
+                            "type": "VariableDeclaration",
+                            "varType": {
+                              "_meta": {},
+                              "element": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 27,
+                                    "line": 26
+                                  },
+                                  "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                  "start": {
+                                    "column": 14,
+                                    "line": 26
+                                  }
+                                },
+                                "name": "MyCustomError",
+                                "type": "Identifier"
+                              },
+                              "id": null,
                               "kind": "pointer",
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 26,
-                                  "column": 13
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 26,
-                                  "column": 27
+                                  "column": 27,
+                                  "line": 26
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                                "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                "start": {
+                                  "column": 13,
+                                  "line": 26
+                                }
                               },
-                              "_meta": {}
+                              "type": "PointerType",
+                              "typeArguments": null
                             },
-                            "variableParam": false,
-                            "loc": null,
-                            "_meta": {}
+                            "variableParam": false
                           },
                           {
-                            "type": "ReturnStatement",
+                            "_meta": {},
                             "argument": {
-                              "type": "Literal",
-                              "value": "0.0",
+                              "_meta": {},
                               "literalType": "FLOAT",
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 27,
-                                  "column": 9
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 27,
-                                  "column": 12
+                                  "column": 12,
+                                  "line": 27
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                                "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                "start": {
+                                  "column": 9,
+                                  "line": 27
+                                }
                               },
-                              "_meta": {}
+                              "type": "Literal",
+                              "value": "0.0"
                             },
                             "isYield": false,
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 27,
-                                "column": 2
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 27,
-                                "column": 12
+                                "column": 12,
+                                "line": 27
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                              "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                              "start": {
+                                "column": 2,
+                                "line": 27
+                              }
                             },
-                            "_meta": {}
+                            "type": "ReturnStatement"
                           }
                         ],
                         "id": null,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 26,
-                            "column": 43
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 28,
-                            "column": 2
+                            "column": 2,
+                            "line": 28
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                        },
-                        "_meta": {}
-                      },
-                      "modifiers": null,
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 26,
-                          "column": 1
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 28,
-                          "column": 2
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                      },
-                      "_meta": {}
-                    }
-                  ],
-                  "supers": [],
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 18,
-                      "column": 2
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 22,
-                      "column": 3
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                  },
-                  "_meta": {}
-                },
-                {
-                  "type": "FunctionDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "main",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 30,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 30,
-                        "column": 10
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                    },
-                    "_meta": {}
-                  },
-                  "parameters": [],
-                  "returnType": {
-                    "type": "VoidType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
-                  "body": {
-                    "type": "ScopedStatement",
-                    "body": [
-                      {
-                        "type": "VariableDeclaration",
-                        "id": {
-                          "type": "Identifier",
-                          "name": "a",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 31,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 31,
-                              "column": 3
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "Identifier",
-                              "name": "MyCustomError",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 31,
-                                  "column": 7
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 31,
-                                  "column": 20
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                              },
-                              "_meta": {}
-                            }
+                          "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                          "start": {
+                            "column": 43,
+                            "line": 26
                           }
                         },
-                        "init": {
-                          "type": "Sequence",
-                          "expressions": [
-                            {
-                              "type": "VariableDeclaration",
-                              "id": {
-                                "type": "Identifier",
-                                "name": "tmp1",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 31,
-                                    "column": 7
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 31,
-                                    "column": 66
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                        "type": "ScopedStatement"
+                      },
+                      "id": {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 32,
+                            "line": 26
+                          },
+                          "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                          "start": {
+                            "column": 29,
+                            "line": 26
+                          }
+                        },
+                        "name": "Abs",
+                        "type": "Identifier"
+                      },
+                      "loc": {
+                        "end": {
+                          "column": 2,
+                          "line": 28
+                        },
+                        "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                        "start": {
+                          "column": 1,
+                          "line": 26
+                        }
+                      },
+                      "modifiers": null,
+                      "parameters": [],
+                      "returnType": {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 42,
+                            "line": 26
+                          },
+                          "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                          "start": {
+                            "column": 35,
+                            "line": 26
+                          }
+                        },
+                        "name": "float64",
+                        "type": "Identifier"
+                      },
+                      "type": "FunctionDefinition"
+                    }
+                  ],
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 15,
+                        "line": 18
+                      },
+                      "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                      "start": {
+                        "column": 2,
+                        "line": 18
+                      }
+                    },
+                    "name": "MyCustomError",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 3,
+                      "line": 22
+                    },
+                    "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                    "start": {
+                      "column": 2,
+                      "line": 18
+                    }
+                  },
+                  "supers": [],
+                  "type": "ClassDefinition"
+                },
+                {
+                  "_meta": {},
+                  "body": {
+                    "_meta": {},
+                    "body": [
+                      {
+                        "_meta": {},
+                        "cloned": true,
+                        "id": {
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 20,
+                                  "line": 31
                                 },
-                                "_meta": {
-                                  "type": {
-                                    "type": "Identifier",
-                                    "name": "MyCustomError",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 31,
-                                        "column": 7
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 31,
-                                        "column": 20
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                    },
-                                    "_meta": {}
-                                  }
+                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/multiple_type_decl.go",
+                                "start": {
+                                  "column": 7,
+                                  "line": 31
                                 }
                               },
-                              "init": {
-                                "type": "NewExpression",
-                                "callee": {
-                                  "type": "Identifier",
-                                  "name": "MyCustomError",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 31,
-                                      "column": 7
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 31,
-                                      "column": 20
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "arguments": [],
-                                "loc": null,
-                                "_meta": {}
-                              },
-                              "cloned": false,
-                              "varType": {
-                                "type": "Identifier",
-                                "name": "MyCustomError",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 31,
-                                    "column": 7
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 31,
-                                    "column": 20
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                },
-                                "_meta": {}
-                              },
-                              "variableParam": false,
-                              "loc": null,
-                              "_meta": {}
+                              "name": "MyCustomError",
+                              "type": "Identifier"
+                            }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 3,
+                              "line": 31
                             },
+                            "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                            "start": {
+                              "column": 2,
+                              "line": 31
+                            }
+                          },
+                          "name": "a",
+                          "type": "Identifier"
+                        },
+                        "init": {
+                          "_meta": {},
+                          "expressions": [
                             {
-                              "type": "AssignmentExpression",
-                              "left": {
-                                "type": "MemberAccess",
-                                "object": {
-                                  "type": "Identifier",
-                                  "name": "tmp1",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 31,
-                                      "column": 7
+                              "_meta": {},
+                              "cloned": false,
+                              "id": {
+                                "_meta": {
+                                  "ReceiveCls": "",
+                                  "type": {
+                                    "_meta": {
+                                      "ReceiveCls": ""
                                     },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 31,
-                                      "column": 66
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                  },
-                                  "_meta": {
-                                    "type": {
-                                      "type": "Identifier",
-                                      "name": "MyCustomError",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 31,
-                                          "column": 7
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 31,
-                                          "column": 20
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                                    "loc": {
+                                      "end": {
+                                        "column": 20,
+                                        "line": 31
                                       },
-                                      "_meta": {}
-                                    }
+                                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/multiple_type_decl.go",
+                                      "start": {
+                                        "column": 7,
+                                        "line": 31
+                                      }
+                                    },
+                                    "name": "MyCustomError",
+                                    "type": "Identifier"
                                   }
                                 },
-                                "property": {
-                                  "type": "Identifier",
-                                  "name": "Message",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 19,
-                                      "column": 3
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 19,
-                                      "column": 10
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                                "loc": {
+                                  "end": {
+                                    "column": 66,
+                                    "line": 31
                                   },
-                                  "_meta": {}
+                                  "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                  "start": {
+                                    "column": 7,
+                                    "line": 31
+                                  }
                                 },
+                                "name": "tmp1",
+                                "type": "Identifier"
+                              },
+                              "init": {
+                                "_meta": {},
+                                "arguments": [],
+                                "callee": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 20,
+                                      "line": 31
+                                    },
+                                    "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                    "start": {
+                                      "column": 7,
+                                      "line": 31
+                                    }
+                                  },
+                                  "name": "MyCustomError",
+                                  "type": "Identifier"
+                                },
+                                "loc": null,
+                                "type": "NewExpression"
+                              },
+                              "loc": null,
+                              "type": "VariableDeclaration",
+                              "varType": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 20,
+                                    "line": 31
+                                  },
+                                  "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                  "start": {
+                                    "column": 7,
+                                    "line": 31
+                                  }
+                                },
+                                "name": "MyCustomError",
+                                "type": "Identifier"
+                              },
+                              "variableParam": false
+                            },
+                            {
+                              "_meta": {},
+                              "cloned": true,
+                              "left": {
+                                "_meta": {},
                                 "computed": false,
                                 "loc": null,
-                                "_meta": {}
+                                "object": {
+                                  "_meta": {
+                                    "ReceiveCls": "",
+                                    "type": {
+                                      "_meta": {
+                                        "ReceiveCls": ""
+                                      },
+                                      "loc": {
+                                        "end": {
+                                          "column": 20,
+                                          "line": 31
+                                        },
+                                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/multiple_type_decl.go",
+                                        "start": {
+                                          "column": 7,
+                                          "line": 31
+                                        }
+                                      },
+                                      "name": "MyCustomError",
+                                      "type": "Identifier"
+                                    }
+                                  },
+                                  "loc": {
+                                    "end": {
+                                      "column": 66,
+                                      "line": 31
+                                    },
+                                    "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                    "start": {
+                                      "column": 7,
+                                      "line": 31
+                                    }
+                                  },
+                                  "name": "tmp1",
+                                  "type": "Identifier"
+                                },
+                                "property": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 10,
+                                      "line": 19
+                                    },
+                                    "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                    "start": {
+                                      "column": 3,
+                                      "line": 19
+                                    }
+                                  },
+                                  "name": "Message",
+                                  "type": "Identifier"
+                                },
+                                "type": "MemberAccess"
                               },
+                              "loc": null,
+                              "operator": "=",
                               "right": {
-                                "type": "Literal",
-                                "value": "\"New One\"",
+                                "_meta": {},
                                 "literalType": "STRING",
                                 "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 31,
-                                    "column": 21
-                                  },
                                   "end": {
-                                    "Offset": 0,
-                                    "line": 31,
-                                    "column": 30
+                                    "column": 30,
+                                    "line": 31
                                   },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                },
-                                "_meta": {}
-                              },
-                              "operator": "=",
-                              "cloned": true,
-                              "loc": null,
-                              "_meta": {}
-                            },
-                            {
-                              "type": "AssignmentExpression",
-                              "left": {
-                                "type": "MemberAccess",
-                                "object": {
-                                  "type": "Identifier",
-                                  "name": "tmp1",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 31,
-                                      "column": 7
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 31,
-                                      "column": 66
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                  },
-                                  "_meta": {
-                                    "type": {
-                                      "type": "Identifier",
-                                      "name": "MyCustomError",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 31,
-                                          "column": 7
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 31,
-                                          "column": 20
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                      },
-                                      "_meta": {}
-                                    }
+                                  "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                  "start": {
+                                    "column": 21,
+                                    "line": 31
                                   }
                                 },
+                                "type": "Literal",
+                                "value": "\"New One\""
+                              },
+                              "type": "AssignmentExpression"
+                            },
+                            {
+                              "_meta": {},
+                              "cloned": true,
+                              "left": {
+                                "_meta": {},
+                                "computed": false,
+                                "loc": null,
+                                "object": {
+                                  "_meta": {
+                                    "ReceiveCls": "",
+                                    "type": {
+                                      "_meta": {
+                                        "ReceiveCls": ""
+                                      },
+                                      "loc": {
+                                        "end": {
+                                          "column": 20,
+                                          "line": 31
+                                        },
+                                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/multiple_type_decl.go",
+                                        "start": {
+                                          "column": 7,
+                                          "line": 31
+                                        }
+                                      },
+                                      "name": "MyCustomError",
+                                      "type": "Identifier"
+                                    }
+                                  },
+                                  "loc": {
+                                    "end": {
+                                      "column": 66,
+                                      "line": 31
+                                    },
+                                    "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                    "start": {
+                                      "column": 7,
+                                      "line": 31
+                                    }
+                                  },
+                                  "name": "tmp1",
+                                  "type": "Identifier"
+                                },
                                 "property": {
-                                  "type": "Identifier",
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 8,
+                                      "line": 20
+                                    },
+                                    "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                    "start": {
+                                      "column": 3,
+                                      "line": 20
+                                    }
+                                  },
                                   "name": "Abser",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 20,
-                                      "column": 3
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 20,
-                                      "column": 8
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                  },
-                                  "_meta": {}
+                                  "type": "Identifier"
                                 },
-                                "computed": false,
-                                "loc": null,
-                                "_meta": {}
+                                "type": "MemberAccess"
                               },
-                              "right": {
-                                "type": "Identifier",
-                                "name": "nil",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 31,
-                                    "column": 32
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 31,
-                                    "column": 35
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                },
-                                "_meta": {}
-                              },
-                              "operator": "=",
-                              "cloned": true,
                               "loc": null,
-                              "_meta": {}
-                            },
-                            {
-                              "type": "AssignmentExpression",
-                              "left": {
-                                "type": "MemberAccess",
-                                "object": {
-                                  "type": "Identifier",
-                                  "name": "tmp1",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 31,
-                                      "column": 7
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 31,
-                                      "column": 66
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                              "operator": "=",
+                              "right": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 35,
+                                    "line": 31
                                   },
-                                  "_meta": {
-                                    "type": {
-                                      "type": "Identifier",
-                                      "name": "MyCustomError",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 31,
-                                          "column": 7
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 31,
-                                          "column": 20
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                      },
-                                      "_meta": {}
-                                    }
+                                  "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                  "start": {
+                                    "column": 32,
+                                    "line": 31
                                   }
                                 },
-                                "property": {
-                                  "type": "Identifier",
-                                  "name": "MyError",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 21,
-                                      "column": 3
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 21,
-                                      "column": 10
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                  },
-                                  "_meta": {}
-                                },
+                                "name": "nil",
+                                "type": "Identifier"
+                              },
+                              "type": "AssignmentExpression"
+                            },
+                            {
+                              "_meta": {},
+                              "cloned": true,
+                              "left": {
+                                "_meta": {},
                                 "computed": false,
                                 "loc": null,
-                                "_meta": {}
+                                "object": {
+                                  "_meta": {
+                                    "ReceiveCls": "",
+                                    "type": {
+                                      "_meta": {
+                                        "ReceiveCls": ""
+                                      },
+                                      "loc": {
+                                        "end": {
+                                          "column": 20,
+                                          "line": 31
+                                        },
+                                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/multiple_type_decl.go",
+                                        "start": {
+                                          "column": 7,
+                                          "line": 31
+                                        }
+                                      },
+                                      "name": "MyCustomError",
+                                      "type": "Identifier"
+                                    }
+                                  },
+                                  "loc": {
+                                    "end": {
+                                      "column": 66,
+                                      "line": 31
+                                    },
+                                    "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                    "start": {
+                                      "column": 7,
+                                      "line": 31
+                                    }
+                                  },
+                                  "name": "tmp1",
+                                  "type": "Identifier"
+                                },
+                                "property": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 10,
+                                      "line": 21
+                                    },
+                                    "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                    "start": {
+                                      "column": 3,
+                                      "line": 21
+                                    }
+                                  },
+                                  "name": "MyError",
+                                  "type": "Identifier"
+                                },
+                                "type": "MemberAccess"
                               },
+                              "loc": null,
+                              "operator": "=",
                               "right": {
-                                "type": "Sequence",
+                                "_meta": {},
                                 "expressions": [
                                   {
-                                    "type": "VariableDeclaration",
+                                    "_meta": {},
+                                    "cloned": false,
                                     "id": {
-                                      "type": "Identifier",
-                                      "name": "tmp2",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 31,
-                                          "column": 37
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 31,
-                                          "column": 65
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                      },
                                       "_meta": {
+                                        "ReceiveCls": "",
                                         "type": {
-                                          "type": "Identifier",
-                                          "name": "MyError",
-                                          "loc": {
-                                            "start": {
-                                              "Offset": 0,
-                                              "line": 31,
-                                              "column": 37
-                                            },
-                                            "end": {
-                                              "Offset": 0,
-                                              "line": 31,
-                                              "column": 44
-                                            },
-                                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                                          "_meta": {
+                                            "ReceiveCls": ""
                                           },
-                                          "_meta": {}
+                                          "loc": {
+                                            "end": {
+                                              "column": 44,
+                                              "line": 31
+                                            },
+                                            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/multiple_type_decl.go",
+                                            "start": {
+                                              "column": 37,
+                                              "line": 31
+                                            }
+                                          },
+                                          "name": "MyError",
+                                          "type": "Identifier"
                                         }
-                                      }
+                                      },
+                                      "loc": {
+                                        "end": {
+                                          "column": 65,
+                                          "line": 31
+                                        },
+                                        "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                        "start": {
+                                          "column": 37,
+                                          "line": 31
+                                        }
+                                      },
+                                      "name": "tmp2",
+                                      "type": "Identifier"
                                     },
                                     "init": {
-                                      "type": "NewExpression",
-                                      "callee": {
-                                        "type": "Identifier",
-                                        "name": "MyError",
-                                        "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 31,
-                                            "column": 37
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 31,
-                                            "column": 44
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                        },
-                                        "_meta": {}
-                                      },
+                                      "_meta": {},
                                       "arguments": [],
-                                      "loc": null,
-                                      "_meta": {}
-                                    },
-                                    "cloned": false,
-                                    "varType": {
-                                      "type": "Identifier",
-                                      "name": "MyError",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 31,
-                                          "column": 37
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 31,
-                                          "column": 44
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                      },
-                                      "_meta": {}
-                                    },
-                                    "variableParam": false,
-                                    "loc": null,
-                                    "_meta": {}
-                                  },
-                                  {
-                                    "type": "AssignmentExpression",
-                                    "left": {
-                                      "type": "MemberAccess",
-                                      "object": {
-                                        "type": "Identifier",
-                                        "name": "tmp2",
+                                      "callee": {
+                                        "_meta": {},
                                         "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 31,
-                                            "column": 37
-                                          },
                                           "end": {
-                                            "Offset": 0,
-                                            "line": 31,
-                                            "column": 65
+                                            "column": 44,
+                                            "line": 31
                                           },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                        },
-                                        "_meta": {
-                                          "type": {
-                                            "type": "Identifier",
-                                            "name": "MyError",
-                                            "loc": {
-                                              "start": {
-                                                "Offset": 0,
-                                                "line": 31,
-                                                "column": 37
-                                              },
-                                              "end": {
-                                                "Offset": 0,
-                                                "line": 31,
-                                                "column": 44
-                                              },
-                                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                            },
-                                            "_meta": {}
+                                          "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                          "start": {
+                                            "column": 37,
+                                            "line": 31
                                           }
+                                        },
+                                        "name": "MyError",
+                                        "type": "Identifier"
+                                      },
+                                      "loc": null,
+                                      "type": "NewExpression"
+                                    },
+                                    "loc": null,
+                                    "type": "VariableDeclaration",
+                                    "varType": {
+                                      "_meta": {},
+                                      "loc": {
+                                        "end": {
+                                          "column": 44,
+                                          "line": 31
+                                        },
+                                        "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                        "start": {
+                                          "column": 37,
+                                          "line": 31
                                         }
                                       },
-                                      "property": {
-                                        "type": "Identifier",
-                                        "name": "When",
-                                        "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 14,
-                                            "column": 3
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 14,
-                                            "column": 7
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                        },
-                                        "_meta": {}
-                                      },
+                                      "name": "MyError",
+                                      "type": "Identifier"
+                                    },
+                                    "variableParam": false
+                                  },
+                                  {
+                                    "_meta": {},
+                                    "cloned": true,
+                                    "left": {
+                                      "_meta": {},
                                       "computed": false,
                                       "loc": null,
-                                      "_meta": {}
+                                      "object": {
+                                        "_meta": {
+                                          "ReceiveCls": "",
+                                          "type": {
+                                            "_meta": {
+                                              "ReceiveCls": ""
+                                            },
+                                            "loc": {
+                                              "end": {
+                                                "column": 44,
+                                                "line": 31
+                                              },
+                                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/multiple_type_decl.go",
+                                              "start": {
+                                                "column": 37,
+                                                "line": 31
+                                              }
+                                            },
+                                            "name": "MyError",
+                                            "type": "Identifier"
+                                          }
+                                        },
+                                        "loc": {
+                                          "end": {
+                                            "column": 65,
+                                            "line": 31
+                                          },
+                                          "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                          "start": {
+                                            "column": 37,
+                                            "line": 31
+                                          }
+                                        },
+                                        "name": "tmp2",
+                                        "type": "Identifier"
+                                      },
+                                      "property": {
+                                        "_meta": {},
+                                        "loc": {
+                                          "end": {
+                                            "column": 7,
+                                            "line": 14
+                                          },
+                                          "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                          "start": {
+                                            "column": 3,
+                                            "line": 14
+                                          }
+                                        },
+                                        "name": "When",
+                                        "type": "Identifier"
+                                      },
+                                      "type": "MemberAccess"
                                     },
+                                    "loc": null,
+                                    "operator": "=",
                                     "right": {
-                                      "type": "CallExpression",
+                                      "_meta": {},
+                                      "arguments": [],
                                       "callee": {
-                                        "type": "MemberAccess",
-                                        "object": {
-                                          "type": "Identifier",
-                                          "name": "time",
-                                          "loc": {
-                                            "start": {
-                                              "Offset": 0,
-                                              "line": 31,
-                                              "column": 45
-                                            },
-                                            "end": {
-                                              "Offset": 0,
-                                              "line": 31,
-                                              "column": 49
-                                            },
-                                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                          },
-                                          "_meta": {}
-                                        },
-                                        "property": {
-                                          "type": "Identifier",
-                                          "name": "Now",
-                                          "loc": {
-                                            "start": {
-                                              "Offset": 0,
-                                              "line": 31,
-                                              "column": 50
-                                            },
-                                            "end": {
-                                              "Offset": 0,
-                                              "line": 31,
-                                              "column": 53
-                                            },
-                                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                          },
-                                          "_meta": {}
-                                        },
+                                        "_meta": {},
                                         "computed": false,
                                         "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 31,
-                                            "column": 45
-                                          },
                                           "end": {
-                                            "Offset": 0,
-                                            "line": 31,
-                                            "column": 53
+                                            "column": 53,
+                                            "line": 31
                                           },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                        },
-                                        "_meta": {}
-                                      },
-                                      "arguments": [],
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 31,
-                                          "column": 45
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 31,
-                                          "column": 55
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                      },
-                                      "_meta": {}
-                                    },
-                                    "operator": "=",
-                                    "cloned": true,
-                                    "loc": null,
-                                    "_meta": {}
-                                  },
-                                  {
-                                    "type": "AssignmentExpression",
-                                    "left": {
-                                      "type": "MemberAccess",
-                                      "object": {
-                                        "type": "Identifier",
-                                        "name": "tmp2",
-                                        "loc": {
+                                          "sourcefile": "$EXAMPLES/multiple_type_decl.go",
                                           "start": {
-                                            "Offset": 0,
-                                            "line": 31,
-                                            "column": 37
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 31,
-                                            "column": 65
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                        },
-                                        "_meta": {
-                                          "type": {
-                                            "type": "Identifier",
-                                            "name": "MyError",
-                                            "loc": {
-                                              "start": {
-                                                "Offset": 0,
-                                                "line": 31,
-                                                "column": 37
-                                              },
-                                              "end": {
-                                                "Offset": 0,
-                                                "line": 31,
-                                                "column": 44
-                                              },
-                                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                            },
-                                            "_meta": {}
+                                            "column": 45,
+                                            "line": 31
                                           }
+                                        },
+                                        "object": {
+                                          "_meta": {},
+                                          "loc": {
+                                            "end": {
+                                              "column": 49,
+                                              "line": 31
+                                            },
+                                            "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                            "start": {
+                                              "column": 45,
+                                              "line": 31
+                                            }
+                                          },
+                                          "name": "time",
+                                          "type": "Identifier"
+                                        },
+                                        "property": {
+                                          "_meta": {},
+                                          "loc": {
+                                            "end": {
+                                              "column": 53,
+                                              "line": 31
+                                            },
+                                            "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                            "start": {
+                                              "column": 50,
+                                              "line": 31
+                                            }
+                                          },
+                                          "name": "Now",
+                                          "type": "Identifier"
+                                        },
+                                        "type": "MemberAccess"
+                                      },
+                                      "loc": {
+                                        "end": {
+                                          "column": 55,
+                                          "line": 31
+                                        },
+                                        "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                        "start": {
+                                          "column": 45,
+                                          "line": 31
                                         }
                                       },
-                                      "property": {
-                                        "type": "Identifier",
-                                        "name": "What",
-                                        "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 15,
-                                            "column": 3
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 15,
-                                            "column": 7
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                        },
-                                        "_meta": {}
-                                      },
-                                      "computed": false,
-                                      "loc": null,
-                                      "_meta": {}
+                                      "type": "CallExpression"
                                     },
-                                    "right": {
-                                      "type": "Literal",
-                                      "value": "\"Hello\"",
-                                      "literalType": "STRING",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 31,
-                                          "column": 57
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 31,
-                                          "column": 64
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                      },
-                                      "_meta": {}
-                                    },
-                                    "operator": "=",
-                                    "cloned": true,
-                                    "loc": null,
-                                    "_meta": {}
+                                    "type": "AssignmentExpression"
                                   },
                                   {
-                                    "type": "Identifier",
-                                    "name": "tmp2",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 31,
-                                        "column": 37
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 31,
-                                        "column": 65
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                    },
-                                    "_meta": {
-                                      "type": {
-                                        "type": "Identifier",
-                                        "name": "MyError",
-                                        "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 31,
-                                            "column": 37
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 31,
-                                            "column": 44
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                                    "_meta": {},
+                                    "cloned": true,
+                                    "left": {
+                                      "_meta": {},
+                                      "computed": false,
+                                      "loc": null,
+                                      "object": {
+                                        "_meta": {
+                                          "ReceiveCls": "",
+                                          "type": {
+                                            "_meta": {
+                                              "ReceiveCls": ""
+                                            },
+                                            "loc": {
+                                              "end": {
+                                                "column": 44,
+                                                "line": 31
+                                              },
+                                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/multiple_type_decl.go",
+                                              "start": {
+                                                "column": 37,
+                                                "line": 31
+                                              }
+                                            },
+                                            "name": "MyError",
+                                            "type": "Identifier"
+                                          }
                                         },
-                                        "_meta": {}
+                                        "loc": {
+                                          "end": {
+                                            "column": 65,
+                                            "line": 31
+                                          },
+                                          "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                          "start": {
+                                            "column": 37,
+                                            "line": 31
+                                          }
+                                        },
+                                        "name": "tmp2",
+                                        "type": "Identifier"
+                                      },
+                                      "property": {
+                                        "_meta": {},
+                                        "loc": {
+                                          "end": {
+                                            "column": 7,
+                                            "line": 15
+                                          },
+                                          "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                          "start": {
+                                            "column": 3,
+                                            "line": 15
+                                          }
+                                        },
+                                        "name": "What",
+                                        "type": "Identifier"
+                                      },
+                                      "type": "MemberAccess"
+                                    },
+                                    "loc": null,
+                                    "operator": "=",
+                                    "right": {
+                                      "_meta": {},
+                                      "literalType": "STRING",
+                                      "loc": {
+                                        "end": {
+                                          "column": 64,
+                                          "line": 31
+                                        },
+                                        "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                        "start": {
+                                          "column": 57,
+                                          "line": 31
+                                        }
+                                      },
+                                      "type": "Literal",
+                                      "value": "\"Hello\""
+                                    },
+                                    "type": "AssignmentExpression"
+                                  },
+                                  {
+                                    "_meta": {
+                                      "ReceiveCls": "",
+                                      "type": {
+                                        "_meta": {
+                                          "ReceiveCls": ""
+                                        },
+                                        "loc": {
+                                          "end": {
+                                            "column": 44,
+                                            "line": 31
+                                          },
+                                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/multiple_type_decl.go",
+                                          "start": {
+                                            "column": 37,
+                                            "line": 31
+                                          }
+                                        },
+                                        "name": "MyError",
+                                        "type": "Identifier"
                                       }
-                                    }
+                                    },
+                                    "loc": {
+                                      "end": {
+                                        "column": 65,
+                                        "line": 31
+                                      },
+                                      "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                      "start": {
+                                        "column": 37,
+                                        "line": 31
+                                      }
+                                    },
+                                    "name": "tmp2",
+                                    "type": "Identifier"
                                   }
                                 ],
                                 "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 31,
-                                    "column": 37
-                                  },
                                   "end": {
-                                    "Offset": 0,
-                                    "line": 31,
-                                    "column": 65
+                                    "column": 65,
+                                    "line": 31
                                   },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                                  "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                  "start": {
+                                    "column": 37,
+                                    "line": 31
+                                  }
                                 },
-                                "_meta": {}
+                                "type": "Sequence"
                               },
-                              "operator": "=",
-                              "cloned": true,
-                              "loc": null,
-                              "_meta": {}
+                              "type": "AssignmentExpression"
                             },
                             {
-                              "type": "Identifier",
-                              "name": "tmp1",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 31,
-                                  "column": 7
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 31,
-                                  "column": 66
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                              },
                               "_meta": {
+                                "ReceiveCls": "",
                                 "type": {
-                                  "type": "Identifier",
-                                  "name": "MyCustomError",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 31,
-                                      "column": 7
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 31,
-                                      "column": 20
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                                  "_meta": {
+                                    "ReceiveCls": ""
                                   },
-                                  "_meta": {}
+                                  "loc": {
+                                    "end": {
+                                      "column": 20,
+                                      "line": 31
+                                    },
+                                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/multiple_type_decl.go",
+                                    "start": {
+                                      "column": 7,
+                                      "line": 31
+                                    }
+                                  },
+                                  "name": "MyCustomError",
+                                  "type": "Identifier"
                                 }
-                              }
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 66,
+                                  "line": 31
+                                },
+                                "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                "start": {
+                                  "column": 7,
+                                  "line": 31
+                                }
+                              },
+                              "name": "tmp1",
+                              "type": "Identifier"
                             }
                           ],
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 31,
-                              "column": 7
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 31,
-                              "column": 66
+                              "column": 66,
+                              "line": 31
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                            "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                            "start": {
+                              "column": 7,
+                              "line": 31
+                            }
                           },
-                          "_meta": {}
+                          "type": "Sequence"
                         },
-                        "cloned": true,
+                        "loc": {
+                          "end": {
+                            "column": 66,
+                            "line": 31
+                          },
+                          "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                          "start": {
+                            "column": 2,
+                            "line": 31
+                          }
+                        },
+                        "type": "VariableDeclaration",
                         "varType": {
-                          "type": "Identifier",
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 20,
+                              "line": 31
+                            },
+                            "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                            "start": {
+                              "column": 7,
+                              "line": 31
+                            }
+                          },
                           "name": "MyCustomError",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 31,
-                              "column": 7
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 31,
-                              "column": 20
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                          },
-                          "_meta": {}
+                          "type": "Identifier"
                         },
-                        "variableParam": false,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 31,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 31,
-                            "column": 66
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                        },
-                        "_meta": {}
+                        "variableParam": false
                       },
                       {
-                        "type": "CallExpression",
-                        "callee": {
-                          "type": "MemberAccess",
-                          "object": {
-                            "type": "Identifier",
-                            "name": "a",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 32,
-                                "column": 2
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 32,
-                                "column": 3
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                            },
-                            "_meta": {}
-                          },
-                          "property": {
-                            "type": "Identifier",
-                            "name": "Abs",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 32,
-                                "column": 4
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 32,
-                                "column": 7
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                            },
-                            "_meta": {}
-                          },
-                          "computed": false,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 32,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 32,
-                              "column": 7
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                          },
-                          "_meta": {}
-                        },
+                        "_meta": {},
                         "arguments": [],
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 32,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 32,
-                            "column": 9
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                        },
-                        "_meta": {}
-                      },
-                      {
-                        "type": "AssignmentExpression",
-                        "left": {
-                          "type": "MemberAccess",
-                          "object": {
-                            "type": "Identifier",
-                            "name": "a",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 33,
-                                "column": 2
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 33,
-                                "column": 3
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                            },
-                            "_meta": {}
-                          },
-                          "property": {
-                            "type": "Identifier",
-                            "name": "Message",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 33,
-                                "column": 4
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 33,
-                                "column": 11
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                            },
-                            "_meta": {}
-                          },
+                        "callee": {
+                          "_meta": {},
                           "computed": false,
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 33,
-                              "column": 2
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 33,
-                              "column": 11
+                              "column": 7,
+                              "line": 32
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                            "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                            "start": {
+                              "column": 2,
+                              "line": 32
+                            }
                           },
-                          "_meta": {}
+                          "object": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 3,
+                                "line": 32
+                              },
+                              "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                              "start": {
+                                "column": 2,
+                                "line": 32
+                              }
+                            },
+                            "name": "a",
+                            "type": "Identifier"
+                          },
+                          "property": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 7,
+                                "line": 32
+                              },
+                              "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                              "start": {
+                                "column": 4,
+                                "line": 32
+                              }
+                            },
+                            "name": "Abs",
+                            "type": "Identifier"
+                          },
+                          "type": "MemberAccess"
                         },
-                        "right": {
-                          "type": "Literal",
-                          "value": "\"New\"",
-                          "literalType": "STRING",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 33,
-                              "column": 14
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 33,
-                              "column": 19
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                        "loc": {
+                          "end": {
+                            "column": 9,
+                            "line": 32
                           },
-                          "_meta": {}
+                          "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                          "start": {
+                            "column": 2,
+                            "line": 32
+                          }
+                        },
+                        "type": "CallExpression"
+                      },
+                      {
+                        "_meta": {},
+                        "cloned": true,
+                        "left": {
+                          "_meta": {},
+                          "computed": false,
+                          "loc": {
+                            "end": {
+                              "column": 11,
+                              "line": 33
+                            },
+                            "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                            "start": {
+                              "column": 2,
+                              "line": 33
+                            }
+                          },
+                          "object": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 3,
+                                "line": 33
+                              },
+                              "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                              "start": {
+                                "column": 2,
+                                "line": 33
+                              }
+                            },
+                            "name": "a",
+                            "type": "Identifier"
+                          },
+                          "property": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 11,
+                                "line": 33
+                              },
+                              "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                              "start": {
+                                "column": 4,
+                                "line": 33
+                              }
+                            },
+                            "name": "Message",
+                            "type": "Identifier"
+                          },
+                          "type": "MemberAccess"
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 19,
+                            "line": 33
+                          },
+                          "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                          "start": {
+                            "column": 2,
+                            "line": 33
+                          }
                         },
                         "operator": "=",
-                        "cloned": true,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 33,
-                            "column": 2
+                        "right": {
+                          "_meta": {},
+                          "literalType": "STRING",
+                          "loc": {
+                            "end": {
+                              "column": 19,
+                              "line": 33
+                            },
+                            "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                            "start": {
+                              "column": 14,
+                              "line": 33
+                            }
                           },
-                          "end": {
-                            "Offset": 0,
-                            "line": 33,
-                            "column": 19
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                          "type": "Literal",
+                          "value": "\"New\""
                         },
-                        "_meta": {}
+                        "type": "AssignmentExpression"
                       },
                       {
-                        "type": "CallExpression",
-                        "callee": {
-                          "type": "MemberAccess",
-                          "object": {
-                            "type": "Identifier",
-                            "name": "fmt",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 34,
-                                "column": 2
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 34,
-                                "column": 5
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                            },
-                            "_meta": {}
-                          },
-                          "property": {
-                            "type": "Identifier",
-                            "name": "Println",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 34,
-                                "column": 6
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 34,
-                                "column": 13
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                            },
-                            "_meta": {}
-                          },
-                          "computed": false,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 34,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 34,
-                              "column": 13
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                          },
-                          "_meta": {}
-                        },
+                        "_meta": {},
                         "arguments": [
                           {
-                            "type": "Literal",
-                            "value": "\"MyCustomError method = %v\"",
+                            "_meta": {},
                             "literalType": "STRING",
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 34,
-                                "column": 14
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 34,
-                                "column": 41
+                                "column": 41,
+                                "line": 34
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                              "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                              "start": {
+                                "column": 14,
+                                "line": 34
+                              }
                             },
-                            "_meta": {}
+                            "type": "Literal",
+                            "value": "\"MyCustomError method = %v\""
                           },
                           {
-                            "type": "CallExpression",
+                            "_meta": {},
+                            "arguments": [],
                             "callee": {
-                              "type": "MemberAccess",
-                              "object": {
-                                "type": "Identifier",
-                                "name": "a",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 34,
-                                    "column": 43
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 34,
-                                    "column": 44
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                },
-                                "_meta": {}
-                              },
-                              "property": {
-                                "type": "Identifier",
-                                "name": "Abs",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 34,
-                                    "column": 45
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 34,
-                                    "column": 48
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
-                                },
-                                "_meta": {}
-                              },
+                              "_meta": {},
                               "computed": false,
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 34,
-                                  "column": 43
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 34,
-                                  "column": 48
+                                  "column": 48,
+                                  "line": 34
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                                "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                "start": {
+                                  "column": 43,
+                                  "line": 34
+                                }
                               },
-                              "_meta": {}
+                              "object": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 44,
+                                    "line": 34
+                                  },
+                                  "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                  "start": {
+                                    "column": 43,
+                                    "line": 34
+                                  }
+                                },
+                                "name": "a",
+                                "type": "Identifier"
+                              },
+                              "property": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 48,
+                                    "line": 34
+                                  },
+                                  "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                                  "start": {
+                                    "column": 45,
+                                    "line": 34
+                                  }
+                                },
+                                "name": "Abs",
+                                "type": "Identifier"
+                              },
+                              "type": "MemberAccess"
                             },
-                            "arguments": [],
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 34,
-                                "column": 43
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 34,
-                                "column": 50
+                                "column": 50,
+                                "line": 34
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                              "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                              "start": {
+                                "column": 43,
+                                "line": 34
+                              }
                             },
-                            "_meta": {}
+                            "type": "CallExpression"
                           }
                         ],
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 34,
-                            "column": 2
+                        "callee": {
+                          "_meta": {},
+                          "computed": false,
+                          "loc": {
+                            "end": {
+                              "column": 13,
+                              "line": 34
+                            },
+                            "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                            "start": {
+                              "column": 2,
+                              "line": 34
+                            }
                           },
-                          "end": {
-                            "Offset": 0,
-                            "line": 34,
-                            "column": 51
+                          "object": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 5,
+                                "line": 34
+                              },
+                              "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                              "start": {
+                                "column": 2,
+                                "line": 34
+                              }
+                            },
+                            "name": "fmt",
+                            "type": "Identifier"
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                          "property": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 13,
+                                "line": 34
+                              },
+                              "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                              "start": {
+                                "column": 6,
+                                "line": 34
+                              }
+                            },
+                            "name": "Println",
+                            "type": "Identifier"
+                          },
+                          "type": "MemberAccess"
                         },
-                        "_meta": {}
+                        "loc": {
+                          "end": {
+                            "column": 51,
+                            "line": 34
+                          },
+                          "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                          "start": {
+                            "column": 2,
+                            "line": 34
+                          }
+                        },
+                        "type": "CallExpression"
                       }
                     ],
                     "id": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 30,
-                        "column": 13
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 35,
-                        "column": 2
+                        "column": 2,
+                        "line": 35
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                      "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                      "start": {
+                        "column": 13,
+                        "line": 30
+                      }
                     },
-                    "_meta": {}
+                    "type": "ScopedStatement"
+                  },
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 10,
+                        "line": 30
+                      },
+                      "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                      "start": {
+                        "column": 6,
+                        "line": 30
+                      }
+                    },
+                    "name": "main",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 35
+                    },
+                    "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                    "start": {
+                      "column": 1,
+                      "line": 30
+                    }
                   },
                   "modifiers": null,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 30,
-                      "column": 1
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 35,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                  "parameters": [],
+                  "returnType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "VoidType",
+                    "typeArguments": null
                   },
-                  "_meta": {}
+                  "type": "FunctionDefinition"
                 }
               ],
               "language": "golang",
               "languageVersion": "1.18",
-              "uri": "",
-              "version": "",
               "loc": {
-                "start": {
-                  "Offset": 0,
-                  "line": 1,
-                  "column": 1
-                },
                 "end": {
-                  "Offset": 0,
-                  "line": 35,
-                  "column": 2
+                  "column": 2,
+                  "line": 35
                 },
-                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/multiple_type_decl.go"
+                "sourcefile": "$EXAMPLES/multiple_type_decl.go",
+                "start": {
+                  "column": 1,
+                  "line": 1
+                }
               },
-              "_meta": {}
+              "type": "CompileUnit",
+              "uri": "",
+              "version": ""
             },
             "packageName": "__single__"
           }
@@ -2266,6 +2169,5 @@
         "subs": {}
       }
     }
-  },
-  "moduleName": "__single_module__"
+  }
 }

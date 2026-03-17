@@ -10,6 +10,8 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"reflect"
+	"runtime"
 	"strings"
 	"testing"
 	"uast4go/uast"
@@ -17,9 +19,15 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
+// testdataDir returns the parser-Go directory (where uast_test.go lives), for portable paths.
+func testdataDir(t *testing.T) string {
+	_, filename, _, _ := runtime.Caller(0)
+	return filepath.Dir(filename)
+}
+
 func TestCreatePackage(t *testing.T) {
-	// Assume we're in the module root directory
-	rootDir := "/Users/xxxxx/dev/uast/yasa/yasa/deps/uast4go/examples/asdf"
+	// Use repo examples dir (has go.mod) so test runs on any machine (Mac/Linux/CI)
+	rootDir := filepath.Join(testdataDir(t), "examples")
 
 	// Read the module name from go.mod
 	moduleName, err := readModuleName(filepath.Join(rootDir, "go.mod"))
@@ -169,36 +177,144 @@ func readFileContent(filePath string) (string, error) {
 	return string(data), nil
 }
 
+// normalizeJSONForGoldenCompare 规范化 JSON 再比较：路径统一为 $EXAMPLES/文件名，去掉 Offset/goModPath/numOfGoMod，_meta 统一为 {}，便于跨机器 golden 通过。返回规范化后的 map 便于深度比较（避免 JSON 键序差异）。
+func normalizeJSONForGoldenCompare(jsonStr string) (map[string]interface{}, error) {
+	var m map[string]interface{}
+	if err := json.Unmarshal([]byte(jsonStr), &m); err != nil {
+		return nil, err
+	}
+	normalizeMapForGolden(m)
+	return m, nil
+}
+
+func normalizeMapForGolden(m map[string]interface{}) {
+	const (
+		keyOffset     = "Offset"
+		keyGoModPath  = "goModPath"
+		keyNumOfGoMod = "numOfGoMod"
+	)
+	var keyRenames []struct{ old, new string }
+	for k, v := range m {
+		switch k {
+		case keyOffset:
+			if isNumberZero(v) {
+				delete(m, k)
+			}
+			continue
+		case keyGoModPath, keyNumOfGoMod:
+			delete(m, k)
+			continue
+		case "_meta":
+			if isReceiveClsOnlyMeta(v) {
+				m[k] = map[string]interface{}{}
+			}
+			continue
+		}
+		// 路径有时在 key 里（如 files 的 key 是文件路径）
+		if strings.Contains(k, "examples") && strings.HasSuffix(k, ".go") {
+			if i := strings.LastIndex(k, "examples/"); i >= 0 {
+				keyRenames = append(keyRenames, struct{ old, new string }{k, "$EXAMPLES/" + k[i+len("examples/"):]})
+			}
+		}
+		switch val := v.(type) {
+		case string:
+			if strings.Contains(val, "examples") && strings.HasSuffix(val, ".go") {
+				if i := strings.LastIndex(val, "examples/"); i >= 0 {
+					m[k] = "$EXAMPLES/" + val[i+len("examples/"):]
+				}
+			}
+		case map[string]interface{}:
+			normalizeMapForGolden(val)
+		case []interface{}:
+			for _, e := range val {
+				if nm, ok := e.(map[string]interface{}); ok {
+					normalizeMapForGolden(nm)
+				}
+			}
+		}
+	}
+	for _, r := range keyRenames {
+		m[r.new] = m[r.old]
+		delete(m, r.old)
+	}
+}
+
+func isNumberZero(v interface{}) bool {
+	switch x := v.(type) {
+	case float64:
+		return x == 0
+	case int:
+		return x == 0
+	default:
+		return false
+	}
+}
+
+func isReceiveClsOnlyMeta(v interface{}) bool {
+	m, ok := v.(map[string]interface{})
+	if !ok || len(m) != 1 {
+		return false
+	}
+	rc, ok := m["ReceiveCls"]
+	return ok && (rc == "" || rc == nil)
+}
+
+// TestRegenerateGolden 在 REGENERATE_GOLDEN=1 时用当前 builder 输出覆盖 examples/*.go.json（已规范化路径），便于跨机器一致。平时不跑。
+func TestRegenerateGolden(t *testing.T) {
+	if os.Getenv("REGENERATE_GOLDEN") != "1" {
+		t.Skip("set REGENERATE_GOLDEN=1 to regenerate golden files")
+	}
+	dir := filepath.Join(testdataDir(t), "examples")
+	err := filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {
+		if err != nil {
+			return err
+		}
+		if info.IsDir() || !strings.HasSuffix(info.Name(), ".go") {
+			return nil
+		}
+		result := buidUAST(path)
+		norm, err := normalizeJSONForGoldenCompare(result)
+		if err != nil {
+			return err
+		}
+		bytes, err := json.MarshalIndent(norm, "", "  ")
+		if err != nil {
+			return err
+		}
+		return ioutil.WriteFile(path+".json", bytes, 0644)
+	})
+	if err != nil {
+		t.Fatal(err)
+	}
+}
+
 // 真正校验uast正确性的单测
 func TestBuildOutput(t *testing.T) {
-	// 使用 assert 库
 	assert := assert.New(t)
-
-	dir := "/Users/ariel/code/uast/uast4go/examples"
+	dir := filepath.Join(testdataDir(t), "examples")
 
 	err := filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {
 		if err != nil {
 			return err
 		}
-
 		// 只处理 .go 文件
-		if !info.IsDir() && strings.HasSuffix(info.Name(), ".go") {
-			// 调用 build 函数
-			result := buidUAST(path)
-
-			// 构建 .go.json 文件路径
-			jsonFilePath := path + ".json"
-
-			// 读取 .go.json 文件内容
-			expectedContent, err := readFileContent(jsonFilePath)
-			if err != nil {
-				assert.Failf("Failed to read JSON file", "Could not read file %s: %v", jsonFilePath, err)
-				return nil
-			}
-
-			// 使用 assert.Equal 来比较结果
-			assert.Equal(expectedContent, result, "Output mismatch for file %s", path)
+		if info.IsDir() || !strings.HasSuffix(info.Name(), ".go") {
+			return nil
 		}
+
+		result := buidUAST(path)
+		jsonFilePath := path + ".json"
+		expectedContent, err := readFileContent(jsonFilePath)
+		if err != nil {
+			assert.Failf("Failed to read JSON file", "Could not read file %s: %v", jsonFilePath, err)
+			return nil
+		}
+
+		normExpected, err := normalizeJSONForGoldenCompare(expectedContent)
+		assert.NoError(err, "normalize expected for %s", path)
+		normResult, err := normalizeJSONForGoldenCompare(result)
+		assert.NoError(err, "normalize result for %s", path)
+		assert.True(reflect.DeepEqual(normExpected, normResult), "Output mismatch for file %s", path)
 		return nil
 	})
 

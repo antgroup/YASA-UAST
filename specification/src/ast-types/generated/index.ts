@@ -36,6 +36,8 @@ export interface Meta {
   loc?: SourceLocation
   origin?: any
   _extra?: Record<string, any>
+  // Parser-specific extensions (annotations, isInterface, async, generator, etc.)
+  [key: string]: any
 }
 
 interface BaseNode {

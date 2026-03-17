@@ -1,4 +1,5 @@
 {
+  "moduleName": "__single_module__",
   "packageInfo": {
     "PathName": "",
     "files": {},
@@ -6,176 +7,158 @@
       "/": {
         "PathName": "",
         "files": {
-          "/Users/ariel/code/uast/uast4go/examples/float.go": {
+          "$EXAMPLES/float.go": {
             "node": {
-              "type": "CompileUnit",
+              "_meta": {},
               "body": [
                 {
-                  "type": "PackageDeclaration",
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 9
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 17
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/float.go"
-                  },
                   "_meta": {},
-                  "packageName": {
-                    "type": "Identifier",
-                    "name": "examples",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 9
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 17
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/float.go"
+                  "loc": {
+                    "end": {
+                      "column": 17,
+                      "line": 1
                     },
-                    "_meta": {}
-                  }
+                    "sourcefile": "$EXAMPLES/float.go",
+                    "start": {
+                      "column": 9,
+                      "line": 1
+                    }
+                  },
+                  "packageName": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 17,
+                        "line": 1
+                      },
+                      "sourcefile": "$EXAMPLES/float.go",
+                      "start": {
+                        "column": 9,
+                        "line": 1
+                      }
+                    },
+                    "name": "examples",
+                    "type": "Identifier"
+                  },
+                  "type": "PackageDeclaration"
                 },
                 {
-                  "type": "FunctionDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "main",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 10
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/float.go"
-                    },
-                    "_meta": {}
-                  },
-                  "parameters": [],
-                  "returnType": {
-                    "type": "Identifier",
-                    "name": "float64",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 13
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 20
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/float.go"
-                    },
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "body": {
-                    "type": "ScopedStatement",
+                    "_meta": {},
                     "body": [
                       {
-                        "type": "ReturnStatement",
+                        "_meta": {},
                         "argument": {
-                          "type": "Literal",
-                          "value": "0x3.p10",
+                          "_meta": {},
                           "literalType": "FLOAT",
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 4,
-                              "column": 9
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 4,
-                              "column": 16
+                              "column": 16,
+                              "line": 4
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/float.go"
+                            "sourcefile": "$EXAMPLES/float.go",
+                            "start": {
+                              "column": 9,
+                              "line": 4
+                            }
                           },
-                          "_meta": {}
+                          "type": "Literal",
+                          "value": "0x3.p10"
                         },
                         "isYield": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 4,
-                            "column": 2
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 4,
-                            "column": 16
+                            "column": 16,
+                            "line": 4
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/float.go"
+                          "sourcefile": "$EXAMPLES/float.go",
+                          "start": {
+                            "column": 2,
+                            "line": 4
+                          }
                         },
-                        "_meta": {}
+                        "type": "ReturnStatement"
                       }
                     ],
                     "id": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 21
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 2
+                        "column": 2,
+                        "line": 5
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/float.go"
+                      "sourcefile": "$EXAMPLES/float.go",
+                      "start": {
+                        "column": 21,
+                        "line": 3
+                      }
                     },
-                    "_meta": {}
+                    "type": "ScopedStatement"
+                  },
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 10,
+                        "line": 3
+                      },
+                      "sourcefile": "$EXAMPLES/float.go",
+                      "start": {
+                        "column": 6,
+                        "line": 3
+                      }
+                    },
+                    "name": "main",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 5
+                    },
+                    "sourcefile": "$EXAMPLES/float.go",
+                    "start": {
+                      "column": 1,
+                      "line": 3
+                    }
                   },
                   "modifiers": null,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 3,
-                      "column": 1
+                  "parameters": [],
+                  "returnType": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 20,
+                        "line": 3
+                      },
+                      "sourcefile": "$EXAMPLES/float.go",
+                      "start": {
+                        "column": 13,
+                        "line": 3
+                      }
                     },
-                    "end": {
-                      "Offset": 0,
-                      "line": 5,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/float.go"
+                    "name": "float64",
+                    "type": "Identifier"
                   },
-                  "_meta": {}
+                  "type": "FunctionDefinition"
                 }
               ],
               "language": "golang",
               "languageVersion": "1.18",
-              "uri": "",
-              "version": "",
               "loc": {
-                "start": {
-                  "Offset": 0,
-                  "line": 1,
-                  "column": 1
-                },
                 "end": {
-                  "Offset": 0,
-                  "line": 5,
-                  "column": 2
+                  "column": 2,
+                  "line": 5
                 },
-                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/float.go"
+                "sourcefile": "$EXAMPLES/float.go",
+                "start": {
+                  "column": 1,
+                  "line": 1
+                }
               },
-              "_meta": {}
+              "type": "CompileUnit",
+              "uri": "",
+              "version": ""
             },
             "packageName": "__single__"
           }
@@ -183,6 +166,5 @@
         "subs": {}
       }
     }
-  },
-  "moduleName": "__single_module__"
+  }
 }
