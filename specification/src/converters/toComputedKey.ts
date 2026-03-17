@@ -1,6 +1,6 @@
 import { isIdentifier } from "../validators/generated";
 import { literal } from "../builders/generated";
-import type * as t from "..";
+import type * as t from "../ast-types/generated";
 
 export default function toComputedKey(
   node:

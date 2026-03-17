@@ -1,5 +1,5 @@
 import toBlock from "./toBlock";
-import type * as t from "..";
+import type * as t from "../ast-types/generated";
 
 /**
  * Ensure the `key` (defaults to "body") of a `node` is a block.

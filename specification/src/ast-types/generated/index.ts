@@ -12,10 +12,32 @@ export interface SourceLocation {
   sourcefile?: string | null
 }
 
+export interface Meta {
+  nodehash?: string
+  qualifiedName?: string
+  decorators?: any[]
+  modifiers?: any[]
+  type?: any
+  isCatchParm?: boolean
+  isCatchParam?: boolean
+  isRestElement?: boolean
+  isPublic?: boolean
+  isConstructor?: boolean
+  isEnumImpl?: boolean
+  defer?: boolean
+  compileUnitProcessed?: boolean
+  isSource?: boolean
+  isSink?: boolean
+  sourcePos?: string
+  sinkPos?: string
+  typeDeclaration?: 'class' | 'interface'
+  endLine?: number
+}
+
 interface BaseNode {
   type: Node['type']
-  loc: SourceLocation | undefined
-  _meta?: Record<string, unknown>
+  loc: SourceLocation
+  _meta: Meta
 }
 
 export type Node =
@@ -183,13 +205,13 @@ export interface ThrowStatement extends BaseNode {
 export interface TryStatement extends BaseNode {
   type: 'TryStatement'
   body: Statement
-  handlers?: Array<null | CatchClause> | null
+  handlers?: Array<CatchClause> | null
   finalizer?: Instruction | null
 }
 
 export interface CatchClause extends BaseNode {
   type: 'CatchClause'
-  parameter: Array<null | VariableDeclaration | Sequence>
+  parameter: Array<VariableDeclaration | Sequence>
   body: Instruction
 }
 
@@ -329,7 +351,7 @@ export interface ObjectProperty extends BaseNode {
 export interface CallExpression extends BaseNode {
   type: 'CallExpression'
   callee: Expression
-  arguments: Array<null | Expression>
+  arguments: Array<Expression>
 }
 
 export interface NewExpression extends BaseNode {
@@ -341,22 +363,22 @@ export interface NewExpression extends BaseNode {
 export interface FunctionDefinition extends BaseNode {
   type: 'FunctionDefinition'
   id?: Expression | null
-  parameters: Array<null | VariableDeclaration>
+  parameters: Array<VariableDeclaration>
   returnType: Type
   body: Instruction
-  modifiers: Array<null | string>
+  modifiers: Array<string>
 }
 
 export interface ClassDefinition extends BaseNode {
   type: 'ClassDefinition'
   id?: Identifier | null
-  body: Array<null | Instruction>
-  supers: Array<null | Expression>
+  body: Array<Instruction>
+  supers: Array<Expression>
 }
 
 export interface VariableDeclaration extends BaseNode {
   type: 'VariableDeclaration'
-  id: Expression
+  id: LVal
   init?: Expression | null
   cloned?: boolean | null
   varType: Type
@@ -617,7 +639,7 @@ export type Statement =
   | VariableDeclaration
   | YieldExpression
   | PackageDeclaration
-export type LVal = Identifier | MemberAccess
+export type LVal = Identifier | MemberAccess | TupleExpression
 export type Type =
   | Identifier
   | PrimitiveType

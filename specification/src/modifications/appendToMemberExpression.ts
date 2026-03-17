@@ -1,5 +1,5 @@
 import { memberAccess } from "../builders/generated";
-import type * as t from "..";
+import type * as t from "../ast-types/generated";
 
 /**
  * Append a node to a member expression.

@@ -13,13 +13,35 @@ export interface SourceLocation {
         line: number;
         column: number;
     };
-    sourcefile? : string | null;
+    sourcefile?: string | null;
+}
+
+export interface Meta {
+    nodehash?: string;
+    qualifiedName?: string;
+    decorators?: any[];
+    modifiers?: any[];
+    type?: any;
+    isCatchParm?: boolean;
+    isCatchParam?: boolean;
+    isRestElement?: boolean;
+    isPublic?: boolean;
+    isConstructor?: boolean;
+    isEnumImpl?: boolean;
+    defer?: boolean;
+    compileUnitProcessed?: boolean;
+    isSource?: boolean;
+    isSink?: boolean;
+    sourcePos?: string;
+    sinkPos?: string;
+    typeDeclaration?: 'class' | 'interface';
+    endLine?: number;
 }
 
 interface BaseNode {
     type: Node['type'];
-    loc : SourceLocation | undefined;
-    _meta?: Record<string, unknown>;
+    loc: SourceLocation;
+    _meta: Meta;
 }
 
 export type Node = ${t.TYPES.filter(k => !t.FLIPPED_ALIAS_KEYS[k])

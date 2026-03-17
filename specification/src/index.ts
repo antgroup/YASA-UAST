@@ -90,4 +90,48 @@ export const react = {
 
 export {version}  from '../package.json';
 
+// 原始生成的类型（内部使用，保持向后兼容）
+// 注意：这些类型会被下面的新类型系统覆盖
 export * from "./ast-types/generated";
+
+// ===== UAST 三层继承类型系统 =====
+// BaseNode → 6大分类(StmtBase/ExprBase/...) → 具体节点
+
+// 导出三层类型系统（真正的继承关系）
+// 注意：这会覆盖上面 Generated 导出的同名类型
+export type {
+  BaseNode,
+  // 第2层: 6大分类基类
+  CompileUnitBase, StmtBase, ExprBase, DeclBase, TypeBase, NameBase,
+  // 第2层: 6大分类联合类型
+  CompileUnit, Stmt, Expr, Decl, Type, Name, Node,
+  // 第3层: Stmt 具体节点 (17个)
+  Noop, IfStatement, SwitchStatement, CaseClause, ForStatement, WhileStatement, RangeStatement,
+  BreakStatement, ContinueStatement, ReturnStatement, ThrowStatement,
+  ScopedStatement, TryStatement, CatchClause,
+  LabeledStatement, ExpressionStatement, ExportStatement,
+  // 第3层: Expr 具体节点 (21个)
+  Literal, ThisExpression, SuperExpression,
+  UnaryExpression, BinaryExpression, AssignmentExpression, ConditionalExpression,
+  CallExpression, NewExpression, MemberAccess, SliceExpression,
+  CastExpression, ImportExpression, YieldExpression,
+  TupleExpression, ObjectExpression, ObjectProperty, SpreadElement,
+  Sequence, DereferenceExpression, ReferenceExpression,
+  // 第3层: Decl 具体节点 (4个)
+  FunctionDefinition, ClassDefinition, VariableDeclaration, PackageDeclaration,
+  // 第3层: Type 具体节点 (10个)
+  PrimitiveType, DynamicType, VoidType,
+  ArrayType, TupleType, MapType, PointerType, ScopedType, FuncType, ChanType,
+  // 第3层: Name 具体节点 (1个)
+  Identifier,
+} from './types-hierarchy';
+
+// 类型守卫
+export {
+  isCompileUnit,
+  isStmt,
+  isExpr,
+  isDecl,
+  // isType, // 已在 validators/generated 中导出
+  isName,
+} from './types-hierarchy';

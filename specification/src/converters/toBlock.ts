@@ -7,7 +7,7 @@ import {
   expressionStatement,
   scopedStatement,
 } from "../builders/generated";
-import type * as t from "..";
+import type * as t from "../ast-types/generated";
 
 export default function toScopedStatement(
     node: t.Statement | t.Expression,

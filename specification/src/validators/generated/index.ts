@@ -6,7 +6,7 @@ import shallowEqual from '../../utils/shallowEqual'
 import type * as t from '../..'
 
 export function isNoop(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.Noop {
   if (!node) return false
@@ -23,7 +23,7 @@ export function isNoop(
   return false
 }
 export function isLiteral(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.Literal {
   if (!node) return false
@@ -40,7 +40,7 @@ export function isLiteral(
   return false
 }
 export function isIdentifier(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.Identifier {
   if (!node) return false
@@ -57,7 +57,7 @@ export function isIdentifier(
   return false
 }
 export function isCompileUnit(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.CompileUnit {
   if (!node) return false
@@ -74,7 +74,7 @@ export function isCompileUnit(
   return false
 }
 export function isExportStatement(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.ExportStatement {
   if (!node) return false
@@ -91,7 +91,7 @@ export function isExportStatement(
   return false
 }
 export function isIfStatement(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.IfStatement {
   if (!node) return false
@@ -108,7 +108,7 @@ export function isIfStatement(
   return false
 }
 export function isSwitchStatement(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.SwitchStatement {
   if (!node) return false
@@ -125,7 +125,7 @@ export function isSwitchStatement(
   return false
 }
 export function isCaseClause(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.CaseClause {
   if (!node) return false
@@ -142,7 +142,7 @@ export function isCaseClause(
   return false
 }
 export function isForStatement(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.ForStatement {
   if (!node) return false
@@ -159,7 +159,7 @@ export function isForStatement(
   return false
 }
 export function isWhileStatement(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.WhileStatement {
   if (!node) return false
@@ -176,7 +176,7 @@ export function isWhileStatement(
   return false
 }
 export function isRangeStatement(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.RangeStatement {
   if (!node) return false
@@ -193,7 +193,7 @@ export function isRangeStatement(
   return false
 }
 export function isLabeledStatement(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.LabeledStatement {
   if (!node) return false
@@ -210,7 +210,7 @@ export function isLabeledStatement(
   return false
 }
 export function isReturnStatement(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.ReturnStatement {
   if (!node) return false
@@ -227,7 +227,7 @@ export function isReturnStatement(
   return false
 }
 export function isBreakStatement(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.BreakStatement {
   if (!node) return false
@@ -244,7 +244,7 @@ export function isBreakStatement(
   return false
 }
 export function isContinueStatement(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.ContinueStatement {
   if (!node) return false
@@ -261,7 +261,7 @@ export function isContinueStatement(
   return false
 }
 export function isThrowStatement(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.ThrowStatement {
   if (!node) return false
@@ -278,7 +278,7 @@ export function isThrowStatement(
   return false
 }
 export function isTryStatement(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.TryStatement {
   if (!node) return false
@@ -295,7 +295,7 @@ export function isTryStatement(
   return false
 }
 export function isCatchClause(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.CatchClause {
   if (!node) return false
@@ -312,7 +312,7 @@ export function isCatchClause(
   return false
 }
 export function isExpressionStatement(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.ExpressionStatement {
   if (!node) return false
@@ -329,7 +329,7 @@ export function isExpressionStatement(
   return false
 }
 export function isScopedStatement(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.ScopedStatement {
   if (!node) return false
@@ -346,7 +346,7 @@ export function isScopedStatement(
   return false
 }
 export function isBinaryExpression(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.BinaryExpression {
   if (!node) return false
@@ -363,7 +363,7 @@ export function isBinaryExpression(
   return false
 }
 export function isUnaryExpression(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.UnaryExpression {
   if (!node) return false
@@ -380,7 +380,7 @@ export function isUnaryExpression(
   return false
 }
 export function isAssignmentExpression(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.AssignmentExpression {
   if (!node) return false
@@ -397,7 +397,7 @@ export function isAssignmentExpression(
   return false
 }
 export function isSequence(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.Sequence {
   if (!node) return false
@@ -414,7 +414,7 @@ export function isSequence(
   return false
 }
 export function isCastExpression(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.CastExpression {
   if (!node) return false
@@ -431,7 +431,7 @@ export function isCastExpression(
   return false
 }
 export function isConditionalExpression(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.ConditionalExpression {
   if (!node) return false
@@ -448,7 +448,7 @@ export function isConditionalExpression(
   return false
 }
 export function isSuperExpression(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.SuperExpression {
   if (!node) return false
@@ -465,7 +465,7 @@ export function isSuperExpression(
   return false
 }
 export function isThisExpression(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.ThisExpression {
   if (!node) return false
@@ -482,7 +482,7 @@ export function isThisExpression(
   return false
 }
 export function isMemberAccess(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.MemberAccess {
   if (!node) return false
@@ -499,7 +499,7 @@ export function isMemberAccess(
   return false
 }
 export function isSliceExpression(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.SliceExpression {
   if (!node) return false
@@ -516,7 +516,7 @@ export function isSliceExpression(
   return false
 }
 export function isTupleExpression(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.TupleExpression {
   if (!node) return false
@@ -533,7 +533,7 @@ export function isTupleExpression(
   return false
 }
 export function isObjectExpression(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.ObjectExpression {
   if (!node) return false
@@ -550,7 +550,7 @@ export function isObjectExpression(
   return false
 }
 export function isObjectProperty(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.ObjectProperty {
   if (!node) return false
@@ -567,7 +567,7 @@ export function isObjectProperty(
   return false
 }
 export function isCallExpression(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.CallExpression {
   if (!node) return false
@@ -584,7 +584,7 @@ export function isCallExpression(
   return false
 }
 export function isNewExpression(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.NewExpression {
   if (!node) return false
@@ -601,7 +601,7 @@ export function isNewExpression(
   return false
 }
 export function isFunctionDefinition(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.FunctionDefinition {
   if (!node) return false
@@ -618,7 +618,7 @@ export function isFunctionDefinition(
   return false
 }
 export function isClassDefinition(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.ClassDefinition {
   if (!node) return false
@@ -635,7 +635,7 @@ export function isClassDefinition(
   return false
 }
 export function isVariableDeclaration(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.VariableDeclaration {
   if (!node) return false
@@ -652,7 +652,7 @@ export function isVariableDeclaration(
   return false
 }
 export function isDereferenceExpression(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.DereferenceExpression {
   if (!node) return false
@@ -669,7 +669,7 @@ export function isDereferenceExpression(
   return false
 }
 export function isReferenceExpression(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.ReferenceExpression {
   if (!node) return false
@@ -686,7 +686,7 @@ export function isReferenceExpression(
   return false
 }
 export function isImportExpression(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.ImportExpression {
   if (!node) return false
@@ -703,7 +703,7 @@ export function isImportExpression(
   return false
 }
 export function isSpreadElement(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.SpreadElement {
   if (!node) return false
@@ -720,7 +720,7 @@ export function isSpreadElement(
   return false
 }
 export function isYieldExpression(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.YieldExpression {
   if (!node) return false
@@ -737,7 +737,7 @@ export function isYieldExpression(
   return false
 }
 export function isPackageDeclaration(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.PackageDeclaration {
   if (!node) return false
@@ -754,7 +754,7 @@ export function isPackageDeclaration(
   return false
 }
 export function isPrimitiveType(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.PrimitiveType {
   if (!node) return false
@@ -771,7 +771,7 @@ export function isPrimitiveType(
   return false
 }
 export function isArrayType(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.ArrayType {
   if (!node) return false
@@ -788,7 +788,7 @@ export function isArrayType(
   return false
 }
 export function isPointerType(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.PointerType {
   if (!node) return false
@@ -805,7 +805,7 @@ export function isPointerType(
   return false
 }
 export function isMapType(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.MapType {
   if (!node) return false
@@ -822,7 +822,7 @@ export function isMapType(
   return false
 }
 export function isScopedType(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.ScopedType {
   if (!node) return false
@@ -839,7 +839,7 @@ export function isScopedType(
   return false
 }
 export function isTupleType(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.TupleType {
   if (!node) return false
@@ -856,7 +856,7 @@ export function isTupleType(
   return false
 }
 export function isChanType(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.ChanType {
   if (!node) return false
@@ -873,7 +873,7 @@ export function isChanType(
   return false
 }
 export function isFuncType(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.FuncType {
   if (!node) return false
@@ -890,7 +890,7 @@ export function isFuncType(
   return false
 }
 export function isDynamicType(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.DynamicType {
   if (!node) return false
@@ -907,7 +907,7 @@ export function isDynamicType(
   return false
 }
 export function isVoidType(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.VoidType {
   if (!node) return false
@@ -924,7 +924,7 @@ export function isVoidType(
   return false
 }
 export function isStandardized(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.Standardized {
   if (!node) return false
@@ -996,7 +996,7 @@ export function isStandardized(
   return false
 }
 export function isInstruction(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.Instruction {
   if (!node) return false
@@ -1056,7 +1056,7 @@ export function isInstruction(
   return false
 }
 export function isExpression(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.Expression {
   if (!node) return false
@@ -1103,7 +1103,7 @@ export function isExpression(
   return false
 }
 export function isStatement(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.Statement {
   if (!node) return false
@@ -1142,13 +1142,17 @@ export function isStatement(
   return false
 }
 export function isLVal(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.LVal {
   if (!node) return false
 
   const nodeType = (node as t.Node).type
-  if ('Identifier' === nodeType || 'MemberAccess' === nodeType) {
+  if (
+    'Identifier' === nodeType ||
+    'MemberAccess' === nodeType ||
+    'TupleExpression' === nodeType
+  ) {
     if (typeof opts === 'undefined') {
       return true
     } else {
@@ -1159,7 +1163,7 @@ export function isLVal(
   return false
 }
 export function isType(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.Type {
   if (!node) return false
@@ -1188,7 +1192,7 @@ export function isType(
   return false
 }
 export function isConditional(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.Conditional {
   if (!node) return false
@@ -1209,7 +1213,7 @@ export function isConditional(
   return false
 }
 export function isLoop(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.Loop {
   if (!node) return false
@@ -1230,7 +1234,7 @@ export function isLoop(
   return false
 }
 export function isScopable(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.Scopable {
   if (!node) return false
@@ -1254,7 +1258,7 @@ export function isScopable(
   return false
 }
 export function isDeclaration(
-  node: object | null | undefined,
+  node: t.BaseNode | null | undefined,
   opts?: object | null
 ): node is t.Declaration {
   if (!node) return false

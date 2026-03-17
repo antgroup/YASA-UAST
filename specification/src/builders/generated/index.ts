@@ -3,7 +3,7 @@
  * To re-generate run 'make build'
  */
 import builder from '../builder'
-import type * as t from '../..'
+import type * as t from '../../ast-types/generated'
 
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
@@ -103,13 +103,13 @@ export function throwStatement(
 }
 export function tryStatement(
   body: t.Statement,
-  handlers?: Array<null | t.CatchClause> | null,
+  handlers?: Array<t.CatchClause> | null,
   finalizer?: t.Instruction | null
 ): t.TryStatement {
   return builder.apply('TryStatement', arguments)
 }
 export function catchClause(
-  parameter: Array<null | t.VariableDeclaration | t.Sequence>,
+  parameter: Array<t.VariableDeclaration | t.Sequence>,
   body: t.Instruction
 ): t.CatchClause {
   return builder.apply('CatchClause', arguments)
@@ -244,7 +244,7 @@ export function objectProperty(
 }
 export function callExpression(
   callee: t.Expression,
-  _arguments: Array<null | t.Expression>
+  _arguments: Array<t.Expression>
 ): t.CallExpression {
   return builder.apply('CallExpression', arguments)
 }
@@ -256,22 +256,22 @@ export function newExpression(
 }
 export function functionDefinition(
   id: t.Expression | null | undefined,
-  parameters: Array<null | t.VariableDeclaration>,
+  parameters: Array<t.VariableDeclaration>,
   returnType: t.Type,
   body: t.Instruction,
-  modifiers: Array<null | string>
+  modifiers: Array<string>
 ): t.FunctionDefinition {
   return builder.apply('FunctionDefinition', arguments)
 }
 export function classDefinition(
   id: t.Identifier | null | undefined,
-  body: Array<null | t.Instruction>,
-  supers: Array<null | t.Expression>
+  body: Array<t.Instruction>,
+  supers: Array<t.Expression>
 ): t.ClassDefinition {
   return builder.apply('ClassDefinition', arguments)
 }
 export function variableDeclaration(
-  id: t.Expression,
+  id: t.LVal,
   init: t.Expression | null | undefined,
   cloned: boolean | null | undefined,
   varType: t.Type

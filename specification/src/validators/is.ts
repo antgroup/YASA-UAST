@@ -2,7 +2,7 @@ import shallowEqual from "../utils/shallowEqual";
 import isType from "./isType";
 import isPlaceholderType from "./isPlaceholderType";
 import { FLIPPED_ALIAS_KEYS } from "../definitions";
-import type * as t from "..";
+import type * as t from "../ast-types/generated";
 
 export default function is<T extends t.Node["type"]>(
   type: T,
