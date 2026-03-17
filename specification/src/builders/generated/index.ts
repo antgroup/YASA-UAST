@@ -303,7 +303,7 @@ export function yieldExpression(
 ): t.YieldExpression {
   return builder.apply('YieldExpression', arguments)
 }
-export function packageDeclaration(name: t.Expression): t.PackageDeclaration {
+export function packageDeclaration(packageName: t.Expression): t.PackageDeclaration {
   return builder.apply('PackageDeclaration', arguments)
 }
 export function primitiveType(

@@ -12,7 +12,21 @@
               "body": [
                 {
                   "type": "PackageDeclaration",
-                  "name": {
+                  "loc": {
+                    "start": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 9
+                    },
+                    "end": {
+                      "Offset": 0,
+                      "line": 1,
+                      "column": 17
+                    },
+                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
+                  },
+                  "_meta": {},
+                  "packageName": {
                     "type": "Identifier",
                     "name": "examples",
                     "loc": {
@@ -29,21 +43,7 @@
                       "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
                     },
                     "_meta": {}
-                  },
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 9
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 17
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/forStmts.go"
-                  },
-                  "_meta": {}
+                  }
                 },
                 {
                   "type": "VariableDeclaration",
@@ -435,7 +435,7 @@
                         },
                         "test": {
                           "type": "BinaryExpression",
-                          "operator": "\u003c",
+                          "operator": "<",
                           "left": {
                             "type": "Identifier",
                             "name": "a",
@@ -808,7 +808,7 @@
                         },
                         "test": {
                           "type": "BinaryExpression",
-                          "operator": "\u003c",
+                          "operator": "<",
                           "left": {
                             "type": "Identifier",
                             "name": "a",
@@ -1083,7 +1083,7 @@
                         },
                         "test": {
                           "type": "BinaryExpression",
-                          "operator": "\u003c",
+                          "operator": "<",
                           "left": {
                             "type": "Identifier",
                             "name": "a",
@@ -1589,7 +1589,7 @@
                         },
                         "test": {
                           "type": "BinaryExpression",
-                          "operator": "\u003c",
+                          "operator": "<",
                           "left": {
                             "type": "Identifier",
                             "name": "a",
@@ -1896,7 +1896,7 @@
                         },
                         "test": {
                           "type": "BinaryExpression",
-                          "operator": "\u003c",
+                          "operator": "<",
                           "left": {
                             "type": "Identifier",
                             "name": "a",

@@ -3,7 +3,19 @@
   "body": [
     {
       "type": "PackageDeclaration",
-      "name": {
+      "_meta": {},
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 1
+        },
+        "end": {
+          "line": 1,
+          "column": 23
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/AllInOne17.java"
+      },
+      "packageName": {
         "type": "MemberAccess",
         "object": {
           "type": "Identifier",
@@ -82,18 +94,6 @@
           },
           "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/AllInOne17.java"
         }
-      },
-      "_meta": {},
-      "loc": {
-        "start": {
-          "line": 1,
-          "column": 1
-        },
-        "end": {
-          "line": 1,
-          "column": 23
-        },
-        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/AllInOne17.java"
       }
     },
     {

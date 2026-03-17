@@ -32,12 +32,19 @@ export interface Meta {
   sinkPos?: string
   typeDeclaration?: 'class' | 'interface'
   endLine?: number
+  // Runtime extensions used by parsers
+  loc?: SourceLocation
+  origin?: any
+  _extra?: Record<string, any>
 }
 
 interface BaseNode {
   type: Node['type']
   loc: SourceLocation
   _meta: Meta
+  // Runtime extensions (set by AST walker)
+  parent?: BaseNode | null
+  name?: string
 }
 
 export type Node =
@@ -414,7 +421,7 @@ export interface YieldExpression extends BaseNode {
 
 export interface PackageDeclaration extends BaseNode {
   type: 'PackageDeclaration'
-  name: Expression
+  packageName: Expression
 }
 
 export interface PrimitiveType extends BaseNode {
@@ -641,7 +648,6 @@ export type Statement =
   | PackageDeclaration
 export type LVal = Identifier | MemberAccess | TupleExpression
 export type Type =
-  | Identifier
   | PrimitiveType
   | ArrayType
   | PointerType

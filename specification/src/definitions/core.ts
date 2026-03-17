@@ -790,11 +790,11 @@ defineType("YieldExpression", {
 })
 
 defineType("PackageDeclaration", {
-    visitor: ["name"],
-    builder: ["name"],
+    visitor: ["packageName"],
+    builder: ["packageName"],
     aliases: ["Instruction", "Expression", "Declaration", "Statement"],
     fields: {
-        name: {
+        packageName: {
             validate: assertNodeType("Expression")
         },
     }

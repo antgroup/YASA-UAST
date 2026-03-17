@@ -3,7 +3,19 @@
   "body": [
     {
       "type": "PackageDeclaration",
-      "name": {
+      "_meta": {},
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 1
+        },
+        "end": {
+          "line": 3,
+          "column": 30
+        },
+        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ConsecutiveSemicolons.java"
+      },
+      "packageName": {
         "type": "MemberAccess",
         "object": {
           "type": "Identifier",
@@ -50,18 +62,6 @@
           },
           "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ConsecutiveSemicolons.java"
         }
-      },
-      "_meta": {},
-      "loc": {
-        "start": {
-          "line": 3,
-          "column": 1
-        },
-        "end": {
-          "line": 3,
-          "column": 30
-        },
-        "sourcefile": "/Users/jiufo/yasaaaaa/uastparser_js/src/frontend/java/test/examples/ConsecutiveSemicolons.java"
       }
     },
     {

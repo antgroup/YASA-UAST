@@ -108,8 +108,8 @@ func (u *Builder) build() {
 		}
 		//添加package name
 		compileUnit.Body = append(compileUnit.Body, &PackageDeclaration{
-			Name:    u.visit(file.Name).(*Identifier),
-			ASTNode: u.visit(file.Name).(*Identifier).ASTNode,
+			PackageName: u.visit(file.Name).(*Identifier),
+			ASTNode:     u.visit(file.Name).(*Identifier).ASTNode,
 		})
 
 		for _, decl := range file.Decls {

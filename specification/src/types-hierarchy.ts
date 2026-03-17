@@ -1,9 +1,11 @@
 /**
  * UAST 三层继承类型系统
- * 
+ *
  * 结构: BaseNode → 6大分类 → 55个具体节点
- * 
- * 注意: 这是类型层面的重新定义，不影响运行时 AST 结构
+ *
+ * 具体节点使用交叉类型 (Generated.X & Base) 实现:
+ * - 保持与 builder 函数返回类型的兼容性
+ * - 通过 Base 类添加分类语义
  */
 
 import type * as Generated from './ast-types/generated';
@@ -24,7 +26,7 @@ export interface CompileUnitBase extends BaseNode {
 
 /** Stmt - 控制流语句 (不产生值) */
 export interface StmtBase extends BaseNode {
-  type: 'Noop' | 'IfStatement' | 'SwitchStatement' | 'CaseClause' | 'ForStatement' | 'WhileStatement' | 'RangeStatement' 
+  type: 'Noop' | 'IfStatement' | 'SwitchStatement' | 'CaseClause' | 'ForStatement' | 'WhileStatement' | 'RangeStatement'
      | 'BreakStatement' | 'ContinueStatement' | 'ReturnStatement' | 'ThrowStatement'
      | 'ScopedStatement' | 'TryStatement' | 'CatchClause'
      | 'LabeledStatement' | 'ExpressionStatement' | 'ExportStatement';
@@ -57,365 +59,74 @@ export interface NameBase extends BaseNode {
   type: 'Identifier';
 }
 
-// ===== 第3层: 具体节点 (真正的继承) =====
+// ===== 第3层: 具体节点 (交叉类型 = Generated + 分类基类) =====
 
 // ===== CompileUnit =====
-export interface CompileUnit extends CompileUnitBase {
-  type: 'CompileUnit';
-  body: Array<Stmt | Expr | Decl>;
-  language: 'javascript' | 'typescript' | 'java' | 'golang' | 'python';
-  languageVersion: number | string | boolean | null;
-  uri: string;
-  version: string;
-}
+export type CompileUnit = Generated.CompileUnit & CompileUnitBase;
 
 // ===== Stmt (17个) =====
-
-export interface Noop extends StmtBase {
-  type: 'Noop';
-}
-
-export interface IfStatement extends StmtBase {
-  type: 'IfStatement';
-  test: Expr;
-  consequent: Stmt | Expr | Decl;
-  alternative: (Stmt | Expr | Decl) | null;
-}
-
-export interface SwitchStatement extends StmtBase {
-  type: 'SwitchStatement';
-  discriminant: Expr;
-  cases: Array<CaseClause>;
-}
-
-export interface CaseClause extends StmtBase {
-  type: 'CaseClause';
-  test: Expr | null;
-  body: Stmt | Expr | Decl;
-}
-
-export interface ForStatement extends StmtBase {
-  type: 'ForStatement';
-  init: Expr | VariableDeclaration | null;
-  test: Expr | null;
-  update: Expr | null;
-  body: Stmt | Expr | Decl;
-}
-
-export interface WhileStatement extends StmtBase {
-  type: 'WhileStatement';
-  test: Expr;
-  body: Stmt | Expr | Decl;
-  isPostTest: boolean | null;
-}
-
-export interface RangeStatement extends StmtBase {
-  type: 'RangeStatement';
-  key: VariableDeclaration | Expr | null;
-  value: VariableDeclaration | Expr | null;
-  right: Expr;
-  body: Stmt | Expr | Decl;
-}
-
-export interface BreakStatement extends StmtBase {
-  type: 'BreakStatement';
-  label: Identifier | null;
-}
-
-export interface ContinueStatement extends StmtBase {
-  type: 'ContinueStatement';
-  label: Identifier | null;
-}
-
-export interface ReturnStatement extends StmtBase {
-  type: 'ReturnStatement';
-  argument: Expr | null;
-  isYield: boolean;
-}
-
-export interface ThrowStatement extends StmtBase {
-  type: 'ThrowStatement';
-  argument: Expr | null;
-}
-
-export interface ScopedStatement extends StmtBase {
-  type: 'ScopedStatement';
-  body: Array<Stmt | Expr | Decl>;
-  id: Identifier | null;
-}
-
-export interface TryStatement extends StmtBase {
-  type: 'TryStatement';
-  body: Stmt;
-  handlers: Array<CatchClause> | null;
-  finalizer: (Stmt | Expr | Decl) | null;
-}
-
-export interface CatchClause extends StmtBase {
-  type: 'CatchClause';
-  parameter: Array<VariableDeclaration | Sequence>;
-  body: Stmt | Expr | Decl;
-}
-
-export interface LabeledStatement extends StmtBase {
-  type: 'LabeledStatement';
-  label: Identifier | null;
-  body: Stmt | Expr | Decl;
-}
-
-export interface ExpressionStatement extends StmtBase {
-  type: 'ExpressionStatement';
-  expression: Expr;
-}
-
-export interface ExportStatement extends StmtBase {
-  type: 'ExportStatement';
-  argument: Expr;
-  alias: Identifier;
-}
+export type Noop = Generated.Noop & StmtBase;
+export type IfStatement = Generated.IfStatement & StmtBase;
+export type SwitchStatement = Generated.SwitchStatement & StmtBase;
+export type CaseClause = Generated.CaseClause & StmtBase;
+export type ForStatement = Generated.ForStatement & StmtBase;
+export type WhileStatement = Generated.WhileStatement & StmtBase;
+export type RangeStatement = Generated.RangeStatement & StmtBase;
+export type BreakStatement = Generated.BreakStatement & StmtBase;
+export type ContinueStatement = Generated.ContinueStatement & StmtBase;
+export type ReturnStatement = Generated.ReturnStatement & StmtBase;
+export type ThrowStatement = Generated.ThrowStatement & StmtBase;
+export type ScopedStatement = Generated.ScopedStatement & StmtBase;
+export type TryStatement = Generated.TryStatement & StmtBase;
+export type CatchClause = Generated.CatchClause & StmtBase;
+export type LabeledStatement = Generated.LabeledStatement & StmtBase;
+export type ExpressionStatement = Generated.ExpressionStatement & StmtBase;
+export type ExportStatement = Generated.ExportStatement & StmtBase;
 
 // ===== Expr (21个) =====
-
-export interface Literal extends ExprBase {
-  type: 'Literal';
-  value: null | number | string | boolean;
-  literalType: 'null' | 'number' | 'string' | 'boolean';
-}
-
-export interface ThisExpression extends ExprBase {
-  type: 'ThisExpression';
-}
-
-export interface SuperExpression extends ExprBase {
-  type: 'SuperExpression';
-}
-
-export interface UnaryExpression extends ExprBase {
-  type: 'UnaryExpression';
-  operator: '-' | '+' | '++' | '--' | '~' | 'delete' | '!' | 'typeof' | 'void';
-  argument: Expr;
-  isSuffix: boolean;
-}
-
-export interface BinaryExpression extends ExprBase {
-  type: 'BinaryExpression';
-  operator: '+' | '-' | '*' | '/' | '**' | '%' | '<<' | '>>' | '>>>' | '<<<' | '&&' | '||' | ',,' | '&' | ',' | '^' | '<' | '>' | '<=' | '>=' | '==' | '!=' | '|' | 'instanceof' | 'in' | 'push' | '===' | '!==' | '??';
-  left: Expr;
-  right: Expr;
-}
-
-export interface AssignmentExpression extends ExprBase {
-  type: 'AssignmentExpression';
-  left: Generated.LVal;
-  right: Expr;
-  operator: '=' | '^=' | '&=' | '<<=' | '>>=' | '>>>=' | '+=' | '-=' | '*=' | '/=' | '%=' | '|=' | '**=';
-  cloned: boolean | null;
-}
-
-export interface ConditionalExpression extends ExprBase {
-  type: 'ConditionalExpression';
-  test: Expr;
-  consequent: Expr;
-  alternative: Expr;
-}
-
-export interface CallExpression extends ExprBase {
-  type: 'CallExpression';
-  callee: Expr;
-  arguments: Array<Expr>;
-}
-
-export interface NewExpression extends ExprBase {
-  type: 'NewExpression';
-  callee: Expr;
-  arguments: Array<Expr>;
-}
-
-export interface MemberAccess extends ExprBase {
-  type: 'MemberAccess';
-  object: Expr;
-  property: Expr;
-  computed: boolean;
-}
-
-export interface SliceExpression extends ExprBase {
-  type: 'SliceExpression';
-  start: (Stmt | Expr | Decl) | null;
-  end: (Stmt | Expr | Decl) | null;
-  step: (Stmt | Expr | Decl) | null;
-}
-
-export interface CastExpression extends ExprBase {
-  type: 'CastExpression';
-  expression: Expr;
-  as: Type;
-}
-
-export interface ImportExpression extends ExprBase {
-  type: 'ImportExpression';
-  from: Literal;
-  local: Identifier | null;
-  imported: Identifier | Literal | null;
-}
-
-export interface YieldExpression extends ExprBase {
-  type: 'YieldExpression';
-  argument: Expr | null;
-}
-
-export interface TupleExpression extends ExprBase {
-  type: 'TupleExpression';
-  elements: Array<Expr | (Stmt | Expr | Decl)>;
-  modifiable: boolean | null;
-}
-
-export interface ObjectExpression extends ExprBase {
-  type: 'ObjectExpression';
-  properties: Array<ObjectProperty | SpreadElement>;
-  id: Identifier | null;
-}
-
-export interface ObjectProperty extends ExprBase {
-  type: 'ObjectProperty';
-  key: Expr;
-  value: null | Expr;
-}
-
-export interface SpreadElement extends ExprBase {
-  type: 'SpreadElement';
-  argument: Expr;
-}
-
-export interface Sequence extends ExprBase {
-  type: 'Sequence';
-  expressions: Array<Stmt | Expr | Decl>;
-}
-
-export interface DereferenceExpression extends ExprBase {
-  type: 'DereferenceExpression';
-  argument: Expr;
-}
-
-export interface ReferenceExpression extends ExprBase {
-  type: 'ReferenceExpression';
-  argument: Expr;
-}
+export type Literal = Generated.Literal & ExprBase;
+export type ThisExpression = Generated.ThisExpression & ExprBase;
+export type SuperExpression = Generated.SuperExpression & ExprBase;
+export type UnaryExpression = Generated.UnaryExpression & ExprBase;
+export type BinaryExpression = Generated.BinaryExpression & ExprBase;
+export type AssignmentExpression = Generated.AssignmentExpression & ExprBase;
+export type ConditionalExpression = Generated.ConditionalExpression & ExprBase;
+export type CallExpression = Generated.CallExpression & ExprBase;
+export type NewExpression = Generated.NewExpression & ExprBase;
+export type MemberAccess = Generated.MemberAccess & ExprBase;
+export type SliceExpression = Generated.SliceExpression & ExprBase;
+export type CastExpression = Generated.CastExpression & ExprBase;
+export type ImportExpression = Generated.ImportExpression & ExprBase;
+export type YieldExpression = Generated.YieldExpression & ExprBase;
+export type TupleExpression = Generated.TupleExpression & ExprBase;
+export type ObjectExpression = Generated.ObjectExpression & ExprBase;
+export type ObjectProperty = Generated.ObjectProperty & ExprBase;
+export type SpreadElement = Generated.SpreadElement & ExprBase;
+export type Sequence = Generated.Sequence & ExprBase;
+export type DereferenceExpression = Generated.DereferenceExpression & ExprBase;
+export type ReferenceExpression = Generated.ReferenceExpression & ExprBase;
 
 // ===== Decl (4个) =====
-
 // FunctionDefinition: 双重分类 (Decl + Expr)
-// - 作为顶层声明: function foo() {} → Decl
-// - 作为表达式/值: array.map(x => x * 2) → Expr (lambda/匿名函数)
-export interface FunctionDefinition extends DeclBase, ExprBase {
-  type: 'FunctionDefinition';
-  id: Expr | null;
-  parameters: Array<VariableDeclaration>;
-  returnType: Type;
-  body: Stmt | Expr | Decl;
-  modifiers: Array<string>;
-}
-
-export interface ClassDefinition extends DeclBase {
-  type: 'ClassDefinition';
-  id: Identifier | null;
-  body: Array<Stmt | Expr | Decl>;
-  supers: Array<Expr>;
-}
-
-export interface VariableDeclaration extends DeclBase {
-  type: 'VariableDeclaration';
-  id: Generated.LVal;  // Identifier | MemberAccess | TupleExpression
-  init: Expr | null;
-  cloned: boolean | null;
-  varType: Type;
-  variableParam: boolean | null;
-}
-
-export interface PackageDeclaration extends DeclBase {
-  type: 'PackageDeclaration';
-  name: Expr;
-}
+export type FunctionDefinition = Generated.FunctionDefinition & DeclBase & ExprBase;
+export type ClassDefinition = Generated.ClassDefinition & DeclBase;
+export type VariableDeclaration = Generated.VariableDeclaration & DeclBase;
+export type PackageDeclaration = Generated.PackageDeclaration & DeclBase;
 
 // ===== Type (10个) =====
-
-export interface PrimitiveType extends TypeBase {
-  type: 'PrimitiveType';
-  id: Identifier;
-  typeArguments: Array<Type> | null;
-  kind: 'string' | 'number' | 'boolean' | 'null';
-}
-
-export interface DynamicType extends TypeBase {
-  type: 'DynamicType';
-  id: Identifier | null;
-  typeArguments: Array<Type> | null;
-}
-
-export interface VoidType extends TypeBase {
-  type: 'VoidType';
-  id: Identifier | null;
-  typeArguments: Array<Type> | null;
-}
-
-export interface ArrayType extends TypeBase {
-  type: 'ArrayType';
-  id: Identifier;
-  element: Type;
-  typeArguments: Array<Type> | null;
-  size: Expr | null;
-}
-
-export interface TupleType extends TypeBase {
-  type: 'TupleType';
-  id: Identifier;
-  elements: Array<Type>;
-  typeArguments: Array<Type> | null;
-}
-
-export interface MapType extends TypeBase {
-  type: 'MapType';
-  id: Identifier;
-  keyType: Type;
-  valueType: Type;
-  typeArguments: Array<Type> | null;
-}
-
-export interface PointerType extends TypeBase {
-  type: 'PointerType';
-  id: Identifier;
-  element: Type;
-  typeArguments: Array<Type> | null;
-  kind: 'pointer' | 'reference';
-}
-
-export interface ScopedType extends TypeBase {
-  type: 'ScopedType';
-  id: Identifier;
-  scope: null | Type;
-  typeArguments: Array<Type> | null;
-}
-
-export interface FuncType extends TypeBase {
-  type: 'FuncType';
-  id: Identifier;
-  typeParams: Array<Type>;
-  params: Array<Type>;
-  results: Array<Type>;
-}
-
-export interface ChanType extends TypeBase {
-  type: 'ChanType';
-  id: Identifier;
-  dir: string;
-  valueType: Type;
-}
+export type PrimitiveType = Generated.PrimitiveType & TypeBase;
+export type DynamicType = Generated.DynamicType & TypeBase;
+export type VoidType = Generated.VoidType & TypeBase;
+export type ArrayType = Generated.ArrayType & TypeBase;
+export type TupleType = Generated.TupleType & TypeBase;
+export type MapType = Generated.MapType & TypeBase;
+export type PointerType = Generated.PointerType & TypeBase;
+export type ScopedType = Generated.ScopedType & TypeBase;
+export type FuncType = Generated.FuncType & TypeBase;
+export type ChanType = Generated.ChanType & TypeBase;
 
 // ===== Name (1个) =====
-
-export interface Identifier extends NameBase {
-  type: 'Identifier';
-  name: string;
-}
+export type Identifier = Generated.Identifier & NameBase;
 
 // ===== 6大分类的联合类型 =====
 export type Stmt = Noop | IfStatement | SwitchStatement | CaseClause | ForStatement | WhileStatement | RangeStatement
