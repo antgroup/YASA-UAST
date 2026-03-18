@@ -336,6 +336,10 @@ class UASTTransformer(ast.NodeTransformer):
         if node.name == '__init__':
             function_def._meta.isConstructor = True
             # function_def.body.body.append(UNode.ReturnStatement(UNode.SourceLocation(), UNode.Meta(), UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), 'self')))
+            if len(body) > 0:
+                last_stmt = body[-1]
+                if not isinstance(last_stmt, UNode.ReturnStatement):
+                    function_def.body.body.append(UNode.ReturnStatement(UNode.SourceLocation(), UNode.Meta(), UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), 'self')))
         decorator_list = []
         for decorator in node.decorator_list:
             decorator_list.append(self.packPos(decorator, self.visit(decorator)))
@@ -1093,12 +1097,15 @@ class UASTTransformer(ast.NodeTransformer):
 
     def visit_keyword(self, node):
         # todo 当函数调用使用 **kwargs 展开一个字典时，node.arg 的值为 None
-        return self.packPos(node, UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(),
+        keyword = self.packPos(node, UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(),
                                                             UNode.Identifier(UNode.SourceLocation(), UNode.Meta(),
                                                                              node.arg),
                                                             self.packPos(node.value, self.visit(node.value)),
                                                             False,
                                                             UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())))
+        if keyword.id.name is None:
+            keyword.id.name = "kwargs"
+        return keyword
 
     def visit_Starred(self, node):
         return self.packPos(node, UNode.DereferenceExpression(UNode.SourceLocation(), UNode.Meta(),
