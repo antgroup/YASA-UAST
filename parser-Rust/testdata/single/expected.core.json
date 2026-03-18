@@ -1,0 +1,199 @@
+{
+  "packageInfo": {
+    "pathName": "/",
+    "files": {
+      "__FILE__": {
+        "node": {
+          "type": "CompileUnit",
+          "body": [
+            {
+              "body": [
+                {
+                  "cloned": false,
+                  "id": {
+                    "name": "id",
+                    "type": "Identifier"
+                  },
+                  "init": null,
+                  "type": "VariableDeclaration",
+                  "varType": {
+                    "id": {
+                      "name": "i32",
+                      "type": "Identifier"
+                    },
+                    "type": "DynamicType",
+                    "typeArguments": null
+                  },
+                  "variableParam": false
+                },
+                {
+                  "cloned": false,
+                  "id": {
+                    "name": "name",
+                    "type": "Identifier"
+                  },
+                  "init": null,
+                  "type": "VariableDeclaration",
+                  "varType": {
+                    "id": {
+                      "name": "String",
+                      "type": "Identifier"
+                    },
+                    "type": "DynamicType",
+                    "typeArguments": null
+                  },
+                  "variableParam": false
+                }
+              ],
+              "id": {
+                "name": "User",
+                "type": "Identifier"
+              },
+              "supers": [],
+              "type": "ClassDefinition"
+            },
+            {
+              "body": {
+                "body": [
+                  {
+                    "cloned": true,
+                    "id": {
+                      "name": "value",
+                      "type": "Identifier"
+                    },
+                    "init": {
+                      "name": "input",
+                      "type": "Identifier"
+                    },
+                    "type": "VariableDeclaration",
+                    "varType": {
+                      "id": null,
+                      "type": "DynamicType",
+                      "typeArguments": null
+                    },
+                    "variableParam": false
+                  },
+                  {
+                    "cloned": true,
+                    "left": {
+                      "name": "value",
+                      "type": "Identifier"
+                    },
+                    "operator": "=",
+                    "right": {
+                      "computed": false,
+                      "object": {
+                        "name": "user",
+                        "type": "Identifier"
+                      },
+                      "property": {
+                        "name": "id",
+                        "type": "Identifier"
+                      },
+                      "type": "MemberAccess"
+                    },
+                    "type": "AssignmentExpression"
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "name": "value",
+                        "type": "Identifier"
+                      }
+                    ],
+                    "callee": {
+                      "computed": false,
+                      "object": {
+                        "name": "user",
+                        "type": "Identifier"
+                      },
+                      "property": {
+                        "name": "touch",
+                        "type": "Identifier"
+                      },
+                      "type": "MemberAccess"
+                    },
+                    "type": "CallExpression"
+                  },
+                  {
+                    "argument": {
+                      "name": "value",
+                      "type": "Identifier"
+                    },
+                    "isYield": false,
+                    "type": "ReturnStatement"
+                  }
+                ],
+                "id": null,
+                "type": "ScopedStatement"
+              },
+              "id": {
+                "name": "process",
+                "type": "Identifier"
+              },
+              "modifiers": [
+                "pub"
+              ],
+              "parameters": [
+                {
+                  "cloned": false,
+                  "id": {
+                    "name": "user",
+                    "type": "Identifier"
+                  },
+                  "init": null,
+                  "type": "VariableDeclaration",
+                  "varType": {
+                    "id": {
+                      "name": "User",
+                      "type": "Identifier"
+                    },
+                    "type": "DynamicType",
+                    "typeArguments": null
+                  },
+                  "variableParam": false
+                },
+                {
+                  "cloned": false,
+                  "id": {
+                    "name": "input",
+                    "type": "Identifier"
+                  },
+                  "init": null,
+                  "type": "VariableDeclaration",
+                  "varType": {
+                    "id": {
+                      "name": "i32",
+                      "type": "Identifier"
+                    },
+                    "type": "DynamicType",
+                    "typeArguments": null
+                  },
+                  "variableParam": false
+                }
+              ],
+              "returnType": {
+                "id": {
+                  "name": "i32",
+                  "type": "Identifier"
+                },
+                "type": "DynamicType",
+                "typeArguments": null
+              },
+              "type": "FunctionDefinition"
+            }
+          ],
+          "language": "rust",
+          "languageVersion": "",
+          "uri": "__FILE__",
+          "version": ""
+        },
+        "packageName": "__single__"
+      }
+    },
+    "subs": {}
+  },
+  "moduleName": "__single_module__",
+  "cargoTomlPath": "",
+  "numOfCargoToml": 0
+}
