@@ -311,7 +311,7 @@ defineType("TryStatement", {
         handlers: {
             validate: chain(
                 assertValueType("array"),
-                assertEach(assertNodeOrValueType("null", "CatchClause"))
+                assertEach(assertNodeType("CatchClause"))
             ),
             optional: true
         },
@@ -329,7 +329,7 @@ defineType("CatchClause", {
         parameter: {
             validate: chain(
                 assertValueType("array"),
-                assertEach(assertNodeOrValueType("null", "VariableDeclaration", "Sequence"))
+                assertEach(assertNodeType("VariableDeclaration", "Sequence"))
             )
         },
         body: {
@@ -572,7 +572,7 @@ defineType("SliceExpression", {
 
 defineType("TupleExpression", {
     visitor: ["elements"],
-    aliases: ["Instruction", "Expression"],
+    aliases: ["Instruction", "Expression", "LVal"],
     fields: {
         elements: {
             validate: chain(
@@ -627,7 +627,7 @@ defineType("CallExpression", {
         arguments: {
             validate: chain(
                 assertValueType("array"),
-                assertEach(assertNodeOrValueType("null", "Expression"))
+                assertEach(assertNodeType("Expression"))
             )
         }
     },
@@ -661,13 +661,13 @@ defineType("FunctionDefinition", {
         parameters: {
             validate: chain(
                 assertValueType("array"),
-                assertEach(assertNodeOrValueType("null", "VariableDeclaration"))
+                assertEach(assertNodeType("VariableDeclaration"))
             )
         },
         modifiers: {
             validate: chain(
                 assertValueType("array"),
-                assertEach(assertNodeOrValueType("null", "string"))
+                assertEach(assertValueType("string"))
             )
         },
         returnType: {
@@ -691,13 +691,13 @@ defineType("ClassDefinition", {
         supers: {
             validate: chain(
                 assertValueType("array"),
-                assertEach(assertNodeOrValueType("null", "Expression"))
+                assertEach(assertNodeType("Expression"))
             )
         },
         body: {
             validate: chain(
                 assertValueType("array"),
-                assertEach(assertNodeOrValueType("null", "Instruction"))
+                assertEach(assertNodeType("Instruction"))
             )
         }
     },
@@ -709,7 +709,7 @@ defineType("VariableDeclaration", {
     aliases: ["Instruction", "Expression", "Declaration", "Statement"],
     fields: {
         id: {
-            validate: assertNodeType("Expression")
+            validate: assertNodeType("LVal")
         },
         init: {
             validate: assertNodeType("Expression"),
@@ -790,11 +790,11 @@ defineType("YieldExpression", {
 })
 
 defineType("PackageDeclaration", {
-    visitor: ["name"],
-    builder: ["name"],
+    visitor: ["packageName"],
+    builder: ["packageName"],
     aliases: ["Instruction", "Expression", "Declaration", "Statement"],
     fields: {
-        name: {
+        packageName: {
             validate: assertNodeType("Expression")
         },
     }

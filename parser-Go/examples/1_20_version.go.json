@@ -1,4 +1,5 @@
 {
+  "moduleName": "__single_module__",
   "packageInfo": {
     "PathName": "",
     "files": {},
@@ -6,883 +7,821 @@
       "/": {
         "PathName": "",
         "files": {
-          "/Users/ariel/code/uast/uast4go/examples/1_20_version.go": {
+          "$EXAMPLES/1_20_version.go": {
             "node": {
-              "type": "CompileUnit",
+              "_meta": {},
               "body": [
                 {
-                  "type": "PackageDeclaration",
-                  "name": {
-                    "type": "Identifier",
-                    "name": "examples",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 9
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 17
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                    },
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 9
-                    },
                     "end": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 17
+                      "column": 17,
+                      "line": 1
                     },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
+                    "sourcefile": "$EXAMPLES/1_20_version.go",
+                    "start": {
+                      "column": 9,
+                      "line": 1
+                    }
                   },
-                  "_meta": {}
+                  "packageName": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 17,
+                        "line": 1
+                      },
+                      "sourcefile": "$EXAMPLES/1_20_version.go",
+                      "start": {
+                        "column": 9,
+                        "line": 1
+                      }
+                    },
+                    "name": "examples",
+                    "type": "Identifier"
+                  },
+                  "type": "PackageDeclaration"
                 },
                 {
-                  "type": "ClassDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "A",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 7
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                    },
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "body": [
                     {
-                      "type": "VariableDeclaration",
+                      "_meta": {},
+                      "cloned": true,
                       "id": {
-                        "type": "Identifier",
-                        "name": "ComparableField",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 4,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 4,
-                            "column": 17
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                        },
                         "_meta": {
+                          "ReceiveCls": "",
                           "type": {
-                            "type": "Identifier",
-                            "name": "T",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 4,
-                                "column": 18
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 4,
-                                "column": 19
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
+                            "_meta": {
+                              "ReceiveCls": ""
                             },
-                            "_meta": {}
+                            "loc": {
+                              "end": {
+                                "column": 19,
+                                "line": 4
+                              },
+                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/1_20_version.go",
+                              "start": {
+                                "column": 18,
+                                "line": 4
+                              }
+                            },
+                            "name": "T",
+                            "type": "Identifier"
                           }
-                        }
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 17,
+                            "line": 4
+                          },
+                          "sourcefile": "$EXAMPLES/1_20_version.go",
+                          "start": {
+                            "column": 2,
+                            "line": 4
+                          }
+                        },
+                        "name": "ComparableField",
+                        "type": "Identifier"
                       },
                       "init": null,
-                      "cloned": true,
-                      "varType": {
-                        "type": "Identifier",
-                        "name": "T",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 4,
-                            "column": 18
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 4,
-                            "column": 19
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                        },
-                        "_meta": {}
-                      },
-                      "variableParam": false,
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 4,
-                          "column": 2
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 4,
-                          "column": 19
+                          "column": 19,
+                          "line": 4
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
+                        "sourcefile": "$EXAMPLES/1_20_version.go",
+                        "start": {
+                          "column": 2,
+                          "line": 4
+                        }
                       },
-                      "_meta": {}
+                      "type": "VariableDeclaration",
+                      "varType": {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 19,
+                            "line": 4
+                          },
+                          "sourcefile": "$EXAMPLES/1_20_version.go",
+                          "start": {
+                            "column": 18,
+                            "line": 4
+                          }
+                        },
+                        "name": "T",
+                        "type": "Identifier"
+                      },
+                      "variableParam": false
                     }
                   ],
-                  "supers": [],
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 3,
-                      "column": 6
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 7,
+                        "line": 3
+                      },
+                      "sourcefile": "$EXAMPLES/1_20_version.go",
+                      "start": {
+                        "column": 6,
+                        "line": 3
+                      }
                     },
-                    "end": {
-                      "Offset": 0,
-                      "line": 5,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
+                    "name": "A",
+                    "type": "Identifier"
                   },
-                  "_meta": {}
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 5
+                    },
+                    "sourcefile": "$EXAMPLES/1_20_version.go",
+                    "start": {
+                      "column": 6,
+                      "line": 3
+                    }
+                  },
+                  "supers": [],
+                  "type": "ClassDefinition"
                 },
                 {
-                  "type": "ClassDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "B",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 7,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 7,
-                        "column": 7
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                    },
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "body": [],
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 7,
+                        "line": 7
+                      },
+                      "sourcefile": "$EXAMPLES/1_20_version.go",
+                      "start": {
+                        "column": 6,
+                        "line": 7
+                      }
+                    },
+                    "name": "B",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 16,
+                      "line": 7
+                    },
+                    "sourcefile": "$EXAMPLES/1_20_version.go",
+                    "start": {
+                      "column": 6,
+                      "line": 7
+                    }
+                  },
                   "supers": [
                     {
-                      "type": "Identifier",
-                      "name": "string",
+                      "_meta": {},
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 7,
-                          "column": 10
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 7,
-                          "column": 16
+                          "column": 16,
+                          "line": 7
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                      },
-                      "_meta": {}
-                    }
-                  ],
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 7,
-                      "column": 6
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 7,
-                      "column": 16
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                  },
-                  "_meta": {}
-                },
-                {
-                  "type": "ClassDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "Constraint",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 9,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 9,
-                        "column": 16
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                    },
-                    "_meta": {}
-                  },
-                  "body": [],
-                  "supers": [],
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 9,
-                      "column": 6
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 11,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                  },
-                  "_meta": {}
-                },
-                {
-                  "type": "FunctionDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "foo",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 13,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 13,
-                        "column": 9
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                    },
-                    "_meta": {}
-                  },
-                  "parameters": [
-                    {
-                      "type": "VariableDeclaration",
-                      "id": {
-                        "type": "Identifier",
-                        "name": "value",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 13,
-                            "column": 24
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 13,
-                            "column": 29
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                        },
-                        "_meta": {
-                          "type": {
-                            "type": "Identifier",
-                            "name": "T",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 13,
-                                "column": 30
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 13,
-                                "column": 31
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                            },
-                            "_meta": {}
-                          }
+                        "sourcefile": "$EXAMPLES/1_20_version.go",
+                        "start": {
+                          "column": 10,
+                          "line": 7
                         }
                       },
-                      "init": null,
-                      "cloned": true,
-                      "varType": {
-                        "type": "Identifier",
-                        "name": "T",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 13,
-                            "column": 30
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 13,
-                            "column": 31
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                        },
-                        "_meta": {}
-                      },
-                      "variableParam": false,
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 13,
-                          "column": 24
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 13,
-                          "column": 31
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                      },
-                      "_meta": {}
+                      "name": "string",
+                      "type": "Identifier"
                     }
                   ],
-                  "returnType": {
-                    "type": "MemberAccess",
-                    "object": {
-                      "type": "Identifier",
-                      "name": "A",
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 13,
-                          "column": 33
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 13,
-                          "column": 34
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                      },
-                      "_meta": {}
-                    },
-                    "property": {
-                      "type": "Identifier",
-                      "name": "T",
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 13,
-                          "column": 35
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 13,
-                          "column": 36
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                      },
-                      "_meta": {}
-                    },
-                    "computed": true,
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 13,
-                        "column": 33
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 13,
-                        "column": 37
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                    },
-                    "_meta": {}
+                  "type": "ClassDefinition"
+                },
+                {
+                  "_meta": {
+                    "ReceiveCls": "",
+                    "isInterface": true
                   },
+                  "body": [],
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 16,
+                        "line": 9
+                      },
+                      "sourcefile": "$EXAMPLES/1_20_version.go",
+                      "start": {
+                        "column": 6,
+                        "line": 9
+                      }
+                    },
+                    "name": "Constraint",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 11
+                    },
+                    "sourcefile": "$EXAMPLES/1_20_version.go",
+                    "start": {
+                      "column": 6,
+                      "line": 9
+                    }
+                  },
+                  "supers": [],
+                  "type": "ClassDefinition"
+                },
+                {
+                  "_meta": {},
                   "body": {
-                    "type": "ScopedStatement",
+                    "_meta": {},
                     "body": [
                       {
-                        "type": "ReturnStatement",
+                        "_meta": {},
                         "argument": {
-                          "type": "Sequence",
+                          "_meta": {},
                           "expressions": [
                             {
-                              "type": "VariableDeclaration",
+                              "_meta": {},
+                              "cloned": false,
                               "id": {
-                                "type": "Identifier",
-                                "name": "tmp1",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 14,
-                                    "column": 9
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 14,
-                                    "column": 37
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                                },
                                 "_meta": {
+                                  "ReceiveCls": "",
                                   "type": {
-                                    "type": "MemberAccess",
-                                    "object": {
-                                      "type": "Identifier",
-                                      "name": "A",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 14,
-                                          "column": 9
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 14,
-                                          "column": 10
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                                      },
-                                      "_meta": {}
-                                    },
-                                    "property": {
-                                      "type": "Identifier",
-                                      "name": "T",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 14,
-                                          "column": 11
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 14,
-                                          "column": 12
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                                      },
-                                      "_meta": {}
+                                    "_meta": {
+                                      "ReceiveCls": ""
                                     },
                                     "computed": true,
                                     "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 14,
-                                        "column": 9
-                                      },
                                       "end": {
-                                        "Offset": 0,
-                                        "line": 14,
-                                        "column": 13
+                                        "column": 13,
+                                        "line": 14
                                       },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
+                                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/1_20_version.go",
+                                      "start": {
+                                        "column": 9,
+                                        "line": 14
+                                      }
                                     },
-                                    "_meta": {}
+                                    "object": {
+                                      "_meta": {
+                                        "ReceiveCls": ""
+                                      },
+                                      "loc": {
+                                        "end": {
+                                          "column": 10,
+                                          "line": 14
+                                        },
+                                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/1_20_version.go",
+                                        "start": {
+                                          "column": 9,
+                                          "line": 14
+                                        }
+                                      },
+                                      "name": "A",
+                                      "type": "Identifier"
+                                    },
+                                    "property": {
+                                      "_meta": {
+                                        "ReceiveCls": ""
+                                      },
+                                      "loc": {
+                                        "end": {
+                                          "column": 12,
+                                          "line": 14
+                                        },
+                                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/1_20_version.go",
+                                        "start": {
+                                          "column": 11,
+                                          "line": 14
+                                        }
+                                      },
+                                      "name": "T",
+                                      "type": "Identifier"
+                                    },
+                                    "type": "MemberAccess"
                                   }
-                                }
+                                },
+                                "loc": {
+                                  "end": {
+                                    "column": 37,
+                                    "line": 14
+                                  },
+                                  "sourcefile": "$EXAMPLES/1_20_version.go",
+                                  "start": {
+                                    "column": 9,
+                                    "line": 14
+                                  }
+                                },
+                                "name": "tmp1",
+                                "type": "Identifier"
                               },
                               "init": {
-                                "type": "NewExpression",
+                                "_meta": {},
+                                "arguments": [],
                                 "callee": {
-                                  "type": "MemberAccess",
-                                  "object": {
-                                    "type": "Identifier",
-                                    "name": "A",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 14,
-                                        "column": 9
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 14,
-                                        "column": 10
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                                    },
-                                    "_meta": {}
-                                  },
-                                  "property": {
-                                    "type": "Identifier",
-                                    "name": "T",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 14,
-                                        "column": 11
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 14,
-                                        "column": 12
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                                    },
-                                    "_meta": {}
-                                  },
+                                  "_meta": {},
                                   "computed": true,
                                   "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 14,
-                                      "column": 9
-                                    },
                                     "end": {
-                                      "Offset": 0,
-                                      "line": 14,
-                                      "column": 13
+                                      "column": 13,
+                                      "line": 14
                                     },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
+                                    "sourcefile": "$EXAMPLES/1_20_version.go",
+                                    "start": {
+                                      "column": 9,
+                                      "line": 14
+                                    }
                                   },
-                                  "_meta": {}
+                                  "object": {
+                                    "_meta": {},
+                                    "loc": {
+                                      "end": {
+                                        "column": 10,
+                                        "line": 14
+                                      },
+                                      "sourcefile": "$EXAMPLES/1_20_version.go",
+                                      "start": {
+                                        "column": 9,
+                                        "line": 14
+                                      }
+                                    },
+                                    "name": "A",
+                                    "type": "Identifier"
+                                  },
+                                  "property": {
+                                    "_meta": {},
+                                    "loc": {
+                                      "end": {
+                                        "column": 12,
+                                        "line": 14
+                                      },
+                                      "sourcefile": "$EXAMPLES/1_20_version.go",
+                                      "start": {
+                                        "column": 11,
+                                        "line": 14
+                                      }
+                                    },
+                                    "name": "T",
+                                    "type": "Identifier"
+                                  },
+                                  "type": "MemberAccess"
                                 },
-                                "arguments": [],
                                 "loc": null,
-                                "_meta": {}
+                                "type": "NewExpression"
                               },
-                              "cloned": false,
+                              "loc": null,
+                              "type": "VariableDeclaration",
                               "varType": {
-                                "type": "MemberAccess",
-                                "object": {
-                                  "type": "Identifier",
-                                  "name": "A",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 14,
-                                      "column": 9
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 14,
-                                      "column": 10
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "property": {
-                                  "type": "Identifier",
-                                  "name": "T",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 14,
-                                      "column": 11
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 14,
-                                      "column": 12
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                                  },
-                                  "_meta": {}
-                                },
+                                "_meta": {},
                                 "computed": true,
                                 "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 14,
-                                    "column": 9
-                                  },
                                   "end": {
-                                    "Offset": 0,
-                                    "line": 14,
-                                    "column": 13
+                                    "column": 13,
+                                    "line": 14
                                   },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
+                                  "sourcefile": "$EXAMPLES/1_20_version.go",
+                                  "start": {
+                                    "column": 9,
+                                    "line": 14
+                                  }
                                 },
-                                "_meta": {}
+                                "object": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 10,
+                                      "line": 14
+                                    },
+                                    "sourcefile": "$EXAMPLES/1_20_version.go",
+                                    "start": {
+                                      "column": 9,
+                                      "line": 14
+                                    }
+                                  },
+                                  "name": "A",
+                                  "type": "Identifier"
+                                },
+                                "property": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 12,
+                                      "line": 14
+                                    },
+                                    "sourcefile": "$EXAMPLES/1_20_version.go",
+                                    "start": {
+                                      "column": 11,
+                                      "line": 14
+                                    }
+                                  },
+                                  "name": "T",
+                                  "type": "Identifier"
+                                },
+                                "type": "MemberAccess"
                               },
-                              "variableParam": false,
-                              "loc": null,
-                              "_meta": {}
+                              "variableParam": false
                             },
                             {
-                              "type": "AssignmentExpression",
+                              "_meta": {},
+                              "cloned": true,
                               "left": {
-                                "type": "MemberAccess",
+                                "_meta": {},
+                                "computed": false,
+                                "loc": null,
                                 "object": {
-                                  "type": "Identifier",
-                                  "name": "tmp1",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 14,
-                                      "column": 9
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 14,
-                                      "column": 37
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                                  },
                                   "_meta": {
+                                    "ReceiveCls": "",
                                     "type": {
-                                      "type": "MemberAccess",
-                                      "object": {
-                                        "type": "Identifier",
-                                        "name": "A",
-                                        "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 14,
-                                            "column": 9
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 14,
-                                            "column": 10
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                                        },
-                                        "_meta": {}
-                                      },
-                                      "property": {
-                                        "type": "Identifier",
-                                        "name": "T",
-                                        "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 14,
-                                            "column": 11
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 14,
-                                            "column": 12
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                                        },
-                                        "_meta": {}
+                                      "_meta": {
+                                        "ReceiveCls": ""
                                       },
                                       "computed": true,
                                       "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 14,
-                                          "column": 9
-                                        },
                                         "end": {
-                                          "Offset": 0,
-                                          "line": 14,
-                                          "column": 13
+                                          "column": 13,
+                                          "line": 14
                                         },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
+                                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/1_20_version.go",
+                                        "start": {
+                                          "column": 9,
+                                          "line": 14
+                                        }
                                       },
-                                      "_meta": {}
+                                      "object": {
+                                        "_meta": {
+                                          "ReceiveCls": ""
+                                        },
+                                        "loc": {
+                                          "end": {
+                                            "column": 10,
+                                            "line": 14
+                                          },
+                                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/1_20_version.go",
+                                          "start": {
+                                            "column": 9,
+                                            "line": 14
+                                          }
+                                        },
+                                        "name": "A",
+                                        "type": "Identifier"
+                                      },
+                                      "property": {
+                                        "_meta": {
+                                          "ReceiveCls": ""
+                                        },
+                                        "loc": {
+                                          "end": {
+                                            "column": 12,
+                                            "line": 14
+                                          },
+                                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/1_20_version.go",
+                                          "start": {
+                                            "column": 11,
+                                            "line": 14
+                                          }
+                                        },
+                                        "name": "T",
+                                        "type": "Identifier"
+                                      },
+                                      "type": "MemberAccess"
                                     }
-                                  }
+                                  },
+                                  "loc": {
+                                    "end": {
+                                      "column": 37,
+                                      "line": 14
+                                    },
+                                    "sourcefile": "$EXAMPLES/1_20_version.go",
+                                    "start": {
+                                      "column": 9,
+                                      "line": 14
+                                    }
+                                  },
+                                  "name": "tmp1",
+                                  "type": "Identifier"
                                 },
                                 "property": {
-                                  "type": "Identifier",
-                                  "name": "ComparableField",
+                                  "_meta": {},
                                   "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 14,
-                                      "column": 14
-                                    },
                                     "end": {
-                                      "Offset": 0,
-                                      "line": 14,
-                                      "column": 29
+                                      "column": 29,
+                                      "line": 14
                                     },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
+                                    "sourcefile": "$EXAMPLES/1_20_version.go",
+                                    "start": {
+                                      "column": 14,
+                                      "line": 14
+                                    }
                                   },
-                                  "_meta": {}
+                                  "name": "ComparableField",
+                                  "type": "Identifier"
                                 },
-                                "computed": false,
-                                "loc": null,
-                                "_meta": {}
+                                "type": "MemberAccess"
                               },
-                              "right": {
-                                "type": "Identifier",
-                                "name": "value",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 14,
-                                    "column": 31
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 14,
-                                    "column": 36
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                                },
-                                "_meta": {}
-                              },
-                              "operator": "=",
-                              "cloned": true,
                               "loc": null,
-                              "_meta": {}
+                              "operator": "=",
+                              "right": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 36,
+                                    "line": 14
+                                  },
+                                  "sourcefile": "$EXAMPLES/1_20_version.go",
+                                  "start": {
+                                    "column": 31,
+                                    "line": 14
+                                  }
+                                },
+                                "name": "value",
+                                "type": "Identifier"
+                              },
+                              "type": "AssignmentExpression"
                             },
                             {
-                              "type": "Identifier",
-                              "name": "tmp1",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 14,
-                                  "column": 9
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 14,
-                                  "column": 37
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                              },
                               "_meta": {
+                                "ReceiveCls": "",
                                 "type": {
-                                  "type": "MemberAccess",
-                                  "object": {
-                                    "type": "Identifier",
-                                    "name": "A",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 14,
-                                        "column": 9
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 14,
-                                        "column": 10
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                                    },
-                                    "_meta": {}
-                                  },
-                                  "property": {
-                                    "type": "Identifier",
-                                    "name": "T",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 14,
-                                        "column": 11
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 14,
-                                        "column": 12
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
-                                    },
-                                    "_meta": {}
+                                  "_meta": {
+                                    "ReceiveCls": ""
                                   },
                                   "computed": true,
                                   "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 14,
-                                      "column": 9
-                                    },
                                     "end": {
-                                      "Offset": 0,
-                                      "line": 14,
-                                      "column": 13
+                                      "column": 13,
+                                      "line": 14
                                     },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
+                                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/1_20_version.go",
+                                    "start": {
+                                      "column": 9,
+                                      "line": 14
+                                    }
                                   },
-                                  "_meta": {}
+                                  "object": {
+                                    "_meta": {
+                                      "ReceiveCls": ""
+                                    },
+                                    "loc": {
+                                      "end": {
+                                        "column": 10,
+                                        "line": 14
+                                      },
+                                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/1_20_version.go",
+                                      "start": {
+                                        "column": 9,
+                                        "line": 14
+                                      }
+                                    },
+                                    "name": "A",
+                                    "type": "Identifier"
+                                  },
+                                  "property": {
+                                    "_meta": {
+                                      "ReceiveCls": ""
+                                    },
+                                    "loc": {
+                                      "end": {
+                                        "column": 12,
+                                        "line": 14
+                                      },
+                                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/1_20_version.go",
+                                      "start": {
+                                        "column": 11,
+                                        "line": 14
+                                      }
+                                    },
+                                    "name": "T",
+                                    "type": "Identifier"
+                                  },
+                                  "type": "MemberAccess"
                                 }
-                              }
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 37,
+                                  "line": 14
+                                },
+                                "sourcefile": "$EXAMPLES/1_20_version.go",
+                                "start": {
+                                  "column": 9,
+                                  "line": 14
+                                }
+                              },
+                              "name": "tmp1",
+                              "type": "Identifier"
                             }
                           ],
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 14,
-                              "column": 9
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 14,
-                              "column": 37
+                              "column": 37,
+                              "line": 14
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
+                            "sourcefile": "$EXAMPLES/1_20_version.go",
+                            "start": {
+                              "column": 9,
+                              "line": 14
+                            }
                           },
-                          "_meta": {}
+                          "type": "Sequence"
                         },
                         "isYield": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 14,
-                            "column": 2
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 14,
-                            "column": 37
+                            "column": 37,
+                            "line": 14
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
+                          "sourcefile": "$EXAMPLES/1_20_version.go",
+                          "start": {
+                            "column": 2,
+                            "line": 14
+                          }
                         },
-                        "_meta": {}
+                        "type": "ReturnStatement"
                       }
                     ],
                     "id": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 13,
-                        "column": 38
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 15,
-                        "column": 2
+                        "column": 2,
+                        "line": 15
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
+                      "sourcefile": "$EXAMPLES/1_20_version.go",
+                      "start": {
+                        "column": 38,
+                        "line": 13
+                      }
                     },
-                    "_meta": {}
+                    "type": "ScopedStatement"
+                  },
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 9,
+                        "line": 13
+                      },
+                      "sourcefile": "$EXAMPLES/1_20_version.go",
+                      "start": {
+                        "column": 6,
+                        "line": 13
+                      }
+                    },
+                    "name": "foo",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 15
+                    },
+                    "sourcefile": "$EXAMPLES/1_20_version.go",
+                    "start": {
+                      "column": 1,
+                      "line": 13
+                    }
                   },
                   "modifiers": null,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 13,
-                      "column": 1
+                  "parameters": [
+                    {
+                      "_meta": {},
+                      "cloned": true,
+                      "id": {
+                        "_meta": {
+                          "ReceiveCls": "",
+                          "type": {
+                            "_meta": {
+                              "ReceiveCls": ""
+                            },
+                            "loc": {
+                              "end": {
+                                "column": 31,
+                                "line": 13
+                              },
+                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/1_20_version.go",
+                              "start": {
+                                "column": 30,
+                                "line": 13
+                              }
+                            },
+                            "name": "T",
+                            "type": "Identifier"
+                          }
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 29,
+                            "line": 13
+                          },
+                          "sourcefile": "$EXAMPLES/1_20_version.go",
+                          "start": {
+                            "column": 24,
+                            "line": 13
+                          }
+                        },
+                        "name": "value",
+                        "type": "Identifier"
+                      },
+                      "init": null,
+                      "loc": {
+                        "end": {
+                          "column": 31,
+                          "line": 13
+                        },
+                        "sourcefile": "$EXAMPLES/1_20_version.go",
+                        "start": {
+                          "column": 24,
+                          "line": 13
+                        }
+                      },
+                      "type": "VariableDeclaration",
+                      "varType": {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 31,
+                            "line": 13
+                          },
+                          "sourcefile": "$EXAMPLES/1_20_version.go",
+                          "start": {
+                            "column": 30,
+                            "line": 13
+                          }
+                        },
+                        "name": "T",
+                        "type": "Identifier"
+                      },
+                      "variableParam": false
+                    }
+                  ],
+                  "returnType": {
+                    "_meta": {},
+                    "computed": true,
+                    "loc": {
+                      "end": {
+                        "column": 37,
+                        "line": 13
+                      },
+                      "sourcefile": "$EXAMPLES/1_20_version.go",
+                      "start": {
+                        "column": 33,
+                        "line": 13
+                      }
                     },
-                    "end": {
-                      "Offset": 0,
-                      "line": 15,
-                      "column": 2
+                    "object": {
+                      "_meta": {},
+                      "loc": {
+                        "end": {
+                          "column": 34,
+                          "line": 13
+                        },
+                        "sourcefile": "$EXAMPLES/1_20_version.go",
+                        "start": {
+                          "column": 33,
+                          "line": 13
+                        }
+                      },
+                      "name": "A",
+                      "type": "Identifier"
                     },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
+                    "property": {
+                      "_meta": {},
+                      "loc": {
+                        "end": {
+                          "column": 36,
+                          "line": 13
+                        },
+                        "sourcefile": "$EXAMPLES/1_20_version.go",
+                        "start": {
+                          "column": 35,
+                          "line": 13
+                        }
+                      },
+                      "name": "T",
+                      "type": "Identifier"
+                    },
+                    "type": "MemberAccess"
                   },
-                  "_meta": {}
+                  "type": "FunctionDefinition"
                 }
               ],
               "language": "golang",
               "languageVersion": "1.18",
-              "uri": "",
-              "version": "",
               "loc": {
-                "start": {
-                  "Offset": 0,
-                  "line": 1,
-                  "column": 1
-                },
                 "end": {
-                  "Offset": 0,
-                  "line": 15,
-                  "column": 2
+                  "column": 2,
+                  "line": 15
                 },
-                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/1_20_version.go"
+                "sourcefile": "$EXAMPLES/1_20_version.go",
+                "start": {
+                  "column": 1,
+                  "line": 1
+                }
               },
-              "_meta": {}
+              "type": "CompileUnit",
+              "uri": "",
+              "version": ""
             },
             "packageName": "__single__"
           }
@@ -890,6 +829,5 @@
         "subs": {}
       }
     }
-  },
-  "moduleName": "__single_module__"
+  }
 }

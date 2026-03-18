@@ -1,4 +1,5 @@
 {
+  "moduleName": "__single_module__",
   "packageInfo": {
     "PathName": "",
     "files": {},
@@ -6,1211 +7,1110 @@
       "/": {
         "PathName": "",
         "files": {
-          "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go": {
+          "$EXAMPLES/typeAsserts.go": {
             "node": {
-              "type": "CompileUnit",
+              "_meta": {},
               "body": [
                 {
-                  "type": "PackageDeclaration",
-                  "name": {
-                    "type": "Identifier",
-                    "name": "examples",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 9
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 17
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                    },
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 9
-                    },
                     "end": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 17
+                      "column": 17,
+                      "line": 1
                     },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
+                    "sourcefile": "$EXAMPLES/typeAsserts.go",
+                    "start": {
+                      "column": 9,
+                      "line": 1
+                    }
                   },
-                  "_meta": {}
+                  "packageName": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 17,
+                        "line": 1
+                      },
+                      "sourcefile": "$EXAMPLES/typeAsserts.go",
+                      "start": {
+                        "column": 9,
+                        "line": 1
+                      }
+                    },
+                    "name": "examples",
+                    "type": "Identifier"
+                  },
+                  "type": "PackageDeclaration"
                 },
                 {
-                  "type": "VariableDeclaration",
+                  "_meta": {
+                    "ReceiveCls": "",
+                    "isDefaultImport": true
+                  },
+                  "cloned": false,
                   "id": {
-                    "type": "Identifier",
-                    "name": "fmt",
+                    "_meta": {},
                     "loc": null,
-                    "_meta": {}
+                    "name": "fmt",
+                    "type": "Identifier"
                   },
                   "init": {
-                    "type": "ImportExpression",
+                    "_meta": {},
                     "from": {
-                      "type": "Literal",
-                      "value": "fmt",
+                      "_meta": {},
                       "literalType": "string",
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 3,
-                          "column": 8
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 3,
-                          "column": 13
+                          "column": 13,
+                          "line": 3
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
+                        "sourcefile": "$EXAMPLES/typeAsserts.go",
+                        "start": {
+                          "column": 8,
+                          "line": 3
+                        }
                       },
-                      "_meta": {}
+                      "type": "Literal",
+                      "value": "fmt"
                     },
-                    "local": null,
                     "imported": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 8
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 13
+                        "column": 13,
+                        "line": 3
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
+                      "sourcefile": "$EXAMPLES/typeAsserts.go",
+                      "start": {
+                        "column": 8,
+                        "line": 3
+                      }
                     },
-                    "_meta": {}
+                    "local": null,
+                    "type": "ImportExpression"
                   },
-                  "cloned": true,
+                  "loc": {
+                    "end": {
+                      "column": 13,
+                      "line": 3
+                    },
+                    "sourcefile": "$EXAMPLES/typeAsserts.go",
+                    "start": {
+                      "column": 8,
+                      "line": 3
+                    }
+                  },
+                  "type": "VariableDeclaration",
                   "varType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
                     "type": "DynamicType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
+                    "typeArguments": null
                   },
-                  "variableParam": false,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 3,
-                      "column": 8
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 3,
-                      "column": 13
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                  },
-                  "_meta": {}
+                  "variableParam": false
                 },
                 {
-                  "type": "ClassDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "TwoS",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 21,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 21,
-                        "column": 10
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                    },
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "body": [],
-                  "supers": [],
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 21,
-                      "column": 6
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 10,
+                        "line": 21
+                      },
+                      "sourcefile": "$EXAMPLES/typeAsserts.go",
+                      "start": {
+                        "column": 6,
+                        "line": 21
+                      }
                     },
-                    "end": {
-                      "Offset": 0,
-                      "line": 22,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
+                    "name": "TwoS",
+                    "type": "Identifier"
                   },
-                  "_meta": {}
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 22
+                    },
+                    "sourcefile": "$EXAMPLES/typeAsserts.go",
+                    "start": {
+                      "column": 6,
+                      "line": 21
+                    }
+                  },
+                  "supers": [],
+                  "type": "ClassDefinition"
                 },
                 {
-                  "type": "FunctionDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "TypeAssertions",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 24,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 24,
-                        "column": 20
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                    },
-                    "_meta": {}
-                  },
-                  "parameters": [],
-                  "returnType": {
-                    "type": "VoidType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "body": {
-                    "type": "ScopedStatement",
+                    "_meta": {},
                     "body": [
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": false,
                         "id": {
-                          "type": "Identifier",
-                          "name": "i",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 25,
-                              "column": 6
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 25,
-                              "column": 7
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                          },
                           "_meta": {
+                            "ReceiveCls": "",
                             "type": {
-                              "type": "DynamicType",
-                              "id": null,
-                              "typeArguments": null,
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 25,
-                                  "column": 8
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 25,
-                                  "column": 19
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
+                              "_meta": {
+                                "ReceiveCls": ""
                               },
-                              "_meta": {}
+                              "id": null,
+                              "loc": {
+                                "end": {
+                                  "column": 19,
+                                  "line": 25
+                                },
+                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/typeAsserts.go",
+                                "start": {
+                                  "column": 8,
+                                  "line": 25
+                                }
+                              },
+                              "type": "DynamicType",
+                              "typeArguments": null
                             }
-                          }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 7,
+                              "line": 25
+                            },
+                            "sourcefile": "$EXAMPLES/typeAsserts.go",
+                            "start": {
+                              "column": 6,
+                              "line": 25
+                            }
+                          },
+                          "name": "i",
+                          "type": "Identifier"
                         },
                         "init": {
-                          "type": "Literal",
-                          "value": "\"hello\"",
+                          "_meta": {},
                           "literalType": "STRING",
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 25,
-                              "column": 22
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 25,
-                              "column": 29
+                              "column": 29,
+                              "line": 25
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                          },
-                          "_meta": {}
-                        },
-                        "cloned": false,
-                        "varType": {
-                          "type": "DynamicType",
-                          "id": null,
-                          "typeArguments": null,
-                          "loc": {
+                            "sourcefile": "$EXAMPLES/typeAsserts.go",
                             "start": {
-                              "Offset": 0,
-                              "line": 25,
-                              "column": 8
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 25,
-                              "column": 19
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
+                              "column": 22,
+                              "line": 25
+                            }
                           },
-                          "_meta": {}
+                          "type": "Literal",
+                          "value": "\"hello\""
                         },
-                        "variableParam": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 25,
-                            "column": 6
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 25,
-                            "column": 29
+                            "column": 29,
+                            "line": 25
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
+                          "sourcefile": "$EXAMPLES/typeAsserts.go",
+                          "start": {
+                            "column": 6,
+                            "line": 25
+                          }
                         },
-                        "_meta": {}
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "id": null,
+                          "loc": {
+                            "end": {
+                              "column": 19,
+                              "line": 25
+                            },
+                            "sourcefile": "$EXAMPLES/typeAsserts.go",
+                            "start": {
+                              "column": 8,
+                              "line": 25
+                            }
+                          },
+                          "type": "DynamicType",
+                          "typeArguments": null
+                        },
+                        "variableParam": false
                       },
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": true,
                         "id": {
-                          "type": "Identifier",
-                          "name": "s",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 27,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 27,
-                              "column": 3
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                          },
                           "_meta": {
+                            "ReceiveCls": "",
                             "type": {
-                              "type": "DynamicType",
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
                               "id": null,
-                              "typeArguments": null,
                               "loc": null,
-                              "_meta": {}
+                              "type": "DynamicType",
+                              "typeArguments": null
                             }
-                          }
-                        },
-                        "init": {
-                          "type": "BinaryExpression",
-                          "operator": "instanceof",
-                          "left": {
-                            "type": "Identifier",
-                            "name": "i",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 27,
-                                "column": 7
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 27,
-                                "column": 8
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                            },
-                            "_meta": {}
-                          },
-                          "right": {
-                            "type": "Identifier",
-                            "name": "string",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 27,
-                                "column": 10
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 27,
-                                "column": 16
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                            },
-                            "_meta": {}
                           },
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 27,
-                              "column": 7
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 27,
-                              "column": 17
+                              "column": 3,
+                              "line": 27
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "",
-                              "name": "string",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 27,
-                                  "column": 10
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 27,
-                                  "column": 16
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                              },
-                              "_meta": {}
+                            "sourcefile": "$EXAMPLES/typeAsserts.go",
+                            "start": {
+                              "column": 2,
+                              "line": 27
                             }
+                          },
+                          "name": "s",
+                          "type": "Identifier"
+                        },
+                        "init": {
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 16,
+                                  "line": 27
+                                },
+                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/typeAsserts.go",
+                                "start": {
+                                  "column": 10,
+                                  "line": 27
+                                }
+                              },
+                              "name": "string",
+                              "type": "Identifier"
+                            }
+                          },
+                          "left": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 8,
+                                "line": 27
+                              },
+                              "sourcefile": "$EXAMPLES/typeAsserts.go",
+                              "start": {
+                                "column": 7,
+                                "line": 27
+                              }
+                            },
+                            "name": "i",
+                            "type": "Identifier"
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 17,
+                              "line": 27
+                            },
+                            "sourcefile": "$EXAMPLES/typeAsserts.go",
+                            "start": {
+                              "column": 7,
+                              "line": 27
+                            }
+                          },
+                          "operator": "instanceof",
+                          "right": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 16,
+                                "line": 27
+                              },
+                              "sourcefile": "$EXAMPLES/typeAsserts.go",
+                              "start": {
+                                "column": 10,
+                                "line": 27
+                              }
+                            },
+                            "name": "string",
+                            "type": "Identifier"
+                          },
+                          "type": "BinaryExpression"
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 17,
+                            "line": 27
+                          },
+                          "sourcefile": "$EXAMPLES/typeAsserts.go",
+                          "start": {
+                            "column": 2,
+                            "line": 27
                           }
                         },
-                        "cloned": true,
+                        "type": "VariableDeclaration",
                         "varType": {
-                          "type": "DynamicType",
+                          "_meta": {},
                           "id": null,
-                          "typeArguments": null,
                           "loc": null,
-                          "_meta": {}
+                          "type": "DynamicType",
+                          "typeArguments": null
                         },
-                        "variableParam": false,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 27,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 27,
-                            "column": 17
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                        },
-                        "_meta": {}
+                        "variableParam": false
                       },
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": true,
                         "id": {
-                          "type": "TupleExpression",
+                          "_meta": {},
                           "elements": [
                             {
-                              "type": "Identifier",
+                              "_meta": {},
+                              "loc": {
+                                "end": {
+                                  "column": 3,
+                                  "line": 29
+                                },
+                                "sourcefile": "$EXAMPLES/typeAsserts.go",
+                                "start": {
+                                  "column": 2,
+                                  "line": 29
+                                }
+                              },
                               "name": "s",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 29,
-                                  "column": 2
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 29,
-                                  "column": 3
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                              },
-                              "_meta": {}
+                              "type": "Identifier"
                             },
                             {
-                              "type": "Identifier",
-                              "name": "ok",
+                              "_meta": {},
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 29,
-                                  "column": 5
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 29,
-                                  "column": 7
+                                  "column": 7,
+                                  "line": 29
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
+                                "sourcefile": "$EXAMPLES/typeAsserts.go",
+                                "start": {
+                                  "column": 5,
+                                  "line": 29
+                                }
                               },
-                              "_meta": {}
+                              "name": "ok",
+                              "type": "Identifier"
                             }
                           ],
-                          "modifiable": false,
                           "loc": null,
-                          "_meta": {}
+                          "modifiable": false,
+                          "type": "TupleExpression"
                         },
                         "init": {
-                          "type": "BinaryExpression",
-                          "operator": "instanceof",
-                          "left": {
-                            "type": "Identifier",
-                            "name": "i",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 29,
-                                "column": 11
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 29,
-                                "column": 12
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                            },
-                            "_meta": {}
-                          },
-                          "right": {
-                            "type": "Identifier",
-                            "name": "string",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 29,
-                                "column": 14
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 29,
-                                "column": 20
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                            },
-                            "_meta": {}
-                          },
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 29,
-                              "column": 11
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 29,
-                              "column": 21
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                          },
                           "_meta": {
+                            "ReceiveCls": "",
                             "type": {
-                              "type": "",
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 20,
+                                  "line": 29
+                                },
+                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/typeAsserts.go",
+                                "start": {
+                                  "column": 14,
+                                  "line": 29
+                                }
+                              },
                               "name": "string",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 29,
-                                  "column": 14
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 29,
-                                  "column": 20
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                              },
-                              "_meta": {}
+                              "type": "Identifier"
                             }
+                          },
+                          "left": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 12,
+                                "line": 29
+                              },
+                              "sourcefile": "$EXAMPLES/typeAsserts.go",
+                              "start": {
+                                "column": 11,
+                                "line": 29
+                              }
+                            },
+                            "name": "i",
+                            "type": "Identifier"
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 21,
+                              "line": 29
+                            },
+                            "sourcefile": "$EXAMPLES/typeAsserts.go",
+                            "start": {
+                              "column": 11,
+                              "line": 29
+                            }
+                          },
+                          "operator": "instanceof",
+                          "right": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 20,
+                                "line": 29
+                              },
+                              "sourcefile": "$EXAMPLES/typeAsserts.go",
+                              "start": {
+                                "column": 14,
+                                "line": 29
+                              }
+                            },
+                            "name": "string",
+                            "type": "Identifier"
+                          },
+                          "type": "BinaryExpression"
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 21,
+                            "line": 29
+                          },
+                          "sourcefile": "$EXAMPLES/typeAsserts.go",
+                          "start": {
+                            "column": 2,
+                            "line": 29
                           }
                         },
-                        "cloned": true,
+                        "type": "VariableDeclaration",
                         "varType": {
-                          "type": "DynamicType",
+                          "_meta": {},
                           "id": null,
-                          "typeArguments": null,
                           "loc": null,
-                          "_meta": {}
+                          "type": "DynamicType",
+                          "typeArguments": null
                         },
-                        "variableParam": false,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 29,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 29,
-                            "column": 21
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                        },
-                        "_meta": {}
+                        "variableParam": false
                       },
                       {
-                        "type": "CallExpression",
-                        "callee": {
-                          "type": "MemberAccess",
-                          "object": {
-                            "type": "Identifier",
-                            "name": "fmt",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 30,
-                                "column": 2
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 30,
-                                "column": 5
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                            },
-                            "_meta": {}
-                          },
-                          "property": {
-                            "type": "Identifier",
-                            "name": "Println",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 30,
-                                "column": 6
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 30,
-                                "column": 13
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                            },
-                            "_meta": {}
-                          },
-                          "computed": false,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 30,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 30,
-                              "column": 13
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                          },
-                          "_meta": {}
-                        },
+                        "_meta": {},
                         "arguments": [
                           {
-                            "type": "Identifier",
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 15,
+                                "line": 30
+                              },
+                              "sourcefile": "$EXAMPLES/typeAsserts.go",
+                              "start": {
+                                "column": 14,
+                                "line": 30
+                              }
+                            },
                             "name": "s",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 30,
-                                "column": 14
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 30,
-                                "column": 15
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
-                            "name": "ok",
+                            "_meta": {},
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 30,
-                                "column": 17
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 30,
-                                "column": 19
+                                "column": 19,
+                                "line": 30
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
+                              "sourcefile": "$EXAMPLES/typeAsserts.go",
+                              "start": {
+                                "column": 17,
+                                "line": 30
+                              }
                             },
-                            "_meta": {}
+                            "name": "ok",
+                            "type": "Identifier"
                           }
                         ],
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 30,
-                            "column": 2
+                        "callee": {
+                          "_meta": {},
+                          "computed": false,
+                          "loc": {
+                            "end": {
+                              "column": 13,
+                              "line": 30
+                            },
+                            "sourcefile": "$EXAMPLES/typeAsserts.go",
+                            "start": {
+                              "column": 2,
+                              "line": 30
+                            }
                           },
-                          "end": {
-                            "Offset": 0,
-                            "line": 30,
-                            "column": 20
+                          "object": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 5,
+                                "line": 30
+                              },
+                              "sourcefile": "$EXAMPLES/typeAsserts.go",
+                              "start": {
+                                "column": 2,
+                                "line": 30
+                              }
+                            },
+                            "name": "fmt",
+                            "type": "Identifier"
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
+                          "property": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 13,
+                                "line": 30
+                              },
+                              "sourcefile": "$EXAMPLES/typeAsserts.go",
+                              "start": {
+                                "column": 6,
+                                "line": 30
+                              }
+                            },
+                            "name": "Println",
+                            "type": "Identifier"
+                          },
+                          "type": "MemberAccess"
                         },
-                        "_meta": {}
+                        "loc": {
+                          "end": {
+                            "column": 20,
+                            "line": 30
+                          },
+                          "sourcefile": "$EXAMPLES/typeAsserts.go",
+                          "start": {
+                            "column": 2,
+                            "line": 30
+                          }
+                        },
+                        "type": "CallExpression"
                       },
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": true,
                         "id": {
-                          "type": "TupleExpression",
+                          "_meta": {},
                           "elements": [
                             {
-                              "type": "Identifier",
+                              "_meta": {},
+                              "loc": {
+                                "end": {
+                                  "column": 3,
+                                  "line": 32
+                                },
+                                "sourcefile": "$EXAMPLES/typeAsserts.go",
+                                "start": {
+                                  "column": 2,
+                                  "line": 32
+                                }
+                              },
                               "name": "f",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 32,
-                                  "column": 2
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 32,
-                                  "column": 3
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                              },
-                              "_meta": {}
+                              "type": "Identifier"
                             },
                             {
-                              "type": "Identifier",
-                              "name": "ok",
+                              "_meta": {},
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 32,
-                                  "column": 5
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 32,
-                                  "column": 7
+                                  "column": 7,
+                                  "line": 32
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
+                                "sourcefile": "$EXAMPLES/typeAsserts.go",
+                                "start": {
+                                  "column": 5,
+                                  "line": 32
+                                }
                               },
-                              "_meta": {}
+                              "name": "ok",
+                              "type": "Identifier"
                             }
                           ],
-                          "modifiable": false,
                           "loc": null,
-                          "_meta": {}
+                          "modifiable": false,
+                          "type": "TupleExpression"
                         },
                         "init": {
-                          "type": "BinaryExpression",
-                          "operator": "instanceof",
-                          "left": {
-                            "type": "Identifier",
-                            "name": "i",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 32,
-                                "column": 11
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
                               },
-                              "end": {
-                                "Offset": 0,
-                                "line": 32,
-                                "column": 12
+                              "loc": {
+                                "end": {
+                                  "column": 21,
+                                  "line": 32
+                                },
+                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/typeAsserts.go",
+                                "start": {
+                                  "column": 14,
+                                  "line": 32
+                                }
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                            },
-                            "_meta": {}
+                              "name": "float64",
+                              "type": "Identifier"
+                            }
                           },
-                          "right": {
-                            "type": "Identifier",
-                            "name": "float64",
+                          "left": {
+                            "_meta": {},
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 32,
-                                "column": 14
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 32,
-                                "column": 21
+                                "column": 12,
+                                "line": 32
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
+                              "sourcefile": "$EXAMPLES/typeAsserts.go",
+                              "start": {
+                                "column": 11,
+                                "line": 32
+                              }
                             },
-                            "_meta": {}
+                            "name": "i",
+                            "type": "Identifier"
                           },
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 32,
-                              "column": 11
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 32,
-                              "column": 22
+                              "column": 22,
+                              "line": 32
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "",
-                              "name": "float64",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 32,
-                                  "column": 14
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 32,
-                                  "column": 21
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                              },
-                              "_meta": {}
+                            "sourcefile": "$EXAMPLES/typeAsserts.go",
+                            "start": {
+                              "column": 11,
+                              "line": 32
                             }
+                          },
+                          "operator": "instanceof",
+                          "right": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 21,
+                                "line": 32
+                              },
+                              "sourcefile": "$EXAMPLES/typeAsserts.go",
+                              "start": {
+                                "column": 14,
+                                "line": 32
+                              }
+                            },
+                            "name": "float64",
+                            "type": "Identifier"
+                          },
+                          "type": "BinaryExpression"
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 22,
+                            "line": 32
+                          },
+                          "sourcefile": "$EXAMPLES/typeAsserts.go",
+                          "start": {
+                            "column": 2,
+                            "line": 32
                           }
                         },
-                        "cloned": true,
+                        "type": "VariableDeclaration",
                         "varType": {
-                          "type": "DynamicType",
+                          "_meta": {},
                           "id": null,
-                          "typeArguments": null,
                           "loc": null,
-                          "_meta": {}
+                          "type": "DynamicType",
+                          "typeArguments": null
                         },
-                        "variableParam": false,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 32,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 32,
-                            "column": 22
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                        },
-                        "_meta": {}
+                        "variableParam": false
                       },
                       {
-                        "type": "CallExpression",
-                        "callee": {
-                          "type": "MemberAccess",
-                          "object": {
-                            "type": "Identifier",
-                            "name": "fmt",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 33,
-                                "column": 2
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 33,
-                                "column": 5
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                            },
-                            "_meta": {}
-                          },
-                          "property": {
-                            "type": "Identifier",
-                            "name": "Println",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 33,
-                                "column": 6
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 33,
-                                "column": 13
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                            },
-                            "_meta": {}
-                          },
-                          "computed": false,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 33,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 33,
-                              "column": 13
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                          },
-                          "_meta": {}
-                        },
+                        "_meta": {},
                         "arguments": [
                           {
-                            "type": "Identifier",
-                            "name": "f",
+                            "_meta": {},
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 33,
-                                "column": 14
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 33,
-                                "column": 15
+                                "column": 15,
+                                "line": 33
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
+                              "sourcefile": "$EXAMPLES/typeAsserts.go",
+                              "start": {
+                                "column": 14,
+                                "line": 33
+                              }
                             },
-                            "_meta": {}
+                            "name": "f",
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
-                            "name": "ok",
+                            "_meta": {},
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 33,
-                                "column": 17
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 33,
-                                "column": 19
+                                "column": 19,
+                                "line": 33
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
+                              "sourcefile": "$EXAMPLES/typeAsserts.go",
+                              "start": {
+                                "column": 17,
+                                "line": 33
+                              }
                             },
-                            "_meta": {}
+                            "name": "ok",
+                            "type": "Identifier"
                           }
                         ],
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 33,
-                            "column": 2
+                        "callee": {
+                          "_meta": {},
+                          "computed": false,
+                          "loc": {
+                            "end": {
+                              "column": 13,
+                              "line": 33
+                            },
+                            "sourcefile": "$EXAMPLES/typeAsserts.go",
+                            "start": {
+                              "column": 2,
+                              "line": 33
+                            }
                           },
-                          "end": {
-                            "Offset": 0,
-                            "line": 33,
-                            "column": 20
+                          "object": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 5,
+                                "line": 33
+                              },
+                              "sourcefile": "$EXAMPLES/typeAsserts.go",
+                              "start": {
+                                "column": 2,
+                                "line": 33
+                              }
+                            },
+                            "name": "fmt",
+                            "type": "Identifier"
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
+                          "property": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 13,
+                                "line": 33
+                              },
+                              "sourcefile": "$EXAMPLES/typeAsserts.go",
+                              "start": {
+                                "column": 6,
+                                "line": 33
+                              }
+                            },
+                            "name": "Println",
+                            "type": "Identifier"
+                          },
+                          "type": "MemberAccess"
                         },
-                        "_meta": {}
+                        "loc": {
+                          "end": {
+                            "column": 20,
+                            "line": 33
+                          },
+                          "sourcefile": "$EXAMPLES/typeAsserts.go",
+                          "start": {
+                            "column": 2,
+                            "line": 33
+                          }
+                        },
+                        "type": "CallExpression"
                       },
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": true,
                         "id": {
-                          "type": "TupleExpression",
+                          "_meta": {},
                           "elements": [
                             {
-                              "type": "Identifier",
-                              "name": "t",
+                              "_meta": {},
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 35,
-                                  "column": 2
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 35,
-                                  "column": 3
+                                  "column": 3,
+                                  "line": 35
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
+                                "sourcefile": "$EXAMPLES/typeAsserts.go",
+                                "start": {
+                                  "column": 2,
+                                  "line": 35
+                                }
                               },
-                              "_meta": {}
+                              "name": "t",
+                              "type": "Identifier"
                             },
                             {
-                              "type": "Identifier",
-                              "name": "ok",
+                              "_meta": {},
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 35,
-                                  "column": 5
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 35,
-                                  "column": 7
+                                  "column": 7,
+                                  "line": 35
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
+                                "sourcefile": "$EXAMPLES/typeAsserts.go",
+                                "start": {
+                                  "column": 5,
+                                  "line": 35
+                                }
                               },
-                              "_meta": {}
+                              "name": "ok",
+                              "type": "Identifier"
                             }
                           ],
-                          "modifiable": false,
                           "loc": null,
-                          "_meta": {}
+                          "modifiable": false,
+                          "type": "TupleExpression"
                         },
                         "init": {
-                          "type": "BinaryExpression",
-                          "operator": "instanceof",
-                          "left": {
-                            "type": "Identifier",
-                            "name": "i",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 11
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
                               },
-                              "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 12
+                              "loc": {
+                                "end": {
+                                  "column": 18,
+                                  "line": 35
+                                },
+                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/typeAsserts.go",
+                                "start": {
+                                  "column": 14,
+                                  "line": 35
+                                }
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                            },
-                            "_meta": {}
+                              "name": "TwoS",
+                              "type": "Identifier"
+                            }
                           },
-                          "right": {
-                            "type": "Identifier",
-                            "name": "TwoS",
+                          "left": {
+                            "_meta": {},
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 14
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 18
+                                "column": 12,
+                                "line": 35
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
+                              "sourcefile": "$EXAMPLES/typeAsserts.go",
+                              "start": {
+                                "column": 11,
+                                "line": 35
+                              }
                             },
-                            "_meta": {}
+                            "name": "i",
+                            "type": "Identifier"
                           },
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 35,
-                              "column": 11
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 35,
-                              "column": 19
+                              "column": 19,
+                              "line": 35
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "",
-                              "name": "TwoS",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 35,
-                                  "column": 14
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 35,
-                                  "column": 18
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                              },
-                              "_meta": {}
+                            "sourcefile": "$EXAMPLES/typeAsserts.go",
+                            "start": {
+                              "column": 11,
+                              "line": 35
                             }
+                          },
+                          "operator": "instanceof",
+                          "right": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 18,
+                                "line": 35
+                              },
+                              "sourcefile": "$EXAMPLES/typeAsserts.go",
+                              "start": {
+                                "column": 14,
+                                "line": 35
+                              }
+                            },
+                            "name": "TwoS",
+                            "type": "Identifier"
+                          },
+                          "type": "BinaryExpression"
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 19,
+                            "line": 35
+                          },
+                          "sourcefile": "$EXAMPLES/typeAsserts.go",
+                          "start": {
+                            "column": 2,
+                            "line": 35
                           }
                         },
-                        "cloned": true,
+                        "type": "VariableDeclaration",
                         "varType": {
-                          "type": "DynamicType",
+                          "_meta": {},
                           "id": null,
-                          "typeArguments": null,
                           "loc": null,
-                          "_meta": {}
+                          "type": "DynamicType",
+                          "typeArguments": null
                         },
-                        "variableParam": false,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 35,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 35,
-                            "column": 19
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                        },
-                        "_meta": {}
+                        "variableParam": false
                       },
                       {
-                        "type": "CallExpression",
-                        "callee": {
-                          "type": "MemberAccess",
-                          "object": {
-                            "type": "Identifier",
-                            "name": "fmt",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 36,
-                                "column": 2
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 36,
-                                "column": 5
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                            },
-                            "_meta": {}
-                          },
-                          "property": {
-                            "type": "Identifier",
-                            "name": "Println",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 36,
-                                "column": 6
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 36,
-                                "column": 13
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                            },
-                            "_meta": {}
-                          },
-                          "computed": false,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 36,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 36,
-                              "column": 13
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
-                          },
-                          "_meta": {}
-                        },
+                        "_meta": {},
                         "arguments": [
                           {
-                            "type": "Identifier",
-                            "name": "t",
+                            "_meta": {},
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 36,
-                                "column": 14
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 36,
-                                "column": 15
+                                "column": 15,
+                                "line": 36
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
+                              "sourcefile": "$EXAMPLES/typeAsserts.go",
+                              "start": {
+                                "column": 14,
+                                "line": 36
+                              }
                             },
-                            "_meta": {}
+                            "name": "t",
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
-                            "name": "ok",
+                            "_meta": {},
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 36,
-                                "column": 17
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 36,
-                                "column": 19
+                                "column": 19,
+                                "line": 36
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
+                              "sourcefile": "$EXAMPLES/typeAsserts.go",
+                              "start": {
+                                "column": 17,
+                                "line": 36
+                              }
                             },
-                            "_meta": {}
+                            "name": "ok",
+                            "type": "Identifier"
                           }
                         ],
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 36,
-                            "column": 2
+                        "callee": {
+                          "_meta": {},
+                          "computed": false,
+                          "loc": {
+                            "end": {
+                              "column": 13,
+                              "line": 36
+                            },
+                            "sourcefile": "$EXAMPLES/typeAsserts.go",
+                            "start": {
+                              "column": 2,
+                              "line": 36
+                            }
                           },
-                          "end": {
-                            "Offset": 0,
-                            "line": 36,
-                            "column": 20
+                          "object": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 5,
+                                "line": 36
+                              },
+                              "sourcefile": "$EXAMPLES/typeAsserts.go",
+                              "start": {
+                                "column": 2,
+                                "line": 36
+                              }
+                            },
+                            "name": "fmt",
+                            "type": "Identifier"
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
+                          "property": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 13,
+                                "line": 36
+                              },
+                              "sourcefile": "$EXAMPLES/typeAsserts.go",
+                              "start": {
+                                "column": 6,
+                                "line": 36
+                              }
+                            },
+                            "name": "Println",
+                            "type": "Identifier"
+                          },
+                          "type": "MemberAccess"
                         },
-                        "_meta": {}
+                        "loc": {
+                          "end": {
+                            "column": 20,
+                            "line": 36
+                          },
+                          "sourcefile": "$EXAMPLES/typeAsserts.go",
+                          "start": {
+                            "column": 2,
+                            "line": 36
+                          }
+                        },
+                        "type": "CallExpression"
                       }
                     ],
                     "id": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 24,
-                        "column": 23
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 40,
-                        "column": 2
+                        "column": 2,
+                        "line": 40
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
+                      "sourcefile": "$EXAMPLES/typeAsserts.go",
+                      "start": {
+                        "column": 23,
+                        "line": 24
+                      }
                     },
-                    "_meta": {}
+                    "type": "ScopedStatement"
+                  },
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 20,
+                        "line": 24
+                      },
+                      "sourcefile": "$EXAMPLES/typeAsserts.go",
+                      "start": {
+                        "column": 6,
+                        "line": 24
+                      }
+                    },
+                    "name": "TypeAssertions",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 40
+                    },
+                    "sourcefile": "$EXAMPLES/typeAsserts.go",
+                    "start": {
+                      "column": 1,
+                      "line": 24
+                    }
                   },
                   "modifiers": null,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 24,
-                      "column": 1
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 40,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
+                  "parameters": [],
+                  "returnType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "VoidType",
+                    "typeArguments": null
                   },
-                  "_meta": {}
+                  "type": "FunctionDefinition"
                 }
               ],
               "language": "golang",
               "languageVersion": "1.18",
-              "uri": "",
-              "version": "",
               "loc": {
-                "start": {
-                  "Offset": 0,
-                  "line": 1,
-                  "column": 1
-                },
                 "end": {
-                  "Offset": 0,
-                  "line": 40,
-                  "column": 2
+                  "column": 2,
+                  "line": 40
                 },
-                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/typeAsserts.go"
+                "sourcefile": "$EXAMPLES/typeAsserts.go",
+                "start": {
+                  "column": 1,
+                  "line": 1
+                }
               },
-              "_meta": {}
+              "type": "CompileUnit",
+              "uri": "",
+              "version": ""
             },
             "packageName": "__single__"
           }
@@ -1218,6 +1118,5 @@
         "subs": {}
       }
     }
-  },
-  "moduleName": "__single_module__"
+  }
 }

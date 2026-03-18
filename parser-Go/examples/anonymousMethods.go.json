@@ -1,4 +1,5 @@
 {
+  "moduleName": "__single_module__",
   "packageInfo": {
     "PathName": "",
     "files": {},
@@ -6,886 +7,801 @@
       "/": {
         "PathName": "",
         "files": {
-          "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go": {
+          "$EXAMPLES/anonymousMethods.go": {
             "node": {
-              "type": "CompileUnit",
+              "_meta": {},
               "body": [
                 {
-                  "type": "PackageDeclaration",
-                  "name": {
-                    "type": "Identifier",
-                    "name": "examples",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 9
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 17
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
-                    },
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 9
-                    },
                     "end": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 17
+                      "column": 17,
+                      "line": 1
                     },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
+                    "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                    "start": {
+                      "column": 9,
+                      "line": 1
+                    }
                   },
-                  "_meta": {}
+                  "packageName": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 17,
+                        "line": 1
+                      },
+                      "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                      "start": {
+                        "column": 9,
+                        "line": 1
+                      }
+                    },
+                    "name": "examples",
+                    "type": "Identifier"
+                  },
+                  "type": "PackageDeclaration"
                 },
                 {
-                  "type": "VariableDeclaration",
+                  "_meta": {
+                    "ReceiveCls": "",
+                    "isDefaultImport": true
+                  },
+                  "cloned": false,
                   "id": {
-                    "type": "Identifier",
-                    "name": "fmt",
+                    "_meta": {},
                     "loc": null,
-                    "_meta": {}
+                    "name": "fmt",
+                    "type": "Identifier"
                   },
                   "init": {
-                    "type": "ImportExpression",
+                    "_meta": {},
                     "from": {
-                      "type": "Literal",
-                      "value": "fmt",
+                      "_meta": {},
                       "literalType": "string",
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 3,
-                          "column": 8
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 3,
-                          "column": 13
+                          "column": 13,
+                          "line": 3
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
+                        "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                        "start": {
+                          "column": 8,
+                          "line": 3
+                        }
                       },
-                      "_meta": {}
+                      "type": "Literal",
+                      "value": "fmt"
                     },
-                    "local": null,
                     "imported": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 8
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 13
+                        "column": 13,
+                        "line": 3
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
+                      "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                      "start": {
+                        "column": 8,
+                        "line": 3
+                      }
                     },
-                    "_meta": {}
+                    "local": null,
+                    "type": "ImportExpression"
                   },
-                  "cloned": true,
+                  "loc": {
+                    "end": {
+                      "column": 13,
+                      "line": 3
+                    },
+                    "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                    "start": {
+                      "column": 8,
+                      "line": 3
+                    }
+                  },
+                  "type": "VariableDeclaration",
                   "varType": {
-                    "type": "DynamicType",
+                    "_meta": {},
                     "id": null,
-                    "typeArguments": null,
                     "loc": null,
-                    "_meta": {}
+                    "type": "DynamicType",
+                    "typeArguments": null
                   },
-                  "variableParam": false,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 3,
-                      "column": 8
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 3,
-                      "column": 13
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
-                  },
-                  "_meta": {}
+                  "variableParam": false
                 },
                 {
-                  "type": "SpreadElement",
+                  "_meta": {},
                   "argument": {
-                    "type": "ImportExpression",
+                    "_meta": {},
                     "from": {
-                      "type": "Literal",
-                      "value": "time",
+                      "_meta": {},
                       "literalType": "string",
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 4,
-                          "column": 10
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 4,
-                          "column": 16
+                          "column": 16,
+                          "line": 4
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
+                        "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                        "start": {
+                          "column": 10,
+                          "line": 4
+                        }
                       },
-                      "_meta": {}
+                      "type": "Literal",
+                      "value": "time"
                     },
-                    "local": null,
                     "imported": null,
                     "loc": null,
-                    "_meta": {}
+                    "local": null,
+                    "type": "ImportExpression"
                   },
                   "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 4,
-                      "column": 8
-                    },
                     "end": {
-                      "Offset": 0,
-                      "line": 4,
-                      "column": 16
+                      "column": 16,
+                      "line": 4
                     },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
+                    "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                    "start": {
+                      "column": 8,
+                      "line": 4
+                    }
                   },
-                  "_meta": {}
+                  "type": "SpreadElement"
                 },
                 {
-                  "type": "FunctionDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "AnonymousMethods",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 6,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 6,
-                        "column": 22
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
-                    },
-                    "_meta": {}
-                  },
-                  "parameters": [],
-                  "returnType": {
-                    "type": "VoidType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "body": {
-                    "type": "ScopedStatement",
+                    "_meta": {},
                     "body": [
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": true,
                         "id": {
-                          "type": "Identifier",
-                          "name": "lambd",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 7,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 7,
-                              "column": 7
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
-                          },
                           "_meta": {
+                            "ReceiveCls": "",
                             "type": {
-                              "type": "FuncType",
-                              "id": {
-                                "type": "Identifier",
-                                "name": "FuncType",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 7,
-                                    "column": 11
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 7,
-                                    "column": 25
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
-                                },
-                                "_meta": {}
+                              "_meta": {
+                                "ReceiveCls": ""
                               },
-                              "typeParams": null,
+                              "id": {
+                                "_meta": {
+                                  "ReceiveCls": ""
+                                },
+                                "loc": {
+                                  "end": {
+                                    "column": 25,
+                                    "line": 7
+                                  },
+                                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/anonymousMethods.go",
+                                  "start": {
+                                    "column": 11,
+                                    "line": 7
+                                  }
+                                },
+                                "name": "FuncType",
+                                "type": "Identifier"
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 25,
+                                  "line": 7
+                                },
+                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/anonymousMethods.go",
+                                "start": {
+                                  "column": 11,
+                                  "line": 7
+                                }
+                              },
                               "params": [
                                 {
-                                  "type": "Identifier",
-                                  "name": "string",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 7,
-                                      "column": 18
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 7,
-                                      "column": 24
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
+                                  "_meta": {
+                                    "ReceiveCls": ""
                                   },
-                                  "_meta": {}
+                                  "loc": {
+                                    "end": {
+                                      "column": 24,
+                                      "line": 7
+                                    },
+                                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/anonymousMethods.go",
+                                    "start": {
+                                      "column": 18,
+                                      "line": 7
+                                    }
+                                  },
+                                  "name": "string",
+                                  "type": "Identifier"
                                 }
                               ],
                               "results": null,
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 7,
-                                  "column": 11
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 7,
-                                  "column": 25
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
-                              },
-                              "_meta": {}
+                              "type": "FuncType",
+                              "typeParams": null
                             }
-                          }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 7,
+                              "line": 7
+                            },
+                            "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                            "start": {
+                              "column": 2,
+                              "line": 7
+                            }
+                          },
+                          "name": "lambd",
+                          "type": "Identifier"
                         },
                         "init": {
-                          "type": "FunctionDefinition",
-                          "id": {
-                            "type": "Identifier",
-                            "name": "",
-                            "loc": null,
-                            "_meta": {}
-                          },
-                          "parameters": [
-                            {
-                              "type": "VariableDeclaration",
-                              "id": {
-                                "type": "Identifier",
-                                "name": "s",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 7,
-                                    "column": 16
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 7,
-                                    "column": 17
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
-                                },
-                                "_meta": {
-                                  "type": {
-                                    "type": "Identifier",
-                                    "name": "string",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 7,
-                                        "column": 18
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 7,
-                                        "column": 24
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
-                                    },
-                                    "_meta": {}
-                                  }
-                                }
-                              },
-                              "init": null,
-                              "cloned": true,
-                              "varType": {
-                                "type": "Identifier",
-                                "name": "string",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 7,
-                                    "column": 18
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 7,
-                                    "column": 24
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
-                                },
-                                "_meta": {}
-                              },
-                              "variableParam": false,
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 7,
-                                  "column": 16
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 7,
-                                  "column": 24
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
-                              },
-                              "_meta": {}
-                            }
-                          ],
-                          "returnType": {
-                            "type": "VoidType",
-                            "id": null,
-                            "typeArguments": null,
-                            "loc": null,
-                            "_meta": {}
-                          },
+                          "_meta": {},
                           "body": {
-                            "type": "ScopedStatement",
+                            "_meta": {},
                             "body": [
                               {
-                                "type": "CallExpression",
-                                "callee": {
-                                  "type": "Identifier",
-                                  "name": "Sleep",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 7,
-                                      "column": 28
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 7,
-                                      "column": 33
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
-                                  },
-                                  "_meta": {}
-                                },
+                                "_meta": {},
                                 "arguments": [
                                   {
-                                    "type": "Literal",
-                                    "value": "10",
+                                    "_meta": {},
                                     "literalType": "INT",
                                     "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 7,
-                                        "column": 34
-                                      },
                                       "end": {
-                                        "Offset": 0,
-                                        "line": 7,
-                                        "column": 36
+                                        "column": 36,
+                                        "line": 7
                                       },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
+                                      "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                                      "start": {
+                                        "column": 34,
+                                        "line": 7
+                                      }
                                     },
-                                    "_meta": {}
+                                    "type": "Literal",
+                                    "value": "10"
                                   }
                                 ],
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 7,
-                                    "column": 28
+                                "callee": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 33,
+                                      "line": 7
+                                    },
+                                    "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                                    "start": {
+                                      "column": 28,
+                                      "line": 7
+                                    }
                                   },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 7,
-                                    "column": 37
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
+                                  "name": "Sleep",
+                                  "type": "Identifier"
                                 },
-                                "_meta": {}
+                                "loc": {
+                                  "end": {
+                                    "column": 37,
+                                    "line": 7
+                                  },
+                                  "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                                  "start": {
+                                    "column": 28,
+                                    "line": 7
+                                  }
+                                },
+                                "type": "CallExpression"
                               },
                               {
-                                "type": "CallExpression",
-                                "callee": {
-                                  "type": "MemberAccess",
-                                  "object": {
-                                    "type": "Identifier",
-                                    "name": "fmt",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 7,
-                                        "column": 39
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 7,
-                                        "column": 42
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
-                                    },
-                                    "_meta": {}
-                                  },
-                                  "property": {
-                                    "type": "Identifier",
-                                    "name": "Println",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 7,
-                                        "column": 43
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 7,
-                                        "column": 50
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
-                                    },
-                                    "_meta": {}
-                                  },
-                                  "computed": false,
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 7,
-                                      "column": 39
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 7,
-                                      "column": 50
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
-                                  },
-                                  "_meta": {}
-                                },
+                                "_meta": {},
                                 "arguments": [
                                   {
-                                    "type": "Identifier",
-                                    "name": "s",
+                                    "_meta": {},
                                     "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 7,
-                                        "column": 51
-                                      },
                                       "end": {
-                                        "Offset": 0,
-                                        "line": 7,
-                                        "column": 52
+                                        "column": 52,
+                                        "line": 7
                                       },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
+                                      "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                                      "start": {
+                                        "column": 51,
+                                        "line": 7
+                                      }
                                     },
-                                    "_meta": {}
+                                    "name": "s",
+                                    "type": "Identifier"
                                   }
                                 ],
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 7,
-                                    "column": 39
+                                "callee": {
+                                  "_meta": {},
+                                  "computed": false,
+                                  "loc": {
+                                    "end": {
+                                      "column": 50,
+                                      "line": 7
+                                    },
+                                    "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                                    "start": {
+                                      "column": 39,
+                                      "line": 7
+                                    }
                                   },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 7,
-                                    "column": 53
+                                  "object": {
+                                    "_meta": {},
+                                    "loc": {
+                                      "end": {
+                                        "column": 42,
+                                        "line": 7
+                                      },
+                                      "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                                      "start": {
+                                        "column": 39,
+                                        "line": 7
+                                      }
+                                    },
+                                    "name": "fmt",
+                                    "type": "Identifier"
                                   },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
+                                  "property": {
+                                    "_meta": {},
+                                    "loc": {
+                                      "end": {
+                                        "column": 50,
+                                        "line": 7
+                                      },
+                                      "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                                      "start": {
+                                        "column": 43,
+                                        "line": 7
+                                      }
+                                    },
+                                    "name": "Println",
+                                    "type": "Identifier"
+                                  },
+                                  "type": "MemberAccess"
                                 },
-                                "_meta": {}
+                                "loc": {
+                                  "end": {
+                                    "column": 53,
+                                    "line": 7
+                                  },
+                                  "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                                  "start": {
+                                    "column": 39,
+                                    "line": 7
+                                  }
+                                },
+                                "type": "CallExpression"
                               }
                             ],
                             "id": null,
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 7,
-                                "column": 26
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 7,
-                                "column": 55
+                                "column": 55,
+                                "line": 7
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
+                              "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                              "start": {
+                                "column": 26,
+                                "line": 7
+                              }
                             },
-                            "_meta": {}
+                            "type": "ScopedStatement"
+                          },
+                          "id": null,
+                          "loc": {
+                            "end": {
+                              "column": 55,
+                              "line": 7
+                            },
+                            "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                            "start": {
+                              "column": 11,
+                              "line": 7
+                            }
                           },
                           "modifiers": null,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 7,
-                              "column": 11
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 7,
-                              "column": 55
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
+                          "parameters": [
+                            {
+                              "_meta": {},
+                              "cloned": true,
+                              "id": {
+                                "_meta": {
+                                  "ReceiveCls": "",
+                                  "type": {
+                                    "_meta": {
+                                      "ReceiveCls": ""
+                                    },
+                                    "loc": {
+                                      "end": {
+                                        "column": 24,
+                                        "line": 7
+                                      },
+                                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/anonymousMethods.go",
+                                      "start": {
+                                        "column": 18,
+                                        "line": 7
+                                      }
+                                    },
+                                    "name": "string",
+                                    "type": "Identifier"
+                                  }
+                                },
+                                "loc": {
+                                  "end": {
+                                    "column": 17,
+                                    "line": 7
+                                  },
+                                  "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                                  "start": {
+                                    "column": 16,
+                                    "line": 7
+                                  }
+                                },
+                                "name": "s",
+                                "type": "Identifier"
+                              },
+                              "init": null,
+                              "loc": {
+                                "end": {
+                                  "column": 24,
+                                  "line": 7
+                                },
+                                "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                                "start": {
+                                  "column": 16,
+                                  "line": 7
+                                }
+                              },
+                              "type": "VariableDeclaration",
+                              "varType": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 24,
+                                    "line": 7
+                                  },
+                                  "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                                  "start": {
+                                    "column": 18,
+                                    "line": 7
+                                  }
+                                },
+                                "name": "string",
+                                "type": "Identifier"
+                              },
+                              "variableParam": false
+                            }
+                          ],
+                          "returnType": {
+                            "_meta": {},
+                            "id": null,
+                            "loc": null,
+                            "type": "VoidType",
+                            "typeArguments": null
                           },
-                          "_meta": {}
+                          "type": "FunctionDefinition"
                         },
-                        "cloned": true,
-                        "varType": {
-                          "type": "FuncType",
-                          "id": {
-                            "type": "Identifier",
-                            "name": "FuncType",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 7,
-                                "column": 11
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 7,
-                                "column": 25
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
-                            },
-                            "_meta": {}
+                        "loc": {
+                          "end": {
+                            "column": 55,
+                            "line": 7
                           },
-                          "typeParams": null,
+                          "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                          "start": {
+                            "column": 2,
+                            "line": 7
+                          }
+                        },
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "id": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 25,
+                                "line": 7
+                              },
+                              "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                              "start": {
+                                "column": 11,
+                                "line": 7
+                              }
+                            },
+                            "name": "FuncType",
+                            "type": "Identifier"
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 25,
+                              "line": 7
+                            },
+                            "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                            "start": {
+                              "column": 11,
+                              "line": 7
+                            }
+                          },
                           "params": [
                             {
-                              "type": "Identifier",
-                              "name": "string",
+                              "_meta": {},
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 7,
-                                  "column": 18
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 7,
-                                  "column": 24
+                                  "column": 24,
+                                  "line": 7
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
+                                "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                                "start": {
+                                  "column": 18,
+                                  "line": 7
+                                }
                               },
-                              "_meta": {}
+                              "name": "string",
+                              "type": "Identifier"
                             }
                           ],
                           "results": null,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 7,
-                              "column": 11
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 7,
-                              "column": 25
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
-                          },
-                          "_meta": {}
+                          "type": "FuncType",
+                          "typeParams": null
                         },
-                        "variableParam": false,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 7,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 7,
-                            "column": 55
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
-                        },
-                        "_meta": {}
+                        "variableParam": false
                       },
                       {
-                        "type": "CallExpression",
-                        "callee": {
-                          "type": "Identifier",
-                          "name": "lambd",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 8,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 8,
-                              "column": 7
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
-                          },
-                          "_meta": {}
-                        },
+                        "_meta": {},
                         "arguments": [
                           {
-                            "type": "Literal",
-                            "value": "\"From lambda!\"",
+                            "_meta": {},
                             "literalType": "STRING",
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 8,
-                                "column": 8
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 8,
-                                "column": 22
+                                "column": 22,
+                                "line": 8
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
+                              "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                              "start": {
+                                "column": 8,
+                                "line": 8
+                              }
                             },
-                            "_meta": {}
+                            "type": "Literal",
+                            "value": "\"From lambda!\""
                           }
                         ],
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 8,
-                            "column": 2
+                        "callee": {
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 7,
+                              "line": 8
+                            },
+                            "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                            "start": {
+                              "column": 2,
+                              "line": 8
+                            }
                           },
-                          "end": {
-                            "Offset": 0,
-                            "line": 8,
-                            "column": 23
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
+                          "name": "lambd",
+                          "type": "Identifier"
                         },
-                        "_meta": {}
+                        "loc": {
+                          "end": {
+                            "column": 23,
+                            "line": 8
+                          },
+                          "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                          "start": {
+                            "column": 2,
+                            "line": 8
+                          }
+                        },
+                        "type": "CallExpression"
                       },
                       {
-                        "type": "CallExpression",
+                        "_meta": {},
+                        "arguments": [],
                         "callee": {
-                          "type": "FunctionDefinition",
-                          "id": {
-                            "type": "Identifier",
-                            "name": "",
-                            "loc": null,
-                            "_meta": {}
-                          },
-                          "parameters": [],
-                          "returnType": {
-                            "type": "VoidType",
-                            "id": null,
-                            "typeArguments": null,
-                            "loc": null,
-                            "_meta": {}
-                          },
+                          "_meta": {},
                           "body": {
-                            "type": "ScopedStatement",
+                            "_meta": {},
                             "body": [
                               {
-                                "type": "CallExpression",
-                                "callee": {
-                                  "type": "MemberAccess",
-                                  "object": {
-                                    "type": "Identifier",
-                                    "name": "fmt",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 9,
-                                        "column": 11
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 9,
-                                        "column": 14
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
-                                    },
-                                    "_meta": {}
-                                  },
-                                  "property": {
-                                    "type": "Identifier",
-                                    "name": "Println",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 9,
-                                        "column": 15
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 9,
-                                        "column": 22
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
-                                    },
-                                    "_meta": {}
-                                  },
-                                  "computed": false,
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 9,
-                                      "column": 11
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 9,
-                                      "column": 22
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
-                                  },
-                                  "_meta": {}
-                                },
+                                "_meta": {},
                                 "arguments": [
                                   {
-                                    "type": "Literal",
-                                    "value": "\"Create and invoke!\"",
+                                    "_meta": {},
                                     "literalType": "STRING",
                                     "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 9,
-                                        "column": 23
-                                      },
                                       "end": {
-                                        "Offset": 0,
-                                        "line": 9,
-                                        "column": 43
+                                        "column": 43,
+                                        "line": 9
                                       },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
+                                      "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                                      "start": {
+                                        "column": 23,
+                                        "line": 9
+                                      }
                                     },
-                                    "_meta": {}
+                                    "type": "Literal",
+                                    "value": "\"Create and invoke!\""
                                   }
                                 ],
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 9,
-                                    "column": 11
+                                "callee": {
+                                  "_meta": {},
+                                  "computed": false,
+                                  "loc": {
+                                    "end": {
+                                      "column": 22,
+                                      "line": 9
+                                    },
+                                    "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                                    "start": {
+                                      "column": 11,
+                                      "line": 9
+                                    }
                                   },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 9,
-                                    "column": 44
+                                  "object": {
+                                    "_meta": {},
+                                    "loc": {
+                                      "end": {
+                                        "column": 14,
+                                        "line": 9
+                                      },
+                                      "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                                      "start": {
+                                        "column": 11,
+                                        "line": 9
+                                      }
+                                    },
+                                    "name": "fmt",
+                                    "type": "Identifier"
                                   },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
+                                  "property": {
+                                    "_meta": {},
+                                    "loc": {
+                                      "end": {
+                                        "column": 22,
+                                        "line": 9
+                                      },
+                                      "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                                      "start": {
+                                        "column": 15,
+                                        "line": 9
+                                      }
+                                    },
+                                    "name": "Println",
+                                    "type": "Identifier"
+                                  },
+                                  "type": "MemberAccess"
                                 },
-                                "_meta": {}
+                                "loc": {
+                                  "end": {
+                                    "column": 44,
+                                    "line": 9
+                                  },
+                                  "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                                  "start": {
+                                    "column": 11,
+                                    "line": 9
+                                  }
+                                },
+                                "type": "CallExpression"
                               }
                             ],
                             "id": null,
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 9,
-                                "column": 9
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 9,
-                                "column": 46
+                                "column": 46,
+                                "line": 9
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
+                              "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                              "start": {
+                                "column": 9,
+                                "line": 9
+                              }
                             },
-                            "_meta": {}
+                            "type": "ScopedStatement"
+                          },
+                          "id": null,
+                          "loc": {
+                            "end": {
+                              "column": 46,
+                              "line": 9
+                            },
+                            "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                            "start": {
+                              "column": 2,
+                              "line": 9
+                            }
                           },
                           "modifiers": null,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 9,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 9,
-                              "column": 46
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
+                          "parameters": [],
+                          "returnType": {
+                            "_meta": {},
+                            "id": null,
+                            "loc": null,
+                            "type": "VoidType",
+                            "typeArguments": null
                           },
-                          "_meta": {}
+                          "type": "FunctionDefinition"
                         },
-                        "arguments": [],
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 9,
-                            "column": 2
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 9,
-                            "column": 48
+                            "column": 48,
+                            "line": 9
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
+                          "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                          "start": {
+                            "column": 2,
+                            "line": 9
+                          }
                         },
-                        "_meta": {}
+                        "type": "CallExpression"
                       }
                     ],
                     "id": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 6,
-                        "column": 25
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 10,
-                        "column": 2
+                        "column": 2,
+                        "line": 10
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
+                      "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                      "start": {
+                        "column": 25,
+                        "line": 6
+                      }
                     },
-                    "_meta": {}
+                    "type": "ScopedStatement"
+                  },
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 22,
+                        "line": 6
+                      },
+                      "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                      "start": {
+                        "column": 6,
+                        "line": 6
+                      }
+                    },
+                    "name": "AnonymousMethods",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 10
+                    },
+                    "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                    "start": {
+                      "column": 1,
+                      "line": 6
+                    }
                   },
                   "modifiers": null,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 6,
-                      "column": 1
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 10,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
+                  "parameters": [],
+                  "returnType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "VoidType",
+                    "typeArguments": null
                   },
-                  "_meta": {}
+                  "type": "FunctionDefinition"
                 }
               ],
               "language": "golang",
               "languageVersion": "1.18",
-              "uri": "",
-              "version": "",
               "loc": {
-                "start": {
-                  "Offset": 0,
-                  "line": 1,
-                  "column": 1
-                },
                 "end": {
-                  "Offset": 0,
-                  "line": 10,
-                  "column": 2
+                  "column": 2,
+                  "line": 10
                 },
-                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/anonymousMethods.go"
+                "sourcefile": "$EXAMPLES/anonymousMethods.go",
+                "start": {
+                  "column": 1,
+                  "line": 1
+                }
               },
-              "_meta": {}
+              "type": "CompileUnit",
+              "uri": "",
+              "version": ""
             },
             "packageName": "__single__"
           }
@@ -893,6 +809,5 @@
         "subs": {}
       }
     }
-  },
-  "moduleName": "__single_module__"
+  }
 }

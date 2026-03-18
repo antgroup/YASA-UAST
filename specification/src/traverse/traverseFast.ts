@@ -1,5 +1,5 @@
 import { VISITOR_KEYS } from "../definitions";
-import type * as t from "..";
+import type * as t from "../ast-types/generated";
 
 /**
  * A prefix AST traversal implementation meant for simple searching

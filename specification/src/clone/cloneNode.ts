@@ -1,5 +1,5 @@
 import { NODE_FIELDS } from "../definitions";
-import type * as t from "..";
+import type * as t from "../ast-types/generated";
 import { isCompileUnit, isIdentifier } from "../validators/generated";
 
 const has = Function.call.bind(Object.prototype.hasOwnProperty);

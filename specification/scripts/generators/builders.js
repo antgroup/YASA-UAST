@@ -83,7 +83,7 @@ function generateLowercaseBuilders() {
  * To re-generate run 'make build'
  */
 import builder from "../builder";
-import type * as t from "../..";
+import type * as t from "../../ast-types/generated";
 
 /* eslint-disable @typescript-eslint/no-unused-vars */
 

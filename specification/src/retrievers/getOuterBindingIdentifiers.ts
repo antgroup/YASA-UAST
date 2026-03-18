@@ -1,5 +1,5 @@
 import getBindingIdentifiers from "./getBindingIdentifiers";
-import type * as t from "..";
+import type * as t from "../ast-types/generated";
 
 export default getOuterBindingIdentifiers as {
   (node: t.Node, duplicates: true): Record<string, Array<t.Identifier>>;

@@ -1,4 +1,5 @@
 {
+  "moduleName": "__single_module__",
   "packageInfo": {
     "PathName": "",
     "files": {},
@@ -6,280 +7,260 @@
       "/": {
         "PathName": "",
         "files": {
-          "/Users/ariel/code/uast/uast4go/examples/constants.go": {
+          "$EXAMPLES/constants.go": {
             "node": {
-              "type": "CompileUnit",
+              "_meta": {},
               "body": [
                 {
-                  "type": "PackageDeclaration",
-                  "name": {
-                    "type": "Identifier",
+                  "_meta": {},
+                  "loc": {
+                    "end": {
+                      "column": 17,
+                      "line": 1
+                    },
+                    "sourcefile": "$EXAMPLES/constants.go",
+                    "start": {
+                      "column": 9,
+                      "line": 1
+                    }
+                  },
+                  "packageName": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 17,
+                        "line": 1
+                      },
+                      "sourcefile": "$EXAMPLES/constants.go",
+                      "start": {
+                        "column": 9,
+                        "line": 1
+                      }
+                    },
                     "name": "examples",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 9
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 17
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constants.go"
-                    },
-                    "_meta": {}
+                    "type": "Identifier"
                   },
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 9
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 17
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constants.go"
-                  },
-                  "_meta": {}
+                  "type": "PackageDeclaration"
                 },
                 {
-                  "type": "VariableDeclaration",
+                  "_meta": {},
+                  "cloned": false,
                   "id": {
-                    "type": "Identifier",
+                    "_meta": {
+                      "ReceiveCls": "",
+                      "type": {
+                        "_meta": {
+                          "ReceiveCls": ""
+                        },
+                        "id": null,
+                        "loc": null,
+                        "type": "DynamicType",
+                        "typeArguments": null
+                      }
+                    },
+                    "loc": {
+                      "end": {
+                        "column": 10,
+                        "line": 4
+                      },
+                      "sourcefile": "$EXAMPLES/constants.go",
+                      "start": {
+                        "column": 9,
+                        "line": 4
+                      }
+                    },
                     "name": "T",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 4,
-                        "column": 9
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 4,
-                        "column": 10
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constants.go"
-                    },
-                    "_meta": {
-                      "type": {
-                        "type": "DynamicType",
-                        "id": null,
-                        "typeArguments": null,
-                        "loc": null,
-                        "_meta": {}
-                      }
-                    }
+                    "type": "Identifier"
                   },
                   "init": {
-                    "type": "BinaryExpression",
-                    "operator": "\u003c\u003c",
+                    "_meta": {},
                     "left": {
-                      "type": "Literal",
-                      "value": "1",
+                      "_meta": {},
                       "literalType": "INT",
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 4,
-                          "column": 13
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 4,
-                          "column": 14
+                          "column": 14,
+                          "line": 4
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constants.go"
+                        "sourcefile": "$EXAMPLES/constants.go",
+                        "start": {
+                          "column": 13,
+                          "line": 4
+                        }
                       },
-                      "_meta": {}
-                    },
-                    "right": {
                       "type": "Literal",
-                      "value": "0",
-                      "literalType": "INT",
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 4,
-                          "column": 18
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 4,
-                          "column": 19
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constants.go"
-                      },
-                      "_meta": {}
+                      "value": "1"
                     },
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 4,
-                        "column": 13
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 4,
-                        "column": 19
+                        "column": 19,
+                        "line": 4
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constants.go"
+                      "sourcefile": "$EXAMPLES/constants.go",
+                      "start": {
+                        "column": 13,
+                        "line": 4
+                      }
                     },
-                    "_meta": {}
+                    "operator": "\u003c\u003c",
+                    "right": {
+                      "_meta": {},
+                      "literalType": "INT",
+                      "loc": {
+                        "end": {
+                          "column": 19,
+                          "line": 4
+                        },
+                        "sourcefile": "$EXAMPLES/constants.go",
+                        "start": {
+                          "column": 18,
+                          "line": 4
+                        }
+                      },
+                      "type": "Literal",
+                      "value": "0"
+                    },
+                    "type": "BinaryExpression"
                   },
-                  "cloned": false,
-                  "varType": {
-                    "type": "DynamicType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
-                  "variableParam": false,
                   "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 4,
-                      "column": 9
-                    },
                     "end": {
-                      "Offset": 0,
-                      "line": 4,
-                      "column": 19
+                      "column": 19,
+                      "line": 4
                     },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constants.go"
+                    "sourcefile": "$EXAMPLES/constants.go",
+                    "start": {
+                      "column": 9,
+                      "line": 4
+                    }
                   },
-                  "_meta": {}
+                  "type": "VariableDeclaration",
+                  "varType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "DynamicType",
+                    "typeArguments": null
+                  },
+                  "variableParam": false
                 },
                 {
-                  "type": "VariableDeclaration",
+                  "_meta": {},
+                  "cloned": false,
                   "id": {
-                    "type": "Identifier",
-                    "name": "Ta",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 8
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 10
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constants.go"
-                    },
                     "_meta": {
+                      "ReceiveCls": "",
                       "type": {
-                        "type": "DynamicType",
+                        "_meta": {
+                          "ReceiveCls": ""
+                        },
                         "id": null,
-                        "typeArguments": null,
                         "loc": null,
-                        "_meta": {}
+                        "type": "DynamicType",
+                        "typeArguments": null
                       }
-                    }
+                    },
+                    "loc": {
+                      "end": {
+                        "column": 10,
+                        "line": 5
+                      },
+                      "sourcefile": "$EXAMPLES/constants.go",
+                      "start": {
+                        "column": 8,
+                        "line": 5
+                      }
+                    },
+                    "name": "Ta",
+                    "type": "Identifier"
                   },
                   "init": {
-                    "type": "BinaryExpression",
-                    "operator": "\u003c\u003c",
+                    "_meta": {},
                     "left": {
-                      "type": "Literal",
-                      "value": "1",
+                      "_meta": {},
                       "literalType": "INT",
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 5,
-                          "column": 13
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 5,
-                          "column": 14
+                          "column": 14,
+                          "line": 5
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constants.go"
+                        "sourcefile": "$EXAMPLES/constants.go",
+                        "start": {
+                          "column": 13,
+                          "line": 5
+                        }
                       },
-                      "_meta": {}
-                    },
-                    "right": {
                       "type": "Literal",
-                      "value": "1",
-                      "literalType": "INT",
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 5,
-                          "column": 18
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 5,
-                          "column": 19
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constants.go"
-                      },
-                      "_meta": {}
+                      "value": "1"
                     },
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 13
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 19
+                        "column": 19,
+                        "line": 5
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constants.go"
+                      "sourcefile": "$EXAMPLES/constants.go",
+                      "start": {
+                        "column": 13,
+                        "line": 5
+                      }
                     },
-                    "_meta": {}
+                    "operator": "\u003c\u003c",
+                    "right": {
+                      "_meta": {},
+                      "literalType": "INT",
+                      "loc": {
+                        "end": {
+                          "column": 19,
+                          "line": 5
+                        },
+                        "sourcefile": "$EXAMPLES/constants.go",
+                        "start": {
+                          "column": 18,
+                          "line": 5
+                        }
+                      },
+                      "type": "Literal",
+                      "value": "1"
+                    },
+                    "type": "BinaryExpression"
                   },
-                  "cloned": false,
-                  "varType": {
-                    "type": "DynamicType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
-                  "variableParam": false,
                   "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 5,
-                      "column": 8
-                    },
                     "end": {
-                      "Offset": 0,
-                      "line": 5,
-                      "column": 19
+                      "column": 19,
+                      "line": 5
                     },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constants.go"
+                    "sourcefile": "$EXAMPLES/constants.go",
+                    "start": {
+                      "column": 8,
+                      "line": 5
+                    }
                   },
-                  "_meta": {}
+                  "type": "VariableDeclaration",
+                  "varType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "DynamicType",
+                    "typeArguments": null
+                  },
+                  "variableParam": false
                 }
               ],
               "language": "golang",
               "languageVersion": "1.18",
-              "uri": "",
-              "version": "",
               "loc": {
-                "start": {
-                  "Offset": 0,
-                  "line": 1,
-                  "column": 1
-                },
                 "end": {
-                  "Offset": 0,
-                  "line": 6,
-                  "column": 2
+                  "column": 2,
+                  "line": 6
                 },
-                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constants.go"
+                "sourcefile": "$EXAMPLES/constants.go",
+                "start": {
+                  "column": 1,
+                  "line": 1
+                }
               },
-              "_meta": {}
+              "type": "CompileUnit",
+              "uri": "",
+              "version": ""
             },
             "packageName": "__single__"
           }
@@ -287,6 +268,5 @@
         "subs": {}
       }
     }
-  },
-  "moduleName": "__single_module__"
+  }
 }

@@ -12,7 +12,7 @@ import {
   conditionalExpression,
 } from "../builders/generated";
 import cloneNode from "../clone/cloneNode";
-import type * as t from "..";
+import type * as t from "../ast-types/generated";
 import type { Scope } from "./Scope";
 
 export default function gatherSequenceExpressions(

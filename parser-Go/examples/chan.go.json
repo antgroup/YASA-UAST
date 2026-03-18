@@ -1,4 +1,5 @@
 {
+  "moduleName": "__single_module__",
   "packageInfo": {
     "PathName": "",
     "files": {},
@@ -6,1092 +7,1004 @@
       "/": {
         "PathName": "",
         "files": {
-          "/Users/ariel/code/uast/uast4go/examples/chan.go": {
+          "$EXAMPLES/chan.go": {
             "node": {
-              "type": "CompileUnit",
+              "_meta": {},
               "body": [
                 {
-                  "type": "PackageDeclaration",
-                  "name": {
-                    "type": "Identifier",
-                    "name": "examples",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 9
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 17
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                    },
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 9
-                    },
                     "end": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 17
+                      "column": 17,
+                      "line": 1
                     },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
+                    "sourcefile": "$EXAMPLES/chan.go",
+                    "start": {
+                      "column": 9,
+                      "line": 1
+                    }
                   },
-                  "_meta": {}
+                  "packageName": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 17,
+                        "line": 1
+                      },
+                      "sourcefile": "$EXAMPLES/chan.go",
+                      "start": {
+                        "column": 9,
+                        "line": 1
+                      }
+                    },
+                    "name": "examples",
+                    "type": "Identifier"
+                  },
+                  "type": "PackageDeclaration"
                 },
                 {
-                  "type": "VariableDeclaration",
+                  "_meta": {
+                    "ReceiveCls": "",
+                    "isDefaultImport": true
+                  },
+                  "cloned": false,
                   "id": {
-                    "type": "Identifier",
-                    "name": "fmt",
+                    "_meta": {},
                     "loc": null,
-                    "_meta": {}
+                    "name": "fmt",
+                    "type": "Identifier"
                   },
                   "init": {
-                    "type": "ImportExpression",
+                    "_meta": {},
                     "from": {
-                      "type": "Literal",
-                      "value": "fmt",
+                      "_meta": {},
                       "literalType": "string",
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 3,
-                          "column": 8
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 3,
-                          "column": 13
+                          "column": 13,
+                          "line": 3
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                      },
-                      "_meta": {}
-                    },
-                    "local": null,
-                    "imported": null,
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 8
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 13
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                    },
-                    "_meta": {}
-                  },
-                  "cloned": true,
-                  "varType": {
-                    "type": "DynamicType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
-                  "variableParam": false,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 3,
-                      "column": 8
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 3,
-                      "column": 13
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                  },
-                  "_meta": {}
-                },
-                {
-                  "type": "FunctionDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "main",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 10
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                    },
-                    "_meta": {}
-                  },
-                  "parameters": [],
-                  "returnType": {
-                    "type": "VoidType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
-                  "body": {
-                    "type": "ScopedStatement",
-                    "body": [
-                      {
-                        "type": "VariableDeclaration",
-                        "id": {
-                          "type": "Identifier",
-                          "name": "ch",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 6,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 6,
-                              "column": 4
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "ChanType",
-                              "id": {
-                                "type": "Identifier",
-                                "name": "ChanType",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 6,
-                                    "column": 13
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 6,
-                                    "column": 21
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                                },
-                                "_meta": {}
-                              },
-                              "channelDirection": "",
-                              "valueType": {
-                                "type": "Identifier",
-                                "name": "int",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 6,
-                                    "column": 18
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 6,
-                                    "column": 21
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                                },
-                                "_meta": {}
-                              },
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 6,
-                                  "column": 13
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 6,
-                                  "column": 21
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                              },
-                              "_meta": {}
-                            }
-                          }
-                        },
-                        "init": {
-                          "type": "CallExpression",
-                          "callee": {
-                            "type": "Identifier",
-                            "name": "make",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 6,
-                                "column": 8
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 6,
-                                "column": 12
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                            },
-                            "_meta": {}
-                          },
-                          "arguments": [
-                            {
-                              "type": "ChanType",
-                              "id": {
-                                "type": "Identifier",
-                                "name": "ChanType",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 6,
-                                    "column": 13
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 6,
-                                    "column": 21
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                                },
-                                "_meta": {}
-                              },
-                              "channelDirection": "",
-                              "valueType": {
-                                "type": "Identifier",
-                                "name": "int",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 6,
-                                    "column": 18
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 6,
-                                    "column": 21
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                                },
-                                "_meta": {}
-                              },
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 6,
-                                  "column": 13
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 6,
-                                  "column": 21
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                              },
-                              "_meta": {}
-                            },
-                            {
-                              "type": "Literal",
-                              "value": "1",
-                              "literalType": "INT",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 6,
-                                  "column": 23
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 6,
-                                  "column": 24
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                              },
-                              "_meta": {}
-                            }
-                          ],
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 6,
-                              "column": 8
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 6,
-                              "column": 25
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                          },
-                          "_meta": {}
-                        },
-                        "cloned": true,
-                        "varType": {
-                          "type": "ChanType",
-                          "id": {
-                            "type": "Identifier",
-                            "name": "ChanType",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 6,
-                                "column": 13
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 6,
-                                "column": 21
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                            },
-                            "_meta": {}
-                          },
-                          "channelDirection": "",
-                          "valueType": {
-                            "type": "Identifier",
-                            "name": "int",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 6,
-                                "column": 18
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 6,
-                                "column": 21
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                            },
-                            "_meta": {}
-                          },
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 6,
-                              "column": 13
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 6,
-                              "column": 21
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                          },
-                          "_meta": {}
-                        },
-                        "variableParam": false,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 6,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 6,
-                            "column": 25
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                        },
-                        "_meta": {}
-                      },
-                      {
-                        "type": "CallExpression",
-                        "callee": {
-                          "type": "Identifier",
-                          "name": "testData",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 7,
-                              "column": 5
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 7,
-                              "column": 13
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                          },
-                          "_meta": {}
-                        },
-                        "arguments": [
-                          {
-                            "type": "Identifier",
-                            "name": "ch",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 7,
-                                "column": 14
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 7,
-                                "column": 16
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                            },
-                            "_meta": {}
-                          }
-                        ],
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 7,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 7,
-                            "column": 17
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                        },
-                        "_meta": {
-                          "async": true
+                        "sourcefile": "$EXAMPLES/chan.go",
+                        "start": {
+                          "column": 8,
+                          "line": 3
                         }
                       },
+                      "type": "Literal",
+                      "value": "fmt"
+                    },
+                    "imported": null,
+                    "loc": {
+                      "end": {
+                        "column": 13,
+                        "line": 3
+                      },
+                      "sourcefile": "$EXAMPLES/chan.go",
+                      "start": {
+                        "column": 8,
+                        "line": 3
+                      }
+                    },
+                    "local": null,
+                    "type": "ImportExpression"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 13,
+                      "line": 3
+                    },
+                    "sourcefile": "$EXAMPLES/chan.go",
+                    "start": {
+                      "column": 8,
+                      "line": 3
+                    }
+                  },
+                  "type": "VariableDeclaration",
+                  "varType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "DynamicType",
+                    "typeArguments": null
+                  },
+                  "variableParam": false
+                },
+                {
+                  "_meta": {},
+                  "body": {
+                    "_meta": {},
+                    "body": [
                       {
-                        "type": "CallExpression",
-                        "callee": {
-                          "type": "MemberAccess",
-                          "object": {
-                            "type": "Identifier",
-                            "name": "fmt",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 8,
-                                "column": 2
+                        "_meta": {},
+                        "cloned": true,
+                        "id": {
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
                               },
-                              "end": {
-                                "Offset": 0,
-                                "line": 8,
-                                "column": 5
+                              "dir": "",
+                              "id": {
+                                "_meta": {
+                                  "ReceiveCls": ""
+                                },
+                                "loc": {
+                                  "end": {
+                                    "column": 21,
+                                    "line": 6
+                                  },
+                                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/chan.go",
+                                  "start": {
+                                    "column": 13,
+                                    "line": 6
+                                  }
+                                },
+                                "name": "ChanType",
+                                "type": "Identifier"
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                            },
-                            "_meta": {}
+                              "loc": {
+                                "end": {
+                                  "column": 21,
+                                  "line": 6
+                                },
+                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/chan.go",
+                                "start": {
+                                  "column": 13,
+                                  "line": 6
+                                }
+                              },
+                              "type": "ChanType",
+                              "valueType": {
+                                "_meta": {
+                                  "ReceiveCls": ""
+                                },
+                                "loc": {
+                                  "end": {
+                                    "column": 21,
+                                    "line": 6
+                                  },
+                                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/chan.go",
+                                  "start": {
+                                    "column": 18,
+                                    "line": 6
+                                  }
+                                },
+                                "name": "int",
+                                "type": "Identifier"
+                              }
+                            }
                           },
-                          "property": {
-                            "type": "Identifier",
-                            "name": "Println",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 8,
-                                "column": 6
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 8,
-                                "column": 13
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                            },
-                            "_meta": {}
-                          },
-                          "computed": false,
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 8,
-                              "column": 2
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 8,
-                              "column": 13
+                              "column": 4,
+                              "line": 6
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
+                            "sourcefile": "$EXAMPLES/chan.go",
+                            "start": {
+                              "column": 2,
+                              "line": 6
+                            }
                           },
-                          "_meta": {}
+                          "name": "ch",
+                          "type": "Identifier"
+                        },
+                        "init": {
+                          "_meta": {},
+                          "arguments": [
+                            {
+                              "_meta": {},
+                              "dir": "",
+                              "id": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 21,
+                                    "line": 6
+                                  },
+                                  "sourcefile": "$EXAMPLES/chan.go",
+                                  "start": {
+                                    "column": 13,
+                                    "line": 6
+                                  }
+                                },
+                                "name": "ChanType",
+                                "type": "Identifier"
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 21,
+                                  "line": 6
+                                },
+                                "sourcefile": "$EXAMPLES/chan.go",
+                                "start": {
+                                  "column": 13,
+                                  "line": 6
+                                }
+                              },
+                              "type": "ChanType",
+                              "valueType": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 21,
+                                    "line": 6
+                                  },
+                                  "sourcefile": "$EXAMPLES/chan.go",
+                                  "start": {
+                                    "column": 18,
+                                    "line": 6
+                                  }
+                                },
+                                "name": "int",
+                                "type": "Identifier"
+                              }
+                            },
+                            {
+                              "_meta": {},
+                              "literalType": "INT",
+                              "loc": {
+                                "end": {
+                                  "column": 24,
+                                  "line": 6
+                                },
+                                "sourcefile": "$EXAMPLES/chan.go",
+                                "start": {
+                                  "column": 23,
+                                  "line": 6
+                                }
+                              },
+                              "type": "Literal",
+                              "value": "1"
+                            }
+                          ],
+                          "callee": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 12,
+                                "line": 6
+                              },
+                              "sourcefile": "$EXAMPLES/chan.go",
+                              "start": {
+                                "column": 8,
+                                "line": 6
+                              }
+                            },
+                            "name": "make",
+                            "type": "Identifier"
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 25,
+                              "line": 6
+                            },
+                            "sourcefile": "$EXAMPLES/chan.go",
+                            "start": {
+                              "column": 8,
+                              "line": 6
+                            }
+                          },
+                          "type": "CallExpression"
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 25,
+                            "line": 6
+                          },
+                          "sourcefile": "$EXAMPLES/chan.go",
+                          "start": {
+                            "column": 2,
+                            "line": 6
+                          }
+                        },
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "dir": "",
+                          "id": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 21,
+                                "line": 6
+                              },
+                              "sourcefile": "$EXAMPLES/chan.go",
+                              "start": {
+                                "column": 13,
+                                "line": 6
+                              }
+                            },
+                            "name": "ChanType",
+                            "type": "Identifier"
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 21,
+                              "line": 6
+                            },
+                            "sourcefile": "$EXAMPLES/chan.go",
+                            "start": {
+                              "column": 13,
+                              "line": 6
+                            }
+                          },
+                          "type": "ChanType",
+                          "valueType": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 21,
+                                "line": 6
+                              },
+                              "sourcefile": "$EXAMPLES/chan.go",
+                              "start": {
+                                "column": 18,
+                                "line": 6
+                              }
+                            },
+                            "name": "int",
+                            "type": "Identifier"
+                          }
+                        },
+                        "variableParam": false
+                      },
+                      {
+                        "_meta": {
+                          "ReceiveCls": "",
+                          "async": true
                         },
                         "arguments": [
                           {
-                            "type": "UnaryExpression",
-                            "operator": "pop",
-                            "argument": {
-                              "type": "Identifier",
-                              "name": "ch",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 8,
-                                  "column": 16
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 8,
-                                  "column": 18
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 16,
+                                "line": 7
                               },
-                              "_meta": {}
+                              "sourcefile": "$EXAMPLES/chan.go",
+                              "start": {
+                                "column": 14,
+                                "line": 7
+                              }
+                            },
+                            "name": "ch",
+                            "type": "Identifier"
+                          }
+                        ],
+                        "callee": {
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 13,
+                              "line": 7
+                            },
+                            "sourcefile": "$EXAMPLES/chan.go",
+                            "start": {
+                              "column": 5,
+                              "line": 7
+                            }
+                          },
+                          "name": "testData",
+                          "type": "Identifier"
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 17,
+                            "line": 7
+                          },
+                          "sourcefile": "$EXAMPLES/chan.go",
+                          "start": {
+                            "column": 2,
+                            "line": 7
+                          }
+                        },
+                        "type": "CallExpression"
+                      },
+                      {
+                        "_meta": {},
+                        "arguments": [
+                          {
+                            "_meta": {},
+                            "argument": {
+                              "_meta": {},
+                              "loc": {
+                                "end": {
+                                  "column": 18,
+                                  "line": 8
+                                },
+                                "sourcefile": "$EXAMPLES/chan.go",
+                                "start": {
+                                  "column": 16,
+                                  "line": 8
+                                }
+                              },
+                              "name": "ch",
+                              "type": "Identifier"
                             },
                             "isSuffix": false,
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 8,
-                                "column": 14
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 8,
-                                "column": 18
+                                "column": 18,
+                                "line": 8
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
+                              "sourcefile": "$EXAMPLES/chan.go",
+                              "start": {
+                                "column": 14,
+                                "line": 8
+                              }
                             },
-                            "_meta": {}
+                            "operator": "pop",
+                            "type": "UnaryExpression"
                           }
                         ],
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 8,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 8,
-                            "column": 19
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                        },
-                        "_meta": {}
-                      },
-                      {
-                        "type": "VariableDeclaration",
-                        "id": {
-                          "type": "Identifier",
-                          "name": "ch2",
+                        "callee": {
+                          "_meta": {},
+                          "computed": false,
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 10,
-                              "column": 6
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 10,
-                              "column": 9
+                              "column": 13,
+                              "line": 8
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "ChanType",
-                              "id": {
-                                "type": "Identifier",
-                                "name": "ChanType",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 10,
-                                    "column": 10
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 10,
-                                    "column": 18
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                                },
-                                "_meta": {}
-                              },
-                              "channelDirection": "",
-                              "valueType": {
-                                "type": "Identifier",
-                                "name": "int",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 10,
-                                    "column": 15
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 10,
-                                    "column": 18
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                                },
-                                "_meta": {}
-                              },
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 10,
-                                  "column": 10
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 10,
-                                  "column": 18
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                              },
-                              "_meta": {}
+                            "sourcefile": "$EXAMPLES/chan.go",
+                            "start": {
+                              "column": 2,
+                              "line": 8
                             }
+                          },
+                          "object": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 5,
+                                "line": 8
+                              },
+                              "sourcefile": "$EXAMPLES/chan.go",
+                              "start": {
+                                "column": 2,
+                                "line": 8
+                              }
+                            },
+                            "name": "fmt",
+                            "type": "Identifier"
+                          },
+                          "property": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 13,
+                                "line": 8
+                              },
+                              "sourcefile": "$EXAMPLES/chan.go",
+                              "start": {
+                                "column": 6,
+                                "line": 8
+                              }
+                            },
+                            "name": "Println",
+                            "type": "Identifier"
+                          },
+                          "type": "MemberAccess"
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 19,
+                            "line": 8
+                          },
+                          "sourcefile": "$EXAMPLES/chan.go",
+                          "start": {
+                            "column": 2,
+                            "line": 8
                           }
                         },
-                        "init": null,
-                        "cloned": false,
-                        "varType": {
-                          "type": "ChanType",
-                          "id": {
-                            "type": "Identifier",
-                            "name": "ChanType",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 10,
-                                "column": 10
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 10,
-                                "column": 18
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                            },
-                            "_meta": {}
-                          },
-                          "channelDirection": "",
-                          "valueType": {
-                            "type": "Identifier",
-                            "name": "int",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 10,
-                                "column": 15
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 10,
-                                "column": 18
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                            },
-                            "_meta": {}
-                          },
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 10,
-                              "column": 10
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 10,
-                              "column": 18
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                          },
-                          "_meta": {}
-                        },
-                        "variableParam": false,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 10,
-                            "column": 6
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 10,
-                            "column": 18
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                        },
-                        "_meta": {}
+                        "type": "CallExpression"
                       },
                       {
-                        "type": "CallExpression",
-                        "callee": {
-                          "type": "Identifier",
-                          "name": "testData",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 11,
-                              "column": 5
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 11,
-                              "column": 13
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
+                        "_meta": {},
+                        "cloned": false,
+                        "id": {
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "dir": "",
+                              "id": {
+                                "_meta": {
+                                  "ReceiveCls": ""
+                                },
+                                "loc": {
+                                  "end": {
+                                    "column": 18,
+                                    "line": 10
+                                  },
+                                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/chan.go",
+                                  "start": {
+                                    "column": 10,
+                                    "line": 10
+                                  }
+                                },
+                                "name": "ChanType",
+                                "type": "Identifier"
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 18,
+                                  "line": 10
+                                },
+                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/chan.go",
+                                "start": {
+                                  "column": 10,
+                                  "line": 10
+                                }
+                              },
+                              "type": "ChanType",
+                              "valueType": {
+                                "_meta": {
+                                  "ReceiveCls": ""
+                                },
+                                "loc": {
+                                  "end": {
+                                    "column": 18,
+                                    "line": 10
+                                  },
+                                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/chan.go",
+                                  "start": {
+                                    "column": 15,
+                                    "line": 10
+                                  }
+                                },
+                                "name": "int",
+                                "type": "Identifier"
+                              }
+                            }
                           },
-                          "_meta": {}
+                          "loc": {
+                            "end": {
+                              "column": 9,
+                              "line": 10
+                            },
+                            "sourcefile": "$EXAMPLES/chan.go",
+                            "start": {
+                              "column": 6,
+                              "line": 10
+                            }
+                          },
+                          "name": "ch2",
+                          "type": "Identifier"
+                        },
+                        "init": null,
+                        "loc": {
+                          "end": {
+                            "column": 18,
+                            "line": 10
+                          },
+                          "sourcefile": "$EXAMPLES/chan.go",
+                          "start": {
+                            "column": 6,
+                            "line": 10
+                          }
+                        },
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "dir": "",
+                          "id": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 18,
+                                "line": 10
+                              },
+                              "sourcefile": "$EXAMPLES/chan.go",
+                              "start": {
+                                "column": 10,
+                                "line": 10
+                              }
+                            },
+                            "name": "ChanType",
+                            "type": "Identifier"
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 18,
+                              "line": 10
+                            },
+                            "sourcefile": "$EXAMPLES/chan.go",
+                            "start": {
+                              "column": 10,
+                              "line": 10
+                            }
+                          },
+                          "type": "ChanType",
+                          "valueType": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 18,
+                                "line": 10
+                              },
+                              "sourcefile": "$EXAMPLES/chan.go",
+                              "start": {
+                                "column": 15,
+                                "line": 10
+                              }
+                            },
+                            "name": "int",
+                            "type": "Identifier"
+                          }
+                        },
+                        "variableParam": false
+                      },
+                      {
+                        "_meta": {
+                          "ReceiveCls": "",
+                          "async": true
                         },
                         "arguments": [
                           {
-                            "type": "Identifier",
-                            "name": "ch2",
+                            "_meta": {},
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 11,
-                                "column": 14
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 11,
-                                "column": 17
+                                "column": 17,
+                                "line": 11
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
+                              "sourcefile": "$EXAMPLES/chan.go",
+                              "start": {
+                                "column": 14,
+                                "line": 11
+                              }
                             },
-                            "_meta": {}
+                            "name": "ch2",
+                            "type": "Identifier"
                           }
                         ],
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 11,
-                            "column": 2
+                        "callee": {
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 13,
+                              "line": 11
+                            },
+                            "sourcefile": "$EXAMPLES/chan.go",
+                            "start": {
+                              "column": 5,
+                              "line": 11
+                            }
                           },
-                          "end": {
-                            "Offset": 0,
-                            "line": 11,
-                            "column": 18
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
+                          "name": "testData",
+                          "type": "Identifier"
                         },
-                        "_meta": {
-                          "async": true
-                        }
+                        "loc": {
+                          "end": {
+                            "column": 18,
+                            "line": 11
+                          },
+                          "sourcefile": "$EXAMPLES/chan.go",
+                          "start": {
+                            "column": 2,
+                            "line": 11
+                          }
+                        },
+                        "type": "CallExpression"
                       }
                     ],
                     "id": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 13
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 12,
-                        "column": 2
+                        "column": 2,
+                        "line": 12
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
+                      "sourcefile": "$EXAMPLES/chan.go",
+                      "start": {
+                        "column": 13,
+                        "line": 5
+                      }
                     },
-                    "_meta": {}
+                    "type": "ScopedStatement"
+                  },
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 10,
+                        "line": 5
+                      },
+                      "sourcefile": "$EXAMPLES/chan.go",
+                      "start": {
+                        "column": 6,
+                        "line": 5
+                      }
+                    },
+                    "name": "main",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 12
+                    },
+                    "sourcefile": "$EXAMPLES/chan.go",
+                    "start": {
+                      "column": 1,
+                      "line": 5
+                    }
                   },
                   "modifiers": null,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 5,
-                      "column": 1
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 12,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
+                  "parameters": [],
+                  "returnType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "VoidType",
+                    "typeArguments": null
                   },
-                  "_meta": {}
+                  "type": "FunctionDefinition"
                 },
                 {
-                  "type": "FunctionDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "testData",
+                  "_meta": {},
+                  "body": {
+                    "_meta": {},
+                    "body": [
+                      {
+                        "_meta": {},
+                        "left": {
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 4,
+                              "line": 15
+                            },
+                            "sourcefile": "$EXAMPLES/chan.go",
+                            "start": {
+                              "column": 2,
+                              "line": 15
+                            }
+                          },
+                          "name": "ch",
+                          "type": "Identifier"
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 10,
+                            "line": 15
+                          },
+                          "sourcefile": "$EXAMPLES/chan.go",
+                          "start": {
+                            "column": 2,
+                            "line": 15
+                          }
+                        },
+                        "operator": "push",
+                        "right": {
+                          "_meta": {},
+                          "literalType": "INT",
+                          "loc": {
+                            "end": {
+                              "column": 10,
+                              "line": 15
+                            },
+                            "sourcefile": "$EXAMPLES/chan.go",
+                            "start": {
+                              "column": 8,
+                              "line": 15
+                            }
+                          },
+                          "type": "Literal",
+                          "value": "10"
+                        },
+                        "type": "BinaryExpression"
+                      }
+                    ],
+                    "id": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 14,
-                        "column": 6
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 14,
-                        "column": 14
+                        "column": 2,
+                        "line": 16
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
+                      "sourcefile": "$EXAMPLES/chan.go",
+                      "start": {
+                        "column": 30,
+                        "line": 14
+                      }
                     },
-                    "_meta": {}
+                    "type": "ScopedStatement"
                   },
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 14,
+                        "line": 14
+                      },
+                      "sourcefile": "$EXAMPLES/chan.go",
+                      "start": {
+                        "column": 6,
+                        "line": 14
+                      }
+                    },
+                    "name": "testData",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 16
+                    },
+                    "sourcefile": "$EXAMPLES/chan.go",
+                    "start": {
+                      "column": 1,
+                      "line": 14
+                    }
+                  },
+                  "modifiers": null,
                   "parameters": [
                     {
-                      "type": "VariableDeclaration",
+                      "_meta": {},
+                      "cloned": true,
                       "id": {
-                        "type": "Identifier",
-                        "name": "ch",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 14,
-                            "column": 15
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 14,
-                            "column": 17
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                        },
                         "_meta": {
+                          "ReceiveCls": "",
                           "type": {
-                            "type": "ChanType",
-                            "id": {
-                              "type": "Identifier",
-                              "name": "ChanType",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 14,
-                                  "column": 18
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 14,
-                                  "column": 28
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                              },
-                              "_meta": {}
+                            "_meta": {
+                              "ReceiveCls": ""
                             },
-                            "channelDirection": "send",
-                            "valueType": {
-                              "type": "Identifier",
-                              "name": "int",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 14,
-                                  "column": 25
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 14,
-                                  "column": 28
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
+                            "dir": "send",
+                            "id": {
+                              "_meta": {
+                                "ReceiveCls": ""
                               },
-                              "_meta": {}
+                              "loc": {
+                                "end": {
+                                  "column": 28,
+                                  "line": 14
+                                },
+                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/chan.go",
+                                "start": {
+                                  "column": 18,
+                                  "line": 14
+                                }
+                              },
+                              "name": "ChanType",
+                              "type": "Identifier"
                             },
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 14,
-                                "column": 18
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 14,
-                                "column": 28
+                                "column": 28,
+                                "line": 14
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
+                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/chan.go",
+                              "start": {
+                                "column": 18,
+                                "line": 14
+                              }
                             },
-                            "_meta": {}
+                            "type": "ChanType",
+                            "valueType": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 28,
+                                  "line": 14
+                                },
+                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/chan.go",
+                                "start": {
+                                  "column": 25,
+                                  "line": 14
+                                }
+                              },
+                              "name": "int",
+                              "type": "Identifier"
+                            }
                           }
-                        }
-                      },
-                      "init": null,
-                      "cloned": true,
-                      "varType": {
-                        "type": "ChanType",
-                        "id": {
-                          "type": "Identifier",
-                          "name": "ChanType",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 14,
-                              "column": 18
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 14,
-                              "column": 28
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                          },
-                          "_meta": {}
-                        },
-                        "channelDirection": "send",
-                        "valueType": {
-                          "type": "Identifier",
-                          "name": "int",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 14,
-                              "column": 25
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 14,
-                              "column": 28
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                          },
-                          "_meta": {}
                         },
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 14,
-                            "column": 18
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 14,
-                            "column": 28
+                            "column": 17,
+                            "line": 14
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
+                          "sourcefile": "$EXAMPLES/chan.go",
+                          "start": {
+                            "column": 15,
+                            "line": 14
+                          }
                         },
-                        "_meta": {}
+                        "name": "ch",
+                        "type": "Identifier"
                       },
-                      "variableParam": false,
+                      "init": null,
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 14,
-                          "column": 15
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 14,
-                          "column": 28
+                          "column": 28,
+                          "line": 14
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
+                        "sourcefile": "$EXAMPLES/chan.go",
+                        "start": {
+                          "column": 15,
+                          "line": 14
+                        }
                       },
-                      "_meta": {}
+                      "type": "VariableDeclaration",
+                      "varType": {
+                        "_meta": {},
+                        "dir": "send",
+                        "id": {
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 28,
+                              "line": 14
+                            },
+                            "sourcefile": "$EXAMPLES/chan.go",
+                            "start": {
+                              "column": 18,
+                              "line": 14
+                            }
+                          },
+                          "name": "ChanType",
+                          "type": "Identifier"
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 28,
+                            "line": 14
+                          },
+                          "sourcefile": "$EXAMPLES/chan.go",
+                          "start": {
+                            "column": 18,
+                            "line": 14
+                          }
+                        },
+                        "type": "ChanType",
+                        "valueType": {
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 28,
+                              "line": 14
+                            },
+                            "sourcefile": "$EXAMPLES/chan.go",
+                            "start": {
+                              "column": 25,
+                              "line": 14
+                            }
+                          },
+                          "name": "int",
+                          "type": "Identifier"
+                        }
+                      },
+                      "variableParam": false
                     }
                   ],
                   "returnType": {
-                    "type": "VoidType",
+                    "_meta": {},
                     "id": null,
-                    "typeArguments": null,
                     "loc": null,
-                    "_meta": {}
+                    "type": "VoidType",
+                    "typeArguments": null
                   },
-                  "body": {
-                    "type": "ScopedStatement",
-                    "body": [
-                      {
-                        "type": "BinaryExpression",
-                        "operator": "push",
-                        "left": {
-                          "type": "Identifier",
-                          "name": "ch",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 15,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 15,
-                              "column": 4
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                          },
-                          "_meta": {}
-                        },
-                        "right": {
-                          "type": "Literal",
-                          "value": "10",
-                          "literalType": "INT",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 15,
-                              "column": 8
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 15,
-                              "column": 10
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                          },
-                          "_meta": {}
-                        },
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 15,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 15,
-                            "column": 10
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                        },
-                        "_meta": {}
-                      }
-                    ],
-                    "id": null,
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 14,
-                        "column": 30
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 16,
-                        "column": 2
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                    },
-                    "_meta": {}
-                  },
-                  "modifiers": null,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 14,
-                      "column": 1
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 16,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
-                  },
-                  "_meta": {}
+                  "type": "FunctionDefinition"
                 }
               ],
               "language": "golang",
               "languageVersion": "1.18",
-              "uri": "",
-              "version": "",
               "loc": {
-                "start": {
-                  "Offset": 0,
-                  "line": 1,
-                  "column": 1
-                },
                 "end": {
-                  "Offset": 0,
-                  "line": 16,
-                  "column": 2
+                  "column": 2,
+                  "line": 16
                 },
-                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/chan.go"
+                "sourcefile": "$EXAMPLES/chan.go",
+                "start": {
+                  "column": 1,
+                  "line": 1
+                }
               },
-              "_meta": {}
+              "type": "CompileUnit",
+              "uri": "",
+              "version": ""
             },
             "packageName": "__single__"
           }
@@ -1099,6 +1012,5 @@
         "subs": {}
       }
     }
-  },
-  "moduleName": "__single_module__"
+  }
 }

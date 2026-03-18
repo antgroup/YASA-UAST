@@ -30,16 +30,16 @@ function normalizeAst(ast: any, currentSourceFile: string, currentVersion: strin
       else if (key === 'uri' && cloned[key] === '') {
         delete cloned[key];
       }
-      // 可选：删除 _meta._extra.start/end（避免字节偏移差异）
-      else if (key === '_meta' && cloned[key]?.['_extra']?.hasOwnProperty('start')) {
+      // 递归处理子节点
+      else {
+        cloned[key] = normalizeAst(cloned[key], currentSourceFile, currentVersion);
+      }
+      // 删除 _meta._extra.start/end（避免字节偏移差异）
+      if (key === '_meta' && cloned[key]?.['_extra']?.hasOwnProperty('start')) {
         const extra = { ...cloned[key]['_extra'] };
         delete extra.start;
         delete extra.end;
         cloned[key] = { ...cloned[key], _extra: extra };
-      }
-      // 递归处理子节点
-      else {
-        cloned[key] = normalizeAst(cloned[key], currentSourceFile, currentVersion);
       }
     }
   }
@@ -57,7 +57,7 @@ function refreshUastJson() {
   for (const file of jsFiles) {
     const fullPath = path.join(BASE_DIR, file);
     const content = fs.readFileSync(fullPath, 'utf8');
-    const ast = parse(content, { sourcefile: fullPath, language: 'javascript' });
+    const ast = parse(content, { sourcefile: file, language: 'javascript' });
 
     // ✅ 写入当前版本
     ast.version = currentVersion;
@@ -111,11 +111,12 @@ describe('benchmark for javascript', () => {
         assert.fail(`❌ Failed to read baseline ${baselinePath}: ${err}`);
       }
 
-      // ✅ 标准化 baseline：替换 sourcefile 和 version
+      // ✅ 标准化：替换 sourcefile 和 version，移除 _extra.start/end
       const normalizedExpected = normalizeAst(expected, fullPath, currentVersion);
+      const normalizedActual = normalizeAst(actual, fullPath, currentVersion);
 
       // 字符串化对比（格式化一致）
-      const actualStr = JSON.stringify(actual, null, 2);
+      const actualStr = JSON.stringify(normalizedActual, null, 2);
       const expectedStr = JSON.stringify(normalizedExpected, null, 2);
 
       // 断言

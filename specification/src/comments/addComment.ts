@@ -1,5 +1,5 @@
 import addComments from "./addComments";
-import type * as t from "..";
+import type * as t from "../ast-types/generated";
 
 /**
  * Add comment of certain type to a node.

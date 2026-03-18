@@ -5,7 +5,7 @@ import {
   isAssignmentExpression,
 } from "../validators/generated";
 import { expressionStatement } from "../builders/generated";
-import type * as t from "..";
+import type * as t from "../ast-types/generated";
 
 export default toStatement as {
   (node: t.AssignmentExpression, ignore?: boolean): t.ExpressionStatement;

@@ -1,4 +1,5 @@
 {
+  "moduleName": "__single_module__",
   "packageInfo": {
     "PathName": "",
     "files": {},
@@ -6,195 +7,178 @@
       "/": {
         "PathName": "",
         "files": {
-          "/Users/ariel/code/uast/uast4go/examples/nil.go": {
+          "$EXAMPLES/nil.go": {
             "node": {
-              "type": "CompileUnit",
+              "_meta": {},
               "body": [
                 {
-                  "type": "PackageDeclaration",
-                  "name": {
-                    "type": "Identifier",
-                    "name": "examples",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 9
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 17
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/nil.go"
-                    },
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 9
-                    },
                     "end": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 17
+                      "column": 17,
+                      "line": 1
                     },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/nil.go"
+                    "sourcefile": "$EXAMPLES/nil.go",
+                    "start": {
+                      "column": 9,
+                      "line": 1
+                    }
                   },
-                  "_meta": {}
+                  "packageName": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 17,
+                        "line": 1
+                      },
+                      "sourcefile": "$EXAMPLES/nil.go",
+                      "start": {
+                        "column": 9,
+                        "line": 1
+                      }
+                    },
+                    "name": "examples",
+                    "type": "Identifier"
+                  },
+                  "type": "PackageDeclaration"
                 },
                 {
-                  "type": "VariableDeclaration",
+                  "_meta": {},
+                  "cloned": false,
                   "id": {
-                    "type": "Identifier",
-                    "name": "nil",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 5
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 8
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/nil.go"
-                    },
                     "_meta": {
+                      "ReceiveCls": "",
                       "type": {
-                        "type": "Identifier",
-                        "name": "Type",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 3,
-                            "column": 9
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 3,
-                            "column": 13
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/nil.go"
+                        "_meta": {
+                          "ReceiveCls": ""
                         },
-                        "_meta": {}
+                        "loc": {
+                          "end": {
+                            "column": 13,
+                            "line": 3
+                          },
+                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/nil.go",
+                          "start": {
+                            "column": 9,
+                            "line": 3
+                          }
+                        },
+                        "name": "Type",
+                        "type": "Identifier"
                       }
-                    }
+                    },
+                    "loc": {
+                      "end": {
+                        "column": 8,
+                        "line": 3
+                      },
+                      "sourcefile": "$EXAMPLES/nil.go",
+                      "start": {
+                        "column": 5,
+                        "line": 3
+                      }
+                    },
+                    "name": "nil",
+                    "type": "Identifier"
                   },
                   "init": null,
-                  "cloned": false,
-                  "varType": {
-                    "type": "Identifier",
-                    "name": "Type",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 9
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 13
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/nil.go"
-                    },
-                    "_meta": {}
-                  },
-                  "variableParam": false,
                   "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 3,
-                      "column": 5
-                    },
                     "end": {
-                      "Offset": 0,
-                      "line": 3,
-                      "column": 13
+                      "column": 13,
+                      "line": 3
                     },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/nil.go"
+                    "sourcefile": "$EXAMPLES/nil.go",
+                    "start": {
+                      "column": 5,
+                      "line": 3
+                    }
                   },
-                  "_meta": {}
+                  "type": "VariableDeclaration",
+                  "varType": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 13,
+                        "line": 3
+                      },
+                      "sourcefile": "$EXAMPLES/nil.go",
+                      "start": {
+                        "column": 9,
+                        "line": 3
+                      }
+                    },
+                    "name": "Type",
+                    "type": "Identifier"
+                  },
+                  "variableParam": false
                 },
                 {
-                  "type": "ClassDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "Type",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 10
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/nil.go"
-                    },
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "body": [],
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 10,
+                        "line": 5
+                      },
+                      "sourcefile": "$EXAMPLES/nil.go",
+                      "start": {
+                        "column": 6,
+                        "line": 5
+                      }
+                    },
+                    "name": "Type",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 14,
+                      "line": 5
+                    },
+                    "sourcefile": "$EXAMPLES/nil.go",
+                    "start": {
+                      "column": 6,
+                      "line": 5
+                    }
+                  },
                   "supers": [
                     {
-                      "type": "Identifier",
-                      "name": "int",
+                      "_meta": {},
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 5,
-                          "column": 11
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 5,
-                          "column": 14
+                          "column": 14,
+                          "line": 5
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/nil.go"
+                        "sourcefile": "$EXAMPLES/nil.go",
+                        "start": {
+                          "column": 11,
+                          "line": 5
+                        }
                       },
-                      "_meta": {}
+                      "name": "int",
+                      "type": "Identifier"
                     }
                   ],
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 5,
-                      "column": 6
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 5,
-                      "column": 14
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/nil.go"
-                  },
-                  "_meta": {}
+                  "type": "ClassDefinition"
                 }
               ],
               "language": "golang",
               "languageVersion": "1.18",
-              "uri": "",
-              "version": "",
               "loc": {
-                "start": {
-                  "Offset": 0,
-                  "line": 1,
-                  "column": 1
-                },
                 "end": {
-                  "Offset": 0,
-                  "line": 5,
-                  "column": 14
+                  "column": 14,
+                  "line": 5
                 },
-                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/nil.go"
+                "sourcefile": "$EXAMPLES/nil.go",
+                "start": {
+                  "column": 1,
+                  "line": 1
+                }
               },
-              "_meta": {}
+              "type": "CompileUnit",
+              "uri": "",
+              "version": ""
             },
             "packageName": "__single__"
           }
@@ -202,6 +186,5 @@
         "subs": {}
       }
     }
-  },
-  "moduleName": "__single_module__"
+  }
 }

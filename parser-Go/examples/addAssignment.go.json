@@ -1,4 +1,5 @@
 {
+  "moduleName": "__single_module__",
   "packageInfo": {
     "PathName": "",
     "files": {},
@@ -6,476 +7,434 @@
       "/": {
         "PathName": "",
         "files": {
-          "/Users/ariel/code/uast/uast4go/examples/addAssignment.go": {
+          "$EXAMPLES/addAssignment.go": {
             "node": {
-              "type": "CompileUnit",
+              "_meta": {},
               "body": [
                 {
-                  "type": "PackageDeclaration",
-                  "name": {
-                    "type": "Identifier",
-                    "name": "examples",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 9
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 17
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/addAssignment.go"
-                    },
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 9
-                    },
                     "end": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 17
+                      "column": 17,
+                      "line": 1
                     },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/addAssignment.go"
+                    "sourcefile": "$EXAMPLES/addAssignment.go",
+                    "start": {
+                      "column": 9,
+                      "line": 1
+                    }
                   },
-                  "_meta": {}
+                  "packageName": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 17,
+                        "line": 1
+                      },
+                      "sourcefile": "$EXAMPLES/addAssignment.go",
+                      "start": {
+                        "column": 9,
+                        "line": 1
+                      }
+                    },
+                    "name": "examples",
+                    "type": "Identifier"
+                  },
+                  "type": "PackageDeclaration"
                 },
                 {
-                  "type": "VariableDeclaration",
+                  "_meta": {
+                    "ReceiveCls": "",
+                    "isDefaultImport": true
+                  },
+                  "cloned": false,
                   "id": {
-                    "type": "Identifier",
-                    "name": "fmt",
+                    "_meta": {},
                     "loc": null,
-                    "_meta": {}
+                    "name": "fmt",
+                    "type": "Identifier"
                   },
                   "init": {
-                    "type": "ImportExpression",
+                    "_meta": {},
                     "from": {
-                      "type": "Literal",
-                      "value": "fmt",
+                      "_meta": {},
                       "literalType": "string",
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 3,
-                          "column": 8
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 3,
-                          "column": 13
+                          "column": 13,
+                          "line": 3
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/addAssignment.go"
+                        "sourcefile": "$EXAMPLES/addAssignment.go",
+                        "start": {
+                          "column": 8,
+                          "line": 3
+                        }
                       },
-                      "_meta": {}
+                      "type": "Literal",
+                      "value": "fmt"
                     },
-                    "local": null,
                     "imported": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 8
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 13
+                        "column": 13,
+                        "line": 3
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/addAssignment.go"
+                      "sourcefile": "$EXAMPLES/addAssignment.go",
+                      "start": {
+                        "column": 8,
+                        "line": 3
+                      }
                     },
-                    "_meta": {}
+                    "local": null,
+                    "type": "ImportExpression"
                   },
-                  "cloned": true,
-                  "varType": {
-                    "type": "DynamicType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
-                  "variableParam": false,
                   "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 3,
-                      "column": 8
-                    },
                     "end": {
-                      "Offset": 0,
-                      "line": 3,
-                      "column": 13
+                      "column": 13,
+                      "line": 3
                     },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/addAssignment.go"
+                    "sourcefile": "$EXAMPLES/addAssignment.go",
+                    "start": {
+                      "column": 8,
+                      "line": 3
+                    }
                   },
-                  "_meta": {}
+                  "type": "VariableDeclaration",
+                  "varType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "DynamicType",
+                    "typeArguments": null
+                  },
+                  "variableParam": false
                 },
                 {
-                  "type": "FunctionDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "main",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 10
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/addAssignment.go"
-                    },
-                    "_meta": {}
-                  },
-                  "parameters": [],
-                  "returnType": {
-                    "type": "VoidType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "body": {
-                    "type": "ScopedStatement",
+                    "_meta": {},
                     "body": [
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": false,
                         "id": {
-                          "type": "Identifier",
-                          "name": "res",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 6,
-                              "column": 6
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 6,
-                              "column": 9
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/addAssignment.go"
-                          },
                           "_meta": {
+                            "ReceiveCls": "",
                             "type": {
-                              "type": "Identifier",
-                              "name": "string",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 6,
-                                  "column": 10
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 6,
-                                  "column": 16
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/addAssignment.go"
+                              "_meta": {
+                                "ReceiveCls": ""
                               },
-                              "_meta": {}
+                              "loc": {
+                                "end": {
+                                  "column": 16,
+                                  "line": 6
+                                },
+                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/addAssignment.go",
+                                "start": {
+                                  "column": 10,
+                                  "line": 6
+                                }
+                              },
+                              "name": "string",
+                              "type": "Identifier"
                             }
-                          }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 9,
+                              "line": 6
+                            },
+                            "sourcefile": "$EXAMPLES/addAssignment.go",
+                            "start": {
+                              "column": 6,
+                              "line": 6
+                            }
+                          },
+                          "name": "res",
+                          "type": "Identifier"
                         },
                         "init": null,
-                        "cloned": false,
-                        "varType": {
-                          "type": "Identifier",
-                          "name": "string",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 6,
-                              "column": 10
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 6,
-                              "column": 16
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/addAssignment.go"
-                          },
-                          "_meta": {}
-                        },
-                        "variableParam": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 6,
-                            "column": 6
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 6,
-                            "column": 16
+                            "column": 16,
+                            "line": 6
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/addAssignment.go"
+                          "sourcefile": "$EXAMPLES/addAssignment.go",
+                          "start": {
+                            "column": 6,
+                            "line": 6
+                          }
                         },
-                        "_meta": {}
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 16,
+                              "line": 6
+                            },
+                            "sourcefile": "$EXAMPLES/addAssignment.go",
+                            "start": {
+                              "column": 10,
+                              "line": 6
+                            }
+                          },
+                          "name": "string",
+                          "type": "Identifier"
+                        },
+                        "variableParam": false
                       },
                       {
-                        "type": "AssignmentExpression",
+                        "_meta": {},
+                        "cloned": true,
                         "left": {
-                          "type": "Identifier",
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 5,
+                              "line": 7
+                            },
+                            "sourcefile": "$EXAMPLES/addAssignment.go",
+                            "start": {
+                              "column": 2,
+                              "line": 7
+                            }
+                          },
                           "name": "res",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 7,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 7,
-                              "column": 5
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/addAssignment.go"
-                          },
-                          "_meta": {}
+                          "type": "Identifier"
                         },
-                        "right": {
-                          "type": "Literal",
-                          "value": "\"_\"",
-                          "literalType": "STRING",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 7,
-                              "column": 8
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 7,
-                              "column": 11
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/addAssignment.go"
+                        "loc": {
+                          "end": {
+                            "column": 11,
+                            "line": 7
                           },
-                          "_meta": {}
+                          "sourcefile": "$EXAMPLES/addAssignment.go",
+                          "start": {
+                            "column": 2,
+                            "line": 7
+                          }
                         },
                         "operator": "=",
-                        "cloned": true,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 7,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 7,
-                            "column": 11
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/addAssignment.go"
-                        },
-                        "_meta": {}
-                      },
-                      {
-                        "type": "AssignmentExpression",
-                        "left": {
-                          "type": "Identifier",
-                          "name": "res",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 8,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 8,
-                              "column": 5
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/addAssignment.go"
-                          },
-                          "_meta": {}
-                        },
                         "right": {
-                          "type": "Literal",
-                          "value": "\"s\"",
+                          "_meta": {},
                           "literalType": "STRING",
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 8,
-                              "column": 9
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 8,
-                              "column": 12
+                              "column": 11,
+                              "line": 7
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/addAssignment.go"
+                            "sourcefile": "$EXAMPLES/addAssignment.go",
+                            "start": {
+                              "column": 8,
+                              "line": 7
+                            }
                           },
-                          "_meta": {}
+                          "type": "Literal",
+                          "value": "\"_\""
                         },
-                        "operator": "+=",
-                        "cloned": true,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 8,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 8,
-                            "column": 12
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/addAssignment.go"
-                        },
-                        "_meta": {}
+                        "type": "AssignmentExpression"
                       },
                       {
-                        "type": "CallExpression",
-                        "callee": {
-                          "type": "MemberAccess",
-                          "object": {
-                            "type": "Identifier",
-                            "name": "fmt",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 9,
-                                "column": 2
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 9,
-                                "column": 5
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/addAssignment.go"
-                            },
-                            "_meta": {}
-                          },
-                          "property": {
-                            "type": "Identifier",
-                            "name": "Print",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 9,
-                                "column": 6
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 9,
-                                "column": 11
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/addAssignment.go"
-                            },
-                            "_meta": {}
-                          },
-                          "computed": false,
+                        "_meta": {},
+                        "cloned": true,
+                        "left": {
+                          "_meta": {},
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 9,
-                              "column": 2
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 9,
-                              "column": 11
+                              "column": 5,
+                              "line": 8
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/addAssignment.go"
+                            "sourcefile": "$EXAMPLES/addAssignment.go",
+                            "start": {
+                              "column": 2,
+                              "line": 8
+                            }
                           },
-                          "_meta": {}
+                          "name": "res",
+                          "type": "Identifier"
                         },
+                        "loc": {
+                          "end": {
+                            "column": 12,
+                            "line": 8
+                          },
+                          "sourcefile": "$EXAMPLES/addAssignment.go",
+                          "start": {
+                            "column": 2,
+                            "line": 8
+                          }
+                        },
+                        "operator": "+=",
+                        "right": {
+                          "_meta": {},
+                          "literalType": "STRING",
+                          "loc": {
+                            "end": {
+                              "column": 12,
+                              "line": 8
+                            },
+                            "sourcefile": "$EXAMPLES/addAssignment.go",
+                            "start": {
+                              "column": 9,
+                              "line": 8
+                            }
+                          },
+                          "type": "Literal",
+                          "value": "\"s\""
+                        },
+                        "type": "AssignmentExpression"
+                      },
+                      {
+                        "_meta": {},
                         "arguments": [
                           {
-                            "type": "Identifier",
-                            "name": "res",
+                            "_meta": {},
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 9,
-                                "column": 12
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 9,
-                                "column": 15
+                                "column": 15,
+                                "line": 9
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/addAssignment.go"
+                              "sourcefile": "$EXAMPLES/addAssignment.go",
+                              "start": {
+                                "column": 12,
+                                "line": 9
+                              }
                             },
-                            "_meta": {}
+                            "name": "res",
+                            "type": "Identifier"
                           }
                         ],
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 9,
-                            "column": 2
+                        "callee": {
+                          "_meta": {},
+                          "computed": false,
+                          "loc": {
+                            "end": {
+                              "column": 11,
+                              "line": 9
+                            },
+                            "sourcefile": "$EXAMPLES/addAssignment.go",
+                            "start": {
+                              "column": 2,
+                              "line": 9
+                            }
                           },
-                          "end": {
-                            "Offset": 0,
-                            "line": 9,
-                            "column": 16
+                          "object": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 5,
+                                "line": 9
+                              },
+                              "sourcefile": "$EXAMPLES/addAssignment.go",
+                              "start": {
+                                "column": 2,
+                                "line": 9
+                              }
+                            },
+                            "name": "fmt",
+                            "type": "Identifier"
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/addAssignment.go"
+                          "property": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 11,
+                                "line": 9
+                              },
+                              "sourcefile": "$EXAMPLES/addAssignment.go",
+                              "start": {
+                                "column": 6,
+                                "line": 9
+                              }
+                            },
+                            "name": "Print",
+                            "type": "Identifier"
+                          },
+                          "type": "MemberAccess"
                         },
-                        "_meta": {}
+                        "loc": {
+                          "end": {
+                            "column": 16,
+                            "line": 9
+                          },
+                          "sourcefile": "$EXAMPLES/addAssignment.go",
+                          "start": {
+                            "column": 2,
+                            "line": 9
+                          }
+                        },
+                        "type": "CallExpression"
                       }
                     ],
                     "id": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 13
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 10,
-                        "column": 2
+                        "column": 2,
+                        "line": 10
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/addAssignment.go"
+                      "sourcefile": "$EXAMPLES/addAssignment.go",
+                      "start": {
+                        "column": 13,
+                        "line": 5
+                      }
                     },
-                    "_meta": {}
+                    "type": "ScopedStatement"
+                  },
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 10,
+                        "line": 5
+                      },
+                      "sourcefile": "$EXAMPLES/addAssignment.go",
+                      "start": {
+                        "column": 6,
+                        "line": 5
+                      }
+                    },
+                    "name": "main",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 10
+                    },
+                    "sourcefile": "$EXAMPLES/addAssignment.go",
+                    "start": {
+                      "column": 1,
+                      "line": 5
+                    }
                   },
                   "modifiers": null,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 5,
-                      "column": 1
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 10,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/addAssignment.go"
+                  "parameters": [],
+                  "returnType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "VoidType",
+                    "typeArguments": null
                   },
-                  "_meta": {}
+                  "type": "FunctionDefinition"
                 }
               ],
               "language": "golang",
               "languageVersion": "1.18",
-              "uri": "",
-              "version": "",
               "loc": {
-                "start": {
-                  "Offset": 0,
-                  "line": 1,
-                  "column": 1
-                },
                 "end": {
-                  "Offset": 0,
-                  "line": 10,
-                  "column": 2
+                  "column": 2,
+                  "line": 10
                 },
-                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/addAssignment.go"
+                "sourcefile": "$EXAMPLES/addAssignment.go",
+                "start": {
+                  "column": 1,
+                  "line": 1
+                }
               },
-              "_meta": {}
+              "type": "CompileUnit",
+              "uri": "",
+              "version": ""
             },
             "packageName": "__single__"
           }
@@ -483,6 +442,5 @@
         "subs": {}
       }
     }
-  },
-  "moduleName": "__single_module__"
+  }
 }

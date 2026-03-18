@@ -1,4 +1,5 @@
 {
+  "moduleName": "__single_module__",
   "packageInfo": {
     "PathName": "",
     "files": {},
@@ -6,1482 +7,1364 @@
       "/": {
         "PathName": "",
         "files": {
-          "/Users/ariel/code/uast/uast4go/examples/method.go": {
+          "$EXAMPLES/method.go": {
             "node": {
-              "type": "CompileUnit",
+              "_meta": {},
               "body": [
                 {
-                  "type": "PackageDeclaration",
-                  "name": {
-                    "type": "Identifier",
+                  "_meta": {},
+                  "loc": {
+                    "end": {
+                      "column": 17,
+                      "line": 1
+                    },
+                    "sourcefile": "$EXAMPLES/method.go",
+                    "start": {
+                      "column": 9,
+                      "line": 1
+                    }
+                  },
+                  "packageName": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 17,
+                        "line": 1
+                      },
+                      "sourcefile": "$EXAMPLES/method.go",
+                      "start": {
+                        "column": 9,
+                        "line": 1
+                      }
+                    },
                     "name": "examples",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 9
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 17
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                    },
-                    "_meta": {}
+                    "type": "Identifier"
                   },
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 9
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 17
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                  },
-                  "_meta": {}
+                  "type": "PackageDeclaration"
                 },
                 {
-                  "type": "VariableDeclaration",
+                  "_meta": {
+                    "ReceiveCls": "",
+                    "isDefaultImport": true
+                  },
+                  "cloned": false,
                   "id": {
-                    "type": "Identifier",
+                    "_meta": {},
+                    "loc": null,
                     "name": "fmt",
-                    "loc": null,
-                    "_meta": {}
+                    "type": "Identifier"
                   },
                   "init": {
-                    "type": "ImportExpression",
+                    "_meta": {},
                     "from": {
-                      "type": "Literal",
-                      "value": "fmt",
+                      "_meta": {},
                       "literalType": "string",
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 4,
-                          "column": 2
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 4,
-                          "column": 7
+                          "column": 7,
+                          "line": 4
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
+                        "sourcefile": "$EXAMPLES/method.go",
+                        "start": {
+                          "column": 2,
+                          "line": 4
+                        }
                       },
-                      "_meta": {}
+                      "type": "Literal",
+                      "value": "fmt"
                     },
-                    "local": null,
                     "imported": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 4,
-                        "column": 2
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 4,
-                        "column": 7
+                        "column": 7,
+                        "line": 4
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
+                      "sourcefile": "$EXAMPLES/method.go",
+                      "start": {
+                        "column": 2,
+                        "line": 4
+                      }
                     },
-                    "_meta": {}
+                    "local": null,
+                    "type": "ImportExpression"
                   },
-                  "cloned": true,
-                  "varType": {
-                    "type": "DynamicType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
-                  "variableParam": false,
                   "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 4,
-                      "column": 2
-                    },
                     "end": {
-                      "Offset": 0,
-                      "line": 4,
-                      "column": 7
+                      "column": 7,
+                      "line": 4
                     },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
+                    "sourcefile": "$EXAMPLES/method.go",
+                    "start": {
+                      "column": 2,
+                      "line": 4
+                    }
                   },
-                  "_meta": {}
-                },
-                {
                   "type": "VariableDeclaration",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "math",
-                    "loc": null,
-                    "_meta": {}
-                  },
-                  "init": {
-                    "type": "ImportExpression",
-                    "from": {
-                      "type": "Literal",
-                      "value": "math",
-                      "literalType": "string",
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 5,
-                          "column": 2
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 5,
-                          "column": 8
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                      },
-                      "_meta": {}
-                    },
-                    "local": null,
-                    "imported": null,
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 2
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 8
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                    },
-                    "_meta": {}
-                  },
-                  "cloned": true,
                   "varType": {
-                    "type": "DynamicType",
+                    "_meta": {},
                     "id": null,
-                    "typeArguments": null,
                     "loc": null,
-                    "_meta": {}
+                    "type": "DynamicType",
+                    "typeArguments": null
                   },
-                  "variableParam": false,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 5,
-                      "column": 2
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 5,
-                      "column": 8
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                  },
-                  "_meta": {}
+                  "variableParam": false
                 },
                 {
-                  "type": "ClassDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "Vertex",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 8,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 8,
-                        "column": 12
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                    },
-                    "_meta": {}
+                  "_meta": {
+                    "ReceiveCls": "",
+                    "isDefaultImport": true
                   },
+                  "cloned": false,
+                  "id": {
+                    "_meta": {},
+                    "loc": null,
+                    "name": "math",
+                    "type": "Identifier"
+                  },
+                  "init": {
+                    "_meta": {},
+                    "from": {
+                      "_meta": {},
+                      "literalType": "string",
+                      "loc": {
+                        "end": {
+                          "column": 8,
+                          "line": 5
+                        },
+                        "sourcefile": "$EXAMPLES/method.go",
+                        "start": {
+                          "column": 2,
+                          "line": 5
+                        }
+                      },
+                      "type": "Literal",
+                      "value": "math"
+                    },
+                    "imported": null,
+                    "loc": {
+                      "end": {
+                        "column": 8,
+                        "line": 5
+                      },
+                      "sourcefile": "$EXAMPLES/method.go",
+                      "start": {
+                        "column": 2,
+                        "line": 5
+                      }
+                    },
+                    "local": null,
+                    "type": "ImportExpression"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 8,
+                      "line": 5
+                    },
+                    "sourcefile": "$EXAMPLES/method.go",
+                    "start": {
+                      "column": 2,
+                      "line": 5
+                    }
+                  },
+                  "type": "VariableDeclaration",
+                  "varType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "DynamicType",
+                    "typeArguments": null
+                  },
+                  "variableParam": false
+                },
+                {
+                  "_meta": {},
                   "body": [
                     {
-                      "type": "VariableDeclaration",
-                      "id": {
-                        "type": "Identifier",
-                        "name": "X",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 9,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 9,
-                            "column": 3
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                        },
-                        "_meta": {
-                          "type": {
-                            "type": "Identifier",
-                            "name": "float64",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 9,
-                                "column": 7
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 9,
-                                "column": 14
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                            },
-                            "_meta": {}
-                          }
-                        }
-                      },
-                      "init": null,
+                      "_meta": {},
                       "cloned": true,
-                      "varType": {
-                        "type": "Identifier",
-                        "name": "float64",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 9,
-                            "column": 7
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 9,
-                            "column": 14
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                        },
-                        "_meta": {}
-                      },
-                      "variableParam": false,
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 9,
-                          "column": 2
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 9,
-                          "column": 14
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                      },
-                      "_meta": {}
-                    },
-                    {
-                      "type": "VariableDeclaration",
                       "id": {
-                        "type": "Identifier",
-                        "name": "Y",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 9,
-                            "column": 5
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 9,
-                            "column": 6
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                        },
                         "_meta": {
+                          "ReceiveCls": "",
                           "type": {
-                            "type": "Identifier",
-                            "name": "float64",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 9,
-                                "column": 7
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 9,
-                                "column": 14
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
+                            "_meta": {
+                              "ReceiveCls": ""
                             },
-                            "_meta": {}
-                          }
-                        }
-                      },
-                      "init": null,
-                      "cloned": true,
-                      "varType": {
-                        "type": "Identifier",
-                        "name": "float64",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 9,
-                            "column": 7
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 9,
-                            "column": 14
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                        },
-                        "_meta": {}
-                      },
-                      "variableParam": false,
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 9,
-                          "column": 2
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 9,
-                          "column": 14
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                      },
-                      "_meta": {}
-                    },
-                    {
-                      "type": "FunctionDefinition",
-                      "id": {
-                        "type": "Identifier",
-                        "name": "Abs",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 12,
-                            "column": 17
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 12,
-                            "column": 20
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                        },
-                        "_meta": {}
-                      },
-                      "parameters": [],
-                      "returnType": {
-                        "type": "Identifier",
-                        "name": "float64",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 12,
-                            "column": 23
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 12,
-                            "column": 30
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                        },
-                        "_meta": {}
-                      },
-                      "body": {
-                        "type": "ScopedStatement",
-                        "body": [
-                          {
-                            "type": "VariableDeclaration",
-                            "id": {
-                              "type": "Identifier",
-                              "name": "v",
-                              "loc": null,
-                              "_meta": {
-                                "type": {
-                                  "type": "Identifier",
-                                  "name": "Vertex",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 12,
-                                      "column": 9
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 12,
-                                      "column": 15
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                                  },
-                                  "_meta": {}
-                                }
+                            "loc": {
+                              "end": {
+                                "column": 14,
+                                "line": 9
+                              },
+                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/method.go",
+                              "start": {
+                                "column": 7,
+                                "line": 9
                               }
                             },
-                            "init": {
-                              "type": "ThisExpression",
-                              "loc": null,
-                              "_meta": {}
+                            "name": "float64",
+                            "type": "Identifier"
+                          }
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 3,
+                            "line": 9
+                          },
+                          "sourcefile": "$EXAMPLES/method.go",
+                          "start": {
+                            "column": 2,
+                            "line": 9
+                          }
+                        },
+                        "name": "X",
+                        "type": "Identifier"
+                      },
+                      "init": null,
+                      "loc": {
+                        "end": {
+                          "column": 14,
+                          "line": 9
+                        },
+                        "sourcefile": "$EXAMPLES/method.go",
+                        "start": {
+                          "column": 2,
+                          "line": 9
+                        }
+                      },
+                      "type": "VariableDeclaration",
+                      "varType": {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 14,
+                            "line": 9
+                          },
+                          "sourcefile": "$EXAMPLES/method.go",
+                          "start": {
+                            "column": 7,
+                            "line": 9
+                          }
+                        },
+                        "name": "float64",
+                        "type": "Identifier"
+                      },
+                      "variableParam": false
+                    },
+                    {
+                      "_meta": {},
+                      "cloned": true,
+                      "id": {
+                        "_meta": {
+                          "ReceiveCls": "",
+                          "type": {
+                            "_meta": {
+                              "ReceiveCls": ""
                             },
-                            "cloned": true,
-                            "varType": {
-                              "type": "Identifier",
-                              "name": "Vertex",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 12,
-                                  "column": 9
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 12,
-                                  "column": 15
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
+                            "loc": {
+                              "end": {
+                                "column": 14,
+                                "line": 9
                               },
-                              "_meta": {}
+                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/method.go",
+                              "start": {
+                                "column": 7,
+                                "line": 9
+                              }
                             },
-                            "variableParam": false,
+                            "name": "float64",
+                            "type": "Identifier"
+                          }
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 6,
+                            "line": 9
+                          },
+                          "sourcefile": "$EXAMPLES/method.go",
+                          "start": {
+                            "column": 5,
+                            "line": 9
+                          }
+                        },
+                        "name": "Y",
+                        "type": "Identifier"
+                      },
+                      "init": null,
+                      "loc": {
+                        "end": {
+                          "column": 14,
+                          "line": 9
+                        },
+                        "sourcefile": "$EXAMPLES/method.go",
+                        "start": {
+                          "column": 2,
+                          "line": 9
+                        }
+                      },
+                      "type": "VariableDeclaration",
+                      "varType": {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 14,
+                            "line": 9
+                          },
+                          "sourcefile": "$EXAMPLES/method.go",
+                          "start": {
+                            "column": 7,
+                            "line": 9
+                          }
+                        },
+                        "name": "float64",
+                        "type": "Identifier"
+                      },
+                      "variableParam": false
+                    },
+                    {
+                      "_meta": {
+                        "ReceiveCls": "Vertex"
+                      },
+                      "body": {
+                        "_meta": {},
+                        "body": [
+                          {
+                            "_meta": {},
+                            "cloned": true,
+                            "id": {
+                              "_meta": {
+                                "ReceiveCls": "",
+                                "type": {
+                                  "_meta": {
+                                    "ReceiveCls": ""
+                                  },
+                                  "loc": {
+                                    "end": {
+                                      "column": 15,
+                                      "line": 12
+                                    },
+                                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/method.go",
+                                    "start": {
+                                      "column": 9,
+                                      "line": 12
+                                    }
+                                  },
+                                  "name": "Vertex",
+                                  "type": "Identifier"
+                                }
+                              },
+                              "loc": null,
+                              "name": "v",
+                              "type": "Identifier"
+                            },
+                            "init": {
+                              "_meta": {},
+                              "loc": null,
+                              "type": "ThisExpression"
+                            },
                             "loc": null,
-                            "_meta": {}
+                            "type": "VariableDeclaration",
+                            "varType": {
+                              "_meta": {},
+                              "loc": {
+                                "end": {
+                                  "column": 15,
+                                  "line": 12
+                                },
+                                "sourcefile": "$EXAMPLES/method.go",
+                                "start": {
+                                  "column": 9,
+                                  "line": 12
+                                }
+                              },
+                              "name": "Vertex",
+                              "type": "Identifier"
+                            },
+                            "variableParam": false
                           },
                           {
-                            "type": "ReturnStatement",
+                            "_meta": {},
                             "argument": {
-                              "type": "CallExpression",
-                              "callee": {
-                                "type": "MemberAccess",
-                                "object": {
-                                  "type": "Identifier",
-                                  "name": "math",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 13,
-                                      "column": 9
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 13,
-                                      "column": 13
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "property": {
-                                  "type": "Identifier",
-                                  "name": "Sqrt",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 13,
-                                      "column": 14
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 13,
-                                      "column": 18
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "computed": false,
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 13,
-                                    "column": 9
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 13,
-                                    "column": 18
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                                },
-                                "_meta": {}
-                              },
+                              "_meta": {},
                               "arguments": [
                                 {
-                                  "type": "BinaryExpression",
-                                  "operator": "+",
+                                  "_meta": {},
                                   "left": {
-                                    "type": "BinaryExpression",
-                                    "operator": "*",
+                                    "_meta": {},
                                     "left": {
-                                      "type": "MemberAccess",
-                                      "object": {
-                                        "type": "Identifier",
-                                        "name": "v",
-                                        "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 13,
-                                            "column": 19
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 13,
-                                            "column": 20
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                                        },
-                                        "_meta": {}
-                                      },
-                                      "property": {
-                                        "type": "Identifier",
-                                        "name": "X",
-                                        "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 13,
-                                            "column": 21
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 13,
-                                            "column": 22
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                                        },
-                                        "_meta": {}
-                                      },
+                                      "_meta": {},
                                       "computed": false,
                                       "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 13,
-                                          "column": 19
-                                        },
                                         "end": {
-                                          "Offset": 0,
-                                          "line": 13,
-                                          "column": 22
+                                          "column": 22,
+                                          "line": 13
                                         },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
+                                        "sourcefile": "$EXAMPLES/method.go",
+                                        "start": {
+                                          "column": 19,
+                                          "line": 13
+                                        }
                                       },
-                                      "_meta": {}
-                                    },
-                                    "right": {
-                                      "type": "MemberAccess",
                                       "object": {
-                                        "type": "Identifier",
-                                        "name": "v",
+                                        "_meta": {},
                                         "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 13,
-                                            "column": 23
-                                          },
                                           "end": {
-                                            "Offset": 0,
-                                            "line": 13,
-                                            "column": 24
+                                            "column": 20,
+                                            "line": 13
                                           },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
+                                          "sourcefile": "$EXAMPLES/method.go",
+                                          "start": {
+                                            "column": 19,
+                                            "line": 13
+                                          }
                                         },
-                                        "_meta": {}
+                                        "name": "v",
+                                        "type": "Identifier"
                                       },
                                       "property": {
-                                        "type": "Identifier",
-                                        "name": "X",
+                                        "_meta": {},
                                         "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 13,
-                                            "column": 25
-                                          },
                                           "end": {
-                                            "Offset": 0,
-                                            "line": 13,
-                                            "column": 26
+                                            "column": 22,
+                                            "line": 13
                                           },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
+                                          "sourcefile": "$EXAMPLES/method.go",
+                                          "start": {
+                                            "column": 21,
+                                            "line": 13
+                                          }
                                         },
-                                        "_meta": {}
+                                        "name": "X",
+                                        "type": "Identifier"
                                       },
-                                      "computed": false,
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 13,
-                                          "column": 23
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 13,
-                                          "column": 26
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                                      },
-                                      "_meta": {}
+                                      "type": "MemberAccess"
                                     },
                                     "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 13,
-                                        "column": 19
-                                      },
                                       "end": {
-                                        "Offset": 0,
-                                        "line": 13,
-                                        "column": 26
+                                        "column": 26,
+                                        "line": 13
                                       },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
+                                      "sourcefile": "$EXAMPLES/method.go",
+                                      "start": {
+                                        "column": 19,
+                                        "line": 13
+                                      }
                                     },
-                                    "_meta": {}
-                                  },
-                                  "right": {
-                                    "type": "BinaryExpression",
                                     "operator": "*",
-                                    "left": {
-                                      "type": "MemberAccess",
-                                      "object": {
-                                        "type": "Identifier",
-                                        "name": "v",
-                                        "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 13,
-                                            "column": 29
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 13,
-                                            "column": 30
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                                        },
-                                        "_meta": {}
-                                      },
-                                      "property": {
-                                        "type": "Identifier",
-                                        "name": "Y",
-                                        "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 13,
-                                            "column": 31
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 13,
-                                            "column": 32
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                                        },
-                                        "_meta": {}
-                                      },
-                                      "computed": false,
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 13,
-                                          "column": 29
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 13,
-                                          "column": 32
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                                      },
-                                      "_meta": {}
-                                    },
                                     "right": {
-                                      "type": "MemberAccess",
-                                      "object": {
-                                        "type": "Identifier",
-                                        "name": "v",
-                                        "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 13,
-                                            "column": 33
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 13,
-                                            "column": 34
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                                        },
-                                        "_meta": {}
-                                      },
-                                      "property": {
-                                        "type": "Identifier",
-                                        "name": "Y",
-                                        "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 13,
-                                            "column": 35
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 13,
-                                            "column": 36
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                                        },
-                                        "_meta": {}
-                                      },
+                                      "_meta": {},
                                       "computed": false,
                                       "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 13,
-                                          "column": 33
-                                        },
                                         "end": {
-                                          "Offset": 0,
-                                          "line": 13,
-                                          "column": 36
+                                          "column": 26,
+                                          "line": 13
                                         },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
+                                        "sourcefile": "$EXAMPLES/method.go",
+                                        "start": {
+                                          "column": 23,
+                                          "line": 13
+                                        }
                                       },
-                                      "_meta": {}
+                                      "object": {
+                                        "_meta": {},
+                                        "loc": {
+                                          "end": {
+                                            "column": 24,
+                                            "line": 13
+                                          },
+                                          "sourcefile": "$EXAMPLES/method.go",
+                                          "start": {
+                                            "column": 23,
+                                            "line": 13
+                                          }
+                                        },
+                                        "name": "v",
+                                        "type": "Identifier"
+                                      },
+                                      "property": {
+                                        "_meta": {},
+                                        "loc": {
+                                          "end": {
+                                            "column": 26,
+                                            "line": 13
+                                          },
+                                          "sourcefile": "$EXAMPLES/method.go",
+                                          "start": {
+                                            "column": 25,
+                                            "line": 13
+                                          }
+                                        },
+                                        "name": "X",
+                                        "type": "Identifier"
+                                      },
+                                      "type": "MemberAccess"
                                     },
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 13,
-                                        "column": 29
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 13,
-                                        "column": 36
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                                    },
-                                    "_meta": {}
+                                    "type": "BinaryExpression"
                                   },
                                   "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 13,
-                                      "column": 19
-                                    },
                                     "end": {
-                                      "Offset": 0,
-                                      "line": 13,
-                                      "column": 36
+                                      "column": 36,
+                                      "line": 13
                                     },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
+                                    "sourcefile": "$EXAMPLES/method.go",
+                                    "start": {
+                                      "column": 19,
+                                      "line": 13
+                                    }
                                   },
-                                  "_meta": {}
+                                  "operator": "+",
+                                  "right": {
+                                    "_meta": {},
+                                    "left": {
+                                      "_meta": {},
+                                      "computed": false,
+                                      "loc": {
+                                        "end": {
+                                          "column": 32,
+                                          "line": 13
+                                        },
+                                        "sourcefile": "$EXAMPLES/method.go",
+                                        "start": {
+                                          "column": 29,
+                                          "line": 13
+                                        }
+                                      },
+                                      "object": {
+                                        "_meta": {},
+                                        "loc": {
+                                          "end": {
+                                            "column": 30,
+                                            "line": 13
+                                          },
+                                          "sourcefile": "$EXAMPLES/method.go",
+                                          "start": {
+                                            "column": 29,
+                                            "line": 13
+                                          }
+                                        },
+                                        "name": "v",
+                                        "type": "Identifier"
+                                      },
+                                      "property": {
+                                        "_meta": {},
+                                        "loc": {
+                                          "end": {
+                                            "column": 32,
+                                            "line": 13
+                                          },
+                                          "sourcefile": "$EXAMPLES/method.go",
+                                          "start": {
+                                            "column": 31,
+                                            "line": 13
+                                          }
+                                        },
+                                        "name": "Y",
+                                        "type": "Identifier"
+                                      },
+                                      "type": "MemberAccess"
+                                    },
+                                    "loc": {
+                                      "end": {
+                                        "column": 36,
+                                        "line": 13
+                                      },
+                                      "sourcefile": "$EXAMPLES/method.go",
+                                      "start": {
+                                        "column": 29,
+                                        "line": 13
+                                      }
+                                    },
+                                    "operator": "*",
+                                    "right": {
+                                      "_meta": {},
+                                      "computed": false,
+                                      "loc": {
+                                        "end": {
+                                          "column": 36,
+                                          "line": 13
+                                        },
+                                        "sourcefile": "$EXAMPLES/method.go",
+                                        "start": {
+                                          "column": 33,
+                                          "line": 13
+                                        }
+                                      },
+                                      "object": {
+                                        "_meta": {},
+                                        "loc": {
+                                          "end": {
+                                            "column": 34,
+                                            "line": 13
+                                          },
+                                          "sourcefile": "$EXAMPLES/method.go",
+                                          "start": {
+                                            "column": 33,
+                                            "line": 13
+                                          }
+                                        },
+                                        "name": "v",
+                                        "type": "Identifier"
+                                      },
+                                      "property": {
+                                        "_meta": {},
+                                        "loc": {
+                                          "end": {
+                                            "column": 36,
+                                            "line": 13
+                                          },
+                                          "sourcefile": "$EXAMPLES/method.go",
+                                          "start": {
+                                            "column": 35,
+                                            "line": 13
+                                          }
+                                        },
+                                        "name": "Y",
+                                        "type": "Identifier"
+                                      },
+                                      "type": "MemberAccess"
+                                    },
+                                    "type": "BinaryExpression"
+                                  },
+                                  "type": "BinaryExpression"
                                 }
                               ],
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 13,
-                                  "column": 9
+                              "callee": {
+                                "_meta": {},
+                                "computed": false,
+                                "loc": {
+                                  "end": {
+                                    "column": 18,
+                                    "line": 13
+                                  },
+                                  "sourcefile": "$EXAMPLES/method.go",
+                                  "start": {
+                                    "column": 9,
+                                    "line": 13
+                                  }
                                 },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 13,
-                                  "column": 37
+                                "object": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 13,
+                                      "line": 13
+                                    },
+                                    "sourcefile": "$EXAMPLES/method.go",
+                                    "start": {
+                                      "column": 9,
+                                      "line": 13
+                                    }
+                                  },
+                                  "name": "math",
+                                  "type": "Identifier"
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
+                                "property": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 18,
+                                      "line": 13
+                                    },
+                                    "sourcefile": "$EXAMPLES/method.go",
+                                    "start": {
+                                      "column": 14,
+                                      "line": 13
+                                    }
+                                  },
+                                  "name": "Sqrt",
+                                  "type": "Identifier"
+                                },
+                                "type": "MemberAccess"
                               },
-                              "_meta": {}
+                              "loc": {
+                                "end": {
+                                  "column": 37,
+                                  "line": 13
+                                },
+                                "sourcefile": "$EXAMPLES/method.go",
+                                "start": {
+                                  "column": 9,
+                                  "line": 13
+                                }
+                              },
+                              "type": "CallExpression"
                             },
                             "isYield": false,
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 13,
-                                "column": 2
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 13,
-                                "column": 37
+                                "column": 37,
+                                "line": 13
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
+                              "sourcefile": "$EXAMPLES/method.go",
+                              "start": {
+                                "column": 2,
+                                "line": 13
+                              }
                             },
-                            "_meta": {}
+                            "type": "ReturnStatement"
                           }
                         ],
                         "id": null,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 12,
-                            "column": 31
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 14,
-                            "column": 2
+                            "column": 2,
+                            "line": 14
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                        },
-                        "_meta": {}
-                      },
-                      "modifiers": null,
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 12,
-                          "column": 1
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 14,
-                          "column": 2
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                      },
-                      "_meta": {}
-                    }
-                  ],
-                  "supers": [],
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 8,
-                      "column": 6
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 10,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                  },
-                  "_meta": {}
-                },
-                {
-                  "type": "FunctionDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "Methods",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 16,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 16,
-                        "column": 13
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                    },
-                    "_meta": {}
-                  },
-                  "parameters": [],
-                  "returnType": {
-                    "type": "VoidType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
-                  "body": {
-                    "type": "ScopedStatement",
-                    "body": [
-                      {
-                        "type": "VariableDeclaration",
-                        "id": {
-                          "type": "Identifier",
-                          "name": "v",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 17,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 17,
-                              "column": 3
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "Identifier",
-                              "name": "Vertex",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 17,
-                                  "column": 7
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 17,
-                                  "column": 13
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                              },
-                              "_meta": {}
-                            }
+                          "sourcefile": "$EXAMPLES/method.go",
+                          "start": {
+                            "column": 31,
+                            "line": 12
                           }
                         },
+                        "type": "ScopedStatement"
+                      },
+                      "id": {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 20,
+                            "line": 12
+                          },
+                          "sourcefile": "$EXAMPLES/method.go",
+                          "start": {
+                            "column": 17,
+                            "line": 12
+                          }
+                        },
+                        "name": "Abs",
+                        "type": "Identifier"
+                      },
+                      "loc": {
+                        "end": {
+                          "column": 2,
+                          "line": 14
+                        },
+                        "sourcefile": "$EXAMPLES/method.go",
+                        "start": {
+                          "column": 1,
+                          "line": 12
+                        }
+                      },
+                      "modifiers": null,
+                      "parameters": [],
+                      "returnType": {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 30,
+                            "line": 12
+                          },
+                          "sourcefile": "$EXAMPLES/method.go",
+                          "start": {
+                            "column": 23,
+                            "line": 12
+                          }
+                        },
+                        "name": "float64",
+                        "type": "Identifier"
+                      },
+                      "type": "FunctionDefinition"
+                    }
+                  ],
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 12,
+                        "line": 8
+                      },
+                      "sourcefile": "$EXAMPLES/method.go",
+                      "start": {
+                        "column": 6,
+                        "line": 8
+                      }
+                    },
+                    "name": "Vertex",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 10
+                    },
+                    "sourcefile": "$EXAMPLES/method.go",
+                    "start": {
+                      "column": 6,
+                      "line": 8
+                    }
+                  },
+                  "supers": [],
+                  "type": "ClassDefinition"
+                },
+                {
+                  "_meta": {},
+                  "body": {
+                    "_meta": {},
+                    "body": [
+                      {
+                        "_meta": {},
+                        "cloned": true,
+                        "id": {
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 13,
+                                  "line": 17
+                                },
+                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/method.go",
+                                "start": {
+                                  "column": 7,
+                                  "line": 17
+                                }
+                              },
+                              "name": "Vertex",
+                              "type": "Identifier"
+                            }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 3,
+                              "line": 17
+                            },
+                            "sourcefile": "$EXAMPLES/method.go",
+                            "start": {
+                              "column": 2,
+                              "line": 17
+                            }
+                          },
+                          "name": "v",
+                          "type": "Identifier"
+                        },
                         "init": {
-                          "type": "Sequence",
+                          "_meta": {},
                           "expressions": [
                             {
-                              "type": "VariableDeclaration",
+                              "_meta": {},
+                              "cloned": false,
                               "id": {
-                                "type": "Identifier",
-                                "name": "tmp1",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 17,
-                                    "column": 7
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 17,
-                                    "column": 19
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                                },
                                 "_meta": {
+                                  "ReceiveCls": "",
                                   "type": {
-                                    "type": "Identifier",
-                                    "name": "Vertex",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 17,
-                                        "column": 7
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 17,
-                                        "column": 13
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
+                                    "_meta": {
+                                      "ReceiveCls": ""
                                     },
-                                    "_meta": {}
+                                    "loc": {
+                                      "end": {
+                                        "column": 13,
+                                        "line": 17
+                                      },
+                                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/method.go",
+                                      "start": {
+                                        "column": 7,
+                                        "line": 17
+                                      }
+                                    },
+                                    "name": "Vertex",
+                                    "type": "Identifier"
                                   }
-                                }
+                                },
+                                "loc": {
+                                  "end": {
+                                    "column": 19,
+                                    "line": 17
+                                  },
+                                  "sourcefile": "$EXAMPLES/method.go",
+                                  "start": {
+                                    "column": 7,
+                                    "line": 17
+                                  }
+                                },
+                                "name": "tmp1",
+                                "type": "Identifier"
                               },
                               "init": {
-                                "type": "NewExpression",
-                                "callee": {
-                                  "type": "Identifier",
-                                  "name": "Vertex",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 17,
-                                      "column": 7
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 17,
-                                      "column": 13
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                                  },
-                                  "_meta": {}
-                                },
+                                "_meta": {},
                                 "arguments": [],
-                                "loc": null,
-                                "_meta": {}
-                              },
-                              "cloned": false,
-                              "varType": {
-                                "type": "Identifier",
-                                "name": "Vertex",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 17,
-                                    "column": 7
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 17,
-                                    "column": 13
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                                },
-                                "_meta": {}
-                              },
-                              "variableParam": false,
-                              "loc": null,
-                              "_meta": {}
-                            },
-                            {
-                              "type": "AssignmentExpression",
-                              "left": {
-                                "type": "MemberAccess",
-                                "object": {
-                                  "type": "Identifier",
-                                  "name": "tmp1",
+                                "callee": {
+                                  "_meta": {},
                                   "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 17,
-                                      "column": 7
-                                    },
                                     "end": {
-                                      "Offset": 0,
-                                      "line": 17,
-                                      "column": 19
+                                      "column": 13,
+                                      "line": 17
                                     },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                                  },
-                                  "_meta": {
-                                    "type": {
-                                      "type": "Identifier",
-                                      "name": "Vertex",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 17,
-                                          "column": 7
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 17,
-                                          "column": 13
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                                      },
-                                      "_meta": {}
+                                    "sourcefile": "$EXAMPLES/method.go",
+                                    "start": {
+                                      "column": 7,
+                                      "line": 17
                                     }
-                                  }
-                                },
-                                "property": {
-                                  "type": "Identifier",
-                                  "name": "X",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 9,
-                                      "column": 2
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 9,
-                                      "column": 3
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
                                   },
-                                  "_meta": {}
-                                },
-                                "computed": false,
-                                "loc": null,
-                                "_meta": {}
-                              },
-                              "right": {
-                                "type": "Literal",
-                                "value": "3",
-                                "literalType": "INT",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 17,
-                                    "column": 14
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 17,
-                                    "column": 15
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                                },
-                                "_meta": {}
-                              },
-                              "operator": "=",
-                              "cloned": true,
-                              "loc": null,
-                              "_meta": {}
-                            },
-                            {
-                              "type": "AssignmentExpression",
-                              "left": {
-                                "type": "MemberAccess",
-                                "object": {
-                                  "type": "Identifier",
-                                  "name": "tmp1",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 17,
-                                      "column": 7
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 17,
-                                      "column": 19
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                                  },
-                                  "_meta": {
-                                    "type": {
-                                      "type": "Identifier",
-                                      "name": "Vertex",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 17,
-                                          "column": 7
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 17,
-                                          "column": 13
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                                      },
-                                      "_meta": {}
-                                    }
-                                  }
-                                },
-                                "property": {
-                                  "type": "Identifier",
-                                  "name": "Y",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 9,
-                                      "column": 5
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 9,
-                                      "column": 6
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "computed": false,
-                                "loc": null,
-                                "_meta": {}
-                              },
-                              "right": {
-                                "type": "Literal",
-                                "value": "4",
-                                "literalType": "INT",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 17,
-                                    "column": 17
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 17,
-                                    "column": 18
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                                },
-                                "_meta": {}
-                              },
-                              "operator": "=",
-                              "cloned": true,
-                              "loc": null,
-                              "_meta": {}
-                            },
-                            {
-                              "type": "Identifier",
-                              "name": "tmp1",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 17,
-                                  "column": 7
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 17,
-                                  "column": 19
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                              },
-                              "_meta": {
-                                "type": {
-                                  "type": "Identifier",
                                   "name": "Vertex",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 17,
-                                      "column": 7
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 17,
-                                      "column": 13
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
+                                  "type": "Identifier"
+                                },
+                                "loc": null,
+                                "type": "NewExpression"
+                              },
+                              "loc": null,
+                              "type": "VariableDeclaration",
+                              "varType": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 13,
+                                    "line": 17
                                   },
-                                  "_meta": {}
+                                  "sourcefile": "$EXAMPLES/method.go",
+                                  "start": {
+                                    "column": 7,
+                                    "line": 17
+                                  }
+                                },
+                                "name": "Vertex",
+                                "type": "Identifier"
+                              },
+                              "variableParam": false
+                            },
+                            {
+                              "_meta": {},
+                              "cloned": true,
+                              "left": {
+                                "_meta": {},
+                                "computed": false,
+                                "loc": null,
+                                "object": {
+                                  "_meta": {
+                                    "ReceiveCls": "",
+                                    "type": {
+                                      "_meta": {
+                                        "ReceiveCls": ""
+                                      },
+                                      "loc": {
+                                        "end": {
+                                          "column": 13,
+                                          "line": 17
+                                        },
+                                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/method.go",
+                                        "start": {
+                                          "column": 7,
+                                          "line": 17
+                                        }
+                                      },
+                                      "name": "Vertex",
+                                      "type": "Identifier"
+                                    }
+                                  },
+                                  "loc": {
+                                    "end": {
+                                      "column": 19,
+                                      "line": 17
+                                    },
+                                    "sourcefile": "$EXAMPLES/method.go",
+                                    "start": {
+                                      "column": 7,
+                                      "line": 17
+                                    }
+                                  },
+                                  "name": "tmp1",
+                                  "type": "Identifier"
+                                },
+                                "property": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 3,
+                                      "line": 9
+                                    },
+                                    "sourcefile": "$EXAMPLES/method.go",
+                                    "start": {
+                                      "column": 2,
+                                      "line": 9
+                                    }
+                                  },
+                                  "name": "X",
+                                  "type": "Identifier"
+                                },
+                                "type": "MemberAccess"
+                              },
+                              "loc": null,
+                              "operator": "=",
+                              "right": {
+                                "_meta": {},
+                                "literalType": "INT",
+                                "loc": {
+                                  "end": {
+                                    "column": 15,
+                                    "line": 17
+                                  },
+                                  "sourcefile": "$EXAMPLES/method.go",
+                                  "start": {
+                                    "column": 14,
+                                    "line": 17
+                                  }
+                                },
+                                "type": "Literal",
+                                "value": "3"
+                              },
+                              "type": "AssignmentExpression"
+                            },
+                            {
+                              "_meta": {},
+                              "cloned": true,
+                              "left": {
+                                "_meta": {},
+                                "computed": false,
+                                "loc": null,
+                                "object": {
+                                  "_meta": {
+                                    "ReceiveCls": "",
+                                    "type": {
+                                      "_meta": {
+                                        "ReceiveCls": ""
+                                      },
+                                      "loc": {
+                                        "end": {
+                                          "column": 13,
+                                          "line": 17
+                                        },
+                                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/method.go",
+                                        "start": {
+                                          "column": 7,
+                                          "line": 17
+                                        }
+                                      },
+                                      "name": "Vertex",
+                                      "type": "Identifier"
+                                    }
+                                  },
+                                  "loc": {
+                                    "end": {
+                                      "column": 19,
+                                      "line": 17
+                                    },
+                                    "sourcefile": "$EXAMPLES/method.go",
+                                    "start": {
+                                      "column": 7,
+                                      "line": 17
+                                    }
+                                  },
+                                  "name": "tmp1",
+                                  "type": "Identifier"
+                                },
+                                "property": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 6,
+                                      "line": 9
+                                    },
+                                    "sourcefile": "$EXAMPLES/method.go",
+                                    "start": {
+                                      "column": 5,
+                                      "line": 9
+                                    }
+                                  },
+                                  "name": "Y",
+                                  "type": "Identifier"
+                                },
+                                "type": "MemberAccess"
+                              },
+                              "loc": null,
+                              "operator": "=",
+                              "right": {
+                                "_meta": {},
+                                "literalType": "INT",
+                                "loc": {
+                                  "end": {
+                                    "column": 18,
+                                    "line": 17
+                                  },
+                                  "sourcefile": "$EXAMPLES/method.go",
+                                  "start": {
+                                    "column": 17,
+                                    "line": 17
+                                  }
+                                },
+                                "type": "Literal",
+                                "value": "4"
+                              },
+                              "type": "AssignmentExpression"
+                            },
+                            {
+                              "_meta": {
+                                "ReceiveCls": "",
+                                "type": {
+                                  "_meta": {
+                                    "ReceiveCls": ""
+                                  },
+                                  "loc": {
+                                    "end": {
+                                      "column": 13,
+                                      "line": 17
+                                    },
+                                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/method.go",
+                                    "start": {
+                                      "column": 7,
+                                      "line": 17
+                                    }
+                                  },
+                                  "name": "Vertex",
+                                  "type": "Identifier"
                                 }
-                              }
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 19,
+                                  "line": 17
+                                },
+                                "sourcefile": "$EXAMPLES/method.go",
+                                "start": {
+                                  "column": 7,
+                                  "line": 17
+                                }
+                              },
+                              "name": "tmp1",
+                              "type": "Identifier"
                             }
                           ],
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 17,
-                              "column": 7
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 17,
-                              "column": 19
+                              "column": 19,
+                              "line": 17
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                          },
-                          "_meta": {}
-                        },
-                        "cloned": true,
-                        "varType": {
-                          "type": "Identifier",
-                          "name": "Vertex",
-                          "loc": {
+                            "sourcefile": "$EXAMPLES/method.go",
                             "start": {
-                              "Offset": 0,
-                              "line": 17,
-                              "column": 7
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 17,
-                              "column": 13
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
+                              "column": 7,
+                              "line": 17
+                            }
                           },
-                          "_meta": {}
+                          "type": "Sequence"
                         },
-                        "variableParam": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 17,
-                            "column": 2
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 17,
-                            "column": 19
+                            "column": 19,
+                            "line": 17
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
+                          "sourcefile": "$EXAMPLES/method.go",
+                          "start": {
+                            "column": 2,
+                            "line": 17
+                          }
                         },
-                        "_meta": {}
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 13,
+                              "line": 17
+                            },
+                            "sourcefile": "$EXAMPLES/method.go",
+                            "start": {
+                              "column": 7,
+                              "line": 17
+                            }
+                          },
+                          "name": "Vertex",
+                          "type": "Identifier"
+                        },
+                        "variableParam": false
                       },
                       {
-                        "type": "CallExpression",
-                        "callee": {
-                          "type": "MemberAccess",
-                          "object": {
-                            "type": "Identifier",
-                            "name": "fmt",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 18,
-                                "column": 2
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 18,
-                                "column": 5
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                            },
-                            "_meta": {}
-                          },
-                          "property": {
-                            "type": "Identifier",
-                            "name": "Println",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 18,
-                                "column": 6
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 18,
-                                "column": 13
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                            },
-                            "_meta": {}
-                          },
-                          "computed": false,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 18,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 18,
-                              "column": 13
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                          },
-                          "_meta": {}
-                        },
+                        "_meta": {},
                         "arguments": [
                           {
-                            "type": "CallExpression",
+                            "_meta": {},
+                            "arguments": [],
                             "callee": {
-                              "type": "MemberAccess",
-                              "object": {
-                                "type": "Identifier",
-                                "name": "v",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 18,
-                                    "column": 14
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 18,
-                                    "column": 15
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                                },
-                                "_meta": {}
-                              },
-                              "property": {
-                                "type": "Identifier",
-                                "name": "Abs",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 18,
-                                    "column": 16
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 18,
-                                    "column": 19
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
-                                },
-                                "_meta": {}
-                              },
+                              "_meta": {},
                               "computed": false,
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 18,
-                                  "column": 14
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 18,
-                                  "column": 19
+                                  "column": 19,
+                                  "line": 18
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
+                                "sourcefile": "$EXAMPLES/method.go",
+                                "start": {
+                                  "column": 14,
+                                  "line": 18
+                                }
                               },
-                              "_meta": {}
+                              "object": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 15,
+                                    "line": 18
+                                  },
+                                  "sourcefile": "$EXAMPLES/method.go",
+                                  "start": {
+                                    "column": 14,
+                                    "line": 18
+                                  }
+                                },
+                                "name": "v",
+                                "type": "Identifier"
+                              },
+                              "property": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 19,
+                                    "line": 18
+                                  },
+                                  "sourcefile": "$EXAMPLES/method.go",
+                                  "start": {
+                                    "column": 16,
+                                    "line": 18
+                                  }
+                                },
+                                "name": "Abs",
+                                "type": "Identifier"
+                              },
+                              "type": "MemberAccess"
                             },
-                            "arguments": [],
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 18,
-                                "column": 14
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 18,
-                                "column": 21
+                                "column": 21,
+                                "line": 18
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
+                              "sourcefile": "$EXAMPLES/method.go",
+                              "start": {
+                                "column": 14,
+                                "line": 18
+                              }
                             },
-                            "_meta": {}
+                            "type": "CallExpression"
                           }
                         ],
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 18,
-                            "column": 2
+                        "callee": {
+                          "_meta": {},
+                          "computed": false,
+                          "loc": {
+                            "end": {
+                              "column": 13,
+                              "line": 18
+                            },
+                            "sourcefile": "$EXAMPLES/method.go",
+                            "start": {
+                              "column": 2,
+                              "line": 18
+                            }
                           },
-                          "end": {
-                            "Offset": 0,
-                            "line": 18,
-                            "column": 22
+                          "object": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 5,
+                                "line": 18
+                              },
+                              "sourcefile": "$EXAMPLES/method.go",
+                              "start": {
+                                "column": 2,
+                                "line": 18
+                              }
+                            },
+                            "name": "fmt",
+                            "type": "Identifier"
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
+                          "property": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 13,
+                                "line": 18
+                              },
+                              "sourcefile": "$EXAMPLES/method.go",
+                              "start": {
+                                "column": 6,
+                                "line": 18
+                              }
+                            },
+                            "name": "Println",
+                            "type": "Identifier"
+                          },
+                          "type": "MemberAccess"
                         },
-                        "_meta": {}
+                        "loc": {
+                          "end": {
+                            "column": 22,
+                            "line": 18
+                          },
+                          "sourcefile": "$EXAMPLES/method.go",
+                          "start": {
+                            "column": 2,
+                            "line": 18
+                          }
+                        },
+                        "type": "CallExpression"
                       }
                     ],
                     "id": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 16,
-                        "column": 16
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 19,
-                        "column": 2
+                        "column": 2,
+                        "line": 19
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
+                      "sourcefile": "$EXAMPLES/method.go",
+                      "start": {
+                        "column": 16,
+                        "line": 16
+                      }
                     },
-                    "_meta": {}
+                    "type": "ScopedStatement"
+                  },
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 13,
+                        "line": 16
+                      },
+                      "sourcefile": "$EXAMPLES/method.go",
+                      "start": {
+                        "column": 6,
+                        "line": 16
+                      }
+                    },
+                    "name": "Methods",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 19
+                    },
+                    "sourcefile": "$EXAMPLES/method.go",
+                    "start": {
+                      "column": 1,
+                      "line": 16
+                    }
                   },
                   "modifiers": null,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 16,
-                      "column": 1
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 19,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
+                  "parameters": [],
+                  "returnType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "VoidType",
+                    "typeArguments": null
                   },
-                  "_meta": {}
+                  "type": "FunctionDefinition"
                 }
               ],
               "language": "golang",
               "languageVersion": "1.18",
-              "uri": "",
-              "version": "",
               "loc": {
-                "start": {
-                  "Offset": 0,
-                  "line": 1,
-                  "column": 1
-                },
                 "end": {
-                  "Offset": 0,
-                  "line": 19,
-                  "column": 2
+                  "column": 2,
+                  "line": 19
                 },
-                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/method.go"
+                "sourcefile": "$EXAMPLES/method.go",
+                "start": {
+                  "column": 1,
+                  "line": 1
+                }
               },
-              "_meta": {}
+              "type": "CompileUnit",
+              "uri": "",
+              "version": ""
             },
             "packageName": "__single__"
           }
@@ -1489,6 +1372,5 @@
         "subs": {}
       }
     }
-  },
-  "moduleName": "__single_module__"
+  }
 }

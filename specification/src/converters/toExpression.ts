@@ -2,7 +2,7 @@ import {
   isExpression,
   isExpressionStatement
 } from "../validators/generated";
-import type * as t from "..";
+import type * as t from "../ast-types/generated";
 
 export default toExpression as {
   (

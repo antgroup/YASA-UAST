@@ -1,4 +1,5 @@
 {
+  "moduleName": "__single_module__",
   "packageInfo": {
     "PathName": "",
     "files": {},
@@ -6,2126 +7,1938 @@
       "/": {
         "PathName": "",
         "files": {
-          "/Users/ariel/code/uast/uast4go/examples/weakHash.go": {
+          "$EXAMPLES/weakHash.go": {
             "node": {
-              "type": "CompileUnit",
+              "_meta": {},
               "body": [
                 {
-                  "type": "PackageDeclaration",
-                  "name": {
-                    "type": "Identifier",
+                  "_meta": {},
+                  "loc": {
+                    "end": {
+                      "column": 17,
+                      "line": 1
+                    },
+                    "sourcefile": "$EXAMPLES/weakHash.go",
+                    "start": {
+                      "column": 9,
+                      "line": 1
+                    }
+                  },
+                  "packageName": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 17,
+                        "line": 1
+                      },
+                      "sourcefile": "$EXAMPLES/weakHash.go",
+                      "start": {
+                        "column": 9,
+                        "line": 1
+                      }
+                    },
                     "name": "examples",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 9
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 17
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                    },
-                    "_meta": {}
+                    "type": "Identifier"
                   },
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 9
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 17
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                  },
-                  "_meta": {}
+                  "type": "PackageDeclaration"
                 },
                 {
-                  "type": "VariableDeclaration",
+                  "_meta": {
+                    "ReceiveCls": "",
+                    "isDefaultImport": true
+                  },
+                  "cloned": false,
                   "id": {
-                    "type": "Identifier",
+                    "_meta": {},
+                    "loc": null,
                     "name": "fmt",
-                    "loc": null,
-                    "_meta": {}
+                    "type": "Identifier"
                   },
                   "init": {
-                    "type": "ImportExpression",
+                    "_meta": {},
                     "from": {
-                      "type": "Literal",
-                      "value": "fmt",
+                      "_meta": {},
                       "literalType": "string",
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 3,
-                          "column": 8
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 3,
-                          "column": 13
+                          "column": 13,
+                          "line": 3
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                      },
-                      "_meta": {}
-                    },
-                    "local": null,
-                    "imported": null,
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 8
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 13
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                    },
-                    "_meta": {}
-                  },
-                  "cloned": true,
-                  "varType": {
-                    "type": "DynamicType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
-                  "variableParam": false,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 3,
-                      "column": 8
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 3,
-                      "column": 13
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                  },
-                  "_meta": {}
-                },
-                {
-                  "type": "VariableDeclaration",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "io",
-                    "loc": null,
-                    "_meta": {}
-                  },
-                  "init": {
-                    "type": "ImportExpression",
-                    "from": {
-                      "type": "Literal",
-                      "value": "io",
-                      "literalType": "string",
-                      "loc": {
+                        "sourcefile": "$EXAMPLES/weakHash.go",
                         "start": {
-                          "Offset": 0,
-                          "line": 4,
-                          "column": 8
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 4,
-                          "column": 12
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                      },
-                      "_meta": {}
-                    },
-                    "local": null,
-                    "imported": null,
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 4,
-                        "column": 8
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 4,
-                        "column": 12
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                    },
-                    "_meta": {}
-                  },
-                  "cloned": true,
-                  "varType": {
-                    "type": "DynamicType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
-                  "variableParam": false,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 4,
-                      "column": 8
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 4,
-                      "column": 12
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                  },
-                  "_meta": {}
-                },
-                {
-                  "type": "VariableDeclaration",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "md5",
-                    "loc": null,
-                    "_meta": {}
-                  },
-                  "init": {
-                    "type": "ImportExpression",
-                    "from": {
-                      "type": "Literal",
-                      "value": "crypto/md5",
-                      "literalType": "string",
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 5,
-                          "column": 8
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 5,
-                          "column": 20
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                      },
-                      "_meta": {}
-                    },
-                    "local": null,
-                    "imported": null,
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 8
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 20
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                    },
-                    "_meta": {}
-                  },
-                  "cloned": true,
-                  "varType": {
-                    "type": "DynamicType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
-                  "variableParam": false,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 5,
-                      "column": 8
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 5,
-                      "column": 20
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                  },
-                  "_meta": {}
-                },
-                {
-                  "type": "VariableDeclaration",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "sha256",
-                    "loc": null,
-                    "_meta": {}
-                  },
-                  "init": {
-                    "type": "ImportExpression",
-                    "from": {
-                      "type": "Literal",
-                      "value": "crypto/sha256",
-                      "literalType": "string",
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 6,
-                          "column": 8
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 6,
-                          "column": 23
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                      },
-                      "_meta": {}
-                    },
-                    "local": null,
-                    "imported": null,
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 6,
-                        "column": 8
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 6,
-                        "column": 23
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                    },
-                    "_meta": {}
-                  },
-                  "cloned": true,
-                  "varType": {
-                    "type": "DynamicType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
-                  "variableParam": false,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 6,
-                      "column": 8
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 6,
-                      "column": 23
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                  },
-                  "_meta": {}
-                },
-                {
-                  "type": "VariableDeclaration",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "blake2s",
-                    "loc": null,
-                    "_meta": {}
-                  },
-                  "init": {
-                    "type": "ImportExpression",
-                    "from": {
-                      "type": "Literal",
-                      "value": "golang.org/x/crypto/blake2s",
-                      "literalType": "string",
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 8,
-                          "column": 8
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 8,
-                          "column": 37
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                      },
-                      "_meta": {}
-                    },
-                    "local": null,
-                    "imported": null,
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 8,
-                        "column": 8
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 8,
-                        "column": 37
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                    },
-                    "_meta": {}
-                  },
-                  "cloned": true,
-                  "varType": {
-                    "type": "DynamicType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
-                  "variableParam": false,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 8,
-                      "column": 8
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 8,
-                      "column": 37
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                  },
-                  "_meta": {}
-                },
-                {
-                  "type": "FunctionDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "WeakHash",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 11,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 11,
-                        "column": 14
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                    },
-                    "_meta": {}
-                  },
-                  "parameters": [
-                    {
-                      "type": "VariableDeclaration",
-                      "id": {
-                        "type": "Identifier",
-                        "name": "a",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 11,
-                            "column": 15
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 11,
-                            "column": 16
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                        },
-                        "_meta": {
-                          "type": {
-                            "type": "Identifier",
-                            "name": "int32",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 11,
-                                "column": 17
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 11,
-                                "column": 22
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                            },
-                            "_meta": {}
-                          }
+                          "column": 8,
+                          "line": 3
                         }
                       },
-                      "init": null,
-                      "cloned": true,
-                      "varType": {
-                        "type": "Identifier",
-                        "name": "int32",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 11,
-                            "column": 17
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 11,
-                            "column": 22
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                        },
-                        "_meta": {}
+                      "type": "Literal",
+                      "value": "fmt"
+                    },
+                    "imported": null,
+                    "loc": {
+                      "end": {
+                        "column": 13,
+                        "line": 3
                       },
-                      "variableParam": false,
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 11,
-                          "column": 15
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 11,
-                          "column": 22
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                      },
-                      "_meta": {}
-                    }
-                  ],
-                  "returnType": {
-                    "type": "VoidType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
+                      "sourcefile": "$EXAMPLES/weakHash.go",
+                      "start": {
+                        "column": 8,
+                        "line": 3
+                      }
+                    },
+                    "local": null,
+                    "type": "ImportExpression"
                   },
+                  "loc": {
+                    "end": {
+                      "column": 13,
+                      "line": 3
+                    },
+                    "sourcefile": "$EXAMPLES/weakHash.go",
+                    "start": {
+                      "column": 8,
+                      "line": 3
+                    }
+                  },
+                  "type": "VariableDeclaration",
+                  "varType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "DynamicType",
+                    "typeArguments": null
+                  },
+                  "variableParam": false
+                },
+                {
+                  "_meta": {
+                    "ReceiveCls": "",
+                    "isDefaultImport": true
+                  },
+                  "cloned": false,
+                  "id": {
+                    "_meta": {},
+                    "loc": null,
+                    "name": "io",
+                    "type": "Identifier"
+                  },
+                  "init": {
+                    "_meta": {},
+                    "from": {
+                      "_meta": {},
+                      "literalType": "string",
+                      "loc": {
+                        "end": {
+                          "column": 12,
+                          "line": 4
+                        },
+                        "sourcefile": "$EXAMPLES/weakHash.go",
+                        "start": {
+                          "column": 8,
+                          "line": 4
+                        }
+                      },
+                      "type": "Literal",
+                      "value": "io"
+                    },
+                    "imported": null,
+                    "loc": {
+                      "end": {
+                        "column": 12,
+                        "line": 4
+                      },
+                      "sourcefile": "$EXAMPLES/weakHash.go",
+                      "start": {
+                        "column": 8,
+                        "line": 4
+                      }
+                    },
+                    "local": null,
+                    "type": "ImportExpression"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 12,
+                      "line": 4
+                    },
+                    "sourcefile": "$EXAMPLES/weakHash.go",
+                    "start": {
+                      "column": 8,
+                      "line": 4
+                    }
+                  },
+                  "type": "VariableDeclaration",
+                  "varType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "DynamicType",
+                    "typeArguments": null
+                  },
+                  "variableParam": false
+                },
+                {
+                  "_meta": {
+                    "ReceiveCls": "",
+                    "isDefaultImport": true
+                  },
+                  "cloned": false,
+                  "id": {
+                    "_meta": {},
+                    "loc": null,
+                    "name": "md5",
+                    "type": "Identifier"
+                  },
+                  "init": {
+                    "_meta": {},
+                    "from": {
+                      "_meta": {},
+                      "literalType": "string",
+                      "loc": {
+                        "end": {
+                          "column": 20,
+                          "line": 5
+                        },
+                        "sourcefile": "$EXAMPLES/weakHash.go",
+                        "start": {
+                          "column": 8,
+                          "line": 5
+                        }
+                      },
+                      "type": "Literal",
+                      "value": "crypto/md5"
+                    },
+                    "imported": null,
+                    "loc": {
+                      "end": {
+                        "column": 20,
+                        "line": 5
+                      },
+                      "sourcefile": "$EXAMPLES/weakHash.go",
+                      "start": {
+                        "column": 8,
+                        "line": 5
+                      }
+                    },
+                    "local": null,
+                    "type": "ImportExpression"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 20,
+                      "line": 5
+                    },
+                    "sourcefile": "$EXAMPLES/weakHash.go",
+                    "start": {
+                      "column": 8,
+                      "line": 5
+                    }
+                  },
+                  "type": "VariableDeclaration",
+                  "varType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "DynamicType",
+                    "typeArguments": null
+                  },
+                  "variableParam": false
+                },
+                {
+                  "_meta": {
+                    "ReceiveCls": "",
+                    "isDefaultImport": true
+                  },
+                  "cloned": false,
+                  "id": {
+                    "_meta": {},
+                    "loc": null,
+                    "name": "sha256",
+                    "type": "Identifier"
+                  },
+                  "init": {
+                    "_meta": {},
+                    "from": {
+                      "_meta": {},
+                      "literalType": "string",
+                      "loc": {
+                        "end": {
+                          "column": 23,
+                          "line": 6
+                        },
+                        "sourcefile": "$EXAMPLES/weakHash.go",
+                        "start": {
+                          "column": 8,
+                          "line": 6
+                        }
+                      },
+                      "type": "Literal",
+                      "value": "crypto/sha256"
+                    },
+                    "imported": null,
+                    "loc": {
+                      "end": {
+                        "column": 23,
+                        "line": 6
+                      },
+                      "sourcefile": "$EXAMPLES/weakHash.go",
+                      "start": {
+                        "column": 8,
+                        "line": 6
+                      }
+                    },
+                    "local": null,
+                    "type": "ImportExpression"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 23,
+                      "line": 6
+                    },
+                    "sourcefile": "$EXAMPLES/weakHash.go",
+                    "start": {
+                      "column": 8,
+                      "line": 6
+                    }
+                  },
+                  "type": "VariableDeclaration",
+                  "varType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "DynamicType",
+                    "typeArguments": null
+                  },
+                  "variableParam": false
+                },
+                {
+                  "_meta": {
+                    "ReceiveCls": "",
+                    "isDefaultImport": true
+                  },
+                  "cloned": false,
+                  "id": {
+                    "_meta": {},
+                    "loc": null,
+                    "name": "blake2s",
+                    "type": "Identifier"
+                  },
+                  "init": {
+                    "_meta": {},
+                    "from": {
+                      "_meta": {},
+                      "literalType": "string",
+                      "loc": {
+                        "end": {
+                          "column": 37,
+                          "line": 8
+                        },
+                        "sourcefile": "$EXAMPLES/weakHash.go",
+                        "start": {
+                          "column": 8,
+                          "line": 8
+                        }
+                      },
+                      "type": "Literal",
+                      "value": "golang.org/x/crypto/blake2s"
+                    },
+                    "imported": null,
+                    "loc": {
+                      "end": {
+                        "column": 37,
+                        "line": 8
+                      },
+                      "sourcefile": "$EXAMPLES/weakHash.go",
+                      "start": {
+                        "column": 8,
+                        "line": 8
+                      }
+                    },
+                    "local": null,
+                    "type": "ImportExpression"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 37,
+                      "line": 8
+                    },
+                    "sourcefile": "$EXAMPLES/weakHash.go",
+                    "start": {
+                      "column": 8,
+                      "line": 8
+                    }
+                  },
+                  "type": "VariableDeclaration",
+                  "varType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "DynamicType",
+                    "typeArguments": null
+                  },
+                  "variableParam": false
+                },
+                {
+                  "_meta": {},
                   "body": {
-                    "type": "ScopedStatement",
+                    "_meta": {},
                     "body": [
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": true,
                         "id": {
-                          "type": "Identifier",
-                          "name": "hMd5",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 12,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 12,
-                              "column": 6
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                          },
                           "_meta": {
+                            "ReceiveCls": "",
                             "type": {
-                              "type": "MemberAccess",
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "computed": false,
+                              "loc": {
+                                "end": {
+                                  "column": 17,
+                                  "line": 12
+                                },
+                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/weakHash.go",
+                                "start": {
+                                  "column": 10,
+                                  "line": 12
+                                }
+                              },
                               "object": {
-                                "type": "Identifier",
+                                "_meta": {
+                                  "ReceiveCls": ""
+                                },
+                                "loc": {
+                                  "end": {
+                                    "column": 13,
+                                    "line": 12
+                                  },
+                                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/weakHash.go",
+                                  "start": {
+                                    "column": 10,
+                                    "line": 12
+                                  }
+                                },
                                 "name": "md5",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 12,
-                                    "column": 10
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 12,
-                                    "column": 13
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                },
-                                "_meta": {}
+                                "type": "Identifier"
                               },
                               "property": {
-                                "type": "Identifier",
-                                "name": "New",
+                                "_meta": {
+                                  "ReceiveCls": ""
+                                },
                                 "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 12,
-                                    "column": 14
-                                  },
                                   "end": {
-                                    "Offset": 0,
-                                    "line": 12,
-                                    "column": 17
+                                    "column": 17,
+                                    "line": 12
                                   },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/weakHash.go",
+                                  "start": {
+                                    "column": 14,
+                                    "line": 12
+                                  }
                                 },
-                                "_meta": {}
+                                "name": "New",
+                                "type": "Identifier"
                               },
-                              "computed": false,
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 12,
-                                  "column": 10
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 12,
-                                  "column": 17
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                              },
-                              "_meta": {}
+                              "type": "MemberAccess"
                             }
-                          }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 6,
+                              "line": 12
+                            },
+                            "sourcefile": "$EXAMPLES/weakHash.go",
+                            "start": {
+                              "column": 2,
+                              "line": 12
+                            }
+                          },
+                          "name": "hMd5",
+                          "type": "Identifier"
                         },
                         "init": {
-                          "type": "CallExpression",
+                          "_meta": {},
+                          "arguments": [],
                           "callee": {
-                            "type": "MemberAccess",
+                            "_meta": {},
+                            "computed": false,
+                            "loc": {
+                              "end": {
+                                "column": 17,
+                                "line": 12
+                              },
+                              "sourcefile": "$EXAMPLES/weakHash.go",
+                              "start": {
+                                "column": 10,
+                                "line": 12
+                              }
+                            },
                             "object": {
-                              "type": "Identifier",
+                              "_meta": {},
+                              "loc": {
+                                "end": {
+                                  "column": 13,
+                                  "line": 12
+                                },
+                                "sourcefile": "$EXAMPLES/weakHash.go",
+                                "start": {
+                                  "column": 10,
+                                  "line": 12
+                                }
+                              },
                               "name": "md5",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 12,
-                                  "column": 10
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 12,
-                                  "column": 13
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                              },
-                              "_meta": {}
+                              "type": "Identifier"
                             },
                             "property": {
-                              "type": "Identifier",
-                              "name": "New",
+                              "_meta": {},
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 12,
-                                  "column": 14
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 12,
-                                  "column": 17
+                                  "column": 17,
+                                  "line": 12
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                                "sourcefile": "$EXAMPLES/weakHash.go",
+                                "start": {
+                                  "column": 14,
+                                  "line": 12
+                                }
                               },
-                              "_meta": {}
+                              "name": "New",
+                              "type": "Identifier"
                             },
-                            "computed": false,
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 10
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 17
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                            },
-                            "_meta": {}
+                            "type": "MemberAccess"
                           },
-                          "arguments": [],
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 12,
-                              "column": 10
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 12,
-                              "column": 19
+                              "column": 19,
+                              "line": 12
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                            "sourcefile": "$EXAMPLES/weakHash.go",
+                            "start": {
+                              "column": 10,
+                              "line": 12
+                            }
                           },
-                          "_meta": {}
+                          "type": "CallExpression"
                         },
-                        "cloned": true,
+                        "loc": {
+                          "end": {
+                            "column": 19,
+                            "line": 12
+                          },
+                          "sourcefile": "$EXAMPLES/weakHash.go",
+                          "start": {
+                            "column": 2,
+                            "line": 12
+                          }
+                        },
+                        "type": "VariableDeclaration",
                         "varType": {
-                          "type": "MemberAccess",
-                          "object": {
-                            "type": "Identifier",
-                            "name": "md5",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 10
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 13
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                            },
-                            "_meta": {}
-                          },
-                          "property": {
-                            "type": "Identifier",
-                            "name": "New",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 14
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 17
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                            },
-                            "_meta": {}
-                          },
+                          "_meta": {},
                           "computed": false,
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 12,
-                              "column": 10
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 12,
-                              "column": 17
+                              "column": 17,
+                              "line": 12
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                            "sourcefile": "$EXAMPLES/weakHash.go",
+                            "start": {
+                              "column": 10,
+                              "line": 12
+                            }
                           },
-                          "_meta": {}
+                          "object": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 13,
+                                "line": 12
+                              },
+                              "sourcefile": "$EXAMPLES/weakHash.go",
+                              "start": {
+                                "column": 10,
+                                "line": 12
+                              }
+                            },
+                            "name": "md5",
+                            "type": "Identifier"
+                          },
+                          "property": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 17,
+                                "line": 12
+                              },
+                              "sourcefile": "$EXAMPLES/weakHash.go",
+                              "start": {
+                                "column": 14,
+                                "line": 12
+                              }
+                            },
+                            "name": "New",
+                            "type": "Identifier"
+                          },
+                          "type": "MemberAccess"
                         },
-                        "variableParam": false,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 12,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 12,
-                            "column": 19
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                        },
-                        "_meta": {}
+                        "variableParam": false
                       },
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": true,
                         "id": {
-                          "type": "Identifier",
-                          "name": "hSha",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 13,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 13,
-                              "column": 6
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                          },
                           "_meta": {
+                            "ReceiveCls": "",
                             "type": {
-                              "type": "MemberAccess",
-                              "object": {
-                                "type": "Identifier",
-                                "name": "sha256",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 13,
-                                    "column": 10
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 13,
-                                    "column": 16
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                },
-                                "_meta": {}
-                              },
-                              "property": {
-                                "type": "Identifier",
-                                "name": "New",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 13,
-                                    "column": 17
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 13,
-                                    "column": 20
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                },
-                                "_meta": {}
+                              "_meta": {
+                                "ReceiveCls": ""
                               },
                               "computed": false,
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 13,
-                                  "column": 10
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 13,
-                                  "column": 20
+                                  "column": 20,
+                                  "line": 13
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/weakHash.go",
+                                "start": {
+                                  "column": 10,
+                                  "line": 13
+                                }
                               },
-                              "_meta": {}
+                              "object": {
+                                "_meta": {
+                                  "ReceiveCls": ""
+                                },
+                                "loc": {
+                                  "end": {
+                                    "column": 16,
+                                    "line": 13
+                                  },
+                                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/weakHash.go",
+                                  "start": {
+                                    "column": 10,
+                                    "line": 13
+                                  }
+                                },
+                                "name": "sha256",
+                                "type": "Identifier"
+                              },
+                              "property": {
+                                "_meta": {
+                                  "ReceiveCls": ""
+                                },
+                                "loc": {
+                                  "end": {
+                                    "column": 20,
+                                    "line": 13
+                                  },
+                                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/weakHash.go",
+                                  "start": {
+                                    "column": 17,
+                                    "line": 13
+                                  }
+                                },
+                                "name": "New",
+                                "type": "Identifier"
+                              },
+                              "type": "MemberAccess"
                             }
-                          }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 6,
+                              "line": 13
+                            },
+                            "sourcefile": "$EXAMPLES/weakHash.go",
+                            "start": {
+                              "column": 2,
+                              "line": 13
+                            }
+                          },
+                          "name": "hSha",
+                          "type": "Identifier"
                         },
                         "init": {
-                          "type": "CallExpression",
+                          "_meta": {},
+                          "arguments": [],
                           "callee": {
-                            "type": "MemberAccess",
-                            "object": {
-                              "type": "Identifier",
-                              "name": "sha256",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 13,
-                                  "column": 10
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 13,
-                                  "column": 16
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                              },
-                              "_meta": {}
-                            },
-                            "property": {
-                              "type": "Identifier",
-                              "name": "New",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 13,
-                                  "column": 17
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 13,
-                                  "column": 20
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                              },
-                              "_meta": {}
-                            },
+                            "_meta": {},
                             "computed": false,
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 13,
-                                "column": 10
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 13,
-                                "column": 20
+                                "column": 20,
+                                "line": 13
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                              "sourcefile": "$EXAMPLES/weakHash.go",
+                              "start": {
+                                "column": 10,
+                                "line": 13
+                              }
                             },
-                            "_meta": {}
+                            "object": {
+                              "_meta": {},
+                              "loc": {
+                                "end": {
+                                  "column": 16,
+                                  "line": 13
+                                },
+                                "sourcefile": "$EXAMPLES/weakHash.go",
+                                "start": {
+                                  "column": 10,
+                                  "line": 13
+                                }
+                              },
+                              "name": "sha256",
+                              "type": "Identifier"
+                            },
+                            "property": {
+                              "_meta": {},
+                              "loc": {
+                                "end": {
+                                  "column": 20,
+                                  "line": 13
+                                },
+                                "sourcefile": "$EXAMPLES/weakHash.go",
+                                "start": {
+                                  "column": 17,
+                                  "line": 13
+                                }
+                              },
+                              "name": "New",
+                              "type": "Identifier"
+                            },
+                            "type": "MemberAccess"
                           },
-                          "arguments": [],
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 13,
-                              "column": 10
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 13,
-                              "column": 22
+                              "column": 22,
+                              "line": 13
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                            "sourcefile": "$EXAMPLES/weakHash.go",
+                            "start": {
+                              "column": 10,
+                              "line": 13
+                            }
                           },
-                          "_meta": {}
+                          "type": "CallExpression"
                         },
-                        "cloned": true,
+                        "loc": {
+                          "end": {
+                            "column": 22,
+                            "line": 13
+                          },
+                          "sourcefile": "$EXAMPLES/weakHash.go",
+                          "start": {
+                            "column": 2,
+                            "line": 13
+                          }
+                        },
+                        "type": "VariableDeclaration",
                         "varType": {
-                          "type": "MemberAccess",
-                          "object": {
-                            "type": "Identifier",
-                            "name": "sha256",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 13,
-                                "column": 10
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 13,
-                                "column": 16
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                            },
-                            "_meta": {}
-                          },
-                          "property": {
-                            "type": "Identifier",
-                            "name": "New",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 13,
-                                "column": 17
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 13,
-                                "column": 20
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                            },
-                            "_meta": {}
-                          },
+                          "_meta": {},
                           "computed": false,
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 13,
-                              "column": 10
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 13,
-                              "column": 20
+                              "column": 20,
+                              "line": 13
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                            "sourcefile": "$EXAMPLES/weakHash.go",
+                            "start": {
+                              "column": 10,
+                              "line": 13
+                            }
                           },
-                          "_meta": {}
+                          "object": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 16,
+                                "line": 13
+                              },
+                              "sourcefile": "$EXAMPLES/weakHash.go",
+                              "start": {
+                                "column": 10,
+                                "line": 13
+                              }
+                            },
+                            "name": "sha256",
+                            "type": "Identifier"
+                          },
+                          "property": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 20,
+                                "line": 13
+                              },
+                              "sourcefile": "$EXAMPLES/weakHash.go",
+                              "start": {
+                                "column": 17,
+                                "line": 13
+                              }
+                            },
+                            "name": "New",
+                            "type": "Identifier"
+                          },
+                          "type": "MemberAccess"
                         },
-                        "variableParam": false,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 13,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 13,
-                            "column": 22
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                        },
-                        "_meta": {}
+                        "variableParam": false
                       },
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": true,
                         "id": {
-                          "type": "TupleExpression",
+                          "_meta": {},
                           "elements": [
                             {
-                              "type": "Identifier",
-                              "name": "hBlake2s",
+                              "_meta": {},
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 14,
-                                  "column": 2
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 14,
-                                  "column": 10
+                                  "column": 10,
+                                  "line": 14
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                                "sourcefile": "$EXAMPLES/weakHash.go",
+                                "start": {
+                                  "column": 2,
+                                  "line": 14
+                                }
                               },
-                              "_meta": {}
+                              "name": "hBlake2s",
+                              "type": "Identifier"
                             },
                             {
-                              "type": "Identifier",
-                              "name": "err",
+                              "_meta": {},
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 14,
-                                  "column": 12
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 14,
-                                  "column": 15
+                                  "column": 15,
+                                  "line": 14
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                                "sourcefile": "$EXAMPLES/weakHash.go",
+                                "start": {
+                                  "column": 12,
+                                  "line": 14
+                                }
                               },
-                              "_meta": {}
+                              "name": "err",
+                              "type": "Identifier"
                             }
                           ],
-                          "modifiable": false,
                           "loc": null,
-                          "_meta": {}
+                          "modifiable": false,
+                          "type": "TupleExpression"
                         },
                         "init": {
-                          "type": "CallExpression",
-                          "callee": {
-                            "type": "MemberAccess",
-                            "object": {
-                              "type": "Identifier",
-                              "name": "blake2s",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 14,
-                                  "column": 19
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 14,
-                                  "column": 26
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                              },
-                              "_meta": {}
-                            },
-                            "property": {
-                              "type": "Identifier",
-                              "name": "New256",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 14,
-                                  "column": 27
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 14,
-                                  "column": 33
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                              },
-                              "_meta": {}
-                            },
-                            "computed": false,
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 14,
-                                "column": 19
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 14,
-                                "column": 33
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                            },
-                            "_meta": {}
-                          },
+                          "_meta": {},
                           "arguments": [
                             {
-                              "type": "Identifier",
-                              "name": "nil",
+                              "_meta": {},
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 14,
-                                  "column": 34
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 14,
-                                  "column": 37
+                                  "column": 37,
+                                  "line": 14
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                                "sourcefile": "$EXAMPLES/weakHash.go",
+                                "start": {
+                                  "column": 34,
+                                  "line": 14
+                                }
                               },
-                              "_meta": {}
+                              "name": "nil",
+                              "type": "Identifier"
                             }
                           ],
+                          "callee": {
+                            "_meta": {},
+                            "computed": false,
+                            "loc": {
+                              "end": {
+                                "column": 33,
+                                "line": 14
+                              },
+                              "sourcefile": "$EXAMPLES/weakHash.go",
+                              "start": {
+                                "column": 19,
+                                "line": 14
+                              }
+                            },
+                            "object": {
+                              "_meta": {},
+                              "loc": {
+                                "end": {
+                                  "column": 26,
+                                  "line": 14
+                                },
+                                "sourcefile": "$EXAMPLES/weakHash.go",
+                                "start": {
+                                  "column": 19,
+                                  "line": 14
+                                }
+                              },
+                              "name": "blake2s",
+                              "type": "Identifier"
+                            },
+                            "property": {
+                              "_meta": {},
+                              "loc": {
+                                "end": {
+                                  "column": 33,
+                                  "line": 14
+                                },
+                                "sourcefile": "$EXAMPLES/weakHash.go",
+                                "start": {
+                                  "column": 27,
+                                  "line": 14
+                                }
+                              },
+                              "name": "New256",
+                              "type": "Identifier"
+                            },
+                            "type": "MemberAccess"
+                          },
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 14,
-                              "column": 19
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 14,
-                              "column": 38
+                              "column": 38,
+                              "line": 14
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                            "sourcefile": "$EXAMPLES/weakHash.go",
+                            "start": {
+                              "column": 19,
+                              "line": 14
+                            }
                           },
-                          "_meta": {}
+                          "type": "CallExpression"
                         },
-                        "cloned": true,
-                        "varType": {
-                          "type": "DynamicType",
-                          "id": null,
-                          "typeArguments": null,
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "variableParam": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 14,
-                            "column": 2
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 14,
-                            "column": 38
+                            "column": 38,
+                            "line": 14
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                          "sourcefile": "$EXAMPLES/weakHash.go",
+                          "start": {
+                            "column": 2,
+                            "line": 14
+                          }
                         },
-                        "_meta": {}
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "id": null,
+                          "loc": null,
+                          "type": "DynamicType",
+                          "typeArguments": null
+                        },
+                        "variableParam": false
                       },
                       {
-                        "type": "IfStatement",
-                        "test": {
-                          "type": "BinaryExpression",
-                          "operator": "==",
-                          "left": {
-                            "type": "Identifier",
-                            "name": "err",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 15,
-                                "column": 5
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 15,
-                                "column": 8
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                            },
-                            "_meta": {}
-                          },
-                          "right": {
-                            "type": "Identifier",
-                            "name": "nil",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 15,
-                                "column": 12
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 15,
-                                "column": 15
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                            },
-                            "_meta": {}
-                          },
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 15,
-                              "column": 5
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 15,
-                              "column": 15
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                          },
-                          "_meta": {}
+                        "_meta": {},
+                        "alternative": {
+                          "_meta": {},
+                          "loc": null,
+                          "type": "Noop"
                         },
                         "consequent": {
-                          "type": "ScopedStatement",
+                          "_meta": {},
                           "body": [
                             {
-                              "type": "CallExpression",
-                              "callee": {
-                                "type": "MemberAccess",
-                                "object": {
-                                  "type": "Identifier",
-                                  "name": "io",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 16,
-                                      "column": 3
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 16,
-                                      "column": 5
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "property": {
-                                  "type": "Identifier",
-                                  "name": "WriteString",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 16,
-                                      "column": 6
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 16,
-                                      "column": 17
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "computed": false,
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 16,
-                                    "column": 3
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 16,
-                                    "column": 17
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                },
-                                "_meta": {}
-                              },
+                              "_meta": {},
                               "arguments": [
                                 {
-                                  "type": "Identifier",
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 22,
+                                      "line": 16
+                                    },
+                                    "sourcefile": "$EXAMPLES/weakHash.go",
+                                    "start": {
+                                      "column": 18,
+                                      "line": 16
+                                    }
+                                  },
                                   "name": "hMd5",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 16,
-                                      "column": 18
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 16,
-                                      "column": 22
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                  },
-                                  "_meta": {}
+                                  "type": "Identifier"
                                 },
                                 {
-                                  "type": "Literal",
-                                  "value": "\"Welcome to Go Language Secure Coding Practices\"",
+                                  "_meta": {},
                                   "literalType": "STRING",
                                   "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 16,
-                                      "column": 24
-                                    },
                                     "end": {
-                                      "Offset": 0,
-                                      "line": 16,
-                                      "column": 72
+                                      "column": 72,
+                                      "line": 16
                                     },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                                    "sourcefile": "$EXAMPLES/weakHash.go",
+                                    "start": {
+                                      "column": 24,
+                                      "line": 16
+                                    }
                                   },
-                                  "_meta": {}
+                                  "type": "Literal",
+                                  "value": "\"Welcome to Go Language Secure Coding Practices\""
                                 }
                               ],
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 16,
-                                  "column": 3
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 16,
-                                  "column": 73
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                              },
-                              "_meta": {}
-                            },
-                            {
-                              "type": "CallExpression",
                               "callee": {
-                                "type": "MemberAccess",
-                                "object": {
-                                  "type": "Identifier",
-                                  "name": "io",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 17,
-                                      "column": 3
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 17,
-                                      "column": 5
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "property": {
-                                  "type": "Identifier",
-                                  "name": "WriteString",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 17,
-                                      "column": 6
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 17,
-                                      "column": 17
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                  },
-                                  "_meta": {}
-                                },
+                                "_meta": {},
                                 "computed": false,
                                 "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 17,
-                                    "column": 3
-                                  },
                                   "end": {
-                                    "Offset": 0,
-                                    "line": 17,
-                                    "column": 17
+                                    "column": 17,
+                                    "line": 16
                                   },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                                  "sourcefile": "$EXAMPLES/weakHash.go",
+                                  "start": {
+                                    "column": 3,
+                                    "line": 16
+                                  }
                                 },
-                                "_meta": {}
+                                "object": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 5,
+                                      "line": 16
+                                    },
+                                    "sourcefile": "$EXAMPLES/weakHash.go",
+                                    "start": {
+                                      "column": 3,
+                                      "line": 16
+                                    }
+                                  },
+                                  "name": "io",
+                                  "type": "Identifier"
+                                },
+                                "property": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 17,
+                                      "line": 16
+                                    },
+                                    "sourcefile": "$EXAMPLES/weakHash.go",
+                                    "start": {
+                                      "column": 6,
+                                      "line": 16
+                                    }
+                                  },
+                                  "name": "WriteString",
+                                  "type": "Identifier"
+                                },
+                                "type": "MemberAccess"
                               },
+                              "loc": {
+                                "end": {
+                                  "column": 73,
+                                  "line": 16
+                                },
+                                "sourcefile": "$EXAMPLES/weakHash.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 16
+                                }
+                              },
+                              "type": "CallExpression"
+                            },
+                            {
+                              "_meta": {},
                               "arguments": [
                                 {
-                                  "type": "Identifier",
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 22,
+                                      "line": 17
+                                    },
+                                    "sourcefile": "$EXAMPLES/weakHash.go",
+                                    "start": {
+                                      "column": 18,
+                                      "line": 17
+                                    }
+                                  },
                                   "name": "hSha",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 17,
-                                      "column": 18
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 17,
-                                      "column": 22
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                  },
-                                  "_meta": {}
+                                  "type": "Identifier"
                                 },
                                 {
-                                  "type": "Literal",
-                                  "value": "\"Welcome to Go Language Secure Coding Practices\"",
+                                  "_meta": {},
                                   "literalType": "STRING",
                                   "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 17,
-                                      "column": 24
-                                    },
                                     "end": {
-                                      "Offset": 0,
-                                      "line": 17,
-                                      "column": 72
+                                      "column": 72,
+                                      "line": 17
                                     },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                                    "sourcefile": "$EXAMPLES/weakHash.go",
+                                    "start": {
+                                      "column": 24,
+                                      "line": 17
+                                    }
                                   },
-                                  "_meta": {}
+                                  "type": "Literal",
+                                  "value": "\"Welcome to Go Language Secure Coding Practices\""
                                 }
                               ],
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 17,
-                                  "column": 3
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 17,
-                                  "column": 73
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                              },
-                              "_meta": {}
-                            },
-                            {
-                              "type": "CallExpression",
                               "callee": {
-                                "type": "MemberAccess",
+                                "_meta": {},
+                                "computed": false,
+                                "loc": {
+                                  "end": {
+                                    "column": 17,
+                                    "line": 17
+                                  },
+                                  "sourcefile": "$EXAMPLES/weakHash.go",
+                                  "start": {
+                                    "column": 3,
+                                    "line": 17
+                                  }
+                                },
                                 "object": {
-                                  "type": "Identifier",
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 5,
+                                      "line": 17
+                                    },
+                                    "sourcefile": "$EXAMPLES/weakHash.go",
+                                    "start": {
+                                      "column": 3,
+                                      "line": 17
+                                    }
+                                  },
                                   "name": "io",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 18,
-                                      "column": 3
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 18,
-                                      "column": 5
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                  },
-                                  "_meta": {}
+                                  "type": "Identifier"
                                 },
                                 "property": {
-                                  "type": "Identifier",
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 17,
+                                      "line": 17
+                                    },
+                                    "sourcefile": "$EXAMPLES/weakHash.go",
+                                    "start": {
+                                      "column": 6,
+                                      "line": 17
+                                    }
+                                  },
                                   "name": "WriteString",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 18,
-                                      "column": 6
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 18,
-                                      "column": 17
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                  },
-                                  "_meta": {}
+                                  "type": "Identifier"
                                 },
-                                "computed": false,
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 18,
-                                    "column": 3
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 18,
-                                    "column": 17
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                },
-                                "_meta": {}
+                                "type": "MemberAccess"
                               },
+                              "loc": {
+                                "end": {
+                                  "column": 73,
+                                  "line": 17
+                                },
+                                "sourcefile": "$EXAMPLES/weakHash.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 17
+                                }
+                              },
+                              "type": "CallExpression"
+                            },
+                            {
+                              "_meta": {},
                               "arguments": [
                                 {
-                                  "type": "Identifier",
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 26,
+                                      "line": 18
+                                    },
+                                    "sourcefile": "$EXAMPLES/weakHash.go",
+                                    "start": {
+                                      "column": 18,
+                                      "line": 18
+                                    }
+                                  },
                                   "name": "hBlake2s",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 18,
-                                      "column": 18
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 18,
-                                      "column": 26
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                  },
-                                  "_meta": {}
+                                  "type": "Identifier"
                                 },
                                 {
-                                  "type": "Literal",
-                                  "value": "\"Welcome to Go Language Secure Coding Practices\"",
+                                  "_meta": {},
                                   "literalType": "STRING",
                                   "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 18,
-                                      "column": 28
-                                    },
                                     "end": {
-                                      "Offset": 0,
-                                      "line": 18,
-                                      "column": 76
+                                      "column": 76,
+                                      "line": 18
                                     },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                                    "sourcefile": "$EXAMPLES/weakHash.go",
+                                    "start": {
+                                      "column": 28,
+                                      "line": 18
+                                    }
                                   },
-                                  "_meta": {}
+                                  "type": "Literal",
+                                  "value": "\"Welcome to Go Language Secure Coding Practices\""
                                 }
                               ],
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 18,
-                                  "column": 3
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 18,
-                                  "column": 77
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                              },
-                              "_meta": {}
-                            },
-                            {
-                              "type": "CallExpression",
                               "callee": {
-                                "type": "MemberAccess",
-                                "object": {
-                                  "type": "Identifier",
-                                  "name": "fmt",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 19,
-                                      "column": 3
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 19,
-                                      "column": 6
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "property": {
-                                  "type": "Identifier",
-                                  "name": "Printf",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 19,
-                                      "column": 7
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 19,
-                                      "column": 13
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                  },
-                                  "_meta": {}
-                                },
+                                "_meta": {},
                                 "computed": false,
                                 "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 19,
-                                    "column": 3
-                                  },
                                   "end": {
-                                    "Offset": 0,
-                                    "line": 19,
-                                    "column": 13
+                                    "column": 17,
+                                    "line": 18
                                   },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                                  "sourcefile": "$EXAMPLES/weakHash.go",
+                                  "start": {
+                                    "column": 3,
+                                    "line": 18
+                                  }
                                 },
-                                "_meta": {}
+                                "object": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 5,
+                                      "line": 18
+                                    },
+                                    "sourcefile": "$EXAMPLES/weakHash.go",
+                                    "start": {
+                                      "column": 3,
+                                      "line": 18
+                                    }
+                                  },
+                                  "name": "io",
+                                  "type": "Identifier"
+                                },
+                                "property": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 17,
+                                      "line": 18
+                                    },
+                                    "sourcefile": "$EXAMPLES/weakHash.go",
+                                    "start": {
+                                      "column": 6,
+                                      "line": 18
+                                    }
+                                  },
+                                  "name": "WriteString",
+                                  "type": "Identifier"
+                                },
+                                "type": "MemberAccess"
                               },
+                              "loc": {
+                                "end": {
+                                  "column": 77,
+                                  "line": 18
+                                },
+                                "sourcefile": "$EXAMPLES/weakHash.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 18
+                                }
+                              },
+                              "type": "CallExpression"
+                            },
+                            {
+                              "_meta": {},
                               "arguments": [
                                 {
-                                  "type": "Literal",
-                                  "value": "\"MD5        : %x\\n\"",
+                                  "_meta": {},
                                   "literalType": "STRING",
                                   "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 19,
-                                      "column": 14
-                                    },
                                     "end": {
-                                      "Offset": 0,
-                                      "line": 19,
-                                      "column": 33
+                                      "column": 33,
+                                      "line": 19
                                     },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                                    "sourcefile": "$EXAMPLES/weakHash.go",
+                                    "start": {
+                                      "column": 14,
+                                      "line": 19
+                                    }
                                   },
-                                  "_meta": {}
+                                  "type": "Literal",
+                                  "value": "\"MD5        : %x\\n\""
                                 },
                                 {
-                                  "type": "CallExpression",
+                                  "_meta": {},
+                                  "arguments": [
+                                    {
+                                      "_meta": {},
+                                      "loc": {
+                                        "end": {
+                                          "column": 47,
+                                          "line": 19
+                                        },
+                                        "sourcefile": "$EXAMPLES/weakHash.go",
+                                        "start": {
+                                          "column": 44,
+                                          "line": 19
+                                        }
+                                      },
+                                      "name": "nil",
+                                      "type": "Identifier"
+                                    }
+                                  ],
                                   "callee": {
-                                    "type": "MemberAccess",
+                                    "_meta": {},
+                                    "computed": false,
+                                    "loc": {
+                                      "end": {
+                                        "column": 43,
+                                        "line": 19
+                                      },
+                                      "sourcefile": "$EXAMPLES/weakHash.go",
+                                      "start": {
+                                        "column": 35,
+                                        "line": 19
+                                      }
+                                    },
                                     "object": {
-                                      "type": "Identifier",
+                                      "_meta": {},
+                                      "loc": {
+                                        "end": {
+                                          "column": 39,
+                                          "line": 19
+                                        },
+                                        "sourcefile": "$EXAMPLES/weakHash.go",
+                                        "start": {
+                                          "column": 35,
+                                          "line": 19
+                                        }
+                                      },
                                       "name": "hMd5",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 19,
-                                          "column": 35
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 19,
-                                          "column": 39
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                      },
-                                      "_meta": {}
+                                      "type": "Identifier"
                                     },
                                     "property": {
-                                      "type": "Identifier",
+                                      "_meta": {},
+                                      "loc": {
+                                        "end": {
+                                          "column": 43,
+                                          "line": 19
+                                        },
+                                        "sourcefile": "$EXAMPLES/weakHash.go",
+                                        "start": {
+                                          "column": 40,
+                                          "line": 19
+                                        }
+                                      },
                                       "name": "Sum",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 19,
-                                          "column": 40
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 19,
-                                          "column": 43
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                      },
-                                      "_meta": {}
+                                      "type": "Identifier"
                                     },
-                                    "computed": false,
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 19,
-                                        "column": 35
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 19,
-                                        "column": 43
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                    },
-                                    "_meta": {}
+                                    "type": "MemberAccess"
                                   },
-                                  "arguments": [
-                                    {
-                                      "type": "Identifier",
-                                      "name": "nil",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 19,
-                                          "column": 44
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 19,
-                                          "column": 47
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                      },
-                                      "_meta": {}
-                                    }
-                                  ],
                                   "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 19,
-                                      "column": 35
-                                    },
                                     "end": {
-                                      "Offset": 0,
-                                      "line": 19,
-                                      "column": 48
+                                      "column": 48,
+                                      "line": 19
                                     },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                                    "sourcefile": "$EXAMPLES/weakHash.go",
+                                    "start": {
+                                      "column": 35,
+                                      "line": 19
+                                    }
                                   },
-                                  "_meta": {}
+                                  "type": "CallExpression"
                                 }
                               ],
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 19,
-                                  "column": 3
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 19,
-                                  "column": 49
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                              },
-                              "_meta": {}
-                            },
-                            {
-                              "type": "CallExpression",
                               "callee": {
-                                "type": "MemberAccess",
-                                "object": {
-                                  "type": "Identifier",
-                                  "name": "fmt",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 20,
-                                      "column": 3
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 20,
-                                      "column": 6
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "property": {
-                                  "type": "Identifier",
-                                  "name": "Printf",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 20,
-                                      "column": 7
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 20,
-                                      "column": 13
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                  },
-                                  "_meta": {}
-                                },
+                                "_meta": {},
                                 "computed": false,
                                 "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 20,
-                                    "column": 3
-                                  },
                                   "end": {
-                                    "Offset": 0,
-                                    "line": 20,
-                                    "column": 13
+                                    "column": 13,
+                                    "line": 19
                                   },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                                  "sourcefile": "$EXAMPLES/weakHash.go",
+                                  "start": {
+                                    "column": 3,
+                                    "line": 19
+                                  }
                                 },
-                                "_meta": {}
+                                "object": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 6,
+                                      "line": 19
+                                    },
+                                    "sourcefile": "$EXAMPLES/weakHash.go",
+                                    "start": {
+                                      "column": 3,
+                                      "line": 19
+                                    }
+                                  },
+                                  "name": "fmt",
+                                  "type": "Identifier"
+                                },
+                                "property": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 13,
+                                      "line": 19
+                                    },
+                                    "sourcefile": "$EXAMPLES/weakHash.go",
+                                    "start": {
+                                      "column": 7,
+                                      "line": 19
+                                    }
+                                  },
+                                  "name": "Printf",
+                                  "type": "Identifier"
+                                },
+                                "type": "MemberAccess"
                               },
+                              "loc": {
+                                "end": {
+                                  "column": 49,
+                                  "line": 19
+                                },
+                                "sourcefile": "$EXAMPLES/weakHash.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 19
+                                }
+                              },
+                              "type": "CallExpression"
+                            },
+                            {
+                              "_meta": {},
                               "arguments": [
                                 {
-                                  "type": "Literal",
-                                  "value": "\"SHA256     : %x\\n\"",
+                                  "_meta": {},
                                   "literalType": "STRING",
                                   "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 20,
-                                      "column": 14
-                                    },
                                     "end": {
-                                      "Offset": 0,
-                                      "line": 20,
-                                      "column": 33
+                                      "column": 33,
+                                      "line": 20
                                     },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                                    "sourcefile": "$EXAMPLES/weakHash.go",
+                                    "start": {
+                                      "column": 14,
+                                      "line": 20
+                                    }
                                   },
-                                  "_meta": {}
+                                  "type": "Literal",
+                                  "value": "\"SHA256     : %x\\n\""
                                 },
                                 {
-                                  "type": "CallExpression",
+                                  "_meta": {},
+                                  "arguments": [
+                                    {
+                                      "_meta": {},
+                                      "loc": {
+                                        "end": {
+                                          "column": 47,
+                                          "line": 20
+                                        },
+                                        "sourcefile": "$EXAMPLES/weakHash.go",
+                                        "start": {
+                                          "column": 44,
+                                          "line": 20
+                                        }
+                                      },
+                                      "name": "nil",
+                                      "type": "Identifier"
+                                    }
+                                  ],
                                   "callee": {
-                                    "type": "MemberAccess",
+                                    "_meta": {},
+                                    "computed": false,
+                                    "loc": {
+                                      "end": {
+                                        "column": 43,
+                                        "line": 20
+                                      },
+                                      "sourcefile": "$EXAMPLES/weakHash.go",
+                                      "start": {
+                                        "column": 35,
+                                        "line": 20
+                                      }
+                                    },
                                     "object": {
-                                      "type": "Identifier",
+                                      "_meta": {},
+                                      "loc": {
+                                        "end": {
+                                          "column": 39,
+                                          "line": 20
+                                        },
+                                        "sourcefile": "$EXAMPLES/weakHash.go",
+                                        "start": {
+                                          "column": 35,
+                                          "line": 20
+                                        }
+                                      },
                                       "name": "hSha",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 20,
-                                          "column": 35
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 20,
-                                          "column": 39
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                      },
-                                      "_meta": {}
+                                      "type": "Identifier"
                                     },
                                     "property": {
-                                      "type": "Identifier",
+                                      "_meta": {},
+                                      "loc": {
+                                        "end": {
+                                          "column": 43,
+                                          "line": 20
+                                        },
+                                        "sourcefile": "$EXAMPLES/weakHash.go",
+                                        "start": {
+                                          "column": 40,
+                                          "line": 20
+                                        }
+                                      },
                                       "name": "Sum",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 20,
-                                          "column": 40
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 20,
-                                          "column": 43
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                      },
-                                      "_meta": {}
+                                      "type": "Identifier"
                                     },
-                                    "computed": false,
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 20,
-                                        "column": 35
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 20,
-                                        "column": 43
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                    },
-                                    "_meta": {}
+                                    "type": "MemberAccess"
                                   },
-                                  "arguments": [
-                                    {
-                                      "type": "Identifier",
-                                      "name": "nil",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 20,
-                                          "column": 44
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 20,
-                                          "column": 47
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                      },
-                                      "_meta": {}
-                                    }
-                                  ],
                                   "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 20,
-                                      "column": 35
-                                    },
                                     "end": {
-                                      "Offset": 0,
-                                      "line": 20,
-                                      "column": 48
+                                      "column": 48,
+                                      "line": 20
                                     },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                                    "sourcefile": "$EXAMPLES/weakHash.go",
+                                    "start": {
+                                      "column": 35,
+                                      "line": 20
+                                    }
                                   },
-                                  "_meta": {}
+                                  "type": "CallExpression"
                                 }
                               ],
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 20,
-                                  "column": 3
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 20,
-                                  "column": 49
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                              },
-                              "_meta": {}
-                            },
-                            {
-                              "type": "CallExpression",
                               "callee": {
-                                "type": "MemberAccess",
-                                "object": {
-                                  "type": "Identifier",
-                                  "name": "fmt",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 21,
-                                      "column": 3
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 21,
-                                      "column": 6
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "property": {
-                                  "type": "Identifier",
-                                  "name": "Printf",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 21,
-                                      "column": 7
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 21,
-                                      "column": 13
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                  },
-                                  "_meta": {}
-                                },
+                                "_meta": {},
                                 "computed": false,
                                 "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 21,
-                                    "column": 3
-                                  },
                                   "end": {
-                                    "Offset": 0,
-                                    "line": 21,
-                                    "column": 13
+                                    "column": 13,
+                                    "line": 20
                                   },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                                  "sourcefile": "$EXAMPLES/weakHash.go",
+                                  "start": {
+                                    "column": 3,
+                                    "line": 20
+                                  }
                                 },
-                                "_meta": {}
+                                "object": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 6,
+                                      "line": 20
+                                    },
+                                    "sourcefile": "$EXAMPLES/weakHash.go",
+                                    "start": {
+                                      "column": 3,
+                                      "line": 20
+                                    }
+                                  },
+                                  "name": "fmt",
+                                  "type": "Identifier"
+                                },
+                                "property": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 13,
+                                      "line": 20
+                                    },
+                                    "sourcefile": "$EXAMPLES/weakHash.go",
+                                    "start": {
+                                      "column": 7,
+                                      "line": 20
+                                    }
+                                  },
+                                  "name": "Printf",
+                                  "type": "Identifier"
+                                },
+                                "type": "MemberAccess"
                               },
+                              "loc": {
+                                "end": {
+                                  "column": 49,
+                                  "line": 20
+                                },
+                                "sourcefile": "$EXAMPLES/weakHash.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 20
+                                }
+                              },
+                              "type": "CallExpression"
+                            },
+                            {
+                              "_meta": {},
                               "arguments": [
                                 {
-                                  "type": "Literal",
-                                  "value": "\"Blake2s-256: %x\\n\"",
+                                  "_meta": {},
                                   "literalType": "STRING",
                                   "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 21,
-                                      "column": 14
-                                    },
                                     "end": {
-                                      "Offset": 0,
-                                      "line": 21,
-                                      "column": 33
+                                      "column": 33,
+                                      "line": 21
                                     },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                                    "sourcefile": "$EXAMPLES/weakHash.go",
+                                    "start": {
+                                      "column": 14,
+                                      "line": 21
+                                    }
                                   },
-                                  "_meta": {}
+                                  "type": "Literal",
+                                  "value": "\"Blake2s-256: %x\\n\""
                                 },
                                 {
-                                  "type": "CallExpression",
-                                  "callee": {
-                                    "type": "MemberAccess",
-                                    "object": {
-                                      "type": "Identifier",
-                                      "name": "hBlake2s",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 21,
-                                          "column": 35
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 21,
-                                          "column": 43
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                      },
-                                      "_meta": {}
-                                    },
-                                    "property": {
-                                      "type": "Identifier",
-                                      "name": "Sum",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 21,
-                                          "column": 44
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 21,
-                                          "column": 47
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                      },
-                                      "_meta": {}
-                                    },
-                                    "computed": false,
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 21,
-                                        "column": 35
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 21,
-                                        "column": 47
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
-                                    },
-                                    "_meta": {}
-                                  },
+                                  "_meta": {},
                                   "arguments": [
                                     {
-                                      "type": "Identifier",
-                                      "name": "nil",
+                                      "_meta": {},
                                       "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 21,
-                                          "column": 48
-                                        },
                                         "end": {
-                                          "Offset": 0,
-                                          "line": 21,
-                                          "column": 51
+                                          "column": 51,
+                                          "line": 21
                                         },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                                        "sourcefile": "$EXAMPLES/weakHash.go",
+                                        "start": {
+                                          "column": 48,
+                                          "line": 21
+                                        }
                                       },
-                                      "_meta": {}
+                                      "name": "nil",
+                                      "type": "Identifier"
                                     }
                                   ],
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 21,
-                                      "column": 35
+                                  "callee": {
+                                    "_meta": {},
+                                    "computed": false,
+                                    "loc": {
+                                      "end": {
+                                        "column": 47,
+                                        "line": 21
+                                      },
+                                      "sourcefile": "$EXAMPLES/weakHash.go",
+                                      "start": {
+                                        "column": 35,
+                                        "line": 21
+                                      }
                                     },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 21,
-                                      "column": 52
+                                    "object": {
+                                      "_meta": {},
+                                      "loc": {
+                                        "end": {
+                                          "column": 43,
+                                          "line": 21
+                                        },
+                                        "sourcefile": "$EXAMPLES/weakHash.go",
+                                        "start": {
+                                          "column": 35,
+                                          "line": 21
+                                        }
+                                      },
+                                      "name": "hBlake2s",
+                                      "type": "Identifier"
                                     },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                                    "property": {
+                                      "_meta": {},
+                                      "loc": {
+                                        "end": {
+                                          "column": 47,
+                                          "line": 21
+                                        },
+                                        "sourcefile": "$EXAMPLES/weakHash.go",
+                                        "start": {
+                                          "column": 44,
+                                          "line": 21
+                                        }
+                                      },
+                                      "name": "Sum",
+                                      "type": "Identifier"
+                                    },
+                                    "type": "MemberAccess"
                                   },
-                                  "_meta": {}
+                                  "loc": {
+                                    "end": {
+                                      "column": 52,
+                                      "line": 21
+                                    },
+                                    "sourcefile": "$EXAMPLES/weakHash.go",
+                                    "start": {
+                                      "column": 35,
+                                      "line": 21
+                                    }
+                                  },
+                                  "type": "CallExpression"
                                 }
                               ],
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 21,
-                                  "column": 3
+                              "callee": {
+                                "_meta": {},
+                                "computed": false,
+                                "loc": {
+                                  "end": {
+                                    "column": 13,
+                                    "line": 21
+                                  },
+                                  "sourcefile": "$EXAMPLES/weakHash.go",
+                                  "start": {
+                                    "column": 3,
+                                    "line": 21
+                                  }
                                 },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 21,
-                                  "column": 53
+                                "object": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 6,
+                                      "line": 21
+                                    },
+                                    "sourcefile": "$EXAMPLES/weakHash.go",
+                                    "start": {
+                                      "column": 3,
+                                      "line": 21
+                                    }
+                                  },
+                                  "name": "fmt",
+                                  "type": "Identifier"
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                                "property": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 13,
+                                      "line": 21
+                                    },
+                                    "sourcefile": "$EXAMPLES/weakHash.go",
+                                    "start": {
+                                      "column": 7,
+                                      "line": 21
+                                    }
+                                  },
+                                  "name": "Printf",
+                                  "type": "Identifier"
+                                },
+                                "type": "MemberAccess"
                               },
-                              "_meta": {}
+                              "loc": {
+                                "end": {
+                                  "column": 53,
+                                  "line": 21
+                                },
+                                "sourcefile": "$EXAMPLES/weakHash.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 21
+                                }
+                              },
+                              "type": "CallExpression"
                             }
                           ],
                           "id": null,
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 15,
-                              "column": 16
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 22,
-                              "column": 3
+                              "column": 3,
+                              "line": 22
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                            "sourcefile": "$EXAMPLES/weakHash.go",
+                            "start": {
+                              "column": 16,
+                              "line": 15
+                            }
                           },
-                          "_meta": {}
-                        },
-                        "alternative": {
-                          "type": "Noop",
-                          "loc": null,
-                          "_meta": {}
+                          "type": "ScopedStatement"
                         },
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 15,
-                            "column": 2
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 22,
-                            "column": 3
+                            "column": 3,
+                            "line": 22
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                          "sourcefile": "$EXAMPLES/weakHash.go",
+                          "start": {
+                            "column": 2,
+                            "line": 15
+                          }
                         },
-                        "_meta": {}
+                        "test": {
+                          "_meta": {},
+                          "left": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 8,
+                                "line": 15
+                              },
+                              "sourcefile": "$EXAMPLES/weakHash.go",
+                              "start": {
+                                "column": 5,
+                                "line": 15
+                              }
+                            },
+                            "name": "err",
+                            "type": "Identifier"
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 15,
+                              "line": 15
+                            },
+                            "sourcefile": "$EXAMPLES/weakHash.go",
+                            "start": {
+                              "column": 5,
+                              "line": 15
+                            }
+                          },
+                          "operator": "==",
+                          "right": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 15,
+                                "line": 15
+                              },
+                              "sourcefile": "$EXAMPLES/weakHash.go",
+                              "start": {
+                                "column": 12,
+                                "line": 15
+                              }
+                            },
+                            "name": "nil",
+                            "type": "Identifier"
+                          },
+                          "type": "BinaryExpression"
+                        },
+                        "type": "IfStatement"
                       }
                     ],
                     "id": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 11,
-                        "column": 24
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 23,
-                        "column": 2
+                        "column": 2,
+                        "line": 23
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                      "sourcefile": "$EXAMPLES/weakHash.go",
+                      "start": {
+                        "column": 24,
+                        "line": 11
+                      }
                     },
-                    "_meta": {}
+                    "type": "ScopedStatement"
+                  },
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 14,
+                        "line": 11
+                      },
+                      "sourcefile": "$EXAMPLES/weakHash.go",
+                      "start": {
+                        "column": 6,
+                        "line": 11
+                      }
+                    },
+                    "name": "WeakHash",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 23
+                    },
+                    "sourcefile": "$EXAMPLES/weakHash.go",
+                    "start": {
+                      "column": 1,
+                      "line": 11
+                    }
                   },
                   "modifiers": null,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 11,
-                      "column": 1
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 23,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                  "parameters": [
+                    {
+                      "_meta": {},
+                      "cloned": true,
+                      "id": {
+                        "_meta": {
+                          "ReceiveCls": "",
+                          "type": {
+                            "_meta": {
+                              "ReceiveCls": ""
+                            },
+                            "loc": {
+                              "end": {
+                                "column": 22,
+                                "line": 11
+                              },
+                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/weakHash.go",
+                              "start": {
+                                "column": 17,
+                                "line": 11
+                              }
+                            },
+                            "name": "int32",
+                            "type": "Identifier"
+                          }
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 16,
+                            "line": 11
+                          },
+                          "sourcefile": "$EXAMPLES/weakHash.go",
+                          "start": {
+                            "column": 15,
+                            "line": 11
+                          }
+                        },
+                        "name": "a",
+                        "type": "Identifier"
+                      },
+                      "init": null,
+                      "loc": {
+                        "end": {
+                          "column": 22,
+                          "line": 11
+                        },
+                        "sourcefile": "$EXAMPLES/weakHash.go",
+                        "start": {
+                          "column": 15,
+                          "line": 11
+                        }
+                      },
+                      "type": "VariableDeclaration",
+                      "varType": {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 22,
+                            "line": 11
+                          },
+                          "sourcefile": "$EXAMPLES/weakHash.go",
+                          "start": {
+                            "column": 17,
+                            "line": 11
+                          }
+                        },
+                        "name": "int32",
+                        "type": "Identifier"
+                      },
+                      "variableParam": false
+                    }
+                  ],
+                  "returnType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "VoidType",
+                    "typeArguments": null
                   },
-                  "_meta": {}
+                  "type": "FunctionDefinition"
                 }
               ],
               "language": "golang",
               "languageVersion": "1.18",
-              "uri": "",
-              "version": "",
               "loc": {
-                "start": {
-                  "Offset": 0,
-                  "line": 1,
-                  "column": 1
-                },
                 "end": {
-                  "Offset": 0,
-                  "line": 23,
-                  "column": 2
+                  "column": 2,
+                  "line": 23
                 },
-                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/weakHash.go"
+                "sourcefile": "$EXAMPLES/weakHash.go",
+                "start": {
+                  "column": 1,
+                  "line": 1
+                }
               },
-              "_meta": {}
+              "type": "CompileUnit",
+              "uri": "",
+              "version": ""
             },
             "packageName": "__single__"
           }
@@ -2133,6 +1946,5 @@
         "subs": {}
       }
     }
-  },
-  "moduleName": "__single_module__"
+  }
 }

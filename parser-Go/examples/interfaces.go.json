@@ -1,4 +1,5 @@
 {
+  "moduleName": "__single_module__",
   "packageInfo": {
     "PathName": "",
     "files": {},
@@ -6,2154 +7,2100 @@
       "/": {
         "PathName": "",
         "files": {
-          "/Users/ariel/code/uast/uast4go/examples/interfaces.go": {
+          "$EXAMPLES/interfaces.go": {
             "node": {
-              "type": "CompileUnit",
+              "_meta": {},
               "body": [
                 {
-                  "type": "PackageDeclaration",
-                  "name": {
-                    "type": "Identifier",
-                    "name": "examples",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 9
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 17
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                    },
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 9
-                    },
                     "end": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 17
+                      "column": 17,
+                      "line": 1
                     },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                    "sourcefile": "$EXAMPLES/interfaces.go",
+                    "start": {
+                      "column": 9,
+                      "line": 1
+                    }
                   },
-                  "_meta": {}
+                  "packageName": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 17,
+                        "line": 1
+                      },
+                      "sourcefile": "$EXAMPLES/interfaces.go",
+                      "start": {
+                        "column": 9,
+                        "line": 1
+                      }
+                    },
+                    "name": "examples",
+                    "type": "Identifier"
+                  },
+                  "type": "PackageDeclaration"
                 },
                 {
-                  "type": "VariableDeclaration",
+                  "_meta": {
+                    "ReceiveCls": "",
+                    "isDefaultImport": true
+                  },
+                  "cloned": false,
                   "id": {
-                    "type": "Identifier",
-                    "name": "fmt",
+                    "_meta": {},
                     "loc": null,
-                    "_meta": {}
+                    "name": "fmt",
+                    "type": "Identifier"
                   },
                   "init": {
-                    "type": "ImportExpression",
+                    "_meta": {},
                     "from": {
-                      "type": "Literal",
-                      "value": "fmt",
+                      "_meta": {},
                       "literalType": "string",
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 3,
-                          "column": 8
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 3,
-                          "column": 13
+                          "column": 13,
+                          "line": 3
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                        "sourcefile": "$EXAMPLES/interfaces.go",
+                        "start": {
+                          "column": 8,
+                          "line": 3
+                        }
                       },
-                      "_meta": {}
+                      "type": "Literal",
+                      "value": "fmt"
                     },
-                    "local": null,
                     "imported": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 8
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 13
+                        "column": 13,
+                        "line": 3
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                      "sourcefile": "$EXAMPLES/interfaces.go",
+                      "start": {
+                        "column": 8,
+                        "line": 3
+                      }
                     },
-                    "_meta": {}
+                    "local": null,
+                    "type": "ImportExpression"
                   },
-                  "cloned": true,
+                  "loc": {
+                    "end": {
+                      "column": 13,
+                      "line": 3
+                    },
+                    "sourcefile": "$EXAMPLES/interfaces.go",
+                    "start": {
+                      "column": 8,
+                      "line": 3
+                    }
+                  },
+                  "type": "VariableDeclaration",
                   "varType": {
-                    "type": "DynamicType",
+                    "_meta": {},
                     "id": null,
-                    "typeArguments": null,
                     "loc": null,
-                    "_meta": {}
+                    "type": "DynamicType",
+                    "typeArguments": null
                   },
-                  "variableParam": false,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 3,
-                      "column": 8
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 3,
-                      "column": 13
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                  },
-                  "_meta": {}
+                  "variableParam": false
                 },
                 {
-                  "type": "ClassDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "Shape",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 11
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                    },
-                    "_meta": {}
-                  },
-                  "body": [],
-                  "supers": [],
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 5,
-                      "column": 6
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 7,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                  },
-                  "_meta": {}
-                },
-                {
-                  "type": "ClassDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "Object",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 9,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 9,
-                        "column": 12
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                    },
-                    "_meta": {}
-                  },
-                  "body": [],
-                  "supers": [],
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 9,
-                      "column": 6
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 11,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                  },
-                  "_meta": {}
-                },
-                {
-                  "type": "ClassDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "Material",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 13,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 13,
-                        "column": 14
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                    },
-                    "_meta": {}
-                  },
-                  "body": [],
-                  "supers": [],
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 13,
-                      "column": 6
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 16,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                  },
-                  "_meta": {}
-                },
-                {
-                  "type": "ClassDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "Cube",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 18,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 18,
-                        "column": 10
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                    },
-                    "_meta": {}
+                  "_meta": {
+                    "ReceiveCls": "",
+                    "isInterface": true
                   },
                   "body": [
                     {
-                      "type": "VariableDeclaration",
+                      "_meta": {},
                       "id": {
-                        "type": "Identifier",
-                        "name": "side",
+                        "_meta": {},
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 19,
-                            "column": 2
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 19,
-                            "column": 6
+                            "column": 25,
+                            "line": 6
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                        },
-                        "_meta": {
-                          "type": {
-                            "type": "Identifier",
-                            "name": "float64",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 19,
-                                "column": 7
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 19,
-                                "column": 14
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                            },
-                            "_meta": {}
+                          "sourcefile": "$EXAMPLES/interfaces.go",
+                          "start": {
+                            "column": 6,
+                            "line": 6
                           }
+                        },
+                        "name": "Area",
+                        "type": "Identifier"
+                      },
+                      "loc": {
+                        "end": {
+                          "column": 25,
+                          "line": 6
+                        },
+                        "sourcefile": "$EXAMPLES/interfaces.go",
+                        "start": {
+                          "column": 6,
+                          "line": 6
                         }
                       },
-                      "init": null,
-                      "cloned": true,
-                      "varType": {
-                        "type": "Identifier",
-                        "name": "float64",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 19,
-                            "column": 7
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 19,
-                            "column": 14
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                        },
-                        "_meta": {}
-                      },
-                      "variableParam": false,
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 19,
-                          "column": 2
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 19,
-                          "column": 14
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                      },
-                      "_meta": {}
-                    },
-                    {
-                      "type": "FunctionDefinition",
-                      "id": {
-                        "type": "Identifier",
-                        "name": "Area",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 22,
-                            "column": 15
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 22,
-                            "column": 19
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                        },
-                        "_meta": {}
-                      },
-                      "parameters": [
+                      "params": [
                         {
-                          "type": "VariableDeclaration",
-                          "id": {
-                            "type": "Identifier",
-                            "name": "a",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 22,
-                                "column": 20
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 22,
-                                "column": 21
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 16,
+                              "line": 6
                             },
-                            "_meta": {
-                              "type": {
-                                "type": "Identifier",
-                                "name": "float64",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 22,
-                                    "column": 22
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 22,
-                                    "column": 29
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                                },
-                                "_meta": {}
-                              }
+                            "sourcefile": "$EXAMPLES/interfaces.go",
+                            "start": {
+                              "column": 9,
+                              "line": 6
                             }
                           },
-                          "init": null,
-                          "cloned": true,
-                          "varType": {
-                            "type": "Identifier",
-                            "name": "float64",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 22,
-                                "column": 22
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 22,
-                                "column": 29
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                            },
-                            "_meta": {}
-                          },
-                          "variableParam": false,
+                          "name": "float64",
+                          "type": "Identifier"
+                        }
+                      ],
+                      "results": [
+                        {
+                          "_meta": {},
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 22,
-                              "column": 20
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 22,
-                              "column": 29
+                              "column": 25,
+                              "line": 6
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                            "sourcefile": "$EXAMPLES/interfaces.go",
+                            "start": {
+                              "column": 18,
+                              "line": 6
+                            }
                           },
-                          "_meta": {}
+                          "name": "float64",
+                          "type": "Identifier"
+                        }
+                      ],
+                      "type": "FuncType",
+                      "typeParams": null
+                    }
+                  ],
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 11,
+                        "line": 5
+                      },
+                      "sourcefile": "$EXAMPLES/interfaces.go",
+                      "start": {
+                        "column": 6,
+                        "line": 5
+                      }
+                    },
+                    "name": "Shape",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 7
+                    },
+                    "sourcefile": "$EXAMPLES/interfaces.go",
+                    "start": {
+                      "column": 6,
+                      "line": 5
+                    }
+                  },
+                  "supers": [],
+                  "type": "ClassDefinition"
+                },
+                {
+                  "_meta": {
+                    "ReceiveCls": "",
+                    "isInterface": true
+                  },
+                  "body": [
+                    {
+                      "_meta": {},
+                      "id": {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 18,
+                            "line": 10
+                          },
+                          "sourcefile": "$EXAMPLES/interfaces.go",
+                          "start": {
+                            "column": 8,
+                            "line": 10
+                          }
+                        },
+                        "name": "Volume",
+                        "type": "Identifier"
+                      },
+                      "loc": {
+                        "end": {
+                          "column": 18,
+                          "line": 10
+                        },
+                        "sourcefile": "$EXAMPLES/interfaces.go",
+                        "start": {
+                          "column": 8,
+                          "line": 10
+                        }
+                      },
+                      "params": null,
+                      "results": [
+                        {
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 18,
+                              "line": 10
+                            },
+                            "sourcefile": "$EXAMPLES/interfaces.go",
+                            "start": {
+                              "column": 11,
+                              "line": 10
+                            }
+                          },
+                          "name": "float64",
+                          "type": "Identifier"
+                        }
+                      ],
+                      "type": "FuncType",
+                      "typeParams": null
+                    }
+                  ],
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 12,
+                        "line": 9
+                      },
+                      "sourcefile": "$EXAMPLES/interfaces.go",
+                      "start": {
+                        "column": 6,
+                        "line": 9
+                      }
+                    },
+                    "name": "Object",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 11
+                    },
+                    "sourcefile": "$EXAMPLES/interfaces.go",
+                    "start": {
+                      "column": 6,
+                      "line": 9
+                    }
+                  },
+                  "supers": [],
+                  "type": "ClassDefinition"
+                },
+                {
+                  "_meta": {
+                    "ReceiveCls": "",
+                    "isInterface": true
+                  },
+                  "body": [],
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 14,
+                        "line": 13
+                      },
+                      "sourcefile": "$EXAMPLES/interfaces.go",
+                      "start": {
+                        "column": 6,
+                        "line": 13
+                      }
+                    },
+                    "name": "Material",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 16
+                    },
+                    "sourcefile": "$EXAMPLES/interfaces.go",
+                    "start": {
+                      "column": 6,
+                      "line": 13
+                    }
+                  },
+                  "supers": [],
+                  "type": "ClassDefinition"
+                },
+                {
+                  "_meta": {},
+                  "body": [
+                    {
+                      "_meta": {},
+                      "cloned": true,
+                      "id": {
+                        "_meta": {
+                          "ReceiveCls": "",
+                          "type": {
+                            "_meta": {
+                              "ReceiveCls": ""
+                            },
+                            "loc": {
+                              "end": {
+                                "column": 14,
+                                "line": 19
+                              },
+                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/interfaces.go",
+                              "start": {
+                                "column": 7,
+                                "line": 19
+                              }
+                            },
+                            "name": "float64",
+                            "type": "Identifier"
+                          }
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 6,
+                            "line": 19
+                          },
+                          "sourcefile": "$EXAMPLES/interfaces.go",
+                          "start": {
+                            "column": 2,
+                            "line": 19
+                          }
+                        },
+                        "name": "side",
+                        "type": "Identifier"
+                      },
+                      "init": null,
+                      "loc": {
+                        "end": {
+                          "column": 14,
+                          "line": 19
+                        },
+                        "sourcefile": "$EXAMPLES/interfaces.go",
+                        "start": {
+                          "column": 2,
+                          "line": 19
+                        }
+                      },
+                      "type": "VariableDeclaration",
+                      "varType": {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 14,
+                            "line": 19
+                          },
+                          "sourcefile": "$EXAMPLES/interfaces.go",
+                          "start": {
+                            "column": 7,
+                            "line": 19
+                          }
+                        },
+                        "name": "float64",
+                        "type": "Identifier"
+                      },
+                      "variableParam": false
+                    },
+                    {
+                      "_meta": {
+                        "ReceiveCls": "Cube"
+                      },
+                      "body": {
+                        "_meta": {},
+                        "body": [
+                          {
+                            "_meta": {},
+                            "cloned": true,
+                            "id": {
+                              "_meta": {
+                                "ReceiveCls": "",
+                                "type": {
+                                  "_meta": {
+                                    "ReceiveCls": ""
+                                  },
+                                  "loc": {
+                                    "end": {
+                                      "column": 13,
+                                      "line": 22
+                                    },
+                                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/interfaces.go",
+                                    "start": {
+                                      "column": 9,
+                                      "line": 22
+                                    }
+                                  },
+                                  "name": "Cube",
+                                  "type": "Identifier"
+                                }
+                              },
+                              "loc": null,
+                              "name": "c",
+                              "type": "Identifier"
+                            },
+                            "init": {
+                              "_meta": {},
+                              "loc": null,
+                              "type": "ThisExpression"
+                            },
+                            "loc": null,
+                            "type": "VariableDeclaration",
+                            "varType": {
+                              "_meta": {},
+                              "loc": {
+                                "end": {
+                                  "column": 13,
+                                  "line": 22
+                                },
+                                "sourcefile": "$EXAMPLES/interfaces.go",
+                                "start": {
+                                  "column": 9,
+                                  "line": 22
+                                }
+                              },
+                              "name": "Cube",
+                              "type": "Identifier"
+                            },
+                            "variableParam": false
+                          },
+                          {
+                            "_meta": {},
+                            "argument": {
+                              "_meta": {},
+                              "left": {
+                                "_meta": {},
+                                "left": {
+                                  "_meta": {},
+                                  "literalType": "INT",
+                                  "loc": {
+                                    "end": {
+                                      "column": 10,
+                                      "line": 23
+                                    },
+                                    "sourcefile": "$EXAMPLES/interfaces.go",
+                                    "start": {
+                                      "column": 9,
+                                      "line": 23
+                                    }
+                                  },
+                                  "type": "Literal",
+                                  "value": "6"
+                                },
+                                "loc": {
+                                  "end": {
+                                    "column": 30,
+                                    "line": 23
+                                  },
+                                  "sourcefile": "$EXAMPLES/interfaces.go",
+                                  "start": {
+                                    "column": 9,
+                                    "line": 23
+                                  }
+                                },
+                                "operator": "*",
+                                "right": {
+                                  "_meta": {},
+                                  "left": {
+                                    "_meta": {},
+                                    "computed": false,
+                                    "loc": {
+                                      "end": {
+                                        "column": 20,
+                                        "line": 23
+                                      },
+                                      "sourcefile": "$EXAMPLES/interfaces.go",
+                                      "start": {
+                                        "column": 14,
+                                        "line": 23
+                                      }
+                                    },
+                                    "object": {
+                                      "_meta": {},
+                                      "loc": {
+                                        "end": {
+                                          "column": 15,
+                                          "line": 23
+                                        },
+                                        "sourcefile": "$EXAMPLES/interfaces.go",
+                                        "start": {
+                                          "column": 14,
+                                          "line": 23
+                                        }
+                                      },
+                                      "name": "c",
+                                      "type": "Identifier"
+                                    },
+                                    "property": {
+                                      "_meta": {},
+                                      "loc": {
+                                        "end": {
+                                          "column": 20,
+                                          "line": 23
+                                        },
+                                        "sourcefile": "$EXAMPLES/interfaces.go",
+                                        "start": {
+                                          "column": 16,
+                                          "line": 23
+                                        }
+                                      },
+                                      "name": "side",
+                                      "type": "Identifier"
+                                    },
+                                    "type": "MemberAccess"
+                                  },
+                                  "loc": {
+                                    "end": {
+                                      "column": 30,
+                                      "line": 23
+                                    },
+                                    "sourcefile": "$EXAMPLES/interfaces.go",
+                                    "start": {
+                                      "column": 13,
+                                      "line": 23
+                                    }
+                                  },
+                                  "operator": "*",
+                                  "right": {
+                                    "_meta": {},
+                                    "computed": false,
+                                    "loc": {
+                                      "end": {
+                                        "column": 29,
+                                        "line": 23
+                                      },
+                                      "sourcefile": "$EXAMPLES/interfaces.go",
+                                      "start": {
+                                        "column": 23,
+                                        "line": 23
+                                      }
+                                    },
+                                    "object": {
+                                      "_meta": {},
+                                      "loc": {
+                                        "end": {
+                                          "column": 24,
+                                          "line": 23
+                                        },
+                                        "sourcefile": "$EXAMPLES/interfaces.go",
+                                        "start": {
+                                          "column": 23,
+                                          "line": 23
+                                        }
+                                      },
+                                      "name": "c",
+                                      "type": "Identifier"
+                                    },
+                                    "property": {
+                                      "_meta": {},
+                                      "loc": {
+                                        "end": {
+                                          "column": 29,
+                                          "line": 23
+                                        },
+                                        "sourcefile": "$EXAMPLES/interfaces.go",
+                                        "start": {
+                                          "column": 25,
+                                          "line": 23
+                                        }
+                                      },
+                                      "name": "side",
+                                      "type": "Identifier"
+                                    },
+                                    "type": "MemberAccess"
+                                  },
+                                  "type": "BinaryExpression"
+                                },
+                                "type": "BinaryExpression"
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 34,
+                                  "line": 23
+                                },
+                                "sourcefile": "$EXAMPLES/interfaces.go",
+                                "start": {
+                                  "column": 9,
+                                  "line": 23
+                                }
+                              },
+                              "operator": "*",
+                              "right": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 34,
+                                    "line": 23
+                                  },
+                                  "sourcefile": "$EXAMPLES/interfaces.go",
+                                  "start": {
+                                    "column": 33,
+                                    "line": 23
+                                  }
+                                },
+                                "name": "a",
+                                "type": "Identifier"
+                              },
+                              "type": "BinaryExpression"
+                            },
+                            "isYield": false,
+                            "loc": {
+                              "end": {
+                                "column": 34,
+                                "line": 23
+                              },
+                              "sourcefile": "$EXAMPLES/interfaces.go",
+                              "start": {
+                                "column": 2,
+                                "line": 23
+                              }
+                            },
+                            "type": "ReturnStatement"
+                          }
+                        ],
+                        "id": null,
+                        "loc": {
+                          "end": {
+                            "column": 2,
+                            "line": 24
+                          },
+                          "sourcefile": "$EXAMPLES/interfaces.go",
+                          "start": {
+                            "column": 39,
+                            "line": 22
+                          }
+                        },
+                        "type": "ScopedStatement"
+                      },
+                      "id": {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 19,
+                            "line": 22
+                          },
+                          "sourcefile": "$EXAMPLES/interfaces.go",
+                          "start": {
+                            "column": 15,
+                            "line": 22
+                          }
+                        },
+                        "name": "Area",
+                        "type": "Identifier"
+                      },
+                      "loc": {
+                        "end": {
+                          "column": 2,
+                          "line": 24
+                        },
+                        "sourcefile": "$EXAMPLES/interfaces.go",
+                        "start": {
+                          "column": 1,
+                          "line": 22
+                        }
+                      },
+                      "modifiers": null,
+                      "parameters": [
+                        {
+                          "_meta": {},
+                          "cloned": true,
+                          "id": {
+                            "_meta": {
+                              "ReceiveCls": "",
+                              "type": {
+                                "_meta": {
+                                  "ReceiveCls": ""
+                                },
+                                "loc": {
+                                  "end": {
+                                    "column": 29,
+                                    "line": 22
+                                  },
+                                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/interfaces.go",
+                                  "start": {
+                                    "column": 22,
+                                    "line": 22
+                                  }
+                                },
+                                "name": "float64",
+                                "type": "Identifier"
+                              }
+                            },
+                            "loc": {
+                              "end": {
+                                "column": 21,
+                                "line": 22
+                              },
+                              "sourcefile": "$EXAMPLES/interfaces.go",
+                              "start": {
+                                "column": 20,
+                                "line": 22
+                              }
+                            },
+                            "name": "a",
+                            "type": "Identifier"
+                          },
+                          "init": null,
+                          "loc": {
+                            "end": {
+                              "column": 29,
+                              "line": 22
+                            },
+                            "sourcefile": "$EXAMPLES/interfaces.go",
+                            "start": {
+                              "column": 20,
+                              "line": 22
+                            }
+                          },
+                          "type": "VariableDeclaration",
+                          "varType": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 29,
+                                "line": 22
+                              },
+                              "sourcefile": "$EXAMPLES/interfaces.go",
+                              "start": {
+                                "column": 22,
+                                "line": 22
+                              }
+                            },
+                            "name": "float64",
+                            "type": "Identifier"
+                          },
+                          "variableParam": false
                         }
                       ],
                       "returnType": {
-                        "type": "Identifier",
-                        "name": "float64",
+                        "_meta": {},
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 22,
-                            "column": 31
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 22,
-                            "column": 38
+                            "column": 38,
+                            "line": 22
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                        },
-                        "_meta": {}
-                      },
-                      "body": {
-                        "type": "ScopedStatement",
-                        "body": [
-                          {
-                            "type": "VariableDeclaration",
-                            "id": {
-                              "type": "Identifier",
-                              "name": "c",
-                              "loc": null,
-                              "_meta": {
-                                "type": {
-                                  "type": "Identifier",
-                                  "name": "Cube",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 22,
-                                      "column": 9
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 22,
-                                      "column": 13
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                                  },
-                                  "_meta": {}
-                                }
-                              }
-                            },
-                            "init": {
-                              "type": "ThisExpression",
-                              "loc": null,
-                              "_meta": {}
-                            },
-                            "cloned": true,
-                            "varType": {
-                              "type": "Identifier",
-                              "name": "Cube",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 22,
-                                  "column": 9
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 22,
-                                  "column": 13
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                              },
-                              "_meta": {}
-                            },
-                            "variableParam": false,
-                            "loc": null,
-                            "_meta": {}
-                          },
-                          {
-                            "type": "ReturnStatement",
-                            "argument": {
-                              "type": "BinaryExpression",
-                              "operator": "*",
-                              "left": {
-                                "type": "BinaryExpression",
-                                "operator": "*",
-                                "left": {
-                                  "type": "Literal",
-                                  "value": "6",
-                                  "literalType": "INT",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 23,
-                                      "column": 9
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 23,
-                                      "column": 10
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "right": {
-                                  "type": "BinaryExpression",
-                                  "operator": "*",
-                                  "left": {
-                                    "type": "MemberAccess",
-                                    "object": {
-                                      "type": "Identifier",
-                                      "name": "c",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 23,
-                                          "column": 14
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 23,
-                                          "column": 15
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                                      },
-                                      "_meta": {}
-                                    },
-                                    "property": {
-                                      "type": "Identifier",
-                                      "name": "side",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 23,
-                                          "column": 16
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 23,
-                                          "column": 20
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                                      },
-                                      "_meta": {}
-                                    },
-                                    "computed": false,
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 23,
-                                        "column": 14
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 23,
-                                        "column": 20
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                                    },
-                                    "_meta": {}
-                                  },
-                                  "right": {
-                                    "type": "MemberAccess",
-                                    "object": {
-                                      "type": "Identifier",
-                                      "name": "c",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 23,
-                                          "column": 23
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 23,
-                                          "column": 24
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                                      },
-                                      "_meta": {}
-                                    },
-                                    "property": {
-                                      "type": "Identifier",
-                                      "name": "side",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 23,
-                                          "column": 25
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 23,
-                                          "column": 29
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                                      },
-                                      "_meta": {}
-                                    },
-                                    "computed": false,
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 23,
-                                        "column": 23
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 23,
-                                        "column": 29
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                                    },
-                                    "_meta": {}
-                                  },
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 23,
-                                      "column": 13
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 23,
-                                      "column": 30
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 23,
-                                    "column": 9
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 23,
-                                    "column": 30
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                                },
-                                "_meta": {}
-                              },
-                              "right": {
-                                "type": "Identifier",
-                                "name": "a",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 23,
-                                    "column": 33
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 23,
-                                    "column": 34
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                                },
-                                "_meta": {}
-                              },
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 23,
-                                  "column": 9
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 23,
-                                  "column": 34
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                              },
-                              "_meta": {}
-                            },
-                            "isYield": false,
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 23,
-                                "column": 2
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 23,
-                                "column": 34
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                            },
-                            "_meta": {}
+                          "sourcefile": "$EXAMPLES/interfaces.go",
+                          "start": {
+                            "column": 31,
+                            "line": 22
                           }
-                        ],
-                        "id": null,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 22,
-                            "column": 39
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 24,
-                            "column": 2
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
                         },
-                        "_meta": {}
+                        "name": "float64",
+                        "type": "Identifier"
                       },
-                      "modifiers": null,
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 22,
-                          "column": 1
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 24,
-                          "column": 2
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                      },
-                      "_meta": {}
+                      "type": "FunctionDefinition"
                     },
                     {
-                      "type": "FunctionDefinition",
-                      "id": {
-                        "type": "Identifier",
-                        "name": "Volume",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 26,
-                            "column": 15
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 26,
-                            "column": 21
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                        },
-                        "_meta": {}
-                      },
-                      "parameters": [],
-                      "returnType": {
-                        "type": "Identifier",
-                        "name": "float64",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 26,
-                            "column": 24
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 26,
-                            "column": 31
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                        },
-                        "_meta": {}
+                      "_meta": {
+                        "ReceiveCls": "Cube"
                       },
                       "body": {
-                        "type": "ScopedStatement",
+                        "_meta": {},
                         "body": [
                           {
-                            "type": "VariableDeclaration",
+                            "_meta": {},
+                            "cloned": true,
                             "id": {
-                              "type": "Identifier",
-                              "name": "c",
-                              "loc": null,
                               "_meta": {
+                                "ReceiveCls": "",
                                 "type": {
-                                  "type": "Identifier",
-                                  "name": "Cube",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 26,
-                                      "column": 9
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 26,
-                                      "column": 13
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                  "_meta": {
+                                    "ReceiveCls": ""
                                   },
-                                  "_meta": {}
+                                  "loc": {
+                                    "end": {
+                                      "column": 13,
+                                      "line": 26
+                                    },
+                                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/interfaces.go",
+                                    "start": {
+                                      "column": 9,
+                                      "line": 26
+                                    }
+                                  },
+                                  "name": "Cube",
+                                  "type": "Identifier"
                                 }
-                              }
+                              },
+                              "loc": null,
+                              "name": "c",
+                              "type": "Identifier"
                             },
                             "init": {
-                              "type": "ThisExpression",
+                              "_meta": {},
                               "loc": null,
-                              "_meta": {}
+                              "type": "ThisExpression"
                             },
-                            "cloned": true,
-                            "varType": {
-                              "type": "Identifier",
-                              "name": "Cube",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 26,
-                                  "column": 9
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 26,
-                                  "column": 13
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                              },
-                              "_meta": {}
-                            },
-                            "variableParam": false,
                             "loc": null,
-                            "_meta": {}
+                            "type": "VariableDeclaration",
+                            "varType": {
+                              "_meta": {},
+                              "loc": {
+                                "end": {
+                                  "column": 13,
+                                  "line": 26
+                                },
+                                "sourcefile": "$EXAMPLES/interfaces.go",
+                                "start": {
+                                  "column": 9,
+                                  "line": 26
+                                }
+                              },
+                              "name": "Cube",
+                              "type": "Identifier"
+                            },
+                            "variableParam": false
                           },
                           {
-                            "type": "ReturnStatement",
+                            "_meta": {},
                             "argument": {
-                              "type": "BinaryExpression",
-                              "operator": "*",
+                              "_meta": {},
                               "left": {
-                                "type": "BinaryExpression",
-                                "operator": "*",
+                                "_meta": {},
                                 "left": {
-                                  "type": "MemberAccess",
-                                  "object": {
-                                    "type": "Identifier",
-                                    "name": "c",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 27,
-                                        "column": 9
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 27,
-                                        "column": 10
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                                    },
-                                    "_meta": {}
-                                  },
-                                  "property": {
-                                    "type": "Identifier",
-                                    "name": "side",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 27,
-                                        "column": 11
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 27,
-                                        "column": 15
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                                    },
-                                    "_meta": {}
-                                  },
+                                  "_meta": {},
                                   "computed": false,
                                   "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 27,
-                                      "column": 9
-                                    },
                                     "end": {
-                                      "Offset": 0,
-                                      "line": 27,
-                                      "column": 15
+                                      "column": 15,
+                                      "line": 27
                                     },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                    "sourcefile": "$EXAMPLES/interfaces.go",
+                                    "start": {
+                                      "column": 9,
+                                      "line": 27
+                                    }
                                   },
-                                  "_meta": {}
+                                  "object": {
+                                    "_meta": {},
+                                    "loc": {
+                                      "end": {
+                                        "column": 10,
+                                        "line": 27
+                                      },
+                                      "sourcefile": "$EXAMPLES/interfaces.go",
+                                      "start": {
+                                        "column": 9,
+                                        "line": 27
+                                      }
+                                    },
+                                    "name": "c",
+                                    "type": "Identifier"
+                                  },
+                                  "property": {
+                                    "_meta": {},
+                                    "loc": {
+                                      "end": {
+                                        "column": 15,
+                                        "line": 27
+                                      },
+                                      "sourcefile": "$EXAMPLES/interfaces.go",
+                                      "start": {
+                                        "column": 11,
+                                        "line": 27
+                                      }
+                                    },
+                                    "name": "side",
+                                    "type": "Identifier"
+                                  },
+                                  "type": "MemberAccess"
                                 },
+                                "loc": {
+                                  "end": {
+                                    "column": 24,
+                                    "line": 27
+                                  },
+                                  "sourcefile": "$EXAMPLES/interfaces.go",
+                                  "start": {
+                                    "column": 9,
+                                    "line": 27
+                                  }
+                                },
+                                "operator": "*",
                                 "right": {
-                                  "type": "MemberAccess",
-                                  "object": {
-                                    "type": "Identifier",
-                                    "name": "c",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 27,
-                                        "column": 18
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 27,
-                                        "column": 19
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                                    },
-                                    "_meta": {}
-                                  },
-                                  "property": {
-                                    "type": "Identifier",
-                                    "name": "side",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 27,
-                                        "column": 20
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 27,
-                                        "column": 24
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                                    },
-                                    "_meta": {}
-                                  },
+                                  "_meta": {},
                                   "computed": false,
                                   "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 27,
-                                      "column": 18
-                                    },
                                     "end": {
-                                      "Offset": 0,
-                                      "line": 27,
-                                      "column": 24
+                                      "column": 24,
+                                      "line": 27
                                     },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 27,
-                                    "column": 9
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 27,
-                                    "column": 24
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                                },
-                                "_meta": {}
-                              },
-                              "right": {
-                                "type": "MemberAccess",
-                                "object": {
-                                  "type": "Identifier",
-                                  "name": "c",
-                                  "loc": {
+                                    "sourcefile": "$EXAMPLES/interfaces.go",
                                     "start": {
-                                      "Offset": 0,
-                                      "line": 27,
-                                      "column": 27
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 27,
-                                      "column": 28
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                      "column": 18,
+                                      "line": 27
+                                    }
                                   },
-                                  "_meta": {}
+                                  "object": {
+                                    "_meta": {},
+                                    "loc": {
+                                      "end": {
+                                        "column": 19,
+                                        "line": 27
+                                      },
+                                      "sourcefile": "$EXAMPLES/interfaces.go",
+                                      "start": {
+                                        "column": 18,
+                                        "line": 27
+                                      }
+                                    },
+                                    "name": "c",
+                                    "type": "Identifier"
+                                  },
+                                  "property": {
+                                    "_meta": {},
+                                    "loc": {
+                                      "end": {
+                                        "column": 24,
+                                        "line": 27
+                                      },
+                                      "sourcefile": "$EXAMPLES/interfaces.go",
+                                      "start": {
+                                        "column": 20,
+                                        "line": 27
+                                      }
+                                    },
+                                    "name": "side",
+                                    "type": "Identifier"
+                                  },
+                                  "type": "MemberAccess"
                                 },
-                                "property": {
-                                  "type": "Identifier",
-                                  "name": "side",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 27,
-                                      "column": 29
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 27,
-                                      "column": 33
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "computed": false,
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 27,
-                                    "column": 27
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 27,
-                                    "column": 33
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                                },
-                                "_meta": {}
+                                "type": "BinaryExpression"
                               },
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 27,
-                                  "column": 9
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 27,
-                                  "column": 33
+                                  "column": 33,
+                                  "line": 27
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                "sourcefile": "$EXAMPLES/interfaces.go",
+                                "start": {
+                                  "column": 9,
+                                  "line": 27
+                                }
                               },
-                              "_meta": {}
+                              "operator": "*",
+                              "right": {
+                                "_meta": {},
+                                "computed": false,
+                                "loc": {
+                                  "end": {
+                                    "column": 33,
+                                    "line": 27
+                                  },
+                                  "sourcefile": "$EXAMPLES/interfaces.go",
+                                  "start": {
+                                    "column": 27,
+                                    "line": 27
+                                  }
+                                },
+                                "object": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 28,
+                                      "line": 27
+                                    },
+                                    "sourcefile": "$EXAMPLES/interfaces.go",
+                                    "start": {
+                                      "column": 27,
+                                      "line": 27
+                                    }
+                                  },
+                                  "name": "c",
+                                  "type": "Identifier"
+                                },
+                                "property": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 33,
+                                      "line": 27
+                                    },
+                                    "sourcefile": "$EXAMPLES/interfaces.go",
+                                    "start": {
+                                      "column": 29,
+                                      "line": 27
+                                    }
+                                  },
+                                  "name": "side",
+                                  "type": "Identifier"
+                                },
+                                "type": "MemberAccess"
+                              },
+                              "type": "BinaryExpression"
                             },
                             "isYield": false,
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 27,
-                                "column": 2
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 27,
-                                "column": 33
+                                "column": 33,
+                                "line": 27
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                              "sourcefile": "$EXAMPLES/interfaces.go",
+                              "start": {
+                                "column": 2,
+                                "line": 27
+                              }
                             },
-                            "_meta": {}
+                            "type": "ReturnStatement"
                           }
                         ],
                         "id": null,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 26,
-                            "column": 32
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 28,
-                            "column": 2
+                            "column": 2,
+                            "line": 28
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                        },
-                        "_meta": {}
-                      },
-                      "modifiers": null,
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 26,
-                          "column": 1
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 28,
-                          "column": 2
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                      },
-                      "_meta": {}
-                    }
-                  ],
-                  "supers": [],
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 18,
-                      "column": 6
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 20,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                  },
-                  "_meta": {}
-                },
-                {
-                  "type": "FunctionDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "Interfaces",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 30,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 30,
-                        "column": 16
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                    },
-                    "_meta": {}
-                  },
-                  "parameters": [],
-                  "returnType": {
-                    "type": "VoidType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
-                  "body": {
-                    "type": "ScopedStatement",
-                    "body": [
-                      {
-                        "type": "VariableDeclaration",
-                        "id": {
-                          "type": "Identifier",
-                          "name": "c",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 31,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 31,
-                              "column": 3
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "Identifier",
-                              "name": "Cube",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 31,
-                                  "column": 7
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 31,
-                                  "column": 11
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                              },
-                              "_meta": {}
-                            }
+                          "sourcefile": "$EXAMPLES/interfaces.go",
+                          "start": {
+                            "column": 32,
+                            "line": 26
                           }
                         },
+                        "type": "ScopedStatement"
+                      },
+                      "id": {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 21,
+                            "line": 26
+                          },
+                          "sourcefile": "$EXAMPLES/interfaces.go",
+                          "start": {
+                            "column": 15,
+                            "line": 26
+                          }
+                        },
+                        "name": "Volume",
+                        "type": "Identifier"
+                      },
+                      "loc": {
+                        "end": {
+                          "column": 2,
+                          "line": 28
+                        },
+                        "sourcefile": "$EXAMPLES/interfaces.go",
+                        "start": {
+                          "column": 1,
+                          "line": 26
+                        }
+                      },
+                      "modifiers": null,
+                      "parameters": [],
+                      "returnType": {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 31,
+                            "line": 26
+                          },
+                          "sourcefile": "$EXAMPLES/interfaces.go",
+                          "start": {
+                            "column": 24,
+                            "line": 26
+                          }
+                        },
+                        "name": "float64",
+                        "type": "Identifier"
+                      },
+                      "type": "FunctionDefinition"
+                    }
+                  ],
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 10,
+                        "line": 18
+                      },
+                      "sourcefile": "$EXAMPLES/interfaces.go",
+                      "start": {
+                        "column": 6,
+                        "line": 18
+                      }
+                    },
+                    "name": "Cube",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 20
+                    },
+                    "sourcefile": "$EXAMPLES/interfaces.go",
+                    "start": {
+                      "column": 6,
+                      "line": 18
+                    }
+                  },
+                  "supers": [],
+                  "type": "ClassDefinition"
+                },
+                {
+                  "_meta": {},
+                  "body": {
+                    "_meta": {},
+                    "body": [
+                      {
+                        "_meta": {},
+                        "cloned": true,
+                        "id": {
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 11,
+                                  "line": 31
+                                },
+                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/interfaces.go",
+                                "start": {
+                                  "column": 7,
+                                  "line": 31
+                                }
+                              },
+                              "name": "Cube",
+                              "type": "Identifier"
+                            }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 3,
+                              "line": 31
+                            },
+                            "sourcefile": "$EXAMPLES/interfaces.go",
+                            "start": {
+                              "column": 2,
+                              "line": 31
+                            }
+                          },
+                          "name": "c",
+                          "type": "Identifier"
+                        },
                         "init": {
-                          "type": "Sequence",
+                          "_meta": {},
                           "expressions": [
                             {
-                              "type": "VariableDeclaration",
+                              "_meta": {},
+                              "cloned": false,
                               "id": {
-                                "type": "Identifier",
-                                "name": "tmp1",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 31,
-                                    "column": 7
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 31,
-                                    "column": 14
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                                },
                                 "_meta": {
+                                  "ReceiveCls": "",
                                   "type": {
-                                    "type": "Identifier",
-                                    "name": "Cube",
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 31,
-                                        "column": 7
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 31,
-                                        "column": 11
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                                    "_meta": {
+                                      "ReceiveCls": ""
                                     },
-                                    "_meta": {}
+                                    "loc": {
+                                      "end": {
+                                        "column": 11,
+                                        "line": 31
+                                      },
+                                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/interfaces.go",
+                                      "start": {
+                                        "column": 7,
+                                        "line": 31
+                                      }
+                                    },
+                                    "name": "Cube",
+                                    "type": "Identifier"
                                   }
-                                }
+                                },
+                                "loc": {
+                                  "end": {
+                                    "column": 14,
+                                    "line": 31
+                                  },
+                                  "sourcefile": "$EXAMPLES/interfaces.go",
+                                  "start": {
+                                    "column": 7,
+                                    "line": 31
+                                  }
+                                },
+                                "name": "tmp1",
+                                "type": "Identifier"
                               },
                               "init": {
-                                "type": "NewExpression",
-                                "callee": {
-                                  "type": "Identifier",
-                                  "name": "Cube",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 31,
-                                      "column": 7
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 31,
-                                      "column": 11
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                                  },
-                                  "_meta": {}
-                                },
+                                "_meta": {},
                                 "arguments": [],
-                                "loc": null,
-                                "_meta": {}
-                              },
-                              "cloned": false,
-                              "varType": {
-                                "type": "Identifier",
-                                "name": "Cube",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 31,
-                                    "column": 7
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 31,
-                                    "column": 11
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                                },
-                                "_meta": {}
-                              },
-                              "variableParam": false,
-                              "loc": null,
-                              "_meta": {}
-                            },
-                            {
-                              "type": "AssignmentExpression",
-                              "left": {
-                                "type": "MemberAccess",
-                                "object": {
-                                  "type": "Identifier",
-                                  "name": "tmp1",
+                                "callee": {
+                                  "_meta": {},
                                   "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 31,
-                                      "column": 7
-                                    },
                                     "end": {
-                                      "Offset": 0,
-                                      "line": 31,
-                                      "column": 14
+                                      "column": 11,
+                                      "line": 31
                                     },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                                  },
-                                  "_meta": {
-                                    "type": {
-                                      "type": "Identifier",
-                                      "name": "Cube",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 31,
-                                          "column": 7
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 31,
-                                          "column": 11
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                                      },
-                                      "_meta": {}
+                                    "sourcefile": "$EXAMPLES/interfaces.go",
+                                    "start": {
+                                      "column": 7,
+                                      "line": 31
                                     }
+                                  },
+                                  "name": "Cube",
+                                  "type": "Identifier"
+                                },
+                                "loc": null,
+                                "type": "NewExpression"
+                              },
+                              "loc": null,
+                              "type": "VariableDeclaration",
+                              "varType": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 11,
+                                    "line": 31
+                                  },
+                                  "sourcefile": "$EXAMPLES/interfaces.go",
+                                  "start": {
+                                    "column": 7,
+                                    "line": 31
                                   }
                                 },
-                                "property": {
-                                  "type": "Identifier",
-                                  "name": "side",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 19,
-                                      "column": 2
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 19,
-                                      "column": 6
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                                  },
-                                  "_meta": {}
-                                },
-                                "computed": false,
-                                "loc": null,
-                                "_meta": {}
+                                "name": "Cube",
+                                "type": "Identifier"
                               },
-                              "right": {
-                                "type": "Literal",
-                                "value": "3",
-                                "literalType": "INT",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 31,
-                                    "column": 12
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 31,
-                                    "column": 13
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                                },
-                                "_meta": {}
-                              },
-                              "operator": "=",
-                              "cloned": true,
-                              "loc": null,
-                              "_meta": {}
+                              "variableParam": false
                             },
                             {
-                              "type": "Identifier",
-                              "name": "tmp1",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 31,
-                                  "column": 7
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 31,
-                                  "column": 14
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                              },
-                              "_meta": {
-                                "type": {
-                                  "type": "Identifier",
-                                  "name": "Cube",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 31,
-                                      "column": 7
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 31,
-                                      "column": 11
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                              "_meta": {},
+                              "cloned": true,
+                              "left": {
+                                "_meta": {},
+                                "computed": false,
+                                "loc": null,
+                                "object": {
+                                  "_meta": {
+                                    "ReceiveCls": "",
+                                    "type": {
+                                      "_meta": {
+                                        "ReceiveCls": ""
+                                      },
+                                      "loc": {
+                                        "end": {
+                                          "column": 11,
+                                          "line": 31
+                                        },
+                                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/interfaces.go",
+                                        "start": {
+                                          "column": 7,
+                                          "line": 31
+                                        }
+                                      },
+                                      "name": "Cube",
+                                      "type": "Identifier"
+                                    }
                                   },
-                                  "_meta": {}
+                                  "loc": {
+                                    "end": {
+                                      "column": 14,
+                                      "line": 31
+                                    },
+                                    "sourcefile": "$EXAMPLES/interfaces.go",
+                                    "start": {
+                                      "column": 7,
+                                      "line": 31
+                                    }
+                                  },
+                                  "name": "tmp1",
+                                  "type": "Identifier"
+                                },
+                                "property": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 6,
+                                      "line": 19
+                                    },
+                                    "sourcefile": "$EXAMPLES/interfaces.go",
+                                    "start": {
+                                      "column": 2,
+                                      "line": 19
+                                    }
+                                  },
+                                  "name": "side",
+                                  "type": "Identifier"
+                                },
+                                "type": "MemberAccess"
+                              },
+                              "loc": null,
+                              "operator": "=",
+                              "right": {
+                                "_meta": {},
+                                "literalType": "INT",
+                                "loc": {
+                                  "end": {
+                                    "column": 13,
+                                    "line": 31
+                                  },
+                                  "sourcefile": "$EXAMPLES/interfaces.go",
+                                  "start": {
+                                    "column": 12,
+                                    "line": 31
+                                  }
+                                },
+                                "type": "Literal",
+                                "value": "3"
+                              },
+                              "type": "AssignmentExpression"
+                            },
+                            {
+                              "_meta": {
+                                "ReceiveCls": "",
+                                "type": {
+                                  "_meta": {
+                                    "ReceiveCls": ""
+                                  },
+                                  "loc": {
+                                    "end": {
+                                      "column": 11,
+                                      "line": 31
+                                    },
+                                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/interfaces.go",
+                                    "start": {
+                                      "column": 7,
+                                      "line": 31
+                                    }
+                                  },
+                                  "name": "Cube",
+                                  "type": "Identifier"
                                 }
-                              }
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 14,
+                                  "line": 31
+                                },
+                                "sourcefile": "$EXAMPLES/interfaces.go",
+                                "start": {
+                                  "column": 7,
+                                  "line": 31
+                                }
+                              },
+                              "name": "tmp1",
+                              "type": "Identifier"
                             }
                           ],
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 31,
-                              "column": 7
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 31,
-                              "column": 14
+                              "column": 14,
+                              "line": 31
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                            "sourcefile": "$EXAMPLES/interfaces.go",
+                            "start": {
+                              "column": 7,
+                              "line": 31
+                            }
                           },
-                          "_meta": {}
+                          "type": "Sequence"
                         },
-                        "cloned": true,
+                        "loc": {
+                          "end": {
+                            "column": 14,
+                            "line": 31
+                          },
+                          "sourcefile": "$EXAMPLES/interfaces.go",
+                          "start": {
+                            "column": 2,
+                            "line": 31
+                          }
+                        },
+                        "type": "VariableDeclaration",
                         "varType": {
-                          "type": "Identifier",
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 11,
+                              "line": 31
+                            },
+                            "sourcefile": "$EXAMPLES/interfaces.go",
+                            "start": {
+                              "column": 7,
+                              "line": 31
+                            }
+                          },
                           "name": "Cube",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 31,
-                              "column": 7
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 31,
-                              "column": 11
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                          },
-                          "_meta": {}
+                          "type": "Identifier"
                         },
-                        "variableParam": false,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 31,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 31,
-                            "column": 14
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                        },
-                        "_meta": {}
+                        "variableParam": false
                       },
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": false,
                         "id": {
-                          "type": "Identifier",
-                          "name": "m",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 32,
-                              "column": 6
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 32,
-                              "column": 7
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                          },
                           "_meta": {
+                            "ReceiveCls": "",
                             "type": {
-                              "type": "Identifier",
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 16,
+                                  "line": 32
+                                },
+                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/interfaces.go",
+                                "start": {
+                                  "column": 8,
+                                  "line": 32
+                                }
+                              },
                               "name": "Material",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 32,
-                                  "column": 8
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 32,
-                                  "column": 16
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                              },
-                              "_meta": {}
+                              "type": "Identifier"
                             }
-                          }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 7,
+                              "line": 32
+                            },
+                            "sourcefile": "$EXAMPLES/interfaces.go",
+                            "start": {
+                              "column": 6,
+                              "line": 32
+                            }
+                          },
+                          "name": "m",
+                          "type": "Identifier"
                         },
                         "init": {
-                          "type": "Identifier",
-                          "name": "c",
+                          "_meta": {},
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 32,
-                              "column": 19
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 32,
-                              "column": 20
+                              "column": 20,
+                              "line": 32
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                            "sourcefile": "$EXAMPLES/interfaces.go",
+                            "start": {
+                              "column": 19,
+                              "line": 32
+                            }
                           },
-                          "_meta": {}
+                          "name": "c",
+                          "type": "Identifier"
                         },
-                        "cloned": false,
+                        "loc": {
+                          "end": {
+                            "column": 20,
+                            "line": 32
+                          },
+                          "sourcefile": "$EXAMPLES/interfaces.go",
+                          "start": {
+                            "column": 6,
+                            "line": 32
+                          }
+                        },
+                        "type": "VariableDeclaration",
                         "varType": {
-                          "type": "Identifier",
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 16,
+                              "line": 32
+                            },
+                            "sourcefile": "$EXAMPLES/interfaces.go",
+                            "start": {
+                              "column": 8,
+                              "line": 32
+                            }
+                          },
                           "name": "Material",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 32,
-                              "column": 8
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 32,
-                              "column": 16
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                          },
-                          "_meta": {}
+                          "type": "Identifier"
                         },
-                        "variableParam": false,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 32,
-                            "column": 6
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 32,
-                            "column": 20
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                        },
-                        "_meta": {}
+                        "variableParam": false
                       },
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": false,
                         "id": {
-                          "type": "Identifier",
-                          "name": "s",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 33,
-                              "column": 6
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 33,
-                              "column": 7
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                          },
                           "_meta": {
+                            "ReceiveCls": "",
                             "type": {
-                              "type": "Identifier",
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 13,
+                                  "line": 33
+                                },
+                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/interfaces.go",
+                                "start": {
+                                  "column": 8,
+                                  "line": 33
+                                }
+                              },
                               "name": "Shape",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 33,
-                                  "column": 8
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 33,
-                                  "column": 13
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                              },
-                              "_meta": {}
+                              "type": "Identifier"
                             }
-                          }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 7,
+                              "line": 33
+                            },
+                            "sourcefile": "$EXAMPLES/interfaces.go",
+                            "start": {
+                              "column": 6,
+                              "line": 33
+                            }
+                          },
+                          "name": "s",
+                          "type": "Identifier"
                         },
                         "init": {
-                          "type": "Identifier",
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 17,
+                              "line": 33
+                            },
+                            "sourcefile": "$EXAMPLES/interfaces.go",
+                            "start": {
+                              "column": 16,
+                              "line": 33
+                            }
+                          },
                           "name": "c",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 33,
-                              "column": 16
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 33,
-                              "column": 17
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                          },
-                          "_meta": {}
+                          "type": "Identifier"
                         },
-                        "cloned": false,
-                        "varType": {
-                          "type": "Identifier",
-                          "name": "Shape",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 33,
-                              "column": 8
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 33,
-                              "column": 13
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                          },
-                          "_meta": {}
-                        },
-                        "variableParam": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 33,
-                            "column": 6
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 33,
-                            "column": 17
+                            "column": 17,
+                            "line": 33
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                          "sourcefile": "$EXAMPLES/interfaces.go",
+                          "start": {
+                            "column": 6,
+                            "line": 33
+                          }
                         },
-                        "_meta": {}
-                      },
-                      {
                         "type": "VariableDeclaration",
-                        "id": {
-                          "type": "Identifier",
-                          "name": "o",
+                        "varType": {
+                          "_meta": {},
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 34,
-                              "column": 6
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 34,
-                              "column": 7
+                              "column": 13,
+                              "line": 33
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "Identifier",
-                              "name": "Object",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 34,
-                                  "column": 8
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 34,
-                                  "column": 14
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                              },
-                              "_meta": {}
+                            "sourcefile": "$EXAMPLES/interfaces.go",
+                            "start": {
+                              "column": 8,
+                              "line": 33
                             }
-                          }
+                          },
+                          "name": "Shape",
+                          "type": "Identifier"
+                        },
+                        "variableParam": false
+                      },
+                      {
+                        "_meta": {},
+                        "cloned": false,
+                        "id": {
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 14,
+                                  "line": 34
+                                },
+                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/interfaces.go",
+                                "start": {
+                                  "column": 8,
+                                  "line": 34
+                                }
+                              },
+                              "name": "Object",
+                              "type": "Identifier"
+                            }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 7,
+                              "line": 34
+                            },
+                            "sourcefile": "$EXAMPLES/interfaces.go",
+                            "start": {
+                              "column": 6,
+                              "line": 34
+                            }
+                          },
+                          "name": "o",
+                          "type": "Identifier"
                         },
                         "init": {
-                          "type": "Identifier",
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 18,
+                              "line": 34
+                            },
+                            "sourcefile": "$EXAMPLES/interfaces.go",
+                            "start": {
+                              "column": 17,
+                              "line": 34
+                            }
+                          },
                           "name": "c",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 34,
-                              "column": 17
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 34,
-                              "column": 18
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                          },
-                          "_meta": {}
+                          "type": "Identifier"
                         },
-                        "cloned": false,
+                        "loc": {
+                          "end": {
+                            "column": 18,
+                            "line": 34
+                          },
+                          "sourcefile": "$EXAMPLES/interfaces.go",
+                          "start": {
+                            "column": 6,
+                            "line": 34
+                          }
+                        },
+                        "type": "VariableDeclaration",
                         "varType": {
-                          "type": "Identifier",
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 14,
+                              "line": 34
+                            },
+                            "sourcefile": "$EXAMPLES/interfaces.go",
+                            "start": {
+                              "column": 8,
+                              "line": 34
+                            }
+                          },
                           "name": "Object",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 34,
-                              "column": 8
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 34,
-                              "column": 14
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                          },
-                          "_meta": {}
+                          "type": "Identifier"
                         },
-                        "variableParam": false,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 34,
-                            "column": 6
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 34,
-                            "column": 18
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                        },
-                        "_meta": {}
+                        "variableParam": false
                       },
                       {
-                        "type": "CallExpression",
-                        "callee": {
-                          "type": "MemberAccess",
-                          "object": {
-                            "type": "Identifier",
-                            "name": "fmt",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 2
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 5
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                            },
-                            "_meta": {}
-                          },
-                          "property": {
-                            "type": "Identifier",
-                            "name": "Printf",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 6
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 12
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                            },
-                            "_meta": {}
-                          },
-                          "computed": false,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 35,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 35,
-                              "column": 12
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                          },
-                          "_meta": {}
-                        },
+                        "_meta": {},
                         "arguments": [
                           {
-                            "type": "Literal",
-                            "value": "\"dynamic type and value of interface m of static type Material is'%T' and '%v'\\n\"",
+                            "_meta": {},
                             "literalType": "STRING",
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 13
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 94
+                                "column": 94,
+                                "line": 35
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                              "sourcefile": "$EXAMPLES/interfaces.go",
+                              "start": {
+                                "column": 13,
+                                "line": 35
+                              }
                             },
-                            "_meta": {}
+                            "type": "Literal",
+                            "value": "\"dynamic type and value of interface m of static type Material is'%T' and '%v'\\n\""
                           },
                           {
-                            "type": "Identifier",
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 97,
+                                "line": 35
+                              },
+                              "sourcefile": "$EXAMPLES/interfaces.go",
+                              "start": {
+                                "column": 96,
+                                "line": 35
+                              }
+                            },
                             "name": "m",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 96
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 97
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 100,
+                                "line": 35
+                              },
+                              "sourcefile": "$EXAMPLES/interfaces.go",
+                              "start": {
+                                "column": 99,
+                                "line": 35
+                              }
+                            },
                             "name": "m",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 99
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 100
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           }
                         ],
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 35,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 35,
-                            "column": 101
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                        },
-                        "_meta": {}
-                      },
-                      {
-                        "type": "CallExpression",
                         "callee": {
-                          "type": "MemberAccess",
-                          "object": {
-                            "type": "Identifier",
-                            "name": "fmt",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 36,
-                                "column": 2
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 36,
-                                "column": 5
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                            },
-                            "_meta": {}
-                          },
-                          "property": {
-                            "type": "Identifier",
-                            "name": "Printf",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 36,
-                                "column": 6
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 36,
-                                "column": 12
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                            },
-                            "_meta": {}
-                          },
+                          "_meta": {},
                           "computed": false,
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 36,
-                              "column": 2
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 36,
-                              "column": 12
+                              "column": 12,
+                              "line": 35
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                            "sourcefile": "$EXAMPLES/interfaces.go",
+                            "start": {
+                              "column": 2,
+                              "line": 35
+                            }
                           },
-                          "_meta": {}
-                        },
-                        "arguments": [
-                          {
-                            "type": "Literal",
-                            "value": "\"dynamic type and value of interface s of static type Shape is'%T' and '%v'\\n\"",
-                            "literalType": "STRING",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 36,
-                                "column": 13
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 36,
-                                "column": 91
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                            },
-                            "_meta": {}
-                          },
-                          {
-                            "type": "Identifier",
-                            "name": "s",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 36,
-                                "column": 93
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 36,
-                                "column": 94
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                            },
-                            "_meta": {}
-                          },
-                          {
-                            "type": "Identifier",
-                            "name": "s",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 36,
-                                "column": 96
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 36,
-                                "column": 97
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                            },
-                            "_meta": {}
-                          }
-                        ],
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 36,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 36,
-                            "column": 98
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                        },
-                        "_meta": {}
-                      },
-                      {
-                        "type": "CallExpression",
-                        "callee": {
-                          "type": "MemberAccess",
                           "object": {
-                            "type": "Identifier",
-                            "name": "fmt",
+                            "_meta": {},
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 37,
-                                "column": 2
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 37,
-                                "column": 5
+                                "column": 5,
+                                "line": 35
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                              "sourcefile": "$EXAMPLES/interfaces.go",
+                              "start": {
+                                "column": 2,
+                                "line": 35
+                              }
                             },
-                            "_meta": {}
+                            "name": "fmt",
+                            "type": "Identifier"
                           },
                           "property": {
-                            "type": "Identifier",
-                            "name": "Printf",
+                            "_meta": {},
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 37,
-                                "column": 6
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 37,
-                                "column": 12
+                                "column": 12,
+                                "line": 35
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                              "sourcefile": "$EXAMPLES/interfaces.go",
+                              "start": {
+                                "column": 6,
+                                "line": 35
+                              }
                             },
-                            "_meta": {}
+                            "name": "Printf",
+                            "type": "Identifier"
                           },
-                          "computed": false,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 37,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 37,
-                              "column": 12
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
-                          },
-                          "_meta": {}
+                          "type": "MemberAccess"
                         },
+                        "loc": {
+                          "end": {
+                            "column": 101,
+                            "line": 35
+                          },
+                          "sourcefile": "$EXAMPLES/interfaces.go",
+                          "start": {
+                            "column": 2,
+                            "line": 35
+                          }
+                        },
+                        "type": "CallExpression"
+                      },
+                      {
+                        "_meta": {},
                         "arguments": [
                           {
-                            "type": "Literal",
-                            "value": "\"dynamic type and value of interface o of static type Object is'%T' and '%v'\\n\"",
+                            "_meta": {},
                             "literalType": "STRING",
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 37,
-                                "column": 13
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 37,
-                                "column": 92
+                                "column": 91,
+                                "line": 36
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                              "sourcefile": "$EXAMPLES/interfaces.go",
+                              "start": {
+                                "column": 13,
+                                "line": 36
+                              }
                             },
-                            "_meta": {}
+                            "type": "Literal",
+                            "value": "\"dynamic type and value of interface s of static type Shape is'%T' and '%v'\\n\""
                           },
                           {
-                            "type": "Identifier",
-                            "name": "o",
+                            "_meta": {},
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 37,
-                                "column": 94
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 37,
-                                "column": 95
+                                "column": 94,
+                                "line": 36
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                              "sourcefile": "$EXAMPLES/interfaces.go",
+                              "start": {
+                                "column": 93,
+                                "line": 36
+                              }
                             },
-                            "_meta": {}
+                            "name": "s",
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
-                            "name": "o",
+                            "_meta": {},
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 37,
-                                "column": 97
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 37,
-                                "column": 98
+                                "column": 97,
+                                "line": 36
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                              "sourcefile": "$EXAMPLES/interfaces.go",
+                              "start": {
+                                "column": 96,
+                                "line": 36
+                              }
                             },
-                            "_meta": {}
+                            "name": "s",
+                            "type": "Identifier"
                           }
                         ],
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 37,
-                            "column": 2
+                        "callee": {
+                          "_meta": {},
+                          "computed": false,
+                          "loc": {
+                            "end": {
+                              "column": 12,
+                              "line": 36
+                            },
+                            "sourcefile": "$EXAMPLES/interfaces.go",
+                            "start": {
+                              "column": 2,
+                              "line": 36
+                            }
                           },
-                          "end": {
-                            "Offset": 0,
-                            "line": 37,
-                            "column": 99
+                          "object": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 5,
+                                "line": 36
+                              },
+                              "sourcefile": "$EXAMPLES/interfaces.go",
+                              "start": {
+                                "column": 2,
+                                "line": 36
+                              }
+                            },
+                            "name": "fmt",
+                            "type": "Identifier"
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                          "property": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 12,
+                                "line": 36
+                              },
+                              "sourcefile": "$EXAMPLES/interfaces.go",
+                              "start": {
+                                "column": 6,
+                                "line": 36
+                              }
+                            },
+                            "name": "Printf",
+                            "type": "Identifier"
+                          },
+                          "type": "MemberAccess"
                         },
-                        "_meta": {}
+                        "loc": {
+                          "end": {
+                            "column": 98,
+                            "line": 36
+                          },
+                          "sourcefile": "$EXAMPLES/interfaces.go",
+                          "start": {
+                            "column": 2,
+                            "line": 36
+                          }
+                        },
+                        "type": "CallExpression"
+                      },
+                      {
+                        "_meta": {},
+                        "arguments": [
+                          {
+                            "_meta": {},
+                            "literalType": "STRING",
+                            "loc": {
+                              "end": {
+                                "column": 92,
+                                "line": 37
+                              },
+                              "sourcefile": "$EXAMPLES/interfaces.go",
+                              "start": {
+                                "column": 13,
+                                "line": 37
+                              }
+                            },
+                            "type": "Literal",
+                            "value": "\"dynamic type and value of interface o of static type Object is'%T' and '%v'\\n\""
+                          },
+                          {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 95,
+                                "line": 37
+                              },
+                              "sourcefile": "$EXAMPLES/interfaces.go",
+                              "start": {
+                                "column": 94,
+                                "line": 37
+                              }
+                            },
+                            "name": "o",
+                            "type": "Identifier"
+                          },
+                          {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 98,
+                                "line": 37
+                              },
+                              "sourcefile": "$EXAMPLES/interfaces.go",
+                              "start": {
+                                "column": 97,
+                                "line": 37
+                              }
+                            },
+                            "name": "o",
+                            "type": "Identifier"
+                          }
+                        ],
+                        "callee": {
+                          "_meta": {},
+                          "computed": false,
+                          "loc": {
+                            "end": {
+                              "column": 12,
+                              "line": 37
+                            },
+                            "sourcefile": "$EXAMPLES/interfaces.go",
+                            "start": {
+                              "column": 2,
+                              "line": 37
+                            }
+                          },
+                          "object": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 5,
+                                "line": 37
+                              },
+                              "sourcefile": "$EXAMPLES/interfaces.go",
+                              "start": {
+                                "column": 2,
+                                "line": 37
+                              }
+                            },
+                            "name": "fmt",
+                            "type": "Identifier"
+                          },
+                          "property": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 12,
+                                "line": 37
+                              },
+                              "sourcefile": "$EXAMPLES/interfaces.go",
+                              "start": {
+                                "column": 6,
+                                "line": 37
+                              }
+                            },
+                            "name": "Printf",
+                            "type": "Identifier"
+                          },
+                          "type": "MemberAccess"
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 99,
+                            "line": 37
+                          },
+                          "sourcefile": "$EXAMPLES/interfaces.go",
+                          "start": {
+                            "column": 2,
+                            "line": 37
+                          }
+                        },
+                        "type": "CallExpression"
                       }
                     ],
                     "id": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 30,
-                        "column": 19
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 38,
-                        "column": 2
+                        "column": 2,
+                        "line": 38
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                      "sourcefile": "$EXAMPLES/interfaces.go",
+                      "start": {
+                        "column": 19,
+                        "line": 30
+                      }
                     },
-                    "_meta": {}
+                    "type": "ScopedStatement"
+                  },
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 16,
+                        "line": 30
+                      },
+                      "sourcefile": "$EXAMPLES/interfaces.go",
+                      "start": {
+                        "column": 6,
+                        "line": 30
+                      }
+                    },
+                    "name": "Interfaces",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 38
+                    },
+                    "sourcefile": "$EXAMPLES/interfaces.go",
+                    "start": {
+                      "column": 1,
+                      "line": 30
+                    }
                   },
                   "modifiers": null,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 30,
-                      "column": 1
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 38,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                  "parameters": [],
+                  "returnType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "VoidType",
+                    "typeArguments": null
                   },
-                  "_meta": {}
+                  "type": "FunctionDefinition"
                 }
               ],
               "language": "golang",
               "languageVersion": "1.18",
-              "uri": "",
-              "version": "",
               "loc": {
-                "start": {
-                  "Offset": 0,
-                  "line": 1,
-                  "column": 1
-                },
                 "end": {
-                  "Offset": 0,
-                  "line": 38,
-                  "column": 2
+                  "column": 2,
+                  "line": 38
                 },
-                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/interfaces.go"
+                "sourcefile": "$EXAMPLES/interfaces.go",
+                "start": {
+                  "column": 1,
+                  "line": 1
+                }
               },
-              "_meta": {}
+              "type": "CompileUnit",
+              "uri": "",
+              "version": ""
             },
             "packageName": "__single__"
           }
@@ -2161,6 +2108,5 @@
         "subs": {}
       }
     }
-  },
-  "moduleName": "__single_module__"
+  }
 }

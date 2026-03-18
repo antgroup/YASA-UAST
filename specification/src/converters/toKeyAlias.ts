@@ -1,7 +1,7 @@
 import { isIdentifier, isLiteral } from "../validators/generated";
 import cloneNode from "../clone/cloneNode";
 import removePropertiesDeep from "../modifications/removePropertiesDeep";
-import type * as t from "..";
+import type * as t from "../ast-types/generated";
 
 export default function toKeyAlias(
   node: any,

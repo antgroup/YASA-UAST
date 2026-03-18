@@ -1,4 +1,5 @@
 {
+  "moduleName": "__single_module__",
   "packageInfo": {
     "PathName": "",
     "files": {},
@@ -6,683 +7,625 @@
       "/": {
         "PathName": "",
         "files": {
-          "/Users/ariel/code/uast/uast4go/examples/strings.go": {
+          "$EXAMPLES/strings.go": {
             "node": {
-              "type": "CompileUnit",
+              "_meta": {},
               "body": [
                 {
-                  "type": "PackageDeclaration",
-                  "name": {
-                    "type": "Identifier",
-                    "name": "examples",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 2,
-                        "column": 9
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 2,
-                        "column": 17
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
-                    },
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 2,
-                      "column": 9
-                    },
                     "end": {
-                      "Offset": 0,
-                      "line": 2,
-                      "column": 17
+                      "column": 17,
+                      "line": 2
                     },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
+                    "sourcefile": "$EXAMPLES/strings.go",
+                    "start": {
+                      "column": 9,
+                      "line": 2
+                    }
                   },
-                  "_meta": {}
+                  "packageName": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 17,
+                        "line": 2
+                      },
+                      "sourcefile": "$EXAMPLES/strings.go",
+                      "start": {
+                        "column": 9,
+                        "line": 2
+                      }
+                    },
+                    "name": "examples",
+                    "type": "Identifier"
+                  },
+                  "type": "PackageDeclaration"
                 },
                 {
-                  "type": "VariableDeclaration",
+                  "_meta": {
+                    "ReceiveCls": "",
+                    "isDefaultImport": true
+                  },
+                  "cloned": false,
                   "id": {
-                    "type": "Identifier",
-                    "name": "fmt",
+                    "_meta": {},
                     "loc": null,
-                    "_meta": {}
+                    "name": "fmt",
+                    "type": "Identifier"
                   },
                   "init": {
-                    "type": "ImportExpression",
+                    "_meta": {},
                     "from": {
-                      "type": "Literal",
-                      "value": "fmt",
+                      "_meta": {},
                       "literalType": "string",
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 5,
-                          "column": 2
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 5,
-                          "column": 7
+                          "column": 7,
+                          "line": 5
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
+                        "sourcefile": "$EXAMPLES/strings.go",
+                        "start": {
+                          "column": 2,
+                          "line": 5
+                        }
                       },
-                      "_meta": {}
+                      "type": "Literal",
+                      "value": "fmt"
                     },
-                    "local": null,
                     "imported": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 2
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 5,
-                        "column": 7
+                        "column": 7,
+                        "line": 5
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
+                      "sourcefile": "$EXAMPLES/strings.go",
+                      "start": {
+                        "column": 2,
+                        "line": 5
+                      }
                     },
-                    "_meta": {}
+                    "local": null,
+                    "type": "ImportExpression"
                   },
-                  "cloned": true,
-                  "varType": {
-                    "type": "DynamicType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
-                  "variableParam": false,
                   "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 5,
-                      "column": 2
-                    },
                     "end": {
-                      "Offset": 0,
-                      "line": 5,
-                      "column": 7
+                      "column": 7,
+                      "line": 5
                     },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
+                    "sourcefile": "$EXAMPLES/strings.go",
+                    "start": {
+                      "column": 2,
+                      "line": 5
+                    }
                   },
-                  "_meta": {}
+                  "type": "VariableDeclaration",
+                  "varType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "DynamicType",
+                    "typeArguments": null
+                  },
+                  "variableParam": false
                 },
                 {
-                  "type": "ClassDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "Vertex",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 8,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 8,
-                        "column": 12
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
-                    },
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "body": [
                     {
-                      "type": "VariableDeclaration",
+                      "_meta": {},
+                      "cloned": true,
                       "id": {
-                        "type": "Identifier",
-                        "name": "X",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 9,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 9,
-                            "column": 3
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
-                        },
                         "_meta": {
+                          "ReceiveCls": "",
                           "type": {
-                            "type": "Identifier",
-                            "name": "float64",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 9,
-                                "column": 4
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 9,
-                                "column": 11
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
+                            "_meta": {
+                              "ReceiveCls": ""
                             },
-                            "_meta": {}
+                            "loc": {
+                              "end": {
+                                "column": 11,
+                                "line": 9
+                              },
+                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/strings.go",
+                              "start": {
+                                "column": 4,
+                                "line": 9
+                              }
+                            },
+                            "name": "float64",
+                            "type": "Identifier"
                           }
-                        }
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 3,
+                            "line": 9
+                          },
+                          "sourcefile": "$EXAMPLES/strings.go",
+                          "start": {
+                            "column": 2,
+                            "line": 9
+                          }
+                        },
+                        "name": "X",
+                        "type": "Identifier"
                       },
                       "init": null,
-                      "cloned": true,
-                      "varType": {
-                        "type": "Identifier",
-                        "name": "float64",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 9,
-                            "column": 4
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 9,
-                            "column": 11
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
-                        },
-                        "_meta": {}
-                      },
-                      "variableParam": false,
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 9,
-                          "column": 2
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 9,
-                          "column": 29
+                          "column": 29,
+                          "line": 9
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
+                        "sourcefile": "$EXAMPLES/strings.go",
+                        "start": {
+                          "column": 2,
+                          "line": 9
+                        }
                       },
-                      "_meta": {}
+                      "type": "VariableDeclaration",
+                      "varType": {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 11,
+                            "line": 9
+                          },
+                          "sourcefile": "$EXAMPLES/strings.go",
+                          "start": {
+                            "column": 4,
+                            "line": 9
+                          }
+                        },
+                        "name": "float64",
+                        "type": "Identifier"
+                      },
+                      "variableParam": false
                     },
                     {
-                      "type": "VariableDeclaration",
+                      "_meta": {},
+                      "cloned": true,
                       "id": {
-                        "type": "Identifier",
-                        "name": "Y",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 10,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 10,
-                            "column": 3
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
-                        },
                         "_meta": {
+                          "ReceiveCls": "",
                           "type": {
-                            "type": "Identifier",
-                            "name": "float64",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 10,
-                                "column": 4
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 10,
-                                "column": 11
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
+                            "_meta": {
+                              "ReceiveCls": ""
                             },
-                            "_meta": {}
+                            "loc": {
+                              "end": {
+                                "column": 11,
+                                "line": 10
+                              },
+                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/strings.go",
+                              "start": {
+                                "column": 4,
+                                "line": 10
+                              }
+                            },
+                            "name": "float64",
+                            "type": "Identifier"
                           }
-                        }
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 3,
+                            "line": 10
+                          },
+                          "sourcefile": "$EXAMPLES/strings.go",
+                          "start": {
+                            "column": 2,
+                            "line": 10
+                          }
+                        },
+                        "name": "Y",
+                        "type": "Identifier"
                       },
                       "init": null,
-                      "cloned": true,
-                      "varType": {
-                        "type": "Identifier",
-                        "name": "float64",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 10,
-                            "column": 4
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 10,
-                            "column": 11
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
-                        },
-                        "_meta": {}
-                      },
-                      "variableParam": false,
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 10,
-                          "column": 2
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 10,
-                          "column": 29
+                          "column": 29,
+                          "line": 10
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
+                        "sourcefile": "$EXAMPLES/strings.go",
+                        "start": {
+                          "column": 2,
+                          "line": 10
+                        }
                       },
-                      "_meta": {}
+                      "type": "VariableDeclaration",
+                      "varType": {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 11,
+                            "line": 10
+                          },
+                          "sourcefile": "$EXAMPLES/strings.go",
+                          "start": {
+                            "column": 4,
+                            "line": 10
+                          }
+                        },
+                        "name": "float64",
+                        "type": "Identifier"
+                      },
+                      "variableParam": false
                     }
                   ],
-                  "supers": [],
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 8,
-                      "column": 6
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 12,
+                        "line": 8
+                      },
+                      "sourcefile": "$EXAMPLES/strings.go",
+                      "start": {
+                        "column": 6,
+                        "line": 8
+                      }
                     },
-                    "end": {
-                      "Offset": 0,
-                      "line": 11,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
+                    "name": "Vertex",
+                    "type": "Identifier"
                   },
-                  "_meta": {}
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 11
+                    },
+                    "sourcefile": "$EXAMPLES/strings.go",
+                    "start": {
+                      "column": 6,
+                      "line": 8
+                    }
+                  },
+                  "supers": [],
+                  "type": "ClassDefinition"
                 },
                 {
-                  "type": "FunctionDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "main",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 13,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 13,
-                        "column": 10
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
-                    },
-                    "_meta": {}
-                  },
-                  "parameters": [],
-                  "returnType": {
-                    "type": "VoidType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "body": {
-                    "type": "ScopedStatement",
+                    "_meta": {},
                     "body": [
                       {
-                        "type": "CallExpression",
-                        "callee": {
-                          "type": "MemberAccess",
-                          "object": {
-                            "type": "Identifier",
-                            "name": "fmt",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 14,
-                                "column": 2
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 14,
-                                "column": 5
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
-                            },
-                            "_meta": {}
-                          },
-                          "property": {
-                            "type": "Identifier",
-                            "name": "Println",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 14,
-                                "column": 6
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 14,
-                                "column": 13
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
-                            },
-                            "_meta": {}
-                          },
-                          "computed": false,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 14,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 14,
-                              "column": 13
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
-                          },
-                          "_meta": {}
-                        },
+                        "_meta": {},
                         "arguments": [
                           {
-                            "type": "Literal",
-                            "value": "\"this \\\"that\"",
+                            "_meta": {},
                             "literalType": "STRING",
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 14,
-                                "column": 14
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 14,
-                                "column": 27
+                                "column": 27,
+                                "line": 14
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
+                              "sourcefile": "$EXAMPLES/strings.go",
+                              "start": {
+                                "column": 14,
+                                "line": 14
+                              }
                             },
-                            "_meta": {}
+                            "type": "Literal",
+                            "value": "\"this \\\"that\""
                           }
                         ],
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 14,
-                            "column": 2
+                        "callee": {
+                          "_meta": {},
+                          "computed": false,
+                          "loc": {
+                            "end": {
+                              "column": 13,
+                              "line": 14
+                            },
+                            "sourcefile": "$EXAMPLES/strings.go",
+                            "start": {
+                              "column": 2,
+                              "line": 14
+                            }
                           },
-                          "end": {
-                            "Offset": 0,
-                            "line": 14,
-                            "column": 28
+                          "object": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 5,
+                                "line": 14
+                              },
+                              "sourcefile": "$EXAMPLES/strings.go",
+                              "start": {
+                                "column": 2,
+                                "line": 14
+                              }
+                            },
+                            "name": "fmt",
+                            "type": "Identifier"
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
+                          "property": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 13,
+                                "line": 14
+                              },
+                              "sourcefile": "$EXAMPLES/strings.go",
+                              "start": {
+                                "column": 6,
+                                "line": 14
+                              }
+                            },
+                            "name": "Println",
+                            "type": "Identifier"
+                          },
+                          "type": "MemberAccess"
                         },
-                        "_meta": {}
+                        "loc": {
+                          "end": {
+                            "column": 28,
+                            "line": 14
+                          },
+                          "sourcefile": "$EXAMPLES/strings.go",
+                          "start": {
+                            "column": 2,
+                            "line": 14
+                          }
+                        },
+                        "type": "CallExpression"
                       },
                       {
-                        "type": "CallExpression",
-                        "callee": {
-                          "type": "MemberAccess",
-                          "object": {
-                            "type": "Identifier",
-                            "name": "fmt",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 15,
-                                "column": 2
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 15,
-                                "column": 5
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
-                            },
-                            "_meta": {}
-                          },
-                          "property": {
-                            "type": "Identifier",
-                            "name": "Println",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 15,
-                                "column": 6
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 15,
-                                "column": 13
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
-                            },
-                            "_meta": {}
-                          },
-                          "computed": false,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 15,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 15,
-                              "column": 13
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
-                          },
-                          "_meta": {}
-                        },
+                        "_meta": {},
                         "arguments": [
                           {
-                            "type": "Literal",
-                            "value": "`Hello`",
+                            "_meta": {},
                             "literalType": "STRING",
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 15,
-                                "column": 14
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 15,
-                                "column": 21
+                                "column": 21,
+                                "line": 15
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
+                              "sourcefile": "$EXAMPLES/strings.go",
+                              "start": {
+                                "column": 14,
+                                "line": 15
+                              }
                             },
-                            "_meta": {}
+                            "type": "Literal",
+                            "value": "`Hello`"
                           }
                         ],
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 15,
-                            "column": 2
+                        "callee": {
+                          "_meta": {},
+                          "computed": false,
+                          "loc": {
+                            "end": {
+                              "column": 13,
+                              "line": 15
+                            },
+                            "sourcefile": "$EXAMPLES/strings.go",
+                            "start": {
+                              "column": 2,
+                              "line": 15
+                            }
                           },
-                          "end": {
-                            "Offset": 0,
-                            "line": 15,
-                            "column": 22
+                          "object": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 5,
+                                "line": 15
+                              },
+                              "sourcefile": "$EXAMPLES/strings.go",
+                              "start": {
+                                "column": 2,
+                                "line": 15
+                              }
+                            },
+                            "name": "fmt",
+                            "type": "Identifier"
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
+                          "property": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 13,
+                                "line": 15
+                              },
+                              "sourcefile": "$EXAMPLES/strings.go",
+                              "start": {
+                                "column": 6,
+                                "line": 15
+                              }
+                            },
+                            "name": "Println",
+                            "type": "Identifier"
+                          },
+                          "type": "MemberAccess"
                         },
-                        "_meta": {}
+                        "loc": {
+                          "end": {
+                            "column": 22,
+                            "line": 15
+                          },
+                          "sourcefile": "$EXAMPLES/strings.go",
+                          "start": {
+                            "column": 2,
+                            "line": 15
+                          }
+                        },
+                        "type": "CallExpression"
                       }
                     ],
                     "id": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 13,
-                        "column": 13
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 16,
-                        "column": 2
+                        "column": 2,
+                        "line": 16
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
+                      "sourcefile": "$EXAMPLES/strings.go",
+                      "start": {
+                        "column": 13,
+                        "line": 13
+                      }
                     },
-                    "_meta": {}
+                    "type": "ScopedStatement"
+                  },
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 10,
+                        "line": 13
+                      },
+                      "sourcefile": "$EXAMPLES/strings.go",
+                      "start": {
+                        "column": 6,
+                        "line": 13
+                      }
+                    },
+                    "name": "main",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 16
+                    },
+                    "sourcefile": "$EXAMPLES/strings.go",
+                    "start": {
+                      "column": 1,
+                      "line": 13
+                    }
                   },
                   "modifiers": null,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 13,
-                      "column": 1
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 16,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
+                  "parameters": [],
+                  "returnType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "VoidType",
+                    "typeArguments": null
                   },
-                  "_meta": {}
+                  "type": "FunctionDefinition"
                 },
                 {
-                  "type": "ClassDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "Something",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 18,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 18,
-                        "column": 15
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
-                    },
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "body": [
                     {
-                      "type": "VariableDeclaration",
+                      "_meta": {},
+                      "cloned": true,
                       "id": {
-                        "type": "Identifier",
-                        "name": "Msg",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 19,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 19,
-                            "column": 5
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
-                        },
                         "_meta": {
+                          "ReceiveCls": "",
                           "type": {
-                            "type": "Identifier",
-                            "name": "string",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 19,
-                                "column": 6
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 19,
-                                "column": 12
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
+                            "_meta": {
+                              "ReceiveCls": ""
                             },
-                            "_meta": {}
+                            "loc": {
+                              "end": {
+                                "column": 12,
+                                "line": 19
+                              },
+                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/strings.go",
+                              "start": {
+                                "column": 6,
+                                "line": 19
+                              }
+                            },
+                            "name": "string",
+                            "type": "Identifier"
                           }
-                        }
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 5,
+                            "line": 19
+                          },
+                          "sourcefile": "$EXAMPLES/strings.go",
+                          "start": {
+                            "column": 2,
+                            "line": 19
+                          }
+                        },
+                        "name": "Msg",
+                        "type": "Identifier"
                       },
                       "init": null,
-                      "cloned": true,
-                      "varType": {
-                        "type": "Identifier",
-                        "name": "string",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 19,
-                            "column": 6
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 19,
-                            "column": 12
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
-                        },
-                        "_meta": {}
-                      },
-                      "variableParam": false,
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 19,
-                          "column": 2
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 19,
-                          "column": 20
+                          "column": 20,
+                          "line": 19
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
+                        "sourcefile": "$EXAMPLES/strings.go",
+                        "start": {
+                          "column": 2,
+                          "line": 19
+                        }
                       },
-                      "_meta": {}
+                      "type": "VariableDeclaration",
+                      "varType": {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 12,
+                            "line": 19
+                          },
+                          "sourcefile": "$EXAMPLES/strings.go",
+                          "start": {
+                            "column": 6,
+                            "line": 19
+                          }
+                        },
+                        "name": "string",
+                        "type": "Identifier"
+                      },
+                      "variableParam": false
                     }
                   ],
-                  "supers": [],
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 18,
-                      "column": 6
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 15,
+                        "line": 18
+                      },
+                      "sourcefile": "$EXAMPLES/strings.go",
+                      "start": {
+                        "column": 6,
+                        "line": 18
+                      }
                     },
-                    "end": {
-                      "Offset": 0,
-                      "line": 20,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
+                    "name": "Something",
+                    "type": "Identifier"
                   },
-                  "_meta": {}
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 20
+                    },
+                    "sourcefile": "$EXAMPLES/strings.go",
+                    "start": {
+                      "column": 6,
+                      "line": 18
+                    }
+                  },
+                  "supers": [],
+                  "type": "ClassDefinition"
                 }
               ],
               "language": "golang",
               "languageVersion": "1.18",
-              "uri": "",
-              "version": "",
               "loc": {
-                "start": {
-                  "Offset": 0,
-                  "line": 2,
-                  "column": 1
-                },
                 "end": {
-                  "Offset": 0,
-                  "line": 20,
-                  "column": 2
+                  "column": 2,
+                  "line": 20
                 },
-                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/strings.go"
+                "sourcefile": "$EXAMPLES/strings.go",
+                "start": {
+                  "column": 1,
+                  "line": 2
+                }
               },
-              "_meta": {}
+              "type": "CompileUnit",
+              "uri": "",
+              "version": ""
             },
             "packageName": "__single__"
           }
@@ -690,6 +633,5 @@
         "subs": {}
       }
     }
-  },
-  "moduleName": "__single_module__"
+  }
 }

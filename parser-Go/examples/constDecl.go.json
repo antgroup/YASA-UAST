@@ -1,4 +1,5 @@
 {
+  "moduleName": "__single_module__",
   "packageInfo": {
     "PathName": "",
     "files": {},
@@ -6,2164 +7,2027 @@
       "/": {
         "PathName": "",
         "files": {
-          "/Users/ariel/code/uast/uast4go/examples/constDecl.go": {
+          "$EXAMPLES/constDecl.go": {
             "node": {
-              "type": "CompileUnit",
+              "_meta": {},
               "body": [
                 {
-                  "type": "PackageDeclaration",
-                  "name": {
-                    "type": "Identifier",
-                    "name": "examples",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 9
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 17
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                    },
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 9
-                    },
                     "end": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 17
+                      "column": 17,
+                      "line": 1
                     },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                    "sourcefile": "$EXAMPLES/constDecl.go",
+                    "start": {
+                      "column": 9,
+                      "line": 1
+                    }
                   },
-                  "_meta": {}
+                  "packageName": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 17,
+                        "line": 1
+                      },
+                      "sourcefile": "$EXAMPLES/constDecl.go",
+                      "start": {
+                        "column": 9,
+                        "line": 1
+                      }
+                    },
+                    "name": "examples",
+                    "type": "Identifier"
+                  },
+                  "type": "PackageDeclaration"
                 },
                 {
-                  "type": "VariableDeclaration",
+                  "_meta": {
+                    "ReceiveCls": "",
+                    "isDefaultImport": true
+                  },
+                  "cloned": false,
                   "id": {
-                    "type": "Identifier",
-                    "name": "fmt",
+                    "_meta": {},
                     "loc": null,
-                    "_meta": {}
+                    "name": "fmt",
+                    "type": "Identifier"
                   },
                   "init": {
-                    "type": "ImportExpression",
+                    "_meta": {},
                     "from": {
-                      "type": "Literal",
-                      "value": "fmt",
+                      "_meta": {},
                       "literalType": "string",
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 3,
-                          "column": 8
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 3,
-                          "column": 13
+                          "column": 13,
+                          "line": 3
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                        "sourcefile": "$EXAMPLES/constDecl.go",
+                        "start": {
+                          "column": 8,
+                          "line": 3
+                        }
                       },
-                      "_meta": {}
+                      "type": "Literal",
+                      "value": "fmt"
                     },
-                    "local": null,
                     "imported": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 8
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 13
+                        "column": 13,
+                        "line": 3
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                      "sourcefile": "$EXAMPLES/constDecl.go",
+                      "start": {
+                        "column": 8,
+                        "line": 3
+                      }
                     },
-                    "_meta": {}
+                    "local": null,
+                    "type": "ImportExpression"
                   },
-                  "cloned": true,
-                  "varType": {
-                    "type": "DynamicType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
-                  "variableParam": false,
                   "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 3,
-                      "column": 8
-                    },
                     "end": {
-                      "Offset": 0,
-                      "line": 3,
-                      "column": 13
+                      "column": 13,
+                      "line": 3
                     },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                    "sourcefile": "$EXAMPLES/constDecl.go",
+                    "start": {
+                      "column": 8,
+                      "line": 3
+                    }
                   },
-                  "_meta": {}
+                  "type": "VariableDeclaration",
+                  "varType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "DynamicType",
+                    "typeArguments": null
+                  },
+                  "variableParam": false
                 },
                 {
-                  "type": "FunctionDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "constMultiRet",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 7,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 7,
-                        "column": 19
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                    },
-                    "_meta": {}
-                  },
-                  "parameters": [],
-                  "returnType": {
-                    "type": "TupleType",
-                    "id": null,
-                    "elements": [
-                      {
-                        "type": "Identifier",
-                        "name": "int",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 7,
-                            "column": 23
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 7,
-                            "column": 26
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                        },
-                        "_meta": {}
-                      },
-                      {
-                        "type": "Identifier",
-                        "name": "int",
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 7,
-                            "column": 28
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 7,
-                            "column": 31
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                        },
-                        "_meta": {}
-                      }
-                    ],
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "body": {
-                    "type": "ScopedStatement",
+                    "_meta": {},
                     "body": [
                       {
-                        "type": "ReturnStatement",
+                        "_meta": {},
                         "argument": {
-                          "type": "TupleExpression",
+                          "_meta": {},
                           "elements": [
                             {
-                              "type": "Literal",
-                              "value": "1",
+                              "_meta": {},
                               "literalType": "INT",
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 8,
-                                  "column": 9
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 8,
-                                  "column": 10
+                                  "column": 10,
+                                  "line": 8
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                                "sourcefile": "$EXAMPLES/constDecl.go",
+                                "start": {
+                                  "column": 9,
+                                  "line": 8
+                                }
                               },
-                              "_meta": {}
+                              "type": "Literal",
+                              "value": "1"
                             },
                             {
-                              "type": "Literal",
-                              "value": "2",
+                              "_meta": {},
                               "literalType": "INT",
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 8,
-                                  "column": 12
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 8,
-                                  "column": 13
+                                  "column": 13,
+                                  "line": 8
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                                "sourcefile": "$EXAMPLES/constDecl.go",
+                                "start": {
+                                  "column": 12,
+                                  "line": 8
+                                }
                               },
-                              "_meta": {}
+                              "type": "Literal",
+                              "value": "2"
                             }
                           ],
-                          "modifiable": false,
                           "loc": null,
-                          "_meta": {}
+                          "modifiable": false,
+                          "type": "TupleExpression"
                         },
                         "isYield": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 8,
-                            "column": 2
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 8,
-                            "column": 13
+                            "column": 13,
+                            "line": 8
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                          "sourcefile": "$EXAMPLES/constDecl.go",
+                          "start": {
+                            "column": 2,
+                            "line": 8
+                          }
                         },
-                        "_meta": {}
+                        "type": "ReturnStatement"
                       }
                     ],
                     "id": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 7,
-                        "column": 33
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 9,
-                        "column": 2
+                        "column": 2,
+                        "line": 9
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                      "sourcefile": "$EXAMPLES/constDecl.go",
+                      "start": {
+                        "column": 33,
+                        "line": 7
+                      }
                     },
-                    "_meta": {}
+                    "type": "ScopedStatement"
+                  },
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 19,
+                        "line": 7
+                      },
+                      "sourcefile": "$EXAMPLES/constDecl.go",
+                      "start": {
+                        "column": 6,
+                        "line": 7
+                      }
+                    },
+                    "name": "constMultiRet",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 9
+                    },
+                    "sourcefile": "$EXAMPLES/constDecl.go",
+                    "start": {
+                      "column": 1,
+                      "line": 7
+                    }
                   },
                   "modifiers": null,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 7,
-                      "column": 1
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 9,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                  },
-                  "_meta": {}
-                },
-                {
-                  "type": "FunctionDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "ConstDecls",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 11,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 11,
-                        "column": 16
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                    },
-                    "_meta": {}
-                  },
                   "parameters": [],
                   "returnType": {
-                    "type": "VoidType",
+                    "_meta": {},
+                    "elements": [
+                      {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 26,
+                            "line": 7
+                          },
+                          "sourcefile": "$EXAMPLES/constDecl.go",
+                          "start": {
+                            "column": 23,
+                            "line": 7
+                          }
+                        },
+                        "name": "int",
+                        "type": "Identifier"
+                      },
+                      {
+                        "_meta": {},
+                        "loc": {
+                          "end": {
+                            "column": 31,
+                            "line": 7
+                          },
+                          "sourcefile": "$EXAMPLES/constDecl.go",
+                          "start": {
+                            "column": 28,
+                            "line": 7
+                          }
+                        },
+                        "name": "int",
+                        "type": "Identifier"
+                      }
+                    ],
                     "id": null,
-                    "typeArguments": null,
                     "loc": null,
-                    "_meta": {}
+                    "type": "TupleType",
+                    "typeArguments": null
                   },
+                  "type": "FunctionDefinition"
+                },
+                {
+                  "_meta": {},
                   "body": {
-                    "type": "ScopedStatement",
+                    "_meta": {},
                     "body": [
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": false,
                         "id": {
-                          "type": "Identifier",
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "id": null,
+                              "loc": null,
+                              "type": "DynamicType",
+                              "typeArguments": null
+                            }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 5,
+                              "line": 13
+                            },
+                            "sourcefile": "$EXAMPLES/constDecl.go",
+                            "start": {
+                              "column": 3,
+                              "line": 13
+                            }
+                          },
                           "name": "c0",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 13,
-                              "column": 3
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 13,
-                              "column": 5
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "DynamicType",
-                              "id": null,
-                              "typeArguments": null,
-                              "loc": null,
-                              "_meta": {}
-                            }
-                          }
+                          "type": "Identifier"
                         },
                         "init": {
-                          "type": "Identifier",
-                          "name": "iota",
+                          "_meta": {},
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 13,
-                              "column": 8
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 13,
-                              "column": 12
+                              "column": 12,
+                              "line": 13
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                            "sourcefile": "$EXAMPLES/constDecl.go",
+                            "start": {
+                              "column": 8,
+                              "line": 13
+                            }
                           },
-                          "_meta": {}
+                          "name": "iota",
+                          "type": "Identifier"
                         },
-                        "cloned": false,
-                        "varType": {
-                          "type": "DynamicType",
-                          "id": null,
-                          "typeArguments": null,
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "variableParam": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 13,
-                            "column": 3
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 13,
-                            "column": 12
+                            "column": 12,
+                            "line": 13
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                          "sourcefile": "$EXAMPLES/constDecl.go",
+                          "start": {
+                            "column": 3,
+                            "line": 13
+                          }
                         },
-                        "_meta": {}
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "id": null,
+                          "loc": null,
+                          "type": "DynamicType",
+                          "typeArguments": null
+                        },
+                        "variableParam": false
                       },
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": false,
                         "id": {
-                          "type": "Identifier",
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "id": null,
+                              "loc": null,
+                              "type": "DynamicType",
+                              "typeArguments": null
+                            }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 5,
+                              "line": 14
+                            },
+                            "sourcefile": "$EXAMPLES/constDecl.go",
+                            "start": {
+                              "column": 3,
+                              "line": 14
+                            }
+                          },
                           "name": "c1",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 14,
-                              "column": 3
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 14,
-                              "column": 5
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "DynamicType",
-                              "id": null,
-                              "typeArguments": null,
-                              "loc": null,
-                              "_meta": {}
-                            }
-                          }
+                          "type": "Identifier"
                         },
                         "init": {
-                          "type": "Identifier",
-                          "name": "iota",
+                          "_meta": {},
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 14,
-                              "column": 8
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 14,
-                              "column": 12
+                              "column": 12,
+                              "line": 14
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                            "sourcefile": "$EXAMPLES/constDecl.go",
+                            "start": {
+                              "column": 8,
+                              "line": 14
+                            }
                           },
-                          "_meta": {}
+                          "name": "iota",
+                          "type": "Identifier"
                         },
-                        "cloned": false,
-                        "varType": {
-                          "type": "DynamicType",
-                          "id": null,
-                          "typeArguments": null,
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "variableParam": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 14,
-                            "column": 3
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 14,
-                            "column": 12
+                            "column": 12,
+                            "line": 14
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                          "sourcefile": "$EXAMPLES/constDecl.go",
+                          "start": {
+                            "column": 3,
+                            "line": 14
+                          }
                         },
-                        "_meta": {}
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "id": null,
+                          "loc": null,
+                          "type": "DynamicType",
+                          "typeArguments": null
+                        },
+                        "variableParam": false
                       },
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": false,
                         "id": {
-                          "type": "Identifier",
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "id": null,
+                              "loc": null,
+                              "type": "DynamicType",
+                              "typeArguments": null
+                            }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 5,
+                              "line": 15
+                            },
+                            "sourcefile": "$EXAMPLES/constDecl.go",
+                            "start": {
+                              "column": 3,
+                              "line": 15
+                            }
+                          },
                           "name": "c2",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 15,
-                              "column": 3
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 15,
-                              "column": 5
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "DynamicType",
-                              "id": null,
-                              "typeArguments": null,
-                              "loc": null,
-                              "_meta": {}
-                            }
-                          }
+                          "type": "Identifier"
                         },
                         "init": {
-                          "type": "Identifier",
-                          "name": "iota",
+                          "_meta": {},
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 15,
-                              "column": 8
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 15,
-                              "column": 12
+                              "column": 12,
+                              "line": 15
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                            "sourcefile": "$EXAMPLES/constDecl.go",
+                            "start": {
+                              "column": 8,
+                              "line": 15
+                            }
                           },
-                          "_meta": {}
+                          "name": "iota",
+                          "type": "Identifier"
                         },
-                        "cloned": false,
-                        "varType": {
-                          "type": "DynamicType",
-                          "id": null,
-                          "typeArguments": null,
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "variableParam": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 15,
-                            "column": 3
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 15,
-                            "column": 12
+                            "column": 12,
+                            "line": 15
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                          "sourcefile": "$EXAMPLES/constDecl.go",
+                          "start": {
+                            "column": 3,
+                            "line": 15
+                          }
                         },
-                        "_meta": {}
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "id": null,
+                          "loc": null,
+                          "type": "DynamicType",
+                          "typeArguments": null
+                        },
+                        "variableParam": false
                       },
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": false,
                         "id": {
-                          "type": "Identifier",
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "id": null,
+                              "loc": null,
+                              "type": "DynamicType",
+                              "typeArguments": null
+                            }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 9,
+                              "line": 18
+                            },
+                            "sourcefile": "$EXAMPLES/constDecl.go",
+                            "start": {
+                              "column": 3,
+                              "line": 18
+                            }
+                          },
                           "name": "Sunday",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 18,
-                              "column": 3
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 18,
-                              "column": 9
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "DynamicType",
-                              "id": null,
-                              "typeArguments": null,
-                              "loc": null,
-                              "_meta": {}
-                            }
-                          }
+                          "type": "Identifier"
                         },
                         "init": {
-                          "type": "Identifier",
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 16,
+                              "line": 18
+                            },
+                            "sourcefile": "$EXAMPLES/constDecl.go",
+                            "start": {
+                              "column": 12,
+                              "line": 18
+                            }
+                          },
                           "name": "iota",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 18,
-                              "column": 12
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 18,
-                              "column": 16
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                          },
-                          "_meta": {}
+                          "type": "Identifier"
                         },
-                        "cloned": false,
-                        "varType": {
-                          "type": "DynamicType",
-                          "id": null,
-                          "typeArguments": null,
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "variableParam": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 18,
-                            "column": 3
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 18,
-                            "column": 16
+                            "column": 16,
+                            "line": 18
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                          "sourcefile": "$EXAMPLES/constDecl.go",
+                          "start": {
+                            "column": 3,
+                            "line": 18
+                          }
                         },
-                        "_meta": {}
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "id": null,
+                          "loc": null,
+                          "type": "DynamicType",
+                          "typeArguments": null
+                        },
+                        "variableParam": false
                       },
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": false,
                         "id": {
-                          "type": "Identifier",
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "id": null,
+                              "loc": null,
+                              "type": "DynamicType",
+                              "typeArguments": null
+                            }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 9,
+                              "line": 19
+                            },
+                            "sourcefile": "$EXAMPLES/constDecl.go",
+                            "start": {
+                              "column": 3,
+                              "line": 19
+                            }
+                          },
                           "name": "Monday",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 19,
-                              "column": 3
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 19,
-                              "column": 9
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "DynamicType",
-                              "id": null,
-                              "typeArguments": null,
-                              "loc": null,
-                              "_meta": {}
-                            }
-                          }
+                          "type": "Identifier"
                         },
                         "init": null,
-                        "cloned": false,
-                        "varType": {
-                          "type": "DynamicType",
-                          "id": null,
-                          "typeArguments": null,
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "variableParam": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 19,
-                            "column": 3
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 19,
-                            "column": 9
+                            "column": 9,
+                            "line": 19
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                          "sourcefile": "$EXAMPLES/constDecl.go",
+                          "start": {
+                            "column": 3,
+                            "line": 19
+                          }
                         },
-                        "_meta": {}
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "id": null,
+                          "loc": null,
+                          "type": "DynamicType",
+                          "typeArguments": null
+                        },
+                        "variableParam": false
                       },
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": false,
                         "id": {
-                          "type": "Identifier",
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "id": null,
+                              "loc": null,
+                              "type": "DynamicType",
+                              "typeArguments": null
+                            }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 10,
+                              "line": 20
+                            },
+                            "sourcefile": "$EXAMPLES/constDecl.go",
+                            "start": {
+                              "column": 3,
+                              "line": 20
+                            }
+                          },
                           "name": "Tuesday",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 20,
-                              "column": 3
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 20,
-                              "column": 10
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "DynamicType",
-                              "id": null,
-                              "typeArguments": null,
-                              "loc": null,
-                              "_meta": {}
-                            }
-                          }
+                          "type": "Identifier"
                         },
                         "init": null,
-                        "cloned": false,
-                        "varType": {
-                          "type": "DynamicType",
-                          "id": null,
-                          "typeArguments": null,
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "variableParam": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 20,
-                            "column": 3
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 20,
-                            "column": 10
+                            "column": 10,
+                            "line": 20
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                          "sourcefile": "$EXAMPLES/constDecl.go",
+                          "start": {
+                            "column": 3,
+                            "line": 20
+                          }
                         },
-                        "_meta": {}
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "id": null,
+                          "loc": null,
+                          "type": "DynamicType",
+                          "typeArguments": null
+                        },
+                        "variableParam": false
                       },
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": false,
                         "id": {
-                          "type": "Identifier",
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "id": null,
+                              "loc": null,
+                              "type": "DynamicType",
+                              "typeArguments": null
+                            }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 12,
+                              "line": 21
+                            },
+                            "sourcefile": "$EXAMPLES/constDecl.go",
+                            "start": {
+                              "column": 3,
+                              "line": 21
+                            }
+                          },
                           "name": "Wednesday",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 21,
-                              "column": 3
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 21,
-                              "column": 12
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "DynamicType",
-                              "id": null,
-                              "typeArguments": null,
-                              "loc": null,
-                              "_meta": {}
-                            }
-                          }
+                          "type": "Identifier"
                         },
                         "init": null,
-                        "cloned": false,
-                        "varType": {
-                          "type": "DynamicType",
-                          "id": null,
-                          "typeArguments": null,
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "variableParam": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 21,
-                            "column": 3
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 21,
-                            "column": 12
+                            "column": 12,
+                            "line": 21
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                          "sourcefile": "$EXAMPLES/constDecl.go",
+                          "start": {
+                            "column": 3,
+                            "line": 21
+                          }
                         },
-                        "_meta": {}
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "id": null,
+                          "loc": null,
+                          "type": "DynamicType",
+                          "typeArguments": null
+                        },
+                        "variableParam": false
                       },
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": false,
                         "id": {
-                          "type": "Identifier",
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "id": null,
+                              "loc": null,
+                              "type": "DynamicType",
+                              "typeArguments": null
+                            }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 11,
+                              "line": 22
+                            },
+                            "sourcefile": "$EXAMPLES/constDecl.go",
+                            "start": {
+                              "column": 3,
+                              "line": 22
+                            }
+                          },
                           "name": "Thursday",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 22,
-                              "column": 3
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 22,
-                              "column": 11
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "DynamicType",
-                              "id": null,
-                              "typeArguments": null,
-                              "loc": null,
-                              "_meta": {}
-                            }
-                          }
+                          "type": "Identifier"
                         },
                         "init": null,
-                        "cloned": false,
-                        "varType": {
-                          "type": "DynamicType",
-                          "id": null,
-                          "typeArguments": null,
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "variableParam": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 22,
-                            "column": 3
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 22,
-                            "column": 11
+                            "column": 11,
+                            "line": 22
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                          "sourcefile": "$EXAMPLES/constDecl.go",
+                          "start": {
+                            "column": 3,
+                            "line": 22
+                          }
                         },
-                        "_meta": {}
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "id": null,
+                          "loc": null,
+                          "type": "DynamicType",
+                          "typeArguments": null
+                        },
+                        "variableParam": false
                       },
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": false,
                         "id": {
-                          "type": "Identifier",
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "id": null,
+                              "loc": null,
+                              "type": "DynamicType",
+                              "typeArguments": null
+                            }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 9,
+                              "line": 23
+                            },
+                            "sourcefile": "$EXAMPLES/constDecl.go",
+                            "start": {
+                              "column": 3,
+                              "line": 23
+                            }
+                          },
                           "name": "Friday",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 23,
-                              "column": 3
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 23,
-                              "column": 9
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "DynamicType",
-                              "id": null,
-                              "typeArguments": null,
-                              "loc": null,
-                              "_meta": {}
-                            }
-                          }
+                          "type": "Identifier"
                         },
                         "init": null,
-                        "cloned": false,
-                        "varType": {
-                          "type": "DynamicType",
-                          "id": null,
-                          "typeArguments": null,
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "variableParam": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 23,
-                            "column": 3
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 23,
-                            "column": 9
+                            "column": 9,
+                            "line": 23
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                          "sourcefile": "$EXAMPLES/constDecl.go",
+                          "start": {
+                            "column": 3,
+                            "line": 23
+                          }
                         },
-                        "_meta": {}
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "id": null,
+                          "loc": null,
+                          "type": "DynamicType",
+                          "typeArguments": null
+                        },
+                        "variableParam": false
                       },
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": false,
                         "id": {
-                          "type": "Identifier",
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "id": null,
+                              "loc": null,
+                              "type": "DynamicType",
+                              "typeArguments": null
+                            }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 11,
+                              "line": 24
+                            },
+                            "sourcefile": "$EXAMPLES/constDecl.go",
+                            "start": {
+                              "column": 3,
+                              "line": 24
+                            }
+                          },
                           "name": "Partyday",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 24,
-                              "column": 3
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 24,
-                              "column": 11
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "DynamicType",
-                              "id": null,
-                              "typeArguments": null,
-                              "loc": null,
-                              "_meta": {}
-                            }
-                          }
+                          "type": "Identifier"
                         },
                         "init": null,
-                        "cloned": false,
-                        "varType": {
-                          "type": "DynamicType",
-                          "id": null,
-                          "typeArguments": null,
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "variableParam": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 24,
-                            "column": 3
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 24,
-                            "column": 11
+                            "column": 11,
+                            "line": 24
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                          "sourcefile": "$EXAMPLES/constDecl.go",
+                          "start": {
+                            "column": 3,
+                            "line": 24
+                          }
                         },
-                        "_meta": {}
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "id": null,
+                          "loc": null,
+                          "type": "DynamicType",
+                          "typeArguments": null
+                        },
+                        "variableParam": false
                       },
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": false,
                         "id": {
-                          "type": "Identifier",
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "id": null,
+                              "loc": null,
+                              "type": "DynamicType",
+                              "typeArguments": null
+                            }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 15,
+                              "line": 25
+                            },
+                            "sourcefile": "$EXAMPLES/constDecl.go",
+                            "start": {
+                              "column": 3,
+                              "line": 25
+                            }
+                          },
                           "name": "numberOfDays",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 25,
-                              "column": 3
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 25,
-                              "column": 15
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "DynamicType",
-                              "id": null,
-                              "typeArguments": null,
-                              "loc": null,
-                              "_meta": {}
-                            }
-                          }
+                          "type": "Identifier"
                         },
                         "init": null,
-                        "cloned": false,
+                        "loc": {
+                          "end": {
+                            "column": 15,
+                            "line": 25
+                          },
+                          "sourcefile": "$EXAMPLES/constDecl.go",
+                          "start": {
+                            "column": 3,
+                            "line": 25
+                          }
+                        },
+                        "type": "VariableDeclaration",
                         "varType": {
-                          "type": "DynamicType",
+                          "_meta": {},
                           "id": null,
-                          "typeArguments": null,
                           "loc": null,
-                          "_meta": {}
+                          "type": "DynamicType",
+                          "typeArguments": null
                         },
-                        "variableParam": false,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 25,
-                            "column": 3
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 25,
-                            "column": 15
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                        },
-                        "_meta": {}
+                        "variableParam": false
                       },
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": false,
                         "id": {
-                          "type": "Identifier",
-                          "name": "Pi",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 27,
-                              "column": 8
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 27,
-                              "column": 10
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                          },
                           "_meta": {
+                            "ReceiveCls": "",
                             "type": {
-                              "type": "Identifier",
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 18,
+                                  "line": 27
+                                },
+                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/constDecl.go",
+                                "start": {
+                                  "column": 11,
+                                  "line": 27
+                                }
+                              },
                               "name": "float64",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 27,
-                                  "column": 11
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 27,
-                                  "column": 18
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                              },
-                              "_meta": {}
+                              "type": "Identifier"
                             }
-                          }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 10,
+                              "line": 27
+                            },
+                            "sourcefile": "$EXAMPLES/constDecl.go",
+                            "start": {
+                              "column": 8,
+                              "line": 27
+                            }
+                          },
+                          "name": "Pi",
+                          "type": "Identifier"
                         },
                         "init": {
-                          "type": "Literal",
-                          "value": "3.14159265358979323846",
+                          "_meta": {},
                           "literalType": "FLOAT",
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 27,
-                              "column": 21
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 27,
-                              "column": 43
+                              "column": 43,
+                              "line": 27
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                            "sourcefile": "$EXAMPLES/constDecl.go",
+                            "start": {
+                              "column": 21,
+                              "line": 27
+                            }
                           },
-                          "_meta": {}
+                          "type": "Literal",
+                          "value": "3.14159265358979323846"
                         },
-                        "cloned": false,
+                        "loc": {
+                          "end": {
+                            "column": 43,
+                            "line": 27
+                          },
+                          "sourcefile": "$EXAMPLES/constDecl.go",
+                          "start": {
+                            "column": 8,
+                            "line": 27
+                          }
+                        },
+                        "type": "VariableDeclaration",
                         "varType": {
-                          "type": "Identifier",
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 18,
+                              "line": 27
+                            },
+                            "sourcefile": "$EXAMPLES/constDecl.go",
+                            "start": {
+                              "column": 11,
+                              "line": 27
+                            }
+                          },
                           "name": "float64",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 27,
-                              "column": 11
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 27,
-                              "column": 18
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                          },
-                          "_meta": {}
+                          "type": "Identifier"
                         },
-                        "variableParam": false,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 27,
-                            "column": 8
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 27,
-                            "column": 43
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                        },
-                        "_meta": {}
+                        "variableParam": false
                       },
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": false,
                         "id": {
-                          "type": "Identifier",
-                          "name": "zero",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 28,
-                              "column": 8
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 28,
-                              "column": 12
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                          },
                           "_meta": {
+                            "ReceiveCls": "",
                             "type": {
-                              "type": "Identifier",
-                              "name": "float",
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
                               "loc": null,
-                              "_meta": {}
+                              "name": "float",
+                              "type": "Identifier"
                             }
-                          }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 12,
+                              "line": 28
+                            },
+                            "sourcefile": "$EXAMPLES/constDecl.go",
+                            "start": {
+                              "column": 8,
+                              "line": 28
+                            }
+                          },
+                          "name": "zero",
+                          "type": "Identifier"
                         },
                         "init": {
-                          "type": "Literal",
-                          "value": "0.0",
+                          "_meta": {},
                           "literalType": "FLOAT",
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 28,
-                              "column": 15
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 28,
-                              "column": 18
+                              "column": 18,
+                              "line": 28
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                          },
-                          "_meta": {}
-                        },
-                        "cloned": false,
-                        "varType": {
-                          "type": "Identifier",
-                          "name": "float",
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "variableParam": false,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 28,
-                            "column": 8
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 28,
-                            "column": 18
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                        },
-                        "_meta": {}
-                      },
-                      {
-                        "type": "VariableDeclaration",
-                        "id": {
-                          "type": "Identifier",
-                          "name": "size",
-                          "loc": {
+                            "sourcefile": "$EXAMPLES/constDecl.go",
                             "start": {
-                              "Offset": 0,
-                              "line": 30,
-                              "column": 3
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 30,
-                              "column": 7
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "Identifier",
-                              "name": "int64",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 30,
-                                  "column": 8
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 30,
-                                  "column": 13
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                              },
-                              "_meta": {}
+                              "column": 15,
+                              "line": 28
                             }
+                          },
+                          "type": "Literal",
+                          "value": "0.0"
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 18,
+                            "line": 28
+                          },
+                          "sourcefile": "$EXAMPLES/constDecl.go",
+                          "start": {
+                            "column": 8,
+                            "line": 28
                           }
                         },
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "loc": null,
+                          "name": "float",
+                          "type": "Identifier"
+                        },
+                        "variableParam": false
+                      },
+                      {
+                        "_meta": {},
+                        "cloned": false,
+                        "id": {
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 13,
+                                  "line": 30
+                                },
+                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/constDecl.go",
+                                "start": {
+                                  "column": 8,
+                                  "line": 30
+                                }
+                              },
+                              "name": "int64",
+                              "type": "Identifier"
+                            }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 7,
+                              "line": 30
+                            },
+                            "sourcefile": "$EXAMPLES/constDecl.go",
+                            "start": {
+                              "column": 3,
+                              "line": 30
+                            }
+                          },
+                          "name": "size",
+                          "type": "Identifier"
+                        },
                         "init": {
-                          "type": "Literal",
-                          "value": "1024",
+                          "_meta": {},
                           "literalType": "INT",
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 30,
-                              "column": 16
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 30,
-                              "column": 20
+                              "column": 20,
+                              "line": 30
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                          },
-                          "_meta": {}
-                        },
-                        "cloned": false,
-                        "varType": {
-                          "type": "Identifier",
-                          "name": "int64",
-                          "loc": {
+                            "sourcefile": "$EXAMPLES/constDecl.go",
                             "start": {
-                              "Offset": 0,
-                              "line": 30,
-                              "column": 8
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 30,
-                              "column": 13
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                          },
-                          "_meta": {}
-                        },
-                        "variableParam": false,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 30,
-                            "column": 3
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 30,
-                            "column": 20
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                        },
-                        "_meta": {}
-                      },
-                      {
-                        "type": "VariableDeclaration",
-                        "id": {
-                          "type": "Identifier",
-                          "name": "eof",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 31,
-                              "column": 3
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 31,
-                              "column": 6
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "DynamicType",
-                              "id": null,
-                              "typeArguments": null,
-                              "loc": null,
-                              "_meta": {}
+                              "column": 16,
+                              "line": 30
                             }
+                          },
+                          "type": "Literal",
+                          "value": "1024"
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 20,
+                            "line": 30
+                          },
+                          "sourcefile": "$EXAMPLES/constDecl.go",
+                          "start": {
+                            "column": 3,
+                            "line": 30
                           }
                         },
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "loc": {
+                            "end": {
+                              "column": 13,
+                              "line": 30
+                            },
+                            "sourcefile": "$EXAMPLES/constDecl.go",
+                            "start": {
+                              "column": 8,
+                              "line": 30
+                            }
+                          },
+                          "name": "int64",
+                          "type": "Identifier"
+                        },
+                        "variableParam": false
+                      },
+                      {
+                        "_meta": {},
+                        "cloned": false,
+                        "id": {
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "id": null,
+                              "loc": null,
+                              "type": "DynamicType",
+                              "typeArguments": null
+                            }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 6,
+                              "line": 31
+                            },
+                            "sourcefile": "$EXAMPLES/constDecl.go",
+                            "start": {
+                              "column": 3,
+                              "line": 31
+                            }
+                          },
+                          "name": "eof",
+                          "type": "Identifier"
+                        },
                         "init": {
-                          "type": "UnaryExpression",
-                          "operator": "-",
+                          "_meta": {},
                           "argument": {
-                            "type": "Literal",
-                            "value": "1",
+                            "_meta": {},
                             "literalType": "INT",
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 31,
-                                "column": 17
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 31,
-                                "column": 18
+                                "column": 18,
+                                "line": 31
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                              "sourcefile": "$EXAMPLES/constDecl.go",
+                              "start": {
+                                "column": 17,
+                                "line": 31
+                              }
                             },
-                            "_meta": {}
+                            "type": "Literal",
+                            "value": "1"
                           },
                           "isSuffix": false,
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 31,
-                              "column": 16
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 31,
-                              "column": 18
+                              "column": 18,
+                              "line": 31
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                            "sourcefile": "$EXAMPLES/constDecl.go",
+                            "start": {
+                              "column": 16,
+                              "line": 31
+                            }
                           },
-                          "_meta": {}
+                          "operator": "-",
+                          "type": "UnaryExpression"
                         },
-                        "cloned": false,
-                        "varType": {
-                          "type": "DynamicType",
-                          "id": null,
-                          "typeArguments": null,
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "variableParam": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 31,
-                            "column": 3
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 31,
-                            "column": 18
+                            "column": 18,
+                            "line": 31
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                          "sourcefile": "$EXAMPLES/constDecl.go",
+                          "start": {
+                            "column": 3,
+                            "line": 31
+                          }
                         },
-                        "_meta": {}
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "id": null,
+                          "loc": null,
+                          "type": "DynamicType",
+                          "typeArguments": null
+                        },
+                        "variableParam": false
                       },
                       {
-                        "type": "Sequence",
+                        "_meta": {},
                         "expressions": [
                           {
-                            "type": "VariableDeclaration",
+                            "_meta": {},
+                            "cloned": false,
                             "id": {
-                              "type": "Identifier",
+                              "_meta": {
+                                "ReceiveCls": "",
+                                "type": {
+                                  "_meta": {
+                                    "ReceiveCls": ""
+                                  },
+                                  "loc": null,
+                                  "name": "int",
+                                  "type": "Identifier"
+                                }
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 9,
+                                  "line": 33
+                                },
+                                "sourcefile": "$EXAMPLES/constDecl.go",
+                                "start": {
+                                  "column": 8,
+                                  "line": 33
+                                }
+                              },
                               "name": "a",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 33,
-                                  "column": 8
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 33,
-                                  "column": 9
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                              },
-                              "_meta": {
-                                "type": {
-                                  "type": "Identifier",
-                                  "name": "int",
-                                  "loc": null,
-                                  "_meta": {}
-                                }
-                              }
+                              "type": "Identifier"
                             },
                             "init": {
-                              "type": "Literal",
-                              "value": "3",
+                              "_meta": {},
                               "literalType": "INT",
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 33,
-                                  "column": 18
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 33,
-                                  "column": 19
+                                  "column": 19,
+                                  "line": 33
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                                "sourcefile": "$EXAMPLES/constDecl.go",
+                                "start": {
+                                  "column": 18,
+                                  "line": 33
+                                }
                               },
-                              "_meta": {}
+                              "type": "Literal",
+                              "value": "3"
                             },
-                            "cloned": false,
-                            "varType": {
-                              "type": "Identifier",
-                              "name": "int",
-                              "loc": null,
-                              "_meta": {}
-                            },
-                            "variableParam": false,
                             "loc": null,
-                            "_meta": {}
+                            "type": "VariableDeclaration",
+                            "varType": {
+                              "_meta": {},
+                              "loc": null,
+                              "name": "int",
+                              "type": "Identifier"
+                            },
+                            "variableParam": false
                           },
                           {
-                            "type": "VariableDeclaration",
+                            "_meta": {},
+                            "cloned": false,
                             "id": {
-                              "type": "Identifier",
+                              "_meta": {
+                                "ReceiveCls": "",
+                                "type": {
+                                  "_meta": {
+                                    "ReceiveCls": ""
+                                  },
+                                  "loc": null,
+                                  "name": "int",
+                                  "type": "Identifier"
+                                }
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 12,
+                                  "line": 33
+                                },
+                                "sourcefile": "$EXAMPLES/constDecl.go",
+                                "start": {
+                                  "column": 11,
+                                  "line": 33
+                                }
+                              },
                               "name": "b",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 33,
-                                  "column": 11
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 33,
-                                  "column": 12
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                              },
-                              "_meta": {
-                                "type": {
-                                  "type": "Identifier",
-                                  "name": "int",
-                                  "loc": null,
-                                  "_meta": {}
-                                }
-                              }
+                              "type": "Identifier"
                             },
                             "init": {
-                              "type": "Literal",
-                              "value": "4",
+                              "_meta": {},
                               "literalType": "INT",
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 33,
-                                  "column": 21
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 33,
-                                  "column": 22
+                                  "column": 22,
+                                  "line": 33
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                                "sourcefile": "$EXAMPLES/constDecl.go",
+                                "start": {
+                                  "column": 21,
+                                  "line": 33
+                                }
                               },
-                              "_meta": {}
+                              "type": "Literal",
+                              "value": "4"
                             },
-                            "cloned": false,
-                            "varType": {
-                              "type": "Identifier",
-                              "name": "int",
-                              "loc": null,
-                              "_meta": {}
-                            },
-                            "variableParam": false,
                             "loc": null,
-                            "_meta": {}
+                            "type": "VariableDeclaration",
+                            "varType": {
+                              "_meta": {},
+                              "loc": null,
+                              "name": "int",
+                              "type": "Identifier"
+                            },
+                            "variableParam": false
                           },
                           {
-                            "type": "VariableDeclaration",
+                            "_meta": {},
+                            "cloned": false,
                             "id": {
-                              "type": "Identifier",
-                              "name": "c",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 33,
-                                  "column": 14
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 33,
-                                  "column": 15
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                              },
                               "_meta": {
+                                "ReceiveCls": "",
                                 "type": {
-                                  "type": "Identifier",
-                                  "name": "string",
+                                  "_meta": {
+                                    "ReceiveCls": ""
+                                  },
                                   "loc": null,
-                                  "_meta": {}
+                                  "name": "string",
+                                  "type": "Identifier"
                                 }
-                              }
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 15,
+                                  "line": 33
+                                },
+                                "sourcefile": "$EXAMPLES/constDecl.go",
+                                "start": {
+                                  "column": 14,
+                                  "line": 33
+                                }
+                              },
+                              "name": "c",
+                              "type": "Identifier"
                             },
                             "init": {
-                              "type": "Literal",
-                              "value": "\"foo\"",
+                              "_meta": {},
                               "literalType": "STRING",
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 33,
-                                  "column": 24
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 33,
-                                  "column": 29
+                                  "column": 29,
+                                  "line": 33
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                                "sourcefile": "$EXAMPLES/constDecl.go",
+                                "start": {
+                                  "column": 24,
+                                  "line": 33
+                                }
                               },
-                              "_meta": {}
+                              "type": "Literal",
+                              "value": "\"foo\""
                             },
-                            "cloned": false,
-                            "varType": {
-                              "type": "Identifier",
-                              "name": "string",
-                              "loc": null,
-                              "_meta": {}
-                            },
-                            "variableParam": false,
                             "loc": null,
-                            "_meta": {}
+                            "type": "VariableDeclaration",
+                            "varType": {
+                              "_meta": {},
+                              "loc": null,
+                              "name": "string",
+                              "type": "Identifier"
+                            },
+                            "variableParam": false
                           }
                         ],
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 33,
-                            "column": 8
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 33,
-                            "column": 29
+                            "column": 29,
+                            "line": 33
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                          "sourcefile": "$EXAMPLES/constDecl.go",
+                          "start": {
+                            "column": 8,
+                            "line": 33
+                          }
                         },
-                        "_meta": {}
+                        "type": "Sequence"
                       },
                       {
-                        "type": "Sequence",
+                        "_meta": {},
                         "expressions": [
                           {
-                            "type": "VariableDeclaration",
+                            "_meta": {},
+                            "cloned": false,
                             "id": {
-                              "type": "Identifier",
-                              "name": "u",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 34,
-                                  "column": 8
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 34,
-                                  "column": 9
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                              },
                               "_meta": {
+                                "ReceiveCls": "",
                                 "type": {
-                                  "type": "Identifier",
-                                  "name": "float32",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 34,
-                                      "column": 13
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 34,
-                                      "column": 20
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                                  "_meta": {
+                                    "ReceiveCls": ""
                                   },
-                                  "_meta": {}
+                                  "loc": {
+                                    "end": {
+                                      "column": 20,
+                                      "line": 34
+                                    },
+                                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/constDecl.go",
+                                    "start": {
+                                      "column": 13,
+                                      "line": 34
+                                    }
+                                  },
+                                  "name": "float32",
+                                  "type": "Identifier"
                                 }
-                              }
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 9,
+                                  "line": 34
+                                },
+                                "sourcefile": "$EXAMPLES/constDecl.go",
+                                "start": {
+                                  "column": 8,
+                                  "line": 34
+                                }
+                              },
+                              "name": "u",
+                              "type": "Identifier"
                             },
                             "init": {
-                              "type": "Literal",
-                              "value": "0",
+                              "_meta": {},
                               "literalType": "INT",
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 34,
-                                  "column": 23
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 34,
-                                  "column": 24
+                                  "column": 24,
+                                  "line": 34
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                              },
-                              "_meta": {}
-                            },
-                            "cloned": false,
-                            "varType": {
-                              "type": "Identifier",
-                              "name": "float32",
-                              "loc": {
+                                "sourcefile": "$EXAMPLES/constDecl.go",
                                 "start": {
-                                  "Offset": 0,
-                                  "line": 34,
-                                  "column": 13
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 34,
-                                  "column": 20
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                                  "column": 23,
+                                  "line": 34
+                                }
                               },
-                              "_meta": {}
+                              "type": "Literal",
+                              "value": "0"
                             },
-                            "variableParam": false,
                             "loc": null,
-                            "_meta": {}
+                            "type": "VariableDeclaration",
+                            "varType": {
+                              "_meta": {},
+                              "loc": {
+                                "end": {
+                                  "column": 20,
+                                  "line": 34
+                                },
+                                "sourcefile": "$EXAMPLES/constDecl.go",
+                                "start": {
+                                  "column": 13,
+                                  "line": 34
+                                }
+                              },
+                              "name": "float32",
+                              "type": "Identifier"
+                            },
+                            "variableParam": false
                           },
                           {
-                            "type": "VariableDeclaration",
+                            "_meta": {},
+                            "cloned": false,
                             "id": {
-                              "type": "Identifier",
-                              "name": "v",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 34,
-                                  "column": 11
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 34,
-                                  "column": 12
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                              },
                               "_meta": {
+                                "ReceiveCls": "",
                                 "type": {
-                                  "type": "Identifier",
-                                  "name": "float32",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 34,
-                                      "column": 13
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 34,
-                                      "column": 20
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                                  "_meta": {
+                                    "ReceiveCls": ""
                                   },
-                                  "_meta": {}
+                                  "loc": {
+                                    "end": {
+                                      "column": 20,
+                                      "line": 34
+                                    },
+                                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/constDecl.go",
+                                    "start": {
+                                      "column": 13,
+                                      "line": 34
+                                    }
+                                  },
+                                  "name": "float32",
+                                  "type": "Identifier"
                                 }
-                              }
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 12,
+                                  "line": 34
+                                },
+                                "sourcefile": "$EXAMPLES/constDecl.go",
+                                "start": {
+                                  "column": 11,
+                                  "line": 34
+                                }
+                              },
+                              "name": "v",
+                              "type": "Identifier"
                             },
                             "init": {
-                              "type": "Literal",
-                              "value": "3",
+                              "_meta": {},
                               "literalType": "INT",
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 34,
-                                  "column": 26
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 34,
-                                  "column": 27
+                                  "column": 27,
+                                  "line": 34
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                              },
-                              "_meta": {}
-                            },
-                            "cloned": false,
-                            "varType": {
-                              "type": "Identifier",
-                              "name": "float32",
-                              "loc": {
+                                "sourcefile": "$EXAMPLES/constDecl.go",
                                 "start": {
-                                  "Offset": 0,
-                                  "line": 34,
-                                  "column": 13
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 34,
-                                  "column": 20
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                                  "column": 26,
+                                  "line": 34
+                                }
                               },
-                              "_meta": {}
+                              "type": "Literal",
+                              "value": "3"
                             },
-                            "variableParam": false,
                             "loc": null,
-                            "_meta": {}
+                            "type": "VariableDeclaration",
+                            "varType": {
+                              "_meta": {},
+                              "loc": {
+                                "end": {
+                                  "column": 20,
+                                  "line": 34
+                                },
+                                "sourcefile": "$EXAMPLES/constDecl.go",
+                                "start": {
+                                  "column": 13,
+                                  "line": 34
+                                }
+                              },
+                              "name": "float32",
+                              "type": "Identifier"
+                            },
+                            "variableParam": false
                           }
                         ],
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 34,
-                            "column": 8
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 34,
-                            "column": 27
+                            "column": 27,
+                            "line": 34
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                          "sourcefile": "$EXAMPLES/constDecl.go",
+                          "start": {
+                            "column": 8,
+                            "line": 34
+                          }
                         },
-                        "_meta": {}
+                        "type": "Sequence"
                       },
                       {
-                        "type": "CallExpression",
-                        "callee": {
-                          "type": "MemberAccess",
-                          "object": {
-                            "type": "Identifier",
-                            "name": "fmt",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 2
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 5
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                            },
-                            "_meta": {}
-                          },
-                          "property": {
-                            "type": "Identifier",
-                            "name": "Println",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 6
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 13
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                            },
-                            "_meta": {}
-                          },
-                          "computed": false,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 35,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 35,
-                              "column": 13
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                          },
-                          "_meta": {}
-                        },
+                        "_meta": {},
                         "arguments": [
                           {
-                            "type": "Identifier",
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 16,
+                                "line": 35
+                              },
+                              "sourcefile": "$EXAMPLES/constDecl.go",
+                              "start": {
+                                "column": 14,
+                                "line": 35
+                              }
+                            },
                             "name": "c0",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 14
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 16
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 20,
+                                "line": 35
+                              },
+                              "sourcefile": "$EXAMPLES/constDecl.go",
+                              "start": {
+                                "column": 18,
+                                "line": 35
+                              }
+                            },
                             "name": "c1",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 18
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 20
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 24,
+                                "line": 35
+                              },
+                              "sourcefile": "$EXAMPLES/constDecl.go",
+                              "start": {
+                                "column": 22,
+                                "line": 35
+                              }
+                            },
                             "name": "c2",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 22
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 24
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 32,
+                                "line": 35
+                              },
+                              "sourcefile": "$EXAMPLES/constDecl.go",
+                              "start": {
+                                "column": 26,
+                                "line": 35
+                              }
+                            },
                             "name": "Sunday",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 26
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 32
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 40,
+                                "line": 35
+                              },
+                              "sourcefile": "$EXAMPLES/constDecl.go",
+                              "start": {
+                                "column": 34,
+                                "line": 35
+                              }
+                            },
                             "name": "Monday",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 34
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 40
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 49,
+                                "line": 35
+                              },
+                              "sourcefile": "$EXAMPLES/constDecl.go",
+                              "start": {
+                                "column": 42,
+                                "line": 35
+                              }
+                            },
                             "name": "Tuesday",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 42
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 49
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 60,
+                                "line": 35
+                              },
+                              "sourcefile": "$EXAMPLES/constDecl.go",
+                              "start": {
+                                "column": 51,
+                                "line": 35
+                              }
+                            },
                             "name": "Wednesday",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 51
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 60
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 70,
+                                "line": 35
+                              },
+                              "sourcefile": "$EXAMPLES/constDecl.go",
+                              "start": {
+                                "column": 62,
+                                "line": 35
+                              }
+                            },
                             "name": "Thursday",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 62
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 70
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 78,
+                                "line": 35
+                              },
+                              "sourcefile": "$EXAMPLES/constDecl.go",
+                              "start": {
+                                "column": 72,
+                                "line": 35
+                              }
+                            },
                             "name": "Friday",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 72
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 78
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 88,
+                                "line": 35
+                              },
+                              "sourcefile": "$EXAMPLES/constDecl.go",
+                              "start": {
+                                "column": 80,
+                                "line": 35
+                              }
+                            },
                             "name": "Partyday",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 80
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 88
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 102,
+                                "line": 35
+                              },
+                              "sourcefile": "$EXAMPLES/constDecl.go",
+                              "start": {
+                                "column": 90,
+                                "line": 35
+                              }
+                            },
                             "name": "numberOfDays",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 90
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 102
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 106,
+                                "line": 35
+                              },
+                              "sourcefile": "$EXAMPLES/constDecl.go",
+                              "start": {
+                                "column": 104,
+                                "line": 35
+                              }
+                            },
                             "name": "Pi",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 104
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 106
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 112,
+                                "line": 35
+                              },
+                              "sourcefile": "$EXAMPLES/constDecl.go",
+                              "start": {
+                                "column": 108,
+                                "line": 35
+                              }
+                            },
                             "name": "zero",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 108
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 112
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 118,
+                                "line": 35
+                              },
+                              "sourcefile": "$EXAMPLES/constDecl.go",
+                              "start": {
+                                "column": 114,
+                                "line": 35
+                              }
+                            },
                             "name": "size",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 114
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 118
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 123,
+                                "line": 35
+                              },
+                              "sourcefile": "$EXAMPLES/constDecl.go",
+                              "start": {
+                                "column": 120,
+                                "line": 35
+                              }
+                            },
                             "name": "eof",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 120
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 123
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 126,
+                                "line": 35
+                              },
+                              "sourcefile": "$EXAMPLES/constDecl.go",
+                              "start": {
+                                "column": 125,
+                                "line": 35
+                              }
+                            },
                             "name": "a",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 125
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 126
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 129,
+                                "line": 35
+                              },
+                              "sourcefile": "$EXAMPLES/constDecl.go",
+                              "start": {
+                                "column": 128,
+                                "line": 35
+                              }
+                            },
                             "name": "b",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 128
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 129
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 132,
+                                "line": 35
+                              },
+                              "sourcefile": "$EXAMPLES/constDecl.go",
+                              "start": {
+                                "column": 131,
+                                "line": 35
+                              }
+                            },
                             "name": "c",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 131
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 132
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 135,
+                                "line": 35
+                              },
+                              "sourcefile": "$EXAMPLES/constDecl.go",
+                              "start": {
+                                "column": 134,
+                                "line": 35
+                              }
+                            },
                             "name": "u",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 134
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 135
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
-                            "name": "v",
+                            "_meta": {},
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 137
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 35,
-                                "column": 138
+                                "column": 138,
+                                "line": 35
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                              "sourcefile": "$EXAMPLES/constDecl.go",
+                              "start": {
+                                "column": 137,
+                                "line": 35
+                              }
                             },
-                            "_meta": {}
+                            "name": "v",
+                            "type": "Identifier"
                           }
                         ],
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 35,
-                            "column": 2
+                        "callee": {
+                          "_meta": {},
+                          "computed": false,
+                          "loc": {
+                            "end": {
+                              "column": 13,
+                              "line": 35
+                            },
+                            "sourcefile": "$EXAMPLES/constDecl.go",
+                            "start": {
+                              "column": 2,
+                              "line": 35
+                            }
                           },
-                          "end": {
-                            "Offset": 0,
-                            "line": 35,
-                            "column": 139
+                          "object": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 5,
+                                "line": 35
+                              },
+                              "sourcefile": "$EXAMPLES/constDecl.go",
+                              "start": {
+                                "column": 2,
+                                "line": 35
+                              }
+                            },
+                            "name": "fmt",
+                            "type": "Identifier"
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                          "property": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 13,
+                                "line": 35
+                              },
+                              "sourcefile": "$EXAMPLES/constDecl.go",
+                              "start": {
+                                "column": 6,
+                                "line": 35
+                              }
+                            },
+                            "name": "Println",
+                            "type": "Identifier"
+                          },
+                          "type": "MemberAccess"
                         },
-                        "_meta": {}
+                        "loc": {
+                          "end": {
+                            "column": 139,
+                            "line": 35
+                          },
+                          "sourcefile": "$EXAMPLES/constDecl.go",
+                          "start": {
+                            "column": 2,
+                            "line": 35
+                          }
+                        },
+                        "type": "CallExpression"
                       }
                     ],
                     "id": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 11,
-                        "column": 19
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 36,
-                        "column": 2
+                        "column": 2,
+                        "line": 36
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                      "sourcefile": "$EXAMPLES/constDecl.go",
+                      "start": {
+                        "column": 19,
+                        "line": 11
+                      }
                     },
-                    "_meta": {}
+                    "type": "ScopedStatement"
+                  },
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 16,
+                        "line": 11
+                      },
+                      "sourcefile": "$EXAMPLES/constDecl.go",
+                      "start": {
+                        "column": 6,
+                        "line": 11
+                      }
+                    },
+                    "name": "ConstDecls",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 36
+                    },
+                    "sourcefile": "$EXAMPLES/constDecl.go",
+                    "start": {
+                      "column": 1,
+                      "line": 11
+                    }
                   },
                   "modifiers": null,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 11,
-                      "column": 1
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 36,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                  "parameters": [],
+                  "returnType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "VoidType",
+                    "typeArguments": null
                   },
-                  "_meta": {}
+                  "type": "FunctionDefinition"
                 }
               ],
               "language": "golang",
               "languageVersion": "1.18",
-              "uri": "",
-              "version": "",
               "loc": {
-                "start": {
-                  "Offset": 0,
-                  "line": 1,
-                  "column": 1
-                },
                 "end": {
-                  "Offset": 0,
-                  "line": 36,
-                  "column": 2
+                  "column": 2,
+                  "line": 36
                 },
-                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/constDecl.go"
+                "sourcefile": "$EXAMPLES/constDecl.go",
+                "start": {
+                  "column": 1,
+                  "line": 1
+                }
               },
-              "_meta": {}
+              "type": "CompileUnit",
+              "uri": "",
+              "version": ""
             },
             "packageName": "__single__"
           }
@@ -2171,6 +2035,5 @@
         "subs": {}
       }
     }
-  },
-  "moduleName": "__single_module__"
+  }
 }

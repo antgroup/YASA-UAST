@@ -1,5 +1,5 @@
 import cloneNode from "./cloneNode";
-import type * as t from "..";
+import type * as t from "../ast-types/generated";
 
 /**
  * Create a shallow clone of a `node` excluding `_private` and location properties.

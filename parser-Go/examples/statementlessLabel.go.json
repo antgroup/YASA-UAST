@@ -1,4 +1,5 @@
 {
+  "moduleName": "__single_module__",
   "packageInfo": {
     "PathName": "",
     "files": {},
@@ -6,1813 +7,1635 @@
       "/": {
         "PathName": "",
         "files": {
-          "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go": {
+          "$EXAMPLES/statementlessLabel.go": {
             "node": {
-              "type": "CompileUnit",
+              "_meta": {},
               "body": [
                 {
-                  "type": "PackageDeclaration",
-                  "name": {
-                    "type": "Identifier",
-                    "name": "examples",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 9
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 17
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                    },
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 9
-                    },
                     "end": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 17
+                      "column": 17,
+                      "line": 1
                     },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                    "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                    "start": {
+                      "column": 9,
+                      "line": 1
+                    }
                   },
-                  "_meta": {}
+                  "packageName": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 17,
+                        "line": 1
+                      },
+                      "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                      "start": {
+                        "column": 9,
+                        "line": 1
+                      }
+                    },
+                    "name": "examples",
+                    "type": "Identifier"
+                  },
+                  "type": "PackageDeclaration"
                 },
                 {
-                  "type": "FunctionDefinition",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "fn",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 8
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                    },
-                    "_meta": {}
-                  },
-                  "parameters": [],
-                  "returnType": {
-                    "type": "VoidType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
+                  "_meta": {},
                   "body": {
-                    "type": "ScopedStatement",
+                    "_meta": {},
                     "body": [
                       {
-                        "type": "ForStatement",
-                        "init": {
-                          "type": "Noop",
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "test": {
-                          "type": "Noop",
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "update": {
-                          "type": "Noop",
-                          "loc": null,
-                          "_meta": {}
-                        },
+                        "_meta": {},
                         "body": {
-                          "type": "ScopedStatement",
+                          "_meta": {},
                           "body": [
                             {
-                              "type": "IfStatement",
-                              "test": {
-                                "type": "Identifier",
-                                "name": "true",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 5,
-                                    "column": 6
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 5,
-                                    "column": 10
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                                },
-                                "_meta": {}
+                              "_meta": {},
+                              "alternative": {
+                                "_meta": {},
+                                "loc": null,
+                                "type": "Noop"
                               },
                               "consequent": {
-                                "type": "ScopedStatement",
+                                "_meta": {},
                                 "body": [
                                   {
-                                    "type": "CallExpression",
-                                    "callee": {
-                                      "type": "Identifier",
-                                      "name": "println",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 6,
-                                          "column": 4
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 6,
-                                          "column": 11
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                                      },
-                                      "_meta": {}
-                                    },
+                                    "_meta": {},
                                     "arguments": [],
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 6,
-                                        "column": 4
+                                    "callee": {
+                                      "_meta": {},
+                                      "loc": {
+                                        "end": {
+                                          "column": 11,
+                                          "line": 6
+                                        },
+                                        "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                        "start": {
+                                          "column": 4,
+                                          "line": 6
+                                        }
                                       },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 6,
-                                        "column": 13
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                      "name": "println",
+                                      "type": "Identifier"
                                     },
-                                    "_meta": {}
+                                    "loc": {
+                                      "end": {
+                                        "column": 13,
+                                        "line": 6
+                                      },
+                                      "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                      "start": {
+                                        "column": 4,
+                                        "line": 6
+                                      }
+                                    },
+                                    "type": "CallExpression"
                                   }
                                 ],
                                 "id": null,
                                 "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 5,
-                                    "column": 11
-                                  },
                                   "end": {
-                                    "Offset": 0,
-                                    "line": 7,
-                                    "column": 4
+                                    "column": 4,
+                                    "line": 7
                                   },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                  "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                  "start": {
+                                    "column": 11,
+                                    "line": 5
+                                  }
                                 },
-                                "_meta": {}
-                              },
-                              "alternative": {
-                                "type": "Noop",
-                                "loc": null,
-                                "_meta": {}
+                                "type": "ScopedStatement"
                               },
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 5,
-                                  "column": 3
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 7,
-                                  "column": 4
+                                  "column": 4,
+                                  "line": 7
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 5
+                                }
                               },
-                              "_meta": {}
+                              "test": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 10,
+                                    "line": 5
+                                  },
+                                  "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                  "start": {
+                                    "column": 6,
+                                    "line": 5
+                                  }
+                                },
+                                "name": "true",
+                                "type": "Identifier"
+                              },
+                              "type": "IfStatement"
                             },
                             {
-                              "type": "BreakStatement",
+                              "_meta": {},
                               "label": null,
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 8,
-                                  "column": 3
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 8,
-                                  "column": 8
+                                  "column": 8,
+                                  "line": 8
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 8
+                                }
                               },
-                              "_meta": {}
+                              "type": "BreakStatement"
                             }
                           ],
                           "id": null,
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 4,
-                              "column": 6
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 9,
-                              "column": 3
+                              "column": 3,
+                              "line": 9
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                            "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                            "start": {
+                              "column": 6,
+                              "line": 4
+                            }
                           },
-                          "_meta": {}
+                          "type": "ScopedStatement"
+                        },
+                        "init": {
+                          "_meta": {},
+                          "loc": null,
+                          "type": "Noop"
                         },
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 4,
-                            "column": 2
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 9,
-                            "column": 3
+                            "column": 3,
+                            "line": 9
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                        },
-                        "_meta": {}
-                      },
-                      {
-                        "type": "ForStatement",
-                        "init": {
-                          "type": "Noop",
-                          "loc": null,
-                          "_meta": {}
+                          "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                          "start": {
+                            "column": 2,
+                            "line": 4
+                          }
                         },
                         "test": {
-                          "type": "Noop",
+                          "_meta": {},
                           "loc": null,
-                          "_meta": {}
+                          "type": "Noop"
                         },
+                        "type": "ForStatement",
                         "update": {
-                          "type": "Noop",
+                          "_meta": {},
                           "loc": null,
-                          "_meta": {}
-                        },
+                          "type": "Noop"
+                        }
+                      },
+                      {
+                        "_meta": {},
                         "body": {
-                          "type": "ScopedStatement",
+                          "_meta": {},
                           "body": [
                             {
-                              "type": "IfStatement",
-                              "test": {
-                                "type": "Identifier",
-                                "name": "true",
+                              "_meta": {},
+                              "alternative": {
+                                "_meta": {},
+                                "body": [
+                                  {
+                                    "_meta": {},
+                                    "label": null,
+                                    "loc": {
+                                      "end": {
+                                        "column": 9,
+                                        "line": 14
+                                      },
+                                      "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                      "start": {
+                                        "column": 4,
+                                        "line": 14
+                                      }
+                                    },
+                                    "type": "BreakStatement"
+                                  }
+                                ],
+                                "id": null,
                                 "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 11,
-                                    "column": 6
-                                  },
                                   "end": {
-                                    "Offset": 0,
-                                    "line": 11,
-                                    "column": 10
+                                    "column": 4,
+                                    "line": 15
                                   },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                  "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                  "start": {
+                                    "column": 10,
+                                    "line": 13
+                                  }
                                 },
-                                "_meta": {}
+                                "type": "ScopedStatement"
                               },
                               "consequent": {
-                                "type": "ScopedStatement",
+                                "_meta": {},
                                 "body": [
                                   {
-                                    "type": "BreakStatement",
+                                    "_meta": {},
                                     "label": null,
                                     "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 12,
-                                        "column": 4
-                                      },
                                       "end": {
-                                        "Offset": 0,
-                                        "line": 12,
-                                        "column": 9
+                                        "column": 9,
+                                        "line": 12
                                       },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                      "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                      "start": {
+                                        "column": 4,
+                                        "line": 12
+                                      }
                                     },
-                                    "_meta": {}
+                                    "type": "BreakStatement"
                                   }
                                 ],
                                 "id": null,
                                 "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 11,
-                                    "column": 11
-                                  },
                                   "end": {
-                                    "Offset": 0,
-                                    "line": 13,
-                                    "column": 4
+                                    "column": 4,
+                                    "line": 13
                                   },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                                },
-                                "_meta": {}
-                              },
-                              "alternative": {
-                                "type": "ScopedStatement",
-                                "body": [
-                                  {
-                                    "type": "BreakStatement",
-                                    "label": null,
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 14,
-                                        "column": 4
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 14,
-                                        "column": 9
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                                    },
-                                    "_meta": {}
+                                  "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                  "start": {
+                                    "column": 11,
+                                    "line": 11
                                   }
-                                ],
-                                "id": null,
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 13,
-                                    "column": 10
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 15,
-                                    "column": 4
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
                                 },
-                                "_meta": {}
+                                "type": "ScopedStatement"
                               },
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 11,
-                                  "column": 3
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 15,
-                                  "column": 4
+                                  "column": 4,
+                                  "line": 15
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 11
+                                }
                               },
-                              "_meta": {}
+                              "test": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 10,
+                                    "line": 11
+                                  },
+                                  "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                  "start": {
+                                    "column": 6,
+                                    "line": 11
+                                  }
+                                },
+                                "name": "true",
+                                "type": "Identifier"
+                              },
+                              "type": "IfStatement"
                             }
                           ],
                           "id": null,
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 10,
-                              "column": 6
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 16,
-                              "column": 3
+                              "column": 3,
+                              "line": 16
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                            "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                            "start": {
+                              "column": 6,
+                              "line": 10
+                            }
                           },
-                          "_meta": {}
+                          "type": "ScopedStatement"
+                        },
+                        "init": {
+                          "_meta": {},
+                          "loc": null,
+                          "type": "Noop"
                         },
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 10,
-                            "column": 2
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 16,
-                            "column": 3
+                            "column": 3,
+                            "line": 16
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                          "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                          "start": {
+                            "column": 2,
+                            "line": 10
+                          }
                         },
-                        "_meta": {}
+                        "test": {
+                          "_meta": {},
+                          "loc": null,
+                          "type": "Noop"
+                        },
+                        "type": "ForStatement",
+                        "update": {
+                          "_meta": {},
+                          "loc": null,
+                          "type": "Noop"
+                        }
                       },
                       {
-                        "type": "RangeStatement",
-                        "key": {
-                          "type": "Noop",
-                          "loc": null,
-                          "_meta": {}
+                        "_meta": {},
+                        "body": {
+                          "_meta": {},
+                          "body": [
+                            {
+                              "_meta": {},
+                              "alternative": {
+                                "_meta": {},
+                                "loc": null,
+                                "type": "Noop"
+                              },
+                              "consequent": {
+                                "_meta": {},
+                                "body": [
+                                  {
+                                    "_meta": {},
+                                    "arguments": [],
+                                    "callee": {
+                                      "_meta": {},
+                                      "loc": {
+                                        "end": {
+                                          "column": 11,
+                                          "line": 19
+                                        },
+                                        "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                        "start": {
+                                          "column": 4,
+                                          "line": 19
+                                        }
+                                      },
+                                      "name": "println",
+                                      "type": "Identifier"
+                                    },
+                                    "loc": {
+                                      "end": {
+                                        "column": 13,
+                                        "line": 19
+                                      },
+                                      "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                      "start": {
+                                        "column": 4,
+                                        "line": 19
+                                      }
+                                    },
+                                    "type": "CallExpression"
+                                  }
+                                ],
+                                "id": null,
+                                "loc": {
+                                  "end": {
+                                    "column": 4,
+                                    "line": 20
+                                  },
+                                  "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                  "start": {
+                                    "column": 11,
+                                    "line": 18
+                                  }
+                                },
+                                "type": "ScopedStatement"
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 4,
+                                  "line": 20
+                                },
+                                "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 18
+                                }
+                              },
+                              "test": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 10,
+                                    "line": 18
+                                  },
+                                  "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                  "start": {
+                                    "column": 6,
+                                    "line": 18
+                                  }
+                                },
+                                "name": "true",
+                                "type": "Identifier"
+                              },
+                              "type": "IfStatement"
+                            },
+                            {
+                              "_meta": {},
+                              "label": null,
+                              "loc": {
+                                "end": {
+                                  "column": 8,
+                                  "line": 21
+                                },
+                                "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 21
+                                }
+                              },
+                              "type": "BreakStatement"
+                            }
+                          ],
+                          "id": null,
+                          "loc": {
+                            "end": {
+                              "column": 3,
+                              "line": 22
+                            },
+                            "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                            "start": {
+                              "column": 25,
+                              "line": 17
+                            }
+                          },
+                          "type": "ScopedStatement"
                         },
-                        "value": {
-                          "type": "Noop",
+                        "key": {
+                          "_meta": {},
                           "loc": null,
-                          "_meta": {}
+                          "type": "Noop"
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 3,
+                            "line": 22
+                          },
+                          "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                          "start": {
+                            "column": 2,
+                            "line": 17
+                          }
                         },
                         "right": {
-                          "type": "CallExpression",
-                          "callee": {
-                            "type": "ArrayType",
-                            "id": {
-                              "type": "Identifier",
-                              "name": "ArrayType",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 17,
-                                  "column": 13
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 17,
-                                  "column": 18
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                              },
-                              "_meta": {}
-                            },
-                            "element": {
-                              "type": "Identifier",
-                              "name": "int",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 17,
-                                  "column": 15
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 17,
-                                  "column": 18
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                              },
-                              "_meta": {}
-                            },
-                            "typeArguments": null,
-                            "size": {
-                              "type": "Noop",
-                              "loc": null,
-                              "_meta": {}
-                            },
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 17,
-                                "column": 12
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 17,
-                                "column": 19
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                            },
-                            "_meta": {}
-                          },
+                          "_meta": {},
                           "arguments": [
                             {
-                              "type": "Identifier",
-                              "name": "nil",
+                              "_meta": {},
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 17,
-                                  "column": 20
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 17,
-                                  "column": 23
+                                  "column": 23,
+                                  "line": 17
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                "start": {
+                                  "column": 20,
+                                  "line": 17
+                                }
                               },
-                              "_meta": {}
+                              "name": "nil",
+                              "type": "Identifier"
                             }
                           ],
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 17,
-                              "column": 12
+                          "callee": {
+                            "_meta": {},
+                            "element": {
+                              "_meta": {},
+                              "loc": {
+                                "end": {
+                                  "column": 18,
+                                  "line": 17
+                                },
+                                "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                "start": {
+                                  "column": 15,
+                                  "line": 17
+                                }
+                              },
+                              "name": "int",
+                              "type": "Identifier"
                             },
-                            "end": {
-                              "Offset": 0,
-                              "line": 17,
-                              "column": 24
+                            "id": {
+                              "_meta": {},
+                              "loc": {
+                                "end": {
+                                  "column": 18,
+                                  "line": 17
+                                },
+                                "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                "start": {
+                                  "column": 13,
+                                  "line": 17
+                                }
+                              },
+                              "name": "ArrayType",
+                              "type": "Identifier"
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                            "loc": {
+                              "end": {
+                                "column": 19,
+                                "line": 17
+                              },
+                              "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                              "start": {
+                                "column": 12,
+                                "line": 17
+                              }
+                            },
+                            "size": {
+                              "_meta": {},
+                              "loc": null,
+                              "type": "Noop"
+                            },
+                            "type": "ArrayType",
+                            "typeArguments": null
                           },
-                          "_meta": {}
+                          "loc": {
+                            "end": {
+                              "column": 24,
+                              "line": 17
+                            },
+                            "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                            "start": {
+                              "column": 12,
+                              "line": 17
+                            }
+                          },
+                          "type": "CallExpression"
                         },
+                        "type": "RangeStatement",
+                        "value": {
+                          "_meta": {},
+                          "loc": null,
+                          "type": "Noop"
+                        }
+                      },
+                      {
+                        "_meta": {},
                         "body": {
-                          "type": "ScopedStatement",
+                          "_meta": {},
                           "body": [
                             {
-                              "type": "IfStatement",
-                              "test": {
-                                "type": "Identifier",
-                                "name": "true",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 18,
-                                    "column": 6
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 18,
-                                    "column": 10
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                                },
-                                "_meta": {}
+                              "_meta": {},
+                              "alternative": {
+                                "_meta": {},
+                                "loc": null,
+                                "type": "Noop"
                               },
                               "consequent": {
-                                "type": "ScopedStatement",
+                                "_meta": {},
                                 "body": [
                                   {
-                                    "type": "CallExpression",
-                                    "callee": {
-                                      "type": "Identifier",
-                                      "name": "println",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 19,
-                                          "column": 4
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 19,
-                                          "column": 11
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                                      },
-                                      "_meta": {}
-                                    },
+                                    "_meta": {},
                                     "arguments": [],
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 19,
-                                        "column": 4
+                                    "callee": {
+                                      "_meta": {},
+                                      "loc": {
+                                        "end": {
+                                          "column": 11,
+                                          "line": 25
+                                        },
+                                        "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                        "start": {
+                                          "column": 4,
+                                          "line": 25
+                                        }
                                       },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 19,
-                                        "column": 13
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                      "name": "println",
+                                      "type": "Identifier"
                                     },
-                                    "_meta": {}
+                                    "loc": {
+                                      "end": {
+                                        "column": 13,
+                                        "line": 25
+                                      },
+                                      "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                      "start": {
+                                        "column": 4,
+                                        "line": 25
+                                      }
+                                    },
+                                    "type": "CallExpression"
                                   }
                                 ],
                                 "id": null,
                                 "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 18,
-                                    "column": 11
-                                  },
                                   "end": {
-                                    "Offset": 0,
-                                    "line": 20,
-                                    "column": 4
+                                    "column": 4,
+                                    "line": 26
                                   },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                  "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                  "start": {
+                                    "column": 11,
+                                    "line": 24
+                                  }
                                 },
-                                "_meta": {}
-                              },
-                              "alternative": {
-                                "type": "Noop",
-                                "loc": null,
-                                "_meta": {}
+                                "type": "ScopedStatement"
                               },
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 18,
-                                  "column": 3
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 20,
-                                  "column": 4
+                                  "column": 4,
+                                  "line": 26
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 24
+                                }
                               },
-                              "_meta": {}
+                              "test": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 10,
+                                    "line": 24
+                                  },
+                                  "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                  "start": {
+                                    "column": 6,
+                                    "line": 24
+                                  }
+                                },
+                                "name": "true",
+                                "type": "Identifier"
+                              },
+                              "type": "IfStatement"
                             },
                             {
-                              "type": "BreakStatement",
+                              "_meta": {},
                               "label": null,
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 21,
-                                  "column": 3
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 21,
-                                  "column": 8
+                                  "column": 8,
+                                  "line": 27
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 27
+                                }
                               },
-                              "_meta": {}
+                              "type": "BreakStatement"
                             }
                           ],
                           "id": null,
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 17,
-                              "column": 25
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 22,
-                              "column": 3
+                              "column": 3,
+                              "line": 28
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                            "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                            "start": {
+                              "column": 31,
+                              "line": 23
+                            }
                           },
-                          "_meta": {}
+                          "type": "ScopedStatement"
+                        },
+                        "key": {
+                          "_meta": {},
+                          "loc": null,
+                          "type": "Noop"
                         },
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 17,
-                            "column": 2
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 22,
-                            "column": 3
+                            "column": 3,
+                            "line": 28
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                        },
-                        "_meta": {}
-                      },
-                      {
-                        "type": "RangeStatement",
-                        "key": {
-                          "type": "Noop",
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "value": {
-                          "type": "Noop",
-                          "loc": null,
-                          "_meta": {}
+                          "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                          "start": {
+                            "column": 2,
+                            "line": 23
+                          }
                         },
                         "right": {
-                          "type": "CallExpression",
-                          "callee": {
-                            "type": "MapType",
-                            "id": {
-                              "type": "Identifier",
-                              "name": "MapType",
+                          "_meta": {},
+                          "arguments": [
+                            {
+                              "_meta": {},
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 23,
-                                  "column": 13
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 23,
-                                  "column": 24
+                                  "column": 29,
+                                  "line": 23
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                "start": {
+                                  "column": 26,
+                                  "line": 23
+                                }
                               },
-                              "_meta": {}
+                              "name": "nil",
+                              "type": "Identifier"
+                            }
+                          ],
+                          "callee": {
+                            "_meta": {},
+                            "id": {
+                              "_meta": {},
+                              "loc": {
+                                "end": {
+                                  "column": 24,
+                                  "line": 23
+                                },
+                                "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                "start": {
+                                  "column": 13,
+                                  "line": 23
+                                }
+                              },
+                              "name": "MapType",
+                              "type": "Identifier"
                             },
                             "keyType": {
-                              "type": "Identifier",
-                              "name": "int",
+                              "_meta": {},
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 23,
-                                  "column": 17
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 23,
-                                  "column": 20
+                                  "column": 20,
+                                  "line": 23
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                "start": {
+                                  "column": 17,
+                                  "line": 23
+                                }
                               },
-                              "_meta": {}
-                            },
-                            "valueType": {
-                              "type": "Identifier",
                               "name": "int",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 23,
-                                  "column": 21
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 23,
-                                  "column": 24
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                              },
-                              "_meta": {}
+                              "type": "Identifier"
                             },
-                            "typeArguments": null,
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 23,
-                                "column": 12
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 23,
-                                "column": 25
+                                "column": 25,
+                                "line": 23
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                              "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                              "start": {
+                                "column": 12,
+                                "line": 23
+                              }
                             },
-                            "_meta": {}
-                          },
-                          "arguments": [
-                            {
-                              "type": "Identifier",
-                              "name": "nil",
+                            "type": "MapType",
+                            "typeArguments": null,
+                            "valueType": {
+                              "_meta": {},
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 23,
-                                  "column": 26
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 23,
-                                  "column": 29
+                                  "column": 24,
+                                  "line": 23
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                "start": {
+                                  "column": 21,
+                                  "line": 23
+                                }
                               },
-                              "_meta": {}
+                              "name": "int",
+                              "type": "Identifier"
                             }
-                          ],
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 23,
-                              "column": 12
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 23,
-                              "column": 30
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
                           },
-                          "_meta": {}
-                        },
-                        "body": {
-                          "type": "ScopedStatement",
-                          "body": [
-                            {
-                              "type": "IfStatement",
-                              "test": {
-                                "type": "Identifier",
-                                "name": "true",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 24,
-                                    "column": 6
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 24,
-                                    "column": 10
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                                },
-                                "_meta": {}
-                              },
-                              "consequent": {
-                                "type": "ScopedStatement",
-                                "body": [
-                                  {
-                                    "type": "CallExpression",
-                                    "callee": {
-                                      "type": "Identifier",
-                                      "name": "println",
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 25,
-                                          "column": 4
-                                        },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 25,
-                                          "column": 11
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                                      },
-                                      "_meta": {}
-                                    },
-                                    "arguments": [],
-                                    "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 25,
-                                        "column": 4
-                                      },
-                                      "end": {
-                                        "Offset": 0,
-                                        "line": 25,
-                                        "column": 13
-                                      },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                                    },
-                                    "_meta": {}
-                                  }
-                                ],
-                                "id": null,
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 24,
-                                    "column": 11
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 26,
-                                    "column": 4
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                                },
-                                "_meta": {}
-                              },
-                              "alternative": {
-                                "type": "Noop",
-                                "loc": null,
-                                "_meta": {}
-                              },
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 24,
-                                  "column": 3
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 26,
-                                  "column": 4
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                              },
-                              "_meta": {}
+                          "loc": {
+                            "end": {
+                              "column": 30,
+                              "line": 23
                             },
-                            {
-                              "type": "BreakStatement",
-                              "label": null,
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 27,
-                                  "column": 3
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 27,
-                                  "column": 8
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                              },
-                              "_meta": {}
+                            "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                            "start": {
+                              "column": 12,
+                              "line": 23
                             }
-                          ],
-                          "id": null,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 23,
-                              "column": 31
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 28,
-                              "column": 3
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
                           },
-                          "_meta": {}
+                          "type": "CallExpression"
                         },
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 23,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 28,
-                            "column": 3
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                        },
-                        "_meta": {}
+                        "type": "RangeStatement",
+                        "value": {
+                          "_meta": {},
+                          "loc": null,
+                          "type": "Noop"
+                        }
                       },
                       {
-                        "type": "ForStatement",
-                        "init": {
-                          "type": "Noop",
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "test": {
-                          "type": "Noop",
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "update": {
-                          "type": "Noop",
-                          "loc": null,
-                          "_meta": {}
-                        },
+                        "_meta": {},
                         "body": {
-                          "type": "ScopedStatement",
+                          "_meta": {},
                           "body": [
                             {
-                              "type": "IfStatement",
-                              "test": {
-                                "type": "Identifier",
-                                "name": "true",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 30,
-                                    "column": 6
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 30,
-                                    "column": 10
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                                },
-                                "_meta": {}
+                              "_meta": {},
+                              "alternative": {
+                                "_meta": {},
+                                "loc": null,
+                                "type": "Noop"
                               },
                               "consequent": {
-                                "type": "ScopedStatement",
+                                "_meta": {},
                                 "body": [
                                   {
-                                    "type": "Noop",
+                                    "_meta": {},
                                     "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 31,
-                                        "column": 4
-                                      },
                                       "end": {
-                                        "Offset": 0,
-                                        "line": 31,
-                                        "column": 14
+                                        "column": 14,
+                                        "line": 31
                                       },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                      "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                      "start": {
+                                        "column": 4,
+                                        "line": 31
+                                      }
                                     },
-                                    "_meta": {}
+                                    "type": "Noop"
                                   }
                                 ],
                                 "id": null,
                                 "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 30,
-                                    "column": 11
-                                  },
                                   "end": {
-                                    "Offset": 0,
-                                    "line": 32,
-                                    "column": 4
+                                    "column": 4,
+                                    "line": 32
                                   },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                  "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                  "start": {
+                                    "column": 11,
+                                    "line": 30
+                                  }
                                 },
-                                "_meta": {}
-                              },
-                              "alternative": {
-                                "type": "Noop",
-                                "loc": null,
-                                "_meta": {}
+                                "type": "ScopedStatement"
                               },
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 30,
-                                  "column": 3
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 32,
-                                  "column": 4
+                                  "column": 4,
+                                  "line": 32
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 30
+                                }
                               },
-                              "_meta": {}
+                              "test": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 10,
+                                    "line": 30
+                                  },
+                                  "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                  "start": {
+                                    "column": 6,
+                                    "line": 30
+                                  }
+                                },
+                                "name": "true",
+                                "type": "Identifier"
+                              },
+                              "type": "IfStatement"
                             },
                             {
-                              "type": "BreakStatement",
+                              "_meta": {},
                               "label": null,
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 33,
-                                  "column": 3
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 33,
-                                  "column": 8
+                                  "column": 8,
+                                  "line": 33
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 33
+                                }
                               },
-                              "_meta": {}
+                              "type": "BreakStatement"
                             },
                             {
-                              "type": "ScopedStatement",
+                              "_meta": {},
                               "body": [
                                 {
-                                  "type": "Noop",
+                                  "_meta": {},
                                   "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 35,
-                                      "column": 2
-                                    },
                                     "end": {
-                                      "Offset": 0,
-                                      "line": 35,
-                                      "column": 2
+                                      "column": 2,
+                                      "line": 35
                                     },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                    "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                    "start": {
+                                      "column": 2,
+                                      "line": 35
+                                    }
                                   },
-                                  "_meta": {}
+                                  "type": "Noop"
                                 }
                               ],
                               "id": {
-                                "type": "Identifier",
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 7,
+                                    "line": 34
+                                  },
+                                  "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                  "start": {
+                                    "column": 2,
+                                    "line": 34
+                                  }
+                                },
                                 "name": "Label",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 34,
-                                    "column": 2
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 34,
-                                    "column": 7
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                                },
-                                "_meta": {}
+                                "type": "Identifier"
                               },
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 34,
-                                  "column": 2
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 35,
-                                  "column": 2
+                                  "column": 2,
+                                  "line": 35
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                "start": {
+                                  "column": 2,
+                                  "line": 34
+                                }
                               },
-                              "_meta": {}
+                              "type": "ScopedStatement"
                             }
                           ],
                           "id": null,
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 29,
-                              "column": 6
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 35,
-                              "column": 3
+                              "column": 3,
+                              "line": 35
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                            "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                            "start": {
+                              "column": 6,
+                              "line": 29
+                            }
                           },
-                          "_meta": {}
+                          "type": "ScopedStatement"
+                        },
+                        "init": {
+                          "_meta": {},
+                          "loc": null,
+                          "type": "Noop"
                         },
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 29,
-                            "column": 2
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 35,
-                            "column": 3
+                            "column": 3,
+                            "line": 35
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                        },
-                        "_meta": {}
-                      },
-                      {
-                        "type": "ForStatement",
-                        "init": {
-                          "type": "Noop",
-                          "loc": null,
-                          "_meta": {}
+                          "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                          "start": {
+                            "column": 2,
+                            "line": 29
+                          }
                         },
                         "test": {
-                          "type": "Noop",
+                          "_meta": {},
                           "loc": null,
-                          "_meta": {}
+                          "type": "Noop"
                         },
+                        "type": "ForStatement",
                         "update": {
-                          "type": "Noop",
+                          "_meta": {},
                           "loc": null,
-                          "_meta": {}
-                        },
+                          "type": "Noop"
+                        }
+                      },
+                      {
+                        "_meta": {},
                         "body": {
-                          "type": "ScopedStatement",
+                          "_meta": {},
                           "body": [
                             {
-                              "type": "IfStatement",
-                              "test": {
-                                "type": "Identifier",
-                                "name": "true",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 37,
-                                    "column": 6
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 37,
-                                    "column": 10
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                                },
-                                "_meta": {}
+                              "_meta": {},
+                              "alternative": {
+                                "_meta": {},
+                                "loc": null,
+                                "type": "Noop"
                               },
                               "consequent": {
-                                "type": "ScopedStatement",
+                                "_meta": {},
                                 "body": [
                                   {
-                                    "type": "ContinueStatement",
+                                    "_meta": {},
                                     "label": null,
                                     "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 38,
-                                        "column": 4
-                                      },
                                       "end": {
-                                        "Offset": 0,
-                                        "line": 38,
-                                        "column": 12
+                                        "column": 12,
+                                        "line": 38
                                       },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                      "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                      "start": {
+                                        "column": 4,
+                                        "line": 38
+                                      }
                                     },
-                                    "_meta": {}
+                                    "type": "ContinueStatement"
                                   }
                                 ],
                                 "id": null,
                                 "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 37,
-                                    "column": 11
-                                  },
                                   "end": {
-                                    "Offset": 0,
-                                    "line": 39,
-                                    "column": 4
+                                    "column": 4,
+                                    "line": 39
                                   },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                  "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                  "start": {
+                                    "column": 11,
+                                    "line": 37
+                                  }
                                 },
-                                "_meta": {}
-                              },
-                              "alternative": {
-                                "type": "Noop",
-                                "loc": null,
-                                "_meta": {}
+                                "type": "ScopedStatement"
                               },
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 37,
-                                  "column": 3
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 39,
-                                  "column": 4
+                                  "column": 4,
+                                  "line": 39
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 37
+                                }
                               },
-                              "_meta": {}
+                              "test": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 10,
+                                    "line": 37
+                                  },
+                                  "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                  "start": {
+                                    "column": 6,
+                                    "line": 37
+                                  }
+                                },
+                                "name": "true",
+                                "type": "Identifier"
+                              },
+                              "type": "IfStatement"
                             },
                             {
-                              "type": "BreakStatement",
+                              "_meta": {},
                               "label": null,
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 40,
-                                  "column": 3
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 40,
-                                  "column": 8
+                                  "column": 8,
+                                  "line": 40
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 40
+                                }
                               },
-                              "_meta": {}
+                              "type": "BreakStatement"
                             }
                           ],
                           "id": null,
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 36,
-                              "column": 6
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 41,
-                              "column": 3
+                              "column": 3,
+                              "line": 41
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                            "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                            "start": {
+                              "column": 6,
+                              "line": 36
+                            }
                           },
-                          "_meta": {}
+                          "type": "ScopedStatement"
+                        },
+                        "init": {
+                          "_meta": {},
+                          "loc": null,
+                          "type": "Noop"
                         },
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 36,
-                            "column": 2
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 41,
-                            "column": 3
+                            "column": 3,
+                            "line": 41
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                        },
-                        "_meta": {}
-                      },
-                      {
-                        "type": "ForStatement",
-                        "init": {
-                          "type": "Noop",
-                          "loc": null,
-                          "_meta": {}
+                          "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                          "start": {
+                            "column": 2,
+                            "line": 36
+                          }
                         },
                         "test": {
-                          "type": "Noop",
+                          "_meta": {},
                           "loc": null,
-                          "_meta": {}
+                          "type": "Noop"
                         },
+                        "type": "ForStatement",
                         "update": {
-                          "type": "Noop",
+                          "_meta": {},
                           "loc": null,
-                          "_meta": {}
-                        },
+                          "type": "Noop"
+                        }
+                      },
+                      {
+                        "_meta": {},
                         "body": {
-                          "type": "ScopedStatement",
+                          "_meta": {},
                           "body": [
                             {
-                              "type": "IfStatement",
-                              "test": {
-                                "type": "Identifier",
-                                "name": "true",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 43,
-                                    "column": 6
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 43,
-                                    "column": 10
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                                },
-                                "_meta": {}
+                              "_meta": {},
+                              "alternative": {
+                                "_meta": {},
+                                "loc": null,
+                                "type": "Noop"
                               },
                               "consequent": {
-                                "type": "ScopedStatement",
+                                "_meta": {},
                                 "body": [
                                   {
-                                    "type": "ContinueStatement",
+                                    "_meta": {},
                                     "label": null,
                                     "loc": {
-                                      "start": {
-                                        "Offset": 0,
-                                        "line": 44,
-                                        "column": 4
-                                      },
                                       "end": {
-                                        "Offset": 0,
-                                        "line": 44,
-                                        "column": 12
+                                        "column": 12,
+                                        "line": 44
                                       },
-                                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                      "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                      "start": {
+                                        "column": 4,
+                                        "line": 44
+                                      }
                                     },
-                                    "_meta": {}
+                                    "type": "ContinueStatement"
                                   }
                                 ],
                                 "id": null,
                                 "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 43,
-                                    "column": 11
-                                  },
                                   "end": {
-                                    "Offset": 0,
-                                    "line": 45,
-                                    "column": 4
+                                    "column": 4,
+                                    "line": 45
                                   },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                  "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                  "start": {
+                                    "column": 11,
+                                    "line": 43
+                                  }
                                 },
-                                "_meta": {}
-                              },
-                              "alternative": {
-                                "type": "Noop",
-                                "loc": null,
-                                "_meta": {}
+                                "type": "ScopedStatement"
                               },
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 43,
-                                  "column": 3
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 45,
-                                  "column": 4
+                                  "column": 4,
+                                  "line": 45
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 43
+                                }
                               },
-                              "_meta": {}
+                              "test": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 10,
+                                    "line": 43
+                                  },
+                                  "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                  "start": {
+                                    "column": 6,
+                                    "line": 43
+                                  }
+                                },
+                                "name": "true",
+                                "type": "Identifier"
+                              },
+                              "type": "IfStatement"
                             },
                             {
-                              "type": "BreakStatement",
+                              "_meta": {},
                               "label": null,
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 46,
-                                  "column": 3
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 46,
-                                  "column": 8
+                                  "column": 8,
+                                  "line": 46
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                "start": {
+                                  "column": 3,
+                                  "line": 46
+                                }
                               },
-                              "_meta": {}
+                              "type": "BreakStatement"
                             }
                           ],
                           "id": null,
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 42,
-                              "column": 6
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 47,
-                              "column": 3
+                              "column": 3,
+                              "line": 47
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                            "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                            "start": {
+                              "column": 6,
+                              "line": 42
+                            }
                           },
-                          "_meta": {}
+                          "type": "ScopedStatement"
+                        },
+                        "init": {
+                          "_meta": {},
+                          "loc": null,
+                          "type": "Noop"
                         },
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 42,
-                            "column": 2
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 47,
-                            "column": 3
+                            "column": 3,
+                            "line": 47
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                          "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                          "start": {
+                            "column": 2,
+                            "line": 42
+                          }
                         },
-                        "_meta": {}
+                        "test": {
+                          "_meta": {},
+                          "loc": null,
+                          "type": "Noop"
+                        },
+                        "type": "ForStatement",
+                        "update": {
+                          "_meta": {},
+                          "loc": null,
+                          "type": "Noop"
+                        }
                       }
                     ],
                     "id": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 11
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 48,
-                        "column": 2
+                        "column": 2,
+                        "line": 48
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                    },
-                    "_meta": {}
-                  },
-                  "modifiers": null,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 3,
-                      "column": 1
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 48,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                  },
-                  "_meta": {}
-                },
-                {
-                  "type": "VariableDeclaration",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "z",
-                    "loc": {
+                      "sourcefile": "$EXAMPLES/statementlessLabel.go",
                       "start": {
-                        "Offset": 0,
-                        "line": 50,
-                        "column": 5
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 50,
-                        "column": 6
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                    },
-                    "_meta": {
-                      "type": {
-                        "type": "FuncType",
-                        "id": {
-                          "type": "Identifier",
-                          "name": "FuncType",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 50,
-                              "column": 9
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 50,
-                              "column": 15
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                          },
-                          "_meta": {}
-                        },
-                        "typeParams": null,
-                        "params": null,
-                        "results": null,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 50,
-                            "column": 9
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 50,
-                            "column": 15
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                        },
-                        "_meta": {}
+                        "column": 11,
+                        "line": 3
                       }
+                    },
+                    "type": "ScopedStatement"
+                  },
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 8,
+                        "line": 3
+                      },
+                      "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                      "start": {
+                        "column": 6,
+                        "line": 3
+                      }
+                    },
+                    "name": "fn",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 48
+                    },
+                    "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                    "start": {
+                      "column": 1,
+                      "line": 3
                     }
                   },
+                  "modifiers": null,
+                  "parameters": [],
+                  "returnType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "VoidType",
+                    "typeArguments": null
+                  },
+                  "type": "FunctionDefinition"
+                },
+                {
+                  "_meta": {},
+                  "cloned": false,
+                  "id": {
+                    "_meta": {
+                      "ReceiveCls": "",
+                      "type": {
+                        "_meta": {
+                          "ReceiveCls": ""
+                        },
+                        "id": {
+                          "_meta": {
+                            "ReceiveCls": ""
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 15,
+                              "line": 50
+                            },
+                            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/statementlessLabel.go",
+                            "start": {
+                              "column": 9,
+                              "line": 50
+                            }
+                          },
+                          "name": "FuncType",
+                          "type": "Identifier"
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 15,
+                            "line": 50
+                          },
+                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/statementlessLabel.go",
+                          "start": {
+                            "column": 9,
+                            "line": 50
+                          }
+                        },
+                        "params": null,
+                        "results": null,
+                        "type": "FuncType",
+                        "typeParams": null
+                      }
+                    },
+                    "loc": {
+                      "end": {
+                        "column": 6,
+                        "line": 50
+                      },
+                      "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                      "start": {
+                        "column": 5,
+                        "line": 50
+                      }
+                    },
+                    "name": "z",
+                    "type": "Identifier"
+                  },
                   "init": {
-                    "type": "FunctionDefinition",
-                    "id": {
-                      "type": "Identifier",
-                      "name": "",
-                      "loc": null,
-                      "_meta": {}
-                    },
-                    "parameters": [],
-                    "returnType": {
-                      "type": "VoidType",
-                      "id": null,
-                      "typeArguments": null,
-                      "loc": null,
-                      "_meta": {}
-                    },
+                    "_meta": {},
                     "body": {
-                      "type": "ScopedStatement",
+                      "_meta": {},
                       "body": [
                         {
-                          "type": "ForStatement",
-                          "init": {
-                            "type": "Noop",
-                            "loc": null,
-                            "_meta": {}
-                          },
-                          "test": {
-                            "type": "Noop",
-                            "loc": null,
-                            "_meta": {}
-                          },
-                          "update": {
-                            "type": "Noop",
-                            "loc": null,
-                            "_meta": {}
-                          },
+                          "_meta": {},
                           "body": {
-                            "type": "ScopedStatement",
+                            "_meta": {},
                             "body": [
                               {
-                                "type": "IfStatement",
-                                "test": {
-                                  "type": "Identifier",
-                                  "name": "true",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 52,
-                                      "column": 6
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 52,
-                                      "column": 10
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                                  },
-                                  "_meta": {}
+                                "_meta": {},
+                                "alternative": {
+                                  "_meta": {},
+                                  "loc": null,
+                                  "type": "Noop"
                                 },
                                 "consequent": {
-                                  "type": "ScopedStatement",
+                                  "_meta": {},
                                   "body": [
                                     {
-                                      "type": "CallExpression",
-                                      "callee": {
-                                        "type": "Identifier",
-                                        "name": "println",
-                                        "loc": {
-                                          "start": {
-                                            "Offset": 0,
-                                            "line": 53,
-                                            "column": 4
-                                          },
-                                          "end": {
-                                            "Offset": 0,
-                                            "line": 53,
-                                            "column": 11
-                                          },
-                                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                                        },
-                                        "_meta": {}
-                                      },
+                                      "_meta": {},
                                       "arguments": [],
-                                      "loc": {
-                                        "start": {
-                                          "Offset": 0,
-                                          "line": 53,
-                                          "column": 4
+                                      "callee": {
+                                        "_meta": {},
+                                        "loc": {
+                                          "end": {
+                                            "column": 11,
+                                            "line": 53
+                                          },
+                                          "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                          "start": {
+                                            "column": 4,
+                                            "line": 53
+                                          }
                                         },
-                                        "end": {
-                                          "Offset": 0,
-                                          "line": 53,
-                                          "column": 13
-                                        },
-                                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                        "name": "println",
+                                        "type": "Identifier"
                                       },
-                                      "_meta": {}
+                                      "loc": {
+                                        "end": {
+                                          "column": 13,
+                                          "line": 53
+                                        },
+                                        "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                        "start": {
+                                          "column": 4,
+                                          "line": 53
+                                        }
+                                      },
+                                      "type": "CallExpression"
                                     }
                                   ],
                                   "id": null,
                                   "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 52,
-                                      "column": 11
-                                    },
                                     "end": {
-                                      "Offset": 0,
-                                      "line": 54,
-                                      "column": 4
+                                      "column": 4,
+                                      "line": 54
                                     },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                    "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                    "start": {
+                                      "column": 11,
+                                      "line": 52
+                                    }
                                   },
-                                  "_meta": {}
-                                },
-                                "alternative": {
-                                  "type": "Noop",
-                                  "loc": null,
-                                  "_meta": {}
+                                  "type": "ScopedStatement"
                                 },
                                 "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 52,
-                                    "column": 3
-                                  },
                                   "end": {
-                                    "Offset": 0,
-                                    "line": 54,
-                                    "column": 4
+                                    "column": 4,
+                                    "line": 54
                                   },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                  "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                  "start": {
+                                    "column": 3,
+                                    "line": 52
+                                  }
                                 },
-                                "_meta": {}
+                                "test": {
+                                  "_meta": {},
+                                  "loc": {
+                                    "end": {
+                                      "column": 10,
+                                      "line": 52
+                                    },
+                                    "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                    "start": {
+                                      "column": 6,
+                                      "line": 52
+                                    }
+                                  },
+                                  "name": "true",
+                                  "type": "Identifier"
+                                },
+                                "type": "IfStatement"
                               },
                               {
-                                "type": "BreakStatement",
+                                "_meta": {},
                                 "label": null,
                                 "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 55,
-                                    "column": 3
-                                  },
                                   "end": {
-                                    "Offset": 0,
-                                    "line": 55,
-                                    "column": 8
+                                    "column": 8,
+                                    "line": 55
                                   },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                                  "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                                  "start": {
+                                    "column": 3,
+                                    "line": 55
+                                  }
                                 },
-                                "_meta": {}
+                                "type": "BreakStatement"
                               }
                             ],
                             "id": null,
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 51,
-                                "column": 6
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 56,
-                                "column": 3
+                                "column": 3,
+                                "line": 56
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                              "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                              "start": {
+                                "column": 6,
+                                "line": 51
+                              }
                             },
-                            "_meta": {}
+                            "type": "ScopedStatement"
+                          },
+                          "init": {
+                            "_meta": {},
+                            "loc": null,
+                            "type": "Noop"
                           },
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 51,
-                              "column": 2
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 56,
-                              "column": 3
+                              "column": 3,
+                              "line": 56
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                            "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                            "start": {
+                              "column": 2,
+                              "line": 51
+                            }
                           },
-                          "_meta": {}
+                          "test": {
+                            "_meta": {},
+                            "loc": null,
+                            "type": "Noop"
+                          },
+                          "type": "ForStatement",
+                          "update": {
+                            "_meta": {},
+                            "loc": null,
+                            "type": "Noop"
+                          }
                         }
                       ],
                       "id": null,
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 50,
-                          "column": 16
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 57,
-                          "column": 2
+                          "column": 2,
+                          "line": 57
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                        "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                        "start": {
+                          "column": 16,
+                          "line": 50
+                        }
                       },
-                      "_meta": {}
+                      "type": "ScopedStatement"
+                    },
+                    "id": null,
+                    "loc": {
+                      "end": {
+                        "column": 2,
+                        "line": 57
+                      },
+                      "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                      "start": {
+                        "column": 9,
+                        "line": 50
+                      }
                     },
                     "modifiers": null,
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 50,
-                        "column": 9
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 57,
-                        "column": 2
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                    "parameters": [],
+                    "returnType": {
+                      "_meta": {},
+                      "id": null,
+                      "loc": null,
+                      "type": "VoidType",
+                      "typeArguments": null
                     },
-                    "_meta": {}
+                    "type": "FunctionDefinition"
                   },
-                  "cloned": false,
-                  "varType": {
-                    "type": "FuncType",
-                    "id": {
-                      "type": "Identifier",
-                      "name": "FuncType",
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 50,
-                          "column": 9
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 50,
-                          "column": 15
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                      },
-                      "_meta": {}
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 57
                     },
-                    "typeParams": null,
+                    "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                    "start": {
+                      "column": 5,
+                      "line": 50
+                    }
+                  },
+                  "type": "VariableDeclaration",
+                  "varType": {
+                    "_meta": {},
+                    "id": {
+                      "_meta": {},
+                      "loc": {
+                        "end": {
+                          "column": 15,
+                          "line": 50
+                        },
+                        "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                        "start": {
+                          "column": 9,
+                          "line": 50
+                        }
+                      },
+                      "name": "FuncType",
+                      "type": "Identifier"
+                    },
+                    "loc": {
+                      "end": {
+                        "column": 15,
+                        "line": 50
+                      },
+                      "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                      "start": {
+                        "column": 9,
+                        "line": 50
+                      }
+                    },
                     "params": null,
                     "results": null,
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 50,
-                        "column": 9
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 50,
-                        "column": 15
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                    },
-                    "_meta": {}
+                    "type": "FuncType",
+                    "typeParams": null
                   },
-                  "variableParam": false,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 50,
-                      "column": 5
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 57,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
-                  },
-                  "_meta": {}
+                  "variableParam": false
                 }
               ],
               "language": "golang",
               "languageVersion": "1.18",
-              "uri": "",
-              "version": "",
               "loc": {
-                "start": {
-                  "Offset": 0,
-                  "line": 1,
-                  "column": 1
-                },
                 "end": {
-                  "Offset": 0,
-                  "line": 57,
-                  "column": 2
+                  "column": 2,
+                  "line": 57
                 },
-                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/statementlessLabel.go"
+                "sourcefile": "$EXAMPLES/statementlessLabel.go",
+                "start": {
+                  "column": 1,
+                  "line": 1
+                }
               },
-              "_meta": {}
+              "type": "CompileUnit",
+              "uri": "",
+              "version": ""
             },
             "packageName": "__single__"
           }
@@ -1820,6 +1643,5 @@
         "subs": {}
       }
     }
-  },
-  "moduleName": "__single_module__"
+  }
 }

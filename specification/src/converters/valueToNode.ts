@@ -6,7 +6,7 @@ import {
   unaryExpression,
   binaryExpression, literal,
 } from "../builders/generated";
-import type * as t from "..";
+import type * as t from "../ast-types/generated";
 
 export default valueToNode as {
   (value: undefined): t.Identifier; // TODO: This should return "void 0"

@@ -1,6 +1,6 @@
 import isType from "./isType";
 import { isIdentifier } from "./generated";
-import type * as t from "..";
+import type * as t from "../ast-types/generated";
 
 /**
  * Check if the input `node` is definitely immutable.

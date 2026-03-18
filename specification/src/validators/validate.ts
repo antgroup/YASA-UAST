@@ -1,5 +1,5 @@
 import { NODE_FIELDS, NODE_PARENT_VALIDATIONS } from "../definitions";
-import type * as t from "..";
+import type * as t from "../ast-types/generated";
 
 export default function validate(
   node: t.Node | undefined | null,

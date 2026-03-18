@@ -396,8 +396,8 @@ type YieldExpression struct {
 }
 
 type PackageDeclaration struct {
-	Type string     `json:"type" default:"PackageDeclaration"`
-	Name Expression `json:"name"`
+	Type        string     `json:"type" default:"PackageDeclaration"`
+	PackageName Expression `json:"packageName"`
 	ASTNode
 	Meta `json:"_meta"`
 }

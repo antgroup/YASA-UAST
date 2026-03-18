@@ -1,5 +1,5 @@
 import isNode from "../validators/isNode";
-import type * as t from "..";
+import type * as t from "../ast-types/generated";
 
 export default function assertNode(node?: any): asserts node is t.Node {
   if (!isNode(node)) {

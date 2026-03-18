@@ -1,6 +1,6 @@
 import traverseFast from "../traverse/traverseFast";
 import removeProperties from "./removeProperties";
-import type * as t from "..";
+import type * as t from "../ast-types/generated";
 
 export default function removePropertiesDeep<T extends t.Node>(
   tree: T,

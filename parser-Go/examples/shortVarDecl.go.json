@@ -1,4 +1,5 @@
 {
+  "moduleName": "__single_module__",
   "packageInfo": {
     "PathName": "",
     "files": {},
@@ -6,1212 +7,1113 @@
       "/": {
         "PathName": "",
         "files": {
-          "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go": {
+          "$EXAMPLES/shortVarDecl.go": {
             "node": {
-              "type": "CompileUnit",
+              "_meta": {},
               "body": [
                 {
-                  "type": "PackageDeclaration",
-                  "name": {
-                    "type": "Identifier",
+                  "_meta": {},
+                  "loc": {
+                    "end": {
+                      "column": 17,
+                      "line": 1
+                    },
+                    "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                    "start": {
+                      "column": 9,
+                      "line": 1
+                    }
+                  },
+                  "packageName": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 17,
+                        "line": 1
+                      },
+                      "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                      "start": {
+                        "column": 9,
+                        "line": 1
+                      }
+                    },
                     "name": "examples",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 9
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 1,
-                        "column": 17
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                    },
-                    "_meta": {}
+                    "type": "Identifier"
                   },
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 9
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 1,
-                      "column": 17
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                  },
-                  "_meta": {}
+                  "type": "PackageDeclaration"
                 },
                 {
-                  "type": "VariableDeclaration",
+                  "_meta": {
+                    "ReceiveCls": "",
+                    "isDefaultImport": true
+                  },
+                  "cloned": false,
                   "id": {
-                    "type": "Identifier",
+                    "_meta": {},
+                    "loc": null,
                     "name": "fmt",
-                    "loc": null,
-                    "_meta": {}
+                    "type": "Identifier"
                   },
                   "init": {
-                    "type": "ImportExpression",
+                    "_meta": {},
                     "from": {
-                      "type": "Literal",
-                      "value": "fmt",
+                      "_meta": {},
                       "literalType": "string",
                       "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 3,
-                          "column": 8
-                        },
                         "end": {
-                          "Offset": 0,
-                          "line": 3,
-                          "column": 13
+                          "column": 13,
+                          "line": 3
                         },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
+                        "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                        "start": {
+                          "column": 8,
+                          "line": 3
+                        }
                       },
-                      "_meta": {}
+                      "type": "Literal",
+                      "value": "fmt"
                     },
-                    "local": null,
                     "imported": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 8
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 3,
-                        "column": 13
+                        "column": 13,
+                        "line": 3
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
+                      "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                      "start": {
+                        "column": 8,
+                        "line": 3
+                      }
                     },
-                    "_meta": {}
+                    "local": null,
+                    "type": "ImportExpression"
                   },
-                  "cloned": true,
-                  "varType": {
-                    "type": "DynamicType",
-                    "id": null,
-                    "typeArguments": null,
-                    "loc": null,
-                    "_meta": {}
-                  },
-                  "variableParam": false,
                   "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 3,
-                      "column": 8
-                    },
                     "end": {
-                      "Offset": 0,
-                      "line": 3,
-                      "column": 13
+                      "column": 13,
+                      "line": 3
                     },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
+                    "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                    "start": {
+                      "column": 8,
+                      "line": 3
+                    }
                   },
-                  "_meta": {}
-                },
-                {
                   "type": "VariableDeclaration",
-                  "id": {
-                    "type": "Identifier",
-                    "name": "os",
-                    "loc": null,
-                    "_meta": {}
-                  },
-                  "init": {
-                    "type": "ImportExpression",
-                    "from": {
-                      "type": "Literal",
-                      "value": "os",
-                      "literalType": "string",
-                      "loc": {
-                        "start": {
-                          "Offset": 0,
-                          "line": 4,
-                          "column": 8
-                        },
-                        "end": {
-                          "Offset": 0,
-                          "line": 4,
-                          "column": 12
-                        },
-                        "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                      },
-                      "_meta": {}
-                    },
-                    "local": null,
-                    "imported": null,
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 4,
-                        "column": 8
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 4,
-                        "column": 12
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                    },
-                    "_meta": {}
-                  },
-                  "cloned": true,
                   "varType": {
-                    "type": "DynamicType",
+                    "_meta": {},
                     "id": null,
-                    "typeArguments": null,
                     "loc": null,
-                    "_meta": {}
+                    "type": "DynamicType",
+                    "typeArguments": null
                   },
-                  "variableParam": false,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 4,
-                      "column": 8
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 4,
-                      "column": 12
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                  },
-                  "_meta": {}
+                  "variableParam": false
                 },
                 {
-                  "type": "FunctionDefinition",
+                  "_meta": {
+                    "ReceiveCls": "",
+                    "isDefaultImport": true
+                  },
+                  "cloned": false,
                   "id": {
-                    "type": "Identifier",
-                    "name": "ShortVarDecls",
-                    "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 6,
-                        "column": 6
-                      },
-                      "end": {
-                        "Offset": 0,
-                        "line": 6,
-                        "column": 19
-                      },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                    },
-                    "_meta": {}
-                  },
-                  "parameters": [],
-                  "returnType": {
-                    "type": "VoidType",
-                    "id": null,
-                    "typeArguments": null,
+                    "_meta": {},
                     "loc": null,
-                    "_meta": {}
+                    "name": "os",
+                    "type": "Identifier"
                   },
+                  "init": {
+                    "_meta": {},
+                    "from": {
+                      "_meta": {},
+                      "literalType": "string",
+                      "loc": {
+                        "end": {
+                          "column": 12,
+                          "line": 4
+                        },
+                        "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                        "start": {
+                          "column": 8,
+                          "line": 4
+                        }
+                      },
+                      "type": "Literal",
+                      "value": "os"
+                    },
+                    "imported": null,
+                    "loc": {
+                      "end": {
+                        "column": 12,
+                        "line": 4
+                      },
+                      "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                      "start": {
+                        "column": 8,
+                        "line": 4
+                      }
+                    },
+                    "local": null,
+                    "type": "ImportExpression"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 12,
+                      "line": 4
+                    },
+                    "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                    "start": {
+                      "column": 8,
+                      "line": 4
+                    }
+                  },
+                  "type": "VariableDeclaration",
+                  "varType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "DynamicType",
+                    "typeArguments": null
+                  },
+                  "variableParam": false
+                },
+                {
+                  "_meta": {},
                   "body": {
-                    "type": "ScopedStatement",
+                    "_meta": {},
                     "body": [
                       {
-                        "type": "VariableDeclaration",
-                        "id": {
-                          "type": "Identifier",
-                          "name": "a",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 7,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 7,
-                              "column": 3
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "Identifier",
-                              "name": "int",
-                              "loc": null,
-                              "_meta": {}
-                            }
-                          }
-                        },
-                        "init": {
-                          "type": "Literal",
-                          "value": "0",
-                          "literalType": "INT",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 7,
-                              "column": 10
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 7,
-                              "column": 11
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                          },
-                          "_meta": {}
-                        },
+                        "_meta": {},
                         "cloned": true,
-                        "varType": {
-                          "type": "Identifier",
-                          "name": "int",
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "variableParam": false,
-                        "loc": null,
-                        "_meta": {}
-                      },
-                      {
-                        "type": "VariableDeclaration",
                         "id": {
-                          "type": "Identifier",
-                          "name": "b",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 7,
-                              "column": 5
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 7,
-                              "column": 6
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                          },
                           "_meta": {
+                            "ReceiveCls": "",
                             "type": {
-                              "type": "Identifier",
-                              "name": "int",
-                              "loc": null,
-                              "_meta": {}
-                            }
-                          }
-                        },
-                        "init": {
-                          "type": "Literal",
-                          "value": "10",
-                          "literalType": "INT",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 7,
-                              "column": 13
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 7,
-                              "column": 15
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                          },
-                          "_meta": {}
-                        },
-                        "cloned": true,
-                        "varType": {
-                          "type": "Identifier",
-                          "name": "int",
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "variableParam": false,
-                        "loc": null,
-                        "_meta": {}
-                      },
-                      {
-                        "type": "VariableDeclaration",
-                        "id": {
-                          "type": "Identifier",
-                          "name": "c",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 8,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 8,
-                              "column": 3
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                          },
-                          "_meta": {
-                            "type": {
-                              "type": "FuncType",
-                              "id": {
-                                "type": "Identifier",
-                                "name": "FuncType",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 8,
-                                    "column": 7
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 8,
-                                    "column": 17
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                                },
-                                "_meta": {}
+                              "_meta": {
+                                "ReceiveCls": ""
                               },
-                              "typeParams": null,
+                              "loc": null,
+                              "name": "int",
+                              "type": "Identifier"
+                            }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 3,
+                              "line": 7
+                            },
+                            "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                            "start": {
+                              "column": 2,
+                              "line": 7
+                            }
+                          },
+                          "name": "a",
+                          "type": "Identifier"
+                        },
+                        "init": {
+                          "_meta": {},
+                          "literalType": "INT",
+                          "loc": {
+                            "end": {
+                              "column": 11,
+                              "line": 7
+                            },
+                            "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                            "start": {
+                              "column": 10,
+                              "line": 7
+                            }
+                          },
+                          "type": "Literal",
+                          "value": "0"
+                        },
+                        "loc": null,
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "loc": null,
+                          "name": "int",
+                          "type": "Identifier"
+                        },
+                        "variableParam": false
+                      },
+                      {
+                        "_meta": {},
+                        "cloned": true,
+                        "id": {
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "loc": null,
+                              "name": "int",
+                              "type": "Identifier"
+                            }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 6,
+                              "line": 7
+                            },
+                            "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                            "start": {
+                              "column": 5,
+                              "line": 7
+                            }
+                          },
+                          "name": "b",
+                          "type": "Identifier"
+                        },
+                        "init": {
+                          "_meta": {},
+                          "literalType": "INT",
+                          "loc": {
+                            "end": {
+                              "column": 15,
+                              "line": 7
+                            },
+                            "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                            "start": {
+                              "column": 13,
+                              "line": 7
+                            }
+                          },
+                          "type": "Literal",
+                          "value": "10"
+                        },
+                        "loc": null,
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "loc": null,
+                          "name": "int",
+                          "type": "Identifier"
+                        },
+                        "variableParam": false
+                      },
+                      {
+                        "_meta": {},
+                        "cloned": true,
+                        "id": {
+                          "_meta": {
+                            "ReceiveCls": "",
+                            "type": {
+                              "_meta": {
+                                "ReceiveCls": ""
+                              },
+                              "id": {
+                                "_meta": {
+                                  "ReceiveCls": ""
+                                },
+                                "loc": {
+                                  "end": {
+                                    "column": 17,
+                                    "line": 8
+                                  },
+                                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/shortVarDecl.go",
+                                  "start": {
+                                    "column": 7,
+                                    "line": 8
+                                  }
+                                },
+                                "name": "FuncType",
+                                "type": "Identifier"
+                              },
+                              "loc": {
+                                "end": {
+                                  "column": 17,
+                                  "line": 8
+                                },
+                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/shortVarDecl.go",
+                                "start": {
+                                  "column": 7,
+                                  "line": 8
+                                }
+                              },
                               "params": null,
                               "results": [
                                 {
-                                  "type": "Identifier",
-                                  "name": "int",
-                                  "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 8,
-                                      "column": 14
-                                    },
-                                    "end": {
-                                      "Offset": 0,
-                                      "line": 8,
-                                      "column": 17
-                                    },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
+                                  "_meta": {
+                                    "ReceiveCls": ""
                                   },
-                                  "_meta": {}
+                                  "loc": {
+                                    "end": {
+                                      "column": 17,
+                                      "line": 8
+                                    },
+                                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/shortVarDecl.go",
+                                    "start": {
+                                      "column": 14,
+                                      "line": 8
+                                    }
+                                  },
+                                  "name": "int",
+                                  "type": "Identifier"
                                 }
                               ],
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 8,
-                                  "column": 7
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 8,
-                                  "column": 17
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                              },
-                              "_meta": {}
+                              "type": "FuncType",
+                              "typeParams": null
                             }
-                          }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 3,
+                              "line": 8
+                            },
+                            "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                            "start": {
+                              "column": 2,
+                              "line": 8
+                            }
+                          },
+                          "name": "c",
+                          "type": "Identifier"
                         },
                         "init": {
-                          "type": "FunctionDefinition",
-                          "id": {
-                            "type": "Identifier",
-                            "name": "",
-                            "loc": null,
-                            "_meta": {}
-                          },
-                          "parameters": [],
-                          "returnType": {
-                            "type": "Identifier",
-                            "name": "int",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 8,
-                                "column": 14
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 8,
-                                "column": 17
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                            },
-                            "_meta": {}
-                          },
+                          "_meta": {},
                           "body": {
-                            "type": "ScopedStatement",
+                            "_meta": {},
                             "body": [
                               {
-                                "type": "ReturnStatement",
+                                "_meta": {},
                                 "argument": {
-                                  "type": "Literal",
-                                  "value": "7",
+                                  "_meta": {},
                                   "literalType": "INT",
                                   "loc": {
-                                    "start": {
-                                      "Offset": 0,
-                                      "line": 8,
-                                      "column": 27
-                                    },
                                     "end": {
-                                      "Offset": 0,
-                                      "line": 8,
-                                      "column": 28
+                                      "column": 28,
+                                      "line": 8
                                     },
-                                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
+                                    "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                                    "start": {
+                                      "column": 27,
+                                      "line": 8
+                                    }
                                   },
-                                  "_meta": {}
+                                  "type": "Literal",
+                                  "value": "7"
                                 },
                                 "isYield": false,
                                 "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 8,
-                                    "column": 20
-                                  },
                                   "end": {
-                                    "Offset": 0,
-                                    "line": 8,
-                                    "column": 28
+                                    "column": 28,
+                                    "line": 8
                                   },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
+                                  "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                                  "start": {
+                                    "column": 20,
+                                    "line": 8
+                                  }
                                 },
-                                "_meta": {}
+                                "type": "ReturnStatement"
                               }
                             ],
                             "id": null,
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 8,
-                                "column": 18
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 8,
-                                "column": 30
+                                "column": 30,
+                                "line": 8
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
+                              "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                              "start": {
+                                "column": 18,
+                                "line": 8
+                              }
                             },
-                            "_meta": {}
+                            "type": "ScopedStatement"
+                          },
+                          "id": null,
+                          "loc": {
+                            "end": {
+                              "column": 30,
+                              "line": 8
+                            },
+                            "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                            "start": {
+                              "column": 7,
+                              "line": 8
+                            }
                           },
                           "modifiers": null,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 8,
-                              "column": 7
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 8,
-                              "column": 30
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                          },
-                          "_meta": {}
-                        },
-                        "cloned": true,
-                        "varType": {
-                          "type": "FuncType",
-                          "id": {
-                            "type": "Identifier",
-                            "name": "FuncType",
+                          "parameters": [],
+                          "returnType": {
+                            "_meta": {},
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 8,
-                                "column": 7
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 8,
-                                "column": 17
+                                "column": 17,
+                                "line": 8
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
+                              "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                              "start": {
+                                "column": 14,
+                                "line": 8
+                              }
                             },
-                            "_meta": {}
+                            "name": "int",
+                            "type": "Identifier"
                           },
-                          "typeParams": null,
+                          "type": "FunctionDefinition"
+                        },
+                        "loc": {
+                          "end": {
+                            "column": 30,
+                            "line": 8
+                          },
+                          "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                          "start": {
+                            "column": 2,
+                            "line": 8
+                          }
+                        },
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "id": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 17,
+                                "line": 8
+                              },
+                              "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                              "start": {
+                                "column": 7,
+                                "line": 8
+                              }
+                            },
+                            "name": "FuncType",
+                            "type": "Identifier"
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 17,
+                              "line": 8
+                            },
+                            "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                            "start": {
+                              "column": 7,
+                              "line": 8
+                            }
+                          },
                           "params": null,
                           "results": [
                             {
-                              "type": "Identifier",
-                              "name": "int",
+                              "_meta": {},
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 8,
-                                  "column": 14
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 8,
-                                  "column": 17
+                                  "column": 17,
+                                  "line": 8
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
+                                "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                                "start": {
+                                  "column": 14,
+                                  "line": 8
+                                }
                               },
-                              "_meta": {}
+                              "name": "int",
+                              "type": "Identifier"
                             }
                           ],
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 8,
-                              "column": 7
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 8,
-                              "column": 17
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                          },
-                          "_meta": {}
+                          "type": "FuncType",
+                          "typeParams": null
                         },
-                        "variableParam": false,
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 8,
-                            "column": 2
-                          },
-                          "end": {
-                            "Offset": 0,
-                            "line": 8,
-                            "column": 30
-                          },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                        },
-                        "_meta": {}
+                        "variableParam": false
                       },
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": true,
                         "id": {
-                          "type": "Identifier",
-                          "name": "d",
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 9,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 9,
-                              "column": 3
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                          },
                           "_meta": {
+                            "ReceiveCls": "",
                             "type": {
-                              "type": "ChanType",
-                              "id": {
-                                "type": "Identifier",
-                                "name": "ChanType",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 9,
-                                    "column": 12
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 9,
-                                    "column": 20
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                                },
-                                "_meta": {}
+                              "_meta": {
+                                "ReceiveCls": ""
                               },
-                              "channelDirection": "",
-                              "valueType": {
-                                "type": "Identifier",
-                                "name": "int",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 9,
-                                    "column": 17
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 9,
-                                    "column": 20
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
+                              "dir": "",
+                              "id": {
+                                "_meta": {
+                                  "ReceiveCls": ""
                                 },
-                                "_meta": {}
+                                "loc": {
+                                  "end": {
+                                    "column": 20,
+                                    "line": 9
+                                  },
+                                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/shortVarDecl.go",
+                                  "start": {
+                                    "column": 12,
+                                    "line": 9
+                                  }
+                                },
+                                "name": "ChanType",
+                                "type": "Identifier"
                               },
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 9,
-                                  "column": 12
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 9,
-                                  "column": 20
+                                  "column": 20,
+                                  "line": 9
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
+                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/shortVarDecl.go",
+                                "start": {
+                                  "column": 12,
+                                  "line": 9
+                                }
                               },
-                              "_meta": {}
+                              "type": "ChanType",
+                              "valueType": {
+                                "_meta": {
+                                  "ReceiveCls": ""
+                                },
+                                "loc": {
+                                  "end": {
+                                    "column": 20,
+                                    "line": 9
+                                  },
+                                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/shortVarDecl.go",
+                                  "start": {
+                                    "column": 17,
+                                    "line": 9
+                                  }
+                                },
+                                "name": "int",
+                                "type": "Identifier"
+                              }
                             }
-                          }
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 3,
+                              "line": 9
+                            },
+                            "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                            "start": {
+                              "column": 2,
+                              "line": 9
+                            }
+                          },
+                          "name": "d",
+                          "type": "Identifier"
                         },
                         "init": {
-                          "type": "CallExpression",
-                          "callee": {
-                            "type": "Identifier",
-                            "name": "make",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 9,
-                                "column": 7
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 9,
-                                "column": 11
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                            },
-                            "_meta": {}
-                          },
+                          "_meta": {},
                           "arguments": [
                             {
-                              "type": "ChanType",
+                              "_meta": {},
+                              "dir": "",
                               "id": {
-                                "type": "Identifier",
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 20,
+                                    "line": 9
+                                  },
+                                  "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                                  "start": {
+                                    "column": 12,
+                                    "line": 9
+                                  }
+                                },
                                 "name": "ChanType",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 9,
-                                    "column": 12
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 9,
-                                    "column": 20
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                                },
-                                "_meta": {}
-                              },
-                              "channelDirection": "",
-                              "valueType": {
-                                "type": "Identifier",
-                                "name": "int",
-                                "loc": {
-                                  "start": {
-                                    "Offset": 0,
-                                    "line": 9,
-                                    "column": 17
-                                  },
-                                  "end": {
-                                    "Offset": 0,
-                                    "line": 9,
-                                    "column": 20
-                                  },
-                                  "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                                },
-                                "_meta": {}
+                                "type": "Identifier"
                               },
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 9,
-                                  "column": 12
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 9,
-                                  "column": 20
+                                  "column": 20,
+                                  "line": 9
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
+                                "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                                "start": {
+                                  "column": 12,
+                                  "line": 9
+                                }
                               },
-                              "_meta": {}
+                              "type": "ChanType",
+                              "valueType": {
+                                "_meta": {},
+                                "loc": {
+                                  "end": {
+                                    "column": 20,
+                                    "line": 9
+                                  },
+                                  "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                                  "start": {
+                                    "column": 17,
+                                    "line": 9
+                                  }
+                                },
+                                "name": "int",
+                                "type": "Identifier"
+                              }
                             }
                           ],
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 9,
-                              "column": 7
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 9,
-                              "column": 21
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                          },
-                          "_meta": {}
-                        },
-                        "cloned": true,
-                        "varType": {
-                          "type": "ChanType",
-                          "id": {
-                            "type": "Identifier",
-                            "name": "ChanType",
+                          "callee": {
+                            "_meta": {},
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 9,
-                                "column": 12
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 9,
-                                "column": 20
+                                "column": 11,
+                                "line": 9
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                            },
-                            "_meta": {}
-                          },
-                          "channelDirection": "",
-                          "valueType": {
-                            "type": "Identifier",
-                            "name": "int",
-                            "loc": {
+                              "sourcefile": "$EXAMPLES/shortVarDecl.go",
                               "start": {
-                                "Offset": 0,
-                                "line": 9,
-                                "column": 17
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 9,
-                                "column": 20
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
+                                "column": 7,
+                                "line": 9
+                              }
                             },
-                            "_meta": {}
+                            "name": "make",
+                            "type": "Identifier"
                           },
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 9,
-                              "column": 12
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 9,
-                              "column": 20
+                              "column": 21,
+                              "line": 9
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
+                            "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                            "start": {
+                              "column": 7,
+                              "line": 9
+                            }
                           },
-                          "_meta": {}
+                          "type": "CallExpression"
                         },
-                        "variableParam": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 9,
-                            "column": 2
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 9,
-                            "column": 21
+                            "column": 21,
+                            "line": 9
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
+                          "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                          "start": {
+                            "column": 2,
+                            "line": 9
+                          }
                         },
-                        "_meta": {}
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "dir": "",
+                          "id": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 20,
+                                "line": 9
+                              },
+                              "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                              "start": {
+                                "column": 12,
+                                "line": 9
+                              }
+                            },
+                            "name": "ChanType",
+                            "type": "Identifier"
+                          },
+                          "loc": {
+                            "end": {
+                              "column": 20,
+                              "line": 9
+                            },
+                            "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                            "start": {
+                              "column": 12,
+                              "line": 9
+                            }
+                          },
+                          "type": "ChanType",
+                          "valueType": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 20,
+                                "line": 9
+                              },
+                              "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                              "start": {
+                                "column": 17,
+                                "line": 9
+                              }
+                            },
+                            "name": "int",
+                            "type": "Identifier"
+                          }
+                        },
+                        "variableParam": false
                       },
                       {
-                        "type": "VariableDeclaration",
+                        "_meta": {},
+                        "cloned": true,
                         "id": {
-                          "type": "TupleExpression",
+                          "_meta": {},
                           "elements": [
                             {
-                              "type": "Identifier",
+                              "_meta": {},
+                              "loc": {
+                                "end": {
+                                  "column": 3,
+                                  "line": 10
+                                },
+                                "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                                "start": {
+                                  "column": 2,
+                                  "line": 10
+                                }
+                              },
                               "name": "e",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 10,
-                                  "column": 2
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 10,
-                                  "column": 3
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                              },
-                              "_meta": {}
+                              "type": "Identifier"
                             },
                             {
-                              "type": "Identifier",
+                              "_meta": {},
+                              "loc": {
+                                "end": {
+                                  "column": 6,
+                                  "line": 10
+                                },
+                                "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                                "start": {
+                                  "column": 5,
+                                  "line": 10
+                                }
+                              },
                               "name": "f",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 10,
-                                  "column": 5
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 10,
-                                  "column": 6
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                              },
-                              "_meta": {}
+                              "type": "Identifier"
                             },
                             {
-                              "type": "Identifier",
-                              "name": "_",
+                              "_meta": {},
                               "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 10,
-                                  "column": 8
-                                },
                                 "end": {
-                                  "Offset": 0,
-                                  "line": 10,
-                                  "column": 9
+                                  "column": 9,
+                                  "line": 10
                                 },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
+                                "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                                "start": {
+                                  "column": 8,
+                                  "line": 10
+                                }
                               },
-                              "_meta": {}
+                              "name": "_",
+                              "type": "Identifier"
                             }
                           ],
-                          "modifiable": false,
                           "loc": null,
-                          "_meta": {}
+                          "modifiable": false,
+                          "type": "TupleExpression"
                         },
                         "init": {
-                          "type": "CallExpression",
+                          "_meta": {},
+                          "arguments": [],
                           "callee": {
-                            "type": "MemberAccess",
-                            "object": {
-                              "type": "Identifier",
-                              "name": "os",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 10,
-                                  "column": 13
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 10,
-                                  "column": 15
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                              },
-                              "_meta": {}
-                            },
-                            "property": {
-                              "type": "Identifier",
-                              "name": "Pipe",
-                              "loc": {
-                                "start": {
-                                  "Offset": 0,
-                                  "line": 10,
-                                  "column": 16
-                                },
-                                "end": {
-                                  "Offset": 0,
-                                  "line": 10,
-                                  "column": 20
-                                },
-                                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                              },
-                              "_meta": {}
-                            },
+                            "_meta": {},
                             "computed": false,
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 10,
-                                "column": 13
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 10,
-                                "column": 20
+                                "column": 20,
+                                "line": 10
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
+                              "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                              "start": {
+                                "column": 13,
+                                "line": 10
+                              }
                             },
-                            "_meta": {}
+                            "object": {
+                              "_meta": {},
+                              "loc": {
+                                "end": {
+                                  "column": 15,
+                                  "line": 10
+                                },
+                                "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                                "start": {
+                                  "column": 13,
+                                  "line": 10
+                                }
+                              },
+                              "name": "os",
+                              "type": "Identifier"
+                            },
+                            "property": {
+                              "_meta": {},
+                              "loc": {
+                                "end": {
+                                  "column": 20,
+                                  "line": 10
+                                },
+                                "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                                "start": {
+                                  "column": 16,
+                                  "line": 10
+                                }
+                              },
+                              "name": "Pipe",
+                              "type": "Identifier"
+                            },
+                            "type": "MemberAccess"
                           },
-                          "arguments": [],
                           "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 10,
-                              "column": 13
-                            },
                             "end": {
-                              "Offset": 0,
-                              "line": 10,
-                              "column": 22
+                              "column": 22,
+                              "line": 10
                             },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
+                            "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                            "start": {
+                              "column": 13,
+                              "line": 10
+                            }
                           },
-                          "_meta": {}
+                          "type": "CallExpression"
                         },
-                        "cloned": true,
-                        "varType": {
-                          "type": "DynamicType",
-                          "id": null,
-                          "typeArguments": null,
-                          "loc": null,
-                          "_meta": {}
-                        },
-                        "variableParam": false,
                         "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 10,
-                            "column": 2
-                          },
                           "end": {
-                            "Offset": 0,
-                            "line": 10,
-                            "column": 22
+                            "column": 22,
+                            "line": 10
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
+                          "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                          "start": {
+                            "column": 2,
+                            "line": 10
+                          }
                         },
-                        "_meta": {}
+                        "type": "VariableDeclaration",
+                        "varType": {
+                          "_meta": {},
+                          "id": null,
+                          "loc": null,
+                          "type": "DynamicType",
+                          "typeArguments": null
+                        },
+                        "variableParam": false
                       },
                       {
-                        "type": "CallExpression",
-                        "callee": {
-                          "type": "MemberAccess",
-                          "object": {
-                            "type": "Identifier",
-                            "name": "fmt",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 2
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 5
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                            },
-                            "_meta": {}
-                          },
-                          "property": {
-                            "type": "Identifier",
-                            "name": "Println",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 6
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 13
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                            },
-                            "_meta": {}
-                          },
-                          "computed": false,
-                          "loc": {
-                            "start": {
-                              "Offset": 0,
-                              "line": 12,
-                              "column": 2
-                            },
-                            "end": {
-                              "Offset": 0,
-                              "line": 12,
-                              "column": 13
-                            },
-                            "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                          },
-                          "_meta": {}
-                        },
+                        "_meta": {},
                         "arguments": [
                           {
-                            "type": "Identifier",
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 15,
+                                "line": 12
+                              },
+                              "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                              "start": {
+                                "column": 14,
+                                "line": 12
+                              }
+                            },
                             "name": "a",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 14
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 15
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 18,
+                                "line": 12
+                              },
+                              "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                              "start": {
+                                "column": 17,
+                                "line": 12
+                              }
+                            },
                             "name": "b",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 17
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 18
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 21,
+                                "line": 12
+                              },
+                              "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                              "start": {
+                                "column": 20,
+                                "line": 12
+                              }
+                            },
                             "name": "c",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 20
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 21
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 24,
+                                "line": 12
+                              },
+                              "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                              "start": {
+                                "column": 23,
+                                "line": 12
+                              }
+                            },
                             "name": "d",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 23
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 24
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 27,
+                                "line": 12
+                              },
+                              "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                              "start": {
+                                "column": 26,
+                                "line": 12
+                              }
+                            },
                             "name": "e",
-                            "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 26
-                              },
-                              "end": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 27
-                              },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
-                            },
-                            "_meta": {}
+                            "type": "Identifier"
                           },
                           {
-                            "type": "Identifier",
-                            "name": "f",
+                            "_meta": {},
                             "loc": {
-                              "start": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 29
-                              },
                               "end": {
-                                "Offset": 0,
-                                "line": 12,
-                                "column": 30
+                                "column": 30,
+                                "line": 12
                               },
-                              "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
+                              "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                              "start": {
+                                "column": 29,
+                                "line": 12
+                              }
                             },
-                            "_meta": {}
+                            "name": "f",
+                            "type": "Identifier"
                           }
                         ],
-                        "loc": {
-                          "start": {
-                            "Offset": 0,
-                            "line": 12,
-                            "column": 2
+                        "callee": {
+                          "_meta": {},
+                          "computed": false,
+                          "loc": {
+                            "end": {
+                              "column": 13,
+                              "line": 12
+                            },
+                            "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                            "start": {
+                              "column": 2,
+                              "line": 12
+                            }
                           },
-                          "end": {
-                            "Offset": 0,
-                            "line": 12,
-                            "column": 31
+                          "object": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 5,
+                                "line": 12
+                              },
+                              "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                              "start": {
+                                "column": 2,
+                                "line": 12
+                              }
+                            },
+                            "name": "fmt",
+                            "type": "Identifier"
                           },
-                          "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
+                          "property": {
+                            "_meta": {},
+                            "loc": {
+                              "end": {
+                                "column": 13,
+                                "line": 12
+                              },
+                              "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                              "start": {
+                                "column": 6,
+                                "line": 12
+                              }
+                            },
+                            "name": "Println",
+                            "type": "Identifier"
+                          },
+                          "type": "MemberAccess"
                         },
-                        "_meta": {}
+                        "loc": {
+                          "end": {
+                            "column": 31,
+                            "line": 12
+                          },
+                          "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                          "start": {
+                            "column": 2,
+                            "line": 12
+                          }
+                        },
+                        "type": "CallExpression"
                       }
                     ],
                     "id": null,
                     "loc": {
-                      "start": {
-                        "Offset": 0,
-                        "line": 6,
-                        "column": 22
-                      },
                       "end": {
-                        "Offset": 0,
-                        "line": 13,
-                        "column": 2
+                        "column": 2,
+                        "line": 13
                       },
-                      "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
+                      "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                      "start": {
+                        "column": 22,
+                        "line": 6
+                      }
                     },
-                    "_meta": {}
+                    "type": "ScopedStatement"
+                  },
+                  "id": {
+                    "_meta": {},
+                    "loc": {
+                      "end": {
+                        "column": 19,
+                        "line": 6
+                      },
+                      "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                      "start": {
+                        "column": 6,
+                        "line": 6
+                      }
+                    },
+                    "name": "ShortVarDecls",
+                    "type": "Identifier"
+                  },
+                  "loc": {
+                    "end": {
+                      "column": 2,
+                      "line": 13
+                    },
+                    "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                    "start": {
+                      "column": 1,
+                      "line": 6
+                    }
                   },
                   "modifiers": null,
-                  "loc": {
-                    "start": {
-                      "Offset": 0,
-                      "line": 6,
-                      "column": 1
-                    },
-                    "end": {
-                      "Offset": 0,
-                      "line": 13,
-                      "column": 2
-                    },
-                    "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
+                  "parameters": [],
+                  "returnType": {
+                    "_meta": {},
+                    "id": null,
+                    "loc": null,
+                    "type": "VoidType",
+                    "typeArguments": null
                   },
-                  "_meta": {}
+                  "type": "FunctionDefinition"
                 }
               ],
               "language": "golang",
               "languageVersion": "1.18",
-              "uri": "",
-              "version": "",
               "loc": {
-                "start": {
-                  "Offset": 0,
-                  "line": 1,
-                  "column": 1
-                },
                 "end": {
-                  "Offset": 0,
-                  "line": 13,
-                  "column": 2
+                  "column": 2,
+                  "line": 13
                 },
-                "sourcefile": "/Users/ariel/code/uast/uast4go/examples/shortVarDecl.go"
+                "sourcefile": "$EXAMPLES/shortVarDecl.go",
+                "start": {
+                  "column": 1,
+                  "line": 1
+                }
               },
-              "_meta": {}
+              "type": "CompileUnit",
+              "uri": "",
+              "version": ""
             },
             "packageName": "__single__"
           }
@@ -1219,6 +1121,5 @@
         "subs": {}
       }
     }
-  },
-  "moduleName": "__single_module__"
+  }
 }

@@ -1,5 +1,5 @@
 import { COMMENT_KEYS } from "../constants";
-import type * as t from "..";
+import type * as t from "../ast-types/generated";
 
 const CLEAR_KEYS = ["tokens", "start", "end", "loc", "raw", "rawValue"];
 

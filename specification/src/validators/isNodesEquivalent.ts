@@ -1,5 +1,5 @@
 import { NODE_FIELDS, VISITOR_KEYS } from "../definitions";
-import type * as t from "..";
+import type * as t from "../ast-types/generated";
 
 /**
  * Check if two nodes are equivalent
