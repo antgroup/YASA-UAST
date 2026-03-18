@@ -368,3 +368,19 @@ func convertToLineColumn(node ast.Node, fset *token.FileSet) *Location {
 		},
 	}
 }
+
+func convertPosRange(start token.Pos, end token.Pos, fset *token.FileSet) *Location {
+	startPos := fset.Position(start)
+	endPos := fset.Position(end)
+	return &Location{
+		SourceFile: startPos.Filename,
+		Start: Position{
+			Line:   startPos.Line,
+			Column: startPos.Column,
+		},
+		End: Position{
+			Line:   endPos.Line,
+			Column: endPos.Column,
+		},
+	}
+}
