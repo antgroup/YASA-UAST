@@ -909,11 +909,18 @@ class UASTTransformer(ast.NodeTransformer):
                                                                      UNode.Meta())))  # todo 缺少了nonlocal的标记
         return self.packPos(node, UNode.Sequence(UNode.SourceLocation(), UNode.Meta(), exprs))
 
-    def visit_withitem(self, node):  # 暂不处理
+    def visit_withitem(self, node):
         if node.optional_vars is not None:
+            enter = UNode.MemberAccess(UNode.SourceLocation(), UNode.Meta(),
+                                       self.packPos(node.context_expr, self.visit(node.context_expr)),
+                                       UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), "__enter__"))
+
+            call = UNode.CallExpression(UNode.SourceLocation(), UNode.Meta(),
+                                        self.packPos(node.context_expr, enter), [])
+
             return UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(),
                                              self.packPos(node.optional_vars, self.visit(node.optional_vars)),
-                                             self.packPos(node.context_expr, self.visit(node.context_expr)), False,
+                                             self.packPos(node.context_expr, call), False,
                                              UNode.DynamicType(UNode.SourceLocation(), UNode.Meta()))
         else:
             return UNode.Noop(UNode.SourceLocation(), UNode.Meta())
