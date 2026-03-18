@@ -9,7 +9,7 @@ class Meta:
     isConstructor: bool = False
     isAsync: bool = False
     decorators: Optional['Identifier'] = None
-    isKwargs: bool = False
+    parameterKind: Optional[str] = None
 
 
 @dataclass_json
