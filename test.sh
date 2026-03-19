@@ -16,7 +16,7 @@ YELLOW='\033[0;33m'
 CYAN='\033[0;36m'
 NC='\033[0m'
 
-TOTAL=8
+TOTAL=9
 STEP=0
 
 step() { ((STEP++)); echo -e "\n${CYAN}[$STEP/$TOTAL] $1${NC}"; }
@@ -210,6 +210,21 @@ PYEOF
             fi
         fi
         rm -f /tmp/uast_smoke_output.json
+    fi
+fi
+
+step "parser-Python: regression test"
+cd "$ROOT_DIR/parser-Python"
+
+if [ -z "${PYTHON}" ]; then
+    skip "parser-Python regression test (need python3 >= 3.10, not found or too old)"
+else
+    REGRESSION_CHECK=$(PYTHONPATH=. $PYTHON test/run_regression.py 2>&1) || true
+    if echo "$REGRESSION_CHECK" | grep -q "python regression OK"; then
+        pass "parser-Python: regression test OK"
+    else
+        fail "parser-Python: regression test failed"
+        echo "$REGRESSION_CHECK" | tail -10
     fi
 fi
 
