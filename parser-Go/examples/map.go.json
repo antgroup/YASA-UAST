@@ -7,7 +7,7 @@
       "/": {
         "PathName": "",
         "files": {
-          "$EXAMPLES/map.go": {
+          "examples/map.go": {
             "node": {
               "_meta": {},
               "body": [
@@ -18,7 +18,7 @@
                       "column": 17,
                       "line": 1
                     },
-                    "sourcefile": "$EXAMPLES/map.go",
+                    "sourcefile": "examples/map.go",
                     "start": {
                       "column": 9,
                       "line": 1
@@ -31,7 +31,7 @@
                         "column": 17,
                         "line": 1
                       },
-                      "sourcefile": "$EXAMPLES/map.go",
+                      "sourcefile": "examples/map.go",
                       "start": {
                         "column": 9,
                         "line": 1
@@ -54,19 +54,15 @@
                           "_meta": {
                             "ReceiveCls": "",
                             "type": {
-                              "_meta": {
-                                "ReceiveCls": ""
-                              },
+                              "_meta": {},
                               "id": {
-                                "_meta": {
-                                  "ReceiveCls": ""
-                                },
+                                "_meta": {},
                                 "loc": {
                                   "end": {
                                     "column": 25,
                                     "line": 4
                                   },
-                                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                                  "sourcefile": "examples/map.go",
                                   "start": {
                                     "column": 8,
                                     "line": 4
@@ -76,15 +72,13 @@
                                 "type": "Identifier"
                               },
                               "keyType": {
-                                "_meta": {
-                                  "ReceiveCls": ""
-                                },
+                                "_meta": {},
                                 "loc": {
                                   "end": {
                                     "column": 18,
                                     "line": 4
                                   },
-                                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                                  "sourcefile": "examples/map.go",
                                   "start": {
                                     "column": 12,
                                     "line": 4
@@ -98,7 +92,7 @@
                                   "column": 25,
                                   "line": 4
                                 },
-                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                                "sourcefile": "examples/map.go",
                                 "start": {
                                   "column": 8,
                                   "line": 4
@@ -107,15 +101,13 @@
                               "type": "MapType",
                               "typeArguments": null,
                               "valueType": {
-                                "_meta": {
-                                  "ReceiveCls": ""
-                                },
+                                "_meta": {},
                                 "loc": {
                                   "end": {
                                     "column": 25,
                                     "line": 4
                                   },
-                                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                                  "sourcefile": "examples/map.go",
                                   "start": {
                                     "column": 19,
                                     "line": 4
@@ -131,7 +123,7 @@
                               "column": 7,
                               "line": 4
                             },
-                            "sourcefile": "$EXAMPLES/map.go",
+                            "sourcefile": "examples/map.go",
                             "start": {
                               "column": 6,
                               "line": 4
@@ -146,7 +138,7 @@
                             "column": 25,
                             "line": 4
                           },
-                          "sourcefile": "$EXAMPLES/map.go",
+                          "sourcefile": "examples/map.go",
                           "start": {
                             "column": 6,
                             "line": 4
@@ -162,7 +154,7 @@
                                 "column": 25,
                                 "line": 4
                               },
-                              "sourcefile": "$EXAMPLES/map.go",
+                              "sourcefile": "examples/map.go",
                               "start": {
                                 "column": 8,
                                 "line": 4
@@ -178,7 +170,7 @@
                                 "column": 18,
                                 "line": 4
                               },
-                              "sourcefile": "$EXAMPLES/map.go",
+                              "sourcefile": "examples/map.go",
                               "start": {
                                 "column": 12,
                                 "line": 4
@@ -192,7 +184,7 @@
                               "column": 25,
                               "line": 4
                             },
-                            "sourcefile": "$EXAMPLES/map.go",
+                            "sourcefile": "examples/map.go",
                             "start": {
                               "column": 8,
                               "line": 4
@@ -207,7 +199,7 @@
                                 "column": 25,
                                 "line": 4
                               },
-                              "sourcefile": "$EXAMPLES/map.go",
+                              "sourcefile": "examples/map.go",
                               "start": {
                                 "column": 19,
                                 "line": 4
@@ -229,7 +221,7 @@
                               "column": 3,
                               "line": 5
                             },
-                            "sourcefile": "$EXAMPLES/map.go",
+                            "sourcefile": "examples/map.go",
                             "start": {
                               "column": 2,
                               "line": 5
@@ -243,7 +235,7 @@
                             "column": 29,
                             "line": 5
                           },
-                          "sourcefile": "$EXAMPLES/map.go",
+                          "sourcefile": "examples/map.go",
                           "start": {
                             "column": 2,
                             "line": 5
@@ -262,7 +254,7 @@
                                     "column": 28,
                                     "line": 5
                                   },
-                                  "sourcefile": "$EXAMPLES/map.go",
+                                  "sourcefile": "examples/map.go",
                                   "start": {
                                     "column": 11,
                                     "line": 5
@@ -278,7 +270,7 @@
                                     "column": 21,
                                     "line": 5
                                   },
-                                  "sourcefile": "$EXAMPLES/map.go",
+                                  "sourcefile": "examples/map.go",
                                   "start": {
                                     "column": 15,
                                     "line": 5
@@ -292,7 +284,7 @@
                                   "column": 28,
                                   "line": 5
                                 },
-                                "sourcefile": "$EXAMPLES/map.go",
+                                "sourcefile": "examples/map.go",
                                 "start": {
                                   "column": 11,
                                   "line": 5
@@ -307,7 +299,7 @@
                                     "column": 28,
                                     "line": 5
                                   },
-                                  "sourcefile": "$EXAMPLES/map.go",
+                                  "sourcefile": "examples/map.go",
                                   "start": {
                                     "column": 22,
                                     "line": 5
@@ -325,7 +317,7 @@
                                 "column": 10,
                                 "line": 5
                               },
-                              "sourcefile": "$EXAMPLES/map.go",
+                              "sourcefile": "examples/map.go",
                               "start": {
                                 "column": 6,
                                 "line": 5
@@ -339,7 +331,7 @@
                               "column": 29,
                               "line": 5
                             },
-                            "sourcefile": "$EXAMPLES/map.go",
+                            "sourcefile": "examples/map.go",
                             "start": {
                               "column": 6,
                               "line": 5
@@ -356,9 +348,7 @@
                           "_meta": {
                             "ReceiveCls": "",
                             "type": {
-                              "_meta": {
-                                "ReceiveCls": ""
-                              },
+                              "_meta": {},
                               "loc": null,
                               "name": "string",
                               "type": "Identifier"
@@ -369,7 +359,7 @@
                               "column": 17,
                               "line": 6
                             },
-                            "sourcefile": "$EXAMPLES/map.go",
+                            "sourcefile": "examples/map.go",
                             "start": {
                               "column": 6,
                               "line": 6
@@ -386,7 +376,7 @@
                               "column": 22,
                               "line": 6
                             },
-                            "sourcefile": "$EXAMPLES/map.go",
+                            "sourcefile": "examples/map.go",
                             "start": {
                               "column": 20,
                               "line": 6
@@ -400,7 +390,7 @@
                             "column": 22,
                             "line": 6
                           },
-                          "sourcefile": "$EXAMPLES/map.go",
+                          "sourcefile": "examples/map.go",
                           "start": {
                             "column": 6,
                             "line": 6
@@ -426,7 +416,7 @@
                               "column": 11,
                               "line": 7
                             },
-                            "sourcefile": "$EXAMPLES/map.go",
+                            "sourcefile": "examples/map.go",
                             "start": {
                               "column": 2,
                               "line": 7
@@ -439,7 +429,7 @@
                                 "column": 3,
                                 "line": 7
                               },
-                              "sourcefile": "$EXAMPLES/map.go",
+                              "sourcefile": "examples/map.go",
                               "start": {
                                 "column": 2,
                                 "line": 7
@@ -456,7 +446,7 @@
                                 "column": 10,
                                 "line": 7
                               },
-                              "sourcefile": "$EXAMPLES/map.go",
+                              "sourcefile": "examples/map.go",
                               "start": {
                                 "column": 4,
                                 "line": 7
@@ -472,7 +462,7 @@
                             "column": 25,
                             "line": 7
                           },
-                          "sourcefile": "$EXAMPLES/map.go",
+                          "sourcefile": "examples/map.go",
                           "start": {
                             "column": 2,
                             "line": 7
@@ -486,7 +476,7 @@
                               "column": 25,
                               "line": 7
                             },
-                            "sourcefile": "$EXAMPLES/map.go",
+                            "sourcefile": "examples/map.go",
                             "start": {
                               "column": 14,
                               "line": 7
@@ -507,7 +497,7 @@
                                 "column": 16,
                                 "line": 8
                               },
-                              "sourcefile": "$EXAMPLES/map.go",
+                              "sourcefile": "examples/map.go",
                               "start": {
                                 "column": 15,
                                 "line": 8
@@ -524,7 +514,7 @@
                               "column": 14,
                               "line": 8
                             },
-                            "sourcefile": "$EXAMPLES/map.go",
+                            "sourcefile": "examples/map.go",
                             "start": {
                               "column": 2,
                               "line": 8
@@ -538,7 +528,7 @@
                             "column": 17,
                             "line": 8
                           },
-                          "sourcefile": "$EXAMPLES/map.go",
+                          "sourcefile": "examples/map.go",
                           "start": {
                             "column": 2,
                             "line": 8
@@ -553,7 +543,7 @@
                         "column": 2,
                         "line": 9
                       },
-                      "sourcefile": "$EXAMPLES/map.go",
+                      "sourcefile": "examples/map.go",
                       "start": {
                         "column": 13,
                         "line": 3
@@ -568,7 +558,7 @@
                         "column": 10,
                         "line": 3
                       },
-                      "sourcefile": "$EXAMPLES/map.go",
+                      "sourcefile": "examples/map.go",
                       "start": {
                         "column": 6,
                         "line": 3
@@ -582,7 +572,7 @@
                       "column": 2,
                       "line": 9
                     },
-                    "sourcefile": "$EXAMPLES/map.go",
+                    "sourcefile": "examples/map.go",
                     "start": {
                       "column": 1,
                       "line": 3
@@ -606,19 +596,15 @@
                     "_meta": {
                       "ReceiveCls": "",
                       "type": {
-                        "_meta": {
-                          "ReceiveCls": ""
-                        },
+                        "_meta": {},
                         "id": {
-                          "_meta": {
-                            "ReceiveCls": ""
-                          },
+                          "_meta": {},
                           "loc": {
                             "end": {
                               "column": 24,
                               "line": 16
                             },
-                            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                            "sourcefile": "examples/map.go",
                             "start": {
                               "column": 13,
                               "line": 16
@@ -628,15 +614,13 @@
                           "type": "Identifier"
                         },
                         "keyType": {
-                          "_meta": {
-                            "ReceiveCls": ""
-                          },
+                          "_meta": {},
                           "loc": {
                             "end": {
                               "column": 20,
                               "line": 16
                             },
-                            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                            "sourcefile": "examples/map.go",
                             "start": {
                               "column": 17,
                               "line": 16
@@ -650,7 +634,7 @@
                             "column": 24,
                             "line": 16
                           },
-                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                          "sourcefile": "examples/map.go",
                           "start": {
                             "column": 13,
                             "line": 16
@@ -659,15 +643,13 @@
                         "type": "MapType",
                         "typeArguments": null,
                         "valueType": {
-                          "_meta": {
-                            "ReceiveCls": ""
-                          },
+                          "_meta": {},
                           "loc": {
                             "end": {
                               "column": 24,
                               "line": 16
                             },
-                            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                            "sourcefile": "examples/map.go",
                             "start": {
                               "column": 21,
                               "line": 16
@@ -683,7 +665,7 @@
                         "column": 10,
                         "line": 16
                       },
-                      "sourcefile": "$EXAMPLES/map.go",
+                      "sourcefile": "examples/map.go",
                       "start": {
                         "column": 5,
                         "line": 16
@@ -702,19 +684,15 @@
                           "_meta": {
                             "ReceiveCls": "",
                             "type": {
-                              "_meta": {
-                                "ReceiveCls": ""
-                              },
+                              "_meta": {},
                               "id": {
-                                "_meta": {
-                                  "ReceiveCls": ""
-                                },
+                                "_meta": {},
                                 "loc": {
                                   "end": {
                                     "column": 24,
                                     "line": 16
                                   },
-                                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                                  "sourcefile": "examples/map.go",
                                   "start": {
                                     "column": 13,
                                     "line": 16
@@ -724,15 +702,13 @@
                                 "type": "Identifier"
                               },
                               "keyType": {
-                                "_meta": {
-                                  "ReceiveCls": ""
-                                },
+                                "_meta": {},
                                 "loc": {
                                   "end": {
                                     "column": 20,
                                     "line": 16
                                   },
-                                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                                  "sourcefile": "examples/map.go",
                                   "start": {
                                     "column": 17,
                                     "line": 16
@@ -746,7 +722,7 @@
                                   "column": 24,
                                   "line": 16
                                 },
-                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                                "sourcefile": "examples/map.go",
                                 "start": {
                                   "column": 13,
                                   "line": 16
@@ -755,15 +731,13 @@
                               "type": "MapType",
                               "typeArguments": null,
                               "valueType": {
-                                "_meta": {
-                                  "ReceiveCls": ""
-                                },
+                                "_meta": {},
                                 "loc": {
                                   "end": {
                                     "column": 24,
                                     "line": 16
                                   },
-                                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                                  "sourcefile": "examples/map.go",
                                   "start": {
                                     "column": 21,
                                     "line": 16
@@ -779,7 +753,7 @@
                               "column": 2,
                               "line": 21
                             },
-                            "sourcefile": "$EXAMPLES/map.go",
+                            "sourcefile": "examples/map.go",
                             "start": {
                               "column": 13,
                               "line": 16
@@ -800,7 +774,7 @@
                                   "column": 24,
                                   "line": 16
                                 },
-                                "sourcefile": "$EXAMPLES/map.go",
+                                "sourcefile": "examples/map.go",
                                 "start": {
                                   "column": 13,
                                   "line": 16
@@ -816,7 +790,7 @@
                                   "column": 20,
                                   "line": 16
                                 },
-                                "sourcefile": "$EXAMPLES/map.go",
+                                "sourcefile": "examples/map.go",
                                 "start": {
                                   "column": 17,
                                   "line": 16
@@ -830,7 +804,7 @@
                                 "column": 24,
                                 "line": 16
                               },
-                              "sourcefile": "$EXAMPLES/map.go",
+                              "sourcefile": "examples/map.go",
                               "start": {
                                 "column": 13,
                                 "line": 16
@@ -845,7 +819,7 @@
                                   "column": 24,
                                   "line": 16
                                 },
-                                "sourcefile": "$EXAMPLES/map.go",
+                                "sourcefile": "examples/map.go",
                                 "start": {
                                   "column": 21,
                                   "line": 16
@@ -869,7 +843,7 @@
                                 "column": 24,
                                 "line": 16
                               },
-                              "sourcefile": "$EXAMPLES/map.go",
+                              "sourcefile": "examples/map.go",
                               "start": {
                                 "column": 13,
                                 "line": 16
@@ -885,7 +859,7 @@
                                 "column": 20,
                                 "line": 16
                               },
-                              "sourcefile": "$EXAMPLES/map.go",
+                              "sourcefile": "examples/map.go",
                               "start": {
                                 "column": 17,
                                 "line": 16
@@ -899,7 +873,7 @@
                               "column": 24,
                               "line": 16
                             },
-                            "sourcefile": "$EXAMPLES/map.go",
+                            "sourcefile": "examples/map.go",
                             "start": {
                               "column": 13,
                               "line": 16
@@ -914,7 +888,7 @@
                                 "column": 24,
                                 "line": 16
                               },
-                              "sourcefile": "$EXAMPLES/map.go",
+                              "sourcefile": "examples/map.go",
                               "start": {
                                 "column": 21,
                                 "line": 16
@@ -937,19 +911,15 @@
                             "_meta": {
                               "ReceiveCls": "",
                               "type": {
-                                "_meta": {
-                                  "ReceiveCls": ""
-                                },
+                                "_meta": {},
                                 "id": {
-                                  "_meta": {
-                                    "ReceiveCls": ""
-                                  },
+                                  "_meta": {},
                                   "loc": {
                                     "end": {
                                       "column": 24,
                                       "line": 16
                                     },
-                                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                                    "sourcefile": "examples/map.go",
                                     "start": {
                                       "column": 13,
                                       "line": 16
@@ -959,15 +929,13 @@
                                   "type": "Identifier"
                                 },
                                 "keyType": {
-                                  "_meta": {
-                                    "ReceiveCls": ""
-                                  },
+                                  "_meta": {},
                                   "loc": {
                                     "end": {
                                       "column": 20,
                                       "line": 16
                                     },
-                                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                                    "sourcefile": "examples/map.go",
                                     "start": {
                                       "column": 17,
                                       "line": 16
@@ -981,7 +949,7 @@
                                     "column": 24,
                                     "line": 16
                                   },
-                                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                                  "sourcefile": "examples/map.go",
                                   "start": {
                                     "column": 13,
                                     "line": 16
@@ -990,15 +958,13 @@
                                 "type": "MapType",
                                 "typeArguments": null,
                                 "valueType": {
-                                  "_meta": {
-                                    "ReceiveCls": ""
-                                  },
+                                  "_meta": {},
                                   "loc": {
                                     "end": {
                                       "column": 24,
                                       "line": 16
                                     },
-                                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                                    "sourcefile": "examples/map.go",
                                     "start": {
                                       "column": 21,
                                       "line": 16
@@ -1014,7 +980,7 @@
                                 "column": 2,
                                 "line": 21
                               },
-                              "sourcefile": "$EXAMPLES/map.go",
+                              "sourcefile": "examples/map.go",
                               "start": {
                                 "column": 13,
                                 "line": 16
@@ -1031,7 +997,7 @@
                                 "column": 3,
                                 "line": 17
                               },
-                              "sourcefile": "$EXAMPLES/map.go",
+                              "sourcefile": "examples/map.go",
                               "start": {
                                 "column": 2,
                                 "line": 17
@@ -1052,7 +1018,7 @@
                               "column": 6,
                               "line": 17
                             },
-                            "sourcefile": "$EXAMPLES/map.go",
+                            "sourcefile": "examples/map.go",
                             "start": {
                               "column": 5,
                               "line": 17
@@ -1074,19 +1040,15 @@
                             "_meta": {
                               "ReceiveCls": "",
                               "type": {
-                                "_meta": {
-                                  "ReceiveCls": ""
-                                },
+                                "_meta": {},
                                 "id": {
-                                  "_meta": {
-                                    "ReceiveCls": ""
-                                  },
+                                  "_meta": {},
                                   "loc": {
                                     "end": {
                                       "column": 24,
                                       "line": 16
                                     },
-                                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                                    "sourcefile": "examples/map.go",
                                     "start": {
                                       "column": 13,
                                       "line": 16
@@ -1096,15 +1058,13 @@
                                   "type": "Identifier"
                                 },
                                 "keyType": {
-                                  "_meta": {
-                                    "ReceiveCls": ""
-                                  },
+                                  "_meta": {},
                                   "loc": {
                                     "end": {
                                       "column": 20,
                                       "line": 16
                                     },
-                                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                                    "sourcefile": "examples/map.go",
                                     "start": {
                                       "column": 17,
                                       "line": 16
@@ -1118,7 +1078,7 @@
                                     "column": 24,
                                     "line": 16
                                   },
-                                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                                  "sourcefile": "examples/map.go",
                                   "start": {
                                     "column": 13,
                                     "line": 16
@@ -1127,15 +1087,13 @@
                                 "type": "MapType",
                                 "typeArguments": null,
                                 "valueType": {
-                                  "_meta": {
-                                    "ReceiveCls": ""
-                                  },
+                                  "_meta": {},
                                   "loc": {
                                     "end": {
                                       "column": 24,
                                       "line": 16
                                     },
-                                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                                    "sourcefile": "examples/map.go",
                                     "start": {
                                       "column": 21,
                                       "line": 16
@@ -1151,7 +1109,7 @@
                                 "column": 2,
                                 "line": 21
                               },
-                              "sourcefile": "$EXAMPLES/map.go",
+                              "sourcefile": "examples/map.go",
                               "start": {
                                 "column": 13,
                                 "line": 16
@@ -1168,7 +1126,7 @@
                                 "column": 3,
                                 "line": 18
                               },
-                              "sourcefile": "$EXAMPLES/map.go",
+                              "sourcefile": "examples/map.go",
                               "start": {
                                 "column": 2,
                                 "line": 18
@@ -1189,7 +1147,7 @@
                               "column": 6,
                               "line": 18
                             },
-                            "sourcefile": "$EXAMPLES/map.go",
+                            "sourcefile": "examples/map.go",
                             "start": {
                               "column": 5,
                               "line": 18
@@ -1211,19 +1169,15 @@
                             "_meta": {
                               "ReceiveCls": "",
                               "type": {
-                                "_meta": {
-                                  "ReceiveCls": ""
-                                },
+                                "_meta": {},
                                 "id": {
-                                  "_meta": {
-                                    "ReceiveCls": ""
-                                  },
+                                  "_meta": {},
                                   "loc": {
                                     "end": {
                                       "column": 24,
                                       "line": 16
                                     },
-                                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                                    "sourcefile": "examples/map.go",
                                     "start": {
                                       "column": 13,
                                       "line": 16
@@ -1233,15 +1187,13 @@
                                   "type": "Identifier"
                                 },
                                 "keyType": {
-                                  "_meta": {
-                                    "ReceiveCls": ""
-                                  },
+                                  "_meta": {},
                                   "loc": {
                                     "end": {
                                       "column": 20,
                                       "line": 16
                                     },
-                                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                                    "sourcefile": "examples/map.go",
                                     "start": {
                                       "column": 17,
                                       "line": 16
@@ -1255,7 +1207,7 @@
                                     "column": 24,
                                     "line": 16
                                   },
-                                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                                  "sourcefile": "examples/map.go",
                                   "start": {
                                     "column": 13,
                                     "line": 16
@@ -1264,15 +1216,13 @@
                                 "type": "MapType",
                                 "typeArguments": null,
                                 "valueType": {
-                                  "_meta": {
-                                    "ReceiveCls": ""
-                                  },
+                                  "_meta": {},
                                   "loc": {
                                     "end": {
                                       "column": 24,
                                       "line": 16
                                     },
-                                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                                    "sourcefile": "examples/map.go",
                                     "start": {
                                       "column": 21,
                                       "line": 16
@@ -1288,7 +1238,7 @@
                                 "column": 2,
                                 "line": 21
                               },
-                              "sourcefile": "$EXAMPLES/map.go",
+                              "sourcefile": "examples/map.go",
                               "start": {
                                 "column": 13,
                                 "line": 16
@@ -1305,7 +1255,7 @@
                                 "column": 3,
                                 "line": 19
                               },
-                              "sourcefile": "$EXAMPLES/map.go",
+                              "sourcefile": "examples/map.go",
                               "start": {
                                 "column": 2,
                                 "line": 19
@@ -1326,7 +1276,7 @@
                               "column": 7,
                               "line": 19
                             },
-                            "sourcefile": "$EXAMPLES/map.go",
+                            "sourcefile": "examples/map.go",
                             "start": {
                               "column": 5,
                               "line": 19
@@ -1348,19 +1298,15 @@
                             "_meta": {
                               "ReceiveCls": "",
                               "type": {
-                                "_meta": {
-                                  "ReceiveCls": ""
-                                },
+                                "_meta": {},
                                 "id": {
-                                  "_meta": {
-                                    "ReceiveCls": ""
-                                  },
+                                  "_meta": {},
                                   "loc": {
                                     "end": {
                                       "column": 24,
                                       "line": 16
                                     },
-                                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                                    "sourcefile": "examples/map.go",
                                     "start": {
                                       "column": 13,
                                       "line": 16
@@ -1370,15 +1316,13 @@
                                   "type": "Identifier"
                                 },
                                 "keyType": {
-                                  "_meta": {
-                                    "ReceiveCls": ""
-                                  },
+                                  "_meta": {},
                                   "loc": {
                                     "end": {
                                       "column": 20,
                                       "line": 16
                                     },
-                                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                                    "sourcefile": "examples/map.go",
                                     "start": {
                                       "column": 17,
                                       "line": 16
@@ -1392,7 +1336,7 @@
                                     "column": 24,
                                     "line": 16
                                   },
-                                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                                  "sourcefile": "examples/map.go",
                                   "start": {
                                     "column": 13,
                                     "line": 16
@@ -1401,15 +1345,13 @@
                                 "type": "MapType",
                                 "typeArguments": null,
                                 "valueType": {
-                                  "_meta": {
-                                    "ReceiveCls": ""
-                                  },
+                                  "_meta": {},
                                   "loc": {
                                     "end": {
                                       "column": 24,
                                       "line": 16
                                     },
-                                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                                    "sourcefile": "examples/map.go",
                                     "start": {
                                       "column": 21,
                                       "line": 16
@@ -1425,7 +1367,7 @@
                                 "column": 2,
                                 "line": 21
                               },
-                              "sourcefile": "$EXAMPLES/map.go",
+                              "sourcefile": "examples/map.go",
                               "start": {
                                 "column": 13,
                                 "line": 16
@@ -1442,7 +1384,7 @@
                                 "column": 3,
                                 "line": 20
                               },
-                              "sourcefile": "$EXAMPLES/map.go",
+                              "sourcefile": "examples/map.go",
                               "start": {
                                 "column": 2,
                                 "line": 20
@@ -1463,7 +1405,7 @@
                               "column": 7,
                               "line": 20
                             },
-                            "sourcefile": "$EXAMPLES/map.go",
+                            "sourcefile": "examples/map.go",
                             "start": {
                               "column": 5,
                               "line": 20
@@ -1478,19 +1420,15 @@
                         "_meta": {
                           "ReceiveCls": "",
                           "type": {
-                            "_meta": {
-                              "ReceiveCls": ""
-                            },
+                            "_meta": {},
                             "id": {
-                              "_meta": {
-                                "ReceiveCls": ""
-                              },
+                              "_meta": {},
                               "loc": {
                                 "end": {
                                   "column": 24,
                                   "line": 16
                                 },
-                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                                "sourcefile": "examples/map.go",
                                 "start": {
                                   "column": 13,
                                   "line": 16
@@ -1500,15 +1438,13 @@
                               "type": "Identifier"
                             },
                             "keyType": {
-                              "_meta": {
-                                "ReceiveCls": ""
-                              },
+                              "_meta": {},
                               "loc": {
                                 "end": {
                                   "column": 20,
                                   "line": 16
                                 },
-                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                                "sourcefile": "examples/map.go",
                                 "start": {
                                   "column": 17,
                                   "line": 16
@@ -1522,7 +1458,7 @@
                                 "column": 24,
                                 "line": 16
                               },
-                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                              "sourcefile": "examples/map.go",
                               "start": {
                                 "column": 13,
                                 "line": 16
@@ -1531,15 +1467,13 @@
                             "type": "MapType",
                             "typeArguments": null,
                             "valueType": {
-                              "_meta": {
-                                "ReceiveCls": ""
-                              },
+                              "_meta": {},
                               "loc": {
                                 "end": {
                                   "column": 24,
                                   "line": 16
                                 },
-                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-Go/examples/map.go",
+                                "sourcefile": "examples/map.go",
                                 "start": {
                                   "column": 21,
                                   "line": 16
@@ -1555,7 +1489,7 @@
                             "column": 2,
                             "line": 21
                           },
-                          "sourcefile": "$EXAMPLES/map.go",
+                          "sourcefile": "examples/map.go",
                           "start": {
                             "column": 13,
                             "line": 16
@@ -1570,7 +1504,7 @@
                         "column": 2,
                         "line": 21
                       },
-                      "sourcefile": "$EXAMPLES/map.go",
+                      "sourcefile": "examples/map.go",
                       "start": {
                         "column": 13,
                         "line": 16
@@ -1583,7 +1517,7 @@
                       "column": 2,
                       "line": 21
                     },
-                    "sourcefile": "$EXAMPLES/map.go",
+                    "sourcefile": "examples/map.go",
                     "start": {
                       "column": 5,
                       "line": 16
@@ -1599,7 +1533,7 @@
                           "column": 24,
                           "line": 16
                         },
-                        "sourcefile": "$EXAMPLES/map.go",
+                        "sourcefile": "examples/map.go",
                         "start": {
                           "column": 13,
                           "line": 16
@@ -1615,7 +1549,7 @@
                           "column": 20,
                           "line": 16
                         },
-                        "sourcefile": "$EXAMPLES/map.go",
+                        "sourcefile": "examples/map.go",
                         "start": {
                           "column": 17,
                           "line": 16
@@ -1629,7 +1563,7 @@
                         "column": 24,
                         "line": 16
                       },
-                      "sourcefile": "$EXAMPLES/map.go",
+                      "sourcefile": "examples/map.go",
                       "start": {
                         "column": 13,
                         "line": 16
@@ -1644,7 +1578,7 @@
                           "column": 24,
                           "line": 16
                         },
-                        "sourcefile": "$EXAMPLES/map.go",
+                        "sourcefile": "examples/map.go",
                         "start": {
                           "column": 21,
                           "line": 16
@@ -1664,7 +1598,7 @@
                   "column": 2,
                   "line": 21
                 },
-                "sourcefile": "$EXAMPLES/map.go",
+                "sourcefile": "examples/map.go",
                 "start": {
                   "column": 1,
                   "line": 1
