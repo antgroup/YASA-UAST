@@ -609,105 +609,108 @@ class UASTTransformer(ast.NodeTransformer):
 
     def visit_arguments(self, node):
         arguments = []
+
+        def build_param(
+            arg_node,
+            default_value=None,
+            parameter_kind='positional_or_keyword',
+            include_prefix_stars=0
+        ):
+            if arg_node.arg == 'self':
+                return None
+
+            var_type = self._parse_type_annotation(arg_node.annotation)
+            arg_id = self.packPos(arg_node, self.visit(arg_node))
+
+            var_decl = UNode.VariableDeclaration(
+                UNode.SourceLocation(),
+                UNode.Meta(),
+                arg_id,
+                default_value,
+                False,
+                var_type
+            )
+
+            var_decl._meta.parameterKind = parameter_kind
+
+            start_col = arg_node.col_offset + 1 - include_prefix_stars
+            if start_col < 1:
+                start_col = 1
+
+            start_pos = UNode.Position(arg_node.lineno, start_col)
+
+            if default_value is not None:
+                end_pos = UNode.Position(default_value.loc.end.line, default_value.loc.end.column)
+            elif arg_node.annotation is not None and var_type is not None and var_type.loc is not None and var_type.loc.end is not None:
+                end_pos = UNode.Position(var_type.loc.end.line, var_type.loc.end.column)
+            else:
+                end_pos = UNode.Position(arg_node.end_lineno, arg_node.end_col_offset + 1)
+
+            var_decl.loc = UNode.SourceLocation(start_pos, end_pos, self.sourcefile)
+            return var_decl
+
+        # 处理 positional-only 参数 (/ 语法)
+        for arg in getattr(node, 'posonlyargs', []):
+            param = build_param(arg, parameter_kind='positional_only')
+            if param is not None:
+                arguments.append(param)
+
+        # 处理 positional_or_keyword 参数 (普通参数)
         if len(node.args) >= len(node.defaults):
             num_non_default = len(node.args) - len(node.defaults)
-
-            for i in range(len(node.args)):
-                if node.args[i].arg == 'self':  # 跳过self 参数，self的参数的作用是在body中加上一句NewExpression
-                    continue
-                # 前 num_non_default 个参数没有默认值
+            for i, arg in enumerate(node.args):
                 if i < num_non_default:
                     default_value = None
-                # 后 len(node.defaults) 个参数有默认值
                 else:
-                    default_index = i - num_non_default  # 计算默认值索引
+                    default_index = i - num_non_default
                     default_value = self.packPos(node.defaults[default_index], self.visit(node.defaults[default_index]))
 
-                # 使用统一的类型注解解析方法，支持所有类型
-                varType = self._parse_type_annotation(node.args[i].annotation)
-
-                arg_id = self.visit(node.args[i])
-                var_decl = UNode.VariableDeclaration(
-                    UNode.SourceLocation(),
-                    UNode.Meta(),
-                    arg_id,
-                    default_value,
-                    False,
-                    varType
+                param = build_param(
+                    arg,
+                    default_value=default_value,
+                    parameter_kind='positional_or_keyword'
                 )
-                # 手动设置位置：从参数名开始，到 annotation 或 default_value 结束
-                start_pos = UNode.Position(node.args[i].lineno, node.args[i].col_offset + 1)
-                if default_value is not None:
-                    # 如果有默认值，位置到默认值结束
-                    end_pos = UNode.Position(default_value.loc.end.line, default_value.loc.end.column)
-                elif node.args[i].annotation is not None:
-                    # 如果有 annotation，位置到 annotation 结束
-                    end_pos = UNode.Position(varType.loc.end.line, varType.loc.end.column)
-                else:
-                    # 只有参数名，位置到参数名结束
-                    end_pos = UNode.Position(node.args[i].end_lineno, node.args[i].end_col_offset + 1)
-                var_decl.loc = UNode.SourceLocation(start_pos, end_pos, self.sourcefile)
-                arguments.append(var_decl)
+                if param is not None:
+                    arguments.append(param)
+
+        # 处理 vararg 参数 (*args)
+        if node.vararg is not None:
+            param = build_param(
+                node.vararg,
+                default_value=None,
+                parameter_kind='vararg',
+                include_prefix_stars=1
+            )
+            if param is not None:
+                arguments.append(param)
+
+        # 处理 keyword-only 参数 (*, keyword)
         if len(node.kw_defaults) == len(node.kwonlyargs):
-            for i in range(len(node.kwonlyargs)):
+            for i, arg in enumerate(node.kwonlyargs):
                 if node.kw_defaults[i] is not None:
                     default_value = self.packPos(node.kw_defaults[i], self.visit(node.kw_defaults[i]))
                 else:
                     default_value = None
 
-                arg_id = self.packPos(node.kwonlyargs[i], self.visit(node.kwonlyargs[i]))
-                arg_node = UNode.VariableDeclaration(
-                    UNode.SourceLocation(),
-                    UNode.Meta(),
-                    arg_id,
-                    default_value,
-                    False,
-                    UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())
+                param = build_param(
+                    arg,
+                    default_value=default_value,
+                    parameter_kind='keyword_only'
                 )
-                # 手动设置位置：从参数名开始，到 default_value 结束（如果有）
-                start_pos = UNode.Position(node.kwonlyargs[i].lineno, node.kwonlyargs[i].col_offset + 1)
-                if default_value is not None:
-                    # 如果有默认值，位置到默认值结束（包括行和列）
-                    end_pos = UNode.Position(default_value.loc.end.line, default_value.loc.end.column)
-                else:
-                    # 只有参数名，位置到参数名结束
-                    end_pos = UNode.Position(node.kwonlyargs[i].end_lineno, node.kwonlyargs[i].end_col_offset + 1)
-                arg_node.loc = UNode.SourceLocation(start_pos, end_pos, self.sourcefile)
-                arguments.append(arg_node)
-        if node.vararg is not None:
-            arg_id = self.packPos(node.vararg, self.visit(node.vararg))
-            arg_node = UNode.VariableDeclaration(
-                UNode.SourceLocation(),
-                UNode.Meta(),
-                arg_id,
-                None,
-                False,
-                UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())
-            )
-            # 使用 packPos 设置基础位置，然后调整以包含 * 符号
-            arg_node = self.packPos(node.vararg, arg_node)
-            # 调整 start.column 以包含 * 符号（* 在参数名之前）
-            if arg_node.loc.start is not None:
-                arg_node.loc.start.column = arg_node.loc.start.column - 1
-            arguments.append(arg_node)
+                if param is not None:
+                    arguments.append(param)
+
+        # 处理 varkw 参数 (**kwargs)
         if node.kwarg is not None:
-            kwarg = self.visit(node.kwarg)
-            kwarg._meta.isKwargs = True
-            arg_id = self.packPos(node.kwarg, kwarg)
-            arg_node = UNode.VariableDeclaration(
-                UNode.SourceLocation(),
-                UNode.Meta(),
-                arg_id,
-                None,
-                False,
-                UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())
+            param = build_param(
+                node.kwarg,
+                default_value=None,
+                parameter_kind='varkw',
+                include_prefix_stars=2
             )
-            # 使用 packPos 设置基础位置，然后调整以包含 ** 符号
-            arg_node = self.packPos(node.kwarg, arg_node)
-            # 调整 start.column 以包含 ** 符号（** 在参数名之前）
-            if arg_node.loc.start is not None:
-                arg_node.loc.start.column = arg_node.loc.start.column - 2
-            arguments.append(arg_node)
+            if param is not None:
+                arguments.append(param)
+
         return arguments
 
     def visit_Attribute(self, node):
@@ -1092,13 +1095,18 @@ class UASTTransformer(ast.NodeTransformer):
         return test
 
     def visit_keyword(self, node):
-        # todo 当函数调用使用 **kwargs 展开一个字典时，node.arg 的值为 None
-        return self.packPos(node, UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(),
-                                                            UNode.Identifier(UNode.SourceLocation(), UNode.Meta(),
-                                                                             node.arg),
-                                                            self.packPos(node.value, self.visit(node.value)),
-                                                            False,
-                                                            UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())))
+        # 处理函数调用的关键字参数，包括 **kwargs 展开的情况
+        if node.arg is None:
+            return self.packPos(node, UNode.SpreadElement(UNode.SourceLocation(), UNode.Meta(),
+                                                          self.packPos(node.value, self.visit(node.value))))
+        else:
+            # 普通关键字参数（如 name=value）
+            return self.packPos(node, UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(),
+                                                                UNode.Identifier(UNode.SourceLocation(), UNode.Meta(),
+                                                                                 node.arg),
+                                                                self.packPos(node.value, self.visit(node.value)),
+                                                                False,
+                                                                UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())))
 
     def visit_Starred(self, node):
         return self.packPos(node, UNode.DereferenceExpression(UNode.SourceLocation(), UNode.Meta(),

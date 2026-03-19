@@ -260,18 +260,9 @@ func (u *Builder) VisitIndexListExpr(node *ast.IndexListExpr) UNode {
 
 // VisitDeferStmt defer callexpr -> defer (()->{callexpr})()
 func (u *Builder) VisitDeferStmt(node *ast.DeferStmt) UNode {
-	arguments := make([]Expression, 0)
-	for _, arg := range node.Call.Args {
-		arguments = append(arguments, u.visit(arg))
-	}
-	return &CallExpression{
-		Type:      "CallExpression",
-		Callee:    u.visit(node.Call.Fun),
-		Arguments: arguments,
-		Meta: Meta{
-			Defer: true, //给外层call expr标注defer, 这样分析器可以在分析的时候做defer特殊处理
-		},
-	}
+	ret := u.visit(node.Call).(*CallExpression)
+	ret.Meta.Defer = true //给外层call expr标注defer, 这样分析器可以在分析的时候做defer特殊处理
+	return ret
 }
 
 func (u *Builder) VisitSelectorExpr(node *ast.SelectorExpr) UNode {
@@ -526,7 +517,7 @@ func (u *Builder) getFieldListInStructType(node *ast.FieldList) []Instruction {
 	return ret
 }
 
-func (u *Builder) getFieldList(node *ast.FieldList) []*VariableDeclaration {
+func (u *Builder) buildFieldDecls(node *ast.FieldList) []*VariableDeclaration {
 	ret := make([]*VariableDeclaration, 0)
 	if node == nil {
 		return ret
@@ -538,6 +529,10 @@ func (u *Builder) getFieldList(node *ast.FieldList) []*VariableDeclaration {
 			typ = u.packPos(u.visitAsType(&field.Type), field.Type)
 		})
 		_, isRestElement := field.Type.(*ast.Ellipsis)
+		meta := Meta{}
+		if isRestElement {
+			meta.ParameterKind = "vararg"
+		}
 		if field.Names == nil {
 			// 如果为空，则设置一个不具名的VariableDeclaration
 			ret = append(ret, u.packPos(&VariableDeclaration{
@@ -547,9 +542,7 @@ func (u *Builder) getFieldList(node *ast.FieldList) []*VariableDeclaration {
 				Cloned:        true,
 				VarType:       typ,
 				VariableParam: false,
-				Meta: Meta{
-					IsRestElement: isRestElement,
-				},
+				Meta:          meta,
 			}, field).(*VariableDeclaration))
 		} else {
 			for _, name := range field.Names {
@@ -562,6 +555,7 @@ func (u *Builder) getFieldList(node *ast.FieldList) []*VariableDeclaration {
 					Cloned:        true,
 					VarType:       typ,
 					VariableParam: false,
+					Meta:          meta,
 				}, field).(*VariableDeclaration))
 			}
 		}
@@ -569,45 +563,15 @@ func (u *Builder) getFieldList(node *ast.FieldList) []*VariableDeclaration {
 	return ret
 }
 
-func (u *Builder) VisitFieldList(node *ast.FieldList) UNode {
-	ret := make([]Instruction, 0)
-	if node == nil {
-		return &Sequence{Type: "Sequence", Expressions: ret}
-	}
+func (u *Builder) getFieldList(node *ast.FieldList) []*VariableDeclaration {
+	return u.buildFieldDecls(node)
+}
 
-	for _, field := range node.List {
-		var typ UNode
-		u.handleInBuildState(TypeState, func() {
-			typ = u.packPos(u.visitAsType(&field.Type), field.Type)
-		})
-		_, isRestElement := field.Type.(*ast.Ellipsis)
-		if field.Names == nil {
-			// 如果为空，则设置一个不具名的VariableDeclaration
-			ret = append(ret, u.packPos(&VariableDeclaration{
-				Type:          "VariableDeclaration",
-				Id:            nil,
-				Init:          nil,
-				Cloned:        true,
-				VarType:       typ,
-				VariableParam: false,
-				Meta: Meta{
-					IsRestElement: isRestElement,
-				},
-			}, field).(*VariableDeclaration))
-		} else {
-			for _, name := range field.Names {
-				fieldId := u.visit(name).(*Identifier)
-				fieldId.Meta = Meta{Type: typ}
-				ret = append(ret, u.packPos(&VariableDeclaration{
-					Type:          "VariableDeclaration",
-					Id:            fieldId,
-					Init:          nil,
-					Cloned:        true,
-					VarType:       typ,
-					VariableParam: false,
-				}, field).(*VariableDeclaration))
-			}
-		}
+func (u *Builder) VisitFieldList(node *ast.FieldList) UNode {
+	decls := u.buildFieldDecls(node)
+	ret := make([]Instruction, 0, len(decls))
+	for _, decl := range decls {
+		ret = append(ret, decl)
 	}
 	return &Sequence{Type: "Sequence", Expressions: ret}
 }
@@ -1086,7 +1050,17 @@ func (u *Builder) VisitCallExpr(node *ast.CallExpr) UNode {
 	}
 	args := make([]Expression, len(node.Args))
 	for i, arg := range node.Args {
-		args[i] = u.visit(arg)
+		visited := u.visit(arg)
+		if i == len(node.Args)-1 && node.Ellipsis.IsValid() {
+			spread := u.packPos(&SpreadElement{
+				Type:     "SpreadElement",
+				Argument: visited,
+			}, arg).(*SpreadElement)
+			spread.SetLocation(convertPosRange(arg.Pos(), node.Ellipsis+token.Pos(3), u.fset))
+			args[i] = spread
+		} else {
+			args[i] = visited
+		}
 	}
 	//todo 这里忽略了泛型参数 my_model.List[ruleModel.Rule](ruleModel.Rule{}, ds)
 	if call, ok := node.Fun.(*ast.IndexExpr); ok {
