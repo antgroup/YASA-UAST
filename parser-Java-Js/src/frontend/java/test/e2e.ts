@@ -6,6 +6,25 @@ import * as globby from "fast-glob";
 import { parse } from "../../javascript/parser";
 import assert from "assert";
 
+function normalizeAst(ast: any, stableSourceFile: string): any {
+    if (!ast || typeof ast !== 'object') {
+        return ast;
+    }
+
+    const cloned = Array.isArray(ast) ? [...ast] : { ...ast };
+    for (const key in cloned) {
+        if (!Object.prototype.hasOwnProperty.call(cloned, key)) {
+            continue;
+        }
+        if ((key === 'sourcefile' || key === 'uri') && typeof cloned[key] === 'string') {
+            cloned[key] = stableSourceFile;
+        } else {
+            cloned[key] = normalizeAst(cloned[key], stableSourceFile);
+        }
+    }
+    return cloned;
+}
+
 describe('benchmark for java', () => {
     const suffixMatch = ['*.java'];
     const javaFiles = globby.sync(suffixMatch, { cwd: path.join(__dirname, '/examples') });
@@ -25,9 +44,11 @@ describe('benchmark for java', () => {
             //     console.log('文件已成功写入:', filePath);
             // });
             const baselineJson = fs.readFileSync(path.join(__dirname, '/examples', javaFile + '.json'), 'utf8')
+            const expected = JSON.parse(baselineJson);
+            const normalizedExpected = normalizeAst(expected, javaFile);
+            const normalizedActual = normalizeAst(actual, javaFile);
 
-
-            assert.strictEqual(JSON.stringify(actual,null,2),baselineJson,javaFile)
+            assert.strictEqual(JSON.stringify(normalizedActual, null, 2), JSON.stringify(normalizedExpected, null, 2), javaFile)
         });
     }
 });
