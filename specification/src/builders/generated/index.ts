@@ -21,7 +21,7 @@ export function identifier(name: string): t.Identifier {
 }
 export function compileUnit(
   body: Array<t.Instruction>,
-  language: 'javascript' | 'typescript' | 'java' | 'golang' | 'python',
+  language: 'javascript' | 'typescript' | 'java' | 'golang' | 'python' | 'php',
   languageVersion: number | string | boolean | null | undefined,
   uri: string,
   version: string

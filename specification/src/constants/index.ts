@@ -7,7 +7,7 @@ export const COMMENT_KEYS = [
   "innerComments",
 ];
 
-export const LANGUAGE_KEYS = ["javascript" , "typescript" , "java" , "golang" , "python"];
+export const LANGUAGE_KEYS = ["javascript" , "typescript" , "java" , "golang" , "python", "php"];
 
 export const LOGICAL_OPERATORS = ["||", "&&", "??"];
 export const UPDATE_OPERATORS = ["++", "--"];
