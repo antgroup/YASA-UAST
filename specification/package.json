@@ -8,7 +8,8 @@
     "build": "npx gulp build && tsc && cp -rf dist/src/* dist/",
     "generate-type-helpers": "npx gulnpmp generate-type-helpers",
     "generate": "npx gulp generate",
-    "gen-spec": "node ./scripts/generators/specification.js > specification.md"
+    "gen-spec": "node ./scripts/generators/specification.js > specification.md",
+    "generate-python-asttype": "node ./scripts/generate-python-asttype.mjs"
   },
   "dependencies": {
     "@babel/helper-validator-identifier": "^7.16.7",

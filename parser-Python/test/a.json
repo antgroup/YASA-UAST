@@ -1,81 +1,507 @@
 {
-  "body": {
-    "id": null,
-    "body": [
-      {
-        "id": {
-          "name": "packs"
-        },
-        "init": {
-          "From": {
-            "value": "packs",
-            "literal_type": "string"
-          },
-          "Local": null,
-          "Imported": null
-        },
-        "cloned": false
-      },
-      {
-        "id": {
-          "name": "One"
-        },
-        "init": {
-          "From": {
-            "value": "packs.one",
-            "literal_type": "string"
-          },
-          "Local": null,
-          "Imported": null
-        },
-        "cloned": false
-      },
-      {
-        "id": {
-          "name": "One"
-        },
-        "init": {
-          "From": {
-            "value": "packs.one",
-            "literal_type": "string"
-          },
-          "Local": null,
-          "Imported": null
-        },
-        "cloned": false
-      },
-      {
-        "id": {
-          "name": "OneOne"
-        },
-        "init": {
-          "From": {
-            "value": "packs.one",
-            "literal_type": "string"
-          },
-          "Local": null,
-          "Imported": null
-        },
-        "cloned": false
-      },
-      {
-        "id": {
-          "name": "*"
-        },
-        "init": {
-          "From": {
-            "value": "packs.one",
-            "literal_type": "string"
-          },
-          "Local": null,
-          "Imported": null
-        },
-        "cloned": false
-      }
-    ]
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 1
+    },
+    "end": {
+      "line": 4,
+      "column": 43
+    },
+    "sourcefile": "test/import.py"
   },
+  "_meta": {
+    "isConstructor": false,
+    "isAsync": false,
+    "decorators": null,
+    "parameterKind": null,
+    "data": {}
+  },
+  "type": "CompileUnit",
+  "body": [
+    {
+      "loc": {
+        "start": null,
+        "end": null,
+        "sourcefile": null
+      },
+      "_meta": {
+        "isConstructor": false,
+        "isAsync": false,
+        "decorators": null,
+        "parameterKind": null,
+        "data": {}
+      },
+      "type": "VariableDeclaration",
+      "id": {
+        "loc": {
+          "start": null,
+          "end": null,
+          "sourcefile": null
+        },
+        "_meta": {
+          "isConstructor": false,
+          "isAsync": false,
+          "decorators": null,
+          "parameterKind": null,
+          "data": {}
+        },
+        "type": "Identifier",
+        "name": "packs"
+      },
+      "init": {
+        "loc": {
+          "start": null,
+          "end": null,
+          "sourcefile": null
+        },
+        "_meta": {
+          "isConstructor": false,
+          "isAsync": false,
+          "decorators": null,
+          "parameterKind": null,
+          "data": {}
+        },
+        "type": "ImportExpression",
+        "from": null,
+        "local": null,
+        "imported": {
+          "loc": {
+            "start": null,
+            "end": null,
+            "sourcefile": null
+          },
+          "_meta": {
+            "isConstructor": false,
+            "isAsync": false,
+            "decorators": null,
+            "parameterKind": null,
+            "data": {}
+          },
+          "type": "Literal",
+          "value": "packs",
+          "literalType": "string"
+        }
+      },
+      "cloned": false,
+      "varType": {
+        "loc": {
+          "start": null,
+          "end": null,
+          "sourcefile": null
+        },
+        "_meta": {
+          "isConstructor": false,
+          "isAsync": false,
+          "decorators": null,
+          "parameterKind": null,
+          "data": {}
+        },
+        "type": "DynamicType",
+        "id": null,
+        "typeArguments": null
+      },
+      "variableParam": false
+    },
+    {
+      "loc": {
+        "start": null,
+        "end": null,
+        "sourcefile": null
+      },
+      "_meta": {
+        "isConstructor": false,
+        "isAsync": false,
+        "decorators": null,
+        "parameterKind": null,
+        "data": {}
+      },
+      "type": "VariableDeclaration",
+      "id": {
+        "loc": {
+          "start": null,
+          "end": null,
+          "sourcefile": null
+        },
+        "_meta": {
+          "isConstructor": false,
+          "isAsync": false,
+          "decorators": null,
+          "parameterKind": null,
+          "data": {}
+        },
+        "type": "Identifier",
+        "name": "One"
+      },
+      "init": {
+        "loc": {
+          "start": null,
+          "end": null,
+          "sourcefile": null
+        },
+        "_meta": {
+          "isConstructor": false,
+          "isAsync": false,
+          "decorators": null,
+          "parameterKind": null,
+          "data": {}
+        },
+        "type": "ImportExpression",
+        "from": {
+          "loc": {
+            "start": null,
+            "end": null,
+            "sourcefile": null
+          },
+          "_meta": {
+            "isConstructor": false,
+            "isAsync": false,
+            "decorators": null,
+            "parameterKind": null,
+            "data": {}
+          },
+          "type": "Literal",
+          "value": "packs.one",
+          "literalType": "string"
+        },
+        "local": null,
+        "imported": {
+          "loc": {
+            "start": null,
+            "end": null,
+            "sourcefile": null
+          },
+          "_meta": {
+            "isConstructor": false,
+            "isAsync": false,
+            "decorators": null,
+            "parameterKind": null,
+            "data": {}
+          },
+          "type": "Identifier",
+          "name": "One"
+        }
+      },
+      "cloned": false,
+      "varType": {
+        "loc": {
+          "start": null,
+          "end": null,
+          "sourcefile": null
+        },
+        "_meta": {
+          "isConstructor": false,
+          "isAsync": false,
+          "decorators": null,
+          "parameterKind": null,
+          "data": {}
+        },
+        "type": "DynamicType",
+        "id": null,
+        "typeArguments": null
+      },
+      "variableParam": false
+    },
+    {
+      "loc": {
+        "start": null,
+        "end": null,
+        "sourcefile": null
+      },
+      "_meta": {
+        "isConstructor": false,
+        "isAsync": false,
+        "decorators": null,
+        "parameterKind": null,
+        "data": {}
+      },
+      "type": "VariableDeclaration",
+      "id": {
+        "loc": {
+          "start": null,
+          "end": null,
+          "sourcefile": null
+        },
+        "_meta": {
+          "isConstructor": false,
+          "isAsync": false,
+          "decorators": null,
+          "parameterKind": null,
+          "data": {}
+        },
+        "type": "Identifier",
+        "name": "Alias"
+      },
+      "init": {
+        "loc": {
+          "start": null,
+          "end": null,
+          "sourcefile": null
+        },
+        "_meta": {
+          "isConstructor": false,
+          "isAsync": false,
+          "decorators": null,
+          "parameterKind": null,
+          "data": {}
+        },
+        "type": "ImportExpression",
+        "from": {
+          "loc": {
+            "start": null,
+            "end": null,
+            "sourcefile": null
+          },
+          "_meta": {
+            "isConstructor": false,
+            "isAsync": false,
+            "decorators": null,
+            "parameterKind": null,
+            "data": {}
+          },
+          "type": "Literal",
+          "value": "packs.one",
+          "literalType": "string"
+        },
+        "local": null,
+        "imported": {
+          "loc": {
+            "start": null,
+            "end": null,
+            "sourcefile": null
+          },
+          "_meta": {
+            "isConstructor": false,
+            "isAsync": false,
+            "decorators": null,
+            "parameterKind": null,
+            "data": {}
+          },
+          "type": "Identifier",
+          "name": "One"
+        }
+      },
+      "cloned": false,
+      "varType": {
+        "loc": {
+          "start": null,
+          "end": null,
+          "sourcefile": null
+        },
+        "_meta": {
+          "isConstructor": false,
+          "isAsync": false,
+          "decorators": null,
+          "parameterKind": null,
+          "data": {}
+        },
+        "type": "DynamicType",
+        "id": null,
+        "typeArguments": null
+      },
+      "variableParam": false
+    },
+    {
+      "loc": {
+        "start": null,
+        "end": null,
+        "sourcefile": null
+      },
+      "_meta": {
+        "isConstructor": false,
+        "isAsync": false,
+        "decorators": null,
+        "parameterKind": null,
+        "data": {}
+      },
+      "type": "VariableDeclaration",
+      "id": {
+        "loc": {
+          "start": null,
+          "end": null,
+          "sourcefile": null
+        },
+        "_meta": {
+          "isConstructor": false,
+          "isAsync": false,
+          "decorators": null,
+          "parameterKind": null,
+          "data": {}
+        },
+        "type": "Identifier",
+        "name": "OneOne"
+      },
+      "init": {
+        "loc": {
+          "start": null,
+          "end": null,
+          "sourcefile": null
+        },
+        "_meta": {
+          "isConstructor": false,
+          "isAsync": false,
+          "decorators": null,
+          "parameterKind": null,
+          "data": {}
+        },
+        "type": "ImportExpression",
+        "from": {
+          "loc": {
+            "start": null,
+            "end": null,
+            "sourcefile": null
+          },
+          "_meta": {
+            "isConstructor": false,
+            "isAsync": false,
+            "decorators": null,
+            "parameterKind": null,
+            "data": {}
+          },
+          "type": "Literal",
+          "value": "packs.one",
+          "literalType": "string"
+        },
+        "local": null,
+        "imported": {
+          "loc": {
+            "start": null,
+            "end": null,
+            "sourcefile": null
+          },
+          "_meta": {
+            "isConstructor": false,
+            "isAsync": false,
+            "decorators": null,
+            "parameterKind": null,
+            "data": {}
+          },
+          "type": "Identifier",
+          "name": "OneOne"
+        }
+      },
+      "cloned": false,
+      "varType": {
+        "loc": {
+          "start": null,
+          "end": null,
+          "sourcefile": null
+        },
+        "_meta": {
+          "isConstructor": false,
+          "isAsync": false,
+          "decorators": null,
+          "parameterKind": null,
+          "data": {}
+        },
+        "type": "DynamicType",
+        "id": null,
+        "typeArguments": null
+      },
+      "variableParam": false
+    },
+    {
+      "loc": {
+        "start": null,
+        "end": null,
+        "sourcefile": null
+      },
+      "_meta": {
+        "isConstructor": false,
+        "isAsync": false,
+        "decorators": null,
+        "parameterKind": null,
+        "data": {}
+      },
+      "type": "VariableDeclaration",
+      "id": {
+        "loc": {
+          "start": null,
+          "end": null,
+          "sourcefile": null
+        },
+        "_meta": {
+          "isConstructor": false,
+          "isAsync": false,
+          "decorators": null,
+          "parameterKind": null,
+          "data": {}
+        },
+        "type": "Identifier",
+        "name": "*"
+      },
+      "init": {
+        "loc": {
+          "start": null,
+          "end": null,
+          "sourcefile": null
+        },
+        "_meta": {
+          "isConstructor": false,
+          "isAsync": false,
+          "decorators": null,
+          "parameterKind": null,
+          "data": {}
+        },
+        "type": "ImportExpression",
+        "from": {
+          "loc": {
+            "start": null,
+            "end": null,
+            "sourcefile": null
+          },
+          "_meta": {
+            "isConstructor": false,
+            "isAsync": false,
+            "decorators": null,
+            "parameterKind": null,
+            "data": {}
+          },
+          "type": "Literal",
+          "value": "packs.one",
+          "literalType": "string"
+        },
+        "local": null,
+        "imported": {
+          "loc": {
+            "start": null,
+            "end": null,
+            "sourcefile": null
+          },
+          "_meta": {
+            "isConstructor": false,
+            "isAsync": false,
+            "decorators": null,
+            "parameterKind": null,
+            "data": {}
+          },
+          "type": "Identifier",
+          "name": "*"
+        }
+      },
+      "cloned": false,
+      "varType": {
+        "loc": {
+          "start": null,
+          "end": null,
+          "sourcefile": null
+        },
+        "_meta": {
+          "isConstructor": false,
+          "isAsync": false,
+          "decorators": null,
+          "parameterKind": null,
+          "data": {}
+        },
+        "type": "DynamicType",
+        "id": null,
+        "typeArguments": null
+      },
+      "variableParam": false
+    }
+  ],
   "language": "python",
   "uri": null,
   "version": null,
-  "language_version": "1.18"
+  "languageVersion": "3.13"
 }
