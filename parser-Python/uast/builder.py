@@ -147,8 +147,18 @@ def parse_single_file(file, output_path, verbose=False):
                 file_ast = ast.parse(file_content, filename=file)
                 file_ast.sourcefile = file
                 uastnode = UASTTransformer().visit(file_ast)
-                compile_unit = UASTTransformer().packPos(file_ast, UNode.CompileUnit(UNode.SourceLocation(), UNode.Meta(), uastnode, LANGUAGE, None, None,
-                                                 VERSION))
+                compile_unit = UASTTransformer().packPos(
+                    file_ast,
+                    UNode.CompileUnit(
+                        UNode.SourceLocation(),
+                        UNode.Meta(),
+                        body=uastnode,
+                        language=LANGUAGE,
+                        uri=None,
+                        version=None,
+                        languageVersion=VERSION,
+                    ),
+                )
                 compile_unit.loc.sourcefile = file
                 with open(output_path, mode='w', encoding='utf-8') as f:
                     f.write(compile_unit.to_json(indent=None))

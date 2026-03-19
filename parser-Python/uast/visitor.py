@@ -8,6 +8,121 @@ class UASTTransformer(ast.NodeTransformer):
     tmpVarIndex = 0
     sourcefile = ""
 
+    def _dynamic_type(self, **kwargs):
+        return UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(), **kwargs)
+
+    def _primitive_type(self, kind, **kwargs):
+        return UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(), kind=kind, **kwargs)
+
+    def _array_type(self, element=None, **kwargs):
+        return UNode.ArrayType(UNode.SourceLocation(), UNode.Meta(), element=element, **kwargs)
+
+    def _map_type(self, key_type=None, value_type=None, **kwargs):
+        return UNode.MapType(
+            UNode.SourceLocation(),
+            UNode.Meta(),
+            keyType=key_type,
+            valueType=value_type,
+            **kwargs,
+        )
+
+    def _scoped_type(self, identifier=None, scope=None, **kwargs):
+        return UNode.ScopedType(
+            UNode.SourceLocation(),
+            UNode.Meta(),
+            id=identifier,
+            scope=scope,
+            **kwargs,
+        )
+
+    def _literal(self, value, literal_type):
+        return UNode.Literal(UNode.SourceLocation(), UNode.Meta(), value=value, literalType=literal_type)
+
+    def _var_decl(self, target, init=None, var_type=None, cloned=False, variable_param=False):
+        return UNode.VariableDeclaration(
+            UNode.SourceLocation(),
+            UNode.Meta(),
+            id=target,
+            init=init,
+            cloned=cloned,
+            varType=var_type if var_type is not None else self._dynamic_type(),
+            variableParam=variable_param,
+        )
+
+    def _function_def(self, parameters, return_type, body, identifier=None, modifiers=None):
+        return UNode.FunctionDefinition(
+            UNode.SourceLocation(),
+            UNode.Meta(),
+            parameters=parameters,
+            returnType=return_type,
+            body=body,
+            id=identifier,
+            modifiers=modifiers,
+        )
+
+    def _class_def(self, identifier, body, supers):
+        return UNode.ClassDefinition(
+            UNode.SourceLocation(),
+            UNode.Meta(),
+            id=identifier,
+            body=body,
+            supers=supers,
+        )
+
+    def _assignment(self, left, right, operator="=", loc=None, cloned=False):
+        return UNode.AssignmentExpression(
+            loc or UNode.SourceLocation(),
+            UNode.Meta(),
+            left=left,
+            right=right,
+            operator=operator,
+            cloned=cloned,
+        )
+
+    def _unary(self, operator, argument, is_suffix=False):
+        return UNode.UnaryExpression(
+            UNode.SourceLocation(),
+            UNode.Meta(),
+            operator=operator,
+            argument=argument,
+            isSuffix=is_suffix,
+        )
+
+    def _import_expr(self, from_expr=None, local=None, imported=None):
+        return UNode.ImportExpression(
+            UNode.SourceLocation(),
+            UNode.Meta(),
+            from_=from_expr,
+            local=local,
+            imported=imported,
+        )
+
+    def _tuple_expr(self, elements, modifiable=False):
+        return UNode.TupleExpression(
+            UNode.SourceLocation(),
+            UNode.Meta(),
+            elements=elements,
+            modifiable=modifiable,
+        )
+
+    def _range_stmt(self, key=None, value=None, right=None, body=None):
+        return UNode.RangeStatement(
+            UNode.SourceLocation(),
+            UNode.Meta(),
+            key=key,
+            value=value,
+            right=right,
+            body=body,
+        )
+
+    def _case_clause(self, test, body):
+        return UNode.CaseClause(
+            UNode.SourceLocation(),
+            UNode.Meta(),
+            test=test,
+            body=body,
+        )
+
     def _parse_type_annotation(self, node):
         """解析类型注解，支持以下类型注解：
         1. 基本类型：int, float, str, bool, None
@@ -24,7 +139,7 @@ class UASTTransformer(ast.NodeTransformer):
             UAST Type 节点 (PrimitiveType, ArrayType, MapType, DynamicType, Identifier 等)
         """
         if node is None:
-            return UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())
+            return self._dynamic_type()
 
         # ========== 1. 处理基本类型名称 ==========
         # 根据 PEP 484: 基本类型 int, float, str, bool
@@ -32,24 +147,22 @@ class UASTTransformer(ast.NodeTransformer):
         if isinstance(node, ast.Name):
             if node.id == "float" or node.id == "int":
                 # int 和 float 都映射为 number 类型
-                return self.packPos(node,
-                                    UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(), kind="number"))
+                return self.packPos(node, self._primitive_type("number"))
             elif node.id == "str":
-                return self.packPos(node,
-                                    UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(), kind="string"))
+                return self.packPos(node, self._primitive_type("string"))
             elif node.id == "bool":
-                return self.packPos(node,
-                                    UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(), kind="boolean"))
+                return self.packPos(node, self._primitive_type("boolean"))
             elif node.id == "Any":
                 # typing.Any: 特殊类型，表示任意类型 (PEP 484)
-                return self.packPos(node,
-                                    UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(), id="Any"))
+                return self.packPos(node, self._dynamic_type(id="Any"))
             else:
                 # 其他类型名称（自定义类型、类名等），使用 Identifier
-                return self.packPos(node,
-                                    UNode.ScopedType(UNode.SourceLocation(), UNode.Meta(),
-                                                     id=self.packPos(node, UNode.Identifier(UNode.SourceLocation(), UNode.Meta(),
-                                                                         node.id))))
+                return self.packPos(
+                    node,
+                    self._scoped_type(
+                        identifier=self.packPos(node, UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), node.id))
+                    ),
+                )
 
         # ========== 2. 处理泛型类型（使用 ast.Subscript） ==========
         # 根据 PEP 484, PEP 585: 支持 List[T], Dict[K, V], Tuple[T1, T2, ...] 等
@@ -78,8 +191,7 @@ class UASTTransformer(ast.NodeTransformer):
                             valType = self._parse_type_annotation(node.slice.elts[1])
 
                     # 返回: UAST MapType (keyType=键类型, valueType=值类型)
-                    return self.packPos(node, UNode.MapType(UNode.SourceLocation(), UNode.Meta(),
-                                                            keyType=keyType, valueType=valType))
+                    return self.packPos(node, self._map_type(key_type=keyType, value_type=valType))
 
                 # ========== 2.2 List 类型: List[T] 或 list[T] ==========
                 # PEP 484: List 接受一个类型参数，表示元素类型
@@ -87,8 +199,7 @@ class UASTTransformer(ast.NodeTransformer):
                 elif type_name in ("list", "List"):
                     type_arg = self._parse_type_annotation(node.slice)
                     # 返回: UAST ArrayType (element=元素类型)
-                    return self.packPos(node, UNode.ArrayType(UNode.SourceLocation(), UNode.Meta(),
-                                                              element=type_arg))
+                    return self.packPos(node, self._array_type(element=type_arg))
 
                 # ========== 2.3 Tuple 类型: Tuple[T1, T2, ...] 或 tuple[T1, T2, ...] ==========
                 # PEP 484: Tuple 可以接受任意数量的类型参数
@@ -106,9 +217,10 @@ class UASTTransformer(ast.NodeTransformer):
                         type_args.append(self._parse_type_annotation(node.slice))
 
                     # 返回: UAST DynamicType (id="Tuple"/"tuple", typeArguments=[元素类型列表, 可能包含 Ellipsis 标记])
-                    return self.packPos(node, UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(),
-                                                                id=type_name,
-                                                                typeArguments=type_args if type_args else None))
+                    return self.packPos(
+                        node,
+                        self._dynamic_type(id=type_name, typeArguments=type_args if type_args else None),
+                    )
 
                 # ========== 2.4 Set 类型: Set[T] 或 set[T] ==========
                 # PEP 484: Set 接受一个类型参数，表示元素类型
@@ -117,9 +229,10 @@ class UASTTransformer(ast.NodeTransformer):
                     type_arg = self._parse_type_annotation(node.slice)
 
                     # 返回: UAST DynamicType (id="Set"/"set", typeArguments=[元素类型])
-                    return self.packPos(node, UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(),
-                                                                id=type_name,
-                                                                typeArguments=[type_arg] if type_arg else None))
+                    return self.packPos(
+                        node,
+                        self._dynamic_type(id=type_name, typeArguments=[type_arg] if type_arg else None),
+                    )
 
                 # ========== 2.5 Optional 类型: Optional[T] ==========
                 # PEP 484: Optional[T] 等价于 Union[T, None]
@@ -127,9 +240,10 @@ class UASTTransformer(ast.NodeTransformer):
                 elif type_name == "Optional":
                     type_arg = self._parse_type_annotation(node.slice)
                     # 返回: UAST DynamicType (id="Optional", typeArguments=[类型参数])
-                    return self.packPos(node, UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(),
-                                                                id=type_name,
-                                                                typeArguments=[type_arg] if type_arg else None))
+                    return self.packPos(
+                        node,
+                        self._dynamic_type(id=type_name, typeArguments=[type_arg] if type_arg else None),
+                    )
 
                 # ========== 2.6 Union 类型: Union[T1, T2, ...] ==========
                 # PEP 484: Union[X, Y] 表示 X 或 Y 类型
@@ -144,9 +258,10 @@ class UASTTransformer(ast.NodeTransformer):
                         type_args.append(self._parse_type_annotation(node.slice))
 
                     # 返回: UAST DynamicType (id="Union", typeArguments=[所有联合类型])
-                    return self.packPos(node, UNode.DynamicType(UNode.SourceLocation(),
-                                                                UNode.Meta(), id=type_name,
-                                                                typeArguments=type_args if type_args else None))
+                    return self.packPos(
+                        node,
+                        self._dynamic_type(id=type_name, typeArguments=type_args if type_args else None),
+                    )
 
                 # ========== 2.7 Literal 类型: Literal["a", "b", ...] ==========
                 # PEP 586: Literal 用于定义"字面值类型"
@@ -160,9 +275,10 @@ class UASTTransformer(ast.NodeTransformer):
                         literal_values.append(self._parse_type_annotation(node.slice))
 
                     # 返回: UAST DynamicType (id="Literal", typeArguments=[Literal值列表，每个值可能是PrimitiveType或Identifier])
-                    return self.packPos(node, UNode.DynamicType(UNode.SourceLocation(),
-                                                                UNode.Meta(), id=type_name,
-                                                                typeArguments=literal_values if literal_values else None))
+                    return self.packPos(
+                        node,
+                        self._dynamic_type(id=type_name, typeArguments=literal_values if literal_values else None),
+                    )
 
                 # ========== 2.8 Callable 类型: Callable[[Args], ReturnType] ==========
                 # PEP 484: Callable 用于标注可调用对象
@@ -190,16 +306,16 @@ class UASTTransformer(ast.NodeTransformer):
                                 # Callable[[], bool] → Params 包装器, typeArguments=[]（空列表，表示无参数）
                                 # Callable[..., bool] → Params 包装器, typeArguments=None（None，表示任意参数）
                                 # Callable[[int, str], bool] → Params 包装器, typeArguments=[int, str]（具体参数类型）
-                                param_types_list = self.packPos(param_list_node,
-                                                                UNode.DynamicType(UNode.SourceLocation(),
-                                                                                  UNode.Meta(), id="Params",
-                                                                                  typeArguments=param_types if param_types else []))
+                                param_types_list = self.packPos(
+                                    param_list_node,
+                                    self._dynamic_type(id="Params", typeArguments=param_types if param_types else []),
+                                )
                             elif isinstance(param_list_node, ast.Constant) and param_list_node.value == ...:
                                 # Callable[..., ReturnType] 表示任意参数
-                                param_types_list = self.packPos(param_list_node,
-                                                                UNode.DynamicType(UNode.SourceLocation(),
-                                                                                  UNode.Meta(), id="Params",
-                                                                                  typeArguments=["Any"]))  # Any 表示任意参数
+                                param_types_list = self.packPos(
+                                    param_list_node,
+                                    self._dynamic_type(id="Params", typeArguments=["Any"]),
+                                )  # Any 表示任意参数
 
                             # 处理返回类型
                             return_type = self._parse_type_annotation(return_type_node)
@@ -218,9 +334,10 @@ class UASTTransformer(ast.NodeTransformer):
                         type_args.append(return_type)
 
                     # 返回: UAST DynamicType (id="Callable", typeArguments=[DynamicType(id="Params", typeArguments=[参数类型列表]), 返回类型])
-                    return self.packPos(node, UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(),
-                                                                id=type_name,
-                                                                typeArguments=type_args if type_args else None))
+                    return self.packPos(
+                        node,
+                        self._dynamic_type(id=type_name, typeArguments=type_args if type_args else None),
+                    )
 
                 # ========== 2.9 其他泛型类型（用户定义的泛型类、Generic[T] 等） ==========
                 # 包括：用户定义的泛型类、Protocol、TypedDict 等
@@ -233,9 +350,10 @@ class UASTTransformer(ast.NodeTransformer):
                         type_args.append(self._parse_type_annotation(node.slice))
 
                     # 返回: UAST DynamicType (id=类型名称, typeArguments=[类型参数列表])
-                    return self.packPos(node, UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(),
-                                                                id=type_name,
-                                                                typeArguments=type_args if type_args else None))
+                    return self.packPos(
+                        node,
+                        self._dynamic_type(id=type_name, typeArguments=type_args if type_args else None),
+                    )
 
             else:
                 # 返回: 根据 annotation_node.value 的类型返回相应的 UAST 节点
@@ -263,15 +381,14 @@ class UASTTransformer(ast.NodeTransformer):
             collect_union_types(node)
 
             # 返回: UAST DynamicType (id="Union", typeArguments=[所有联合类型列表])
-            return self.packPos(node, UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(),
-                                                        id="Union", typeArguments=type_args if type_args else None))
+            return self.packPos(node, self._dynamic_type(id="Union", typeArguments=type_args if type_args else None))
 
         # ========== 4. 处理 None 常量 ==========
         # PEP 484: None 可以作为类型注解，表示 None 类型
         # Python 3.8+ 使用 ast.Constant(value=None)
         elif isinstance(node, ast.Constant) and node.value is None:
             # 返回: UAST PrimitiveType (kind="null")
-            return self.packPos(node, UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(), "null"))
+            return self.packPos(node, self._primitive_type("null"))
 
         # ========== 5. 其他情况 ==========
         # 对于无法识别的类型注解，使用默认的 visit 方法处理
@@ -301,10 +418,12 @@ class UASTTransformer(ast.NodeTransformer):
         for param in node.args.args:
             # if param.arg == 'self' and node.name != '__init__':
             if param.arg == 'self':
-                body.append(UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(),
-                                                      UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), param.arg),
-                                                      UNode.ThisExpression(UNode.SourceLocation(), UNode.Meta()), False,
-                                                      UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())))
+                body.append(
+                    self._var_decl(
+                        UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), param.arg),
+                        UNode.ThisExpression(UNode.SourceLocation(), UNode.Meta()),
+                    )
+                )
         max_col = 0
         min_col = sys.maxsize
         for stmt in node.body:
@@ -329,10 +448,12 @@ class UASTTransformer(ast.NodeTransformer):
         # 使用统一的类型注解解析方法，支持所有类型
         return_type = self._parse_type_annotation(node.returns) if node.returns is not None else None
         function_def = self.packPos(node,
-                                    UNode.FunctionDefinition(UNode.SourceLocation(), UNode.Meta(), params, return_type,
-                                                             UNode.ScopedStatement(body_loc, UNode.Meta(),
-                                                                                   body), id,
-                                                             None))
+                                    self._function_def(
+                                        params,
+                                        return_type,
+                                        UNode.ScopedStatement(body_loc, UNode.Meta(), body),
+                                        identifier=id,
+                                    ))
         if node.name == '__init__':
             function_def._meta.isConstructor = True
             # function_def.body.body.append(UNode.ReturnStatement(UNode.SourceLocation(), UNode.Meta(), UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), 'self')))
@@ -349,14 +470,12 @@ class UASTTransformer(ast.NodeTransformer):
         body = []
         body_loc = None
         if len(node.body) == 1 and isinstance(node.body[0], ast.Pass):  # 如果classDef中只有一句pass，默认加上一个__init__函数
-            fdef = UNode.FunctionDefinition(UNode.SourceLocation(), UNode.Meta(), [], None,
-                                            self.packPos(node.body[0],
-                                                         UNode.ScopedStatement(UNode.SourceLocation(), UNode.Meta(),
-                                                                               [])),
-                                            self.packPos(node.body[0],
-                                                         UNode.Identifier(UNode.SourceLocation(), UNode.Meta(),
-                                                                          '__init__')),
-                                            None)
+            fdef = self._function_def(
+                [],
+                None,
+                self.packPos(node.body[0], UNode.ScopedStatement(UNode.SourceLocation(), UNode.Meta(), [])),
+                identifier=self.packPos(node.body[0], UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), '__init__')),
+            )
             fdef._meta.isConstructor = True
             body.append(self.packPos(node.body[0], fdef))
             body_loc = UNode.SourceLocation(UNode.Position(node.body[0].lineno, node.body[0].col_offset),
@@ -396,8 +515,7 @@ class UASTTransformer(ast.NodeTransformer):
                 super.extend(unode)
             else:
                 super.append(self.packPos(base, unode))
-        class_def = self.packPos(node, UNode.ClassDefinition(UNode.SourceLocation(), UNode.Meta(), name,
-                                                             body, super))
+        class_def = self.packPos(node, self._class_def(name, body, super))
         decorator_list = []
         for decorator in node.decorator_list:
             decorator_list.append(self.packPos(decorator, self.visit(decorator)))
@@ -412,8 +530,7 @@ class UASTTransformer(ast.NodeTransformer):
                     for i in range(len(node.targets[index].elts)):
                         id = self.packPos(node.targets[index].elts[i], self.visit(node.targets[index].elts[i]))
                         init = self.packPos(node.value.elts[i], self.visit(node.value.elts[i]))
-                        exprs.append(
-                            UNode.AssignmentExpression(UNode.SourceLocation(), UNode.Meta(), id, init, '='))
+                        exprs.append(self._assignment(id, init))
             else:  # a = b = 3
                 id = self.packPos(node.targets[index], self.visit(node.targets[index]))
                 init = self.packPos(node.value, self.visit(node.value))
@@ -425,10 +542,10 @@ class UASTTransformer(ast.NodeTransformer):
                     start_pos = UNode.Position(node.targets[index].lineno, node.targets[index].col_offset + 1)
                     end_pos = UNode.Position(node.value.end_lineno, node.value.end_col_offset + 1)
                     assign_loc = UNode.SourceLocation(start_pos, end_pos, self.sourcefile)
-                    assign_expr = UNode.AssignmentExpression(assign_loc, UNode.Meta(), id, init, '=')
+                    assign_expr = self._assignment(id, init, loc=assign_loc)
                 else:
                     # 单个赋值，使用packPos设置位置
-                    assign_expr = UNode.AssignmentExpression(UNode.SourceLocation(), UNode.Meta(), id, init, '=')
+                    assign_expr = self._assignment(id, init)
                     assign_expr = self.packPos(node, assign_expr)
                 exprs.append(assign_expr)
         if len(exprs) == 1:
@@ -540,8 +657,7 @@ class UASTTransformer(ast.NodeTransformer):
     def visit_Del(self, node):  # python 3.8之后被弃用
         targets = []
         for target in node.targets:
-            targets.append(self.packPos(target, UNode.UnaryExpression(UNode.SourceLocation(), UNode.Meta(), "delete",
-                                                                      self.packPos(target, self.visit(target)))))
+            targets.append(self.packPos(target, self._unary("delete", self.packPos(target, self.visit(target)))))
         return self.packPos(node, UNode.Sequence(UNode.SourceLocation(), UNode.Meta(), targets))
 
     def visit_Div(self, node):
@@ -566,7 +682,7 @@ class UASTTransformer(ast.NodeTransformer):
             range_body_loc = UNode.SourceLocation(UNode.Position(node.body[0].lineno, min_col),
                                                   UNode.Position(node.body[-1].end_lineno, max_col), self.sourcefile)
         body = UNode.ScopedStatement(range_body_loc, UNode.Meta(), range_body)
-        return self.packPos(node, UNode.RangeStatement(UNode.SourceLocation(), UNode.Meta(), None, value, right, body))
+        return self.packPos(node, self._range_stmt(value=value, right=right, body=body))
 
     def visit_Mod(self, node):
         return "%"
@@ -603,9 +719,9 @@ class UASTTransformer(ast.NodeTransformer):
             else:
                 literal_type = 'float'
         if literal_type is not None:
-            return self.packPos(node, UNode.Literal(UNode.SourceLocation(), UNode.Meta(), node.value, literal_type))
+            return self.packPos(node, self._literal(node.value, literal_type))
         else:
-            return self.packPos(node, UNode.Literal(UNode.SourceLocation(), UNode.Meta(), "...", literal_type))
+            return self.packPos(node, self._literal("...", literal_type))
 
     def visit_arguments(self, node):
         arguments = []
@@ -622,14 +738,7 @@ class UASTTransformer(ast.NodeTransformer):
             var_type = self._parse_type_annotation(arg_node.annotation)
             arg_id = self.packPos(arg_node, self.visit(arg_node))
 
-            var_decl = UNode.VariableDeclaration(
-                UNode.SourceLocation(),
-                UNode.Meta(),
-                arg_id,
-                default_value,
-                False,
-                var_type
-            )
+            var_decl = self._var_decl(arg_id, default_value, var_type)
 
             var_decl._meta.parameterKind = parameter_kind
 
@@ -735,8 +844,7 @@ class UASTTransformer(ast.NodeTransformer):
         name = self.packPos(node, UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), node.name))
         if node.asname is not None:
             asname = self.packPos(node, UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), node.asname))
-            return self.packPos(node,
-                                UNode.AssignmentExpression(UNode.SourceLocation(), UNode.Meta(), asname, name, "="))
+            return self.packPos(node, self._assignment(asname, name))
         else:
             return name
 
@@ -759,21 +867,18 @@ class UASTTransformer(ast.NodeTransformer):
         return self.packPos(node, UNode.BreakStatement(UNode.SourceLocation(), UNode.Meta(), None))
 
     def visit_Bytes(self, node):
-        return self.packPos(node, UNode.Literal(UNode.SourceLocation(), UNode.Meta(), node.value, "bytes"))
+        return self.packPos(node, self._literal(node.value, "bytes"))
 
     def visit_Delete(self, node):
         targets = []
         for target in node.targets:
-            targets.append(self.packPos(target, UNode.UnaryExpression(UNode.SourceLocation(), UNode.Meta(), "delete",
-                                                                      self.packPos(target, self.visit(target)))))
+            targets.append(self.packPos(target, self._unary("delete", self.packPos(target, self.visit(target)))))
         return self.packPos(node, UNode.Sequence(UNode.SourceLocation(), UNode.Meta(), targets))
 
     def visit_Global(self, node):
         expressions = []
         for name in node.names:
-            expressions.append(UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(), name, None, False,
-                                                         UNode.DynamicType(UNode.SourceLocation(),
-                                                                           UNode.Meta())))  # todo 缺失了global标注
+            expressions.append(self._var_decl(name))  # todo 缺失了global标注
         return self.packPos(node, UNode.Sequence(UNode.SourceLocation(), UNode.Meta(), expressions))
 
     def visit_Import(self, node):
@@ -782,22 +887,19 @@ class UASTTransformer(ast.NodeTransformer):
             id = self.packPos(name, self.visit(name))
             if isinstance(id, UNode.AssignmentExpression):
                 id = id.left
-            import_list.append(self.packPos(name, UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(), id,
-                                                                            self.packPos(name, UNode.ImportExpression(
-                                                                                UNode.SourceLocation(),
-                                                                                UNode.Meta(),
-                                                                                None, None,
-                                                                                self.packPos(name, UNode.Literal(
-                                                                                    UNode.SourceLocation(),
-                                                                                    UNode.Meta(),
-                                                                                    name.name,
-                                                                                    'string')))), False,
-                                                                            UNode.DynamicType(UNode.SourceLocation(),
-                                                                                              UNode.Meta()))))
+            import_list.append(
+                self.packPos(
+                    name,
+                    self._var_decl(
+                        id,
+                        self.packPos(name, self._import_expr(imported=self.packPos(name, self._literal(name.name, 'string')))),
+                    ),
+                )
+            )
         return import_list
 
     def visit_Index(self, node):  # python 3.8以后被弃用
-        return self.packPos(node, UNode.Literal(UNode.SourceLocation(), UNode.Meta(), node.value, "int"))
+        return self.packPos(node, self._literal(node.value, "int"))
 
     def visit_Invert(self, node):
         return "~"
@@ -813,10 +915,14 @@ class UASTTransformer(ast.NodeTransformer):
                                           node.body,
                                           self.visit(
                                               node.body)))))
-        return self.packPos(node, UNode.FunctionDefinition(UNode.SourceLocation(), UNode.Meta(), params, None,
-                                                           self.packPos(node.body,
-                                                                        UNode.ScopedStatement(UNode.SourceLocation(),
-                                                                                              UNode.Meta(), bodys))))
+        return self.packPos(
+            node,
+            self._function_def(
+                params,
+                None,
+                self.packPos(node.body, UNode.ScopedStatement(UNode.SourceLocation(), UNode.Meta(), bodys)),
+            ),
+        )
 
     def visit_Match(self, node):
         cases = []
@@ -862,7 +968,7 @@ class UASTTransformer(ast.NodeTransformer):
         ele = []
         for elt in node.elts:
             ele.append(self.visit(elt))
-        return self.packPos(node, UNode.TupleExpression(UNode.SourceLocation(), UNode.Meta(), ele))
+        return self.packPos(node, self._tuple_expr(ele))
 
     def visit_Yield(self, node):
         argument = []
@@ -896,28 +1002,26 @@ class UASTTransformer(ast.NodeTransformer):
             range_body_loc = UNode.SourceLocation(UNode.Position(node.ifs[0].lineno, min_col),
                                                   UNode.Position(node.ifs[-1].end_lineno, max_col), self.sourcefile)
         body = UNode.ScopedStatement(range_body_loc, UNode.Meta(), range_body)
-        return self.packPos(node, UNode.RangeStatement(UNode.SourceLocation(), UNode.Meta(), None, value, right, body))
+        return self.packPos(node, self._range_stmt(value=value, right=right, body=body))
 
     def visit_Continue(self, node):
         return self.packPos(node, UNode.ContinueStatement(UNode.SourceLocation(), UNode.Meta(), None))
 
     def visit_Ellipsis(self, node):  # 已被弃用
-        return self.packPos(node, UNode.Literal(UNode.SourceLocation(), UNode.Meta(), "...", "string"))
+        return self.packPos(node, self._literal("...", "string"))
 
     def visit_Nonlocal(self, node):
         exprs = []
         for name in node.names:
-            exprs.append(UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(), name, None, False,
-                                                   UNode.DynamicType(UNode.SourceLocation(),
-                                                                     UNode.Meta())))  # todo 缺少了nonlocal的标记
+            exprs.append(self._var_decl(name))  # todo 缺少了nonlocal的标记
         return self.packPos(node, UNode.Sequence(UNode.SourceLocation(), UNode.Meta(), exprs))
 
     def visit_withitem(self, node):  # 暂不处理
         if node.optional_vars is not None:
-            return UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(),
-                                             self.packPos(node.optional_vars, self.visit(node.optional_vars)),
-                                             self.packPos(node.context_expr, self.visit(node.context_expr)), False,
-                                             UNode.DynamicType(UNode.SourceLocation(), UNode.Meta()))
+            return self._var_decl(
+                self.packPos(node.optional_vars, self.visit(node.optional_vars)),
+                self.packPos(node.context_expr, self.visit(node.context_expr)),
+            )
         else:
             return UNode.Noop(UNode.SourceLocation(), UNode.Meta())
 
@@ -926,7 +1030,7 @@ class UASTTransformer(ast.NodeTransformer):
             literal_type = 'float'
         elif isinstance(node.value, int):
             literal_type = 'int'
-        return self.packPos(node, UNode.Literal(UNode.SourceLocation(), UNode.Meta(), node.n, literal_type))
+        return self.packPos(node, self._literal(node.n, literal_type))
 
     def visit_Pow(self, node):
         return "**"
@@ -936,13 +1040,12 @@ class UASTTransformer(ast.NodeTransformer):
         for i in range(len(node.elts)):
             objectProperty.append(
                 self.packPos(node.elts[i], UNode.ObjectProperty(UNode.SourceLocation(), UNode.Meta(),
-                                                                UNode.Literal(UNode.SourceLocation(), UNode.Meta(), i,
-                                                                              "number"),
+                                                                self._literal(i, "number"),
                                                                 self.packPos(node.elts[i], self.visit(node.elts[i])))))
         return self.packPos(node, UNode.ObjectExpression(UNode.SourceLocation(), UNode.Meta(), objectProperty))
 
     def visit_Str(self, node):
-        return UNode.Literal(UNode.SourceLocation(), UNode.Meta(), node.s, "string")
+        return self._literal(node.s, "string")
 
     def visit_Sub(self, node):
         return "-"
@@ -1038,8 +1141,7 @@ class UASTTransformer(ast.NodeTransformer):
         for i in range(len(node.elts)):
             objectProperty.append(
                 self.packPos(node.elts[i], UNode.ObjectProperty(UNode.SourceLocation(), UNode.Meta(),
-                                                                UNode.Literal(UNode.SourceLocation(), UNode.Meta(), i,
-                                                                              "number"),
+                                                                self._literal(i, "number"),
                                                                 self.packPos(node.elts[i], self.visit(node.elts[i])))))
         return self.packPos(node, UNode.ObjectExpression(UNode.SourceLocation(), UNode.Meta(), objectProperty))
 
@@ -1101,12 +1203,13 @@ class UASTTransformer(ast.NodeTransformer):
                                                           self.packPos(node.value, self.visit(node.value))))
         else:
             # 普通关键字参数（如 name=value）
-            return self.packPos(node, UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(),
-                                                                UNode.Identifier(UNode.SourceLocation(), UNode.Meta(),
-                                                                                 node.arg),
-                                                                self.packPos(node.value, self.visit(node.value)),
-                                                                False,
-                                                                UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())))
+            return self.packPos(
+                node,
+                self._var_decl(
+                    UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), node.arg),
+                    self.packPos(node.value, self.visit(node.value)),
+                ),
+            )
 
     def visit_Starred(self, node):
         return self.packPos(node, UNode.DereferenceExpression(UNode.SourceLocation(), UNode.Meta(),
@@ -1119,9 +1222,7 @@ class UASTTransformer(ast.NodeTransformer):
         init = None
         if node.value is not None:
             init = self.packPos(node.value, self.visit(node.value))
-        return self.packPos(node, UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(),
-                                                            self.packPos(node.target, self.visit(node.target)), init,
-                                                            False, vartype))
+        return self.packPos(node, self._var_decl(self.packPos(node.target, self.visit(node.target)), init, vartype))
 
     def visit_AsyncWith(self, node):
         withstmt = self.packPos(node, self.visit_With(node))
@@ -1129,16 +1230,19 @@ class UASTTransformer(ast.NodeTransformer):
         return withstmt
 
     def visit_AugAssign(self, node):
-        return self.packPos(node, UNode.AssignmentExpression(UNode.SourceLocation(), UNode.Meta(),
-                                                             self.packPos(node.target, self.visit(node.target)),
-                                                             UNode.BinaryExpression(UNode.SourceLocation(),
-                                                                                    UNode.Meta(),
-                                                                                    self.visit(node.op),
-                                                                                    self.packPos(node.target,
-                                                                                                 self.visit(
-                                                                                                     node.target)),
-                                                                                    self.packPos(node.value, self.visit(
-                                                                                        node.value))), "="))
+        return self.packPos(
+            node,
+            self._assignment(
+                self.packPos(node.target, self.visit(node.target)),
+                UNode.BinaryExpression(
+                    UNode.SourceLocation(),
+                    UNode.Meta(),
+                    self.visit(node.op),
+                    self.packPos(node.target, self.visit(node.target)),
+                    self.packPos(node.value, self.visit(node.value)),
+                ),
+            ),
+        )
 
     def visit_JoinedStr(self, node):
         tmp = None
@@ -1161,10 +1265,13 @@ class UASTTransformer(ast.NodeTransformer):
                                                                        node.name)))
 
     def visit_NamedExpr(self, node):
-        return self.packPos(node, UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(),
-                                                            self.packPos(node.target, self.visit(node.target)),
-                                                            self.packPos(node.value, self.visit(node.value)), False,
-                                                            UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())))
+        return self.packPos(
+            node,
+            self._var_decl(
+                self.packPos(node.target, self.visit(node.target)),
+                self.packPos(node.value, self.visit(node.value)),
+            ),
+        )
 
     def visit_ParamSpec(self, node):  # 不和ast node挂钩
         pass
@@ -1178,8 +1285,7 @@ class UASTTransformer(ast.NodeTransformer):
     def visit_TypeAlias(self, node):
         supers = []
         supers.append(self.packPos(node.value, self.visit(node.value)))
-        return self.packPos(node, UNode.ClassDefinition(UNode.SourceLocation(), UNode.Meta(),
-                                                        self.packPos(node.name, self.visit(node.name)), None, supers))
+        return self.packPos(node, self._class_def(self.packPos(node.name, self.visit(node.name)), None, supers))
 
     def visit_YieldFrom(self, node):
         return self.packPos(node, UNode.YieldExpression(UNode.SourceLocation(), UNode.Meta(),
@@ -1229,11 +1335,9 @@ class UASTTransformer(ast.NodeTransformer):
     def visit_GeneratorExp(self, node):
         ele = self.packPos(node.elt, self.visit(node.elt))
         expressions = []
-        expressions.append(UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(),
-                                                     UNode.Identifier(UNode.SourceLocation(), UNode.Meta(),
-                                                                      self.createTmpVariableName()),
-                                                     None, False,
-                                                     UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())))
+        expressions.append(
+            self._var_decl(UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), self.createTmpVariableName()))
+        )
         tmpVar = UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), self.getTmpVariableName())
         for generator in node.generators:
             range_stmt = self.packPos(generator, self.visit(generator))
@@ -1265,19 +1369,19 @@ class UASTTransformer(ast.NodeTransformer):
             else:
                 alias_id = imported = id
             import_list.append(
-                self.packPos(name, UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(), alias_id,
-                                                             self.packPos(name,
-                                                                          UNode.ImportExpression(UNode.SourceLocation(),
-                                                                                                 UNode.Meta(),
-                                                                                                 self.packPos(name,
-                                                                                                              UNode.Literal(
-                                                                                                                  UNode.SourceLocation(),
-                                                                                                                  UNode.Meta(),
-                                                                                                                  import_path,
-                                                                                                                  'string')),
-                                                                                                 None, imported)),
-                                                             False,
-                                                             UNode.DynamicType(UNode.SourceLocation(), UNode.Meta()))))
+                self.packPos(
+                    name,
+                    self._var_decl(
+                        alias_id,
+                        self.packPos(
+                            name,
+                            self._import_expr(
+                                from_expr=self.packPos(name, self._literal(import_path, 'string')),
+                                imported=imported,
+                            ),
+                        ),
+                    ),
+                ))
         return import_list
 
     def visit_match_case(self, node):
@@ -1292,30 +1396,30 @@ class UASTTransformer(ast.NodeTransformer):
         if len(node.body) > 0:
             body_loc = UNode.SourceLocation(UNode.Position(node.body[0].lineno, min_col),
                                             UNode.Position(node.body[-1].end_lineno, max_col), self.sourcefile)
-        return self.packPos(node, UNode.CaseClause(UNode.SourceLocation(), UNode.Meta(),
-                                                   self.packPos(node.pattern, self.visit(node.pattern)),
-                                                   UNode.ScopedStatement(body_loc, UNode.Meta(), bodys)))
+        return self.packPos(
+            node,
+            self._case_clause(
+                self.packPos(node.pattern, self.visit(node.pattern)),
+                UNode.ScopedStatement(body_loc, UNode.Meta(), bodys),
+            ),
+        )
 
     def visit_MatchClass(self, node):
         arguments = []
         if node.patterns is not None:
             for pattern in node.patterns:
-                arguments.append(self.packPos(pattern, UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(),
-                                                                                 self.packPos(pattern,
-                                                                                              self.visit(pattern)),
-                                                                                 None, False,
-                                                                                 UNode.DynamicType(
-                                                                                     UNode.SourceLocation(),
-                                                                                     UNode.Meta()))))
+                arguments.append(
+                    self.packPos(pattern, self._var_decl(self.packPos(pattern, self.visit(pattern))))
+                )
         if node.kwd_patterns is not None and node.kwd_attrs is not None:
             if len(node.kwd_patterns) == len(node.kwd_attrs):
                 for i in range(len(node.kwd_patterns)):
-                    arguments.append(UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(),
-                                                               UNode.Identifier(UNode.SourceLocation(), UNode.Meta(),
-                                                                                node.kwd_attrs[i]),
-                                                               self.packPos(node.kwd_patterns[i],
-                                                                            self.visit(node.kwd_patterns[i])), False,
-                                                               UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())))
+                    arguments.append(
+                        self._var_decl(
+                            UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), node.kwd_attrs[i]),
+                            self.packPos(node.kwd_patterns[i], self.visit(node.kwd_patterns[i])),
+                        )
+                    )
         return self.packPos(node, UNode.CallExpression(UNode.SourceLocation(), UNode.Meta(),
                                                        self.packPos(node.cls, self.visit(node.cls)),
                                                        arguments))
@@ -1343,9 +1447,7 @@ class UASTTransformer(ast.NodeTransformer):
         pass
 
     def visit_UnaryOp(self, node):
-        return self.packPos(node, UNode.UnaryExpression(UNode.SourceLocation(), UNode.Meta(),
-                                                        self.visit(node.op),
-                                                        self.packPos(node.operand, self.visit(node.operand))))
+        return self.packPos(node, self._unary(self.visit(node.op), self.packPos(node.operand, self.visit(node.operand))))
 
     def visit_ExceptHandler(self, node):
         bodys = []
@@ -1368,13 +1470,7 @@ class UASTTransformer(ast.NodeTransformer):
         if node.type is not None and node.name is not None:
             type = self.packPos(node.type, self.visit(node.type))
         parameter = []
-        parameter.append(self.packPos(node.type, UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(),
-                                                                           UNode.Literal(UNode.SourceLocation(),
-                                                                                         UNode.Meta(),
-                                                                                         node.name, "string"),
-                                                                           type, False,
-                                                                           UNode.DynamicType(UNode.SourceLocation(),
-                                                                                             UNode.Meta()))))
+        parameter.append(self.packPos(node.type, self._var_decl(self._literal(node.name, "string"), type)))
         return self.packPos(node, UNode.CatchClause(UNode.SourceLocation(), UNode.Meta(), parameter,
                                                     UNode.ScopedStatement(body_loc, UNode.Meta(), bodys)))
 
@@ -1384,18 +1480,16 @@ class UASTTransformer(ast.NodeTransformer):
     def visit_MatchSequence(self, node):
         exprs = []
         for pattern in node.patterns:
-            exprs.append(UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(),
-                                                   self.packPos(pattern, self.visit(pattern)), None, False,
-                                                   UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())))
+            exprs.append(self._var_decl(self.packPos(pattern, self.visit(pattern))))
         return self.packPos(node, UNode.Sequence(UNode.SourceLocation(), UNode.Meta(), exprs))
 
     def visit_MatchSingleton(self, node):
         if node.value is None:
-            return UNode.Literal(UNode.SourceLocation(), UNode.Meta(), None, "null")
+            return self._literal(None, "null")
         elif node.value is True:
-            return UNode.Literal(UNode.SourceLocation(), UNode.Meta(), "True", "boolean")
+            return self._literal("True", "boolean")
         elif node.value is False:
-            return UNode.Literal(UNode.SourceLocation(), UNode.Meta(), "False", "boolean")
+            return self._literal("False", "boolean")
 
     def visit_AsyncFor(self, node):
         forstmt = self.packPos(node, self.visit_For(node))
@@ -1412,11 +1506,9 @@ class UASTTransformer(ast.NodeTransformer):
                                  self.packPos(node.value, self.visit(node.value))))
         objectExpr = UNode.ObjectExpression(UNode.SourceLocation(), UNode.Meta(), ele)
         expressions = []
-        expressions.append(UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(),
-                                                     UNode.Identifier(UNode.SourceLocation(), UNode.Meta(),
-                                                                      self.createTmpVariableName()),
-                                                     None, False,
-                                                     UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())))
+        expressions.append(
+            self._var_decl(UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), self.createTmpVariableName()))
+        )
         tmpVar = UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), self.getTmpVariableName())
         for generator in node.generators:
             range_stmt = self.packPos(generator, self.visit(generator))
@@ -1443,10 +1535,8 @@ class UASTTransformer(ast.NodeTransformer):
         ele = self.packPos(node.elt, self.visit(node.elt))
         expressions = []
         expressions.append(
-            UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(),
-                                      UNode.Identifier(UNode.SourceLocation(), UNode.Meta(),
-                                                       self.createTmpVariableName()),
-                                      None, False, UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())))
+            self._var_decl(UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), self.createTmpVariableName()))
+        )
         tmpVar = UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), self.getTmpVariableName())
         for generator in node.generators:
             range_stmt = self.packPos(generator, self.visit(generator))
@@ -1503,10 +1593,8 @@ class UASTTransformer(ast.NodeTransformer):
         ele = self.packPos(node.elt, self.visit(node.elt))
         expressions = []
         expressions.append(
-            UNode.VariableDeclaration(UNode.SourceLocation(), UNode.Meta(),
-                                      UNode.Identifier(UNode.SourceLocation(), UNode.Meta(),
-                                                       self.createTmpVariableName()),
-                                      None, False, UNode.DynamicType(UNode.SourceLocation(), UNode.Meta())))
+            self._var_decl(UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), self.createTmpVariableName()))
+        )
         tmpVar = UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), self.getTmpVariableName())
         for generator in node.generators:
             range_stmt = self.packPos(generator, self.visit(generator))
@@ -1544,11 +1632,11 @@ class UASTTransformer(ast.NodeTransformer):
             return None
         if hasattr(unode, "loc") and unode.loc.start is None:
             loc = self.convertToLineColumn(node)
-            if isinstance(unode, UNode.Node):
+            if isinstance(unode, UNode.BaseNode):
                 unode.loc = loc
             elif isinstance(unode, list):
                 for item in unode:
-                    if isinstance(item, UNode.Node):
+                    if isinstance(item, UNode.BaseNode):
                         item.loc = loc
         return unode
 

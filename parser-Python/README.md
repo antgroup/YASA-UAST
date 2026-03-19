@@ -9,6 +9,17 @@ pip install -r requirements.txt
 
 ### 使用示例
 
+先从 spec 生成 Python 结构约束层：
+```bash
+cd ../specification
+npm run generate-python-asttype
+```
+
+生成文件位置：
+```bash
+parser-Python/uast/asttype_generated.py
+```
+
 解析项目目录：
 ```bash
 python3 -m uast.builder --rootDir /path/to/project --output ./output -j16 -v

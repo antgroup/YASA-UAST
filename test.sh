@@ -16,7 +16,7 @@ YELLOW='\033[0;33m'
 CYAN='\033[0;36m'
 NC='\033[0m'
 
-TOTAL=8
+TOTAL=9
 STEP=0
 
 step() { ((STEP++)); echo -e "\n${CYAN}[$STEP/$TOTAL] $1${NC}"; }
@@ -131,6 +131,16 @@ fi
 # ═════════════════════════════════════════════
 #  parser-Python
 # ═════════════════════════════════════════════
+step "parser-Python: generate asttype from spec"
+cd "$ROOT_DIR/specification"
+GEN_PY_OUTPUT=$(node ./scripts/generate-python-asttype.mjs 2>&1) || true
+if [ ! -f "$ROOT_DIR/parser-Python/uast/asttype_generated.py" ]; then
+    fail "parser-Python: asttype generation failed"
+    echo "$GEN_PY_OUTPUT" | tail -5
+else
+    pass "parser-Python: asttype generation OK"
+fi
+
 step "parser-Python: parse smoke test"
 cd "$ROOT_DIR/parser-Python"
 
@@ -156,6 +166,19 @@ else
     if echo "$DEP_CHECK" | grep -q "ModuleNotFoundError"; then
         skip "parser-Python: missing deps (run: pip install -r requirements.txt)"
     else
+        TYPE_CHECK=$(PYTHONPATH=. $PYTHON - <<'PYEOF'
+from pathlib import Path
+src = Path('uast/asttype_generated.py').read_text()
+compile(src, 'uast/asttype_generated.py', 'exec')
+print('ok')
+PYEOF
+        2>&1) || true
+        if ! echo "$TYPE_CHECK" | grep -q "^ok$"; then
+            fail "parser-Python: generated asttype syntax error"
+            echo "$TYPE_CHECK" | tail -5
+            exit 1
+        fi
+
         # 用一个简单 Python 文件做 smoke test（解析不崩溃即可）
         SMOKE_FILE=$(mktemp /tmp/uast_smoke_XXXXXX.py)
         cat > "$SMOKE_FILE" << 'PYEOF'
@@ -187,6 +210,21 @@ PYEOF
             fi
         fi
         rm -f /tmp/uast_smoke_output.json
+    fi
+fi
+
+step "parser-Python: regression test"
+cd "$ROOT_DIR/parser-Python"
+
+if [ -z "${PYTHON}" ]; then
+    skip "parser-Python regression test (need python3 >= 3.10, not found or too old)"
+else
+    REGRESSION_CHECK=$(PYTHONPATH=. $PYTHON test/run_regression.py 2>&1) || true
+    if echo "$REGRESSION_CHECK" | grep -q "python regression OK"; then
+        pass "parser-Python: regression test OK"
+    else
+        fail "parser-Python: regression test failed"
+        echo "$REGRESSION_CHECK" | tail -10
     fi
 fi
 
