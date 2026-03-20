@@ -10,8 +10,8 @@ function getCurrentVersion(): string {
   return process.env.UAST_VERSION || require('../package.json').version;
 }
 
-// 动态替换 AST 中的 sourcefile 和 version 字段
-function normalizeAst(ast: any, currentSourceFile: string, currentVersion: string): any {
+// 动态替换 AST 中的 sourcefile 和 version 字段，避免 baseline 混入机器绝对路径。
+function normalizeAst(ast: any, stableSourceFile: string, currentVersion: string): any {
   if (!ast || typeof ast !== 'object') return ast;
 
   const cloned = Array.isArray(ast) ? [...ast] : { ...ast };
@@ -20,7 +20,7 @@ function normalizeAst(ast: any, currentSourceFile: string, currentVersion: strin
     if (Object.prototype.hasOwnProperty.call(cloned, key)) {
       // 替换 sourcefile 为当前环境的真实路径
       if (key === 'sourcefile' && typeof cloned[key] === 'string') {
-        cloned[key] = currentSourceFile;
+        cloned[key] = stableSourceFile;
       }
       // 替换 version 为当前版本
       else if (key === 'version' && typeof cloned[key] === 'string') {
@@ -32,7 +32,7 @@ function normalizeAst(ast: any, currentSourceFile: string, currentVersion: strin
       }
       // 递归处理子节点
       else {
-        cloned[key] = normalizeAst(cloned[key], currentSourceFile, currentVersion);
+        cloned[key] = normalizeAst(cloned[key], stableSourceFile, currentVersion);
       }
       // 删除 _meta._extra.start/end（避免字节偏移差异）
       if (key === '_meta' && cloned[key]?.['_extra']?.hasOwnProperty('start')) {
@@ -112,8 +112,8 @@ describe('benchmark for javascript', () => {
       }
 
       // ✅ 标准化：替换 sourcefile 和 version，移除 _extra.start/end
-      const normalizedExpected = normalizeAst(expected, fullPath, currentVersion);
-      const normalizedActual = normalizeAst(actual, fullPath, currentVersion);
+      const normalizedExpected = normalizeAst(expected, jsFile, currentVersion);
+      const normalizedActual = normalizeAst(actual, jsFile, currentVersion);
 
       // 字符串化对比（格式化一致）
       const actualStr = JSON.stringify(normalizedActual, null, 2);

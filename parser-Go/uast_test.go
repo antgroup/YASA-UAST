@@ -106,8 +106,19 @@ func TestCreatePackage1(t *testing.T) {
 }
 
 func buidUAST(path string) string {
+	displayPath := filepath.ToSlash(path)
+	if absPath, err := filepath.Abs(path); err == nil {
+		normalizedAbsPath := filepath.ToSlash(absPath)
+		if i := strings.LastIndex(normalizedAbsPath, "examples/"); i >= 0 {
+			displayPath = normalizedAbsPath[i:]
+		}
+	}
+	content, err := os.ReadFile(path)
+	if err != nil {
+		panic(err)
+	}
 	fset := token.NewFileSet()
-	f, err := parser.ParseFile(fset, path, nil, parser.DeclarationErrors)
+	f, err := parser.ParseFile(fset, displayPath, content, parser.DeclarationErrors)
 	if err != nil {
 		panic(err)
 	}
@@ -117,7 +128,7 @@ func buidUAST(path string) string {
 		Imports: nil,
 		Files:   make(map[string]*ast.File),
 	}
-	pkg.Files[path] = f
+	pkg.Files[displayPath] = f
 	packages := make(map[string]*ast.Package)
 	packages["__single__"] = pkg
 
@@ -177,7 +188,7 @@ func readFileContent(filePath string) (string, error) {
 	return string(data), nil
 }
 
-// normalizeJSONForGoldenCompare 规范化 JSON 再比较：路径统一为 $EXAMPLES/文件名，去掉 Offset/goModPath/numOfGoMod，_meta 统一为 {}，便于跨机器 golden 通过。返回规范化后的 map 便于深度比较（避免 JSON 键序差异）。
+// normalizeJSONForGoldenCompare 规范化 JSON 再比较：路径统一为 examples/相对路径，去掉 Offset/goModPath/numOfGoMod，_meta 统一为 {}，便于跨机器 golden 通过。返回规范化后的 map 便于深度比较（避免 JSON 键序差异）。
 func normalizeJSONForGoldenCompare(jsonStr string) (map[string]interface{}, error) {
 	var m map[string]interface{}
 	if err := json.Unmarshal([]byte(jsonStr), &m); err != nil {
@@ -205,23 +216,22 @@ func normalizeMapForGolden(m map[string]interface{}) {
 			delete(m, k)
 			continue
 		case "_meta":
-			if isReceiveClsOnlyMeta(v) {
-				m[k] = map[string]interface{}{}
+			if meta, ok := v.(map[string]interface{}); ok {
+				normalizeMapForGolden(meta)
+				if isReceiveClsOnlyMeta(meta) {
+					m[k] = map[string]interface{}{}
+				}
 			}
 			continue
 		}
 		// 路径有时在 key 里（如 files 的 key 是文件路径）
-		if strings.Contains(k, "examples") && strings.HasSuffix(k, ".go") {
-			if i := strings.LastIndex(k, "examples/"); i >= 0 {
-				keyRenames = append(keyRenames, struct{ old, new string }{k, "$EXAMPLES/" + k[i+len("examples/"):]})
-			}
+		if normalized, ok := normalizeExamplePath(k); ok && normalized != k {
+			keyRenames = append(keyRenames, struct{ old, new string }{k, normalized})
 		}
 		switch val := v.(type) {
 		case string:
-			if strings.Contains(val, "examples") && strings.HasSuffix(val, ".go") {
-				if i := strings.LastIndex(val, "examples/"); i >= 0 {
-					m[k] = "$EXAMPLES/" + val[i+len("examples/"):]
-				}
+			if normalized, ok := normalizeExamplePath(val); ok {
+				m[k] = normalized
 			}
 		case map[string]interface{}:
 			normalizeMapForGolden(val)
@@ -237,6 +247,17 @@ func normalizeMapForGolden(m map[string]interface{}) {
 		m[r.new] = m[r.old]
 		delete(m, r.old)
 	}
+}
+
+func normalizeExamplePath(value string) (string, bool) {
+	if !strings.Contains(value, "examples") || !strings.HasSuffix(value, ".go") {
+		return "", false
+	}
+	value = strings.ReplaceAll(value, "\\", "/")
+	if i := strings.LastIndex(value, "examples/"); i >= 0 {
+		return value[i:], true
+	}
+	return "", false
 }
 
 func isNumberZero(v interface{}) bool {
