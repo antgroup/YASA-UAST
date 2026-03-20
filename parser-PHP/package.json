@@ -8,7 +8,7 @@
     "typescript": "^5.7.2"
   },
   "scripts": {
-    "test": "mocha -r ts-node/register tests/index.ts",
+    "test": "mocha --require tsx tests/index.ts",
     "build": "tsc"
   },
   "devDependencies": {
