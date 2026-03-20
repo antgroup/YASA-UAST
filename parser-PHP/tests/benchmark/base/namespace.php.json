@@ -1,0 +1,967 @@
+{
+  "type": "CompileUnit",
+  "body": [
+    {
+      "type": "PackageDeclaration",
+      "packageName": {
+        "type": "Identifier",
+        "name": "Foo\\Bar",
+        "_meta": {}
+      },
+      "_meta": {
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 1
+          },
+          "end": {
+            "line": 5,
+            "column": 22
+          },
+          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/namespace.php"
+        },
+        "origin": {
+          "kind": "namespace",
+          "loc": {
+            "source": null,
+            "start": {
+              "line": 2,
+              "column": 0,
+              "offset": 6
+            },
+            "end": {
+              "line": 5,
+              "column": 21,
+              "offset": 81
+            }
+          },
+          "children": [
+            {
+              "kind": "usegroup",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 3,
+                  "column": 0,
+                  "offset": 25
+                },
+                "end": {
+                  "line": 3,
+                  "column": 16,
+                  "offset": 41
+                }
+              },
+              "name": null,
+              "type": null,
+              "items": [
+                {
+                  "kind": "useitem",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 3,
+                      "column": 4,
+                      "offset": 29
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 16,
+                      "offset": 41
+                    }
+                  },
+                  "name": "Baz\\Qux",
+                  "alias": {
+                    "kind": "identifier",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 3,
+                        "column": 15,
+                        "offset": 40
+                      },
+                      "end": {
+                        "line": 3,
+                        "column": 16,
+                        "offset": 41
+                      }
+                    },
+                    "name": "Q"
+                  },
+                  "type": null
+                }
+              ]
+            },
+            {
+              "kind": "expressionstatement",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 4,
+                  "column": 0,
+                  "offset": 43
+                },
+                "end": {
+                  "line": 4,
+                  "column": 16,
+                  "offset": 59
+                }
+              },
+              "expression": {
+                "kind": "include",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 4,
+                    "column": 0,
+                    "offset": 43
+                  },
+                  "end": {
+                    "line": 4,
+                    "column": 16,
+                    "offset": 59
+                  }
+                },
+                "once": false,
+                "require": false,
+                "target": {
+                  "kind": "string",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 4,
+                      "column": 8,
+                      "offset": 51
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 15,
+                      "offset": 58
+                    }
+                  },
+                  "value": "a.php",
+                  "raw": "\"a.php\"",
+                  "unicode": false,
+                  "isDoubleQuote": true
+                }
+              }
+            },
+            {
+              "kind": "expressionstatement",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 5,
+                  "column": 0,
+                  "offset": 60
+                },
+                "end": {
+                  "line": 5,
+                  "column": 21,
+                  "offset": 81
+                }
+              },
+              "expression": {
+                "kind": "include",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 5,
+                    "column": 0,
+                    "offset": 60
+                  },
+                  "end": {
+                    "line": 5,
+                    "column": 21,
+                    "offset": 81
+                  }
+                },
+                "once": true,
+                "require": true,
+                "target": {
+                  "kind": "string",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 5,
+                      "column": 13,
+                      "offset": 73
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 20,
+                      "offset": 80
+                    }
+                  },
+                  "value": "b.php",
+                  "raw": "\"b.php\"",
+                  "unicode": false,
+                  "isDoubleQuote": true
+                }
+              }
+            }
+          ],
+          "name": "Foo\\Bar",
+          "withBrackets": false
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 1
+        },
+        "end": {
+          "line": 5,
+          "column": 22
+        },
+        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/namespace.php"
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "ImportExpression",
+        "from": {
+          "type": "Literal",
+          "value": "Baz\\Qux",
+          "literalType": "string",
+          "_meta": {}
+        },
+        "local": {
+          "type": "Identifier",
+          "name": "Q",
+          "_meta": {
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 16
+              },
+              "end": {
+                "line": 3,
+                "column": 17
+              },
+              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/namespace.php"
+            },
+            "origin": {
+              "kind": "identifier",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 3,
+                  "column": 15,
+                  "offset": 40
+                },
+                "end": {
+                  "line": 3,
+                  "column": 16,
+                  "offset": 41
+                }
+              },
+              "name": "Q"
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 16
+            },
+            "end": {
+              "line": 3,
+              "column": 17
+            },
+            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/namespace.php"
+          }
+        },
+        "imported": null,
+        "_meta": {
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 5
+            },
+            "end": {
+              "line": 3,
+              "column": 17
+            },
+            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/namespace.php"
+          },
+          "origin": {
+            "kind": "useitem",
+            "loc": {
+              "source": null,
+              "start": {
+                "line": 3,
+                "column": 4,
+                "offset": 29
+              },
+              "end": {
+                "line": 3,
+                "column": 16,
+                "offset": 41
+              }
+            },
+            "name": "Baz\\Qux",
+            "alias": {
+              "kind": "identifier",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 3,
+                  "column": 15,
+                  "offset": 40
+                },
+                "end": {
+                  "line": 3,
+                  "column": 16,
+                  "offset": 41
+                }
+              },
+              "name": "Q"
+            },
+            "type": null
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 5
+          },
+          "end": {
+            "line": 3,
+            "column": 17
+          },
+          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/namespace.php"
+        }
+      },
+      "_meta": {}
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "ImportExpression",
+        "from": {
+          "type": "Literal",
+          "value": "a.php",
+          "literalType": "string",
+          "_meta": {
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 9
+              },
+              "end": {
+                "line": 4,
+                "column": 16
+              },
+              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/namespace.php"
+            },
+            "origin": {
+              "kind": "string",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 4,
+                  "column": 8,
+                  "offset": 51
+                },
+                "end": {
+                  "line": 4,
+                  "column": 15,
+                  "offset": 58
+                }
+              },
+              "value": "a.php",
+              "raw": "\"a.php\"",
+              "unicode": false,
+              "isDoubleQuote": true
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 9
+            },
+            "end": {
+              "line": 4,
+              "column": 16
+            },
+            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/namespace.php"
+          }
+        },
+        "local": null,
+        "imported": null,
+        "_meta": {
+          "require": false,
+          "once": false,
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 1
+            },
+            "end": {
+              "line": 4,
+              "column": 17
+            },
+            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/namespace.php"
+          },
+          "origin": {
+            "kind": "include",
+            "loc": {
+              "source": null,
+              "start": {
+                "line": 4,
+                "column": 0,
+                "offset": 43
+              },
+              "end": {
+                "line": 4,
+                "column": 16,
+                "offset": 59
+              }
+            },
+            "once": false,
+            "require": false,
+            "target": {
+              "kind": "string",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 4,
+                  "column": 8,
+                  "offset": 51
+                },
+                "end": {
+                  "line": 4,
+                  "column": 15,
+                  "offset": 58
+                }
+              },
+              "value": "a.php",
+              "raw": "\"a.php\"",
+              "unicode": false,
+              "isDoubleQuote": true
+            }
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 1
+          },
+          "end": {
+            "line": 4,
+            "column": 17
+          },
+          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/namespace.php"
+        }
+      },
+      "_meta": {
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 1
+          },
+          "end": {
+            "line": 4,
+            "column": 17
+          },
+          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/namespace.php"
+        },
+        "origin": {
+          "kind": "expressionstatement",
+          "loc": {
+            "source": null,
+            "start": {
+              "line": 4,
+              "column": 0,
+              "offset": 43
+            },
+            "end": {
+              "line": 4,
+              "column": 16,
+              "offset": 59
+            }
+          },
+          "expression": {
+            "kind": "include",
+            "loc": {
+              "source": null,
+              "start": {
+                "line": 4,
+                "column": 0,
+                "offset": 43
+              },
+              "end": {
+                "line": 4,
+                "column": 16,
+                "offset": 59
+              }
+            },
+            "once": false,
+            "require": false,
+            "target": {
+              "kind": "string",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 4,
+                  "column": 8,
+                  "offset": 51
+                },
+                "end": {
+                  "line": 4,
+                  "column": 15,
+                  "offset": 58
+                }
+              },
+              "value": "a.php",
+              "raw": "\"a.php\"",
+              "unicode": false,
+              "isDoubleQuote": true
+            }
+          }
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 1
+        },
+        "end": {
+          "line": 4,
+          "column": 17
+        },
+        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/namespace.php"
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "ImportExpression",
+        "from": {
+          "type": "Literal",
+          "value": "b.php",
+          "literalType": "string",
+          "_meta": {
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 14
+              },
+              "end": {
+                "line": 5,
+                "column": 21
+              },
+              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/namespace.php"
+            },
+            "origin": {
+              "kind": "string",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 5,
+                  "column": 13,
+                  "offset": 73
+                },
+                "end": {
+                  "line": 5,
+                  "column": 20,
+                  "offset": 80
+                }
+              },
+              "value": "b.php",
+              "raw": "\"b.php\"",
+              "unicode": false,
+              "isDoubleQuote": true
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 14
+            },
+            "end": {
+              "line": 5,
+              "column": 21
+            },
+            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/namespace.php"
+          }
+        },
+        "local": null,
+        "imported": null,
+        "_meta": {
+          "require": true,
+          "once": true,
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 1
+            },
+            "end": {
+              "line": 5,
+              "column": 22
+            },
+            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/namespace.php"
+          },
+          "origin": {
+            "kind": "include",
+            "loc": {
+              "source": null,
+              "start": {
+                "line": 5,
+                "column": 0,
+                "offset": 60
+              },
+              "end": {
+                "line": 5,
+                "column": 21,
+                "offset": 81
+              }
+            },
+            "once": true,
+            "require": true,
+            "target": {
+              "kind": "string",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 5,
+                  "column": 13,
+                  "offset": 73
+                },
+                "end": {
+                  "line": 5,
+                  "column": 20,
+                  "offset": 80
+                }
+              },
+              "value": "b.php",
+              "raw": "\"b.php\"",
+              "unicode": false,
+              "isDoubleQuote": true
+            }
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 1
+          },
+          "end": {
+            "line": 5,
+            "column": 22
+          },
+          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/namespace.php"
+        }
+      },
+      "_meta": {
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 1
+          },
+          "end": {
+            "line": 5,
+            "column": 22
+          },
+          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/namespace.php"
+        },
+        "origin": {
+          "kind": "expressionstatement",
+          "loc": {
+            "source": null,
+            "start": {
+              "line": 5,
+              "column": 0,
+              "offset": 60
+            },
+            "end": {
+              "line": 5,
+              "column": 21,
+              "offset": 81
+            }
+          },
+          "expression": {
+            "kind": "include",
+            "loc": {
+              "source": null,
+              "start": {
+                "line": 5,
+                "column": 0,
+                "offset": 60
+              },
+              "end": {
+                "line": 5,
+                "column": 21,
+                "offset": 81
+              }
+            },
+            "once": true,
+            "require": true,
+            "target": {
+              "kind": "string",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 5,
+                  "column": 13,
+                  "offset": 73
+                },
+                "end": {
+                  "line": 5,
+                  "column": 20,
+                  "offset": 80
+                }
+              },
+              "value": "b.php",
+              "raw": "\"b.php\"",
+              "unicode": false,
+              "isDoubleQuote": true
+            }
+          }
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 1
+        },
+        "end": {
+          "line": 5,
+          "column": 22
+        },
+        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/namespace.php"
+      }
+    }
+  ],
+  "language": "php",
+  "languageVersion": null,
+  "uri": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/namespace.php",
+  "version": "0.0.0",
+  "_meta": {
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 1
+      },
+      "end": {
+        "line": 6,
+        "column": 1
+      },
+      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/namespace.php"
+    },
+    "origin": {
+      "kind": "program",
+      "loc": {
+        "source": null,
+        "start": {
+          "line": 1,
+          "column": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 6,
+          "column": 0,
+          "offset": 82
+        }
+      },
+      "children": [
+        {
+          "kind": "namespace",
+          "loc": {
+            "source": null,
+            "start": {
+              "line": 2,
+              "column": 0,
+              "offset": 6
+            },
+            "end": {
+              "line": 5,
+              "column": 21,
+              "offset": 81
+            }
+          },
+          "children": [
+            {
+              "kind": "usegroup",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 3,
+                  "column": 0,
+                  "offset": 25
+                },
+                "end": {
+                  "line": 3,
+                  "column": 16,
+                  "offset": 41
+                }
+              },
+              "name": null,
+              "type": null,
+              "items": [
+                {
+                  "kind": "useitem",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 3,
+                      "column": 4,
+                      "offset": 29
+                    },
+                    "end": {
+                      "line": 3,
+                      "column": 16,
+                      "offset": 41
+                    }
+                  },
+                  "name": "Baz\\Qux",
+                  "alias": {
+                    "kind": "identifier",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 3,
+                        "column": 15,
+                        "offset": 40
+                      },
+                      "end": {
+                        "line": 3,
+                        "column": 16,
+                        "offset": 41
+                      }
+                    },
+                    "name": "Q"
+                  },
+                  "type": null
+                }
+              ]
+            },
+            {
+              "kind": "expressionstatement",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 4,
+                  "column": 0,
+                  "offset": 43
+                },
+                "end": {
+                  "line": 4,
+                  "column": 16,
+                  "offset": 59
+                }
+              },
+              "expression": {
+                "kind": "include",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 4,
+                    "column": 0,
+                    "offset": 43
+                  },
+                  "end": {
+                    "line": 4,
+                    "column": 16,
+                    "offset": 59
+                  }
+                },
+                "once": false,
+                "require": false,
+                "target": {
+                  "kind": "string",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 4,
+                      "column": 8,
+                      "offset": 51
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 15,
+                      "offset": 58
+                    }
+                  },
+                  "value": "a.php",
+                  "raw": "\"a.php\"",
+                  "unicode": false,
+                  "isDoubleQuote": true
+                }
+              }
+            },
+            {
+              "kind": "expressionstatement",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 5,
+                  "column": 0,
+                  "offset": 60
+                },
+                "end": {
+                  "line": 5,
+                  "column": 21,
+                  "offset": 81
+                }
+              },
+              "expression": {
+                "kind": "include",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 5,
+                    "column": 0,
+                    "offset": 60
+                  },
+                  "end": {
+                    "line": 5,
+                    "column": 21,
+                    "offset": 81
+                  }
+                },
+                "once": true,
+                "require": true,
+                "target": {
+                  "kind": "string",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 5,
+                      "column": 13,
+                      "offset": 73
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 20,
+                      "offset": 80
+                    }
+                  },
+                  "value": "b.php",
+                  "raw": "\"b.php\"",
+                  "unicode": false,
+                  "isDoubleQuote": true
+                }
+              }
+            }
+          ],
+          "name": "Foo\\Bar",
+          "withBrackets": false
+        }
+      ],
+      "errors": [],
+      "comments": []
+    }
+  },
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 1
+    },
+    "end": {
+      "line": 6,
+      "column": 1
+    },
+    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/namespace.php"
+  }
+}

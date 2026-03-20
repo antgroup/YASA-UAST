@@ -1,0 +1,4469 @@
+{
+  "type": "CompileUnit",
+  "body": [
+    {
+      "type": "FunctionDefinition",
+      "id": {
+        "type": "Identifier",
+        "name": "fetch",
+        "_meta": {
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 10
+            },
+            "end": {
+              "line": 3,
+              "column": 15
+            },
+            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+          },
+          "origin": {
+            "kind": "identifier",
+            "loc": {
+              "source": null,
+              "start": {
+                "line": 3,
+                "column": 9,
+                "offset": 16
+              },
+              "end": {
+                "line": 3,
+                "column": 14,
+                "offset": 21
+              }
+            },
+            "name": "fetch"
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 10
+          },
+          "end": {
+            "line": 3,
+            "column": 15
+          },
+          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+        }
+      },
+      "parameters": [
+        {
+          "type": "VariableDeclaration",
+          "id": {
+            "type": "Identifier",
+            "name": "req",
+            "_meta": {
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 16
+                },
+                "end": {
+                  "line": 3,
+                  "column": 20
+                },
+                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+              },
+              "origin": {
+                "kind": "identifier",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 3,
+                    "column": 15,
+                    "offset": 22
+                  },
+                  "end": {
+                    "line": 3,
+                    "column": 19,
+                    "offset": 26
+                  }
+                },
+                "name": "req"
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 16
+              },
+              "end": {
+                "line": 3,
+                "column": 20
+              },
+              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+            }
+          },
+          "init": null,
+          "cloned": false,
+          "varType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {}
+          },
+          "_meta": {
+            "byref": false,
+            "variadic": false,
+            "attributes": [],
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 16
+              },
+              "end": {
+                "line": 3,
+                "column": 20
+              },
+              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+            },
+            "origin": {
+              "kind": "parameter",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 3,
+                  "column": 15,
+                  "offset": 22
+                },
+                "end": {
+                  "line": 3,
+                  "column": 19,
+                  "offset": 26
+                }
+              },
+              "name": {
+                "kind": "identifier",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 3,
+                    "column": 15,
+                    "offset": 22
+                  },
+                  "end": {
+                    "line": 3,
+                    "column": 19,
+                    "offset": 26
+                  }
+                },
+                "name": "req"
+              },
+              "value": null,
+              "type": null,
+              "byref": false,
+              "variadic": false,
+              "readonly": false,
+              "nullable": false,
+              "flags": 0,
+              "attrGroups": []
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 16
+            },
+            "end": {
+              "line": 3,
+              "column": 20
+            },
+            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+          }
+        },
+        {
+          "type": "VariableDeclaration",
+          "id": {
+            "type": "Identifier",
+            "name": "items",
+            "_meta": {
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 22
+                },
+                "end": {
+                  "line": 3,
+                  "column": 28
+                },
+                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+              },
+              "origin": {
+                "kind": "identifier",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 3,
+                    "column": 21,
+                    "offset": 28
+                  },
+                  "end": {
+                    "line": 3,
+                    "column": 27,
+                    "offset": 34
+                  }
+                },
+                "name": "items"
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 22
+              },
+              "end": {
+                "line": 3,
+                "column": 28
+              },
+              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+            }
+          },
+          "init": null,
+          "cloned": false,
+          "varType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {}
+          },
+          "_meta": {
+            "byref": false,
+            "variadic": false,
+            "attributes": [],
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 22
+              },
+              "end": {
+                "line": 3,
+                "column": 28
+              },
+              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+            },
+            "origin": {
+              "kind": "parameter",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 3,
+                  "column": 21,
+                  "offset": 28
+                },
+                "end": {
+                  "line": 3,
+                  "column": 27,
+                  "offset": 34
+                }
+              },
+              "name": {
+                "kind": "identifier",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 3,
+                    "column": 21,
+                    "offset": 28
+                  },
+                  "end": {
+                    "line": 3,
+                    "column": 27,
+                    "offset": 34
+                  }
+                },
+                "name": "items"
+              },
+              "value": null,
+              "type": null,
+              "byref": false,
+              "variadic": false,
+              "readonly": false,
+              "nullable": false,
+              "flags": 0,
+              "attrGroups": []
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 22
+            },
+            "end": {
+              "line": 3,
+              "column": 28
+            },
+            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+          }
+        }
+      ],
+      "returnType": {
+        "type": "DynamicType",
+        "id": null,
+        "_meta": {}
+      },
+      "body": {
+        "type": "ScopedStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "left": {
+                "type": "Identifier",
+                "name": "name",
+                "_meta": {
+                  "loc": {
+                    "start": {
+                      "line": 5,
+                      "column": 5
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 10
+                    },
+                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                  },
+                  "origin": {
+                    "kind": "variable",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 5,
+                        "column": 4,
+                        "offset": 42
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 9,
+                        "offset": 47
+                      }
+                    },
+                    "name": "name",
+                    "curly": false
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 5,
+                    "column": 5
+                  },
+                  "end": {
+                    "line": 5,
+                    "column": 10
+                  },
+                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                }
+              },
+              "right": {
+                "type": "ConditionalExpression",
+                "test": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "ConditionalExpression",
+                    "test": {
+                      "type": "Identifier",
+                      "name": "req",
+                      "_meta": {
+                        "loc": {
+                          "start": {
+                            "line": 5,
+                            "column": 13
+                          },
+                          "end": {
+                            "line": 5,
+                            "column": 17
+                          },
+                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                        },
+                        "origin": {
+                          "kind": "variable",
+                          "loc": {
+                            "source": null,
+                            "start": {
+                              "line": 5,
+                              "column": 12,
+                              "offset": 50
+                            },
+                            "end": {
+                              "line": 5,
+                              "column": 16,
+                              "offset": 54
+                            }
+                          },
+                          "name": "req",
+                          "curly": false
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 5,
+                          "column": 13
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 17
+                        },
+                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                      }
+                    },
+                    "consequent": {
+                      "type": "MemberAccess",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "req",
+                        "_meta": {
+                          "loc": {
+                            "start": {
+                              "line": 5,
+                              "column": 13
+                            },
+                            "end": {
+                              "line": 5,
+                              "column": 17
+                            },
+                            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                          },
+                          "origin": {
+                            "kind": "variable",
+                            "loc": {
+                              "source": null,
+                              "start": {
+                                "line": 5,
+                                "column": 12,
+                                "offset": 50
+                              },
+                              "end": {
+                                "line": 5,
+                                "column": 16,
+                                "offset": 54
+                              }
+                            },
+                            "name": "req",
+                            "curly": false
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 5,
+                            "column": 13
+                          },
+                          "end": {
+                            "line": 5,
+                            "column": 17
+                          },
+                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                        }
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "user",
+                        "_meta": {
+                          "loc": {
+                            "start": {
+                              "line": 5,
+                              "column": 20
+                            },
+                            "end": {
+                              "line": 5,
+                              "column": 24
+                            },
+                            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                          },
+                          "origin": {
+                            "kind": "identifier",
+                            "loc": {
+                              "source": null,
+                              "start": {
+                                "line": 5,
+                                "column": 19,
+                                "offset": 57
+                              },
+                              "end": {
+                                "line": 5,
+                                "column": 23,
+                                "offset": 61
+                              }
+                            },
+                            "name": "user"
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 5,
+                            "column": 20
+                          },
+                          "end": {
+                            "line": 5,
+                            "column": 24
+                          },
+                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                        }
+                      },
+                      "computed": false,
+                      "_meta": {
+                        "loc": {
+                          "start": {
+                            "line": 5,
+                            "column": 17
+                          },
+                          "end": {
+                            "line": 5,
+                            "column": 24
+                          },
+                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                        },
+                        "origin": {
+                          "kind": "nullsafepropertylookup",
+                          "loc": {
+                            "source": null,
+                            "start": {
+                              "line": 5,
+                              "column": 16,
+                              "offset": 54
+                            },
+                            "end": {
+                              "line": 5,
+                              "column": 23,
+                              "offset": 61
+                            }
+                          },
+                          "what": {
+                            "kind": "variable",
+                            "loc": {
+                              "source": null,
+                              "start": {
+                                "line": 5,
+                                "column": 12,
+                                "offset": 50
+                              },
+                              "end": {
+                                "line": 5,
+                                "column": 16,
+                                "offset": 54
+                              }
+                            },
+                            "name": "req",
+                            "curly": false
+                          },
+                          "offset": {
+                            "kind": "identifier",
+                            "loc": {
+                              "source": null,
+                              "start": {
+                                "line": 5,
+                                "column": 19,
+                                "offset": 57
+                              },
+                              "end": {
+                                "line": 5,
+                                "column": 23,
+                                "offset": 61
+                              }
+                            },
+                            "name": "user"
+                          }
+                        },
+                        "nullsafe": true
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 5,
+                          "column": 17
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 24
+                        },
+                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                      }
+                    },
+                    "alternative": {
+                      "type": "Literal",
+                      "value": null,
+                      "literalType": "null",
+                      "_meta": {}
+                    },
+                    "_meta": {
+                      "loc": {
+                        "start": {
+                          "line": 5,
+                          "column": 17
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 24
+                        },
+                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                      },
+                      "origin": {
+                        "kind": "nullsafepropertylookup",
+                        "loc": {
+                          "source": null,
+                          "start": {
+                            "line": 5,
+                            "column": 16,
+                            "offset": 54
+                          },
+                          "end": {
+                            "line": 5,
+                            "column": 23,
+                            "offset": 61
+                          }
+                        },
+                        "what": {
+                          "kind": "variable",
+                          "loc": {
+                            "source": null,
+                            "start": {
+                              "line": 5,
+                              "column": 12,
+                              "offset": 50
+                            },
+                            "end": {
+                              "line": 5,
+                              "column": 16,
+                              "offset": 54
+                            }
+                          },
+                          "name": "req",
+                          "curly": false
+                        },
+                        "offset": {
+                          "kind": "identifier",
+                          "loc": {
+                            "source": null,
+                            "start": {
+                              "line": 5,
+                              "column": 19,
+                              "offset": 57
+                            },
+                            "end": {
+                              "line": 5,
+                              "column": 23,
+                              "offset": 61
+                            }
+                          },
+                          "name": "user"
+                        }
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 5,
+                        "column": 17
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 24
+                      },
+                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                    }
+                  },
+                  "arguments": [],
+                  "_meta": {
+                    "loc": {
+                      "start": {
+                        "line": 5,
+                        "column": 17
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 26
+                      },
+                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                    },
+                    "origin": {
+                      "kind": "call",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 5,
+                          "column": 16,
+                          "offset": 54
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 25,
+                          "offset": 63
+                        }
+                      },
+                      "what": {
+                        "kind": "nullsafepropertylookup",
+                        "loc": {
+                          "source": null,
+                          "start": {
+                            "line": 5,
+                            "column": 16,
+                            "offset": 54
+                          },
+                          "end": {
+                            "line": 5,
+                            "column": 23,
+                            "offset": 61
+                          }
+                        },
+                        "what": {
+                          "kind": "variable",
+                          "loc": {
+                            "source": null,
+                            "start": {
+                              "line": 5,
+                              "column": 12,
+                              "offset": 50
+                            },
+                            "end": {
+                              "line": 5,
+                              "column": 16,
+                              "offset": 54
+                            }
+                          },
+                          "name": "req",
+                          "curly": false
+                        },
+                        "offset": {
+                          "kind": "identifier",
+                          "loc": {
+                            "source": null,
+                            "start": {
+                              "line": 5,
+                              "column": 19,
+                              "offset": 57
+                            },
+                            "end": {
+                              "line": 5,
+                              "column": 23,
+                              "offset": 61
+                            }
+                          },
+                          "name": "user"
+                        }
+                      },
+                      "arguments": []
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 5,
+                      "column": 17
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 26
+                    },
+                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                  }
+                },
+                "consequent": {
+                  "type": "MemberAccess",
+                  "object": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "ConditionalExpression",
+                      "test": {
+                        "type": "Identifier",
+                        "name": "req",
+                        "_meta": {
+                          "loc": {
+                            "start": {
+                              "line": 5,
+                              "column": 13
+                            },
+                            "end": {
+                              "line": 5,
+                              "column": 17
+                            },
+                            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                          },
+                          "origin": {
+                            "kind": "variable",
+                            "loc": {
+                              "source": null,
+                              "start": {
+                                "line": 5,
+                                "column": 12,
+                                "offset": 50
+                              },
+                              "end": {
+                                "line": 5,
+                                "column": 16,
+                                "offset": 54
+                              }
+                            },
+                            "name": "req",
+                            "curly": false
+                          }
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 5,
+                            "column": 13
+                          },
+                          "end": {
+                            "line": 5,
+                            "column": 17
+                          },
+                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                        }
+                      },
+                      "consequent": {
+                        "type": "MemberAccess",
+                        "object": {
+                          "type": "Identifier",
+                          "name": "req",
+                          "_meta": {
+                            "loc": {
+                              "start": {
+                                "line": 5,
+                                "column": 13
+                              },
+                              "end": {
+                                "line": 5,
+                                "column": 17
+                              },
+                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                            },
+                            "origin": {
+                              "kind": "variable",
+                              "loc": {
+                                "source": null,
+                                "start": {
+                                  "line": 5,
+                                  "column": 12,
+                                  "offset": 50
+                                },
+                                "end": {
+                                  "line": 5,
+                                  "column": 16,
+                                  "offset": 54
+                                }
+                              },
+                              "name": "req",
+                              "curly": false
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 5,
+                              "column": 13
+                            },
+                            "end": {
+                              "line": 5,
+                              "column": 17
+                            },
+                            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                          }
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "user",
+                          "_meta": {
+                            "loc": {
+                              "start": {
+                                "line": 5,
+                                "column": 20
+                              },
+                              "end": {
+                                "line": 5,
+                                "column": 24
+                              },
+                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                            },
+                            "origin": {
+                              "kind": "identifier",
+                              "loc": {
+                                "source": null,
+                                "start": {
+                                  "line": 5,
+                                  "column": 19,
+                                  "offset": 57
+                                },
+                                "end": {
+                                  "line": 5,
+                                  "column": 23,
+                                  "offset": 61
+                                }
+                              },
+                              "name": "user"
+                            }
+                          },
+                          "loc": {
+                            "start": {
+                              "line": 5,
+                              "column": 20
+                            },
+                            "end": {
+                              "line": 5,
+                              "column": 24
+                            },
+                            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                          }
+                        },
+                        "computed": false,
+                        "_meta": {
+                          "loc": {
+                            "start": {
+                              "line": 5,
+                              "column": 17
+                            },
+                            "end": {
+                              "line": 5,
+                              "column": 24
+                            },
+                            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                          },
+                          "origin": {
+                            "kind": "nullsafepropertylookup",
+                            "loc": {
+                              "source": null,
+                              "start": {
+                                "line": 5,
+                                "column": 16,
+                                "offset": 54
+                              },
+                              "end": {
+                                "line": 5,
+                                "column": 23,
+                                "offset": 61
+                              }
+                            },
+                            "what": {
+                              "kind": "variable",
+                              "loc": {
+                                "source": null,
+                                "start": {
+                                  "line": 5,
+                                  "column": 12,
+                                  "offset": 50
+                                },
+                                "end": {
+                                  "line": 5,
+                                  "column": 16,
+                                  "offset": 54
+                                }
+                              },
+                              "name": "req",
+                              "curly": false
+                            },
+                            "offset": {
+                              "kind": "identifier",
+                              "loc": {
+                                "source": null,
+                                "start": {
+                                  "line": 5,
+                                  "column": 19,
+                                  "offset": 57
+                                },
+                                "end": {
+                                  "line": 5,
+                                  "column": 23,
+                                  "offset": 61
+                                }
+                              },
+                              "name": "user"
+                            }
+                          },
+                          "nullsafe": true
+                        },
+                        "loc": {
+                          "start": {
+                            "line": 5,
+                            "column": 17
+                          },
+                          "end": {
+                            "line": 5,
+                            "column": 24
+                          },
+                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                        }
+                      },
+                      "alternative": {
+                        "type": "Literal",
+                        "value": null,
+                        "literalType": "null",
+                        "_meta": {}
+                      },
+                      "_meta": {
+                        "loc": {
+                          "start": {
+                            "line": 5,
+                            "column": 17
+                          },
+                          "end": {
+                            "line": 5,
+                            "column": 24
+                          },
+                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                        },
+                        "origin": {
+                          "kind": "nullsafepropertylookup",
+                          "loc": {
+                            "source": null,
+                            "start": {
+                              "line": 5,
+                              "column": 16,
+                              "offset": 54
+                            },
+                            "end": {
+                              "line": 5,
+                              "column": 23,
+                              "offset": 61
+                            }
+                          },
+                          "what": {
+                            "kind": "variable",
+                            "loc": {
+                              "source": null,
+                              "start": {
+                                "line": 5,
+                                "column": 12,
+                                "offset": 50
+                              },
+                              "end": {
+                                "line": 5,
+                                "column": 16,
+                                "offset": 54
+                              }
+                            },
+                            "name": "req",
+                            "curly": false
+                          },
+                          "offset": {
+                            "kind": "identifier",
+                            "loc": {
+                              "source": null,
+                              "start": {
+                                "line": 5,
+                                "column": 19,
+                                "offset": 57
+                              },
+                              "end": {
+                                "line": 5,
+                                "column": 23,
+                                "offset": 61
+                              }
+                            },
+                            "name": "user"
+                          }
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 5,
+                          "column": 17
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 24
+                        },
+                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                      }
+                    },
+                    "arguments": [],
+                    "_meta": {
+                      "loc": {
+                        "start": {
+                          "line": 5,
+                          "column": 17
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 26
+                        },
+                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                      },
+                      "origin": {
+                        "kind": "call",
+                        "loc": {
+                          "source": null,
+                          "start": {
+                            "line": 5,
+                            "column": 16,
+                            "offset": 54
+                          },
+                          "end": {
+                            "line": 5,
+                            "column": 25,
+                            "offset": 63
+                          }
+                        },
+                        "what": {
+                          "kind": "nullsafepropertylookup",
+                          "loc": {
+                            "source": null,
+                            "start": {
+                              "line": 5,
+                              "column": 16,
+                              "offset": 54
+                            },
+                            "end": {
+                              "line": 5,
+                              "column": 23,
+                              "offset": 61
+                            }
+                          },
+                          "what": {
+                            "kind": "variable",
+                            "loc": {
+                              "source": null,
+                              "start": {
+                                "line": 5,
+                                "column": 12,
+                                "offset": 50
+                              },
+                              "end": {
+                                "line": 5,
+                                "column": 16,
+                                "offset": 54
+                              }
+                            },
+                            "name": "req",
+                            "curly": false
+                          },
+                          "offset": {
+                            "kind": "identifier",
+                            "loc": {
+                              "source": null,
+                              "start": {
+                                "line": 5,
+                                "column": 19,
+                                "offset": 57
+                              },
+                              "end": {
+                                "line": 5,
+                                "column": 23,
+                                "offset": 61
+                              }
+                            },
+                            "name": "user"
+                          }
+                        },
+                        "arguments": []
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 5,
+                        "column": 17
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 26
+                      },
+                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                    }
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "name",
+                    "_meta": {
+                      "loc": {
+                        "start": {
+                          "line": 5,
+                          "column": 29
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 33
+                        },
+                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                      },
+                      "origin": {
+                        "kind": "identifier",
+                        "loc": {
+                          "source": null,
+                          "start": {
+                            "line": 5,
+                            "column": 28,
+                            "offset": 66
+                          },
+                          "end": {
+                            "line": 5,
+                            "column": 32,
+                            "offset": 70
+                          }
+                        },
+                        "name": "name"
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 5,
+                        "column": 29
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 33
+                      },
+                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                    }
+                  },
+                  "computed": false,
+                  "_meta": {
+                    "loc": {
+                      "start": {
+                        "line": 5,
+                        "column": 26
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 33
+                      },
+                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                    },
+                    "origin": {
+                      "kind": "nullsafepropertylookup",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 5,
+                          "column": 25,
+                          "offset": 63
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 32,
+                          "offset": 70
+                        }
+                      },
+                      "what": {
+                        "kind": "call",
+                        "loc": {
+                          "source": null,
+                          "start": {
+                            "line": 5,
+                            "column": 16,
+                            "offset": 54
+                          },
+                          "end": {
+                            "line": 5,
+                            "column": 25,
+                            "offset": 63
+                          }
+                        },
+                        "what": {
+                          "kind": "nullsafepropertylookup",
+                          "loc": {
+                            "source": null,
+                            "start": {
+                              "line": 5,
+                              "column": 16,
+                              "offset": 54
+                            },
+                            "end": {
+                              "line": 5,
+                              "column": 23,
+                              "offset": 61
+                            }
+                          },
+                          "what": {
+                            "kind": "variable",
+                            "loc": {
+                              "source": null,
+                              "start": {
+                                "line": 5,
+                                "column": 12,
+                                "offset": 50
+                              },
+                              "end": {
+                                "line": 5,
+                                "column": 16,
+                                "offset": 54
+                              }
+                            },
+                            "name": "req",
+                            "curly": false
+                          },
+                          "offset": {
+                            "kind": "identifier",
+                            "loc": {
+                              "source": null,
+                              "start": {
+                                "line": 5,
+                                "column": 19,
+                                "offset": 57
+                              },
+                              "end": {
+                                "line": 5,
+                                "column": 23,
+                                "offset": 61
+                              }
+                            },
+                            "name": "user"
+                          }
+                        },
+                        "arguments": []
+                      },
+                      "offset": {
+                        "kind": "identifier",
+                        "loc": {
+                          "source": null,
+                          "start": {
+                            "line": 5,
+                            "column": 28,
+                            "offset": 66
+                          },
+                          "end": {
+                            "line": 5,
+                            "column": 32,
+                            "offset": 70
+                          }
+                        },
+                        "name": "name"
+                      }
+                    },
+                    "nullsafe": true
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 5,
+                      "column": 26
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 33
+                    },
+                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                  }
+                },
+                "alternative": {
+                  "type": "Literal",
+                  "value": null,
+                  "literalType": "null",
+                  "_meta": {}
+                },
+                "_meta": {
+                  "loc": {
+                    "start": {
+                      "line": 5,
+                      "column": 26
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 33
+                    },
+                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                  },
+                  "origin": {
+                    "kind": "nullsafepropertylookup",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 5,
+                        "column": 25,
+                        "offset": 63
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 32,
+                        "offset": 70
+                      }
+                    },
+                    "what": {
+                      "kind": "call",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 5,
+                          "column": 16,
+                          "offset": 54
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 25,
+                          "offset": 63
+                        }
+                      },
+                      "what": {
+                        "kind": "nullsafepropertylookup",
+                        "loc": {
+                          "source": null,
+                          "start": {
+                            "line": 5,
+                            "column": 16,
+                            "offset": 54
+                          },
+                          "end": {
+                            "line": 5,
+                            "column": 23,
+                            "offset": 61
+                          }
+                        },
+                        "what": {
+                          "kind": "variable",
+                          "loc": {
+                            "source": null,
+                            "start": {
+                              "line": 5,
+                              "column": 12,
+                              "offset": 50
+                            },
+                            "end": {
+                              "line": 5,
+                              "column": 16,
+                              "offset": 54
+                            }
+                          },
+                          "name": "req",
+                          "curly": false
+                        },
+                        "offset": {
+                          "kind": "identifier",
+                          "loc": {
+                            "source": null,
+                            "start": {
+                              "line": 5,
+                              "column": 19,
+                              "offset": 57
+                            },
+                            "end": {
+                              "line": 5,
+                              "column": 23,
+                              "offset": 61
+                            }
+                          },
+                          "name": "user"
+                        }
+                      },
+                      "arguments": []
+                    },
+                    "offset": {
+                      "kind": "identifier",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 5,
+                          "column": 28,
+                          "offset": 66
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 32,
+                          "offset": 70
+                        }
+                      },
+                      "name": "name"
+                    }
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 5,
+                    "column": 26
+                  },
+                  "end": {
+                    "line": 5,
+                    "column": 33
+                  },
+                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                }
+              },
+              "operator": "=",
+              "cloned": false,
+              "_meta": {
+                "loc": {
+                  "start": {
+                    "line": 5,
+                    "column": 5
+                  },
+                  "end": {
+                    "line": 5,
+                    "column": 34
+                  },
+                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                },
+                "origin": {
+                  "kind": "assign",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 5,
+                      "column": 4,
+                      "offset": 42
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 33,
+                      "offset": 71
+                    }
+                  },
+                  "left": {
+                    "kind": "variable",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 5,
+                        "column": 4,
+                        "offset": 42
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 9,
+                        "offset": 47
+                      }
+                    },
+                    "name": "name",
+                    "curly": false
+                  },
+                  "right": {
+                    "kind": "nullsafepropertylookup",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 5,
+                        "column": 25,
+                        "offset": 63
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 32,
+                        "offset": 70
+                      }
+                    },
+                    "what": {
+                      "kind": "call",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 5,
+                          "column": 16,
+                          "offset": 54
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 25,
+                          "offset": 63
+                        }
+                      },
+                      "what": {
+                        "kind": "nullsafepropertylookup",
+                        "loc": {
+                          "source": null,
+                          "start": {
+                            "line": 5,
+                            "column": 16,
+                            "offset": 54
+                          },
+                          "end": {
+                            "line": 5,
+                            "column": 23,
+                            "offset": 61
+                          }
+                        },
+                        "what": {
+                          "kind": "variable",
+                          "loc": {
+                            "source": null,
+                            "start": {
+                              "line": 5,
+                              "column": 12,
+                              "offset": 50
+                            },
+                            "end": {
+                              "line": 5,
+                              "column": 16,
+                              "offset": 54
+                            }
+                          },
+                          "name": "req",
+                          "curly": false
+                        },
+                        "offset": {
+                          "kind": "identifier",
+                          "loc": {
+                            "source": null,
+                            "start": {
+                              "line": 5,
+                              "column": 19,
+                              "offset": 57
+                            },
+                            "end": {
+                              "line": 5,
+                              "column": 23,
+                              "offset": 61
+                            }
+                          },
+                          "name": "user"
+                        }
+                      },
+                      "arguments": []
+                    },
+                    "offset": {
+                      "kind": "identifier",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 5,
+                          "column": 28,
+                          "offset": 66
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 32,
+                          "offset": 70
+                        }
+                      },
+                      "name": "name"
+                    }
+                  },
+                  "operator": "="
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 5
+                },
+                "end": {
+                  "line": 5,
+                  "column": 34
+                },
+                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+              }
+            },
+            "_meta": {
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 5
+                },
+                "end": {
+                  "line": 5,
+                  "column": 34
+                },
+                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+              },
+              "origin": {
+                "kind": "expressionstatement",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 5,
+                    "column": 4,
+                    "offset": 42
+                  },
+                  "end": {
+                    "line": 5,
+                    "column": 33,
+                    "offset": 71
+                  }
+                },
+                "expression": {
+                  "kind": "assign",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 5,
+                      "column": 4,
+                      "offset": 42
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 33,
+                      "offset": 71
+                    }
+                  },
+                  "left": {
+                    "kind": "variable",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 5,
+                        "column": 4,
+                        "offset": 42
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 9,
+                        "offset": 47
+                      }
+                    },
+                    "name": "name",
+                    "curly": false
+                  },
+                  "right": {
+                    "kind": "nullsafepropertylookup",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 5,
+                        "column": 25,
+                        "offset": 63
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 32,
+                        "offset": 70
+                      }
+                    },
+                    "what": {
+                      "kind": "call",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 5,
+                          "column": 16,
+                          "offset": 54
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 25,
+                          "offset": 63
+                        }
+                      },
+                      "what": {
+                        "kind": "nullsafepropertylookup",
+                        "loc": {
+                          "source": null,
+                          "start": {
+                            "line": 5,
+                            "column": 16,
+                            "offset": 54
+                          },
+                          "end": {
+                            "line": 5,
+                            "column": 23,
+                            "offset": 61
+                          }
+                        },
+                        "what": {
+                          "kind": "variable",
+                          "loc": {
+                            "source": null,
+                            "start": {
+                              "line": 5,
+                              "column": 12,
+                              "offset": 50
+                            },
+                            "end": {
+                              "line": 5,
+                              "column": 16,
+                              "offset": 54
+                            }
+                          },
+                          "name": "req",
+                          "curly": false
+                        },
+                        "offset": {
+                          "kind": "identifier",
+                          "loc": {
+                            "source": null,
+                            "start": {
+                              "line": 5,
+                              "column": 19,
+                              "offset": 57
+                            },
+                            "end": {
+                              "line": 5,
+                              "column": 23,
+                              "offset": 61
+                            }
+                          },
+                          "name": "user"
+                        }
+                      },
+                      "arguments": []
+                    },
+                    "offset": {
+                      "kind": "identifier",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 5,
+                          "column": 28,
+                          "offset": 66
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 32,
+                          "offset": 70
+                        }
+                      },
+                      "name": "name"
+                    }
+                  },
+                  "operator": "="
+                }
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 5
+              },
+              "end": {
+                "line": 5,
+                "column": 34
+              },
+              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+            }
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "left": {
+                "type": "Identifier",
+                "name": "value",
+                "_meta": {
+                  "loc": {
+                    "start": {
+                      "line": 6,
+                      "column": 5
+                    },
+                    "end": {
+                      "line": 6,
+                      "column": 11
+                    },
+                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                  },
+                  "origin": {
+                    "kind": "variable",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 6,
+                        "column": 4,
+                        "offset": 76
+                      },
+                      "end": {
+                        "line": 6,
+                        "column": 10,
+                        "offset": 82
+                      }
+                    },
+                    "name": "value",
+                    "curly": false
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 6,
+                    "column": 5
+                  },
+                  "end": {
+                    "line": 6,
+                    "column": 11
+                  },
+                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                }
+              },
+              "right": {
+                "type": "BinaryExpression",
+                "operator": "??",
+                "left": {
+                  "type": "Identifier",
+                  "name": "items",
+                  "_meta": {
+                    "loc": {
+                      "start": {
+                        "line": 6,
+                        "column": 14
+                      },
+                      "end": {
+                        "line": 6,
+                        "column": 20
+                      },
+                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                    },
+                    "origin": {
+                      "kind": "variable",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 6,
+                          "column": 13,
+                          "offset": 85
+                        },
+                        "end": {
+                          "line": 6,
+                          "column": 19,
+                          "offset": 91
+                        }
+                      },
+                      "name": "items",
+                      "curly": false
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 6,
+                      "column": 14
+                    },
+                    "end": {
+                      "line": 6,
+                      "column": 20
+                    },
+                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                  }
+                },
+                "right": {
+                  "type": "ObjectExpression",
+                  "properties": [],
+                  "id": null,
+                  "_meta": {
+                    "isArray": true,
+                    "loc": {
+                      "start": {
+                        "line": 6,
+                        "column": 24
+                      },
+                      "end": {
+                        "line": 6,
+                        "column": 26
+                      },
+                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                    },
+                    "origin": {
+                      "kind": "array",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 6,
+                          "column": 23,
+                          "offset": 95
+                        },
+                        "end": {
+                          "line": 6,
+                          "column": 25,
+                          "offset": 97
+                        }
+                      },
+                      "items": [],
+                      "shortForm": true
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 6,
+                      "column": 24
+                    },
+                    "end": {
+                      "line": 6,
+                      "column": 26
+                    },
+                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                  }
+                },
+                "_meta": {
+                  "loc": {
+                    "start": {
+                      "line": 6,
+                      "column": 14
+                    },
+                    "end": {
+                      "line": 6,
+                      "column": 26
+                    },
+                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                  },
+                  "origin": {
+                    "kind": "bin",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 6,
+                        "column": 13,
+                        "offset": 85
+                      },
+                      "end": {
+                        "line": 6,
+                        "column": 25,
+                        "offset": 97
+                      }
+                    },
+                    "type": "??",
+                    "left": {
+                      "kind": "variable",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 6,
+                          "column": 13,
+                          "offset": 85
+                        },
+                        "end": {
+                          "line": 6,
+                          "column": 19,
+                          "offset": 91
+                        }
+                      },
+                      "name": "items",
+                      "curly": false
+                    },
+                    "right": {
+                      "kind": "array",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 6,
+                          "column": 23,
+                          "offset": 95
+                        },
+                        "end": {
+                          "line": 6,
+                          "column": 25,
+                          "offset": 97
+                        }
+                      },
+                      "items": [],
+                      "shortForm": true
+                    }
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 6,
+                    "column": 14
+                  },
+                  "end": {
+                    "line": 6,
+                    "column": 26
+                  },
+                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                }
+              },
+              "operator": "=",
+              "cloned": false,
+              "_meta": {
+                "loc": {
+                  "start": {
+                    "line": 6,
+                    "column": 5
+                  },
+                  "end": {
+                    "line": 6,
+                    "column": 27
+                  },
+                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                },
+                "origin": {
+                  "kind": "assign",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 6,
+                      "column": 4,
+                      "offset": 76
+                    },
+                    "end": {
+                      "line": 6,
+                      "column": 26,
+                      "offset": 98
+                    }
+                  },
+                  "left": {
+                    "kind": "variable",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 6,
+                        "column": 4,
+                        "offset": 76
+                      },
+                      "end": {
+                        "line": 6,
+                        "column": 10,
+                        "offset": 82
+                      }
+                    },
+                    "name": "value",
+                    "curly": false
+                  },
+                  "right": {
+                    "kind": "bin",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 6,
+                        "column": 13,
+                        "offset": 85
+                      },
+                      "end": {
+                        "line": 6,
+                        "column": 25,
+                        "offset": 97
+                      }
+                    },
+                    "type": "??",
+                    "left": {
+                      "kind": "variable",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 6,
+                          "column": 13,
+                          "offset": 85
+                        },
+                        "end": {
+                          "line": 6,
+                          "column": 19,
+                          "offset": 91
+                        }
+                      },
+                      "name": "items",
+                      "curly": false
+                    },
+                    "right": {
+                      "kind": "array",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 6,
+                          "column": 23,
+                          "offset": 95
+                        },
+                        "end": {
+                          "line": 6,
+                          "column": 25,
+                          "offset": 97
+                        }
+                      },
+                      "items": [],
+                      "shortForm": true
+                    }
+                  },
+                  "operator": "="
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 6,
+                  "column": 5
+                },
+                "end": {
+                  "line": 6,
+                  "column": 27
+                },
+                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+              }
+            },
+            "_meta": {
+              "loc": {
+                "start": {
+                  "line": 6,
+                  "column": 5
+                },
+                "end": {
+                  "line": 6,
+                  "column": 27
+                },
+                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+              },
+              "origin": {
+                "kind": "expressionstatement",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 6,
+                    "column": 4,
+                    "offset": 76
+                  },
+                  "end": {
+                    "line": 6,
+                    "column": 26,
+                    "offset": 98
+                  }
+                },
+                "expression": {
+                  "kind": "assign",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 6,
+                      "column": 4,
+                      "offset": 76
+                    },
+                    "end": {
+                      "line": 6,
+                      "column": 26,
+                      "offset": 98
+                    }
+                  },
+                  "left": {
+                    "kind": "variable",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 6,
+                        "column": 4,
+                        "offset": 76
+                      },
+                      "end": {
+                        "line": 6,
+                        "column": 10,
+                        "offset": 82
+                      }
+                    },
+                    "name": "value",
+                    "curly": false
+                  },
+                  "right": {
+                    "kind": "bin",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 6,
+                        "column": 13,
+                        "offset": 85
+                      },
+                      "end": {
+                        "line": 6,
+                        "column": 25,
+                        "offset": 97
+                      }
+                    },
+                    "type": "??",
+                    "left": {
+                      "kind": "variable",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 6,
+                          "column": 13,
+                          "offset": 85
+                        },
+                        "end": {
+                          "line": 6,
+                          "column": 19,
+                          "offset": 91
+                        }
+                      },
+                      "name": "items",
+                      "curly": false
+                    },
+                    "right": {
+                      "kind": "array",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 6,
+                          "column": 23,
+                          "offset": 95
+                        },
+                        "end": {
+                          "line": 6,
+                          "column": 25,
+                          "offset": 97
+                        }
+                      },
+                      "items": [],
+                      "shortForm": true
+                    }
+                  },
+                  "operator": "="
+                }
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 6,
+                "column": 5
+              },
+              "end": {
+                "line": 6,
+                "column": 27
+              },
+              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+            }
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "YieldExpression",
+              "argument": {
+                "type": "Identifier",
+                "name": "value",
+                "_meta": {
+                  "loc": {
+                    "start": {
+                      "line": 8,
+                      "column": 11
+                    },
+                    "end": {
+                      "line": 8,
+                      "column": 17
+                    },
+                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                  },
+                  "origin": {
+                    "kind": "variable",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 8,
+                        "column": 10,
+                        "offset": 110
+                      },
+                      "end": {
+                        "line": 8,
+                        "column": 16,
+                        "offset": 116
+                      }
+                    },
+                    "name": "value",
+                    "curly": false
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 8,
+                    "column": 11
+                  },
+                  "end": {
+                    "line": 8,
+                    "column": 17
+                  },
+                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                }
+              },
+              "_meta": {
+                "key": null,
+                "loc": {
+                  "start": {
+                    "line": 8,
+                    "column": 5
+                  },
+                  "end": {
+                    "line": 8,
+                    "column": 18
+                  },
+                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                },
+                "origin": {
+                  "kind": "yield",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 8,
+                      "column": 4,
+                      "offset": 104
+                    },
+                    "end": {
+                      "line": 8,
+                      "column": 17,
+                      "offset": 117
+                    }
+                  },
+                  "value": {
+                    "kind": "variable",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 8,
+                        "column": 10,
+                        "offset": 110
+                      },
+                      "end": {
+                        "line": 8,
+                        "column": 16,
+                        "offset": 116
+                      }
+                    },
+                    "name": "value",
+                    "curly": false
+                  },
+                  "key": null
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 8,
+                  "column": 5
+                },
+                "end": {
+                  "line": 8,
+                  "column": 18
+                },
+                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+              }
+            },
+            "_meta": {
+              "loc": {
+                "start": {
+                  "line": 8,
+                  "column": 5
+                },
+                "end": {
+                  "line": 8,
+                  "column": 18
+                },
+                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+              },
+              "origin": {
+                "kind": "expressionstatement",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 8,
+                    "column": 4,
+                    "offset": 104
+                  },
+                  "end": {
+                    "line": 8,
+                    "column": 17,
+                    "offset": 117
+                  }
+                },
+                "expression": {
+                  "kind": "yield",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 8,
+                      "column": 4,
+                      "offset": 104
+                    },
+                    "end": {
+                      "line": 8,
+                      "column": 17,
+                      "offset": 117
+                    }
+                  },
+                  "value": {
+                    "kind": "variable",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 8,
+                        "column": 10,
+                        "offset": 110
+                      },
+                      "end": {
+                        "line": 8,
+                        "column": 16,
+                        "offset": 116
+                      }
+                    },
+                    "name": "value",
+                    "curly": false
+                  },
+                  "key": null
+                }
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 8,
+                "column": 5
+              },
+              "end": {
+                "line": 8,
+                "column": 18
+              },
+              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+            }
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "YieldExpression",
+              "argument": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "source",
+                  "_meta": {
+                    "loc": {
+                      "start": {
+                        "line": 9,
+                        "column": 16
+                      },
+                      "end": {
+                        "line": 9,
+                        "column": 22
+                      },
+                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                    },
+                    "origin": {
+                      "kind": "name",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 9,
+                          "column": 15,
+                          "offset": 133
+                        },
+                        "end": {
+                          "line": 9,
+                          "column": 21,
+                          "offset": 139
+                        }
+                      },
+                      "name": "source",
+                      "resolution": "uqn"
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 9,
+                      "column": 16
+                    },
+                    "end": {
+                      "line": 9,
+                      "column": 22
+                    },
+                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                  }
+                },
+                "arguments": [],
+                "_meta": {
+                  "loc": {
+                    "start": {
+                      "line": 9,
+                      "column": 16
+                    },
+                    "end": {
+                      "line": 9,
+                      "column": 24
+                    },
+                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                  },
+                  "origin": {
+                    "kind": "call",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 9,
+                        "column": 15,
+                        "offset": 133
+                      },
+                      "end": {
+                        "line": 9,
+                        "column": 23,
+                        "offset": 141
+                      }
+                    },
+                    "what": {
+                      "kind": "name",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 9,
+                          "column": 15,
+                          "offset": 133
+                        },
+                        "end": {
+                          "line": 9,
+                          "column": 21,
+                          "offset": 139
+                        }
+                      },
+                      "name": "source",
+                      "resolution": "uqn"
+                    },
+                    "arguments": []
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 9,
+                    "column": 16
+                  },
+                  "end": {
+                    "line": 9,
+                    "column": 24
+                  },
+                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                }
+              },
+              "_meta": {
+                "isYieldFrom": true,
+                "loc": {
+                  "start": {
+                    "line": 9,
+                    "column": 5
+                  },
+                  "end": {
+                    "line": 9,
+                    "column": 25
+                  },
+                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                },
+                "origin": {
+                  "kind": "yieldfrom",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 9,
+                      "column": 4,
+                      "offset": 122
+                    },
+                    "end": {
+                      "line": 9,
+                      "column": 24,
+                      "offset": 142
+                    }
+                  },
+                  "value": {
+                    "kind": "call",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 9,
+                        "column": 15,
+                        "offset": 133
+                      },
+                      "end": {
+                        "line": 9,
+                        "column": 23,
+                        "offset": 141
+                      }
+                    },
+                    "what": {
+                      "kind": "name",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 9,
+                          "column": 15,
+                          "offset": 133
+                        },
+                        "end": {
+                          "line": 9,
+                          "column": 21,
+                          "offset": 139
+                        }
+                      },
+                      "name": "source",
+                      "resolution": "uqn"
+                    },
+                    "arguments": []
+                  }
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 9,
+                  "column": 5
+                },
+                "end": {
+                  "line": 9,
+                  "column": 25
+                },
+                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+              }
+            },
+            "_meta": {
+              "loc": {
+                "start": {
+                  "line": 9,
+                  "column": 5
+                },
+                "end": {
+                  "line": 9,
+                  "column": 25
+                },
+                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+              },
+              "origin": {
+                "kind": "expressionstatement",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 9,
+                    "column": 4,
+                    "offset": 122
+                  },
+                  "end": {
+                    "line": 9,
+                    "column": 24,
+                    "offset": 142
+                  }
+                },
+                "expression": {
+                  "kind": "yieldfrom",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 9,
+                      "column": 4,
+                      "offset": 122
+                    },
+                    "end": {
+                      "line": 9,
+                      "column": 24,
+                      "offset": 142
+                    }
+                  },
+                  "value": {
+                    "kind": "call",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 9,
+                        "column": 15,
+                        "offset": 133
+                      },
+                      "end": {
+                        "line": 9,
+                        "column": 23,
+                        "offset": 141
+                      }
+                    },
+                    "what": {
+                      "kind": "name",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 9,
+                          "column": 15,
+                          "offset": 133
+                        },
+                        "end": {
+                          "line": 9,
+                          "column": 21,
+                          "offset": 139
+                        }
+                      },
+                      "name": "source",
+                      "resolution": "uqn"
+                    },
+                    "arguments": []
+                  }
+                }
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 9,
+                "column": 5
+              },
+              "end": {
+                "line": 9,
+                "column": 25
+              },
+              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+            }
+          },
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "Identifier",
+              "name": "name",
+              "_meta": {
+                "loc": {
+                  "start": {
+                    "line": 11,
+                    "column": 12
+                  },
+                  "end": {
+                    "line": 11,
+                    "column": 17
+                  },
+                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+                },
+                "origin": {
+                  "kind": "variable",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 11,
+                      "column": 11,
+                      "offset": 155
+                    },
+                    "end": {
+                      "line": 11,
+                      "column": 16,
+                      "offset": 160
+                    }
+                  },
+                  "name": "name",
+                  "curly": false
+                }
+              },
+              "loc": {
+                "start": {
+                  "line": 11,
+                  "column": 12
+                },
+                "end": {
+                  "line": 11,
+                  "column": 17
+                },
+                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+              }
+            },
+            "isYield": false,
+            "_meta": {
+              "loc": {
+                "start": {
+                  "line": 11,
+                  "column": 5
+                },
+                "end": {
+                  "line": 11,
+                  "column": 18
+                },
+                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+              },
+              "origin": {
+                "kind": "return",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 11,
+                    "column": 4,
+                    "offset": 148
+                  },
+                  "end": {
+                    "line": 11,
+                    "column": 17,
+                    "offset": 161
+                  }
+                },
+                "expr": {
+                  "kind": "variable",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 11,
+                      "column": 11,
+                      "offset": 155
+                    },
+                    "end": {
+                      "line": 11,
+                      "column": 16,
+                      "offset": 160
+                    }
+                  },
+                  "name": "name",
+                  "curly": false
+                }
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 11,
+                "column": 5
+              },
+              "end": {
+                "line": 11,
+                "column": 18
+              },
+              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+            }
+          }
+        ],
+        "id": null,
+        "_meta": {
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 1
+            },
+            "end": {
+              "line": 12,
+              "column": 2
+            },
+            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+          },
+          "origin": {
+            "kind": "block",
+            "loc": {
+              "source": null,
+              "start": {
+                "line": 4,
+                "column": 0,
+                "offset": 36
+              },
+              "end": {
+                "line": 12,
+                "column": 1,
+                "offset": 163
+              }
+            },
+            "children": [
+              {
+                "kind": "expressionstatement",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 5,
+                    "column": 4,
+                    "offset": 42
+                  },
+                  "end": {
+                    "line": 5,
+                    "column": 33,
+                    "offset": 71
+                  }
+                },
+                "expression": {
+                  "kind": "assign",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 5,
+                      "column": 4,
+                      "offset": 42
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 33,
+                      "offset": 71
+                    }
+                  },
+                  "left": {
+                    "kind": "variable",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 5,
+                        "column": 4,
+                        "offset": 42
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 9,
+                        "offset": 47
+                      }
+                    },
+                    "name": "name",
+                    "curly": false
+                  },
+                  "right": {
+                    "kind": "nullsafepropertylookup",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 5,
+                        "column": 25,
+                        "offset": 63
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 32,
+                        "offset": 70
+                      }
+                    },
+                    "what": {
+                      "kind": "call",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 5,
+                          "column": 16,
+                          "offset": 54
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 25,
+                          "offset": 63
+                        }
+                      },
+                      "what": {
+                        "kind": "nullsafepropertylookup",
+                        "loc": {
+                          "source": null,
+                          "start": {
+                            "line": 5,
+                            "column": 16,
+                            "offset": 54
+                          },
+                          "end": {
+                            "line": 5,
+                            "column": 23,
+                            "offset": 61
+                          }
+                        },
+                        "what": {
+                          "kind": "variable",
+                          "loc": {
+                            "source": null,
+                            "start": {
+                              "line": 5,
+                              "column": 12,
+                              "offset": 50
+                            },
+                            "end": {
+                              "line": 5,
+                              "column": 16,
+                              "offset": 54
+                            }
+                          },
+                          "name": "req",
+                          "curly": false
+                        },
+                        "offset": {
+                          "kind": "identifier",
+                          "loc": {
+                            "source": null,
+                            "start": {
+                              "line": 5,
+                              "column": 19,
+                              "offset": 57
+                            },
+                            "end": {
+                              "line": 5,
+                              "column": 23,
+                              "offset": 61
+                            }
+                          },
+                          "name": "user"
+                        }
+                      },
+                      "arguments": []
+                    },
+                    "offset": {
+                      "kind": "identifier",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 5,
+                          "column": 28,
+                          "offset": 66
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 32,
+                          "offset": 70
+                        }
+                      },
+                      "name": "name"
+                    }
+                  },
+                  "operator": "="
+                }
+              },
+              {
+                "kind": "expressionstatement",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 6,
+                    "column": 4,
+                    "offset": 76
+                  },
+                  "end": {
+                    "line": 6,
+                    "column": 26,
+                    "offset": 98
+                  }
+                },
+                "expression": {
+                  "kind": "assign",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 6,
+                      "column": 4,
+                      "offset": 76
+                    },
+                    "end": {
+                      "line": 6,
+                      "column": 26,
+                      "offset": 98
+                    }
+                  },
+                  "left": {
+                    "kind": "variable",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 6,
+                        "column": 4,
+                        "offset": 76
+                      },
+                      "end": {
+                        "line": 6,
+                        "column": 10,
+                        "offset": 82
+                      }
+                    },
+                    "name": "value",
+                    "curly": false
+                  },
+                  "right": {
+                    "kind": "bin",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 6,
+                        "column": 13,
+                        "offset": 85
+                      },
+                      "end": {
+                        "line": 6,
+                        "column": 25,
+                        "offset": 97
+                      }
+                    },
+                    "type": "??",
+                    "left": {
+                      "kind": "variable",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 6,
+                          "column": 13,
+                          "offset": 85
+                        },
+                        "end": {
+                          "line": 6,
+                          "column": 19,
+                          "offset": 91
+                        }
+                      },
+                      "name": "items",
+                      "curly": false
+                    },
+                    "right": {
+                      "kind": "array",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 6,
+                          "column": 23,
+                          "offset": 95
+                        },
+                        "end": {
+                          "line": 6,
+                          "column": 25,
+                          "offset": 97
+                        }
+                      },
+                      "items": [],
+                      "shortForm": true
+                    }
+                  },
+                  "operator": "="
+                }
+              },
+              {
+                "kind": "expressionstatement",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 8,
+                    "column": 4,
+                    "offset": 104
+                  },
+                  "end": {
+                    "line": 8,
+                    "column": 17,
+                    "offset": 117
+                  }
+                },
+                "expression": {
+                  "kind": "yield",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 8,
+                      "column": 4,
+                      "offset": 104
+                    },
+                    "end": {
+                      "line": 8,
+                      "column": 17,
+                      "offset": 117
+                    }
+                  },
+                  "value": {
+                    "kind": "variable",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 8,
+                        "column": 10,
+                        "offset": 110
+                      },
+                      "end": {
+                        "line": 8,
+                        "column": 16,
+                        "offset": 116
+                      }
+                    },
+                    "name": "value",
+                    "curly": false
+                  },
+                  "key": null
+                }
+              },
+              {
+                "kind": "expressionstatement",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 9,
+                    "column": 4,
+                    "offset": 122
+                  },
+                  "end": {
+                    "line": 9,
+                    "column": 24,
+                    "offset": 142
+                  }
+                },
+                "expression": {
+                  "kind": "yieldfrom",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 9,
+                      "column": 4,
+                      "offset": 122
+                    },
+                    "end": {
+                      "line": 9,
+                      "column": 24,
+                      "offset": 142
+                    }
+                  },
+                  "value": {
+                    "kind": "call",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 9,
+                        "column": 15,
+                        "offset": 133
+                      },
+                      "end": {
+                        "line": 9,
+                        "column": 23,
+                        "offset": 141
+                      }
+                    },
+                    "what": {
+                      "kind": "name",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 9,
+                          "column": 15,
+                          "offset": 133
+                        },
+                        "end": {
+                          "line": 9,
+                          "column": 21,
+                          "offset": 139
+                        }
+                      },
+                      "name": "source",
+                      "resolution": "uqn"
+                    },
+                    "arguments": []
+                  }
+                }
+              },
+              {
+                "kind": "return",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 11,
+                    "column": 4,
+                    "offset": 148
+                  },
+                  "end": {
+                    "line": 11,
+                    "column": 17,
+                    "offset": 161
+                  }
+                },
+                "expr": {
+                  "kind": "variable",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 11,
+                      "column": 11,
+                      "offset": 155
+                    },
+                    "end": {
+                      "line": 11,
+                      "column": 16,
+                      "offset": 160
+                    }
+                  },
+                  "name": "name",
+                  "curly": false
+                }
+              }
+            ]
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 1
+          },
+          "end": {
+            "line": 12,
+            "column": 2
+          },
+          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+        }
+      },
+      "modifiers": [],
+      "_meta": {
+        "attributes": [],
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 1
+          },
+          "end": {
+            "line": 12,
+            "column": 2
+          },
+          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+        },
+        "origin": {
+          "kind": "function",
+          "loc": {
+            "source": null,
+            "start": {
+              "line": 3,
+              "column": 0,
+              "offset": 7
+            },
+            "end": {
+              "line": 12,
+              "column": 1,
+              "offset": 163
+            }
+          },
+          "name": {
+            "kind": "identifier",
+            "loc": {
+              "source": null,
+              "start": {
+                "line": 3,
+                "column": 9,
+                "offset": 16
+              },
+              "end": {
+                "line": 3,
+                "column": 14,
+                "offset": 21
+              }
+            },
+            "name": "fetch"
+          },
+          "arguments": [
+            {
+              "kind": "parameter",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 3,
+                  "column": 15,
+                  "offset": 22
+                },
+                "end": {
+                  "line": 3,
+                  "column": 19,
+                  "offset": 26
+                }
+              },
+              "name": {
+                "kind": "identifier",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 3,
+                    "column": 15,
+                    "offset": 22
+                  },
+                  "end": {
+                    "line": 3,
+                    "column": 19,
+                    "offset": 26
+                  }
+                },
+                "name": "req"
+              },
+              "value": null,
+              "type": null,
+              "byref": false,
+              "variadic": false,
+              "readonly": false,
+              "nullable": false,
+              "flags": 0,
+              "attrGroups": []
+            },
+            {
+              "kind": "parameter",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 3,
+                  "column": 21,
+                  "offset": 28
+                },
+                "end": {
+                  "line": 3,
+                  "column": 27,
+                  "offset": 34
+                }
+              },
+              "name": {
+                "kind": "identifier",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 3,
+                    "column": 21,
+                    "offset": 28
+                  },
+                  "end": {
+                    "line": 3,
+                    "column": 27,
+                    "offset": 34
+                  }
+                },
+                "name": "items"
+              },
+              "value": null,
+              "type": null,
+              "byref": false,
+              "variadic": false,
+              "readonly": false,
+              "nullable": false,
+              "flags": 0,
+              "attrGroups": []
+            }
+          ],
+          "byref": false,
+          "type": null,
+          "nullable": false,
+          "body": {
+            "kind": "block",
+            "loc": {
+              "source": null,
+              "start": {
+                "line": 4,
+                "column": 0,
+                "offset": 36
+              },
+              "end": {
+                "line": 12,
+                "column": 1,
+                "offset": 163
+              }
+            },
+            "children": [
+              {
+                "kind": "expressionstatement",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 5,
+                    "column": 4,
+                    "offset": 42
+                  },
+                  "end": {
+                    "line": 5,
+                    "column": 33,
+                    "offset": 71
+                  }
+                },
+                "expression": {
+                  "kind": "assign",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 5,
+                      "column": 4,
+                      "offset": 42
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 33,
+                      "offset": 71
+                    }
+                  },
+                  "left": {
+                    "kind": "variable",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 5,
+                        "column": 4,
+                        "offset": 42
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 9,
+                        "offset": 47
+                      }
+                    },
+                    "name": "name",
+                    "curly": false
+                  },
+                  "right": {
+                    "kind": "nullsafepropertylookup",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 5,
+                        "column": 25,
+                        "offset": 63
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 32,
+                        "offset": 70
+                      }
+                    },
+                    "what": {
+                      "kind": "call",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 5,
+                          "column": 16,
+                          "offset": 54
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 25,
+                          "offset": 63
+                        }
+                      },
+                      "what": {
+                        "kind": "nullsafepropertylookup",
+                        "loc": {
+                          "source": null,
+                          "start": {
+                            "line": 5,
+                            "column": 16,
+                            "offset": 54
+                          },
+                          "end": {
+                            "line": 5,
+                            "column": 23,
+                            "offset": 61
+                          }
+                        },
+                        "what": {
+                          "kind": "variable",
+                          "loc": {
+                            "source": null,
+                            "start": {
+                              "line": 5,
+                              "column": 12,
+                              "offset": 50
+                            },
+                            "end": {
+                              "line": 5,
+                              "column": 16,
+                              "offset": 54
+                            }
+                          },
+                          "name": "req",
+                          "curly": false
+                        },
+                        "offset": {
+                          "kind": "identifier",
+                          "loc": {
+                            "source": null,
+                            "start": {
+                              "line": 5,
+                              "column": 19,
+                              "offset": 57
+                            },
+                            "end": {
+                              "line": 5,
+                              "column": 23,
+                              "offset": 61
+                            }
+                          },
+                          "name": "user"
+                        }
+                      },
+                      "arguments": []
+                    },
+                    "offset": {
+                      "kind": "identifier",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 5,
+                          "column": 28,
+                          "offset": 66
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 32,
+                          "offset": 70
+                        }
+                      },
+                      "name": "name"
+                    }
+                  },
+                  "operator": "="
+                }
+              },
+              {
+                "kind": "expressionstatement",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 6,
+                    "column": 4,
+                    "offset": 76
+                  },
+                  "end": {
+                    "line": 6,
+                    "column": 26,
+                    "offset": 98
+                  }
+                },
+                "expression": {
+                  "kind": "assign",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 6,
+                      "column": 4,
+                      "offset": 76
+                    },
+                    "end": {
+                      "line": 6,
+                      "column": 26,
+                      "offset": 98
+                    }
+                  },
+                  "left": {
+                    "kind": "variable",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 6,
+                        "column": 4,
+                        "offset": 76
+                      },
+                      "end": {
+                        "line": 6,
+                        "column": 10,
+                        "offset": 82
+                      }
+                    },
+                    "name": "value",
+                    "curly": false
+                  },
+                  "right": {
+                    "kind": "bin",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 6,
+                        "column": 13,
+                        "offset": 85
+                      },
+                      "end": {
+                        "line": 6,
+                        "column": 25,
+                        "offset": 97
+                      }
+                    },
+                    "type": "??",
+                    "left": {
+                      "kind": "variable",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 6,
+                          "column": 13,
+                          "offset": 85
+                        },
+                        "end": {
+                          "line": 6,
+                          "column": 19,
+                          "offset": 91
+                        }
+                      },
+                      "name": "items",
+                      "curly": false
+                    },
+                    "right": {
+                      "kind": "array",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 6,
+                          "column": 23,
+                          "offset": 95
+                        },
+                        "end": {
+                          "line": 6,
+                          "column": 25,
+                          "offset": 97
+                        }
+                      },
+                      "items": [],
+                      "shortForm": true
+                    }
+                  },
+                  "operator": "="
+                }
+              },
+              {
+                "kind": "expressionstatement",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 8,
+                    "column": 4,
+                    "offset": 104
+                  },
+                  "end": {
+                    "line": 8,
+                    "column": 17,
+                    "offset": 117
+                  }
+                },
+                "expression": {
+                  "kind": "yield",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 8,
+                      "column": 4,
+                      "offset": 104
+                    },
+                    "end": {
+                      "line": 8,
+                      "column": 17,
+                      "offset": 117
+                    }
+                  },
+                  "value": {
+                    "kind": "variable",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 8,
+                        "column": 10,
+                        "offset": 110
+                      },
+                      "end": {
+                        "line": 8,
+                        "column": 16,
+                        "offset": 116
+                      }
+                    },
+                    "name": "value",
+                    "curly": false
+                  },
+                  "key": null
+                }
+              },
+              {
+                "kind": "expressionstatement",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 9,
+                    "column": 4,
+                    "offset": 122
+                  },
+                  "end": {
+                    "line": 9,
+                    "column": 24,
+                    "offset": 142
+                  }
+                },
+                "expression": {
+                  "kind": "yieldfrom",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 9,
+                      "column": 4,
+                      "offset": 122
+                    },
+                    "end": {
+                      "line": 9,
+                      "column": 24,
+                      "offset": 142
+                    }
+                  },
+                  "value": {
+                    "kind": "call",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 9,
+                        "column": 15,
+                        "offset": 133
+                      },
+                      "end": {
+                        "line": 9,
+                        "column": 23,
+                        "offset": 141
+                      }
+                    },
+                    "what": {
+                      "kind": "name",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 9,
+                          "column": 15,
+                          "offset": 133
+                        },
+                        "end": {
+                          "line": 9,
+                          "column": 21,
+                          "offset": 139
+                        }
+                      },
+                      "name": "source",
+                      "resolution": "uqn"
+                    },
+                    "arguments": []
+                  }
+                }
+              },
+              {
+                "kind": "return",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 11,
+                    "column": 4,
+                    "offset": 148
+                  },
+                  "end": {
+                    "line": 11,
+                    "column": 17,
+                    "offset": 161
+                  }
+                },
+                "expr": {
+                  "kind": "variable",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 11,
+                      "column": 11,
+                      "offset": 155
+                    },
+                    "end": {
+                      "line": 11,
+                      "column": 16,
+                      "offset": 160
+                    }
+                  },
+                  "name": "name",
+                  "curly": false
+                }
+              }
+            ]
+          },
+          "attrGroups": []
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 1
+        },
+        "end": {
+          "line": 12,
+          "column": 2
+        },
+        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+      }
+    }
+  ],
+  "language": "php",
+  "languageVersion": null,
+  "uri": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php",
+  "version": "0.0.0",
+  "_meta": {
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 1
+      },
+      "end": {
+        "line": 13,
+        "column": 1
+      },
+      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+    },
+    "origin": {
+      "kind": "program",
+      "loc": {
+        "source": null,
+        "start": {
+          "line": 1,
+          "column": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 13,
+          "column": 0,
+          "offset": 164
+        }
+      },
+      "children": [
+        {
+          "kind": "function",
+          "loc": {
+            "source": null,
+            "start": {
+              "line": 3,
+              "column": 0,
+              "offset": 7
+            },
+            "end": {
+              "line": 12,
+              "column": 1,
+              "offset": 163
+            }
+          },
+          "name": {
+            "kind": "identifier",
+            "loc": {
+              "source": null,
+              "start": {
+                "line": 3,
+                "column": 9,
+                "offset": 16
+              },
+              "end": {
+                "line": 3,
+                "column": 14,
+                "offset": 21
+              }
+            },
+            "name": "fetch"
+          },
+          "arguments": [
+            {
+              "kind": "parameter",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 3,
+                  "column": 15,
+                  "offset": 22
+                },
+                "end": {
+                  "line": 3,
+                  "column": 19,
+                  "offset": 26
+                }
+              },
+              "name": {
+                "kind": "identifier",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 3,
+                    "column": 15,
+                    "offset": 22
+                  },
+                  "end": {
+                    "line": 3,
+                    "column": 19,
+                    "offset": 26
+                  }
+                },
+                "name": "req"
+              },
+              "value": null,
+              "type": null,
+              "byref": false,
+              "variadic": false,
+              "readonly": false,
+              "nullable": false,
+              "flags": 0,
+              "attrGroups": []
+            },
+            {
+              "kind": "parameter",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 3,
+                  "column": 21,
+                  "offset": 28
+                },
+                "end": {
+                  "line": 3,
+                  "column": 27,
+                  "offset": 34
+                }
+              },
+              "name": {
+                "kind": "identifier",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 3,
+                    "column": 21,
+                    "offset": 28
+                  },
+                  "end": {
+                    "line": 3,
+                    "column": 27,
+                    "offset": 34
+                  }
+                },
+                "name": "items"
+              },
+              "value": null,
+              "type": null,
+              "byref": false,
+              "variadic": false,
+              "readonly": false,
+              "nullable": false,
+              "flags": 0,
+              "attrGroups": []
+            }
+          ],
+          "byref": false,
+          "type": null,
+          "nullable": false,
+          "body": {
+            "kind": "block",
+            "loc": {
+              "source": null,
+              "start": {
+                "line": 4,
+                "column": 0,
+                "offset": 36
+              },
+              "end": {
+                "line": 12,
+                "column": 1,
+                "offset": 163
+              }
+            },
+            "children": [
+              {
+                "kind": "expressionstatement",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 5,
+                    "column": 4,
+                    "offset": 42
+                  },
+                  "end": {
+                    "line": 5,
+                    "column": 33,
+                    "offset": 71
+                  }
+                },
+                "expression": {
+                  "kind": "assign",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 5,
+                      "column": 4,
+                      "offset": 42
+                    },
+                    "end": {
+                      "line": 5,
+                      "column": 33,
+                      "offset": 71
+                    }
+                  },
+                  "left": {
+                    "kind": "variable",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 5,
+                        "column": 4,
+                        "offset": 42
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 9,
+                        "offset": 47
+                      }
+                    },
+                    "name": "name",
+                    "curly": false
+                  },
+                  "right": {
+                    "kind": "nullsafepropertylookup",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 5,
+                        "column": 25,
+                        "offset": 63
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 32,
+                        "offset": 70
+                      }
+                    },
+                    "what": {
+                      "kind": "call",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 5,
+                          "column": 16,
+                          "offset": 54
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 25,
+                          "offset": 63
+                        }
+                      },
+                      "what": {
+                        "kind": "nullsafepropertylookup",
+                        "loc": {
+                          "source": null,
+                          "start": {
+                            "line": 5,
+                            "column": 16,
+                            "offset": 54
+                          },
+                          "end": {
+                            "line": 5,
+                            "column": 23,
+                            "offset": 61
+                          }
+                        },
+                        "what": {
+                          "kind": "variable",
+                          "loc": {
+                            "source": null,
+                            "start": {
+                              "line": 5,
+                              "column": 12,
+                              "offset": 50
+                            },
+                            "end": {
+                              "line": 5,
+                              "column": 16,
+                              "offset": 54
+                            }
+                          },
+                          "name": "req",
+                          "curly": false
+                        },
+                        "offset": {
+                          "kind": "identifier",
+                          "loc": {
+                            "source": null,
+                            "start": {
+                              "line": 5,
+                              "column": 19,
+                              "offset": 57
+                            },
+                            "end": {
+                              "line": 5,
+                              "column": 23,
+                              "offset": 61
+                            }
+                          },
+                          "name": "user"
+                        }
+                      },
+                      "arguments": []
+                    },
+                    "offset": {
+                      "kind": "identifier",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 5,
+                          "column": 28,
+                          "offset": 66
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 32,
+                          "offset": 70
+                        }
+                      },
+                      "name": "name"
+                    }
+                  },
+                  "operator": "="
+                }
+              },
+              {
+                "kind": "expressionstatement",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 6,
+                    "column": 4,
+                    "offset": 76
+                  },
+                  "end": {
+                    "line": 6,
+                    "column": 26,
+                    "offset": 98
+                  }
+                },
+                "expression": {
+                  "kind": "assign",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 6,
+                      "column": 4,
+                      "offset": 76
+                    },
+                    "end": {
+                      "line": 6,
+                      "column": 26,
+                      "offset": 98
+                    }
+                  },
+                  "left": {
+                    "kind": "variable",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 6,
+                        "column": 4,
+                        "offset": 76
+                      },
+                      "end": {
+                        "line": 6,
+                        "column": 10,
+                        "offset": 82
+                      }
+                    },
+                    "name": "value",
+                    "curly": false
+                  },
+                  "right": {
+                    "kind": "bin",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 6,
+                        "column": 13,
+                        "offset": 85
+                      },
+                      "end": {
+                        "line": 6,
+                        "column": 25,
+                        "offset": 97
+                      }
+                    },
+                    "type": "??",
+                    "left": {
+                      "kind": "variable",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 6,
+                          "column": 13,
+                          "offset": 85
+                        },
+                        "end": {
+                          "line": 6,
+                          "column": 19,
+                          "offset": 91
+                        }
+                      },
+                      "name": "items",
+                      "curly": false
+                    },
+                    "right": {
+                      "kind": "array",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 6,
+                          "column": 23,
+                          "offset": 95
+                        },
+                        "end": {
+                          "line": 6,
+                          "column": 25,
+                          "offset": 97
+                        }
+                      },
+                      "items": [],
+                      "shortForm": true
+                    }
+                  },
+                  "operator": "="
+                }
+              },
+              {
+                "kind": "expressionstatement",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 8,
+                    "column": 4,
+                    "offset": 104
+                  },
+                  "end": {
+                    "line": 8,
+                    "column": 17,
+                    "offset": 117
+                  }
+                },
+                "expression": {
+                  "kind": "yield",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 8,
+                      "column": 4,
+                      "offset": 104
+                    },
+                    "end": {
+                      "line": 8,
+                      "column": 17,
+                      "offset": 117
+                    }
+                  },
+                  "value": {
+                    "kind": "variable",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 8,
+                        "column": 10,
+                        "offset": 110
+                      },
+                      "end": {
+                        "line": 8,
+                        "column": 16,
+                        "offset": 116
+                      }
+                    },
+                    "name": "value",
+                    "curly": false
+                  },
+                  "key": null
+                }
+              },
+              {
+                "kind": "expressionstatement",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 9,
+                    "column": 4,
+                    "offset": 122
+                  },
+                  "end": {
+                    "line": 9,
+                    "column": 24,
+                    "offset": 142
+                  }
+                },
+                "expression": {
+                  "kind": "yieldfrom",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 9,
+                      "column": 4,
+                      "offset": 122
+                    },
+                    "end": {
+                      "line": 9,
+                      "column": 24,
+                      "offset": 142
+                    }
+                  },
+                  "value": {
+                    "kind": "call",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 9,
+                        "column": 15,
+                        "offset": 133
+                      },
+                      "end": {
+                        "line": 9,
+                        "column": 23,
+                        "offset": 141
+                      }
+                    },
+                    "what": {
+                      "kind": "name",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 9,
+                          "column": 15,
+                          "offset": 133
+                        },
+                        "end": {
+                          "line": 9,
+                          "column": 21,
+                          "offset": 139
+                        }
+                      },
+                      "name": "source",
+                      "resolution": "uqn"
+                    },
+                    "arguments": []
+                  }
+                }
+              },
+              {
+                "kind": "return",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 11,
+                    "column": 4,
+                    "offset": 148
+                  },
+                  "end": {
+                    "line": 11,
+                    "column": 17,
+                    "offset": 161
+                  }
+                },
+                "expr": {
+                  "kind": "variable",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 11,
+                      "column": 11,
+                      "offset": 155
+                    },
+                    "end": {
+                      "line": 11,
+                      "column": 16,
+                      "offset": 160
+                    }
+                  },
+                  "name": "name",
+                  "curly": false
+                }
+              }
+            ]
+          },
+          "attrGroups": []
+        }
+      ],
+      "errors": [],
+      "comments": []
+    }
+  },
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 1
+    },
+    "end": {
+      "line": 13,
+      "column": 1
+    },
+    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST-worktree-php/parser-PHP/tests/benchmark/base/flow-extras.php"
+  }
+}

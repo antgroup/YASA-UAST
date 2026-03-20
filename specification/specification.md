@@ -86,7 +86,7 @@ Aliases: [`Standardized`](#standardized), [`Instruction`](#instruction), [`Expre
 | 属性名 | 类型 | 约束 | 说明 |
 | --- | --- | --- | --- |
 | `body` | Array<Instruction> |  required | 
-| `language` | "javascript" &#124; "typescript" &#124; "java" &#124; "golang" &#124; "python" |  required | 源语言种类
+| `language` | "javascript" &#124; "typescript" &#124; "java" &#124; "golang" &#124; "python" &#124; "php" |  required | 源语言种类
 | `languageVersion` | number &#124; string &#124; boolean |  default: null | 源语言版本
 | `uri` | string |  required | 该AST的唯一标识
 | `version` | string |  required | UAST版本
