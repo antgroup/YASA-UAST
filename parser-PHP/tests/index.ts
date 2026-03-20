@@ -3,13 +3,7 @@ import * as assert from 'assert';
 import * as fs from 'fs';
 import * as path from 'path';
 import fastGlob from 'fast-glob';
-import { createRequire } from 'module';
-import { fileURLToPath } from 'url';
-
-const require = createRequire(import.meta.url);
-const { parse } = require('../src/parser.ts');
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+import { parse } from '../src/parser';
 
 function getCurrentVersion(): string {
     return process.env.UAST_VERSION || require('../package.json').version;
