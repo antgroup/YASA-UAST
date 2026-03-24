@@ -54,6 +54,7 @@ function stripMeta(node) {
             delete node._meta;
         }
         delete node.loc;
+        delete node.version;
         for (const prop in node) {
             stripMeta(node[prop]);
         }

@@ -3,7 +3,7 @@ import validate from "../validators/validate";
 import type * as t from "../ast-types/generated";
 
 export default function builder<T extends t.Node>(this: T["type"]): T&{_meta} {
-  const type = this;
+  const type = String(this) as T["type"];
   const keys = BUILDER_KEYS[type];
   const countArgs = arguments.length;
   if (countArgs > keys.length) {

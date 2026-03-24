@@ -1,0 +1,3855 @@
+{
+  "type": "CompileUnit",
+  "body": [
+    {
+      "type": "ClassDefinition",
+      "id": {
+        "type": "Identifier",
+        "name": "LoggerA",
+        "_meta": {
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 7
+            },
+            "end": {
+              "line": 3,
+              "column": 14
+            },
+            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+          },
+          "origin": {
+            "kind": "identifier",
+            "loc": {
+              "source": null,
+              "start": {
+                "line": 3,
+                "column": 6,
+                "offset": 13
+              },
+              "end": {
+                "line": 3,
+                "column": 13,
+                "offset": 20
+              }
+            },
+            "name": "LoggerA"
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 7
+          },
+          "end": {
+            "line": 3,
+            "column": 14
+          },
+          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+        }
+      },
+      "body": [
+        {
+          "type": "FunctionDefinition",
+          "id": {
+            "type": "Identifier",
+            "name": "log",
+            "_meta": {
+              "loc": {
+                "start": {
+                  "line": 5,
+                  "column": 21
+                },
+                "end": {
+                  "line": 5,
+                  "column": 24
+                },
+                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+              },
+              "origin": {
+                "kind": "identifier",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 5,
+                    "column": 20,
+                    "offset": 43
+                  },
+                  "end": {
+                    "line": 5,
+                    "column": 23,
+                    "offset": 46
+                  }
+                },
+                "name": "log"
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 21
+              },
+              "end": {
+                "line": 5,
+                "column": 24
+              },
+              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+            }
+          },
+          "parameters": [],
+          "returnType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {}
+          },
+          "body": {
+            "type": "ScopedStatement",
+            "body": [
+              {
+                "type": "ExpressionStatement",
+                "expression": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "echo",
+                    "_meta": {}
+                  },
+                  "arguments": [
+                    {
+                      "type": "Literal",
+                      "value": "A",
+                      "literalType": "string",
+                      "_meta": {
+                        "loc": {
+                          "start": {
+                            "line": 7,
+                            "column": 14
+                          },
+                          "end": {
+                            "line": 7,
+                            "column": 17
+                          },
+                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+                        },
+                        "origin": {
+                          "kind": "string",
+                          "loc": {
+                            "source": null,
+                            "start": {
+                              "line": 7,
+                              "column": 13,
+                              "offset": 68
+                            },
+                            "end": {
+                              "line": 7,
+                              "column": 16,
+                              "offset": 71
+                            }
+                          },
+                          "value": "A",
+                          "raw": "\"A\"",
+                          "unicode": false,
+                          "isDoubleQuote": true
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 7,
+                          "column": 14
+                        },
+                        "end": {
+                          "line": 7,
+                          "column": 17
+                        },
+                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+                      }
+                    }
+                  ],
+                  "_meta": {
+                    "loc": {
+                      "start": {
+                        "line": 7,
+                        "column": 9
+                      },
+                      "end": {
+                        "line": 7,
+                        "column": 18
+                      },
+                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+                    },
+                    "origin": {
+                      "kind": "echo",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 7,
+                          "column": 8,
+                          "offset": 63
+                        },
+                        "end": {
+                          "line": 7,
+                          "column": 17,
+                          "offset": 72
+                        }
+                      },
+                      "shortForm": false,
+                      "expressions": [
+                        {
+                          "kind": "string",
+                          "loc": {
+                            "source": null,
+                            "start": {
+                              "line": 7,
+                              "column": 13,
+                              "offset": 68
+                            },
+                            "end": {
+                              "line": 7,
+                              "column": 16,
+                              "offset": 71
+                            }
+                          },
+                          "value": "A",
+                          "raw": "\"A\"",
+                          "unicode": false,
+                          "isDoubleQuote": true
+                        }
+                      ]
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 7,
+                      "column": 9
+                    },
+                    "end": {
+                      "line": 7,
+                      "column": 18
+                    },
+                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+                  }
+                },
+                "_meta": {
+                  "loc": {
+                    "start": {
+                      "line": 7,
+                      "column": 9
+                    },
+                    "end": {
+                      "line": 7,
+                      "column": 18
+                    },
+                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+                  },
+                  "origin": {
+                    "kind": "echo",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 7,
+                        "column": 8,
+                        "offset": 63
+                      },
+                      "end": {
+                        "line": 7,
+                        "column": 17,
+                        "offset": 72
+                      }
+                    },
+                    "shortForm": false,
+                    "expressions": [
+                      {
+                        "kind": "string",
+                        "loc": {
+                          "source": null,
+                          "start": {
+                            "line": 7,
+                            "column": 13,
+                            "offset": 68
+                          },
+                          "end": {
+                            "line": 7,
+                            "column": 16,
+                            "offset": 71
+                          }
+                        },
+                        "value": "A",
+                        "raw": "\"A\"",
+                        "unicode": false,
+                        "isDoubleQuote": true
+                      }
+                    ]
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 7,
+                    "column": 9
+                  },
+                  "end": {
+                    "line": 7,
+                    "column": 18
+                  },
+                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+                }
+              }
+            ],
+            "id": null,
+            "_meta": {
+              "loc": {
+                "start": {
+                  "line": 6,
+                  "column": 5
+                },
+                "end": {
+                  "line": 8,
+                  "column": 6
+                },
+                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+              },
+              "origin": {
+                "kind": "block",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 6,
+                    "column": 4,
+                    "offset": 53
+                  },
+                  "end": {
+                    "line": 8,
+                    "column": 5,
+                    "offset": 78
+                  }
+                },
+                "children": [
+                  {
+                    "kind": "echo",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 7,
+                        "column": 8,
+                        "offset": 63
+                      },
+                      "end": {
+                        "line": 7,
+                        "column": 17,
+                        "offset": 72
+                      }
+                    },
+                    "shortForm": false,
+                    "expressions": [
+                      {
+                        "kind": "string",
+                        "loc": {
+                          "source": null,
+                          "start": {
+                            "line": 7,
+                            "column": 13,
+                            "offset": 68
+                          },
+                          "end": {
+                            "line": 7,
+                            "column": 16,
+                            "offset": 71
+                          }
+                        },
+                        "value": "A",
+                        "raw": "\"A\"",
+                        "unicode": false,
+                        "isDoubleQuote": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 6,
+                "column": 5
+              },
+              "end": {
+                "line": 8,
+                "column": 6
+              },
+              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+            }
+          },
+          "modifiers": [
+            "public"
+          ],
+          "_meta": {
+            "attributes": [],
+            "loc": {
+              "start": {
+                "line": 5,
+                "column": 5
+              },
+              "end": {
+                "line": 8,
+                "column": 6
+              },
+              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+            },
+            "origin": {
+              "kind": "method",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 5,
+                  "column": 4,
+                  "offset": 27
+                },
+                "end": {
+                  "line": 8,
+                  "column": 5,
+                  "offset": 78
+                }
+              },
+              "name": {
+                "kind": "identifier",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 5,
+                    "column": 20,
+                    "offset": 43
+                  },
+                  "end": {
+                    "line": 5,
+                    "column": 23,
+                    "offset": 46
+                  }
+                },
+                "name": "log"
+              },
+              "arguments": [],
+              "byref": false,
+              "type": null,
+              "nullable": false,
+              "body": {
+                "kind": "block",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 6,
+                    "column": 4,
+                    "offset": 53
+                  },
+                  "end": {
+                    "line": 8,
+                    "column": 5,
+                    "offset": 78
+                  }
+                },
+                "children": [
+                  {
+                    "kind": "echo",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 7,
+                        "column": 8,
+                        "offset": 63
+                      },
+                      "end": {
+                        "line": 7,
+                        "column": 17,
+                        "offset": 72
+                      }
+                    },
+                    "shortForm": false,
+                    "expressions": [
+                      {
+                        "kind": "string",
+                        "loc": {
+                          "source": null,
+                          "start": {
+                            "line": 7,
+                            "column": 13,
+                            "offset": 68
+                          },
+                          "end": {
+                            "line": 7,
+                            "column": 16,
+                            "offset": 71
+                          }
+                        },
+                        "value": "A",
+                        "raw": "\"A\"",
+                        "unicode": false,
+                        "isDoubleQuote": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              "attrGroups": [],
+              "isAbstract": false,
+              "isFinal": false,
+              "isReadonly": false,
+              "visibility": "public",
+              "isStatic": false
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 5
+            },
+            "end": {
+              "line": 8,
+              "column": 6
+            },
+            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+          }
+        }
+      ],
+      "supers": [],
+      "_meta": {
+        "structureKind": "trait",
+        "attributes": [],
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 1
+          },
+          "end": {
+            "line": 9,
+            "column": 2
+          },
+          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+        },
+        "origin": {
+          "kind": "trait",
+          "loc": {
+            "source": null,
+            "start": {
+              "line": 3,
+              "column": 0,
+              "offset": 7
+            },
+            "end": {
+              "line": 9,
+              "column": 1,
+              "offset": 80
+            }
+          },
+          "name": {
+            "kind": "identifier",
+            "loc": {
+              "source": null,
+              "start": {
+                "line": 3,
+                "column": 6,
+                "offset": 13
+              },
+              "end": {
+                "line": 3,
+                "column": 13,
+                "offset": 20
+              }
+            },
+            "name": "LoggerA"
+          },
+          "body": [
+            {
+              "kind": "method",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 5,
+                  "column": 4,
+                  "offset": 27
+                },
+                "end": {
+                  "line": 8,
+                  "column": 5,
+                  "offset": 78
+                }
+              },
+              "name": {
+                "kind": "identifier",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 5,
+                    "column": 20,
+                    "offset": 43
+                  },
+                  "end": {
+                    "line": 5,
+                    "column": 23,
+                    "offset": 46
+                  }
+                },
+                "name": "log"
+              },
+              "arguments": [],
+              "byref": false,
+              "type": null,
+              "nullable": false,
+              "body": {
+                "kind": "block",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 6,
+                    "column": 4,
+                    "offset": 53
+                  },
+                  "end": {
+                    "line": 8,
+                    "column": 5,
+                    "offset": 78
+                  }
+                },
+                "children": [
+                  {
+                    "kind": "echo",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 7,
+                        "column": 8,
+                        "offset": 63
+                      },
+                      "end": {
+                        "line": 7,
+                        "column": 17,
+                        "offset": 72
+                      }
+                    },
+                    "shortForm": false,
+                    "expressions": [
+                      {
+                        "kind": "string",
+                        "loc": {
+                          "source": null,
+                          "start": {
+                            "line": 7,
+                            "column": 13,
+                            "offset": 68
+                          },
+                          "end": {
+                            "line": 7,
+                            "column": 16,
+                            "offset": 71
+                          }
+                        },
+                        "value": "A",
+                        "raw": "\"A\"",
+                        "unicode": false,
+                        "isDoubleQuote": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              "attrGroups": [],
+              "isAbstract": false,
+              "isFinal": false,
+              "isReadonly": false,
+              "visibility": "public",
+              "isStatic": false
+            }
+          ]
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 1
+        },
+        "end": {
+          "line": 9,
+          "column": 2
+        },
+        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+      }
+    },
+    {
+      "type": "ClassDefinition",
+      "id": {
+        "type": "Identifier",
+        "name": "LoggerB",
+        "_meta": {
+          "loc": {
+            "start": {
+              "line": 11,
+              "column": 7
+            },
+            "end": {
+              "line": 11,
+              "column": 14
+            },
+            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+          },
+          "origin": {
+            "kind": "identifier",
+            "loc": {
+              "source": null,
+              "start": {
+                "line": 11,
+                "column": 6,
+                "offset": 88
+              },
+              "end": {
+                "line": 11,
+                "column": 13,
+                "offset": 95
+              }
+            },
+            "name": "LoggerB"
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 11,
+            "column": 7
+          },
+          "end": {
+            "line": 11,
+            "column": 14
+          },
+          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+        }
+      },
+      "body": [
+        {
+          "type": "FunctionDefinition",
+          "id": {
+            "type": "Identifier",
+            "name": "log",
+            "_meta": {
+              "loc": {
+                "start": {
+                  "line": 13,
+                  "column": 21
+                },
+                "end": {
+                  "line": 13,
+                  "column": 24
+                },
+                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+              },
+              "origin": {
+                "kind": "identifier",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 13,
+                    "column": 20,
+                    "offset": 118
+                  },
+                  "end": {
+                    "line": 13,
+                    "column": 23,
+                    "offset": 121
+                  }
+                },
+                "name": "log"
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 13,
+                "column": 21
+              },
+              "end": {
+                "line": 13,
+                "column": 24
+              },
+              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+            }
+          },
+          "parameters": [],
+          "returnType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {}
+          },
+          "body": {
+            "type": "ScopedStatement",
+            "body": [
+              {
+                "type": "ExpressionStatement",
+                "expression": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "echo",
+                    "_meta": {}
+                  },
+                  "arguments": [
+                    {
+                      "type": "Literal",
+                      "value": "B",
+                      "literalType": "string",
+                      "_meta": {
+                        "loc": {
+                          "start": {
+                            "line": 15,
+                            "column": 14
+                          },
+                          "end": {
+                            "line": 15,
+                            "column": 17
+                          },
+                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+                        },
+                        "origin": {
+                          "kind": "string",
+                          "loc": {
+                            "source": null,
+                            "start": {
+                              "line": 15,
+                              "column": 13,
+                              "offset": 143
+                            },
+                            "end": {
+                              "line": 15,
+                              "column": 16,
+                              "offset": 146
+                            }
+                          },
+                          "value": "B",
+                          "raw": "\"B\"",
+                          "unicode": false,
+                          "isDoubleQuote": true
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 15,
+                          "column": 14
+                        },
+                        "end": {
+                          "line": 15,
+                          "column": 17
+                        },
+                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+                      }
+                    }
+                  ],
+                  "_meta": {
+                    "loc": {
+                      "start": {
+                        "line": 15,
+                        "column": 9
+                      },
+                      "end": {
+                        "line": 15,
+                        "column": 18
+                      },
+                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+                    },
+                    "origin": {
+                      "kind": "echo",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 15,
+                          "column": 8,
+                          "offset": 138
+                        },
+                        "end": {
+                          "line": 15,
+                          "column": 17,
+                          "offset": 147
+                        }
+                      },
+                      "shortForm": false,
+                      "expressions": [
+                        {
+                          "kind": "string",
+                          "loc": {
+                            "source": null,
+                            "start": {
+                              "line": 15,
+                              "column": 13,
+                              "offset": 143
+                            },
+                            "end": {
+                              "line": 15,
+                              "column": 16,
+                              "offset": 146
+                            }
+                          },
+                          "value": "B",
+                          "raw": "\"B\"",
+                          "unicode": false,
+                          "isDoubleQuote": true
+                        }
+                      ]
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 15,
+                      "column": 9
+                    },
+                    "end": {
+                      "line": 15,
+                      "column": 18
+                    },
+                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+                  }
+                },
+                "_meta": {
+                  "loc": {
+                    "start": {
+                      "line": 15,
+                      "column": 9
+                    },
+                    "end": {
+                      "line": 15,
+                      "column": 18
+                    },
+                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+                  },
+                  "origin": {
+                    "kind": "echo",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 15,
+                        "column": 8,
+                        "offset": 138
+                      },
+                      "end": {
+                        "line": 15,
+                        "column": 17,
+                        "offset": 147
+                      }
+                    },
+                    "shortForm": false,
+                    "expressions": [
+                      {
+                        "kind": "string",
+                        "loc": {
+                          "source": null,
+                          "start": {
+                            "line": 15,
+                            "column": 13,
+                            "offset": 143
+                          },
+                          "end": {
+                            "line": 15,
+                            "column": 16,
+                            "offset": 146
+                          }
+                        },
+                        "value": "B",
+                        "raw": "\"B\"",
+                        "unicode": false,
+                        "isDoubleQuote": true
+                      }
+                    ]
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 15,
+                    "column": 9
+                  },
+                  "end": {
+                    "line": 15,
+                    "column": 18
+                  },
+                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+                }
+              }
+            ],
+            "id": null,
+            "_meta": {
+              "loc": {
+                "start": {
+                  "line": 14,
+                  "column": 5
+                },
+                "end": {
+                  "line": 16,
+                  "column": 6
+                },
+                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+              },
+              "origin": {
+                "kind": "block",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 14,
+                    "column": 4,
+                    "offset": 128
+                  },
+                  "end": {
+                    "line": 16,
+                    "column": 5,
+                    "offset": 153
+                  }
+                },
+                "children": [
+                  {
+                    "kind": "echo",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 15,
+                        "column": 8,
+                        "offset": 138
+                      },
+                      "end": {
+                        "line": 15,
+                        "column": 17,
+                        "offset": 147
+                      }
+                    },
+                    "shortForm": false,
+                    "expressions": [
+                      {
+                        "kind": "string",
+                        "loc": {
+                          "source": null,
+                          "start": {
+                            "line": 15,
+                            "column": 13,
+                            "offset": 143
+                          },
+                          "end": {
+                            "line": 15,
+                            "column": 16,
+                            "offset": 146
+                          }
+                        },
+                        "value": "B",
+                        "raw": "\"B\"",
+                        "unicode": false,
+                        "isDoubleQuote": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 14,
+                "column": 5
+              },
+              "end": {
+                "line": 16,
+                "column": 6
+              },
+              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+            }
+          },
+          "modifiers": [
+            "public"
+          ],
+          "_meta": {
+            "attributes": [],
+            "loc": {
+              "start": {
+                "line": 13,
+                "column": 5
+              },
+              "end": {
+                "line": 16,
+                "column": 6
+              },
+              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+            },
+            "origin": {
+              "kind": "method",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 13,
+                  "column": 4,
+                  "offset": 102
+                },
+                "end": {
+                  "line": 16,
+                  "column": 5,
+                  "offset": 153
+                }
+              },
+              "name": {
+                "kind": "identifier",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 13,
+                    "column": 20,
+                    "offset": 118
+                  },
+                  "end": {
+                    "line": 13,
+                    "column": 23,
+                    "offset": 121
+                  }
+                },
+                "name": "log"
+              },
+              "arguments": [],
+              "byref": false,
+              "type": null,
+              "nullable": false,
+              "body": {
+                "kind": "block",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 14,
+                    "column": 4,
+                    "offset": 128
+                  },
+                  "end": {
+                    "line": 16,
+                    "column": 5,
+                    "offset": 153
+                  }
+                },
+                "children": [
+                  {
+                    "kind": "echo",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 15,
+                        "column": 8,
+                        "offset": 138
+                      },
+                      "end": {
+                        "line": 15,
+                        "column": 17,
+                        "offset": 147
+                      }
+                    },
+                    "shortForm": false,
+                    "expressions": [
+                      {
+                        "kind": "string",
+                        "loc": {
+                          "source": null,
+                          "start": {
+                            "line": 15,
+                            "column": 13,
+                            "offset": 143
+                          },
+                          "end": {
+                            "line": 15,
+                            "column": 16,
+                            "offset": 146
+                          }
+                        },
+                        "value": "B",
+                        "raw": "\"B\"",
+                        "unicode": false,
+                        "isDoubleQuote": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              "attrGroups": [],
+              "isAbstract": false,
+              "isFinal": false,
+              "isReadonly": false,
+              "visibility": "public",
+              "isStatic": false
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 13,
+              "column": 5
+            },
+            "end": {
+              "line": 16,
+              "column": 6
+            },
+            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+          }
+        }
+      ],
+      "supers": [],
+      "_meta": {
+        "structureKind": "trait",
+        "attributes": [],
+        "loc": {
+          "start": {
+            "line": 11,
+            "column": 1
+          },
+          "end": {
+            "line": 17,
+            "column": 2
+          },
+          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+        },
+        "origin": {
+          "kind": "trait",
+          "loc": {
+            "source": null,
+            "start": {
+              "line": 11,
+              "column": 0,
+              "offset": 82
+            },
+            "end": {
+              "line": 17,
+              "column": 1,
+              "offset": 155
+            }
+          },
+          "name": {
+            "kind": "identifier",
+            "loc": {
+              "source": null,
+              "start": {
+                "line": 11,
+                "column": 6,
+                "offset": 88
+              },
+              "end": {
+                "line": 11,
+                "column": 13,
+                "offset": 95
+              }
+            },
+            "name": "LoggerB"
+          },
+          "body": [
+            {
+              "kind": "method",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 13,
+                  "column": 4,
+                  "offset": 102
+                },
+                "end": {
+                  "line": 16,
+                  "column": 5,
+                  "offset": 153
+                }
+              },
+              "name": {
+                "kind": "identifier",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 13,
+                    "column": 20,
+                    "offset": 118
+                  },
+                  "end": {
+                    "line": 13,
+                    "column": 23,
+                    "offset": 121
+                  }
+                },
+                "name": "log"
+              },
+              "arguments": [],
+              "byref": false,
+              "type": null,
+              "nullable": false,
+              "body": {
+                "kind": "block",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 14,
+                    "column": 4,
+                    "offset": 128
+                  },
+                  "end": {
+                    "line": 16,
+                    "column": 5,
+                    "offset": 153
+                  }
+                },
+                "children": [
+                  {
+                    "kind": "echo",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 15,
+                        "column": 8,
+                        "offset": 138
+                      },
+                      "end": {
+                        "line": 15,
+                        "column": 17,
+                        "offset": 147
+                      }
+                    },
+                    "shortForm": false,
+                    "expressions": [
+                      {
+                        "kind": "string",
+                        "loc": {
+                          "source": null,
+                          "start": {
+                            "line": 15,
+                            "column": 13,
+                            "offset": 143
+                          },
+                          "end": {
+                            "line": 15,
+                            "column": 16,
+                            "offset": 146
+                          }
+                        },
+                        "value": "B",
+                        "raw": "\"B\"",
+                        "unicode": false,
+                        "isDoubleQuote": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              "attrGroups": [],
+              "isAbstract": false,
+              "isFinal": false,
+              "isReadonly": false,
+              "visibility": "public",
+              "isStatic": false
+            }
+          ]
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 1
+        },
+        "end": {
+          "line": 17,
+          "column": 2
+        },
+        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+      }
+    },
+    {
+      "type": "ClassDefinition",
+      "id": {
+        "type": "Identifier",
+        "name": "Service",
+        "_meta": {
+          "loc": {
+            "start": {
+              "line": 19,
+              "column": 7
+            },
+            "end": {
+              "line": 19,
+              "column": 14
+            },
+            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+          },
+          "origin": {
+            "kind": "identifier",
+            "loc": {
+              "source": null,
+              "start": {
+                "line": 19,
+                "column": 6,
+                "offset": 163
+              },
+              "end": {
+                "line": 19,
+                "column": 13,
+                "offset": 170
+              }
+            },
+            "name": "Service"
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 19,
+            "column": 7
+          },
+          "end": {
+            "line": 19,
+            "column": 14
+          },
+          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+        }
+      },
+      "body": [
+        {
+          "type": "ExpressionStatement",
+          "expression": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "trait_use",
+              "_meta": {}
+            },
+            "arguments": [
+              {
+                "type": "Identifier",
+                "name": "LoggerA",
+                "_meta": {
+                  "loc": {
+                    "start": {
+                      "line": 21,
+                      "column": 9
+                    },
+                    "end": {
+                      "line": 21,
+                      "column": 16
+                    },
+                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+                  },
+                  "origin": {
+                    "kind": "name",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 21,
+                        "column": 8,
+                        "offset": 181
+                      },
+                      "end": {
+                        "line": 21,
+                        "column": 15,
+                        "offset": 188
+                      }
+                    },
+                    "name": "LoggerA",
+                    "resolution": "uqn"
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 21,
+                    "column": 9
+                  },
+                  "end": {
+                    "line": 21,
+                    "column": 16
+                  },
+                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+                }
+              },
+              {
+                "type": "Identifier",
+                "name": "LoggerB",
+                "_meta": {
+                  "loc": {
+                    "start": {
+                      "line": 21,
+                      "column": 18
+                    },
+                    "end": {
+                      "line": 21,
+                      "column": 25
+                    },
+                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+                  },
+                  "origin": {
+                    "kind": "name",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 21,
+                        "column": 17,
+                        "offset": 190
+                      },
+                      "end": {
+                        "line": 21,
+                        "column": 24,
+                        "offset": 197
+                      }
+                    },
+                    "name": "LoggerB",
+                    "resolution": "uqn"
+                  }
+                },
+                "loc": {
+                  "start": {
+                    "line": 21,
+                    "column": 18
+                  },
+                  "end": {
+                    "line": 21,
+                    "column": 25
+                  },
+                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+                }
+              }
+            ],
+            "_meta": {
+              "synthetic": true,
+              "loc": {
+                "start": {
+                  "line": 21,
+                  "column": 5
+                },
+                "end": {
+                  "line": 24,
+                  "column": 6
+                },
+                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+              },
+              "origin": {
+                "kind": "traituse",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 21,
+                    "column": 4,
+                    "offset": 177
+                  },
+                  "end": {
+                    "line": 24,
+                    "column": 5,
+                    "offset": 287
+                  }
+                },
+                "traits": [
+                  {
+                    "kind": "name",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 21,
+                        "column": 8,
+                        "offset": 181
+                      },
+                      "end": {
+                        "line": 21,
+                        "column": 15,
+                        "offset": 188
+                      }
+                    },
+                    "name": "LoggerA",
+                    "resolution": "uqn"
+                  },
+                  {
+                    "kind": "name",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 21,
+                        "column": 17,
+                        "offset": 190
+                      },
+                      "end": {
+                        "line": 21,
+                        "column": 24,
+                        "offset": 197
+                      }
+                    },
+                    "name": "LoggerB",
+                    "resolution": "uqn"
+                  }
+                ],
+                "adaptations": [
+                  {
+                    "kind": "traitprecedence",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 22,
+                        "column": 8,
+                        "offset": 208
+                      },
+                      "end": {
+                        "line": 22,
+                        "column": 38,
+                        "offset": 238
+                      }
+                    },
+                    "trait": {
+                      "kind": "name",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 22,
+                          "column": 8,
+                          "offset": 208
+                        },
+                        "end": {
+                          "line": 22,
+                          "column": 15,
+                          "offset": 215
+                        }
+                      },
+                      "name": "LoggerA",
+                      "resolution": "uqn"
+                    },
+                    "method": {
+                      "kind": "identifier",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 22,
+                          "column": 17,
+                          "offset": 217
+                        },
+                        "end": {
+                          "line": 22,
+                          "column": 20,
+                          "offset": 220
+                        }
+                      },
+                      "name": "log"
+                    },
+                    "instead": [
+                      {
+                        "kind": "name",
+                        "loc": {
+                          "source": null,
+                          "start": {
+                            "line": 22,
+                            "column": 31,
+                            "offset": 231
+                          },
+                          "end": {
+                            "line": 22,
+                            "column": 38,
+                            "offset": 238
+                          }
+                        },
+                        "name": "LoggerB",
+                        "resolution": "uqn"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "traitalias",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 23,
+                        "column": 8,
+                        "offset": 248
+                      },
+                      "end": {
+                        "line": 23,
+                        "column": 40,
+                        "offset": 280
+                      }
+                    },
+                    "trait": {
+                      "kind": "name",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 23,
+                          "column": 8,
+                          "offset": 248
+                        },
+                        "end": {
+                          "line": 23,
+                          "column": 15,
+                          "offset": 255
+                        }
+                      },
+                      "name": "LoggerB",
+                      "resolution": "uqn"
+                    },
+                    "method": {
+                      "kind": "identifier",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 23,
+                          "column": 17,
+                          "offset": 257
+                        },
+                        "end": {
+                          "line": 23,
+                          "column": 20,
+                          "offset": 260
+                        }
+                      },
+                      "name": "log"
+                    },
+                    "as": {
+                      "kind": "identifier",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 23,
+                          "column": 32,
+                          "offset": 272
+                        },
+                        "end": {
+                          "line": 23,
+                          "column": 40,
+                          "offset": 280
+                        }
+                      },
+                      "name": "logFromB"
+                    },
+                    "visibility": "private"
+                  }
+                ]
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 21,
+                "column": 5
+              },
+              "end": {
+                "line": 24,
+                "column": 6
+              },
+              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+            }
+          },
+          "_meta": {
+            "loc": {
+              "start": {
+                "line": 21,
+                "column": 5
+              },
+              "end": {
+                "line": 24,
+                "column": 6
+              },
+              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+            },
+            "origin": {
+              "kind": "traituse",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 21,
+                  "column": 4,
+                  "offset": 177
+                },
+                "end": {
+                  "line": 24,
+                  "column": 5,
+                  "offset": 287
+                }
+              },
+              "traits": [
+                {
+                  "kind": "name",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 21,
+                      "column": 8,
+                      "offset": 181
+                    },
+                    "end": {
+                      "line": 21,
+                      "column": 15,
+                      "offset": 188
+                    }
+                  },
+                  "name": "LoggerA",
+                  "resolution": "uqn"
+                },
+                {
+                  "kind": "name",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 21,
+                      "column": 17,
+                      "offset": 190
+                    },
+                    "end": {
+                      "line": 21,
+                      "column": 24,
+                      "offset": 197
+                    }
+                  },
+                  "name": "LoggerB",
+                  "resolution": "uqn"
+                }
+              ],
+              "adaptations": [
+                {
+                  "kind": "traitprecedence",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 22,
+                      "column": 8,
+                      "offset": 208
+                    },
+                    "end": {
+                      "line": 22,
+                      "column": 38,
+                      "offset": 238
+                    }
+                  },
+                  "trait": {
+                    "kind": "name",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 22,
+                        "column": 8,
+                        "offset": 208
+                      },
+                      "end": {
+                        "line": 22,
+                        "column": 15,
+                        "offset": 215
+                      }
+                    },
+                    "name": "LoggerA",
+                    "resolution": "uqn"
+                  },
+                  "method": {
+                    "kind": "identifier",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 22,
+                        "column": 17,
+                        "offset": 217
+                      },
+                      "end": {
+                        "line": 22,
+                        "column": 20,
+                        "offset": 220
+                      }
+                    },
+                    "name": "log"
+                  },
+                  "instead": [
+                    {
+                      "kind": "name",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 22,
+                          "column": 31,
+                          "offset": 231
+                        },
+                        "end": {
+                          "line": 22,
+                          "column": 38,
+                          "offset": 238
+                        }
+                      },
+                      "name": "LoggerB",
+                      "resolution": "uqn"
+                    }
+                  ]
+                },
+                {
+                  "kind": "traitalias",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 23,
+                      "column": 8,
+                      "offset": 248
+                    },
+                    "end": {
+                      "line": 23,
+                      "column": 40,
+                      "offset": 280
+                    }
+                  },
+                  "trait": {
+                    "kind": "name",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 23,
+                        "column": 8,
+                        "offset": 248
+                      },
+                      "end": {
+                        "line": 23,
+                        "column": 15,
+                        "offset": 255
+                      }
+                    },
+                    "name": "LoggerB",
+                    "resolution": "uqn"
+                  },
+                  "method": {
+                    "kind": "identifier",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 23,
+                        "column": 17,
+                        "offset": 257
+                      },
+                      "end": {
+                        "line": 23,
+                        "column": 20,
+                        "offset": 260
+                      }
+                    },
+                    "name": "log"
+                  },
+                  "as": {
+                    "kind": "identifier",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 23,
+                        "column": 32,
+                        "offset": 272
+                      },
+                      "end": {
+                        "line": 23,
+                        "column": 40,
+                        "offset": 280
+                      }
+                    },
+                    "name": "logFromB"
+                  },
+                  "visibility": "private"
+                }
+              ]
+            },
+            "adaptations": [
+              {
+                "kind": "traitprecedence",
+                "trait": {
+                  "type": "Identifier",
+                  "name": "LoggerA",
+                  "_meta": {
+                    "loc": {
+                      "start": {
+                        "line": 22,
+                        "column": 9
+                      },
+                      "end": {
+                        "line": 22,
+                        "column": 16
+                      },
+                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+                    },
+                    "origin": {
+                      "kind": "name",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 22,
+                          "column": 8,
+                          "offset": 208
+                        },
+                        "end": {
+                          "line": 22,
+                          "column": 15,
+                          "offset": 215
+                        }
+                      },
+                      "name": "LoggerA",
+                      "resolution": "uqn"
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 22,
+                      "column": 9
+                    },
+                    "end": {
+                      "line": 22,
+                      "column": 16
+                    },
+                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+                  }
+                },
+                "method": {
+                  "type": "Identifier",
+                  "name": "log",
+                  "_meta": {
+                    "loc": {
+                      "start": {
+                        "line": 22,
+                        "column": 18
+                      },
+                      "end": {
+                        "line": 22,
+                        "column": 21
+                      },
+                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+                    },
+                    "origin": {
+                      "kind": "identifier",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 22,
+                          "column": 17,
+                          "offset": 217
+                        },
+                        "end": {
+                          "line": 22,
+                          "column": 20,
+                          "offset": 220
+                        }
+                      },
+                      "name": "log"
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 22,
+                      "column": 18
+                    },
+                    "end": {
+                      "line": 22,
+                      "column": 21
+                    },
+                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+                  }
+                },
+                "instead": [
+                  {
+                    "type": "Identifier",
+                    "name": "LoggerB",
+                    "_meta": {
+                      "loc": {
+                        "start": {
+                          "line": 22,
+                          "column": 32
+                        },
+                        "end": {
+                          "line": 22,
+                          "column": 39
+                        },
+                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+                      },
+                      "origin": {
+                        "kind": "name",
+                        "loc": {
+                          "source": null,
+                          "start": {
+                            "line": 22,
+                            "column": 31,
+                            "offset": 231
+                          },
+                          "end": {
+                            "line": 22,
+                            "column": 38,
+                            "offset": 238
+                          }
+                        },
+                        "name": "LoggerB",
+                        "resolution": "uqn"
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 22,
+                        "column": 32
+                      },
+                      "end": {
+                        "line": 22,
+                        "column": 39
+                      },
+                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "traitalias",
+                "trait": {
+                  "type": "Identifier",
+                  "name": "LoggerB",
+                  "_meta": {
+                    "loc": {
+                      "start": {
+                        "line": 23,
+                        "column": 9
+                      },
+                      "end": {
+                        "line": 23,
+                        "column": 16
+                      },
+                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+                    },
+                    "origin": {
+                      "kind": "name",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 23,
+                          "column": 8,
+                          "offset": 248
+                        },
+                        "end": {
+                          "line": 23,
+                          "column": 15,
+                          "offset": 255
+                        }
+                      },
+                      "name": "LoggerB",
+                      "resolution": "uqn"
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 23,
+                      "column": 9
+                    },
+                    "end": {
+                      "line": 23,
+                      "column": 16
+                    },
+                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+                  }
+                },
+                "method": {
+                  "type": "Identifier",
+                  "name": "log",
+                  "_meta": {
+                    "loc": {
+                      "start": {
+                        "line": 23,
+                        "column": 18
+                      },
+                      "end": {
+                        "line": 23,
+                        "column": 21
+                      },
+                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+                    },
+                    "origin": {
+                      "kind": "identifier",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 23,
+                          "column": 17,
+                          "offset": 257
+                        },
+                        "end": {
+                          "line": 23,
+                          "column": 20,
+                          "offset": 260
+                        }
+                      },
+                      "name": "log"
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 23,
+                      "column": 18
+                    },
+                    "end": {
+                      "line": 23,
+                      "column": 21
+                    },
+                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+                  }
+                },
+                "as": {
+                  "type": "Identifier",
+                  "name": "logFromB",
+                  "_meta": {
+                    "loc": {
+                      "start": {
+                        "line": 23,
+                        "column": 33
+                      },
+                      "end": {
+                        "line": 23,
+                        "column": 41
+                      },
+                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+                    },
+                    "origin": {
+                      "kind": "identifier",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 23,
+                          "column": 32,
+                          "offset": 272
+                        },
+                        "end": {
+                          "line": 23,
+                          "column": 40,
+                          "offset": 280
+                        }
+                      },
+                      "name": "logFromB"
+                    }
+                  },
+                  "loc": {
+                    "start": {
+                      "line": 23,
+                      "column": 33
+                    },
+                    "end": {
+                      "line": 23,
+                      "column": 41
+                    },
+                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+                  }
+                },
+                "visibility": "private"
+              }
+            ]
+          },
+          "loc": {
+            "start": {
+              "line": 21,
+              "column": 5
+            },
+            "end": {
+              "line": 24,
+              "column": 6
+            },
+            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+          }
+        }
+      ],
+      "supers": [],
+      "_meta": {
+        "implements": [],
+        "isAbstract": false,
+        "isFinal": false,
+        "isReadonly": false,
+        "attributes": [],
+        "loc": {
+          "start": {
+            "line": 19,
+            "column": 1
+          },
+          "end": {
+            "line": 25,
+            "column": 2
+          },
+          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+        },
+        "origin": {
+          "kind": "class",
+          "loc": {
+            "source": null,
+            "start": {
+              "line": 19,
+              "column": 0,
+              "offset": 157
+            },
+            "end": {
+              "line": 25,
+              "column": 1,
+              "offset": 289
+            }
+          },
+          "name": {
+            "kind": "identifier",
+            "loc": {
+              "source": null,
+              "start": {
+                "line": 19,
+                "column": 6,
+                "offset": 163
+              },
+              "end": {
+                "line": 19,
+                "column": 13,
+                "offset": 170
+              }
+            },
+            "name": "Service"
+          },
+          "isAnonymous": false,
+          "extends": null,
+          "implements": null,
+          "body": [
+            {
+              "kind": "traituse",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 21,
+                  "column": 4,
+                  "offset": 177
+                },
+                "end": {
+                  "line": 24,
+                  "column": 5,
+                  "offset": 287
+                }
+              },
+              "traits": [
+                {
+                  "kind": "name",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 21,
+                      "column": 8,
+                      "offset": 181
+                    },
+                    "end": {
+                      "line": 21,
+                      "column": 15,
+                      "offset": 188
+                    }
+                  },
+                  "name": "LoggerA",
+                  "resolution": "uqn"
+                },
+                {
+                  "kind": "name",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 21,
+                      "column": 17,
+                      "offset": 190
+                    },
+                    "end": {
+                      "line": 21,
+                      "column": 24,
+                      "offset": 197
+                    }
+                  },
+                  "name": "LoggerB",
+                  "resolution": "uqn"
+                }
+              ],
+              "adaptations": [
+                {
+                  "kind": "traitprecedence",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 22,
+                      "column": 8,
+                      "offset": 208
+                    },
+                    "end": {
+                      "line": 22,
+                      "column": 38,
+                      "offset": 238
+                    }
+                  },
+                  "trait": {
+                    "kind": "name",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 22,
+                        "column": 8,
+                        "offset": 208
+                      },
+                      "end": {
+                        "line": 22,
+                        "column": 15,
+                        "offset": 215
+                      }
+                    },
+                    "name": "LoggerA",
+                    "resolution": "uqn"
+                  },
+                  "method": {
+                    "kind": "identifier",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 22,
+                        "column": 17,
+                        "offset": 217
+                      },
+                      "end": {
+                        "line": 22,
+                        "column": 20,
+                        "offset": 220
+                      }
+                    },
+                    "name": "log"
+                  },
+                  "instead": [
+                    {
+                      "kind": "name",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 22,
+                          "column": 31,
+                          "offset": 231
+                        },
+                        "end": {
+                          "line": 22,
+                          "column": 38,
+                          "offset": 238
+                        }
+                      },
+                      "name": "LoggerB",
+                      "resolution": "uqn"
+                    }
+                  ]
+                },
+                {
+                  "kind": "traitalias",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 23,
+                      "column": 8,
+                      "offset": 248
+                    },
+                    "end": {
+                      "line": 23,
+                      "column": 40,
+                      "offset": 280
+                    }
+                  },
+                  "trait": {
+                    "kind": "name",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 23,
+                        "column": 8,
+                        "offset": 248
+                      },
+                      "end": {
+                        "line": 23,
+                        "column": 15,
+                        "offset": 255
+                      }
+                    },
+                    "name": "LoggerB",
+                    "resolution": "uqn"
+                  },
+                  "method": {
+                    "kind": "identifier",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 23,
+                        "column": 17,
+                        "offset": 257
+                      },
+                      "end": {
+                        "line": 23,
+                        "column": 20,
+                        "offset": 260
+                      }
+                    },
+                    "name": "log"
+                  },
+                  "as": {
+                    "kind": "identifier",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 23,
+                        "column": 32,
+                        "offset": 272
+                      },
+                      "end": {
+                        "line": 23,
+                        "column": 40,
+                        "offset": 280
+                      }
+                    },
+                    "name": "logFromB"
+                  },
+                  "visibility": "private"
+                }
+              ]
+            }
+          ],
+          "attrGroups": [],
+          "isAbstract": false,
+          "isFinal": false,
+          "isReadonly": false
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 1
+        },
+        "end": {
+          "line": 25,
+          "column": 2
+        },
+        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+      }
+    },
+    {
+      "type": "ClassDefinition",
+      "id": {
+        "type": "Identifier",
+        "name": "Status",
+        "_meta": {
+          "loc": {
+            "start": {
+              "line": 27,
+              "column": 6
+            },
+            "end": {
+              "line": 27,
+              "column": 12
+            },
+            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+          },
+          "origin": {
+            "kind": "identifier",
+            "loc": {
+              "source": null,
+              "start": {
+                "line": 27,
+                "column": 5,
+                "offset": 296
+              },
+              "end": {
+                "line": 27,
+                "column": 11,
+                "offset": 302
+              }
+            },
+            "name": "Status"
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 27,
+            "column": 6
+          },
+          "end": {
+            "line": 27,
+            "column": 12
+          },
+          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+        }
+      },
+      "body": [
+        {
+          "type": "VariableDeclaration",
+          "id": {
+            "type": "Identifier",
+            "name": "Open",
+            "_meta": {
+              "loc": {
+                "start": {
+                  "line": 29,
+                  "column": 5
+                },
+                "end": {
+                  "line": 29,
+                  "column": 14
+                },
+                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+              },
+              "origin": {
+                "kind": "identifier",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 29,
+                    "column": 4,
+                    "offset": 317
+                  },
+                  "end": {
+                    "line": 29,
+                    "column": 13,
+                    "offset": 326
+                  }
+                },
+                "name": "Open"
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 29,
+                "column": 5
+              },
+              "end": {
+                "line": 29,
+                "column": 14
+              },
+              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+            }
+          },
+          "init": {
+            "type": "Literal",
+            "value": "open",
+            "literalType": "string",
+            "_meta": {
+              "loc": {
+                "start": {
+                  "line": 29,
+                  "column": 17
+                },
+                "end": {
+                  "line": 29,
+                  "column": 23
+                },
+                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+              },
+              "origin": {
+                "kind": "string",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 29,
+                    "column": 16,
+                    "offset": 329
+                  },
+                  "end": {
+                    "line": 29,
+                    "column": 22,
+                    "offset": 335
+                  }
+                },
+                "value": "open",
+                "raw": "'open'",
+                "unicode": false,
+                "isDoubleQuote": false
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 29,
+                "column": 17
+              },
+              "end": {
+                "line": 29,
+                "column": 23
+              },
+              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+            }
+          },
+          "cloned": false,
+          "varType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {}
+          },
+          "_meta": {
+            "loc": {
+              "start": {
+                "line": 29,
+                "column": 5
+              },
+              "end": {
+                "line": 29,
+                "column": 23
+              },
+              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+            },
+            "origin": {
+              "kind": "enumcase",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 29,
+                  "column": 4,
+                  "offset": 317
+                },
+                "end": {
+                  "line": 29,
+                  "column": 22,
+                  "offset": 335
+                }
+              },
+              "name": {
+                "kind": "identifier",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 29,
+                    "column": 4,
+                    "offset": 317
+                  },
+                  "end": {
+                    "line": 29,
+                    "column": 13,
+                    "offset": 326
+                  }
+                },
+                "name": "Open"
+              },
+              "value": {
+                "kind": "string",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 29,
+                    "column": 16,
+                    "offset": 329
+                  },
+                  "end": {
+                    "line": 29,
+                    "column": 22,
+                    "offset": 335
+                  }
+                },
+                "value": "open",
+                "raw": "'open'",
+                "unicode": false,
+                "isDoubleQuote": false
+              }
+            },
+            "enumCase": true
+          },
+          "loc": {
+            "start": {
+              "line": 29,
+              "column": 5
+            },
+            "end": {
+              "line": 29,
+              "column": 23
+            },
+            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+          }
+        },
+        {
+          "type": "VariableDeclaration",
+          "id": {
+            "type": "Identifier",
+            "name": "Closed",
+            "_meta": {
+              "loc": {
+                "start": {
+                  "line": 30,
+                  "column": 5
+                },
+                "end": {
+                  "line": 30,
+                  "column": 16
+                },
+                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+              },
+              "origin": {
+                "kind": "identifier",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 30,
+                    "column": 4,
+                    "offset": 341
+                  },
+                  "end": {
+                    "line": 30,
+                    "column": 15,
+                    "offset": 352
+                  }
+                },
+                "name": "Closed"
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 30,
+                "column": 5
+              },
+              "end": {
+                "line": 30,
+                "column": 16
+              },
+              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+            }
+          },
+          "init": {
+            "type": "Literal",
+            "value": "closed",
+            "literalType": "string",
+            "_meta": {
+              "loc": {
+                "start": {
+                  "line": 30,
+                  "column": 19
+                },
+                "end": {
+                  "line": 30,
+                  "column": 27
+                },
+                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+              },
+              "origin": {
+                "kind": "string",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 30,
+                    "column": 18,
+                    "offset": 355
+                  },
+                  "end": {
+                    "line": 30,
+                    "column": 26,
+                    "offset": 363
+                  }
+                },
+                "value": "closed",
+                "raw": "'closed'",
+                "unicode": false,
+                "isDoubleQuote": false
+              }
+            },
+            "loc": {
+              "start": {
+                "line": 30,
+                "column": 19
+              },
+              "end": {
+                "line": 30,
+                "column": 27
+              },
+              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+            }
+          },
+          "cloned": false,
+          "varType": {
+            "type": "DynamicType",
+            "id": null,
+            "_meta": {}
+          },
+          "_meta": {
+            "loc": {
+              "start": {
+                "line": 30,
+                "column": 5
+              },
+              "end": {
+                "line": 30,
+                "column": 27
+              },
+              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+            },
+            "origin": {
+              "kind": "enumcase",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 30,
+                  "column": 4,
+                  "offset": 341
+                },
+                "end": {
+                  "line": 30,
+                  "column": 26,
+                  "offset": 363
+                }
+              },
+              "name": {
+                "kind": "identifier",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 30,
+                    "column": 4,
+                    "offset": 341
+                  },
+                  "end": {
+                    "line": 30,
+                    "column": 15,
+                    "offset": 352
+                  }
+                },
+                "name": "Closed"
+              },
+              "value": {
+                "kind": "string",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 30,
+                    "column": 18,
+                    "offset": 355
+                  },
+                  "end": {
+                    "line": 30,
+                    "column": 26,
+                    "offset": 363
+                  }
+                },
+                "value": "closed",
+                "raw": "'closed'",
+                "unicode": false,
+                "isDoubleQuote": false
+              }
+            },
+            "enumCase": true
+          },
+          "loc": {
+            "start": {
+              "line": 30,
+              "column": 5
+            },
+            "end": {
+              "line": 30,
+              "column": 27
+            },
+            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+          }
+        }
+      ],
+      "supers": [],
+      "_meta": {
+        "structureKind": "enum",
+        "valueType": {
+          "type": "Identifier",
+          "name": "string",
+          "_meta": {
+            "loc": {
+              "start": {
+                "line": 27,
+                "column": 14
+              },
+              "end": {
+                "line": 27,
+                "column": 20
+              },
+              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+            },
+            "origin": {
+              "kind": "name",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 27,
+                  "column": 13,
+                  "offset": 304
+                },
+                "end": {
+                  "line": 27,
+                  "column": 19,
+                  "offset": 310
+                }
+              },
+              "name": "string",
+              "resolution": "uqn"
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 27,
+              "column": 14
+            },
+            "end": {
+              "line": 27,
+              "column": 20
+            },
+            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+          }
+        },
+        "implements": [],
+        "attributes": [],
+        "loc": {
+          "start": {
+            "line": 27,
+            "column": 1
+          },
+          "end": {
+            "line": 31,
+            "column": 2
+          },
+          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+        },
+        "origin": {
+          "kind": "enum",
+          "loc": {
+            "source": null,
+            "start": {
+              "line": 27,
+              "column": 0,
+              "offset": 291
+            },
+            "end": {
+              "line": 31,
+              "column": 1,
+              "offset": 366
+            }
+          },
+          "name": {
+            "kind": "identifier",
+            "loc": {
+              "source": null,
+              "start": {
+                "line": 27,
+                "column": 5,
+                "offset": 296
+              },
+              "end": {
+                "line": 27,
+                "column": 11,
+                "offset": 302
+              }
+            },
+            "name": "Status"
+          },
+          "valueType": {
+            "kind": "name",
+            "loc": {
+              "source": null,
+              "start": {
+                "line": 27,
+                "column": 13,
+                "offset": 304
+              },
+              "end": {
+                "line": 27,
+                "column": 19,
+                "offset": 310
+              }
+            },
+            "name": "string",
+            "resolution": "uqn"
+          },
+          "implements": null,
+          "body": [
+            {
+              "kind": "enumcase",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 29,
+                  "column": 4,
+                  "offset": 317
+                },
+                "end": {
+                  "line": 29,
+                  "column": 22,
+                  "offset": 335
+                }
+              },
+              "name": {
+                "kind": "identifier",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 29,
+                    "column": 4,
+                    "offset": 317
+                  },
+                  "end": {
+                    "line": 29,
+                    "column": 13,
+                    "offset": 326
+                  }
+                },
+                "name": "Open"
+              },
+              "value": {
+                "kind": "string",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 29,
+                    "column": 16,
+                    "offset": 329
+                  },
+                  "end": {
+                    "line": 29,
+                    "column": 22,
+                    "offset": 335
+                  }
+                },
+                "value": "open",
+                "raw": "'open'",
+                "unicode": false,
+                "isDoubleQuote": false
+              }
+            },
+            {
+              "kind": "enumcase",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 30,
+                  "column": 4,
+                  "offset": 341
+                },
+                "end": {
+                  "line": 30,
+                  "column": 26,
+                  "offset": 363
+                }
+              },
+              "name": {
+                "kind": "identifier",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 30,
+                    "column": 4,
+                    "offset": 341
+                  },
+                  "end": {
+                    "line": 30,
+                    "column": 15,
+                    "offset": 352
+                  }
+                },
+                "name": "Closed"
+              },
+              "value": {
+                "kind": "string",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 30,
+                    "column": 18,
+                    "offset": 355
+                  },
+                  "end": {
+                    "line": 30,
+                    "column": 26,
+                    "offset": 363
+                  }
+                },
+                "value": "closed",
+                "raw": "'closed'",
+                "unicode": false,
+                "isDoubleQuote": false
+              }
+            }
+          ],
+          "attrGroups": []
+        }
+      },
+      "loc": {
+        "start": {
+          "line": 27,
+          "column": 1
+        },
+        "end": {
+          "line": 31,
+          "column": 2
+        },
+        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+      }
+    }
+  ],
+  "language": "php",
+  "languageVersion": null,
+  "uri": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php",
+  "version": "0.0.0",
+  "_meta": {
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 1
+      },
+      "end": {
+        "line": 32,
+        "column": 1
+      },
+      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+    },
+    "origin": {
+      "kind": "program",
+      "loc": {
+        "source": null,
+        "start": {
+          "line": 1,
+          "column": 0,
+          "offset": 0
+        },
+        "end": {
+          "line": 32,
+          "column": 0,
+          "offset": 367
+        }
+      },
+      "children": [
+        {
+          "kind": "trait",
+          "loc": {
+            "source": null,
+            "start": {
+              "line": 3,
+              "column": 0,
+              "offset": 7
+            },
+            "end": {
+              "line": 9,
+              "column": 1,
+              "offset": 80
+            }
+          },
+          "name": {
+            "kind": "identifier",
+            "loc": {
+              "source": null,
+              "start": {
+                "line": 3,
+                "column": 6,
+                "offset": 13
+              },
+              "end": {
+                "line": 3,
+                "column": 13,
+                "offset": 20
+              }
+            },
+            "name": "LoggerA"
+          },
+          "body": [
+            {
+              "kind": "method",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 5,
+                  "column": 4,
+                  "offset": 27
+                },
+                "end": {
+                  "line": 8,
+                  "column": 5,
+                  "offset": 78
+                }
+              },
+              "name": {
+                "kind": "identifier",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 5,
+                    "column": 20,
+                    "offset": 43
+                  },
+                  "end": {
+                    "line": 5,
+                    "column": 23,
+                    "offset": 46
+                  }
+                },
+                "name": "log"
+              },
+              "arguments": [],
+              "byref": false,
+              "type": null,
+              "nullable": false,
+              "body": {
+                "kind": "block",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 6,
+                    "column": 4,
+                    "offset": 53
+                  },
+                  "end": {
+                    "line": 8,
+                    "column": 5,
+                    "offset": 78
+                  }
+                },
+                "children": [
+                  {
+                    "kind": "echo",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 7,
+                        "column": 8,
+                        "offset": 63
+                      },
+                      "end": {
+                        "line": 7,
+                        "column": 17,
+                        "offset": 72
+                      }
+                    },
+                    "shortForm": false,
+                    "expressions": [
+                      {
+                        "kind": "string",
+                        "loc": {
+                          "source": null,
+                          "start": {
+                            "line": 7,
+                            "column": 13,
+                            "offset": 68
+                          },
+                          "end": {
+                            "line": 7,
+                            "column": 16,
+                            "offset": 71
+                          }
+                        },
+                        "value": "A",
+                        "raw": "\"A\"",
+                        "unicode": false,
+                        "isDoubleQuote": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              "attrGroups": [],
+              "isAbstract": false,
+              "isFinal": false,
+              "isReadonly": false,
+              "visibility": "public",
+              "isStatic": false
+            }
+          ]
+        },
+        {
+          "kind": "trait",
+          "loc": {
+            "source": null,
+            "start": {
+              "line": 11,
+              "column": 0,
+              "offset": 82
+            },
+            "end": {
+              "line": 17,
+              "column": 1,
+              "offset": 155
+            }
+          },
+          "name": {
+            "kind": "identifier",
+            "loc": {
+              "source": null,
+              "start": {
+                "line": 11,
+                "column": 6,
+                "offset": 88
+              },
+              "end": {
+                "line": 11,
+                "column": 13,
+                "offset": 95
+              }
+            },
+            "name": "LoggerB"
+          },
+          "body": [
+            {
+              "kind": "method",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 13,
+                  "column": 4,
+                  "offset": 102
+                },
+                "end": {
+                  "line": 16,
+                  "column": 5,
+                  "offset": 153
+                }
+              },
+              "name": {
+                "kind": "identifier",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 13,
+                    "column": 20,
+                    "offset": 118
+                  },
+                  "end": {
+                    "line": 13,
+                    "column": 23,
+                    "offset": 121
+                  }
+                },
+                "name": "log"
+              },
+              "arguments": [],
+              "byref": false,
+              "type": null,
+              "nullable": false,
+              "body": {
+                "kind": "block",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 14,
+                    "column": 4,
+                    "offset": 128
+                  },
+                  "end": {
+                    "line": 16,
+                    "column": 5,
+                    "offset": 153
+                  }
+                },
+                "children": [
+                  {
+                    "kind": "echo",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 15,
+                        "column": 8,
+                        "offset": 138
+                      },
+                      "end": {
+                        "line": 15,
+                        "column": 17,
+                        "offset": 147
+                      }
+                    },
+                    "shortForm": false,
+                    "expressions": [
+                      {
+                        "kind": "string",
+                        "loc": {
+                          "source": null,
+                          "start": {
+                            "line": 15,
+                            "column": 13,
+                            "offset": 143
+                          },
+                          "end": {
+                            "line": 15,
+                            "column": 16,
+                            "offset": 146
+                          }
+                        },
+                        "value": "B",
+                        "raw": "\"B\"",
+                        "unicode": false,
+                        "isDoubleQuote": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              "attrGroups": [],
+              "isAbstract": false,
+              "isFinal": false,
+              "isReadonly": false,
+              "visibility": "public",
+              "isStatic": false
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "loc": {
+            "source": null,
+            "start": {
+              "line": 19,
+              "column": 0,
+              "offset": 157
+            },
+            "end": {
+              "line": 25,
+              "column": 1,
+              "offset": 289
+            }
+          },
+          "name": {
+            "kind": "identifier",
+            "loc": {
+              "source": null,
+              "start": {
+                "line": 19,
+                "column": 6,
+                "offset": 163
+              },
+              "end": {
+                "line": 19,
+                "column": 13,
+                "offset": 170
+              }
+            },
+            "name": "Service"
+          },
+          "isAnonymous": false,
+          "extends": null,
+          "implements": null,
+          "body": [
+            {
+              "kind": "traituse",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 21,
+                  "column": 4,
+                  "offset": 177
+                },
+                "end": {
+                  "line": 24,
+                  "column": 5,
+                  "offset": 287
+                }
+              },
+              "traits": [
+                {
+                  "kind": "name",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 21,
+                      "column": 8,
+                      "offset": 181
+                    },
+                    "end": {
+                      "line": 21,
+                      "column": 15,
+                      "offset": 188
+                    }
+                  },
+                  "name": "LoggerA",
+                  "resolution": "uqn"
+                },
+                {
+                  "kind": "name",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 21,
+                      "column": 17,
+                      "offset": 190
+                    },
+                    "end": {
+                      "line": 21,
+                      "column": 24,
+                      "offset": 197
+                    }
+                  },
+                  "name": "LoggerB",
+                  "resolution": "uqn"
+                }
+              ],
+              "adaptations": [
+                {
+                  "kind": "traitprecedence",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 22,
+                      "column": 8,
+                      "offset": 208
+                    },
+                    "end": {
+                      "line": 22,
+                      "column": 38,
+                      "offset": 238
+                    }
+                  },
+                  "trait": {
+                    "kind": "name",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 22,
+                        "column": 8,
+                        "offset": 208
+                      },
+                      "end": {
+                        "line": 22,
+                        "column": 15,
+                        "offset": 215
+                      }
+                    },
+                    "name": "LoggerA",
+                    "resolution": "uqn"
+                  },
+                  "method": {
+                    "kind": "identifier",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 22,
+                        "column": 17,
+                        "offset": 217
+                      },
+                      "end": {
+                        "line": 22,
+                        "column": 20,
+                        "offset": 220
+                      }
+                    },
+                    "name": "log"
+                  },
+                  "instead": [
+                    {
+                      "kind": "name",
+                      "loc": {
+                        "source": null,
+                        "start": {
+                          "line": 22,
+                          "column": 31,
+                          "offset": 231
+                        },
+                        "end": {
+                          "line": 22,
+                          "column": 38,
+                          "offset": 238
+                        }
+                      },
+                      "name": "LoggerB",
+                      "resolution": "uqn"
+                    }
+                  ]
+                },
+                {
+                  "kind": "traitalias",
+                  "loc": {
+                    "source": null,
+                    "start": {
+                      "line": 23,
+                      "column": 8,
+                      "offset": 248
+                    },
+                    "end": {
+                      "line": 23,
+                      "column": 40,
+                      "offset": 280
+                    }
+                  },
+                  "trait": {
+                    "kind": "name",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 23,
+                        "column": 8,
+                        "offset": 248
+                      },
+                      "end": {
+                        "line": 23,
+                        "column": 15,
+                        "offset": 255
+                      }
+                    },
+                    "name": "LoggerB",
+                    "resolution": "uqn"
+                  },
+                  "method": {
+                    "kind": "identifier",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 23,
+                        "column": 17,
+                        "offset": 257
+                      },
+                      "end": {
+                        "line": 23,
+                        "column": 20,
+                        "offset": 260
+                      }
+                    },
+                    "name": "log"
+                  },
+                  "as": {
+                    "kind": "identifier",
+                    "loc": {
+                      "source": null,
+                      "start": {
+                        "line": 23,
+                        "column": 32,
+                        "offset": 272
+                      },
+                      "end": {
+                        "line": 23,
+                        "column": 40,
+                        "offset": 280
+                      }
+                    },
+                    "name": "logFromB"
+                  },
+                  "visibility": "private"
+                }
+              ]
+            }
+          ],
+          "attrGroups": [],
+          "isAbstract": false,
+          "isFinal": false,
+          "isReadonly": false
+        },
+        {
+          "kind": "enum",
+          "loc": {
+            "source": null,
+            "start": {
+              "line": 27,
+              "column": 0,
+              "offset": 291
+            },
+            "end": {
+              "line": 31,
+              "column": 1,
+              "offset": 366
+            }
+          },
+          "name": {
+            "kind": "identifier",
+            "loc": {
+              "source": null,
+              "start": {
+                "line": 27,
+                "column": 5,
+                "offset": 296
+              },
+              "end": {
+                "line": 27,
+                "column": 11,
+                "offset": 302
+              }
+            },
+            "name": "Status"
+          },
+          "valueType": {
+            "kind": "name",
+            "loc": {
+              "source": null,
+              "start": {
+                "line": 27,
+                "column": 13,
+                "offset": 304
+              },
+              "end": {
+                "line": 27,
+                "column": 19,
+                "offset": 310
+              }
+            },
+            "name": "string",
+            "resolution": "uqn"
+          },
+          "implements": null,
+          "body": [
+            {
+              "kind": "enumcase",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 29,
+                  "column": 4,
+                  "offset": 317
+                },
+                "end": {
+                  "line": 29,
+                  "column": 22,
+                  "offset": 335
+                }
+              },
+              "name": {
+                "kind": "identifier",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 29,
+                    "column": 4,
+                    "offset": 317
+                  },
+                  "end": {
+                    "line": 29,
+                    "column": 13,
+                    "offset": 326
+                  }
+                },
+                "name": "Open"
+              },
+              "value": {
+                "kind": "string",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 29,
+                    "column": 16,
+                    "offset": 329
+                  },
+                  "end": {
+                    "line": 29,
+                    "column": 22,
+                    "offset": 335
+                  }
+                },
+                "value": "open",
+                "raw": "'open'",
+                "unicode": false,
+                "isDoubleQuote": false
+              }
+            },
+            {
+              "kind": "enumcase",
+              "loc": {
+                "source": null,
+                "start": {
+                  "line": 30,
+                  "column": 4,
+                  "offset": 341
+                },
+                "end": {
+                  "line": 30,
+                  "column": 26,
+                  "offset": 363
+                }
+              },
+              "name": {
+                "kind": "identifier",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 30,
+                    "column": 4,
+                    "offset": 341
+                  },
+                  "end": {
+                    "line": 30,
+                    "column": 15,
+                    "offset": 352
+                  }
+                },
+                "name": "Closed"
+              },
+              "value": {
+                "kind": "string",
+                "loc": {
+                  "source": null,
+                  "start": {
+                    "line": 30,
+                    "column": 18,
+                    "offset": 355
+                  },
+                  "end": {
+                    "line": 30,
+                    "column": 26,
+                    "offset": 363
+                  }
+                },
+                "value": "closed",
+                "raw": "'closed'",
+                "unicode": false,
+                "isDoubleQuote": false
+              }
+            }
+          ],
+          "attrGroups": []
+        }
+      ],
+      "errors": [],
+      "comments": []
+    }
+  },
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 1
+    },
+    "end": {
+      "line": 32,
+      "column": 1
+    },
+    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/enum-trait-adapt.php"
+  }
+}

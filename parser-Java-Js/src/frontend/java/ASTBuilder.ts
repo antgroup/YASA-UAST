@@ -592,7 +592,19 @@ export class ASTBuilder
     //     | annotation
     //     | elementValueArrayInitializer
     public visitElementValue(ctx: JP.ElementValueContext): UAST.Instruction {
-        return this.visit(ctx.children[0]) as UAST.Instruction;
+        const val = this.visit(ctx.children[0]) as UAST.Node;
+        // 嵌套注解返回 ScopedStatement，但作为 elementValue 需要是 Expression
+        // 提取 varDecl 中的 newExpression
+        if (val && val.type === 'ScopedStatement') {
+            const scoped = val as UAST.ScopedStatement;
+            if (scoped.body && scoped.body.length > 0) {
+                const firstStmt = scoped.body[0];
+                if (firstStmt.type === 'VariableDeclaration' && (firstStmt as UAST.VariableDeclaration).init) {
+                    return (firstStmt as UAST.VariableDeclaration).init! as UAST.Instruction;
+                }
+            }
+        }
+        return val as UAST.Instruction;
     }
 
     //annotation

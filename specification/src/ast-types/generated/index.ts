@@ -127,7 +127,7 @@ export interface CompileUnit extends BaseNode {
   type: 'CompileUnit'
   body: Array<Instruction>
   /**源语言种类**/
-  language: 'javascript' | 'typescript' | 'java' | 'golang' | 'python'
+  language: 'javascript' | 'typescript' | 'java' | 'golang' | 'python' | 'php'
   /**源语言版本**/
   languageVersion?: number | string | boolean | null
   /**该AST的唯一标识**/
