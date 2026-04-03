@@ -457,6 +457,10 @@ class UASTTransformer(ast.NodeTransformer):
         if node.name == '__init__':
             function_def._meta.isConstructor = True
             # function_def.body.body.append(UNode.ReturnStatement(UNode.SourceLocation(), UNode.Meta(), UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), 'self')))
+            if len(body) > 0:
+                last_stmt = body[-1]
+                if not isinstance(last_stmt, UNode.ReturnStatement):
+                    function_def.body.body.append(UNode.ReturnStatement(UNode.SourceLocation(), UNode.Meta(), UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), 'self')))
         decorator_list = []
         for decorator in node.decorator_list:
             decorator_list.append(self.packPos(decorator, self.visit(decorator)))
