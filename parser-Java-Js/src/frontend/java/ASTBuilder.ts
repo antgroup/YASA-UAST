@@ -1686,11 +1686,16 @@ export class ASTBuilder
             const init = arrayCreatorRest.arrayInitializer()
             if (init) {
                 return this.visit(init) as UAST.Expression;
-            } else if (arrayCreatorRest.children?.length === 3 && arrayCreatorRest.children[0]?.text === '[' && /^[1-9]\d*$/.test(arrayCreatorRest.children[1]?.text) && arrayCreatorRest.children[2]?.text === ']') {
-                const memberAccess = UAST.memberAccess(callee, UAST.identifier(arrayCreatorRest.children[1].text))
-                return UAST.newExpression(memberAccess, [])
             } else {
-                return UAST.newExpression(callee, [])
+                // 数组创建：new Type[expr1][expr2]...
+                const expressions = arrayCreatorRest.expression();
+                if (expressions.length === 1 && /^[1-9]\d*$/.test(expressions[0].text)) {
+                    // 兼容：正整数字面量保持 MemberAccess 编码（yasa2 引擎依赖此格式做异常路径分析）
+                    const memberAccess = UAST.memberAccess(callee, UAST.identifier(expressions[0].text))
+                    return UAST.newExpression(memberAccess, [])
+                }
+                const args = expressions.map(expr => this.visit(expr) as UAST.Expression);
+                return UAST.newExpression(callee, args);
             }
         }
     }
