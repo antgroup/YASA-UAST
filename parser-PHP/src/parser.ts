@@ -102,7 +102,7 @@ function createVariableDeclaration(
     origin: PhpNode,
     opts: Record<string, any>
 ) {
-    const id = visit(idNode, opts) as UAST.LVal;
+    const id = (visit(idNode, opts) as UAST.LVal) || UAST.identifier('_');
     const init = visit(initNode, opts) as UAST.Expression | null;
     const varDecl = UAST.variableDeclaration(id, init, false, UAST.dynamicType());
     return appendNodeMeta(varDecl, origin, opts?.sourcefile);
@@ -204,10 +204,28 @@ function mapBinaryOperator(operator: string | undefined) {
     if (!operator) {
         return '+';
     }
-    if (operator === '.') {
-        return '+';
+    const mapping: Record<string, string> = {
+        '.': '+',
+        '??': '||',
+        '<=>': '-',
+        'or': '||',
+        'and': '&&',
+        'xor': '^',
+    };
+    return mapping[operator] || operator;
+}
+
+function mapAssignOperator(operator: string): string {
+    const mapping: Record<string, string> = {
+        '.=': '+=',
+        '??=': '=',
+        '**=': '*=',
+    };
+    const validOperators = new Set(['=', '^=', '&=', '<<=', '>>=', '>>>=', '+=', '-=', '*=', '/=', '%=', '|=', '**=']);
+    if (validOperators.has(operator)) {
+        return operator;
     }
-    return operator;
+    return mapping[operator] || '=';
 }
 
 function createFunctionBody(bodyNode: PhpNode | null | undefined, opts: Record<string, any>) {
@@ -223,7 +241,15 @@ function createFunctionBody(bodyNode: PhpNode | null | undefined, opts: Record<s
 }
 
 function createImportExpression(node: PhpNode, opts: Record<string, any>) {
-    const target = visit(node.target, opts) as UAST.Literal;
+    const targetNode = visit(node.target, opts);
+    let target: UAST.Literal;
+    if (UAST.isLiteral(targetNode)) {
+        target = targetNode;
+    } else {
+        // 动态 include（如 include $dir . '/file.php'），用空字符串占位
+        target = UAST.literal('', 'string');
+        target._meta.dynamicFrom = targetNode;
+    }
     const importExpr = UAST.importExpression(target);
     importExpr._meta.require = Boolean(node.require);
     importExpr._meta.once = Boolean(node.once);
@@ -344,7 +370,15 @@ function createLoopExpr(nodes: PhpNode[] | null | undefined, opts: Record<string
 }
 
 function createCatchClause(node: PhpNode, opts: Record<string, any>) {
-    const parameter = createVariableDeclaration(node.variable, null, node.variable || node, opts);
+    let parameter: UAST.VariableDeclaration;
+    if (node.variable) {
+        parameter = createVariableDeclaration(node.variable, null, node.variable, opts);
+    } else {
+        // PHP 8.0 non-capturing catch: catch (Exception) 无变量名
+        const placeholderId = UAST.identifier('_');
+        parameter = UAST.variableDeclaration(placeholderId, null, false, UAST.dynamicType());
+        appendNodeMeta(parameter, node, opts?.sourcefile);
+    }
     parameter._meta.catchTypes = visitList(node.what, opts);
     const clause = UAST.catchClause([parameter], visit(node.body, opts) as UAST.Instruction);
     return appendNodeMeta(clause, node, opts?.sourcefile);
@@ -486,7 +520,8 @@ function createEnumCase(node: PhpNode, opts: Record<string, any>) {
 function createNamespace(node: PhpNode, opts: Record<string, any>) {
     const instructions: Array<UAST.Instruction> = [];
     if (node.name) {
-        const pkg = UAST.packageDeclaration(UAST.identifier(node.name));
+        const nameStr = Array.isArray(node.name) ? node.name.join('\\') : String(node.name);
+        const pkg = UAST.packageDeclaration(UAST.identifier(nameStr));
         instructions.push(appendNodeMeta(pkg, node, opts?.sourcefile));
     }
     instructions.push(...flattenInstructions(visitList(node.children, opts)));
@@ -512,12 +547,17 @@ function visit(node: PhpNode | null | undefined, opts: Record<string, any>): any
             return appendNodeMeta(exprStmt, node, opts?.sourcefile);
         }
         case 'assign': {
+            const rawOp = node.operator || '=';
+            const mappedOp = mapAssignOperator(rawOp);
             const assign = UAST.assignmentExpression(
                 visit(node.left, opts) as UAST.LVal,
                 visit(node.right, opts) as UAST.Expression,
-                (node.operator || '=') as any,
+                mappedOp as any,
                 false
             );
+            if (rawOp !== mappedOp) {
+                assign._meta.rawOperator = rawOp;
+            }
             return appendNodeMeta(assign, node, opts?.sourcefile);
         }
         case 'assignref': {
@@ -532,9 +572,15 @@ function visit(node: PhpNode | null | undefined, opts: Record<string, any>): any
         }
         case 'variable':
         case 'identifier':
+            // 动态变量名 $$var: node.name 是对象而非字符串
+            if (typeof node.name === 'object' && node.name !== null) {
+                return visit(node.name, opts);
+            }
             return appendNodeMeta(UAST.identifier(node.name), node, opts?.sourcefile);
-        case 'name':
-            return appendNodeMeta(UAST.identifier(node.name), node, opts?.sourcefile);
+        case 'name': {
+            const nameStr = Array.isArray(node.name) ? node.name.join('\\') : String(node.name);
+            return appendNodeMeta(UAST.identifier(nameStr), node, opts?.sourcefile);
+        }
         case 'selfreference':
             return appendNodeMeta(UAST.identifier('self'), node, opts?.sourcefile);
         case 'parentreference':
@@ -579,9 +625,14 @@ function visit(node: PhpNode | null | undefined, opts: Record<string, any>): any
             return appendNodeMeta(binary, node, opts?.sourcefile);
         }
         case 'retif': {
+            const testExpr = visit(node.test, opts) as UAST.Expression;
+            // PHP Elvis 运算符 $a ?: $b 省略中间表达式，复用 test 作为 consequent
+            const consequent = node.trueExpr
+                ? visit(node.trueExpr, opts) as UAST.Expression
+                : visit(node.test, opts) as UAST.Expression;
             const conditional = UAST.conditionalExpression(
-                visit(node.test, opts) as UAST.Expression,
-                visit(node.trueExpr, opts) as UAST.Expression,
+                testExpr,
+                consequent,
                 visit(node.falseExpr, opts) as UAST.Expression
             );
             return appendNodeMeta(conditional, node, opts?.sourcefile);
@@ -654,9 +705,11 @@ function visit(node: PhpNode | null | undefined, opts: Record<string, any>): any
             return appendNodeMeta(member, node, opts?.sourcefile);
         }
         case 'offsetlookup': {
+            // $arr[] 数组追加时 node.offset 为 null，用 noop 占位
+            const offsetProperty = node.offset ? visit(node.offset, opts) as UAST.Expression : UAST.noop() as any;
             const member = UAST.memberAccess(
                 visit(node.what, opts) as UAST.Expression,
-                visit(node.offset, opts) as UAST.Expression,
+                offsetProperty,
                 true
             );
             return appendNodeMeta(member, node, opts?.sourcefile);
@@ -692,9 +745,10 @@ function visit(node: PhpNode | null | undefined, opts: Record<string, any>): any
             return appendNodeMeta(block, node, opts?.sourcefile);
         }
         case 'if': {
+            const ifBody = node.body ? visit(node.body, opts) as UAST.Instruction : UAST.scopedStatement([]);
             const ifStmt = UAST.ifStatement(
                 visit(node.test, opts) as UAST.Expression,
-                visit(node.body, opts) as UAST.Instruction,
+                ifBody,
                 visit(node.alternate, opts) as UAST.Instruction | null
             );
             return appendNodeMeta(ifStmt, node, opts?.sourcefile);
@@ -740,37 +794,41 @@ function visit(node: PhpNode | null | undefined, opts: Record<string, any>): any
             return appendNodeMeta(clause, node, opts?.sourcefile);
         }
         case 'for': {
+            const forBody = node.body ? visit(node.body, opts) as UAST.Instruction : UAST.scopedStatement([]);
             const stmt = UAST.forStatement(
                 createLoopInit(node.init, opts) as UAST.Expression | UAST.VariableDeclaration | null,
                 createLoopExpr(node.test, opts) as UAST.Expression | null,
                 createLoopExpr(node.increment, opts) as UAST.Expression | null,
-                visit(node.body, opts) as UAST.Instruction
+                forBody
             );
             return appendNodeMeta(stmt, node, opts?.sourcefile);
         }
         case 'foreach': {
             const key = node.key ? createVariableDeclaration(node.key, null, node.key, opts) : null;
             const value = node.value ? createVariableDeclaration(node.value, null, node.value, opts) : null;
+            const foreachBody = node.body ? visit(node.body, opts) as UAST.Instruction : UAST.scopedStatement([]);
             const stmt = UAST.rangeStatement(
                 key,
                 value,
                 visit(node.source, opts) as UAST.Expression,
-                visit(node.body, opts) as UAST.Instruction
+                foreachBody
             );
             return appendNodeMeta(stmt, node, opts?.sourcefile);
         }
         case 'while': {
+            const whileBody = node.body ? visit(node.body, opts) as UAST.Instruction : UAST.scopedStatement([]);
             const stmt = UAST.whileStatement(
                 visit(node.test, opts) as UAST.Expression,
-                visit(node.body, opts) as UAST.Instruction,
+                whileBody,
                 false
             );
             return appendNodeMeta(stmt, node, opts?.sourcefile);
         }
         case 'do': {
+            const doBody = node.body ? visit(node.body, opts) as UAST.Instruction : UAST.scopedStatement([]);
             const stmt = UAST.whileStatement(
                 visit(node.test, opts) as UAST.Expression,
-                visit(node.body, opts) as UAST.Instruction,
+                doBody,
                 true
             );
             return appendNodeMeta(stmt, node, opts?.sourcefile);
