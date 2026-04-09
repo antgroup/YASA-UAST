@@ -3,7 +3,7 @@ import * as assert from 'assert';
 import * as fs from 'fs';
 import * as path from 'path';
 import fastGlob from 'fast-glob';
-import { parse } from '../src/parser';
+import { init, parse } from '../src/parser';
 
 function getCurrentVersion(): string {
     return process.env.UAST_VERSION || require('../package.json').version;
@@ -52,14 +52,20 @@ function shouldRefresh(): boolean {
 }
 
 if (shouldRefresh()) {
-    refreshUastJson();
-    process.exit(0);
-}
+    init().then(() => {
+        refreshUastJson();
+        process.exit(0);
+    });
+} else {
 
 describe('benchmark for php', () => {
     const baseDir = path.join(__dirname, 'benchmark', 'base');
     const phpFiles = fastGlob.sync('*.php', { cwd: baseDir });
     const currentVersion = getCurrentVersion();
+
+    before(async () => {
+        await init();
+    });
 
     for (const phpFile of phpFiles) {
         it(phpFile, () => {
@@ -75,3 +81,5 @@ describe('benchmark for php', () => {
         });
     }
 });
+
+} // end else (not refresh)
