@@ -41,7 +41,7 @@ function refreshUastJson() {
     for (const file of phpFiles) {
         const fullPath = path.join(baseDir, file);
         const content = fs.readFileSync(fullPath, 'utf8');
-        const ast = parse(content, { sourcefile: fullPath });
+        const ast = parse(content, { sourcefile: file });
         ast.version = currentVersion;
         fs.writeFileSync(`${fullPath}.json`, JSON.stringify(ast, null, 2), 'utf8');
     }
@@ -71,11 +71,11 @@ describe('benchmark for php', () => {
         it(phpFile, () => {
             const fullPath = path.join(baseDir, phpFile);
             const content = fs.readFileSync(fullPath, 'utf8');
-            const actual = parse(content, { sourcefile: fullPath });
+            const actual = parse(content, { sourcefile: phpFile });
             const expected = JSON.parse(fs.readFileSync(`${fullPath}.json`, 'utf8'));
 
-            const actualStr = JSON.stringify(normalizeAst(actual, fullPath, currentVersion), null, 2);
-            const expectedStr = JSON.stringify(normalizeAst(expected, fullPath, currentVersion), null, 2);
+            const actualStr = JSON.stringify(normalizeAst(actual, phpFile, currentVersion), null, 2);
+            const expectedStr = JSON.stringify(normalizeAst(expected, phpFile, currentVersion), null, 2);
 
             assert.strictEqual(actualStr, expectedStr, `UAST mismatch in ${phpFile}`);
         });
