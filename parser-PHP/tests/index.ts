@@ -2,6 +2,7 @@ import 'mocha';
 import * as assert from 'assert';
 import * as fs from 'fs';
 import * as path from 'path';
+// @ts-ignore
 import fastGlob from 'fast-glob';
 import { init, parse } from '../src/parser';
 
@@ -42,6 +43,7 @@ function refreshUastJson() {
         const fullPath = path.join(baseDir, file);
         const content = fs.readFileSync(fullPath, 'utf8');
         const ast = parse(content, { sourcefile: file });
+        // @ts-ignore
         ast.version = currentVersion;
         fs.writeFileSync(`${fullPath}.json`, JSON.stringify(ast, null, 2), 'utf8');
     }
