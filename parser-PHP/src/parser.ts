@@ -180,6 +180,10 @@ function createFunctionLike(node: SyntaxNode, opts: Record<string, any>): any {
         }
     }
     const fdef = UAST.functionDefinition(id, parameters, UAST.dynamicType(), body, modifiers);
+    // __construct → 标记为构造函数，引擎 scope.ts / initializer.ts 依赖此标志定位 _CTOR_
+    if (id?.name === '__construct') {
+        fdef._meta.isConstructor = true;
+    }
     return appendNodeMeta(fdef, node, sourcefile);
 }
 
@@ -252,6 +256,10 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
             // $variable -> 'variable'（variable_name 的 namedChild(0) 是 name 节点）
             const nameNode = node.namedChildren[0];
             const name = nameNode ? nameNode.text : node.text.replace(/^\$/, '');
+            // $this → ThisExpression，引擎 processThisExpression 返回类实例引用
+            if (name === 'this') {
+                return appendNodeMeta(UAST.thisExpression(), node, sourcefile);
+            }
             return appendNodeMeta(UAST.identifier(name), node, sourcefile);
         }
 
@@ -470,7 +478,8 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
 
         case 'object_creation_expression': {
             const className = visit(node.namedChildren[0], opts) as UAST.Expression;
-            const argsNode = node.childForFieldName('arguments');
+            // tree-sitter PHP 的 arguments 不是 field，而是类型为 'arguments' 的 namedChild
+            const argsNode = node.namedChildren.find((c) => c.type === 'arguments');
             const args = argsNode ? visitList(argsNode.namedChildren, opts) as Array<UAST.Expression> : [];
             const expr = UAST.newExpression(className, args);
             return appendNodeMeta(expr, node, sourcefile);
