@@ -374,6 +374,35 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
         }
 
         case 'heredoc': {
+            // heredoc 带变量插值时，heredoc_body 含 string_content 和 variable_name 等节点
+            const bodyNode = node.namedChildren.find((c) => c.type === 'heredoc_body');
+            const hasInterpolation = bodyNode && bodyNode.namedChildren.some(
+                (c) => c.type !== 'string_content'
+            );
+            if (bodyNode && hasInterpolation) {
+                // 与 encapsed_string 相同逻辑：遍历 namedChildren，拆成 binary concat
+                const parts = bodyNode.namedChildren.map((child) => {
+                    if (child.type === 'string_content') {
+                        return appendNodeMeta(UAST.literal(child.text, 'string'), child, sourcefile);
+                    }
+                    return visit(child, opts);
+                });
+                if (parts.length === 0) {
+                    const literal = UAST.literal('', 'string');
+                    literal._meta.heredoc = true;
+                    return appendNodeMeta(literal, node, sourcefile);
+                }
+                let expr = parts[0];
+                for (let i = 1; i < parts.length; i++) {
+                    expr = appendNodeMeta(UAST.binaryExpression('+' as any, expr, parts[i]), node, sourcefile);
+                }
+                if (expr && UAST.isNode(expr)) {
+                    expr._meta.heredoc = true;
+                    expr._meta.encapsed = true;
+                }
+                return appendNodeMeta(expr, node, sourcefile);
+            }
+            // 纯文本 heredoc，保持原逻辑
             const content = stripHeredoc(node.text);
             const literal = UAST.literal(content, 'string');
             literal._meta.heredoc = true;
@@ -399,8 +428,23 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
 
         case 'argument': {
             // argument 节点包装了一个表达式 child
-            const child = node.namedChildren[0];
-            return child ? visit(child, opts) : appendNodeMeta(UAST.noop(), node, sourcefile);
+            // 命名参数：argument 有 name field（如 cmd: $val）
+            const argNameNode = node.childForFieldName('name');
+            const child = argNameNode
+                ? node.namedChildren.find((c) => c !== argNameNode)
+                : node.namedChildren[0];
+            const result = child ? visit(child, opts) : appendNodeMeta(UAST.noop(), node, sourcefile);
+            if (argNameNode && result && UAST.isNode(result)) {
+                result._meta.argumentName = argNameNode.text;
+            }
+            return result;
+        }
+
+        case 'variadic_unpacking': {
+            // ...$args → SpreadElement
+            const inner = node.namedChildren[0];
+            const expr = inner ? visit(inner, opts) as UAST.Expression : UAST.noop() as any;
+            return appendNodeMeta(UAST.spreadElement(expr), node, sourcefile);
         }
 
         case 'parenthesized_expression': {
@@ -505,6 +549,21 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
             const args = argsNode ? visitList(argsNode.namedChildren, opts) as Array<UAST.Expression> : [];
             const call = UAST.callExpression(memberCallee, args);
             return appendNodeMeta(call, node, sourcefile);
+        }
+
+        case 'nullsafe_member_call_expression': {
+            // $obj?->method() — 与 member_call_expression 相同但包装为 conditionalExpression(object, call, null)
+            const object = visit(node.childForFieldName('object'), opts) as UAST.Expression;
+            const name = visit(node.childForFieldName('name'), opts) as UAST.Expression;
+            const memberCallee = UAST.memberAccess(object, name, false);
+            memberCallee._meta.nullsafe = true;
+            appendNodeMeta(memberCallee, node, sourcefile);
+            const argsNode = node.childForFieldName('arguments');
+            const args = argsNode ? visitList(argsNode.namedChildren, opts) as Array<UAST.Expression> : [];
+            const call = UAST.callExpression(memberCallee, args);
+            appendNodeMeta(call, node, sourcefile);
+            const expr = UAST.conditionalExpression(object, call, UAST.literal(null, 'null'));
+            return appendNodeMeta(expr, node, sourcefile);
         }
 
         case 'scoped_call_expression': {
