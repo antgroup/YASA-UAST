@@ -146,12 +146,14 @@ function createParameter(paramNode: SyntaxNode, opts: Record<string, any>): any 
     const init = defaultValueNode ? visit(defaultValueNode, opts) as UAST.Expression : null;
     const varDecl = UAST.variableDeclaration(id, init, false, UAST.dynamicType());
     varDecl._meta.variadic = paramNode.type === 'variadic_parameter';
-    // property_promotion_parameter 的 visibility
+    // property_promotion_parameter 的 visibility 和 readonly
     if (paramNode.type === 'property_promotion_parameter') {
         for (const child of paramNode.namedChildren) {
             if (child.type === 'visibility_modifier') {
                 varDecl._meta.visibility = child.text;
-                break;
+            }
+            if (child.type === 'readonly_modifier') {
+                varDecl._meta.readonly = true;
             }
         }
     }
@@ -183,6 +185,34 @@ function createFunctionLike(node: SyntaxNode, opts: Record<string, any>): any {
     // __construct → 标记为构造函数，引擎 scope.ts / initializer.ts 依赖此标志定位 _CTOR_
     if (id?.name === '__construct') {
         fdef._meta.isConstructor = true;
+        // Constructor Promotion: visibility 参数自动生成 $this->param = $param 赋值
+        const promotionStmts: Array<any> = [];
+        for (const param of parameters) {
+            if (param._meta?.visibility) {
+                const paramName = UAST.isVariableDeclaration(param)
+                    ? (param.id as UAST.Identifier).name
+                    : '';
+                if (paramName) {
+                    // $this->paramName = $paramName
+                    const thisExpr = UAST.thisExpression();
+                    const fieldId = UAST.identifier(paramName);
+                    const memberExpr = UAST.memberAccess(thisExpr, fieldId, false);
+                    const valueId = UAST.identifier(paramName);
+                    const assign = UAST.assignmentExpression(memberExpr, valueId, '=', false);
+                    const exprStmt = UAST.expressionStatement(assign);
+                    appendNodeMeta(exprStmt, node, sourcefile);
+                    promotionStmts.push(exprStmt);
+                    // readonly 标记
+                    if (param._meta.readonly) {
+                        param._meta.readonly = true;
+                    }
+                }
+            }
+        }
+        // prepend 到构造函数 body 开头
+        if (promotionStmts.length > 0 && UAST.isScopedStatement(body)) {
+            body.body.unshift(...promotionStmts);
+        }
     }
     return appendNodeMeta(fdef, node, sourcefile);
 }
@@ -196,18 +226,33 @@ function createClassLike(node: SyntaxNode, opts: Record<string, any>, kind?: str
     const body = bodyNode
         ? flattenInstructions(visitList(bodyNode.namedChildren, opts))
         : [];
-    // extends
+    // extends — childForFieldName('base_clause') 在 tree-sitter PHP 返回 NULL，改用 namedChildren 查找
     const supers: Array<UAST.Expression> = [];
-    const baseClause = node.childForFieldName('base_clause');
+    const baseClause = node.namedChildren.find((c) => c.type === 'base_clause');
     if (baseClause) {
         for (const child of baseClause.namedChildren) {
             const superExpr = visit(child, opts);
             if (superExpr) supers.push(superExpr);
         }
     }
+    // trait use → 将 trait 名加入 supers，引擎 resolveClassInheritance 会自动合并 trait 方法
+    if (body) {
+        for (const stmt of body) {
+            if (UAST.isExpressionStatement(stmt)) {
+                const expr = stmt.expression;
+                if (UAST.isCallExpression(expr)
+                    && UAST.isIdentifier(expr.callee)
+                    && expr.callee.name === 'trait_use') {
+                    for (const arg of expr.arguments) {
+                        supers.push(arg);
+                    }
+                }
+            }
+        }
+    }
     const cdef = UAST.classDefinition(id, body, supers);
-    // implements
-    const implementsClause = node.childForFieldName('class_interface_clause');
+    // implements — childForFieldName 同样返回 NULL，改用 namedChildren 查找
+    const implementsClause = node.namedChildren.find((c) => c.type === 'class_interface_clause');
     if (implementsClause) {
         cdef._meta.implements = visitList(implementsClause.namedChildren, opts);
     }
