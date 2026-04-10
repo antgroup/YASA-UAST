@@ -224,6 +224,115 @@ jobs:
 
           echo "✅ Published @ant-yasa/uast-parser-java-js@$VERSION"
 
+  # 3.5 发布 parser-PHP
+  publish_parser_php:
+    needs: [publish_spec, get_version]
+    runs-on: ubuntu-latest
+    environment: release
+    env:
+      VERSION: ${{ needs.get_version.outputs.version }}
+      NPM_TAG: ${{ needs.get_version.outputs.npm_tag }}
+    steps:
+      - name: Validate version
+        run: |
+          echo "🎯 VERSION: '$VERSION'"
+          echo "🎯 NPM_TAG: '$NPM_TAG'"
+          if [ -z "$VERSION" ]; then
+            echo "❌ ERROR: VERSION is empty!"
+            exit 1
+          fi
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org/
+
+      - name: Upgrade npm
+        run: |
+          npm install -g npm@latest
+          echo "npm after upgrade:"
+          npm -v
+          echo "node after upgrade:"
+          node -v
+
+      - name: Check and Publish
+        working-directory: parser-PHP
+        run: |
+          echo "🔍 Publishing @ant-yasa/uast-parser-php"
+          echo "📦 Version: $VERSION"
+          echo "🏷  NPM Tag: $NPM_TAG"
+
+          if npm view @ant-yasa/uast-parser-php@$VERSION version > /dev/null 2>&1; then
+            echo "✅ Version $VERSION already published, skipping."
+            exit 0
+          fi
+
+          # 等待 uast-spec 发布完成
+          echo "⏳ Waiting for @ant-yasa/uast-spec@$VERSION to be available..."
+          for i in {1..30}; do
+            if npm view @ant-yasa/uast-spec@$VERSION version > /dev/null 2>&1; then
+              echo "✅ @ant-yasa/uast-spec@$VERSION is available."
+              break
+            else
+              echo "⏳ Attempt $i: @ant-yasa/uast-spec@$VERSION not found, retrying in 10s..."
+              sleep 10
+            fi
+          done
+
+          if ! npm view @ant-yasa/uast-spec@$VERSION version > /dev/null 2>&1; then
+            echo "❌ Failed to find @ant-yasa/uast-spec@$VERSION after waiting."
+            exit 1
+          fi
+          echo "📦 Installing dependencies for @ant-yasa/uast-parser-php..."
+          npm install
+
+          echo "📥 Installing @ant-yasa/uast-spec@$VERSION..."
+          npm install @ant-yasa/uast-spec@$VERSION --no-save
+
+          echo "🏗️  Running build..."
+          npm run build
+
+          # === 校验 dist/src/index.js 是否存在 ===
+          echo "🔍 Checking for dist/src/index.js..."
+          if [ ! -f dist/src/index.js ]; then
+            echo "❌ dist/src/index.js NOT found!"
+            echo "💡 Check your build script, output path, or tsconfig.json"
+            ls -R dist/ || echo "dist/ is empty or missing"
+            exit 1
+          else
+            echo "✅ dist/src/index.js exists"
+          fi
+
+          # === 校验 package.json 的 main 字段 ===
+          MAIN_FIELD=$(node -p "require('./package.json').main")
+          echo "🔗 package.json 'main' field: $MAIN_FIELD"
+          if [ "$MAIN_FIELD" != "dist/src/index.js" ]; then
+            echo "⚠️ Warning: 'main' field is not 'dist/src/index.js' — may cause runtime issues!"
+          fi
+
+          # === dry-run 打包，检查内容 ===
+          echo "📦 Running 'npm pack --dry-run' to verify package contents..."
+          DRY_RUN_OUTPUT=$(npm pack --dry-run 2>&1)
+          echo "$DRY_RUN_OUTPUT"
+
+          if echo "$DRY_RUN_OUTPUT" | grep -q "dist/src/index.js"; then
+            echo "✅ dist/src/index.js is included in the npm package."
+          else
+            echo "❌ dist/src/index.js is NOT included in the npm package!"
+            echo "💡 Check .npmignore, .gitignore, or files field in package.json"
+            exit 1
+          fi
+
+          # === 设置版本号 ===
+          echo "🔄 Setting version in package.json..."
+          npm version $VERSION --no-git-tag-version
+          npm publish --tag $NPM_TAG
+
+          echo "✅ Published @ant-yasa/uast-parser-php@$VERSION"
+
   # 4. 构建 Go 可执行文件（多平台）
   build_go:
     needs: publish_parser_js

@@ -16,24 +16,7 @@
               "line": 4,
               "column": 14
             },
-            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
-          },
-          "origin": {
-            "kind": "identifier",
-            "loc": {
-              "source": null,
-              "start": {
-                "line": 4,
-                "column": 6,
-                "offset": 28
-              },
-              "end": {
-                "line": 4,
-                "column": 13,
-                "offset": 35
-              }
-            },
-            "name": "Service"
+            "sourcefile": "modern-php.php"
           }
         },
         "loc": {
@@ -45,7 +28,7 @@
             "line": 4,
             "column": 14
           },
-          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
+          "sourcefile": "modern-php.php"
         }
       },
       "body": [
@@ -72,25 +55,7 @@
                       "line": 6,
                       "column": 20
                     },
-                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
-                  },
-                  "origin": {
-                    "kind": "name",
-                    "loc": {
-                      "source": null,
-                      "start": {
-                        "line": 6,
-                        "column": 8,
-                        "offset": 46
-                      },
-                      "end": {
-                        "line": 6,
-                        "column": 19,
-                        "offset": 57
-                      }
-                    },
-                    "name": "LoggerTrait",
-                    "resolution": "uqn"
+                    "sourcefile": "modern-php.php"
                   }
                 },
                 "loc": {
@@ -102,7 +67,7 @@
                     "line": 6,
                     "column": 20
                   },
-                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
+                  "sourcefile": "modern-php.php"
                 }
               },
               {
@@ -118,25 +83,7 @@
                       "line": 6,
                       "column": 32
                     },
-                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
-                  },
-                  "origin": {
-                    "kind": "name",
-                    "loc": {
-                      "source": null,
-                      "start": {
-                        "line": 6,
-                        "column": 21,
-                        "offset": 59
-                      },
-                      "end": {
-                        "line": 6,
-                        "column": 31,
-                        "offset": 69
-                      }
-                    },
-                    "name": "CacheTrait",
-                    "resolution": "uqn"
+                    "sourcefile": "modern-php.php"
                   }
                 },
                 "loc": {
@@ -148,7 +95,7 @@
                     "line": 6,
                     "column": 32
                   },
-                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
+                  "sourcefile": "modern-php.php"
                 }
               }
             ],
@@ -163,62 +110,7 @@
                   "line": 6,
                   "column": 33
                 },
-                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
-              },
-              "origin": {
-                "kind": "traituse",
-                "loc": {
-                  "source": null,
-                  "start": {
-                    "line": 6,
-                    "column": 4,
-                    "offset": 42
-                  },
-                  "end": {
-                    "line": 6,
-                    "column": 32,
-                    "offset": 70
-                  }
-                },
-                "traits": [
-                  {
-                    "kind": "name",
-                    "loc": {
-                      "source": null,
-                      "start": {
-                        "line": 6,
-                        "column": 8,
-                        "offset": 46
-                      },
-                      "end": {
-                        "line": 6,
-                        "column": 19,
-                        "offset": 57
-                      }
-                    },
-                    "name": "LoggerTrait",
-                    "resolution": "uqn"
-                  },
-                  {
-                    "kind": "name",
-                    "loc": {
-                      "source": null,
-                      "start": {
-                        "line": 6,
-                        "column": 21,
-                        "offset": 59
-                      },
-                      "end": {
-                        "line": 6,
-                        "column": 31,
-                        "offset": 69
-                      }
-                    },
-                    "name": "CacheTrait",
-                    "resolution": "uqn"
-                  }
-                ],
-                "adaptations": null
+                "sourcefile": "modern-php.php"
               }
             },
             "loc": {
@@ -230,7 +122,7 @@
                 "line": 6,
                 "column": 33
               },
-              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
+              "sourcefile": "modern-php.php"
             }
           },
           "_meta": {
@@ -243,64 +135,8 @@
                 "line": 6,
                 "column": 33
               },
-              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
-            },
-            "origin": {
-              "kind": "traituse",
-              "loc": {
-                "source": null,
-                "start": {
-                  "line": 6,
-                  "column": 4,
-                  "offset": 42
-                },
-                "end": {
-                  "line": 6,
-                  "column": 32,
-                  "offset": 70
-                }
-              },
-              "traits": [
-                {
-                  "kind": "name",
-                  "loc": {
-                    "source": null,
-                    "start": {
-                      "line": 6,
-                      "column": 8,
-                      "offset": 46
-                    },
-                    "end": {
-                      "line": 6,
-                      "column": 19,
-                      "offset": 57
-                    }
-                  },
-                  "name": "LoggerTrait",
-                  "resolution": "uqn"
-                },
-                {
-                  "kind": "name",
-                  "loc": {
-                    "source": null,
-                    "start": {
-                      "line": 6,
-                      "column": 21,
-                      "offset": 59
-                    },
-                    "end": {
-                      "line": 6,
-                      "column": 31,
-                      "offset": 69
-                    }
-                  },
-                  "name": "CacheTrait",
-                  "resolution": "uqn"
-                }
-              ],
-              "adaptations": null
-            },
-            "adaptations": []
+              "sourcefile": "modern-php.php"
+            }
           },
           "loc": {
             "start": {
@@ -311,7 +147,7 @@
               "line": 6,
               "column": 33
             },
-            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
+            "sourcefile": "modern-php.php"
           }
         },
         {
@@ -329,24 +165,7 @@
                   "line": 9,
                   "column": 24
                 },
-                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
-              },
-              "origin": {
-                "kind": "identifier",
-                "loc": {
-                  "source": null,
-                  "start": {
-                    "line": 9,
-                    "column": 20,
-                    "offset": 118
-                  },
-                  "end": {
-                    "line": 9,
-                    "column": 23,
-                    "offset": 121
-                  }
-                },
-                "name": "run"
+                "sourcefile": "modern-php.php"
               }
             },
             "loc": {
@@ -358,7 +177,7 @@
                 "line": 9,
                 "column": 24
               },
-              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
+              "sourcefile": "modern-php.php"
             }
           },
           "parameters": [
@@ -377,24 +196,7 @@
                       "line": 9,
                       "column": 39
                     },
-                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
-                  },
-                  "origin": {
-                    "kind": "identifier",
-                    "loc": {
-                      "source": null,
-                      "start": {
-                        "line": 9,
-                        "column": 36,
-                        "offset": 134
-                      },
-                      "end": {
-                        "line": 9,
-                        "column": 38,
-                        "offset": 136
-                      }
-                    },
-                    "name": "x"
+                    "sourcefile": "modern-php.php"
                   }
                 },
                 "loc": {
@@ -406,7 +208,7 @@
                     "line": 9,
                     "column": 39
                   },
-                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
+                  "sourcefile": "modern-php.php"
                 }
               },
               "init": null,
@@ -417,69 +219,7 @@
                 "_meta": {}
               },
               "_meta": {
-                "byref": false,
                 "variadic": false,
-                "attributes": [
-                  {
-                    "type": "AttributeGroup",
-                    "attributes": [
-                      {
-                        "name": "Tag",
-                        "args": [
-                          {
-                            "type": "Literal",
-                            "value": "x",
-                            "literalType": "string",
-                            "_meta": {
-                              "loc": {
-                                "start": {
-                                  "line": 9,
-                                  "column": 31
-                                },
-                                "end": {
-                                  "line": 9,
-                                  "column": 34
-                                },
-                                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
-                              },
-                              "origin": {
-                                "kind": "string",
-                                "loc": {
-                                  "source": null,
-                                  "start": {
-                                    "line": 9,
-                                    "column": 30,
-                                    "offset": 128
-                                  },
-                                  "end": {
-                                    "line": 9,
-                                    "column": 33,
-                                    "offset": 131
-                                  }
-                                },
-                                "value": "x",
-                                "raw": "'x'",
-                                "unicode": false,
-                                "isDoubleQuote": false
-                              }
-                            },
-                            "loc": {
-                              "start": {
-                                "line": 9,
-                                "column": 31
-                              },
-                              "end": {
-                                "line": 9,
-                                "column": 34
-                              },
-                              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
-                            }
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
                 "loc": {
                   "start": {
                     "line": 9,
@@ -489,106 +229,7 @@
                     "line": 9,
                     "column": 39
                   },
-                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
-                },
-                "origin": {
-                  "kind": "parameter",
-                  "loc": {
-                    "source": null,
-                    "start": {
-                      "line": 9,
-                      "column": 24,
-                      "offset": 122
-                    },
-                    "end": {
-                      "line": 9,
-                      "column": 38,
-                      "offset": 136
-                    }
-                  },
-                  "name": {
-                    "kind": "identifier",
-                    "loc": {
-                      "source": null,
-                      "start": {
-                        "line": 9,
-                        "column": 36,
-                        "offset": 134
-                      },
-                      "end": {
-                        "line": 9,
-                        "column": 38,
-                        "offset": 136
-                      }
-                    },
-                    "name": "x"
-                  },
-                  "value": null,
-                  "type": null,
-                  "byref": false,
-                  "variadic": false,
-                  "readonly": false,
-                  "nullable": false,
-                  "flags": 0,
-                  "attrGroups": [
-                    {
-                      "kind": "attrgroup",
-                      "loc": {
-                        "source": null,
-                        "start": {
-                          "line": 9,
-                          "column": 24,
-                          "offset": 122
-                        },
-                        "end": {
-                          "line": 9,
-                          "column": 24,
-                          "offset": 122
-                        }
-                      },
-                      "attrs": [
-                        {
-                          "kind": "attribute",
-                          "loc": {
-                            "source": null,
-                            "start": {
-                              "line": 9,
-                              "column": 34,
-                              "offset": 132
-                            },
-                            "end": {
-                              "line": 9,
-                              "column": 34,
-                              "offset": 132
-                            }
-                          },
-                          "name": "Tag",
-                          "args": [
-                            {
-                              "kind": "string",
-                              "loc": {
-                                "source": null,
-                                "start": {
-                                  "line": 9,
-                                  "column": 30,
-                                  "offset": 128
-                                },
-                                "end": {
-                                  "line": 9,
-                                  "column": 33,
-                                  "offset": 131
-                                }
-                              },
-                              "value": "x",
-                              "raw": "'x'",
-                              "unicode": false,
-                              "isDoubleQuote": false
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
+                  "sourcefile": "modern-php.php"
                 }
               },
               "loc": {
@@ -600,7 +241,7 @@
                   "line": 9,
                   "column": 39
                 },
-                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
+                "sourcefile": "modern-php.php"
               }
             }
           ],
@@ -629,25 +270,7 @@
                           "line": 11,
                           "column": 19
                         },
-                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
-                      },
-                      "origin": {
-                        "kind": "name",
-                        "loc": {
-                          "source": null,
-                          "start": {
-                            "line": 11,
-                            "column": 15,
-                            "offset": 159
-                          },
-                          "end": {
-                            "line": 11,
-                            "column": 18,
-                            "offset": 162
-                          }
-                        },
-                        "name": "foo",
-                        "resolution": "uqn"
+                        "sourcefile": "modern-php.php"
                       }
                     },
                     "loc": {
@@ -659,102 +282,64 @@
                         "line": 11,
                         "column": 19
                       },
-                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
+                      "sourcefile": "modern-php.php"
                     }
                   },
                   "arguments": [
                     {
                       "type": "Identifier",
-                      "name": "x",
+                      "name": "name",
                       "_meta": {
                         "loc": {
                           "start": {
                             "line": 11,
-                            "column": 26
+                            "column": 20
                           },
                           "end": {
                             "line": 11,
-                            "column": 28
+                            "column": 24
                           },
-                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
-                        },
-                        "origin": {
-                          "kind": "variable",
-                          "loc": {
-                            "source": null,
-                            "start": {
-                              "line": 11,
-                              "column": 25,
-                              "offset": 169
-                            },
-                            "end": {
-                              "line": 11,
-                              "column": 27,
-                              "offset": 171
-                            }
-                          },
-                          "name": "x",
-                          "curly": false
-                        },
-                        "argName": "name"
+                          "sourcefile": "modern-php.php"
+                        }
                       },
                       "loc": {
                         "start": {
                           "line": 11,
-                          "column": 26
+                          "column": 20
                         },
                         "end": {
                           "line": 11,
-                          "column": 28
+                          "column": 24
                         },
-                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
+                        "sourcefile": "modern-php.php"
                       }
                     },
                     {
-                      "type": "Literal",
-                      "value": 1,
-                      "literalType": "number",
+                      "type": "Identifier",
+                      "name": "count",
                       "_meta": {
                         "loc": {
                           "start": {
                             "line": 11,
-                            "column": 37
+                            "column": 30
                           },
                           "end": {
                             "line": 11,
-                            "column": 38
+                            "column": 35
                           },
-                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
-                        },
-                        "origin": {
-                          "kind": "number",
-                          "loc": {
-                            "source": null,
-                            "start": {
-                              "line": 11,
-                              "column": 36,
-                              "offset": 180
-                            },
-                            "end": {
-                              "line": 11,
-                              "column": 37,
-                              "offset": 181
-                            }
-                          },
-                          "value": "1"
-                        },
-                        "argName": "count"
+                          "sourcefile": "modern-php.php"
+                        }
                       },
                       "loc": {
                         "start": {
                           "line": 11,
-                          "column": 37
+                          "column": 30
                         },
                         "end": {
                           "line": 11,
-                          "column": 38
+                          "column": 35
                         },
-                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
+                        "sourcefile": "modern-php.php"
                       }
                     }
                   ],
@@ -768,112 +353,7 @@
                         "line": 11,
                         "column": 39
                       },
-                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
-                    },
-                    "origin": {
-                      "kind": "call",
-                      "loc": {
-                        "source": null,
-                        "start": {
-                          "line": 11,
-                          "column": 15,
-                          "offset": 159
-                        },
-                        "end": {
-                          "line": 11,
-                          "column": 38,
-                          "offset": 182
-                        }
-                      },
-                      "what": {
-                        "kind": "name",
-                        "loc": {
-                          "source": null,
-                          "start": {
-                            "line": 11,
-                            "column": 15,
-                            "offset": 159
-                          },
-                          "end": {
-                            "line": 11,
-                            "column": 18,
-                            "offset": 162
-                          }
-                        },
-                        "name": "foo",
-                        "resolution": "uqn"
-                      },
-                      "arguments": [
-                        {
-                          "kind": "namedargument",
-                          "loc": {
-                            "source": null,
-                            "start": {
-                              "line": 11,
-                              "column": 19,
-                              "offset": 163
-                            },
-                            "end": {
-                              "line": 11,
-                              "column": 27,
-                              "offset": 171
-                            }
-                          },
-                          "name": "name",
-                          "value": {
-                            "kind": "variable",
-                            "loc": {
-                              "source": null,
-                              "start": {
-                                "line": 11,
-                                "column": 25,
-                                "offset": 169
-                              },
-                              "end": {
-                                "line": 11,
-                                "column": 27,
-                                "offset": 171
-                              }
-                            },
-                            "name": "x",
-                            "curly": false
-                          }
-                        },
-                        {
-                          "kind": "namedargument",
-                          "loc": {
-                            "source": null,
-                            "start": {
-                              "line": 11,
-                              "column": 29,
-                              "offset": 173
-                            },
-                            "end": {
-                              "line": 11,
-                              "column": 37,
-                              "offset": 181
-                            }
-                          },
-                          "name": "count",
-                          "value": {
-                            "kind": "number",
-                            "loc": {
-                              "source": null,
-                              "start": {
-                                "line": 11,
-                                "column": 36,
-                                "offset": 180
-                              },
-                              "end": {
-                                "line": 11,
-                                "column": 37,
-                                "offset": 181
-                              }
-                            },
-                            "value": "1"
-                          }
-                        }
-                      ]
+                      "sourcefile": "modern-php.php"
                     }
                   },
                   "loc": {
@@ -885,7 +365,7 @@
                       "line": 11,
                       "column": 39
                     },
-                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
+                    "sourcefile": "modern-php.php"
                   }
                 },
                 "isYield": false,
@@ -899,128 +379,7 @@
                       "line": 11,
                       "column": 40
                     },
-                    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
-                  },
-                  "origin": {
-                    "kind": "return",
-                    "loc": {
-                      "source": null,
-                      "start": {
-                        "line": 11,
-                        "column": 8,
-                        "offset": 152
-                      },
-                      "end": {
-                        "line": 11,
-                        "column": 39,
-                        "offset": 183
-                      }
-                    },
-                    "expr": {
-                      "kind": "call",
-                      "loc": {
-                        "source": null,
-                        "start": {
-                          "line": 11,
-                          "column": 15,
-                          "offset": 159
-                        },
-                        "end": {
-                          "line": 11,
-                          "column": 38,
-                          "offset": 182
-                        }
-                      },
-                      "what": {
-                        "kind": "name",
-                        "loc": {
-                          "source": null,
-                          "start": {
-                            "line": 11,
-                            "column": 15,
-                            "offset": 159
-                          },
-                          "end": {
-                            "line": 11,
-                            "column": 18,
-                            "offset": 162
-                          }
-                        },
-                        "name": "foo",
-                        "resolution": "uqn"
-                      },
-                      "arguments": [
-                        {
-                          "kind": "namedargument",
-                          "loc": {
-                            "source": null,
-                            "start": {
-                              "line": 11,
-                              "column": 19,
-                              "offset": 163
-                            },
-                            "end": {
-                              "line": 11,
-                              "column": 27,
-                              "offset": 171
-                            }
-                          },
-                          "name": "name",
-                          "value": {
-                            "kind": "variable",
-                            "loc": {
-                              "source": null,
-                              "start": {
-                                "line": 11,
-                                "column": 25,
-                                "offset": 169
-                              },
-                              "end": {
-                                "line": 11,
-                                "column": 27,
-                                "offset": 171
-                              }
-                            },
-                            "name": "x",
-                            "curly": false
-                          }
-                        },
-                        {
-                          "kind": "namedargument",
-                          "loc": {
-                            "source": null,
-                            "start": {
-                              "line": 11,
-                              "column": 29,
-                              "offset": 173
-                            },
-                            "end": {
-                              "line": 11,
-                              "column": 37,
-                              "offset": 181
-                            }
-                          },
-                          "name": "count",
-                          "value": {
-                            "kind": "number",
-                            "loc": {
-                              "source": null,
-                              "start": {
-                                "line": 11,
-                                "column": 36,
-                                "offset": 180
-                              },
-                              "end": {
-                                "line": 11,
-                                "column": 37,
-                                "offset": 181
-                              }
-                            },
-                            "value": "1"
-                          }
-                        }
-                      ]
-                    }
+                    "sourcefile": "modern-php.php"
                   }
                 },
                 "loc": {
@@ -1032,7 +391,7 @@
                     "line": 11,
                     "column": 40
                   },
-                  "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
+                  "sourcefile": "modern-php.php"
                 }
               }
             ],
@@ -1047,146 +406,7 @@
                   "line": 12,
                   "column": 6
                 },
-                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
-              },
-              "origin": {
-                "kind": "block",
-                "loc": {
-                  "source": null,
-                  "start": {
-                    "line": 10,
-                    "column": 4,
-                    "offset": 142
-                  },
-                  "end": {
-                    "line": 12,
-                    "column": 5,
-                    "offset": 189
-                  }
-                },
-                "children": [
-                  {
-                    "kind": "return",
-                    "loc": {
-                      "source": null,
-                      "start": {
-                        "line": 11,
-                        "column": 8,
-                        "offset": 152
-                      },
-                      "end": {
-                        "line": 11,
-                        "column": 39,
-                        "offset": 183
-                      }
-                    },
-                    "expr": {
-                      "kind": "call",
-                      "loc": {
-                        "source": null,
-                        "start": {
-                          "line": 11,
-                          "column": 15,
-                          "offset": 159
-                        },
-                        "end": {
-                          "line": 11,
-                          "column": 38,
-                          "offset": 182
-                        }
-                      },
-                      "what": {
-                        "kind": "name",
-                        "loc": {
-                          "source": null,
-                          "start": {
-                            "line": 11,
-                            "column": 15,
-                            "offset": 159
-                          },
-                          "end": {
-                            "line": 11,
-                            "column": 18,
-                            "offset": 162
-                          }
-                        },
-                        "name": "foo",
-                        "resolution": "uqn"
-                      },
-                      "arguments": [
-                        {
-                          "kind": "namedargument",
-                          "loc": {
-                            "source": null,
-                            "start": {
-                              "line": 11,
-                              "column": 19,
-                              "offset": 163
-                            },
-                            "end": {
-                              "line": 11,
-                              "column": 27,
-                              "offset": 171
-                            }
-                          },
-                          "name": "name",
-                          "value": {
-                            "kind": "variable",
-                            "loc": {
-                              "source": null,
-                              "start": {
-                                "line": 11,
-                                "column": 25,
-                                "offset": 169
-                              },
-                              "end": {
-                                "line": 11,
-                                "column": 27,
-                                "offset": 171
-                              }
-                            },
-                            "name": "x",
-                            "curly": false
-                          }
-                        },
-                        {
-                          "kind": "namedargument",
-                          "loc": {
-                            "source": null,
-                            "start": {
-                              "line": 11,
-                              "column": 29,
-                              "offset": 173
-                            },
-                            "end": {
-                              "line": 11,
-                              "column": 37,
-                              "offset": 181
-                            }
-                          },
-                          "name": "count",
-                          "value": {
-                            "kind": "number",
-                            "loc": {
-                              "source": null,
-                              "start": {
-                                "line": 11,
-                                "column": 36,
-                                "offset": 180
-                              },
-                              "end": {
-                                "line": 11,
-                                "column": 37,
-                                "offset": 181
-                              }
-                            },
-                            "value": "1"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                ]
+                "sourcefile": "modern-php.php"
               }
             },
             "loc": {
@@ -1198,1064 +418,68 @@
                 "line": 12,
                 "column": 6
               },
-              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
+              "sourcefile": "modern-php.php"
             }
           },
           "modifiers": [
             "public"
           ],
           "_meta": {
-            "attributes": [
-              {
-                "type": "AttributeGroup",
-                "attributes": [
-                  {
-                    "name": "Inject",
-                    "args": [
-                      {
-                        "type": "Literal",
-                        "value": "db",
-                        "literalType": "string",
-                        "_meta": {
-                          "loc": {
-                            "start": {
-                              "line": 8,
-                              "column": 20
-                            },
-                            "end": {
-                              "line": 8,
-                              "column": 24
-                            },
-                            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
-                          },
-                          "origin": {
-                            "kind": "string",
-                            "loc": {
-                              "source": null,
-                              "start": {
-                                "line": 8,
-                                "column": 19,
-                                "offset": 91
-                              },
-                              "end": {
-                                "line": 8,
-                                "column": 23,
-                                "offset": 95
-                              }
-                            },
-                            "value": "db",
-                            "raw": "'db'",
-                            "unicode": false,
-                            "isDoubleQuote": false
-                          },
-                          "argName": "name"
-                        },
-                        "loc": {
-                          "start": {
-                            "line": 8,
-                            "column": 20
-                          },
-                          "end": {
-                            "line": 8,
-                            "column": 24
-                          },
-                          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
-                        }
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
             "loc": {
               "start": {
-                "line": 9,
+                "line": 8,
                 "column": 5
               },
               "end": {
                 "line": 12,
                 "column": 6
               },
-              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
-            },
-            "origin": {
-              "kind": "method",
-              "loc": {
-                "source": null,
-                "start": {
-                  "line": 9,
-                  "column": 4,
-                  "offset": 102
-                },
-                "end": {
-                  "line": 12,
-                  "column": 5,
-                  "offset": 189
-                }
-              },
-              "name": {
-                "kind": "identifier",
-                "loc": {
-                  "source": null,
-                  "start": {
-                    "line": 9,
-                    "column": 20,
-                    "offset": 118
-                  },
-                  "end": {
-                    "line": 9,
-                    "column": 23,
-                    "offset": 121
-                  }
-                },
-                "name": "run"
-              },
-              "arguments": [
-                {
-                  "kind": "parameter",
-                  "loc": {
-                    "source": null,
-                    "start": {
-                      "line": 9,
-                      "column": 24,
-                      "offset": 122
-                    },
-                    "end": {
-                      "line": 9,
-                      "column": 38,
-                      "offset": 136
-                    }
-                  },
-                  "name": {
-                    "kind": "identifier",
-                    "loc": {
-                      "source": null,
-                      "start": {
-                        "line": 9,
-                        "column": 36,
-                        "offset": 134
-                      },
-                      "end": {
-                        "line": 9,
-                        "column": 38,
-                        "offset": 136
-                      }
-                    },
-                    "name": "x"
-                  },
-                  "value": null,
-                  "type": null,
-                  "byref": false,
-                  "variadic": false,
-                  "readonly": false,
-                  "nullable": false,
-                  "flags": 0,
-                  "attrGroups": [
-                    {
-                      "kind": "attrgroup",
-                      "loc": {
-                        "source": null,
-                        "start": {
-                          "line": 9,
-                          "column": 24,
-                          "offset": 122
-                        },
-                        "end": {
-                          "line": 9,
-                          "column": 24,
-                          "offset": 122
-                        }
-                      },
-                      "attrs": [
-                        {
-                          "kind": "attribute",
-                          "loc": {
-                            "source": null,
-                            "start": {
-                              "line": 9,
-                              "column": 34,
-                              "offset": 132
-                            },
-                            "end": {
-                              "line": 9,
-                              "column": 34,
-                              "offset": 132
-                            }
-                          },
-                          "name": "Tag",
-                          "args": [
-                            {
-                              "kind": "string",
-                              "loc": {
-                                "source": null,
-                                "start": {
-                                  "line": 9,
-                                  "column": 30,
-                                  "offset": 128
-                                },
-                                "end": {
-                                  "line": 9,
-                                  "column": 33,
-                                  "offset": 131
-                                }
-                              },
-                              "value": "x",
-                              "raw": "'x'",
-                              "unicode": false,
-                              "isDoubleQuote": false
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              "byref": false,
-              "type": null,
-              "nullable": false,
-              "body": {
-                "kind": "block",
-                "loc": {
-                  "source": null,
-                  "start": {
-                    "line": 10,
-                    "column": 4,
-                    "offset": 142
-                  },
-                  "end": {
-                    "line": 12,
-                    "column": 5,
-                    "offset": 189
-                  }
-                },
-                "children": [
-                  {
-                    "kind": "return",
-                    "loc": {
-                      "source": null,
-                      "start": {
-                        "line": 11,
-                        "column": 8,
-                        "offset": 152
-                      },
-                      "end": {
-                        "line": 11,
-                        "column": 39,
-                        "offset": 183
-                      }
-                    },
-                    "expr": {
-                      "kind": "call",
-                      "loc": {
-                        "source": null,
-                        "start": {
-                          "line": 11,
-                          "column": 15,
-                          "offset": 159
-                        },
-                        "end": {
-                          "line": 11,
-                          "column": 38,
-                          "offset": 182
-                        }
-                      },
-                      "what": {
-                        "kind": "name",
-                        "loc": {
-                          "source": null,
-                          "start": {
-                            "line": 11,
-                            "column": 15,
-                            "offset": 159
-                          },
-                          "end": {
-                            "line": 11,
-                            "column": 18,
-                            "offset": 162
-                          }
-                        },
-                        "name": "foo",
-                        "resolution": "uqn"
-                      },
-                      "arguments": [
-                        {
-                          "kind": "namedargument",
-                          "loc": {
-                            "source": null,
-                            "start": {
-                              "line": 11,
-                              "column": 19,
-                              "offset": 163
-                            },
-                            "end": {
-                              "line": 11,
-                              "column": 27,
-                              "offset": 171
-                            }
-                          },
-                          "name": "name",
-                          "value": {
-                            "kind": "variable",
-                            "loc": {
-                              "source": null,
-                              "start": {
-                                "line": 11,
-                                "column": 25,
-                                "offset": 169
-                              },
-                              "end": {
-                                "line": 11,
-                                "column": 27,
-                                "offset": 171
-                              }
-                            },
-                            "name": "x",
-                            "curly": false
-                          }
-                        },
-                        {
-                          "kind": "namedargument",
-                          "loc": {
-                            "source": null,
-                            "start": {
-                              "line": 11,
-                              "column": 29,
-                              "offset": 173
-                            },
-                            "end": {
-                              "line": 11,
-                              "column": 37,
-                              "offset": 181
-                            }
-                          },
-                          "name": "count",
-                          "value": {
-                            "kind": "number",
-                            "loc": {
-                              "source": null,
-                              "start": {
-                                "line": 11,
-                                "column": 36,
-                                "offset": 180
-                              },
-                              "end": {
-                                "line": 11,
-                                "column": 37,
-                                "offset": 181
-                              }
-                            },
-                            "value": "1"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                ]
-              },
-              "attrGroups": [
-                {
-                  "kind": "attrgroup",
-                  "loc": {
-                    "source": null,
-                    "start": {
-                      "line": 8,
-                      "column": 4,
-                      "offset": 76
-                    },
-                    "end": {
-                      "line": 6,
-                      "column": 32,
-                      "offset": 70
-                    }
-                  },
-                  "attrs": [
-                    {
-                      "kind": "attribute",
-                      "loc": {
-                        "source": null,
-                        "start": {
-                          "line": 8,
-                          "column": 24,
-                          "offset": 96
-                        },
-                        "end": {
-                          "line": 8,
-                          "column": 24,
-                          "offset": 96
-                        }
-                      },
-                      "name": "Inject",
-                      "args": [
-                        {
-                          "kind": "namedargument",
-                          "loc": {
-                            "source": null,
-                            "start": {
-                              "line": 8,
-                              "column": 13,
-                              "offset": 85
-                            },
-                            "end": {
-                              "line": 8,
-                              "column": 23,
-                              "offset": 95
-                            }
-                          },
-                          "name": "name",
-                          "value": {
-                            "kind": "string",
-                            "loc": {
-                              "source": null,
-                              "start": {
-                                "line": 8,
-                                "column": 19,
-                                "offset": 91
-                              },
-                              "end": {
-                                "line": 8,
-                                "column": 23,
-                                "offset": 95
-                              }
-                            },
-                            "value": "db",
-                            "raw": "'db'",
-                            "unicode": false,
-                            "isDoubleQuote": false
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              "isAbstract": false,
-              "isFinal": false,
-              "isReadonly": false,
-              "visibility": "public",
-              "isStatic": false
+              "sourcefile": "modern-php.php"
             }
           },
           "loc": {
             "start": {
-              "line": 9,
+              "line": 8,
               "column": 5
             },
             "end": {
               "line": 12,
               "column": 6
             },
-            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
+            "sourcefile": "modern-php.php"
           }
         }
       ],
       "supers": [],
       "_meta": {
-        "implements": [],
-        "isAbstract": false,
-        "isFinal": false,
-        "isReadonly": false,
-        "attributes": [
-          {
-            "type": "AttributeGroup",
-            "attributes": [
-              {
-                "name": "Route",
-                "args": [
-                  {
-                    "type": "Literal",
-                    "value": "/a",
-                    "literalType": "string",
-                    "_meta": {
-                      "loc": {
-                        "start": {
-                          "line": 3,
-                          "column": 9
-                        },
-                        "end": {
-                          "line": 3,
-                          "column": 13
-                        },
-                        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
-                      },
-                      "origin": {
-                        "kind": "string",
-                        "loc": {
-                          "source": null,
-                          "start": {
-                            "line": 3,
-                            "column": 8,
-                            "offset": 15
-                          },
-                          "end": {
-                            "line": 3,
-                            "column": 12,
-                            "offset": 19
-                          }
-                        },
-                        "value": "/a",
-                        "raw": "'/a'",
-                        "unicode": false,
-                        "isDoubleQuote": false
-                      }
-                    },
-                    "loc": {
-                      "start": {
-                        "line": 3,
-                        "column": 9
-                      },
-                      "end": {
-                        "line": 3,
-                        "column": 13
-                      },
-                      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
-                    }
-                  }
-                ]
-              }
-            ]
-          }
-        ],
         "loc": {
           "start": {
-            "line": 4,
+            "line": 3,
             "column": 1
           },
           "end": {
             "line": 13,
             "column": 2
           },
-          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
-        },
-        "origin": {
-          "kind": "class",
-          "loc": {
-            "source": null,
-            "start": {
-              "line": 4,
-              "column": 0,
-              "offset": 22
-            },
-            "end": {
-              "line": 13,
-              "column": 1,
-              "offset": 191
-            }
-          },
-          "name": {
-            "kind": "identifier",
-            "loc": {
-              "source": null,
-              "start": {
-                "line": 4,
-                "column": 6,
-                "offset": 28
-              },
-              "end": {
-                "line": 4,
-                "column": 13,
-                "offset": 35
-              }
-            },
-            "name": "Service"
-          },
-          "isAnonymous": false,
-          "extends": null,
-          "implements": null,
-          "body": [
-            {
-              "kind": "traituse",
-              "loc": {
-                "source": null,
-                "start": {
-                  "line": 6,
-                  "column": 4,
-                  "offset": 42
-                },
-                "end": {
-                  "line": 6,
-                  "column": 32,
-                  "offset": 70
-                }
-              },
-              "traits": [
-                {
-                  "kind": "name",
-                  "loc": {
-                    "source": null,
-                    "start": {
-                      "line": 6,
-                      "column": 8,
-                      "offset": 46
-                    },
-                    "end": {
-                      "line": 6,
-                      "column": 19,
-                      "offset": 57
-                    }
-                  },
-                  "name": "LoggerTrait",
-                  "resolution": "uqn"
-                },
-                {
-                  "kind": "name",
-                  "loc": {
-                    "source": null,
-                    "start": {
-                      "line": 6,
-                      "column": 21,
-                      "offset": 59
-                    },
-                    "end": {
-                      "line": 6,
-                      "column": 31,
-                      "offset": 69
-                    }
-                  },
-                  "name": "CacheTrait",
-                  "resolution": "uqn"
-                }
-              ],
-              "adaptations": null
-            },
-            {
-              "kind": "method",
-              "loc": {
-                "source": null,
-                "start": {
-                  "line": 9,
-                  "column": 4,
-                  "offset": 102
-                },
-                "end": {
-                  "line": 12,
-                  "column": 5,
-                  "offset": 189
-                }
-              },
-              "name": {
-                "kind": "identifier",
-                "loc": {
-                  "source": null,
-                  "start": {
-                    "line": 9,
-                    "column": 20,
-                    "offset": 118
-                  },
-                  "end": {
-                    "line": 9,
-                    "column": 23,
-                    "offset": 121
-                  }
-                },
-                "name": "run"
-              },
-              "arguments": [
-                {
-                  "kind": "parameter",
-                  "loc": {
-                    "source": null,
-                    "start": {
-                      "line": 9,
-                      "column": 24,
-                      "offset": 122
-                    },
-                    "end": {
-                      "line": 9,
-                      "column": 38,
-                      "offset": 136
-                    }
-                  },
-                  "name": {
-                    "kind": "identifier",
-                    "loc": {
-                      "source": null,
-                      "start": {
-                        "line": 9,
-                        "column": 36,
-                        "offset": 134
-                      },
-                      "end": {
-                        "line": 9,
-                        "column": 38,
-                        "offset": 136
-                      }
-                    },
-                    "name": "x"
-                  },
-                  "value": null,
-                  "type": null,
-                  "byref": false,
-                  "variadic": false,
-                  "readonly": false,
-                  "nullable": false,
-                  "flags": 0,
-                  "attrGroups": [
-                    {
-                      "kind": "attrgroup",
-                      "loc": {
-                        "source": null,
-                        "start": {
-                          "line": 9,
-                          "column": 24,
-                          "offset": 122
-                        },
-                        "end": {
-                          "line": 9,
-                          "column": 24,
-                          "offset": 122
-                        }
-                      },
-                      "attrs": [
-                        {
-                          "kind": "attribute",
-                          "loc": {
-                            "source": null,
-                            "start": {
-                              "line": 9,
-                              "column": 34,
-                              "offset": 132
-                            },
-                            "end": {
-                              "line": 9,
-                              "column": 34,
-                              "offset": 132
-                            }
-                          },
-                          "name": "Tag",
-                          "args": [
-                            {
-                              "kind": "string",
-                              "loc": {
-                                "source": null,
-                                "start": {
-                                  "line": 9,
-                                  "column": 30,
-                                  "offset": 128
-                                },
-                                "end": {
-                                  "line": 9,
-                                  "column": 33,
-                                  "offset": 131
-                                }
-                              },
-                              "value": "x",
-                              "raw": "'x'",
-                              "unicode": false,
-                              "isDoubleQuote": false
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              "byref": false,
-              "type": null,
-              "nullable": false,
-              "body": {
-                "kind": "block",
-                "loc": {
-                  "source": null,
-                  "start": {
-                    "line": 10,
-                    "column": 4,
-                    "offset": 142
-                  },
-                  "end": {
-                    "line": 12,
-                    "column": 5,
-                    "offset": 189
-                  }
-                },
-                "children": [
-                  {
-                    "kind": "return",
-                    "loc": {
-                      "source": null,
-                      "start": {
-                        "line": 11,
-                        "column": 8,
-                        "offset": 152
-                      },
-                      "end": {
-                        "line": 11,
-                        "column": 39,
-                        "offset": 183
-                      }
-                    },
-                    "expr": {
-                      "kind": "call",
-                      "loc": {
-                        "source": null,
-                        "start": {
-                          "line": 11,
-                          "column": 15,
-                          "offset": 159
-                        },
-                        "end": {
-                          "line": 11,
-                          "column": 38,
-                          "offset": 182
-                        }
-                      },
-                      "what": {
-                        "kind": "name",
-                        "loc": {
-                          "source": null,
-                          "start": {
-                            "line": 11,
-                            "column": 15,
-                            "offset": 159
-                          },
-                          "end": {
-                            "line": 11,
-                            "column": 18,
-                            "offset": 162
-                          }
-                        },
-                        "name": "foo",
-                        "resolution": "uqn"
-                      },
-                      "arguments": [
-                        {
-                          "kind": "namedargument",
-                          "loc": {
-                            "source": null,
-                            "start": {
-                              "line": 11,
-                              "column": 19,
-                              "offset": 163
-                            },
-                            "end": {
-                              "line": 11,
-                              "column": 27,
-                              "offset": 171
-                            }
-                          },
-                          "name": "name",
-                          "value": {
-                            "kind": "variable",
-                            "loc": {
-                              "source": null,
-                              "start": {
-                                "line": 11,
-                                "column": 25,
-                                "offset": 169
-                              },
-                              "end": {
-                                "line": 11,
-                                "column": 27,
-                                "offset": 171
-                              }
-                            },
-                            "name": "x",
-                            "curly": false
-                          }
-                        },
-                        {
-                          "kind": "namedargument",
-                          "loc": {
-                            "source": null,
-                            "start": {
-                              "line": 11,
-                              "column": 29,
-                              "offset": 173
-                            },
-                            "end": {
-                              "line": 11,
-                              "column": 37,
-                              "offset": 181
-                            }
-                          },
-                          "name": "count",
-                          "value": {
-                            "kind": "number",
-                            "loc": {
-                              "source": null,
-                              "start": {
-                                "line": 11,
-                                "column": 36,
-                                "offset": 180
-                              },
-                              "end": {
-                                "line": 11,
-                                "column": 37,
-                                "offset": 181
-                              }
-                            },
-                            "value": "1"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                ]
-              },
-              "attrGroups": [
-                {
-                  "kind": "attrgroup",
-                  "loc": {
-                    "source": null,
-                    "start": {
-                      "line": 8,
-                      "column": 4,
-                      "offset": 76
-                    },
-                    "end": {
-                      "line": 6,
-                      "column": 32,
-                      "offset": 70
-                    }
-                  },
-                  "attrs": [
-                    {
-                      "kind": "attribute",
-                      "loc": {
-                        "source": null,
-                        "start": {
-                          "line": 8,
-                          "column": 24,
-                          "offset": 96
-                        },
-                        "end": {
-                          "line": 8,
-                          "column": 24,
-                          "offset": 96
-                        }
-                      },
-                      "name": "Inject",
-                      "args": [
-                        {
-                          "kind": "namedargument",
-                          "loc": {
-                            "source": null,
-                            "start": {
-                              "line": 8,
-                              "column": 13,
-                              "offset": 85
-                            },
-                            "end": {
-                              "line": 8,
-                              "column": 23,
-                              "offset": 95
-                            }
-                          },
-                          "name": "name",
-                          "value": {
-                            "kind": "string",
-                            "loc": {
-                              "source": null,
-                              "start": {
-                                "line": 8,
-                                "column": 19,
-                                "offset": 91
-                              },
-                              "end": {
-                                "line": 8,
-                                "column": 23,
-                                "offset": 95
-                              }
-                            },
-                            "value": "db",
-                            "raw": "'db'",
-                            "unicode": false,
-                            "isDoubleQuote": false
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              "isAbstract": false,
-              "isFinal": false,
-              "isReadonly": false,
-              "visibility": "public",
-              "isStatic": false
-            }
-          ],
-          "attrGroups": [
-            {
-              "kind": "attrgroup",
-              "loc": {
-                "source": null,
-                "start": {
-                  "line": 3,
-                  "column": 0,
-                  "offset": 7
-                },
-                "end": {
-                  "line": 1,
-                  "column": 0,
-                  "offset": 0
-                }
-              },
-              "attrs": [
-                {
-                  "kind": "attribute",
-                  "loc": {
-                    "source": null,
-                    "start": {
-                      "line": 3,
-                      "column": 13,
-                      "offset": 20
-                    },
-                    "end": {
-                      "line": 3,
-                      "column": 13,
-                      "offset": 20
-                    }
-                  },
-                  "name": "Route",
-                  "args": [
-                    {
-                      "kind": "string",
-                      "loc": {
-                        "source": null,
-                        "start": {
-                          "line": 3,
-                          "column": 8,
-                          "offset": 15
-                        },
-                        "end": {
-                          "line": 3,
-                          "column": 12,
-                          "offset": 19
-                        }
-                      },
-                      "value": "/a",
-                      "raw": "'/a'",
-                      "unicode": false,
-                      "isDoubleQuote": false
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "isAbstract": false,
-          "isFinal": false,
-          "isReadonly": false
+          "sourcefile": "modern-php.php"
         }
       },
       "loc": {
         "start": {
-          "line": 4,
+          "line": 3,
           "column": 1
         },
         "end": {
           "line": 13,
           "column": 2
         },
-        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
+        "sourcefile": "modern-php.php"
       }
     }
   ],
   "language": "php",
   "languageVersion": null,
-  "uri": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php",
+  "uri": "modern-php.php",
   "version": "0.0.0",
   "_meta": {
     "loc": {
@@ -2267,539 +491,7 @@
         "line": 14,
         "column": 1
       },
-      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
-    },
-    "origin": {
-      "kind": "program",
-      "loc": {
-        "source": null,
-        "start": {
-          "line": 1,
-          "column": 0,
-          "offset": 0
-        },
-        "end": {
-          "line": 14,
-          "column": 0,
-          "offset": 192
-        }
-      },
-      "children": [
-        {
-          "kind": "class",
-          "loc": {
-            "source": null,
-            "start": {
-              "line": 4,
-              "column": 0,
-              "offset": 22
-            },
-            "end": {
-              "line": 13,
-              "column": 1,
-              "offset": 191
-            }
-          },
-          "name": {
-            "kind": "identifier",
-            "loc": {
-              "source": null,
-              "start": {
-                "line": 4,
-                "column": 6,
-                "offset": 28
-              },
-              "end": {
-                "line": 4,
-                "column": 13,
-                "offset": 35
-              }
-            },
-            "name": "Service"
-          },
-          "isAnonymous": false,
-          "extends": null,
-          "implements": null,
-          "body": [
-            {
-              "kind": "traituse",
-              "loc": {
-                "source": null,
-                "start": {
-                  "line": 6,
-                  "column": 4,
-                  "offset": 42
-                },
-                "end": {
-                  "line": 6,
-                  "column": 32,
-                  "offset": 70
-                }
-              },
-              "traits": [
-                {
-                  "kind": "name",
-                  "loc": {
-                    "source": null,
-                    "start": {
-                      "line": 6,
-                      "column": 8,
-                      "offset": 46
-                    },
-                    "end": {
-                      "line": 6,
-                      "column": 19,
-                      "offset": 57
-                    }
-                  },
-                  "name": "LoggerTrait",
-                  "resolution": "uqn"
-                },
-                {
-                  "kind": "name",
-                  "loc": {
-                    "source": null,
-                    "start": {
-                      "line": 6,
-                      "column": 21,
-                      "offset": 59
-                    },
-                    "end": {
-                      "line": 6,
-                      "column": 31,
-                      "offset": 69
-                    }
-                  },
-                  "name": "CacheTrait",
-                  "resolution": "uqn"
-                }
-              ],
-              "adaptations": null
-            },
-            {
-              "kind": "method",
-              "loc": {
-                "source": null,
-                "start": {
-                  "line": 9,
-                  "column": 4,
-                  "offset": 102
-                },
-                "end": {
-                  "line": 12,
-                  "column": 5,
-                  "offset": 189
-                }
-              },
-              "name": {
-                "kind": "identifier",
-                "loc": {
-                  "source": null,
-                  "start": {
-                    "line": 9,
-                    "column": 20,
-                    "offset": 118
-                  },
-                  "end": {
-                    "line": 9,
-                    "column": 23,
-                    "offset": 121
-                  }
-                },
-                "name": "run"
-              },
-              "arguments": [
-                {
-                  "kind": "parameter",
-                  "loc": {
-                    "source": null,
-                    "start": {
-                      "line": 9,
-                      "column": 24,
-                      "offset": 122
-                    },
-                    "end": {
-                      "line": 9,
-                      "column": 38,
-                      "offset": 136
-                    }
-                  },
-                  "name": {
-                    "kind": "identifier",
-                    "loc": {
-                      "source": null,
-                      "start": {
-                        "line": 9,
-                        "column": 36,
-                        "offset": 134
-                      },
-                      "end": {
-                        "line": 9,
-                        "column": 38,
-                        "offset": 136
-                      }
-                    },
-                    "name": "x"
-                  },
-                  "value": null,
-                  "type": null,
-                  "byref": false,
-                  "variadic": false,
-                  "readonly": false,
-                  "nullable": false,
-                  "flags": 0,
-                  "attrGroups": [
-                    {
-                      "kind": "attrgroup",
-                      "loc": {
-                        "source": null,
-                        "start": {
-                          "line": 9,
-                          "column": 24,
-                          "offset": 122
-                        },
-                        "end": {
-                          "line": 9,
-                          "column": 24,
-                          "offset": 122
-                        }
-                      },
-                      "attrs": [
-                        {
-                          "kind": "attribute",
-                          "loc": {
-                            "source": null,
-                            "start": {
-                              "line": 9,
-                              "column": 34,
-                              "offset": 132
-                            },
-                            "end": {
-                              "line": 9,
-                              "column": 34,
-                              "offset": 132
-                            }
-                          },
-                          "name": "Tag",
-                          "args": [
-                            {
-                              "kind": "string",
-                              "loc": {
-                                "source": null,
-                                "start": {
-                                  "line": 9,
-                                  "column": 30,
-                                  "offset": 128
-                                },
-                                "end": {
-                                  "line": 9,
-                                  "column": 33,
-                                  "offset": 131
-                                }
-                              },
-                              "value": "x",
-                              "raw": "'x'",
-                              "unicode": false,
-                              "isDoubleQuote": false
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              "byref": false,
-              "type": null,
-              "nullable": false,
-              "body": {
-                "kind": "block",
-                "loc": {
-                  "source": null,
-                  "start": {
-                    "line": 10,
-                    "column": 4,
-                    "offset": 142
-                  },
-                  "end": {
-                    "line": 12,
-                    "column": 5,
-                    "offset": 189
-                  }
-                },
-                "children": [
-                  {
-                    "kind": "return",
-                    "loc": {
-                      "source": null,
-                      "start": {
-                        "line": 11,
-                        "column": 8,
-                        "offset": 152
-                      },
-                      "end": {
-                        "line": 11,
-                        "column": 39,
-                        "offset": 183
-                      }
-                    },
-                    "expr": {
-                      "kind": "call",
-                      "loc": {
-                        "source": null,
-                        "start": {
-                          "line": 11,
-                          "column": 15,
-                          "offset": 159
-                        },
-                        "end": {
-                          "line": 11,
-                          "column": 38,
-                          "offset": 182
-                        }
-                      },
-                      "what": {
-                        "kind": "name",
-                        "loc": {
-                          "source": null,
-                          "start": {
-                            "line": 11,
-                            "column": 15,
-                            "offset": 159
-                          },
-                          "end": {
-                            "line": 11,
-                            "column": 18,
-                            "offset": 162
-                          }
-                        },
-                        "name": "foo",
-                        "resolution": "uqn"
-                      },
-                      "arguments": [
-                        {
-                          "kind": "namedargument",
-                          "loc": {
-                            "source": null,
-                            "start": {
-                              "line": 11,
-                              "column": 19,
-                              "offset": 163
-                            },
-                            "end": {
-                              "line": 11,
-                              "column": 27,
-                              "offset": 171
-                            }
-                          },
-                          "name": "name",
-                          "value": {
-                            "kind": "variable",
-                            "loc": {
-                              "source": null,
-                              "start": {
-                                "line": 11,
-                                "column": 25,
-                                "offset": 169
-                              },
-                              "end": {
-                                "line": 11,
-                                "column": 27,
-                                "offset": 171
-                              }
-                            },
-                            "name": "x",
-                            "curly": false
-                          }
-                        },
-                        {
-                          "kind": "namedargument",
-                          "loc": {
-                            "source": null,
-                            "start": {
-                              "line": 11,
-                              "column": 29,
-                              "offset": 173
-                            },
-                            "end": {
-                              "line": 11,
-                              "column": 37,
-                              "offset": 181
-                            }
-                          },
-                          "name": "count",
-                          "value": {
-                            "kind": "number",
-                            "loc": {
-                              "source": null,
-                              "start": {
-                                "line": 11,
-                                "column": 36,
-                                "offset": 180
-                              },
-                              "end": {
-                                "line": 11,
-                                "column": 37,
-                                "offset": 181
-                              }
-                            },
-                            "value": "1"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                ]
-              },
-              "attrGroups": [
-                {
-                  "kind": "attrgroup",
-                  "loc": {
-                    "source": null,
-                    "start": {
-                      "line": 8,
-                      "column": 4,
-                      "offset": 76
-                    },
-                    "end": {
-                      "line": 6,
-                      "column": 32,
-                      "offset": 70
-                    }
-                  },
-                  "attrs": [
-                    {
-                      "kind": "attribute",
-                      "loc": {
-                        "source": null,
-                        "start": {
-                          "line": 8,
-                          "column": 24,
-                          "offset": 96
-                        },
-                        "end": {
-                          "line": 8,
-                          "column": 24,
-                          "offset": 96
-                        }
-                      },
-                      "name": "Inject",
-                      "args": [
-                        {
-                          "kind": "namedargument",
-                          "loc": {
-                            "source": null,
-                            "start": {
-                              "line": 8,
-                              "column": 13,
-                              "offset": 85
-                            },
-                            "end": {
-                              "line": 8,
-                              "column": 23,
-                              "offset": 95
-                            }
-                          },
-                          "name": "name",
-                          "value": {
-                            "kind": "string",
-                            "loc": {
-                              "source": null,
-                              "start": {
-                                "line": 8,
-                                "column": 19,
-                                "offset": 91
-                              },
-                              "end": {
-                                "line": 8,
-                                "column": 23,
-                                "offset": 95
-                              }
-                            },
-                            "value": "db",
-                            "raw": "'db'",
-                            "unicode": false,
-                            "isDoubleQuote": false
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ],
-              "isAbstract": false,
-              "isFinal": false,
-              "isReadonly": false,
-              "visibility": "public",
-              "isStatic": false
-            }
-          ],
-          "attrGroups": [
-            {
-              "kind": "attrgroup",
-              "loc": {
-                "source": null,
-                "start": {
-                  "line": 3,
-                  "column": 0,
-                  "offset": 7
-                },
-                "end": {
-                  "line": 1,
-                  "column": 0,
-                  "offset": 0
-                }
-              },
-              "attrs": [
-                {
-                  "kind": "attribute",
-                  "loc": {
-                    "source": null,
-                    "start": {
-                      "line": 3,
-                      "column": 13,
-                      "offset": 20
-                    },
-                    "end": {
-                      "line": 3,
-                      "column": 13,
-                      "offset": 20
-                    }
-                  },
-                  "name": "Route",
-                  "args": [
-                    {
-                      "kind": "string",
-                      "loc": {
-                        "source": null,
-                        "start": {
-                          "line": 3,
-                          "column": 8,
-                          "offset": 15
-                        },
-                        "end": {
-                          "line": 3,
-                          "column": 12,
-                          "offset": 19
-                        }
-                      },
-                      "value": "/a",
-                      "raw": "'/a'",
-                      "unicode": false,
-                      "isDoubleQuote": false
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "isAbstract": false,
-          "isFinal": false,
-          "isReadonly": false
-        }
-      ],
-      "errors": [],
-      "comments": []
+      "sourcefile": "modern-php.php"
     }
   },
   "loc": {
@@ -2811,6 +503,6 @@
       "line": 14,
       "column": 1
     },
-    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/modern-php.php"
+    "sourcefile": "modern-php.php"
   }
 }

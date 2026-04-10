@@ -18,25 +18,7 @@
                 "line": 2,
                 "column": 3
               },
-              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/basic.php"
-            },
-            "origin": {
-              "kind": "variable",
-              "loc": {
-                "source": null,
-                "start": {
-                  "line": 2,
-                  "column": 0,
-                  "offset": 6
-                },
-                "end": {
-                  "line": 2,
-                  "column": 2,
-                  "offset": 8
-                }
-              },
-              "name": "a",
-              "curly": false
+              "sourcefile": "basic.php"
             }
           },
           "loc": {
@@ -48,7 +30,7 @@
               "line": 2,
               "column": 3
             },
-            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/basic.php"
+            "sourcefile": "basic.php"
           }
         },
         "right": {
@@ -66,25 +48,7 @@
                   "line": 2,
                   "column": 11
                 },
-                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/basic.php"
-              },
-              "origin": {
-                "kind": "variable",
-                "loc": {
-                  "source": null,
-                  "start": {
-                    "line": 2,
-                    "column": 5,
-                    "offset": 11
-                  },
-                  "end": {
-                    "line": 2,
-                    "column": 10,
-                    "offset": 16
-                  }
-                },
-                "name": "_GET",
-                "curly": false
+                "sourcefile": "basic.php"
               }
             },
             "loc": {
@@ -96,7 +60,7 @@
                 "line": 2,
                 "column": 11
               },
-              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/basic.php"
+              "sourcefile": "basic.php"
             }
           },
           "property": {
@@ -113,28 +77,9 @@
                   "line": 2,
                   "column": 16
                 },
-                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/basic.php"
+                "sourcefile": "basic.php"
               },
-              "origin": {
-                "kind": "string",
-                "loc": {
-                  "source": null,
-                  "start": {
-                    "line": 2,
-                    "column": 11,
-                    "offset": 17
-                  },
-                  "end": {
-                    "line": 2,
-                    "column": 15,
-                    "offset": 21
-                  }
-                },
-                "value": "id",
-                "raw": "\"id\"",
-                "unicode": false,
-                "isDoubleQuote": true
-              }
+              "encapsed": true
             },
             "loc": {
               "start": {
@@ -145,7 +90,7 @@
                 "line": 2,
                 "column": 16
               },
-              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/basic.php"
+              "sourcefile": "basic.php"
             }
           },
           "computed": true,
@@ -159,61 +104,7 @@
                 "line": 2,
                 "column": 17
               },
-              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/basic.php"
-            },
-            "origin": {
-              "kind": "offsetlookup",
-              "loc": {
-                "source": null,
-                "start": {
-                  "line": 2,
-                  "column": 5,
-                  "offset": 11
-                },
-                "end": {
-                  "line": 2,
-                  "column": 16,
-                  "offset": 22
-                }
-              },
-              "what": {
-                "kind": "variable",
-                "loc": {
-                  "source": null,
-                  "start": {
-                    "line": 2,
-                    "column": 5,
-                    "offset": 11
-                  },
-                  "end": {
-                    "line": 2,
-                    "column": 10,
-                    "offset": 16
-                  }
-                },
-                "name": "_GET",
-                "curly": false
-              },
-              "offset": {
-                "kind": "string",
-                "loc": {
-                  "source": null,
-                  "start": {
-                    "line": 2,
-                    "column": 11,
-                    "offset": 17
-                  },
-                  "end": {
-                    "line": 2,
-                    "column": 15,
-                    "offset": 21
-                  }
-                },
-                "value": "id",
-                "raw": "\"id\"",
-                "unicode": false,
-                "isDoubleQuote": true
-              }
+              "sourcefile": "basic.php"
             }
           },
           "loc": {
@@ -225,7 +116,7 @@
               "line": 2,
               "column": 17
             },
-            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/basic.php"
+            "sourcefile": "basic.php"
           }
         },
         "operator": "=",
@@ -238,98 +129,9 @@
             },
             "end": {
               "line": 2,
-              "column": 18
+              "column": 17
             },
-            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/basic.php"
-          },
-          "origin": {
-            "kind": "assign",
-            "loc": {
-              "source": null,
-              "start": {
-                "line": 2,
-                "column": 0,
-                "offset": 6
-              },
-              "end": {
-                "line": 2,
-                "column": 17,
-                "offset": 23
-              }
-            },
-            "left": {
-              "kind": "variable",
-              "loc": {
-                "source": null,
-                "start": {
-                  "line": 2,
-                  "column": 0,
-                  "offset": 6
-                },
-                "end": {
-                  "line": 2,
-                  "column": 2,
-                  "offset": 8
-                }
-              },
-              "name": "a",
-              "curly": false
-            },
-            "right": {
-              "kind": "offsetlookup",
-              "loc": {
-                "source": null,
-                "start": {
-                  "line": 2,
-                  "column": 5,
-                  "offset": 11
-                },
-                "end": {
-                  "line": 2,
-                  "column": 16,
-                  "offset": 22
-                }
-              },
-              "what": {
-                "kind": "variable",
-                "loc": {
-                  "source": null,
-                  "start": {
-                    "line": 2,
-                    "column": 5,
-                    "offset": 11
-                  },
-                  "end": {
-                    "line": 2,
-                    "column": 10,
-                    "offset": 16
-                  }
-                },
-                "name": "_GET",
-                "curly": false
-              },
-              "offset": {
-                "kind": "string",
-                "loc": {
-                  "source": null,
-                  "start": {
-                    "line": 2,
-                    "column": 11,
-                    "offset": 17
-                  },
-                  "end": {
-                    "line": 2,
-                    "column": 15,
-                    "offset": 21
-                  }
-                },
-                "value": "id",
-                "raw": "\"id\"",
-                "unicode": false,
-                "isDoubleQuote": true
-              }
-            },
-            "operator": "="
+            "sourcefile": "basic.php"
           }
         },
         "loc": {
@@ -339,9 +141,9 @@
           },
           "end": {
             "line": 2,
-            "column": 18
+            "column": 17
           },
-          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/basic.php"
+          "sourcefile": "basic.php"
         }
       },
       "_meta": {
@@ -354,112 +156,7 @@
             "line": 2,
             "column": 18
           },
-          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/basic.php"
-        },
-        "origin": {
-          "kind": "expressionstatement",
-          "loc": {
-            "source": null,
-            "start": {
-              "line": 2,
-              "column": 0,
-              "offset": 6
-            },
-            "end": {
-              "line": 2,
-              "column": 17,
-              "offset": 23
-            }
-          },
-          "expression": {
-            "kind": "assign",
-            "loc": {
-              "source": null,
-              "start": {
-                "line": 2,
-                "column": 0,
-                "offset": 6
-              },
-              "end": {
-                "line": 2,
-                "column": 17,
-                "offset": 23
-              }
-            },
-            "left": {
-              "kind": "variable",
-              "loc": {
-                "source": null,
-                "start": {
-                  "line": 2,
-                  "column": 0,
-                  "offset": 6
-                },
-                "end": {
-                  "line": 2,
-                  "column": 2,
-                  "offset": 8
-                }
-              },
-              "name": "a",
-              "curly": false
-            },
-            "right": {
-              "kind": "offsetlookup",
-              "loc": {
-                "source": null,
-                "start": {
-                  "line": 2,
-                  "column": 5,
-                  "offset": 11
-                },
-                "end": {
-                  "line": 2,
-                  "column": 16,
-                  "offset": 22
-                }
-              },
-              "what": {
-                "kind": "variable",
-                "loc": {
-                  "source": null,
-                  "start": {
-                    "line": 2,
-                    "column": 5,
-                    "offset": 11
-                  },
-                  "end": {
-                    "line": 2,
-                    "column": 10,
-                    "offset": 16
-                  }
-                },
-                "name": "_GET",
-                "curly": false
-              },
-              "offset": {
-                "kind": "string",
-                "loc": {
-                  "source": null,
-                  "start": {
-                    "line": 2,
-                    "column": 11,
-                    "offset": 17
-                  },
-                  "end": {
-                    "line": 2,
-                    "column": 15,
-                    "offset": 21
-                  }
-                },
-                "value": "id",
-                "raw": "\"id\"",
-                "unicode": false,
-                "isDoubleQuote": true
-              }
-            },
-            "operator": "="
-          }
+          "sourcefile": "basic.php"
         }
       },
       "loc": {
@@ -471,7 +168,7 @@
           "line": 2,
           "column": 18
         },
-        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/basic.php"
+        "sourcefile": "basic.php"
       }
     },
     {
@@ -497,25 +194,7 @@
                   "line": 3,
                   "column": 8
                 },
-                "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/basic.php"
-              },
-              "origin": {
-                "kind": "variable",
-                "loc": {
-                  "source": null,
-                  "start": {
-                    "line": 3,
-                    "column": 5,
-                    "offset": 29
-                  },
-                  "end": {
-                    "line": 3,
-                    "column": 7,
-                    "offset": 31
-                  }
-                },
-                "name": "a",
-                "curly": false
+                "sourcefile": "basic.php"
               }
             },
             "loc": {
@@ -527,7 +206,7 @@
                 "line": 3,
                 "column": 8
               },
-              "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/basic.php"
+              "sourcefile": "basic.php"
             }
           }
         ],
@@ -541,44 +220,7 @@
               "line": 3,
               "column": 9
             },
-            "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/basic.php"
-          },
-          "origin": {
-            "kind": "echo",
-            "loc": {
-              "source": null,
-              "start": {
-                "line": 3,
-                "column": 0,
-                "offset": 24
-              },
-              "end": {
-                "line": 3,
-                "column": 8,
-                "offset": 32
-              }
-            },
-            "shortForm": false,
-            "expressions": [
-              {
-                "kind": "variable",
-                "loc": {
-                  "source": null,
-                  "start": {
-                    "line": 3,
-                    "column": 5,
-                    "offset": 29
-                  },
-                  "end": {
-                    "line": 3,
-                    "column": 7,
-                    "offset": 31
-                  }
-                },
-                "name": "a",
-                "curly": false
-              }
-            ]
+            "sourcefile": "basic.php"
           }
         },
         "loc": {
@@ -590,7 +232,7 @@
             "line": 3,
             "column": 9
           },
-          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/basic.php"
+          "sourcefile": "basic.php"
         }
       },
       "_meta": {
@@ -603,44 +245,7 @@
             "line": 3,
             "column": 9
           },
-          "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/basic.php"
-        },
-        "origin": {
-          "kind": "echo",
-          "loc": {
-            "source": null,
-            "start": {
-              "line": 3,
-              "column": 0,
-              "offset": 24
-            },
-            "end": {
-              "line": 3,
-              "column": 8,
-              "offset": 32
-            }
-          },
-          "shortForm": false,
-          "expressions": [
-            {
-              "kind": "variable",
-              "loc": {
-                "source": null,
-                "start": {
-                  "line": 3,
-                  "column": 5,
-                  "offset": 29
-                },
-                "end": {
-                  "line": 3,
-                  "column": 7,
-                  "offset": 31
-                }
-              },
-              "name": "a",
-              "curly": false
-            }
-          ]
+          "sourcefile": "basic.php"
         }
       },
       "loc": {
@@ -652,13 +257,13 @@
           "line": 3,
           "column": 9
         },
-        "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/basic.php"
+        "sourcefile": "basic.php"
       }
     }
   ],
   "language": "php",
   "languageVersion": null,
-  "uri": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/basic.php",
+  "uri": "basic.php",
   "version": "0.0.0",
   "_meta": {
     "loc": {
@@ -670,169 +275,7 @@
         "line": 4,
         "column": 1
       },
-      "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/basic.php"
-    },
-    "origin": {
-      "kind": "program",
-      "loc": {
-        "source": null,
-        "start": {
-          "line": 1,
-          "column": 0,
-          "offset": 0
-        },
-        "end": {
-          "line": 4,
-          "column": 0,
-          "offset": 33
-        }
-      },
-      "children": [
-        {
-          "kind": "expressionstatement",
-          "loc": {
-            "source": null,
-            "start": {
-              "line": 2,
-              "column": 0,
-              "offset": 6
-            },
-            "end": {
-              "line": 2,
-              "column": 17,
-              "offset": 23
-            }
-          },
-          "expression": {
-            "kind": "assign",
-            "loc": {
-              "source": null,
-              "start": {
-                "line": 2,
-                "column": 0,
-                "offset": 6
-              },
-              "end": {
-                "line": 2,
-                "column": 17,
-                "offset": 23
-              }
-            },
-            "left": {
-              "kind": "variable",
-              "loc": {
-                "source": null,
-                "start": {
-                  "line": 2,
-                  "column": 0,
-                  "offset": 6
-                },
-                "end": {
-                  "line": 2,
-                  "column": 2,
-                  "offset": 8
-                }
-              },
-              "name": "a",
-              "curly": false
-            },
-            "right": {
-              "kind": "offsetlookup",
-              "loc": {
-                "source": null,
-                "start": {
-                  "line": 2,
-                  "column": 5,
-                  "offset": 11
-                },
-                "end": {
-                  "line": 2,
-                  "column": 16,
-                  "offset": 22
-                }
-              },
-              "what": {
-                "kind": "variable",
-                "loc": {
-                  "source": null,
-                  "start": {
-                    "line": 2,
-                    "column": 5,
-                    "offset": 11
-                  },
-                  "end": {
-                    "line": 2,
-                    "column": 10,
-                    "offset": 16
-                  }
-                },
-                "name": "_GET",
-                "curly": false
-              },
-              "offset": {
-                "kind": "string",
-                "loc": {
-                  "source": null,
-                  "start": {
-                    "line": 2,
-                    "column": 11,
-                    "offset": 17
-                  },
-                  "end": {
-                    "line": 2,
-                    "column": 15,
-                    "offset": 21
-                  }
-                },
-                "value": "id",
-                "raw": "\"id\"",
-                "unicode": false,
-                "isDoubleQuote": true
-              }
-            },
-            "operator": "="
-          }
-        },
-        {
-          "kind": "echo",
-          "loc": {
-            "source": null,
-            "start": {
-              "line": 3,
-              "column": 0,
-              "offset": 24
-            },
-            "end": {
-              "line": 3,
-              "column": 8,
-              "offset": 32
-            }
-          },
-          "shortForm": false,
-          "expressions": [
-            {
-              "kind": "variable",
-              "loc": {
-                "source": null,
-                "start": {
-                  "line": 3,
-                  "column": 5,
-                  "offset": 29
-                },
-                "end": {
-                  "line": 3,
-                  "column": 7,
-                  "offset": 31
-                }
-              },
-              "name": "a",
-              "curly": false
-            }
-          ]
-        }
-      ],
-      "errors": [],
-      "comments": []
+      "sourcefile": "basic.php"
     }
   },
   "loc": {
@@ -844,6 +287,6 @@
       "line": 4,
       "column": 1
     },
-    "sourcefile": "/Users/chunpeng/Work/repo/YASA-UAST/parser-PHP/tests/benchmark/base/basic.php"
+    "sourcefile": "basic.php"
   }
 }
