@@ -105,6 +105,20 @@ class UASTTransformer(ast.NodeTransformer):
             modifiable=modifiable,
         )
 
+    @staticmethod
+    def _is_dataclass_decorated(node):
+        """检查 ClassDef 是否有 @dataclass 装饰器"""
+        for decorator in node.decorator_list:
+            if isinstance(decorator, ast.Name) and decorator.id == 'dataclass':
+                return True
+            if isinstance(decorator, ast.Call):
+                func = decorator.func
+                if isinstance(func, ast.Name) and func.id == 'dataclass':
+                    return True
+                if isinstance(func, ast.Attribute) and func.attr == 'dataclass':
+                    return True
+        return False
+
     def _range_stmt(self, key=None, value=None, right=None, body=None):
         return UNode.RangeStatement(
             UNode.SourceLocation(),
@@ -507,6 +521,57 @@ class UASTTransformer(ast.NodeTransformer):
             if len(node.body) > 0:
                 body_loc = UNode.SourceLocation(UNode.Position(node.body[0].lineno, min_col),
                                                 UNode.Position(node.body[-1].end_lineno, max_col), self.sourcefile)
+
+            # @dataclass 类：合成 __init__，将字段声明映射为构造参数和 self.x = x 赋值
+            has_init = any(isinstance(s, ast.FunctionDef) and s.name == '__init__' for s in node.body)
+            if not has_init and self._is_dataclass_decorated(node):
+                fields = [(s.target.id, s.annotation, s)
+                          for s in node.body
+                          if isinstance(s, ast.AnnAssign) and isinstance(s.target, ast.Name)]
+                if fields:
+                    init_body = []
+                    init_params = []
+                    # self = this
+                    init_body.append(
+                        self._var_decl(
+                            UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), 'self'),
+                            UNode.ThisExpression(UNode.SourceLocation(), UNode.Meta()),
+                        )
+                    )
+                    for field_name, annotation, ann_node in fields:
+                        # 构造参数
+                        var_type = self._parse_type_annotation(annotation) if annotation else None
+                        default_value = self.packPos(ann_node.value, self.visit(ann_node.value)) if ann_node.value else None
+                        param_id = UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), field_name)
+                        param_id.loc = UNode.SourceLocation(
+                            UNode.Position(ann_node.lineno, ann_node.col_offset + 1),
+                            UNode.Position(ann_node.end_lineno, ann_node.end_col_offset + 1),
+                            self.sourcefile)
+                        param = self._var_decl(param_id, default_value, var_type)
+                        param.loc = param_id.loc
+                        param._meta.parameterKind = 'positional_or_keyword'
+                        init_params.append(param)
+                        # self.field_name = field_name
+                        self_id = UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), 'self')
+                        field_id = UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), field_name)
+                        member = UNode.MemberAccess(UNode.SourceLocation(), UNode.Meta(), self_id, field_id)
+                        right_id = UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), field_name)
+                        assign = self._assignment(member, right_id)
+                        assign.loc = UNode.SourceLocation(
+                            UNode.Position(ann_node.lineno, ann_node.col_offset + 1),
+                            UNode.Position(ann_node.end_lineno, ann_node.end_col_offset + 1),
+                            self.sourcefile)
+                        init_body.append(assign)
+                    # 合成 __init__ FunctionDefinition
+                    init_id = UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), '__init__')
+                    init_id.loc = UNode.SourceLocation(
+                        UNode.Position(node.lineno, None), UNode.Position(node.lineno, None), self.sourcefile)
+                    init_scoped = UNode.ScopedStatement(body_loc or UNode.SourceLocation(), UNode.Meta(), init_body)
+                    init_fdef = self._function_def(init_params, None, init_scoped, identifier=init_id)
+                    init_fdef._meta.isConstructor = True
+                    init_fdef.loc = UNode.SourceLocation(
+                        UNode.Position(node.lineno, None), UNode.Position(node.end_lineno, None), self.sourcefile)
+                    body.append(init_fdef)
 
         super = []
         for base in node.bases:
