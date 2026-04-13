@@ -430,9 +430,15 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
             // argument 节点包装了一个表达式 child
             // 命名参数：argument 有 name field（如 cmd: $val）
             const argNameNode = node.childForFieldName('name');
-            const child = argNameNode
-                ? node.namedChildren.find((c) => c !== argNameNode)
-                : node.namedChildren[0];
+            let child: SyntaxNode | undefined;
+            if (argNameNode) {
+                // 命名参数：name field 是第一个 namedChild，值表达式是后续的 namedChild
+                // 注意：childForFieldName 和 namedChildren 返回的不是同一 JS 对象，
+                // 不能用 === 比较，改用 id 判等或取索引 >= 1 的 namedChild
+                child = node.namedChildren.find((c) => c.id !== argNameNode.id);
+            } else {
+                child = node.namedChildren[0];
+            }
             const result = child ? visit(child, opts) : appendNodeMeta(UAST.noop(), node, sourcefile);
             if (argNameNode && result && UAST.isNode(result)) {
                 result._meta.argumentName = argNameNode.text;
@@ -537,6 +543,11 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
             const argsNode = node.childForFieldName('arguments');
             const args = argsNode ? visitList(argsNode.namedChildren, opts) as Array<UAST.Expression> : [];
             const call = UAST.callExpression(callee, args);
+            // 从参数的 _meta.argumentName 收集命名参数名称
+            const names: (string | null)[] = args.map((a: any) => a?._meta?.argumentName || null);
+            if (names.some((n: string | null) => n !== null)) {
+                (call as any).names = names;
+            }
             return appendNodeMeta(call, node, sourcefile);
         }
 
@@ -548,6 +559,10 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
             const argsNode = node.childForFieldName('arguments');
             const args = argsNode ? visitList(argsNode.namedChildren, opts) as Array<UAST.Expression> : [];
             const call = UAST.callExpression(memberCallee, args);
+            const names: (string | null)[] = args.map((a: any) => a?._meta?.argumentName || null);
+            if (names.some((n: string | null) => n !== null)) {
+                (call as any).names = names;
+            }
             return appendNodeMeta(call, node, sourcefile);
         }
 
@@ -561,6 +576,10 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
             const argsNode = node.childForFieldName('arguments');
             const args = argsNode ? visitList(argsNode.namedChildren, opts) as Array<UAST.Expression> : [];
             const call = UAST.callExpression(memberCallee, args);
+            const names: (string | null)[] = args.map((a: any) => a?._meta?.argumentName || null);
+            if (names.some((n: string | null) => n !== null)) {
+                (call as any).names = names;
+            }
             appendNodeMeta(call, node, sourcefile);
             const expr = UAST.conditionalExpression(object, call, UAST.literal(null, 'null'));
             return appendNodeMeta(expr, node, sourcefile);
@@ -575,6 +594,10 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
             const argsNode = node.childForFieldName('arguments');
             const args = argsNode ? visitList(argsNode.namedChildren, opts) as Array<UAST.Expression> : [];
             const call = UAST.callExpression(memberCallee, args);
+            const names: (string | null)[] = args.map((a: any) => a?._meta?.argumentName || null);
+            if (names.some((n: string | null) => n !== null)) {
+                (call as any).names = names;
+            }
             return appendNodeMeta(call, node, sourcefile);
         }
 
@@ -646,6 +669,7 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
         // ─── 数组 / 列表 / match ───
 
         case 'array_creation_expression': {
+            let autoIndex = 0;
             const properties = node.namedChildren.map((element) => {
                 const elementChildren = element.namedChildren;
                 if (elementChildren.length >= 2) {
@@ -653,11 +677,13 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
                     const key = visit(elementChildren[0], opts) as UAST.Expression;
                     const value = visit(elementChildren[1], opts) as UAST.Expression;
                     const prop = UAST.objectProperty(key, value);
+                    autoIndex++;
                     return appendNodeMeta(prop, element, sourcefile);
                 }
-                // value only
+                // value only — 使用自增数字索引，与 PHP 数组行为一致
                 const value = visit(elementChildren[0], opts) as UAST.Expression;
-                const prop = UAST.objectProperty(UAST.literal(null, 'null'), value);
+                const prop = UAST.objectProperty(UAST.literal(autoIndex, 'number'), value);
+                autoIndex++;
                 return appendNodeMeta(prop, element, sourcefile);
             });
             const expr = UAST.objectExpression(properties);
