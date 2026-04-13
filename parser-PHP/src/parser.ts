@@ -146,12 +146,14 @@ function createParameter(paramNode: SyntaxNode, opts: Record<string, any>): any 
     const init = defaultValueNode ? visit(defaultValueNode, opts) as UAST.Expression : null;
     const varDecl = UAST.variableDeclaration(id, init, false, UAST.dynamicType());
     varDecl._meta.variadic = paramNode.type === 'variadic_parameter';
-    // property_promotion_parameter 的 visibility
+    // property_promotion_parameter 的 visibility 和 readonly
     if (paramNode.type === 'property_promotion_parameter') {
         for (const child of paramNode.namedChildren) {
             if (child.type === 'visibility_modifier') {
                 varDecl._meta.visibility = child.text;
-                break;
+            }
+            if (child.type === 'readonly_modifier') {
+                varDecl._meta.readonly = true;
             }
         }
     }
@@ -180,6 +182,38 @@ function createFunctionLike(node: SyntaxNode, opts: Record<string, any>): any {
         }
     }
     const fdef = UAST.functionDefinition(id, parameters, UAST.dynamicType(), body, modifiers);
+    // __construct → 标记为构造函数，引擎 scope.ts / initializer.ts 依赖此标志定位 _CTOR_
+    if (id?.name === '__construct') {
+        fdef._meta.isConstructor = true;
+        // Constructor Promotion: visibility 参数自动生成 $this->param = $param 赋值
+        const promotionStmts: Array<any> = [];
+        for (const param of parameters) {
+            if (param._meta?.visibility) {
+                const paramName = UAST.isVariableDeclaration(param)
+                    ? (param.id as UAST.Identifier).name
+                    : '';
+                if (paramName) {
+                    // $this->paramName = $paramName
+                    const thisExpr = UAST.thisExpression();
+                    const fieldId = UAST.identifier(paramName);
+                    const memberExpr = UAST.memberAccess(thisExpr, fieldId, false);
+                    const valueId = UAST.identifier(paramName);
+                    const assign = UAST.assignmentExpression(memberExpr, valueId, '=', false);
+                    const exprStmt = UAST.expressionStatement(assign);
+                    appendNodeMeta(exprStmt, node, sourcefile);
+                    promotionStmts.push(exprStmt);
+                    // readonly 标记
+                    if (param._meta.readonly) {
+                        param._meta.readonly = true;
+                    }
+                }
+            }
+        }
+        // prepend 到构造函数 body 开头
+        if (promotionStmts.length > 0 && UAST.isScopedStatement(body)) {
+            body.body.unshift(...promotionStmts);
+        }
+    }
     return appendNodeMeta(fdef, node, sourcefile);
 }
 
@@ -192,18 +226,33 @@ function createClassLike(node: SyntaxNode, opts: Record<string, any>, kind?: str
     const body = bodyNode
         ? flattenInstructions(visitList(bodyNode.namedChildren, opts))
         : [];
-    // extends
+    // extends — childForFieldName('base_clause') 在 tree-sitter PHP 返回 NULL，改用 namedChildren 查找
     const supers: Array<UAST.Expression> = [];
-    const baseClause = node.childForFieldName('base_clause');
+    const baseClause = node.namedChildren.find((c) => c.type === 'base_clause');
     if (baseClause) {
         for (const child of baseClause.namedChildren) {
             const superExpr = visit(child, opts);
             if (superExpr) supers.push(superExpr);
         }
     }
+    // trait use → 将 trait 名加入 supers，引擎 resolveClassInheritance 会自动合并 trait 方法
+    if (body) {
+        for (const stmt of body) {
+            if (UAST.isExpressionStatement(stmt)) {
+                const expr = stmt.expression;
+                if (UAST.isCallExpression(expr)
+                    && UAST.isIdentifier(expr.callee)
+                    && expr.callee.name === 'trait_use') {
+                    for (const arg of expr.arguments) {
+                        supers.push(arg);
+                    }
+                }
+            }
+        }
+    }
     const cdef = UAST.classDefinition(id, body, supers);
-    // implements
-    const implementsClause = node.childForFieldName('class_interface_clause');
+    // implements — childForFieldName 同样返回 NULL，改用 namedChildren 查找
+    const implementsClause = node.namedChildren.find((c) => c.type === 'class_interface_clause');
     if (implementsClause) {
         cdef._meta.implements = visitList(implementsClause.namedChildren, opts);
     }
@@ -252,6 +301,10 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
             // $variable -> 'variable'（variable_name 的 namedChild(0) 是 name 节点）
             const nameNode = node.namedChildren[0];
             const name = nameNode ? nameNode.text : node.text.replace(/^\$/, '');
+            // $this → ThisExpression，引擎 processThisExpression 返回类实例引用
+            if (name === 'this') {
+                return appendNodeMeta(UAST.thisExpression(), node, sourcefile);
+            }
             return appendNodeMeta(UAST.identifier(name), node, sourcefile);
         }
 
@@ -321,6 +374,35 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
         }
 
         case 'heredoc': {
+            // heredoc 带变量插值时，heredoc_body 含 string_content 和 variable_name 等节点
+            const bodyNode = node.namedChildren.find((c) => c.type === 'heredoc_body');
+            const hasInterpolation = bodyNode && bodyNode.namedChildren.some(
+                (c) => c.type !== 'string_content'
+            );
+            if (bodyNode && hasInterpolation) {
+                // 与 encapsed_string 相同逻辑：遍历 namedChildren，拆成 binary concat
+                const parts = bodyNode.namedChildren.map((child) => {
+                    if (child.type === 'string_content') {
+                        return appendNodeMeta(UAST.literal(child.text, 'string'), child, sourcefile);
+                    }
+                    return visit(child, opts);
+                });
+                if (parts.length === 0) {
+                    const literal = UAST.literal('', 'string');
+                    literal._meta.heredoc = true;
+                    return appendNodeMeta(literal, node, sourcefile);
+                }
+                let expr = parts[0];
+                for (let i = 1; i < parts.length; i++) {
+                    expr = appendNodeMeta(UAST.binaryExpression('+' as any, expr, parts[i]), node, sourcefile);
+                }
+                if (expr && UAST.isNode(expr)) {
+                    expr._meta.heredoc = true;
+                    expr._meta.encapsed = true;
+                }
+                return appendNodeMeta(expr, node, sourcefile);
+            }
+            // 纯文本 heredoc，保持原逻辑
             const content = stripHeredoc(node.text);
             const literal = UAST.literal(content, 'string');
             literal._meta.heredoc = true;
@@ -346,8 +428,29 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
 
         case 'argument': {
             // argument 节点包装了一个表达式 child
-            const child = node.namedChildren[0];
-            return child ? visit(child, opts) : appendNodeMeta(UAST.noop(), node, sourcefile);
+            // 命名参数：argument 有 name field（如 cmd: $val）
+            const argNameNode = node.childForFieldName('name');
+            let child: SyntaxNode | undefined;
+            if (argNameNode) {
+                // 命名参数：name field 是第一个 namedChild，值表达式是后续的 namedChild
+                // 注意：childForFieldName 和 namedChildren 返回的不是同一 JS 对象，
+                // 不能用 === 比较，改用 id 判等或取索引 >= 1 的 namedChild
+                child = node.namedChildren.find((c) => c.id !== argNameNode.id);
+            } else {
+                child = node.namedChildren[0];
+            }
+            const result = child ? visit(child, opts) : appendNodeMeta(UAST.noop(), node, sourcefile);
+            if (argNameNode && result && UAST.isNode(result)) {
+                result._meta.argumentName = argNameNode.text;
+            }
+            return result;
+        }
+
+        case 'variadic_unpacking': {
+            // ...$args → SpreadElement
+            const inner = node.namedChildren[0];
+            const expr = inner ? visit(inner, opts) as UAST.Expression : UAST.noop() as any;
+            return appendNodeMeta(UAST.spreadElement(expr), node, sourcefile);
         }
 
         case 'parenthesized_expression': {
@@ -440,6 +543,11 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
             const argsNode = node.childForFieldName('arguments');
             const args = argsNode ? visitList(argsNode.namedChildren, opts) as Array<UAST.Expression> : [];
             const call = UAST.callExpression(callee, args);
+            // 从参数的 _meta.argumentName 收集命名参数名称
+            const names: (string | null)[] = args.map((a: any) => a?._meta?.argumentName || null);
+            if (names.some((n: string | null) => n !== null)) {
+                (call as any).names = names;
+            }
             return appendNodeMeta(call, node, sourcefile);
         }
 
@@ -451,7 +559,30 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
             const argsNode = node.childForFieldName('arguments');
             const args = argsNode ? visitList(argsNode.namedChildren, opts) as Array<UAST.Expression> : [];
             const call = UAST.callExpression(memberCallee, args);
+            const names: (string | null)[] = args.map((a: any) => a?._meta?.argumentName || null);
+            if (names.some((n: string | null) => n !== null)) {
+                (call as any).names = names;
+            }
             return appendNodeMeta(call, node, sourcefile);
+        }
+
+        case 'nullsafe_member_call_expression': {
+            // $obj?->method() — 与 member_call_expression 相同但包装为 conditionalExpression(object, call, null)
+            const object = visit(node.childForFieldName('object'), opts) as UAST.Expression;
+            const name = visit(node.childForFieldName('name'), opts) as UAST.Expression;
+            const memberCallee = UAST.memberAccess(object, name, false);
+            memberCallee._meta.nullsafe = true;
+            appendNodeMeta(memberCallee, node, sourcefile);
+            const argsNode = node.childForFieldName('arguments');
+            const args = argsNode ? visitList(argsNode.namedChildren, opts) as Array<UAST.Expression> : [];
+            const call = UAST.callExpression(memberCallee, args);
+            const names: (string | null)[] = args.map((a: any) => a?._meta?.argumentName || null);
+            if (names.some((n: string | null) => n !== null)) {
+                (call as any).names = names;
+            }
+            appendNodeMeta(call, node, sourcefile);
+            const expr = UAST.conditionalExpression(object, call, UAST.literal(null, 'null'));
+            return appendNodeMeta(expr, node, sourcefile);
         }
 
         case 'scoped_call_expression': {
@@ -463,6 +594,10 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
             const argsNode = node.childForFieldName('arguments');
             const args = argsNode ? visitList(argsNode.namedChildren, opts) as Array<UAST.Expression> : [];
             const call = UAST.callExpression(memberCallee, args);
+            const names: (string | null)[] = args.map((a: any) => a?._meta?.argumentName || null);
+            if (names.some((n: string | null) => n !== null)) {
+                (call as any).names = names;
+            }
             return appendNodeMeta(call, node, sourcefile);
         }
 
@@ -470,7 +605,8 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
 
         case 'object_creation_expression': {
             const className = visit(node.namedChildren[0], opts) as UAST.Expression;
-            const argsNode = node.childForFieldName('arguments');
+            // tree-sitter PHP 的 arguments 不是 field，而是类型为 'arguments' 的 namedChild
+            const argsNode = node.namedChildren.find((c) => c.type === 'arguments');
             const args = argsNode ? visitList(argsNode.namedChildren, opts) as Array<UAST.Expression> : [];
             const expr = UAST.newExpression(className, args);
             return appendNodeMeta(expr, node, sourcefile);
@@ -533,6 +669,7 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
         // ─── 数组 / 列表 / match ───
 
         case 'array_creation_expression': {
+            let autoIndex = 0;
             const properties = node.namedChildren.map((element) => {
                 const elementChildren = element.namedChildren;
                 if (elementChildren.length >= 2) {
@@ -540,11 +677,13 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
                     const key = visit(elementChildren[0], opts) as UAST.Expression;
                     const value = visit(elementChildren[1], opts) as UAST.Expression;
                     const prop = UAST.objectProperty(key, value);
+                    autoIndex++;
                     return appendNodeMeta(prop, element, sourcefile);
                 }
-                // value only
+                // value only — 使用自增数字索引，与 PHP 数组行为一致
                 const value = visit(elementChildren[0], opts) as UAST.Expression;
-                const prop = UAST.objectProperty(UAST.literal(null, 'null'), value);
+                const prop = UAST.objectProperty(UAST.literal(autoIndex, 'number'), value);
+                autoIndex++;
                 return appendNodeMeta(prop, element, sourcefile);
             });
             const expr = UAST.objectExpression(properties);
