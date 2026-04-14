@@ -940,6 +940,7 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
             }
             const param = UAST.variableDeclaration(paramId, null, false, UAST.dynamicType());
             param._meta.catchTypes = catchTypes;
+            param._meta.isCatchParam = true;
             appendNodeMeta(param, node, sourcefile);
             const clause = UAST.catchClause([param], catchBody);
             return appendNodeMeta(clause, node, sourcefile);
