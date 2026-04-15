@@ -200,9 +200,95 @@
                 }
               },
               "right": {
-                "type": "ConditionalExpression",
-                "test": {
-                  "type": "Noop",
+                "type": "MemberAccess",
+                "object": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberAccess",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "req",
+                      "_meta": {
+                        "loc": {
+                          "start": {
+                            "line": 5,
+                            "column": 13
+                          },
+                          "end": {
+                            "line": 5,
+                            "column": 17
+                          },
+                          "sourcefile": "flow-extras.php"
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 5,
+                          "column": 13
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 17
+                        },
+                        "sourcefile": "flow-extras.php"
+                      }
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "user",
+                      "_meta": {
+                        "loc": {
+                          "start": {
+                            "line": 5,
+                            "column": 20
+                          },
+                          "end": {
+                            "line": 5,
+                            "column": 24
+                          },
+                          "sourcefile": "flow-extras.php"
+                        }
+                      },
+                      "loc": {
+                        "start": {
+                          "line": 5,
+                          "column": 20
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 24
+                        },
+                        "sourcefile": "flow-extras.php"
+                      }
+                    },
+                    "computed": false,
+                    "_meta": {
+                      "nullsafe": true,
+                      "loc": {
+                        "start": {
+                          "line": 5,
+                          "column": 13
+                        },
+                        "end": {
+                          "line": 5,
+                          "column": 26
+                        },
+                        "sourcefile": "flow-extras.php"
+                      }
+                    },
+                    "loc": {
+                      "start": {
+                        "line": 5,
+                        "column": 13
+                      },
+                      "end": {
+                        "line": 5,
+                        "column": 26
+                      },
+                      "sourcefile": "flow-extras.php"
+                    }
+                  },
+                  "arguments": [],
                   "_meta": {
                     "loc": {
                       "start": {
@@ -228,51 +314,10 @@
                     "sourcefile": "flow-extras.php"
                   }
                 },
-                "consequent": {
-                  "type": "MemberAccess",
-                  "object": {
-                    "type": "Noop",
-                    "_meta": {
-                      "loc": {
-                        "start": {
-                          "line": 5,
-                          "column": 13
-                        },
-                        "end": {
-                          "line": 5,
-                          "column": 26
-                        },
-                        "sourcefile": "flow-extras.php"
-                      }
-                    },
-                    "loc": {
-                      "start": {
-                        "line": 5,
-                        "column": 13
-                      },
-                      "end": {
-                        "line": 5,
-                        "column": 26
-                      },
-                      "sourcefile": "flow-extras.php"
-                    }
-                  },
-                  "property": {
-                    "type": "Identifier",
-                    "name": "name",
-                    "_meta": {
-                      "loc": {
-                        "start": {
-                          "line": 5,
-                          "column": 29
-                        },
-                        "end": {
-                          "line": 5,
-                          "column": 33
-                        },
-                        "sourcefile": "flow-extras.php"
-                      }
-                    },
+                "property": {
+                  "type": "Identifier",
+                  "name": "name",
+                  "_meta": {
                     "loc": {
                       "start": {
                         "line": 5,
@@ -285,25 +330,10 @@
                       "sourcefile": "flow-extras.php"
                     }
                   },
-                  "computed": false,
-                  "_meta": {
-                    "loc": {
-                      "start": {
-                        "line": 5,
-                        "column": 13
-                      },
-                      "end": {
-                        "line": 5,
-                        "column": 33
-                      },
-                      "sourcefile": "flow-extras.php"
-                    },
-                    "nullsafe": true
-                  },
                   "loc": {
                     "start": {
                       "line": 5,
-                      "column": 13
+                      "column": 29
                     },
                     "end": {
                       "line": 5,
@@ -312,12 +342,7 @@
                     "sourcefile": "flow-extras.php"
                   }
                 },
-                "alternative": {
-                  "type": "Literal",
-                  "value": null,
-                  "literalType": "null",
-                  "_meta": {}
-                },
+                "computed": false,
                 "_meta": {
                   "loc": {
                     "start": {
@@ -329,7 +354,8 @@
                       "column": 33
                     },
                     "sourcefile": "flow-extras.php"
-                  }
+                  },
+                  "nullsafe": true
                 },
                 "loc": {
                   "start": {
@@ -570,7 +596,8 @@
             "expression": {
               "type": "YieldExpression",
               "argument": {
-                "type": "Noop",
+                "type": "Identifier",
+                "name": "value",
                 "_meta": {
                   "loc": {
                     "start": {

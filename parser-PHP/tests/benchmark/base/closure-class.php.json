@@ -921,8 +921,7 @@
                     },
                     "arguments": [
                       {
-                        "type": "Identifier",
-                        "name": "this",
+                        "type": "ThisExpression",
                         "_meta": {
                           "loc": {
                             "start": {
@@ -1565,7 +1564,36 @@
           }
         }
       ],
-      "supers": [],
+      "supers": [
+        {
+          "type": "Identifier",
+          "name": "BaseClass",
+          "_meta": {
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 20
+              },
+              "end": {
+                "line": 3,
+                "column": 29
+              },
+              "sourcefile": "closure-class.php"
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 20
+            },
+            "end": {
+              "line": 3,
+              "column": 29
+            },
+            "sourcefile": "closure-class.php"
+          }
+        }
+      ],
       "_meta": {
         "loc": {
           "start": {
