@@ -146,6 +146,10 @@ function createParameter(paramNode: SyntaxNode, opts: Record<string, any>): any 
     const init = defaultValueNode ? visit(defaultValueNode, opts) as UAST.Expression : null;
     const varDecl = UAST.variableDeclaration(id, init, false, UAST.dynamicType());
     varDecl._meta.variadic = paramNode.type === 'variadic_parameter';
+    // 引用参数：&$param → byref 标记
+    if (paramNode.childForFieldName('reference_modifier')) {
+        varDecl._meta.byref = true;
+    }
     // property_promotion_parameter 的 visibility 和 readonly
     if (paramNode.type === 'property_promotion_parameter') {
         for (const child of paramNode.namedChildren) {
@@ -278,7 +282,13 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
     switch (node.type) {
         case 'program': {
             const children = node.namedChildren.filter((child) => child.type !== 'php_tag');
+            if (!opts._anonClassDefs) opts._anonClassDefs = [];
             const body = flattenInstructions(visitList(children, opts));
+            // 匿名类定义提升到 body 头部
+            if (opts._anonClassDefs.length > 0) {
+                body.unshift(...opts._anonClassDefs);
+                opts._anonClassDefs = [];
+            }
             const compileUnit = UAST.compileUnit(body, 'php', null, sourcefile || '', version);
             return appendNodeMeta(compileUnit, node, sourcefile);
         }
@@ -567,7 +577,7 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
         }
 
         case 'nullsafe_member_call_expression': {
-            // $obj?->method() — 与 member_call_expression 相同但包装为 conditionalExpression(object, call, null)
+            // $obj?->method() — 静态分析中等价于 $obj->method()，避免 ConditionalExpression 导致 UnionValue 阻断链式调用
             const object = visit(node.childForFieldName('object'), opts) as UAST.Expression;
             const name = visit(node.childForFieldName('name'), opts) as UAST.Expression;
             const memberCallee = UAST.memberAccess(object, name, false);
@@ -580,9 +590,7 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
             if (names.some((n: string | null) => n !== null)) {
                 (call as any).names = names;
             }
-            appendNodeMeta(call, node, sourcefile);
-            const expr = UAST.conditionalExpression(object, call, UAST.literal(null, 'null'));
-            return appendNodeMeta(expr, node, sourcefile);
+            return appendNodeMeta(call, node, sourcefile);
         }
 
         case 'scoped_call_expression': {
@@ -604,7 +612,66 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
         // ─── new / cast ───
 
         case 'object_creation_expression': {
-            const className = visit(node.namedChildren[0], opts) as UAST.Expression;
+            const firstChild = node.namedChildren[0];
+
+            // 匿名类：new class { ... }
+            if (firstChild && firstChild.type === 'anonymous_class') {
+                const anonNode = firstChild;
+                // 生成唯一匿名类名，基于文件+行号
+                const line = node.startPosition.row + 1;
+                const col = node.startPosition.column;
+                const anonName = `__anon_class_${line}_${col}`;
+                const anonId = UAST.identifier(anonName);
+                appendNodeMeta(anonId, anonNode, sourcefile);
+
+                // 用 anonymous_class 节点构建类定义（declaration_list 是 body）
+                const bodyNode = anonNode.namedChildren.find((c: any) => c.type === 'declaration_list');
+                const body = bodyNode
+                    ? flattenInstructions(visitList(bodyNode.namedChildren, opts))
+                    : [];
+                const supers: Array<UAST.Expression> = [];
+                const baseClause = anonNode.namedChildren.find((c: any) => c.type === 'base_clause');
+                if (baseClause) {
+                    for (const child of baseClause.namedChildren) {
+                        const superExpr = visit(child, opts);
+                        if (superExpr) supers.push(superExpr);
+                    }
+                }
+                // trait use
+                if (body) {
+                    for (const stmt of body) {
+                        if (UAST.isExpressionStatement(stmt)) {
+                            const expr = (stmt as any).expression;
+                            if (UAST.isCallExpression(expr)
+                                && UAST.isIdentifier(expr.callee)
+                                && expr.callee.name === 'trait_use') {
+                                for (const arg of expr.arguments) {
+                                    supers.push(arg);
+                                }
+                            }
+                        }
+                    }
+                }
+                const cdef = UAST.classDefinition(anonId, body, supers);
+                appendNodeMeta(cdef, anonNode, sourcefile);
+                // implements
+                const implClause = anonNode.namedChildren.find((c: any) => c.type === 'class_interface_clause');
+                if (implClause) {
+                    cdef._meta.implements = visitList(implClause.namedChildren, opts);
+                }
+
+                // 提升类定义到 CompileUnit body
+                if (!opts._anonClassDefs) opts._anonClassDefs = [];
+                opts._anonClassDefs.push(cdef);
+
+                // 构造函数参数（anonymous_class 节点上的 arguments）
+                const argsNode = anonNode.namedChildren.find((c: any) => c.type === 'arguments');
+                const args = argsNode ? visitList(argsNode.namedChildren, opts) as Array<UAST.Expression> : [];
+                const expr = UAST.newExpression(UAST.identifier(anonName), args);
+                return appendNodeMeta(expr, node, sourcefile);
+            }
+
+            const className = visit(firstChild, opts) as UAST.Expression;
             // tree-sitter PHP 的 arguments 不是 field，而是类型为 'arguments' 的 namedChild
             const argsNode = node.namedChildren.find((c) => c.type === 'arguments');
             const args = argsNode ? visitList(argsNode.namedChildren, opts) as Array<UAST.Expression> : [];
@@ -631,13 +698,13 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
         }
 
         case 'nullsafe_member_access_expression': {
+            // $obj?->prop — 静态分析中等价于 $obj->prop
             const object = visit(node.childForFieldName('object'), opts) as UAST.Expression;
             const name = visit(node.childForFieldName('name'), opts) as UAST.Expression;
             const access = UAST.memberAccess(object, name, false);
             appendNodeMeta(access, node, sourcefile);
             access._meta.nullsafe = true;
-            const expr = UAST.conditionalExpression(object, access, UAST.literal(null, 'null'));
-            return appendNodeMeta(expr, node, sourcefile);
+            return access;
         }
 
         case 'scoped_property_access_expression': {
@@ -769,7 +836,22 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
 
         case 'yield_expression': {
             const valueNode = node.namedChildren[0] || null;
-            const expr = UAST.yieldExpression(valueNode ? visit(valueNode, opts) as UAST.Expression : null);
+            let yieldValue: UAST.Expression | null = null;
+            if (valueNode) {
+                // tree-sitter-php 将 yield 值包装在 array_element_initializer 中，需要解包取内部表达式
+                if (valueNode.type === 'array_element_initializer') {
+                    const innerChildren = valueNode.namedChildren;
+                    if (innerChildren.length >= 2) {
+                        // yield $key => $value 形式：取第二个子节点作为值
+                        yieldValue = visit(innerChildren[innerChildren.length - 1], opts) as UAST.Expression;
+                    } else if (innerChildren.length === 1) {
+                        yieldValue = visit(innerChildren[0], opts) as UAST.Expression;
+                    }
+                } else {
+                    yieldValue = visit(valueNode, opts) as UAST.Expression;
+                }
+            }
+            const expr = UAST.yieldExpression(yieldValue);
             return appendNodeMeta(expr, node, sourcefile);
         }
 
@@ -940,6 +1022,7 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
             }
             const param = UAST.variableDeclaration(paramId, null, false, UAST.dynamicType());
             param._meta.catchTypes = catchTypes;
+            param._meta.isCatchParam = true;
             appendNodeMeta(param, node, sourcefile);
             const clause = UAST.catchClause([param], catchBody);
             return appendNodeMeta(clause, node, sourcefile);
@@ -1363,6 +1446,11 @@ export function parse(content: string, opts: Record<string, any> = {}): ParseRes
     if (!tree) {
         throw new Error('Failed to parse PHP code');
     }
+    // 确保 opts 是可扩展的对象
+    if (typeof opts !== 'object' || opts === null) {
+        opts = { sourcefile: String(opts) };
+    }
+    if (!opts._anonClassDefs) opts._anonClassDefs = [];
     try {
         const node = visit(tree.rootNode, opts);
         sanitize(node);

@@ -666,7 +666,91 @@
           }
         }
       ],
-      "supers": [],
+      "supers": [
+        {
+          "type": "Identifier",
+          "name": "LoggerA",
+          "_meta": {
+            "loc": {
+              "start": {
+                "line": 21,
+                "column": 9
+              },
+              "end": {
+                "line": 21,
+                "column": 16
+              },
+              "sourcefile": "enum-trait-adapt.php"
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 21,
+              "column": 9
+            },
+            "end": {
+              "line": 21,
+              "column": 16
+            },
+            "sourcefile": "enum-trait-adapt.php"
+          }
+        },
+        {
+          "type": "Identifier",
+          "name": "LoggerB",
+          "_meta": {
+            "loc": {
+              "start": {
+                "line": 21,
+                "column": 18
+              },
+              "end": {
+                "line": 21,
+                "column": 25
+              },
+              "sourcefile": "enum-trait-adapt.php"
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 21,
+              "column": 18
+            },
+            "end": {
+              "line": 21,
+              "column": 25
+            },
+            "sourcefile": "enum-trait-adapt.php"
+          }
+        },
+        {
+          "type": "Noop",
+          "_meta": {
+            "loc": {
+              "start": {
+                "line": 21,
+                "column": 26
+              },
+              "end": {
+                "line": 24,
+                "column": 6
+              },
+              "sourcefile": "enum-trait-adapt.php"
+            }
+          },
+          "loc": {
+            "start": {
+              "line": 21,
+              "column": 26
+            },
+            "end": {
+              "line": 24,
+              "column": 6
+            },
+            "sourcefile": "enum-trait-adapt.php"
+          }
+        }
+      ],
       "_meta": {
         "loc": {
           "start": {
