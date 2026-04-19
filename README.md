@@ -37,6 +37,9 @@ YASA-UAST is an intermediate representation structure for multi-language program
 ## parser-Python
 - Python language parser for UAST, parsing Python code into UAST.
 
+## parser-Rust
+- Rust language parser for UAST, parsing Rust code into UAST.
+
 ## Join Us
 Welcome to submit issues if you encounter any problems!
 

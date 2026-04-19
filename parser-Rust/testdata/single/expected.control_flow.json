@@ -1,0 +1,341 @@
+{
+  "packageInfo": {
+    "pathName": "/",
+    "files": {
+      "__FILE__": {
+        "node": {
+          "type": "CompileUnit",
+          "body": [
+            {
+              "body": {
+                "body": [
+                  {
+                    "cloned": true,
+                    "id": {
+                      "name": "sum",
+                      "type": "Identifier"
+                    },
+                    "init": {
+                      "literalType": "number",
+                      "type": "Literal",
+                      "value": 0
+                    },
+                    "type": "VariableDeclaration",
+                    "varType": {
+                      "id": null,
+                      "type": "DynamicType",
+                      "typeArguments": null
+                    },
+                    "variableParam": false
+                  },
+                  {
+                    "alternative": {
+                      "body": [
+                        {
+                          "cloned": true,
+                          "left": {
+                            "name": "sum",
+                            "type": "Identifier"
+                          },
+                          "operator": "+=",
+                          "right": {
+                            "literalType": "number",
+                            "type": "Literal",
+                            "value": 2
+                          },
+                          "type": "AssignmentExpression"
+                        }
+                      ],
+                      "id": null,
+                      "type": "ScopedStatement"
+                    },
+                    "consequent": {
+                      "body": [
+                        {
+                          "cloned": true,
+                          "left": {
+                            "name": "sum",
+                            "type": "Identifier"
+                          },
+                          "operator": "+=",
+                          "right": {
+                            "literalType": "number",
+                            "type": "Literal",
+                            "value": 1
+                          },
+                          "type": "AssignmentExpression"
+                        }
+                      ],
+                      "id": null,
+                      "type": "ScopedStatement"
+                    },
+                    "test": {
+                      "name": "flag",
+                      "type": "Identifier"
+                    },
+                    "type": "IfStatement"
+                  },
+                  {
+                    "body": {
+                      "body": [
+                        {
+                          "body": {
+                            "body": [
+                              {
+                                "alternative": null,
+                                "consequent": {
+                                  "body": [
+                                    {
+                                      "label": null,
+                                      "type": "BreakStatement"
+                                    }
+                                  ],
+                                  "id": null,
+                                  "type": "ScopedStatement"
+                                },
+                                "test": {
+                                  "left": {
+                                    "name": "x",
+                                    "type": "Identifier"
+                                  },
+                                  "operator": "==",
+                                  "right": {
+                                    "literalType": "number",
+                                    "type": "Literal",
+                                    "value": 0
+                                  },
+                                  "type": "BinaryExpression"
+                                },
+                                "type": "IfStatement"
+                              },
+                              {
+                                "cloned": true,
+                                "left": {
+                                  "name": "sum",
+                                  "type": "Identifier"
+                                },
+                                "operator": "+=",
+                                "right": {
+                                  "name": "x",
+                                  "type": "Identifier"
+                                },
+                                "type": "AssignmentExpression"
+                              },
+                              {
+                                "label": null,
+                                "type": "ContinueStatement"
+                              }
+                            ],
+                            "id": null,
+                            "type": "ScopedStatement"
+                          },
+                          "isPostTest": null,
+                          "test": {
+                            "left": {
+                              "name": "sum",
+                              "type": "Identifier"
+                            },
+                            "operator": "<",
+                            "right": {
+                              "literalType": "number",
+                              "type": "Literal",
+                              "value": 10
+                            },
+                            "type": "BinaryExpression"
+                          },
+                          "type": "WhileStatement"
+                        }
+                      ],
+                      "id": null,
+                      "type": "ScopedStatement"
+                    },
+                    "key": null,
+                    "right": {
+                      "name": "xs",
+                      "type": "Identifier"
+                    },
+                    "type": "RangeStatement",
+                    "value": {
+                      "name": "x",
+                      "type": "Identifier"
+                    }
+                  },
+                  {
+                    "body": {
+                      "body": [
+                        {
+                          "cloned": true,
+                          "left": {
+                            "name": "sum",
+                            "type": "Identifier"
+                          },
+                          "operator": "+=",
+                          "right": {
+                            "literalType": "number",
+                            "type": "Literal",
+                            "value": 1
+                          },
+                          "type": "AssignmentExpression"
+                        },
+                        {
+                          "label": null,
+                          "type": "BreakStatement"
+                        }
+                      ],
+                      "id": null,
+                      "type": "ScopedStatement"
+                    },
+                    "isPostTest": null,
+                    "test": {
+                      "literalType": "boolean",
+                      "type": "Literal",
+                      "value": true
+                    },
+                    "type": "WhileStatement"
+                  },
+                  {
+                    "cases": [
+                      {
+                        "body": {
+                          "argument": {
+                            "literalType": "number",
+                            "type": "Literal",
+                            "value": 0
+                          },
+                          "isYield": false,
+                          "type": "ReturnStatement"
+                        },
+                        "test": {
+                          "literalType": "number",
+                          "type": "Literal",
+                          "value": 0
+                        },
+                        "type": "CaseClause"
+                      },
+                      {
+                        "body": {
+                          "argument": {
+                            "literalType": "number",
+                            "type": "Literal",
+                            "value": 1
+                          },
+                          "isYield": false,
+                          "type": "ReturnStatement"
+                        },
+                        "test": {
+                          "literalType": "number",
+                          "type": "Literal",
+                          "value": 1
+                        },
+                        "type": "CaseClause"
+                      },
+                      {
+                        "body": {
+                          "argument": {
+                            "literalType": "number",
+                            "type": "Literal",
+                            "value": 1
+                          },
+                          "isYield": false,
+                          "type": "ReturnStatement"
+                        },
+                        "test": {
+                          "literalType": "number",
+                          "type": "Literal",
+                          "value": 2
+                        },
+                        "type": "CaseClause"
+                      },
+                      {
+                        "body": {
+                          "argument": {
+                            "name": "sum",
+                            "type": "Identifier"
+                          },
+                          "isYield": false,
+                          "type": "ReturnStatement"
+                        },
+                        "test": null,
+                        "type": "CaseClause"
+                      }
+                    ],
+                    "discriminant": {
+                      "name": "sum",
+                      "type": "Identifier"
+                    },
+                    "type": "SwitchStatement"
+                  }
+                ],
+                "id": null,
+                "type": "ScopedStatement"
+              },
+              "id": {
+                "name": "flow",
+                "type": "Identifier"
+              },
+              "modifiers": [
+                "pub"
+              ],
+              "parameters": [
+                {
+                  "cloned": false,
+                  "id": {
+                    "name": "xs",
+                    "type": "Identifier"
+                  },
+                  "init": null,
+                  "type": "VariableDeclaration",
+                  "varType": {
+                    "id": {
+                      "name": "Vec",
+                      "type": "Identifier"
+                    },
+                    "type": "DynamicType",
+                    "typeArguments": null
+                  },
+                  "variableParam": false
+                },
+                {
+                  "cloned": false,
+                  "id": {
+                    "name": "flag",
+                    "type": "Identifier"
+                  },
+                  "init": null,
+                  "type": "VariableDeclaration",
+                  "varType": {
+                    "id": {
+                      "name": "bool",
+                      "type": "Identifier"
+                    },
+                    "type": "DynamicType",
+                    "typeArguments": null
+                  },
+                  "variableParam": false
+                }
+              ],
+              "returnType": {
+                "id": {
+                  "name": "i32",
+                  "type": "Identifier"
+                },
+                "type": "DynamicType",
+                "typeArguments": null
+              },
+              "type": "FunctionDefinition"
+            }
+          ],
+          "language": "rust",
+          "languageVersion": "",
+          "uri": "__FILE__",
+          "version": ""
+        },
+        "packageName": "__single__"
+      }
+    },
+    "subs": {}
+  },
+  "moduleName": "__single_module__",
+  "cargoTomlPath": "",
+  "numOfCargoToml": 0
+}
