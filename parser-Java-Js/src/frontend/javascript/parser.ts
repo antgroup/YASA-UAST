@@ -337,7 +337,22 @@ const visitor = (opts: any) => ({
             return seq;
         }
 
-        return UAST.assignmentExpression(visit(node.left, opts) as UAST.LVal, visit(node.right, opts) as Expression, node.operator as UAST.AssignmentExpression['operator'], false);
+        const left = visit(node.left, opts) as UAST.LVal;
+        const right = visit(node.right, opts) as Expression;
+
+        // handle ??=, ||=, &&=
+        // a ??= b to a = a ?? b, similar for others
+        if (node.operator === '??=') {
+            return UAST.assignmentExpression(left, UAST.binaryExpression('??', left, right), '=', false);
+        }
+        if (node.operator === '||=') {
+            return UAST.assignmentExpression(left, UAST.binaryExpression('||', left, right), '=', false);
+        }
+        if (node.operator === '&&=') {
+            return UAST.assignmentExpression(left, UAST.binaryExpression('&&', left, right), '=', false);
+        }
+
+        return UAST.assignmentExpression(left, right, node.operator as UAST.AssignmentExpression['operator'], false);
     },
     LogicalExpression(node: AST.LogicalExpression): ParseResult<UAST.BinaryExpression> {
         return UAST.binaryExpression(node.operator as UAST.BinaryExpression['operator'], visit(node.left, opts) as Expression, visit(node.right, opts) as Expression);
