@@ -1,6 +1,7 @@
 import ast
 import argparse
 import os
+import re
 import sys
 import warnings
 import time
@@ -130,6 +131,23 @@ def parse_project(dir, output_path, verbose=False, parallel=1):
     success_count = total_files - failed_count
     print(f"Processed {total_files} files. Success: {success_count}, Failed: {failed_count}, Total elapsed: {total_time_str}")
 
+# async/await 在 Python 3.5-3.6 是 soft keyword，3.7+ 变为 hard keyword。
+# 旧代码将其作为普通标识符使用时（如 from xxx import async），ast.parse() 会报 SyntaxError。
+# 此处在首次解析失败后，替换这些标识符重试，避免整个文件被跳过。
+_COMPAT_PLACEHOLDER = {'async': '__compat_async__', 'await': '__compat_await__'}
+_COMPAT_PATTERN = re.compile(r'\b(async|await)\b')
+# 合法 async 语法（async def/for/with）替换后需要恢复
+_ASYNC_RESTORE = re.compile(r'\b__compat_async__(\s+)(def|for|with)\b')
+
+def _try_compat_parse(file_content, filename):
+    """替换 async/await 标识符后重试 ast.parse()，返回 (ast, modified_content) 或抛异常"""
+    modified = _COMPAT_PATTERN.sub(lambda m: _COMPAT_PLACEHOLDER[m.group(1)], file_content)
+    modified = _ASYNC_RESTORE.sub(lambda m: f'async{m.group(1)}{m.group(2)}', modified)
+    if modified == file_content:
+        raise SyntaxError("no async/await identifiers to replace")
+    return ast.parse(modified, filename=filename)
+
+
 def parse_single_file(file, output_path, verbose=False):
     """ 解析单文件，主要用于YASA调用或者单文件 UAST 测试
     Args:
@@ -164,6 +182,31 @@ def parse_single_file(file, output_path, verbose=False):
                     f.write(compile_unit.to_json(indent=None))
                 return (True, None)
             except SyntaxError as e:
+                # 兼容重试：旧版 Python 代码可能将 async/await 作为标识符
+                try:
+                    file_ast = _try_compat_parse(file_content, file)
+                    file_ast.sourcefile = file
+                    uastnode = UASTTransformer().visit(file_ast)
+                    compile_unit = UASTTransformer().packPos(
+                        file_ast,
+                        UNode.CompileUnit(
+                            UNode.SourceLocation(),
+                            UNode.Meta(),
+                            body=uastnode,
+                            language=LANGUAGE,
+                            uri=None,
+                            version=None,
+                            languageVersion=VERSION,
+                        ),
+                    )
+                    compile_unit.loc.sourcefile = file
+                    with open(output_path, mode='w', encoding='utf-8') as f:
+                        f.write(compile_unit.to_json(indent=None))
+                    if not verbose:
+                        print(f"Compat retry succeeded for {file} (async/await as identifier)")
+                    return (True, None)
+                except SyntaxError:
+                    pass
                 error_msg = f"Syntax error in file {file}: {e}"
                 if not verbose:
                     print(error_msg)
