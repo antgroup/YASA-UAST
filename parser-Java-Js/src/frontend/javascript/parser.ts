@@ -56,7 +56,8 @@ const visitor = (opts: any) => ({
             return UAST.literal(node.quasis[0].value.raw, 'string');
         }
 
-        return buildBinaryExpression(node.quasis, node.expressions, false);
+        // 模板字符串展开会递归消费 quasis/expressions，必须复制数组，避免同一 Babel AST 被二次 visit 时丢失插值结构。
+        return buildBinaryExpression([...node.quasis], [...node.expressions], false);
 
         function buildBinaryExpression(quasis: Array<AST.TemplateElement>, expressions: Array<AST.Expression | AST.TSType>, exprProcess: boolean): UAST.Expression {
             if (!exprProcess) {
