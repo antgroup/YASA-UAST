@@ -338,7 +338,13 @@ const visitor = (opts: any) => ({
             return seq;
         }
 
-        return UAST.assignmentExpression(visit(node.left, opts) as UAST.LVal, visit(node.right, opts) as Expression, node.operator as UAST.AssignmentExpression['operator'], false);
+        const leftNode = visit(node.left, opts);
+        const rightNode = visit(node.right, opts) as Expression;
+        // 可选链赋值（?.=）的 left 是 ConditionalExpression，不是 LVal，降级为条件表达式
+        if (UAST.isNoop(leftNode) || !UAST.isLVal(leftNode)) {
+            return UAST.conditionalExpression(leftNode as Expression, rightNode, rightNode);
+        }
+        return UAST.assignmentExpression(leftNode as UAST.LVal, rightNode, node.operator as UAST.AssignmentExpression['operator'], false);
     },
     LogicalExpression(node: AST.LogicalExpression): ParseResult<UAST.BinaryExpression> {
         return UAST.binaryExpression(node.operator as UAST.BinaryExpression['operator'], visit(node.left, opts) as Expression, visit(node.right, opts) as Expression);
@@ -1143,6 +1149,7 @@ function tryBabelParse(content, opts?): AST.File {
             , "objectRestSpread"
             , "optionalCatchBinding"
             , "optionalChaining"
+            , ["optionalChainingAssign", { version: "2023-07" }]
             , "partialApplication"
             // , "pipelineOperator"
             // , ["pipelineOperator", { proposal: "minimal" }]
