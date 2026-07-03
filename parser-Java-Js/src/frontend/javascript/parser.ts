@@ -338,7 +338,13 @@ const visitor = (opts: any) => ({
             return seq;
         }
 
-        return UAST.assignmentExpression(visit(node.left, opts) as UAST.LVal, visit(node.right, opts) as Expression, node.operator as UAST.AssignmentExpression['operator'], false);
+        const leftNode = visit(node.left, opts);
+        const rightNode = visit(node.right, opts) as Expression;
+        // 可选链赋值（?.=）的 left 是 ConditionalExpression，不是 LVal，降级为条件表达式
+        if (UAST.isNoop(leftNode) || !UAST.isLVal(leftNode)) {
+            return UAST.conditionalExpression(leftNode as Expression, rightNode, rightNode);
+        }
+        return UAST.assignmentExpression(leftNode as UAST.LVal, rightNode, node.operator as UAST.AssignmentExpression['operator'], false);
     },
     LogicalExpression(node: AST.LogicalExpression): ParseResult<UAST.BinaryExpression> {
         return UAST.binaryExpression(node.operator as UAST.BinaryExpression['operator'], visit(node.left, opts) as Expression, visit(node.right, opts) as Expression);
@@ -510,9 +516,26 @@ const visitor = (opts: any) => ({
         // case 1: export let x = 1;
         if (node.declaration) {
             if ('id' in node.declaration) {
-                return UAST.sequence([visit(node.declaration, opts) as Statement, UAST.exportStatement(visit(node.declaration, opts) as Expression, visit(node.declaration.id, opts) as Identifier)]);
+                const declNode = visit(node.declaration, opts) as Statement;
+                // 纯类型声明（TS type/module/declare function）visitor 返回 Noop，运行时无导出
+                if (UAST.isNoop(declNode)) {
+                    return UAST.noop();
+                }
+                const idNode = visit(node.declaration.id, opts) as Identifier;
+                if (UAST.isNoop(idNode)) {
+                    return UAST.noop();
+                }
+                return UAST.sequence([declNode, UAST.exportStatement(declNode as Expression, idNode)]);
             } else if ('declarations' in node.declaration) {
-                return UAST.sequence([visit(node.declaration, opts) as Statement, UAST.exportStatement(visit(node.declaration.declarations[0].id, opts) as Expression, visit(node.declaration.declarations[0].id, opts) as Identifier)]);
+                const declNode = visit(node.declaration, opts) as Statement;
+                if (UAST.isNoop(declNode)) {
+                    return UAST.noop();
+                }
+                const idNode = visit(node.declaration.declarations[0].id, opts) as Identifier;
+                if (UAST.isNoop(idNode)) {
+                    return UAST.noop();
+                }
+                return UAST.sequence([declNode, UAST.exportStatement(idNode as Expression, idNode)]);
             }
             throw new Error('ExportNamedDeclaration: declaration should have id or declarations');
         }
@@ -527,6 +550,10 @@ const visitor = (opts: any) => ({
             node.specifiers.map((specifier) => {
                 if (AST.isExportSpecifier(specifier)) {
                     const exportId = visit(specifier.exported, opts) as Identifier
+                    // 跳过 Noop 标识符，避免 validate 错误
+                    if (UAST.isNoop(exportId)) {
+                        return;
+                    }
                     scopeList.push(UAST.variableDeclaration(exportId,
                         UAST.memberAccess(importVal.id, visit(specifier.local, opts) as Identifier), false, UAST.dynamicType()));
                     scopeList.push(UAST.exportStatement(exportId, exportId));
@@ -534,12 +561,23 @@ const visitor = (opts: any) => ({
             });
             return sequence
         } else {
-            const seqList = node.specifiers.map((specifier) => {
+            const seqList: UAST.ExportStatement[] = [];
+            node.specifiers.map((specifier) => {
                 if (AST.isExportSpecifier(specifier)) {
-                    return UAST.exportStatement(visit(specifier.local, opts) as Identifier, visit(specifier.exported, opts) as Identifier);
+                    const localNode = visit(specifier.local, opts) as Identifier;
+                    const exportedNode = visit(specifier.exported, opts) as Identifier;
+                    // 跳过 Noop 参数，避免 validate 错误
+                    if (UAST.isNoop(localNode) || UAST.isNoop(exportedNode)) {
+                        return;
+                    }
+                    seqList.push(UAST.exportStatement(localNode, exportedNode));
+                } else {
+                    throw new Error('specifier should only be ExportSpecifier');
                 }
-                throw new Error('specifier should only be ExportSpecifier');
             });
+            if (seqList.length === 0) {
+                return UAST.noop();
+            }
             return UAST.sequence(seqList);
         }
     },
@@ -556,7 +594,12 @@ const visitor = (opts: any) => ({
         throw new Error('ExportNamespaceSpecifier should not be visited, since it has processed where it occurs');
     },
     ExportDefaultDeclaration(node: AST.ExportDefaultDeclaration): ParseResult<UAST.Statement> {
-        const importVal = createTmpVariableDeclaration(visit(node.declaration, opts) as Expression);
+        const declNode = visit(node.declaration, opts) as Expression;
+        // 纯类型声明（TS declare function 等）visitor 返回 Noop，运行时无默认导出
+        if (UAST.isNoop(declNode)) {
+            return UAST.noop();
+        }
+        const importVal = createTmpVariableDeclaration(declNode);
 
         const scope = UAST.scopedStatement([]);
         const scopeList = scope.body;
@@ -1106,6 +1149,7 @@ function tryBabelParse(content, opts?): AST.File {
             , "objectRestSpread"
             , "optionalCatchBinding"
             , "optionalChaining"
+            , ["optionalChainingAssign", { version: "2023-07" }]
             , "partialApplication"
             // , "pipelineOperator"
             // , ["pipelineOperator", { proposal: "minimal" }]
