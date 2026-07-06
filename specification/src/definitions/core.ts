@@ -460,7 +460,11 @@ export const assignOpValues = [
     '/=',
     '%=',
     '|=',
-    '**='
+    '**=',
+    // ES2021 逻辑赋值运算符
+    '||=',
+    '&&=',
+    '??='
 ] as const
 
 defineType("AssignmentExpression", {

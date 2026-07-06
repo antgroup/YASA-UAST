@@ -361,7 +361,7 @@ Aliases: [`Standardized`](#standardized), [`Instruction`](#instruction), [`Expre
 | --- | --- | --- | --- |
 | `left` | LVal |  required | 
 | `right` | Expression |  required | 
-| `operator` | "=" &#124; "^=" &#124; "&=" &#124; "<<=" &#124; ">>=" &#124; ">>>=" &#124; "+=" &#124; "-=" &#124; "*=" &#124; "/=" &#124; "%=" &#124; "&#124;=" &#124; "**=" |  required | 
+| `operator` | "=" &#124; "^=" &#124; "&=" &#124; "<<=" &#124; ">>=" &#124; ">>>=" &#124; "+=" &#124; "-=" &#124; "*=" &#124; "/=" &#124; "%=" &#124; "&#124;=" &#124; "**=" &#124; "&#124;&#124;=" &#124; "&&=" &#124; "??=" |  required | 
 | `cloned` | boolean |  default: null | 
 
 Aliases: [`Standardized`](#standardized), [`Instruction`](#instruction), [`Expression`](#expression)

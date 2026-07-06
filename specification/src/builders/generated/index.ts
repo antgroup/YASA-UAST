@@ -184,7 +184,10 @@ export function assignmentExpression(
     | '/='
     | '%='
     | '|='
-    | '**=',
+    | '**='
+    | '||='
+    | '&&='
+    | '??=',
   cloned?: boolean | null
 ): t.AssignmentExpression {
   return builder.apply('AssignmentExpression', arguments)

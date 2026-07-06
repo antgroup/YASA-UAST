@@ -296,6 +296,9 @@ export interface AssignmentExpression extends BaseNode {
     | '%='
     | '|='
     | '**='
+    | '||='
+    | '&&='
+    | '??='
   cloned?: boolean | null
 }
 
