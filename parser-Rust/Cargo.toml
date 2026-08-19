@@ -1,0 +1,13 @@
+[package]
+name = "uast4rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+syn = { version = "2.0", features = ["full"] }
+toml = "0.8"
+
+[dev-dependencies]
+tempfile = "3.10"
