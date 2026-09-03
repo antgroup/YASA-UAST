@@ -72,6 +72,24 @@ def test_normal_code_unaffected():
     print("  PASS: normal code unaffected")
 
 
+def test_type_node_ids_are_identifiers():
+    """类型节点 ID 应序列化为 Identifier 对象"""
+    code = """def primitive() -> int: pass\ndef array() -> list[str]: pass\ndef mapping() -> dict[str, int]: pass\n"""
+    success, result = _parse_code(code)
+    assert success, "类型注解应成功解析"
+
+    body = result["body"]
+    assert len(body) == 3
+    assert all(node["type"] == "FunctionDefinition" for node in body)
+    return_types = [function["returnType"] for function in body]
+    assert len(return_types) == 3
+    for return_type, expected_type in zip(return_types, ["PrimitiveType", "ArrayType", "MapType"]):
+        assert return_type["type"] == expected_type
+        assert return_type["id"]["type"] == "Identifier"
+        assert return_type["id"]["name"] == expected_type
+    print("  PASS: type node ids are identifiers")
+
+
 def test_real_syntax_error_still_fails():
     """真正的语法错误仍然失败"""
     code = """def foo(\n    pass\n"""
@@ -98,6 +116,7 @@ if __name__ == '__main__':
         test_async_as_function_name,
         test_normal_async_def_unaffected,
         test_normal_code_unaffected,
+        test_type_node_ids_are_identifiers,
         test_real_syntax_error_still_fails,
         test_async_for_with_preserved,
     ]

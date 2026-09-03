@@ -55,7 +55,7 @@ class Identifier(BaseNode):
 @dataclass
 class CompileUnit(BaseNode):
     body: List['Instruction']
-    language: TypingLiteral["javascript", "typescript", "java", "golang", "python"]
+    language: TypingLiteral["javascript", "typescript", "java", "golang", "python", "php"]
     uri: str
     version: str
     languageVersion: Optional[Union[int, str, bool]] = None
@@ -178,7 +178,7 @@ class UnaryExpression(BaseNode):
 class AssignmentExpression(BaseNode):
     left: 'LVal'
     right: 'Expression'
-    operator: TypingLiteral["=", "^=", "&=", "<<=", ">>=", ">>>=", "+=", "-=", "*=", "/=", "%=", "|=", "**="]
+    operator: TypingLiteral["=", "^=", "&=", "<<=", ">>=", ">>>=", "+=", "-=", "*=", "/=", "%=", "|=", "**=", "||=", "&&=", "??="]
     cloned: Optional[bool] = None
 
 @dataclass_json
@@ -313,15 +313,15 @@ class PackageDeclaration(BaseNode):
 @dataclass_json
 @dataclass
 class PrimitiveType(BaseNode):
+    id: 'Identifier'
     kind: TypingLiteral["string", "number", "boolean", "null"]
-    id: Optional['Identifier'] = "PrimitiveType"
     typeArguments: Optional[List['Type']] = None
 
 @dataclass_json
 @dataclass
 class ArrayType(BaseNode):
+    id: 'Identifier'
     element: 'Type'
-    id: Optional['Identifier'] = "ArrayType"
     typeArguments: Optional[List['Type']] = None
     size: Optional['Expression'] = None
 
@@ -336,9 +336,9 @@ class PointerType(BaseNode):
 @dataclass_json
 @dataclass
 class MapType(BaseNode):
+    id: 'Identifier'
     keyType: 'Type'
     valueType: 'Type'
-    id: Optional['Identifier'] = "MapType"
     typeArguments: Optional[List['Type']] = None
 
 @dataclass_json

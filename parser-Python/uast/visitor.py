@@ -11,16 +11,32 @@ class UASTTransformer(ast.NodeTransformer):
     def _dynamic_type(self, **kwargs):
         return UNode.DynamicType(UNode.SourceLocation(), UNode.Meta(), **kwargs)
 
+    def _type_identifier(self, name):
+        return UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), name)
+
     def _primitive_type(self, kind, **kwargs):
-        return UNode.PrimitiveType(UNode.SourceLocation(), UNode.Meta(), kind=kind, **kwargs)
+        return UNode.PrimitiveType(
+            UNode.SourceLocation(),
+            UNode.Meta(),
+            id=self._type_identifier("PrimitiveType"),
+            kind=kind,
+            **kwargs,
+        )
 
     def _array_type(self, element=None, **kwargs):
-        return UNode.ArrayType(UNode.SourceLocation(), UNode.Meta(), element=element, **kwargs)
+        return UNode.ArrayType(
+            UNode.SourceLocation(),
+            UNode.Meta(),
+            id=self._type_identifier("ArrayType"),
+            element=element,
+            **kwargs,
+        )
 
     def _map_type(self, key_type=None, value_type=None, **kwargs):
         return UNode.MapType(
             UNode.SourceLocation(),
             UNode.Meta(),
+            id=self._type_identifier("MapType"),
             keyType=key_type,
             valueType=value_type,
             **kwargs,

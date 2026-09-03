@@ -51,9 +51,9 @@ const LEGACY_DEFAULTS = {
   WhileStatement: { isPostTest: false },
   FunctionDefinition: { id: null, modifiers: null },
   VariableDeclaration: { variableParam: false },
-  PrimitiveType: { id: "PrimitiveType", typeArguments: null },
-  ArrayType: { id: "ArrayType", size: null, typeArguments: null },
-  MapType: { id: "MapType", typeArguments: null },
+  PrimitiveType: { typeArguments: null },
+  ArrayType: { size: null, typeArguments: null },
+  MapType: { typeArguments: null },
   DynamicType: { id: null, typeArguments: null },
   ScopedType: { id: null, scope: null, typeArguments: null },
 };
