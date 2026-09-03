@@ -46,12 +46,12 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 20.20.2
           registry-url: https://registry.npmjs.org/
                 
       - name: Upgrade npm
         run: |
-          npm install -g npm@latest
+          npm install -g npm@11.6.4
           echo "npm after upgrade:"
           npm -v
           echo "node after upgrade:"
@@ -138,12 +138,12 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 20.20.2
           registry-url: https://registry.npmjs.org/
       
       - name: Upgrade npm
         run: |
-          npm install -g npm@latest
+          npm install -g npm@11.6.4
           echo "npm after upgrade:"
           npm -v
           echo "node after upgrade:"
@@ -247,12 +247,12 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 20.20.2
           registry-url: https://registry.npmjs.org/
 
       - name: Upgrade npm
         run: |
-          npm install -g npm@latest
+          npm install -g npm@11.6.4
           echo "npm after upgrade:"
           npm -v
           echo "node after upgrade:"
