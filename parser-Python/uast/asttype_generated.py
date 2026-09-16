@@ -9,7 +9,7 @@ from dataclasses_json import dataclass_json, config
 class Meta:
     isConstructor: bool = False
     isAsync: bool = False
-    decorators: Optional['Identifier'] = None
+    decorators: Optional[List['Identifier']] = field(default_factory=list)
     parameterKind: Optional[str] = None
 
 @dataclass_json

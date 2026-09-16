@@ -72,7 +72,7 @@ export default function generateAstTypes(dir) {
   lines.push("class Meta:");
   lines.push("    isConstructor: bool = False");
   lines.push("    isAsync: bool = False");
-  lines.push("    decorators: Optional['Identifier'] = None");
+  lines.push("    decorators: Optional[List['Identifier']] = field(default_factory=list)");
   lines.push("    parameterKind: Optional[str] = None");
   lines.push("");
 

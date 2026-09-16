@@ -29,6 +29,8 @@ def normalize(path: Path, root: Path):
             for key, value in list(node.items()):
                 if key == "sourcefile" and isinstance(value, str):
                     node[key] = rel_src
+                elif key == "decorators" and value is None:
+                    node[key] = []
                 else:
                     walk(value)
         elif isinstance(node, list):
