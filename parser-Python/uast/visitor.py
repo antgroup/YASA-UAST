@@ -507,6 +507,7 @@ class UASTTransformer(ast.NodeTransformer):
                 identifier=self.packPos(node.body[0], UNode.Identifier(UNode.SourceLocation(), UNode.Meta(), '__init__')),
             )
             fdef._meta.isConstructor = True
+            fdef._meta.decorators = []
             body.append(self.packPos(node.body[0], fdef))
             body_loc = UNode.SourceLocation(UNode.Position(node.body[0].lineno, node.body[0].col_offset),
                                             UNode.Position(node.body[0].end_lineno, node.body[0].end_col_offset),
@@ -585,6 +586,7 @@ class UASTTransformer(ast.NodeTransformer):
                     init_scoped = UNode.ScopedStatement(body_loc or UNode.SourceLocation(), UNode.Meta(), init_body)
                     init_fdef = self._function_def(init_params, None, init_scoped, identifier=init_id)
                     init_fdef._meta.isConstructor = True
+                    init_fdef._meta.decorators = []
                     init_fdef.loc = UNode.SourceLocation(
                         UNode.Position(node.lineno, None), UNode.Position(node.end_lineno, None), self.sourcefile)
                     body.append(init_fdef)
