@@ -1,0 +1,299 @@
+{
+  "packageInfo": {
+    "pathName": "/",
+    "files": {
+      "__FILE__": {
+        "node": {
+          "type": "CompileUnit",
+          "body": [
+            {
+              "body": {
+                "body": [
+                  {
+                    "cloned": true,
+                    "id": {
+                      "name": "_range_to",
+                      "type": "Identifier"
+                    },
+                    "init": {
+                      "elements": [
+                        {
+                          "type": "Noop"
+                        },
+                        {
+                          "literalType": "number",
+                          "type": "Literal",
+                          "value": 3
+                        },
+                        {
+                          "literalType": "boolean",
+                          "type": "Literal",
+                          "value": false
+                        }
+                      ],
+                      "modifiable": false,
+                      "type": "TupleExpression"
+                    },
+                    "type": "VariableDeclaration",
+                    "varType": {
+                      "id": null,
+                      "type": "DynamicType",
+                      "typeArguments": null
+                    },
+                    "variableParam": false
+                  },
+                  {
+                    "body": {
+                      "body": [
+                        {
+                          "body": {
+                            "body": [
+                              {
+                                "alternative": null,
+                                "consequent": {
+                                  "body": [
+                                    {
+                                      "label": null,
+                                      "type": "BreakStatement"
+                                    }
+                                  ],
+                                  "id": null,
+                                  "type": "ScopedStatement"
+                                },
+                                "test": {
+                                  "left": {
+                                    "name": "i",
+                                    "type": "Identifier"
+                                  },
+                                  "operator": "==",
+                                  "right": {
+                                    "name": "j",
+                                    "type": "Identifier"
+                                  },
+                                  "type": "BinaryExpression"
+                                },
+                                "type": "IfStatement"
+                              }
+                            ],
+                            "id": null,
+                            "type": "ScopedStatement"
+                          },
+                          "key": null,
+                          "right": {
+                            "elements": [
+                              {
+                                "literalType": "number",
+                                "type": "Literal",
+                                "value": 0
+                              },
+                              {
+                                "literalType": "number",
+                                "type": "Literal",
+                                "value": 2
+                              },
+                              {
+                                "literalType": "boolean",
+                                "type": "Literal",
+                                "value": true
+                              }
+                            ],
+                            "modifiable": false,
+                            "type": "TupleExpression"
+                          },
+                          "type": "RangeStatement",
+                          "value": {
+                            "name": "j",
+                            "type": "Identifier"
+                          }
+                        }
+                      ],
+                      "id": null,
+                      "type": "ScopedStatement"
+                    },
+                    "key": null,
+                    "right": {
+                      "name": "xs",
+                      "type": "Identifier"
+                    },
+                    "type": "RangeStatement",
+                    "value": {
+                      "name": "i",
+                      "type": "Identifier"
+                    }
+                  },
+                  {
+                    "alternative": {
+                      "alternative": {
+                        "body": [
+                          {
+                            "argument": {
+                              "name": "x",
+                              "type": "Identifier"
+                            },
+                            "isYield": false,
+                            "type": "ReturnStatement"
+                          }
+                        ],
+                        "id": null,
+                        "type": "ScopedStatement"
+                      },
+                      "consequent": {
+                        "body": [
+                          {
+                            "argument": {
+                              "literalType": "number",
+                              "type": "Literal",
+                              "value": 20
+                            },
+                            "isYield": false,
+                            "type": "ReturnStatement"
+                          }
+                        ],
+                        "id": null,
+                        "type": "ScopedStatement"
+                      },
+                      "test": {
+                        "left": {
+                          "name": "v",
+                          "type": "Identifier"
+                        },
+                        "operator": "==",
+                        "right": {
+                          "literalType": "number",
+                          "type": "Literal",
+                          "value": 1
+                        },
+                        "type": "BinaryExpression"
+                      },
+                      "type": "IfStatement"
+                    },
+                    "consequent": {
+                      "body": [
+                        {
+                          "argument": {
+                            "literalType": "number",
+                            "type": "Literal",
+                            "value": 10
+                          },
+                          "isYield": false,
+                          "type": "ReturnStatement"
+                        }
+                      ],
+                      "id": null,
+                      "type": "ScopedStatement"
+                    },
+                    "test": {
+                      "left": {
+                        "left": {
+                          "name": "v",
+                          "type": "Identifier"
+                        },
+                        "operator": "==",
+                        "right": {
+                          "literalType": "number",
+                          "type": "Literal",
+                          "value": 1
+                        },
+                        "type": "BinaryExpression"
+                      },
+                      "operator": "&&",
+                      "right": {
+                        "name": "cond",
+                        "type": "Identifier"
+                      },
+                      "type": "BinaryExpression"
+                    },
+                    "type": "IfStatement"
+                  }
+                ],
+                "id": null,
+                "type": "ScopedStatement"
+              },
+              "id": {
+                "name": "regression",
+                "type": "Identifier"
+              },
+              "modifiers": [
+                "pub"
+              ],
+              "parameters": [
+                {
+                  "cloned": false,
+                  "id": {
+                    "name": "xs",
+                    "type": "Identifier"
+                  },
+                  "init": null,
+                  "type": "VariableDeclaration",
+                  "varType": {
+                    "id": {
+                      "name": "Vec",
+                      "type": "Identifier"
+                    },
+                    "type": "DynamicType",
+                    "typeArguments": null
+                  },
+                  "variableParam": false
+                },
+                {
+                  "cloned": false,
+                  "id": {
+                    "name": "v",
+                    "type": "Identifier"
+                  },
+                  "init": null,
+                  "type": "VariableDeclaration",
+                  "varType": {
+                    "id": {
+                      "name": "i32",
+                      "type": "Identifier"
+                    },
+                    "type": "DynamicType",
+                    "typeArguments": null
+                  },
+                  "variableParam": false
+                },
+                {
+                  "cloned": false,
+                  "id": {
+                    "name": "cond",
+                    "type": "Identifier"
+                  },
+                  "init": null,
+                  "type": "VariableDeclaration",
+                  "varType": {
+                    "id": {
+                      "name": "bool",
+                      "type": "Identifier"
+                    },
+                    "type": "DynamicType",
+                    "typeArguments": null
+                  },
+                  "variableParam": false
+                }
+              ],
+              "returnType": {
+                "id": {
+                  "name": "i32",
+                  "type": "Identifier"
+                },
+                "type": "DynamicType",
+                "typeArguments": null
+              },
+              "type": "FunctionDefinition"
+            }
+          ],
+          "language": "rust",
+          "languageVersion": "",
+          "uri": "__FILE__",
+          "version": ""
+        },
+        "packageName": "__single__"
+      }
+    },
+    "subs": {}
+  },
+  "moduleName": "__single_module__",
+  "cargoTomlPath": "",
+  "numOfCargoToml": 0
+}

@@ -35,6 +35,9 @@ UAST（Unified Abstract Syntax Tree）是一种面向多语言程序分析的中
 ## parser-Python
 - UAST Python 语言的解析器，将 Python 语言代码解析为 UAST
 
+## parser-Rust
+- UAST Rust 语言解析器，将 Rust 语言代码解析为 UAST
+
 # 加入我们
 遇到问题欢迎提交issue！
 

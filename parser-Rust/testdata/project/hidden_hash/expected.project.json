@@ -1,0 +1,46 @@
+{
+  "packageInfo": {
+    "pathName": "/",
+    "files": {
+      "/Cargo.toml": {
+        "node": {
+          "type": "CompileUnit",
+          "body": [],
+          "language": "rust",
+          "languageVersion": "",
+          "uri": "/Cargo.toml",
+          "version": ""
+        },
+        "packageName": "root#pkg"
+      }
+    },
+    "subs": {
+      "crates": {
+        "pathName": "crates",
+        "files": {},
+        "subs": {
+          "core": {
+            "pathName": "core",
+            "files": {
+              "/crates/core/Cargo.toml": {
+                "node": {
+                  "type": "CompileUnit",
+                  "body": [],
+                  "language": "rust",
+                  "languageVersion": "",
+                  "uri": "/crates/core/Cargo.toml",
+                  "version": ""
+                },
+                "packageName": "core_pkg"
+              }
+            },
+            "subs": {}
+          }
+        }
+      }
+    }
+  },
+  "moduleName": "root#pkg",
+  "cargoTomlPath": "/Cargo.toml",
+  "numOfCargoToml": 2
+}

@@ -1,0 +1,35 @@
+name: PR Checks
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    paths:
+      - 'parser-Rust/**'
+      - '.github/workflows/pr-check.yml'
+
+jobs:
+  rust-parser:
+    name: Rust Parser Checks
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: parser-Rust
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt
+
+      - name: Cache cargo artifacts
+        uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: parser-Rust
+
+      - name: Check formatting
+        run: cargo fmt -- --check
+
+      - name: Run tests
+        run: cargo test --all-targets
