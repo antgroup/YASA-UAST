@@ -1,0 +1,21 @@
+# sources & tooling
+src/
+tests/
+scripts/
+examples/
+test/
+uast/
+utils/
+*.go
+go.mod
+go.sum
+uast_test.go
+resolve.go
+main.go
+tsconfig.json
+.gitignore
+.git/
+
+# build leftovers
+node_modules/
+dist/**/*.map

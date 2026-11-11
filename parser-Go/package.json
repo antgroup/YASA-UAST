@@ -1,0 +1,49 @@
+{
+  "name": "@ant-yasa/uast-parser-go",
+  "version": "0.0.0",
+  "description": "Go UAST parser for YASA (tree-sitter based, pure JS/WASM, no Go toolchain required)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/*.js",
+    "dist/*.d.ts",
+    "dist/*.wasm",
+    "dist/tree-sitter-runtime.cjs",
+    "assets/README.md",
+    "assets/grammar.patch",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "scripts": {
+    "build": "node scripts/copy-assets.js && tsc",
+    "copy-assets": "node scripts/copy-assets.js",
+    "pretest": "npm run build",
+    "test": "node --test --import tsx tests/*.test.ts"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antgroup/YASA-UAST.git",
+    "directory": "parser-Go"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@types/emscripten": "1.41.5",
+    "web-tree-sitter": "0.26.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.4.0"
+  },
+  "pkg": {
+    "assets": [
+      "dist/*.wasm",
+      "dist/tree-sitter-runtime.cjs"
+    ]
+  }
+}

@@ -16,7 +16,7 @@ YELLOW='\033[0;33m'
 CYAN='\033[0;36m'
 NC='\033[0m'
 
-TOTAL=9
+TOTAL=10
 STEP=0
 
 step() { ((STEP++)); echo -e "\n${CYAN}[$STEP/$TOTAL] $1${NC}"; }
@@ -99,29 +99,49 @@ fi
 # ═════════════════════════════════════════════
 #  parser-Go
 # ═════════════════════════════════════════════
+step "parser-Go: Tree-sitter npm tests"
+cd "$ROOT_DIR/parser-Go"
+# npm test 自带构建；独立于原生检查，即使没有 Go 工具链也执行。
+if ! command -v npm &>/dev/null; then
+    fail "parser-Go npm tests: npm not installed"
+elif [ ! -d node_modules ] && ! npm install --prefer-offline; then
+    fail "parser-Go npm install"
+else
+    TEST_OUTPUT=$(npm test 2>&1)
+    TEST_RC=$?
+    if [ "$TEST_RC" -eq 0 ]; then
+        pass "parser-Go npm tests"
+        echo "$TEST_OUTPUT" | tail -10
+    else
+        fail "parser-Go npm tests (exit code $TEST_RC)"
+        echo "$TEST_OUTPUT" | tail -30
+    fi
+fi
+
 step "parser-Go: go vet + go test"
 cd "$ROOT_DIR/parser-Go"
 if ! command -v go &>/dev/null; then
     skip "parser-Go (go not installed)"
 else
-    # go vet (静态检查)
-    VET_OUTPUT=$(go vet ./... 2>&1) || true
-    if [ -n "$VET_OUTPUT" ]; then
+    VET_OUTPUT=$(go vet ./... 2>&1)
+    VET_RC=$?
+    if [ "$VET_RC" -ne 0 ]; then
         fail "parser-Go vet: issues found"
         echo "$VET_OUTPUT" | head -10
     fi
 
     # go test（含 TestBuildOutput golden 对比，golden 已规范化路径可跨机器）
-    GO_OUTPUT=$(go test ./... 2>&1) || true
+    GO_OUTPUT=$(go test ./... 2>&1)
+    GO_RC=$?
     GO_PASS=$(echo "$GO_OUTPUT" | grep -c "^ok" || true)
     GO_FAIL=$(echo "$GO_OUTPUT" | grep -c "^FAIL" || true)
 
-    if [ "$GO_FAIL" -gt 0 ]; then
+    if [ "$GO_RC" -ne 0 ]; then
         if echo "$GO_OUTPUT" | grep -q "no such file or directory"; then
             skip "parser-Go test: hardcoded path (known issue)"
         else
-            fail "parser-Go: $GO_FAIL package(s) failed"
-            echo "$GO_OUTPUT" | grep -E "FAIL|Error|panic" | head -10
+            fail "parser-Go: tests exited $GO_RC ($GO_FAIL package(s) failed)"
+            echo "$GO_OUTPUT" | tail -20
         fi
     else
         pass "parser-Go: $GO_PASS package(s) passed"
