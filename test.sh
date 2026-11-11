@@ -170,6 +170,13 @@ else
     fail "parser-Python parse smoke test"
 fi
 
+step "parser-Python: Requests regression test"
+if npm test; then
+    pass "parser-Python Requests regression test"
+else
+    fail "parser-Python Requests regression test"
+fi
+
 # ═════════════════════════════════════════════
 #  Summary
 # ═════════════════════════════════════════════

@@ -10,6 +10,7 @@
   ],
   "scripts": {
     "build": "tsc",
+    "test": "npm run build && node --test test/requests-regression.test.cjs",
     "prepack": "npm run build"
   },
   "dependencies": {
