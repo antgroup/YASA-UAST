@@ -131,101 +131,50 @@ fi
 # ═════════════════════════════════════════════
 #  parser-Python
 # ═════════════════════════════════════════════
-step "parser-Python: generate asttype from spec"
-cd "$ROOT_DIR/specification"
-GEN_PY_OUTPUT=$(node ./scripts/generate-python-asttype.mjs 2>&1) || true
-if [ ! -f "$ROOT_DIR/parser-Python/uast/asttype_generated.py" ]; then
-    fail "parser-Python: asttype generation failed"
-    echo "$GEN_PY_OUTPUT" | tail -5
+step "parser-Python: npm ci"
+cd "$ROOT_DIR/parser-Python"
+if npm ci --ignore-scripts; then
+    pass "parser-Python dependencies"
 else
-    pass "parser-Python: asttype generation OK"
+    fail "parser-Python dependencies"
+fi
+
+step "parser-Python: TypeScript build"
+if npm run build; then
+    pass "parser-Python TypeScript build"
+else
+    fail "parser-Python TypeScript build"
 fi
 
 step "parser-Python: parse smoke test"
-cd "$ROOT_DIR/parser-Python"
-
-PYTHON=""
-# 找可用的 Python3（>= 3.10）：优先 python3.13 → python3.12 → … → python3，避免 CI/非交互 shell 里 python3 指向旧版
-for py in python3.13 python3.12 python3.11 python3.10 python3; do
-    if command -v "$py" &>/dev/null && "$py" -c "import sys; exit(0 if sys.version_info >= (3,10) else 1)" 2>/dev/null; then
-        if [ ! -x ".venv313/bin/python3" ]; then
-            echo "  Creating .venv313..."
-            "$py" -m venv .venv313
-            .venv313/bin/pip install -q -r requirements.txt
-        fi
-        PYTHON=".venv313/bin/python3"
-        break
-    fi
-done
-
-if [ -z "${PYTHON}" ]; then
-    skip "parser-Python (need python3 >= 3.10, not found or too old)"
+if node <<'NODE'
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const { Parser } = require('./');
+(async () => {
+    const parser = new Parser();
+    await parser.init();
+    for (const file of ['example.py', 'import.py', 'test_type_annotations.py']) {
+        const ast = parser.parse(fs.readFileSync(`test/${file}`, 'utf8'), { sourcefile: file });
+        assert.equal(ast.type, 'CompileUnit');
+        assert.ok(ast.body.length > 0, file);
+    }
+    assert.equal(parser.parse('def f():\n return 1, *[None]\n').type, 'CompileUnit');
+    assert.throws(() => parser.parse('def f(\n pass'), SyntaxError);
+    assert.equal(parser.parse('x = 1').type, 'CompileUnit');
+})().catch(error => { console.error(error); process.exitCode = 1; });
+NODE
+then
+    pass "parser-Python parse smoke test"
 else
-    # 检查 dataclasses_json 依赖
-    DEP_CHECK=$(PYTHONPATH=. $PYTHON -c "import uast.builder" 2>&1) || true
-    if echo "$DEP_CHECK" | grep -q "ModuleNotFoundError"; then
-        skip "parser-Python: missing deps (run: pip install -r requirements.txt)"
-    else
-        TYPE_CHECK=$(PYTHONPATH=. $PYTHON - <<'PYEOF'
-from pathlib import Path
-src = Path('uast/asttype_generated.py').read_text()
-compile(src, 'uast/asttype_generated.py', 'exec')
-print('ok')
-PYEOF
-        2>&1) || true
-        if ! echo "$TYPE_CHECK" | grep -q "^ok$"; then
-            fail "parser-Python: generated asttype syntax error"
-            echo "$TYPE_CHECK" | tail -5
-            exit 1
-        fi
-
-        # 用一个简单 Python 文件做 smoke test（解析不崩溃即可）
-        SMOKE_FILE=$(mktemp /tmp/uast_smoke_XXXXXX.py)
-        cat > "$SMOKE_FILE" << 'PYEOF'
-import os
-class Foo:
-    def bar(self, x):
-        return x + 1
-def main():
-    f = Foo()
-    f.bar(42)
-PYEOF
-        PARSE_OUTPUT=$(PYTHONPATH=. $PYTHON uast/builder.py --singleFileParse --rootDir "$SMOKE_FILE" --output /tmp/uast_smoke_output.json 2>&1) || true
-        rm -f "$SMOKE_FILE"
-
-        if [ -f /tmp/uast_smoke_output.json ] && [ -s /tmp/uast_smoke_output.json ]; then
-            # 验证输出是合法 JSON
-            if $PYTHON -c "import json; json.load(open('/tmp/uast_smoke_output.json'))" 2>/dev/null; then
-                pass "parser-Python: smoke test OK"
-            else
-                fail "parser-Python: output is not valid JSON"
-            fi
-        else
-            if echo "$PARSE_OUTPUT" | grep -q "Error\|Failed"; then
-                fail "parser-Python: parse error"
-                echo "$PARSE_OUTPUT" | tail -5
-            else
-                fail "parser-Python: no output generated"
-                echo "$PARSE_OUTPUT" | tail -5
-            fi
-        fi
-        rm -f /tmp/uast_smoke_output.json
-    fi
+    fail "parser-Python parse smoke test"
 fi
 
-step "parser-Python: regression test"
-cd "$ROOT_DIR/parser-Python"
-
-if [ -z "${PYTHON}" ]; then
-    skip "parser-Python regression test (need python3 >= 3.10, not found or too old)"
+step "parser-Python: Requests regression test"
+if npm test; then
+    pass "parser-Python Requests regression test"
 else
-    REGRESSION_CHECK=$(PYTHONPATH=. $PYTHON test/run_regression.py 2>&1) || true
-    if echo "$REGRESSION_CHECK" | grep -q "python regression OK"; then
-        pass "parser-Python: regression test OK"
-    else
-        fail "parser-Python: regression test failed"
-        echo "$REGRESSION_CHECK" | tail -10
-    fi
+    fail "parser-Python Requests regression test"
 fi
 
 # ═════════════════════════════════════════════

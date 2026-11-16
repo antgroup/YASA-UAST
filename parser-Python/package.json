@@ -1,0 +1,26 @@
+{
+  "name": "@ant-yasa/uast-parser-python",
+  "version": "0.0.0",
+  "description": "Tree-sitter Python parser for YASA UAST",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "vendor"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test test/requests-regression.test.cjs",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "@ant-yasa/uast-spec": "^0.2.18",
+    "web-tree-sitter": "0.26.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "typescript": "^5.7.2"
+  },
+  "license": "Apache-2.0",
+  "repository": "https://github.com/antgroup/YASA-UAST.git"
+}
