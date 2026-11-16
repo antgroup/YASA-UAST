@@ -319,12 +319,32 @@ function visit(node: SyntaxNode | null | undefined, opts: Record<string, any>): 
         }
 
         case 'dynamic_variable_name': {
-            // $$var -> 变量变量，递归访问内部节点
+            // 变量变量：$$var / ${expr}。递归访问内部节点后产出符合 LVal 约束的左值
+            //（uast-spec 要求赋值左值 ∈ Identifier|MemberAccess|TupleExpression）。
+            //   - 内层是变量名（$$var、${$x}）→ 访问结果本就是 Identifier，原样返回
+            //   - 内层是静态字符串字面量（${"ab"}）→ 折叠成同名 Identifier（语义等价于 $ab）
+            //   - 内层是含变量的表达式（${"a".$x}）→ 包成计算式 MemberAccess：
+            //     property 为动态名表达式（保留形参/污点信息），object 为标识当前 PHP
+            //     变量作用域的占位 Identifier，computed=true。旧实现直接返回内层表达式，
+            //     遇 BinaryExpression/Literal 作左值会被 uast-spec 拒收并抛错。
             const inner = node.namedChildren[0];
-            if (inner) {
-                return visit(inner, opts);
+            if (!inner) {
+                return appendNodeMeta(UAST.identifier(node.text.replace(/^\$+/, '')), node, sourcefile);
             }
-            return appendNodeMeta(UAST.identifier(node.text.replace(/^\$+/, '')), node, sourcefile);
+            const innerExpr = visit(inner, opts) as any;
+            if (UAST.isLVal(innerExpr)) {
+                return innerExpr as UAST.LVal;
+            }
+            if (
+                UAST.isNode(innerExpr) &&
+                innerExpr.type === 'Literal' &&
+                innerExpr.literalType === 'string' &&
+                typeof innerExpr.value === 'string'
+            ) {
+                return appendNodeMeta(UAST.identifier(innerExpr.value), node, sourcefile);
+            }
+            const scope = appendNodeMeta(UAST.identifier('__PHP_VAR_SCOPE__'), node, sourcefile);
+            return appendNodeMeta(UAST.memberAccess(scope, innerExpr as UAST.Expression, true), node, sourcefile);
         }
 
         case 'by_ref': {
