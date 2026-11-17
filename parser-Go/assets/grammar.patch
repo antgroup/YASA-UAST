@@ -1,0 +1,31 @@
+diff --git a/grammar.js b/grammar.js
+--- a/grammar.js
++++ b/grammar.js
+@@ -90,6 +90,7 @@
+     [$.qualified_type, $._expression],
+     [$.generic_type, $._simple_type],
+     [$.parameter_declaration, $._simple_type],
++    [$.type_parameter_declaration, $._simple_type],
+     [$.type_parameter_declaration, $._simple_type, $._expression],
+     [$.type_parameter_declaration, $._expression],
+     [$.type_parameter_declaration, $._simple_type, $.generic_type, $._expression],
+@@ -232,6 +233,7 @@
+       'func',
+       field('receiver', $.parameter_list),
+       field('name', $._field_identifier),
++      field('type_parameters', optional($.type_parameter_list)),
+       field('parameters', $.parameter_list),
+       field('result', optional(choice($.parameter_list, $._simple_type))),
+       field('body', optional($.block)),
+@@ -717,7 +719,10 @@
+     special_argument_list: $ => seq(
+       '(',
+       optional(seq(
+-        $._type,
++        choice(
++          prec.dynamic(PREC.primary, $._type),
++          $._expression,
++        ),
+         repeat(seq(',', $._expression)),
+         optional(','),
+       )),
