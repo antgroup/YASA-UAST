@@ -11,13 +11,8 @@ from uast.builder import parse_single_file
 
 ACTUAL_ROOT = Path("/tmp/yasa-uast-py-regression")
 SKIP_DIRS = {".venv", "vendor", "node_modules", "site-packages", "__pycache__"}
-CASES = [
-    {
-        "name": "chatbot_backend",
-        "source": ROOT / "test" / "chatbot_backend",
-        "expected": ROOT / "test" / "chatbot_backend_expected",
-    }
-]
+# chatbot_backend 测试资产已移除，目前无 golden 回归用例。
+CASES = []
 
 
 def normalize(path: Path, root: Path):
