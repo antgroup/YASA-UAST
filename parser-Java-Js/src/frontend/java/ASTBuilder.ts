@@ -1832,7 +1832,7 @@ export class ASTBuilder
         const discriminant = this.visit(ctx.parExpression()) as UAST.Expression;
         const cases = ctx.switchLabeledRule().map(switchLabeledRuleCtx => {
             // switchLabeledRule
-            //     : CASE (expressionList | NULL_LITERAL | guardedPattern) (ARROW | COLON) switchRuleOutcome
+            //     : CASE (expressionList | NULL_LITERAL (COMMA DEFAULT)? | guardedPattern) (ARROW | COLON) switchRuleOutcome
             //     | DEFAULT (ARROW | COLON) switchRuleOutcome
             const body = this.visit(switchLabeledRuleCtx.switchRuleOutcome()) as UAST.Instruction;
             if (switchLabeledRuleCtx.DEFAULT()) {

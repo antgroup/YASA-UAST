@@ -111,6 +111,7 @@ import { PrimaryContext } from "./JavaParser";
 import { SwitchExpressionContext } from "./JavaParser";
 import { SwitchLabeledRuleContext } from "./JavaParser";
 import { GuardedPatternContext } from "./JavaParser";
+import { GuardContext } from "./JavaParser";
 import { SwitchRuleOutcomeContext } from "./JavaParser";
 import { ClassTypeContext } from "./JavaParser";
 import { CreatorContext } from "./JavaParser";
@@ -894,6 +895,13 @@ export interface JavaVisitor<Result> extends ParseTreeVisitor<Result> {
 	 * @return the visitor result
 	 */
 	visitGuardedPattern?: (ctx: GuardedPatternContext) => Result;
+
+	/**
+	 * Visit a parse tree produced by `JavaParser.guard`.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	visitGuard?: (ctx: GuardContext) => Result;
 
 	/**
 	 * Visit a parse tree produced by `JavaParser.switchRuleOutcome`.

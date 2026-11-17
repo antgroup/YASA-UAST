@@ -111,6 +111,7 @@ import { PrimaryContext } from "./JavaParser";
 import { SwitchExpressionContext } from "./JavaParser";
 import { SwitchLabeledRuleContext } from "./JavaParser";
 import { GuardedPatternContext } from "./JavaParser";
+import { GuardContext } from "./JavaParser";
 import { SwitchRuleOutcomeContext } from "./JavaParser";
 import { ClassTypeContext } from "./JavaParser";
 import { CreatorContext } from "./JavaParser";
@@ -1323,6 +1324,17 @@ export interface JavaListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	exitGuardedPattern?: (ctx: GuardedPatternContext) => void;
+
+	/**
+	 * Enter a parse tree produced by `JavaParser.guard`.
+	 * @param ctx the parse tree
+	 */
+	enterGuard?: (ctx: GuardContext) => void;
+	/**
+	 * Exit a parse tree produced by `JavaParser.guard`.
+	 * @param ctx the parse tree
+	 */
+	exitGuard?: (ctx: GuardContext) => void;
 
 	/**
 	 * Enter a parse tree produced by `JavaParser.switchRuleOutcome`.
