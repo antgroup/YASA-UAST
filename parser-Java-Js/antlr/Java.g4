@@ -551,7 +551,7 @@ switchBlockStatementGroup
     ;
 
 switchLabel
-    : CASE (constantExpression=expression | enumConstantName=IDENTIFIER | typeType varName=identifier) ':'
+    : CASE (constantExpression=expression | enumConstantName=IDENTIFIER | typeType varName=identifier | NULL_LITERAL (COMMA DEFAULT)?) ':'
     | DEFAULT ':'
     ;
 
@@ -666,17 +666,22 @@ switchExpression
     : SWITCH parExpression '{' switchLabeledRule* '}'
     ;
 
-// Java17
+// Java17/Java21
 switchLabeledRule
-    : CASE (expressionList | NULL_LITERAL | guardedPattern) (ARROW | COLON) switchRuleOutcome
+    : CASE (expressionList | NULL_LITERAL (COMMA DEFAULT)? | guardedPattern) (ARROW | COLON) switchRuleOutcome
     | DEFAULT (ARROW | COLON) switchRuleOutcome
     ;
 
-// Java17
+// Java17/Java21: when 是上下文关键字，不能加成全局 lexer 关键字。
 guardedPattern
     : '(' guardedPattern ')'
-    | variableModifier* typeType annotation* identifier ('&&' expression)*
-    | guardedPattern '&&' expression
+    | variableModifier* typeType annotation* identifier (guard expression)*
+    | guardedPattern guard expression
+    ;
+
+guard
+    : '&&'
+    | {this._input.LT(1).text === 'when'}? identifier
     ;
 
 // Java17
