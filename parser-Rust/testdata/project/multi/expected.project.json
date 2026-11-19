@@ -1,0 +1,63 @@
+{
+  "packageInfo": {
+    "pathName": "/",
+    "files": {
+      "/Cargo.toml": {
+        "node": {
+          "type": "CompileUnit",
+          "body": [],
+          "language": "rust",
+          "languageVersion": "",
+          "uri": "/Cargo.toml",
+          "version": ""
+        },
+        "packageName": "__unknown_module__"
+      }
+    },
+    "subs": {
+      "crates": {
+        "pathName": "crates",
+        "files": {},
+        "subs": {
+          "a": {
+            "pathName": "a",
+            "files": {
+              "/crates/a/Cargo.toml": {
+                "node": {
+                  "type": "CompileUnit",
+                  "body": [],
+                  "language": "rust",
+                  "languageVersion": "",
+                  "uri": "/crates/a/Cargo.toml",
+                  "version": ""
+                },
+                "packageName": "crate_a"
+              }
+            },
+            "subs": {}
+          },
+          "b": {
+            "pathName": "b",
+            "files": {
+              "/crates/b/Cargo.toml": {
+                "node": {
+                  "type": "CompileUnit",
+                  "body": [],
+                  "language": "rust",
+                  "languageVersion": "",
+                  "uri": "/crates/b/Cargo.toml",
+                  "version": ""
+                },
+                "packageName": "crate_b"
+              }
+            },
+            "subs": {}
+          }
+        }
+      }
+    }
+  },
+  "moduleName": "crate_a",
+  "cargoTomlPath": "/Cargo.toml",
+  "numOfCargoToml": 3
+}
